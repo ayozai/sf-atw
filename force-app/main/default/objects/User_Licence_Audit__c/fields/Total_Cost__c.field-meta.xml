@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Cost__c</fullName>
+    <description>Calculation of the total cost for this licence and period of activity</description>
+    <formula>IF(ISPICKVAL(Cost_Period__c, &apos;Annual&apos;), 
+    Total_Days_Active__c * (Cost__c/365), 
+    IF(ISPICKVAL(Cost_Period__c, &apos;Monthly&apos;), 
+        Total_Months_Active__c * (Cost__c), 
+        IF(ISPICKVAL(Cost_Period__c, &apos;Daily&apos;), 
+            Total_Days_Active__c * (Cost__c), 
+            0.00
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Calculation of the total cost for this licence and period of activity</inlineHelpText>
+    <label>Total Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

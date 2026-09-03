@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>MultiSelectFlowValues</name>
+        <label>MultiSelectFlowValues</label>
+        <locationX>1084</locationX>
+        <locationY>1079</locationY>
+        <actionName>MultiSelectFlowValues</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Set_UserIsRecipient</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>values</name>
+            <value>
+                <elementReference>Loop_on_account_team.Services__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>MultiSelectFlowValues</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>644</locationX>
+        <locationY>3521</locationY>
+        <actionName>SendBetterEmail</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HTMLbody</name>
+        </inputParameters>
+        <inputParameters>
+            <name>orgWideEmailAddressId</name>
+            <value>
+                <elementReference>Get_OW_Email.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>plainTextBody</name>
+            <value>
+                <elementReference>MailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>replyEmailAddress</name>
+            <value>
+                <elementReference>Get_Case_Creator_Details.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>SendCCthisStringCollectionOfEmailAddresses</name>
+            <value>
+                <elementReference>AccountTeamEmailAddresses</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>SendTOthisOneEmailAddress</name>
+            <value>
+                <elementReference>CreatorEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>MailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendBetterEmail</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_Email_to_Recipient_Collection2</name>
+        <label>Add Email to Recipient Collection</label>
+        <locationX>1128</locationX>
+        <locationY>2345</locationY>
+        <assignmentItems>
+            <assignToReference>AccountTeamEmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Get_Account_Team_User.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_on_account_team</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Support_to_Collection</name>
+        <label>Add Support to Collection</label>
+        <locationX>512</locationX>
+        <locationY>2837</locationY>
+        <assignmentItems>
+            <assignToReference>AccountTeamEmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Get_Account_Support_Email_Address.Atalian_Support_Email_Address__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Case_creation</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign</name>
+        <label>Assign</label>
+        <locationX>50</locationX>
+        <locationY>3245</locationY>
+        <assignmentItems>
+            <assignToReference>MailSubject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailSubjectNewRequest</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MailBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailBodyCustomerNewRequest</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_1_of_Assign</name>
+        <label>Assign</label>
+        <locationX>314</locationX>
+        <locationY>3245</locationY>
+        <assignmentItems>
+            <assignToReference>MailSubject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailSubjectNewEN</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MailBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailBodyNewEN</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Assign</name>
+        <label>Assign</label>
+        <locationX>578</locationX>
+        <locationY>3245</locationY>
+        <assignmentItems>
+            <assignToReference>MailSubject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailSubjectUpdate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MailBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailBodyCustomerUpdate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_3_of_Assign</name>
+        <label>Assign</label>
+        <locationX>842</locationX>
+        <locationY>3245</locationY>
+        <assignmentItems>
+            <assignToReference>MailSubject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailSubjectUpdateEN</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MailBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailBodyUpdateEN</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Creator_Email_Address</name>
+        <label>Set Creator Email Address</label>
+        <locationX>644</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>CreatorEmailAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Case_Creator_Details.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_on_account_team</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_UserIsRecipient</name>
+        <label>Set UserIsRecipient</label>
+        <locationX>1084</locationX>
+        <locationY>1187</locationY>
+        <assignmentItems>
+            <assignToReference>UserIsRecipient</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_on_Account_Team_Member_Services</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_UserIsRecipient_0</name>
+        <label>Set UserIsRecipient</label>
+        <locationX>1172</locationX>
+        <locationY>1511</locationY>
+        <assignmentItems>
+            <assignToReference>UserIsRecipient</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_on_Account_Team_Member_Services</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Case_creation</name>
+        <label>Case creation/Update</label>
+        <locationX>644</locationX>
+        <locationY>3029</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Case_creation3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_creator_language</targetReference>
+            </connector>
+            <label>Case creation</label>
+        </rules>
+        <rules>
+            <name>Case_update3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Status</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Case_Creator_Language2</targetReference>
+            </connector>
+            <label>Case status update to closed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Case_Creation_OR_Status_Update2</name>
+        <label>Case Creation OR Status Update</label>
+        <locationX>1007</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yesccosu</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Status</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_OW_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Case_creator_language</name>
+        <label>Case creator language</label>
+        <locationX>182</locationX>
+        <locationY>3137</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Assign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>French3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Creator_Details.LanguageLocaleKey</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign</targetReference>
+            </connector>
+            <label>French</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Case_Creator_Language2</name>
+        <label>Case Creator Language</label>
+        <locationX>710</locationX>
+        <locationY>3137</locationY>
+        <defaultConnector>
+            <targetReference>Copy_3_of_Assign</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>French4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case_Creator_Details.LanguageLocaleKey</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>fr</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Assign</targetReference>
+            </connector>
+            <label>French</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>IsUserRecipient</name>
+        <label>IsUserRecipient</label>
+        <locationX>1084</locationX>
+        <locationY>1787</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Loop_on_account_team</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>UserIsRecipient</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Account_Team_User</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Service_is_Case_Primary_Service</name>
+        <label>Service is Case Primary Service</label>
+        <locationX>1304</locationX>
+        <locationY>1403</locationY>
+        <defaultConnector>
+            <targetReference>Loop_on_Account_Team_Member_Services</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes6</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_Account_Team_Member_Services</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Primary_Service__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_UserIsRecipient_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Support_Email</name>
+        <label>Support Email</label>
+        <locationX>644</locationX>
+        <locationY>2729</locationY>
+        <defaultConnector>
+            <targetReference>Case_creation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account_Support_Email_Address</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account_Support_Email_Address.Atalian_Support_Email_Address__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Support_to_Collection</targetReference>
+            </connector>
+            <label>not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>User_has_services</name>
+        <label>User has services ?</label>
+        <locationX>1260</locationX>
+        <locationY>971</locationY>
+        <defaultConnector>
+            <targetReference>Get_Account_Team_User</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_on_account_team.Services__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>MultiSelectFlowValues</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>User_is_active</name>
+        <label>User is active</label>
+        <locationX>1260</locationX>
+        <locationY>2237</locationY>
+        <defaultConnector>
+            <targetReference>Loop_on_account_team</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account_Team_User.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Email_to_Recipient_Collection2</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Community Case After Create or Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Community Case After Create or Update</label>
+    <loops>
+        <name>Loop_on_account_team</name>
+        <label>Loop on account team</label>
+        <locationX>644</locationX>
+        <locationY>863</locationY>
+        <collectionReference>Get_Account_Team</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>User_has_services</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Account_Support_Email_Address</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_on_Account_Team_Member_Services</name>
+        <label>Loop on Account Team Member Services</label>
+        <locationX>1084</locationX>
+        <locationY>1295</locationY>
+        <collectionReference>MultiSelectFlowValues</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Service_is_Case_Primary_Service</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>IsUserRecipient</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account_Support_Email_Address</name>
+        <label>Get Account Support Email Address</label>
+        <locationX>644</locationX>
+        <locationY>2621</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Support_Email</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Atalian_Support_Email_Address__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Account_Team</name>
+        <label>Get Account Team</label>
+        <locationX>644</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Case_Creator_Details</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5)</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer Service Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Operational Lead</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QSHE Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Partner</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AccountTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Account_Team_User</name>
+        <label>Get Account Team User</label>
+        <locationX>1260</locationX>
+        <locationY>2129</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>User_is_active</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_on_account_team.UserId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Case_Creator_Details</name>
+        <label>Get Case Creator Details</label>
+        <locationX>644</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Creator_Email_Address</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.CreatedById</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_OW_Email</name>
+        <label>Get OW Email</label>
+        <locationX>644</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Account_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DisplayName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>One Atalian</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OrgWideEmailAddress</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>881</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Case_Creation_OR_Status_Update2</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Origin</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Community Portal</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CaseTechnicalId__c</field>
+            <operator>StartsWith</operator>
+            <value>
+                <stringValue>AetS_</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Source_System_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PlanonSch</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Source_System_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>MANPOWERSERVICENOW</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Source_System_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>MHSWISEBUILDING</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>EmailBodyCustomerNewRequest</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color: #FFFFFF;&quot;&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;table role=&quot;presentation&quot; width=&quot;600&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width: 600px; max-width: 600px; font-family: Arial, sans-serif; color: #333333;&quot;&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;background-color: #FFFFFF; padding: 30px 24px; border-bottom: 3px solid #F07B1A;&quot;&gt;
+      &lt;img src=&quot;https://atalianworld.my.salesforce.com/servlet/servlet.ImageServer?id=015Q30000071UUf&amp;oid=00DD0000000nF3N&amp;lastMod=1776954122000&quot; alt=&quot;Atalian Global Services&quot; width=&quot;200&quot; style=&quot;display: block; margin: 0 auto;&quot; /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style=&quot;padding: 28px 24px 24px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6; padding: 0 0 16px;&quot;&gt;
+            Bonjour &lt;strong&gt;{!$Record.Contact.FirstName}&lt;/strong&gt;,
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6; padding: 0 0 20px;&quot;&gt;
+            La demande pour le site &lt;strong&gt;{!$Record.Site__r.Name}&lt;/strong&gt; a &amp;eacute;t&amp;eacute; cr&amp;eacute;&amp;eacute;e sous le num&amp;eacute;ro &lt;strong&gt;{!$Record.CaseNumber}&lt;/strong&gt;.
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color: #F8F8F8; margin: 0 0 24px;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 160px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Cat&amp;eacute;gorie&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Type_Customer_Label__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Sous-cat&amp;eacute;gorie&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Service_Category_Customer_Label__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle;&quot;&gt;D&amp;eacute;tails de la demande&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle;&quot;&gt;{!$Record.Description}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 20px; line-height: 20px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;center&quot; style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td align=&quot;center&quot; style=&quot;background-color: #F07B1A; border-radius: 4px; mso-padding-alt: 12px 32px;&quot;&gt;
+            &lt;a href=&quot;https://oneatalian.force.com/oneatalian/s/case/{!$Record.Id}&quot; style=&quot;display: block; padding: 12px 32px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none; white-space: nowrap;&quot;&gt;Acc&amp;eacute;der &amp;agrave; la demande&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 14px; line-height: 14px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;center&quot; style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td align=&quot;center&quot; style=&quot;background-color: #FFFFFF; border: 2px solid #F07B1A; border-radius: 4px; mso-padding-alt: 10px 30px;&quot;&gt;
+            &lt;a href=&quot;https://atalianworld.lightning.force.com/lightning/r/Case/{!$Record.Id}/view&quot; style=&quot;display: block; padding: 10px 30px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #F07B1A; text-decoration: none; white-space: nowrap;&quot;&gt;Lien interne Atalian&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 20px; line-height: 20px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6;&quot;&gt;
+            L&apos;&amp;eacute;quipe Service Client Atalian
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;background-color: #F5F5F5; padding: 16px 24px; border: 1px solid #E0E0E0; border-top: none;&quot;&gt;
+      &lt;p style=&quot;color: #999999; font-size: 11px; margin: 0;&quot;&gt;
+        Atalian Global Services &amp;mdash; Cet email a &amp;eacute;t&amp;eacute; envoy&amp;eacute; automatiquement
+      &lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyCustomerUpdate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color: #FFFFFF;&quot;&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;table role=&quot;presentation&quot; width=&quot;600&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width: 600px; max-width: 600px; font-family: Arial, sans-serif; color: #333333;&quot;&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;background-color: #FFFFFF; padding: 30px 24px; border-bottom: 3px solid #F07B1A;&quot;&gt;
+      &lt;img src=&quot;https://atalianworld.my.salesforce.com/servlet/servlet.ImageServer?id=015Q30000071UUf&amp;oid=00DD0000000nF3N&amp;lastMod=1776954122000&quot; alt=&quot;Atalian Global Services&quot; width=&quot;200&quot; style=&quot;display: block; margin: 0 auto;&quot; /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style=&quot;padding: 28px 24px 24px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6; padding: 0 0 16px;&quot;&gt;
+            Bonjour &lt;strong&gt;{!$Record.Contact.FirstName}&lt;/strong&gt;,
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6; padding: 0 0 20px;&quot;&gt;
+            Le statut de la demande &lt;strong&gt;{!$Record.CaseNumber}&lt;/strong&gt; pour le site &lt;strong&gt;{!$Record.Site__r.Name}&lt;/strong&gt; a &amp;eacute;t&amp;eacute; mis &amp;agrave; jour.
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color: #F8F8F8; margin: 0 0 24px;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 160px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Nouveau statut&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Status}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Cat&amp;eacute;gorie&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Type_Customer_Label__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Sous-cat&amp;eacute;gorie&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Service_Category_Customer_Label__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;D&amp;eacute;tails de la demande&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Description}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle;&quot;&gt;Solution&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle;&quot;&gt;{!$Record.Case_Solution__c}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 20px; line-height: 20px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;center&quot; style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td align=&quot;center&quot; style=&quot;background-color: #F07B1A; border-radius: 4px; mso-padding-alt: 12px 32px;&quot;&gt;
+            &lt;a href=&quot;https://oneatalian.force.com/oneatalian/s/case/{!$Record.Id}&quot; style=&quot;display: block; padding: 12px 32px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none; white-space: nowrap;&quot;&gt;Acc&amp;eacute;der &amp;agrave; la demande&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 14px; line-height: 14px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;center&quot; style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td align=&quot;center&quot; style=&quot;background-color: #FFFFFF; border: 2px solid #F07B1A; border-radius: 4px; mso-padding-alt: 10px 30px;&quot;&gt;
+            &lt;a href=&quot;https://atalianworld.lightning.force.com/lightning/r/Case/{!$Record.Id}/view&quot; style=&quot;display: block; padding: 10px 30px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #F07B1A; text-decoration: none; white-space: nowrap;&quot;&gt;Lien interne Atalian&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 20px; line-height: 20px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6;&quot;&gt;
+            L&apos;&amp;eacute;quipe Service Client Atalian
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;background-color: #F5F5F5; padding: 16px 24px; border: 1px solid #E0E0E0; border-top: none;&quot;&gt;
+      &lt;p style=&quot;color: #999999; font-size: 11px; margin: 0;&quot;&gt;
+        Atalian Global Services &amp;mdash; Cet email a &amp;eacute;t&amp;eacute; envoy&amp;eacute; automatiquement
+      &lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyNewEN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color: #FFFFFF;&quot;&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;table role=&quot;presentation&quot; width=&quot;600&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width: 600px; max-width: 600px; font-family: Arial, sans-serif; color: #333333;&quot;&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;background-color: #FFFFFF; padding: 30px 24px; border-bottom: 3px solid #F07B1A;&quot;&gt;
+      &lt;img src=&quot;https://atalianworld.my.salesforce.com/servlet/servlet.ImageServer?id=015Q30000071UUf&amp;oid=00DD0000000nF3N&amp;lastMod=1776954122000&quot; alt=&quot;Atalian Global Services&quot; width=&quot;200&quot; style=&quot;display: block; margin: 0 auto;&quot; /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style=&quot;padding: 28px 24px 24px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6; padding: 0 0 16px;&quot;&gt;
+            Hello &lt;strong&gt;{!$Record.Contact.FirstName}&lt;/strong&gt;,
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6; padding: 0 0 20px;&quot;&gt;
+            The request for the site &lt;strong&gt;{!$Record.Site__r.Name}&lt;/strong&gt; has been created with the number &lt;strong&gt;{!$Record.CaseNumber}&lt;/strong&gt;.
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color: #F8F8F8; margin: 0 0 24px;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 160px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Category&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Type_Customer_Label__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Subcategory&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Service_Category_Customer_Label__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle;&quot;&gt;Details&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle;&quot;&gt;{!$Record.Description}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 20px; line-height: 20px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;center&quot; style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td align=&quot;center&quot; style=&quot;background-color: #F07B1A; border-radius: 4px; mso-padding-alt: 12px 32px;&quot;&gt;
+            &lt;a href=&quot;https://oneatalian.force.com/oneatalian/s/case/{!$Record.Id}&quot; style=&quot;display: block; padding: 12px 32px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none; white-space: nowrap;&quot;&gt;View Request&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 14px; line-height: 14px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;center&quot; style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td align=&quot;center&quot; style=&quot;background-color: #FFFFFF; border: 2px solid #F07B1A; border-radius: 4px; mso-padding-alt: 10px 30px;&quot;&gt;
+            &lt;a href=&quot;https://atalianworld.lightning.force.com/lightning/r/Case/{!$Record.Id}/view&quot; style=&quot;display: block; padding: 10px 30px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #F07B1A; text-decoration: none; white-space: nowrap;&quot;&gt;Atalian Internal Link&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 20px; line-height: 20px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6;&quot;&gt;
+            The Atalian Customer Service Team
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;background-color: #F5F5F5; padding: 16px 24px; border: 1px solid #E0E0E0; border-top: none;&quot;&gt;
+      &lt;p style=&quot;color: #999999; font-size: 11px; margin: 0;&quot;&gt;
+        Atalian Global Services &amp;mdash; This is an automated email
+      &lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyUpdateEN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color: #FFFFFF;&quot;&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;table role=&quot;presentation&quot; width=&quot;600&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width: 600px; max-width: 600px; font-family: Arial, sans-serif; color: #333333;&quot;&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;background-color: #FFFFFF; padding: 30px 24px; border-bottom: 3px solid #F07B1A;&quot;&gt;
+      &lt;img src=&quot;https://atalianworld.my.salesforce.com/servlet/servlet.ImageServer?id=015Q30000071UUf&amp;oid=00DD0000000nF3N&amp;lastMod=1776954122000&quot; alt=&quot;Atalian Global Services&quot; width=&quot;200&quot; style=&quot;display: block; margin: 0 auto;&quot; /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style=&quot;padding: 28px 24px 24px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6; padding: 0 0 16px;&quot;&gt;
+            Hello &lt;strong&gt;{!$Record.Contact.FirstName}&lt;/strong&gt;,
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6; padding: 0 0 20px;&quot;&gt;
+            The status of the request &lt;strong&gt;{!$Record.CaseNumber}&lt;/strong&gt; for the site &lt;strong&gt;{!$Record.Site__r.Name}&lt;/strong&gt; has been updated.
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color: #F8F8F8; margin: 0 0 24px;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 160px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;New status&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Status}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Category&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Type_Customer_Label__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Subcategory&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Service_Category_Customer_Label__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;Details&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Description}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; vertical-align: middle;&quot;&gt;Solution&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; vertical-align: middle;&quot;&gt;{!$Record.Case_Solution__c}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 20px; line-height: 20px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;center&quot; style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td align=&quot;center&quot; style=&quot;background-color: #F07B1A; border-radius: 4px; mso-padding-alt: 12px 32px;&quot;&gt;
+            &lt;a href=&quot;https://oneatalian.force.com/oneatalian/s/case/{!$Record.Id}&quot; style=&quot;display: block; padding: 12px 32px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #FFFFFF; text-decoration: none; white-space: nowrap;&quot;&gt;View Request&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 14px; line-height: 14px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;center&quot; style=&quot;margin: 0 auto;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td align=&quot;center&quot; style=&quot;background-color: #FFFFFF; border: 2px solid #F07B1A; border-radius: 4px; mso-padding-alt: 10px 30px;&quot;&gt;
+            &lt;a href=&quot;https://atalianworld.lightning.force.com/lightning/r/Case/{!$Record.Id}/view&quot; style=&quot;display: block; padding: 10px 30px; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; color: #F07B1A; text-decoration: none; white-space: nowrap;&quot;&gt;Atalian Internal Link&lt;/a&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;&lt;td style=&quot;height: 20px; line-height: 20px; font-size: 1px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;font-size: 14px; line-height: 1.6;&quot;&gt;
+            The Atalian Customer Service Team
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; style=&quot;background-color: #F5F5F5; padding: 16px 24px; border: 1px solid #E0E0E0; border-top: none;&quot;&gt;
+      &lt;p style=&quot;color: #999999; font-size: 11px; margin: 0;&quot;&gt;
+        Atalian Global Services &amp;mdash; This is an automated email
+      &lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectNewEN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>New request {!$Record.CaseNumber} {!$Record.Site__r.Name}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectNewRequest</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Nouvelle demande {!$Record.CaseNumber} {!$Record.Site__r.Name}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectUpdate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Mise à jour de la demande {!$Record.CaseNumber} {!$Record.Site__r.Name}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectUpdateEN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Request update - {!$Record.CaseNumber} - {!$Record.Site__r.Name}</text>
+    </textTemplates>
+    <variables>
+        <name>AccountTeamEmailAddresses</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CreatorEmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>MailBody</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>MailSubject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>UserIsRecipient</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

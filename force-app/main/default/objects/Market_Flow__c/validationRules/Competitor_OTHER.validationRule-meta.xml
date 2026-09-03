@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_OTHER</fullName>
+    <active>true</active>
+    <errorConditionFormula>!CONTAINS($Profile.Name, &quot;Admin&quot;) &amp;&amp;
+!CONTAINS($User.Username, &apos;autoproc@&apos;) &amp;&amp;
+
+ISPICKVAL(Competitor_Name__c , &quot;OTHER&quot;) &amp;&amp; 
+ISBLANK(Comment__c )</errorConditionFormula>
+    <errorDisplayField>Comment__c</errorDisplayField>
+    <errorMessage>If competitor is OTHER, please specify in the comments.</errorMessage>
+</ValidationRule>

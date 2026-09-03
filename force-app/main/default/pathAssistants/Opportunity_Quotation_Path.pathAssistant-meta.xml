@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Opportunity Quotation Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Global_Business_Type_Opportunity__c</fieldNames>
+        <info>&lt;p&gt;&lt;img src=&quot;/img/rte_broken_image.png&quot; alt=&quot;This image is not available because: You don’t have the privileges to see it, or it has been removed from the system&quot;&gt;&lt;/img&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://success.salesforce.com/answers?id=90630000000CmZWAA0&quot; target=&quot;_blank&quot;&gt;good &lt;/a&gt;job&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>3. Solution</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Turnover__c</fieldNames>
+        <info>&lt;p&gt;Add the details in here&lt;/p&gt;&lt;p&gt;Good job! Great progress&lt;/p&gt;&lt;p&gt;Don&amp;#39;t forget to .....&lt;img src=&quot;/img/rte_broken_image.png&quot; alt=&quot;This image is not available because: You don’t have the privileges to see it, or it has been removed from the system&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>7. Closed Withdrawn</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Global_Quotation</recordTypeName>
+</PathAssistant>

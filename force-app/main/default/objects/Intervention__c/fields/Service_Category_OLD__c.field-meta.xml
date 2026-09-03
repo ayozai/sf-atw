@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Category_OLD__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <label>Service Category OLD</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Access &amp; badges</fullName>
+                <default>false</default>
+                <label>Access &amp; badges</label>
+            </value>
+            <value>
+                <fullName>Space management</fullName>
+                <default>false</default>
+                <label>Space management</label>
+            </value>
+            <value>
+                <fullName>Printers</fullName>
+                <default>false</default>
+                <label>Printers</label>
+            </value>
+            <value>
+                <fullName>HVAC</fullName>
+                <default>false</default>
+                <label>HVAC</label>
+            </value>
+            <value>
+                <fullName>Mail</fullName>
+                <default>false</default>
+                <label>Mail</label>
+            </value>
+            <value>
+                <fullName>Lighting</fullName>
+                <default>false</default>
+                <label>Lighting</label>
+            </value>
+            <value>
+                <fullName>Electricity</fullName>
+                <default>false</default>
+                <label>Electricity</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>Office supplies</fullName>
+                <default>false</default>
+                <label>Office supplies</label>
+            </value>
+            <value>
+                <fullName>Windows, Glass and Blinds</fullName>
+                <default>false</default>
+                <label>Windows, Glass and Blinds</label>
+            </value>
+            <value>
+                <fullName>Cleaning</fullName>
+                <default>false</default>
+                <label>Cleaning</label>
+            </value>
+            <value>
+                <fullName>Minor repairs</fullName>
+                <default>false</default>
+                <label>Minor repairs</label>
+            </value>
+            <value>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+                <label>Plumbing</label>
+            </value>
+            <value>
+                <fullName>Locks</fullName>
+                <default>false</default>
+                <label>Locks</label>
+            </value>
+            <value>
+                <fullName>Vending Machine</fullName>
+                <default>false</default>
+                <label>Vending Machine</label>
+            </value>
+            <value>
+                <fullName>Archiving</fullName>
+                <default>false</default>
+                <label>Archiving</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>3D</fullName>
+                <default>false</default>
+                <label>3D</label>
+            </value>
+            <value>
+                <fullName>Waste management</fullName>
+                <default>false</default>
+                <label>Waste management</label>
+            </value>
+            <value>
+                <fullName>Industrial cleaning</fullName>
+                <default>false</default>
+                <label>Industrial cleaning</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Woodwork</fullName>
+                <default>false</default>
+                <label>Woodwork</label>
+            </value>
+            <value>
+                <fullName>Lifting / Hoist</fullName>
+                <default>false</default>
+                <label>Lifting / Hoist</label>
+            </value>
+            <value>
+                <fullName>Audiovisual</fullName>
+                <default>false</default>
+                <label>Audiovisual</label>
+            </value>
+            <value>
+                <fullName>Water fountains</fullName>
+                <default>false</default>
+                <label>Water fountains</label>
+            </value>
+            <value>
+                <fullName>Masonry</fullName>
+                <default>false</default>
+                <label>Masonry</label>
+            </value>
+            <value>
+                <fullName>Management</fullName>
+                <default>false</default>
+                <label>Management</label>
+            </value>
+            <value>
+                <fullName>Fire safety</fullName>
+                <default>false</default>
+                <label>Fire safety</label>
+            </value>
+            <value>
+                <fullName>Safety</fullName>
+                <default>false</default>
+                <label>Safety</label>
+            </value>
+            <value>
+                <fullName>Roofs and terraces</fullName>
+                <default>false</default>
+                <label>Roofs and terraces</label>
+            </value>
+            <value>
+                <fullName>Vehicles</fullName>
+                <default>false</default>
+                <label>Vehicles</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

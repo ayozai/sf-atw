@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>3rd Party Referral</fullName>
+        <default>false</default>
+        <label>3rd Party Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertising</fullName>
+        <default>false</default>
+        <label>Advertising</label>
+    </customValue>
+    <customValue>
+        <fullName>Client Referral</fullName>
+        <default>false</default>
+        <label>Client Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Referral</fullName>
+        <default>false</default>
+        <label>Sales Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Operational Referral</fullName>
+        <default>false</default>
+        <label>Operational Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Mail</fullName>
+        <default>false</default>
+        <label>Direct Mail</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <label>Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Procurement Process</fullName>
+        <default>false</default>
+        <label>Government Procurement Process</label>
+    </customValue>
+    <customValue>
+        <fullName>Self-generated</fullName>
+        <default>false</default>
+        <label>Self-generated</label>
+    </customValue>
+    <customValue>
+        <fullName>Telemarketing</fullName>
+        <default>false</default>
+        <label>Telemarketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Atalian Interactive</fullName>
+        <default>false</default>
+        <label>Atalian Interactive</label>
+    </customValue>
+    <customValue>
+        <fullName>Business development</fullName>
+        <default>false</default>
+        <label>Business development</label>
+    </customValue>
+    <customValue>
+        <fullName>Office Sales Rep</fullName>
+        <default>false</default>
+        <label>Office Sales Rep</label>
+    </customValue>
+    <customValue>
+        <fullName>LinkedIn Sales Navigator</fullName>
+        <default>false</default>
+        <label>LinkedIn Sales Navigator</label>
+    </customValue>
+    <customValue>
+        <fullName>Manageo</fullName>
+        <default>false</default>
+        <label>Manageo</label>
+    </customValue>
+    <customValue>
+        <fullName>Kompass</fullName>
+        <default>false</default>
+        <label>Kompass</label>
+    </customValue>
+    <masterLabel>Global Lead Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

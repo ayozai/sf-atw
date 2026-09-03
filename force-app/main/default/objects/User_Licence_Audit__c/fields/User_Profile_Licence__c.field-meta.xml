@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Profile_Licence__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is this the Licence Type associated with the User/Profile directly, as opposed to a permission set or something else?</description>
+    <inlineHelpText>Is this the Licence Type associated with the User/Profile directly, as opposed to a permission set or something else?</inlineHelpText>
+    <label>User Profile Licence</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

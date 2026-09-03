@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>14forty</fullName>
+        <default>false</default>
+        <label>14forty</label>
+    </customValue>
+    <customValue>
+        <fullName>ABM Support Services</fullName>
+        <default>false</default>
+        <label>ABM Support Services</label>
+    </customValue>
+    <customValue>
+        <fullName>ACT</fullName>
+        <default>false</default>
+        <label>ACT</label>
+    </customValue>
+    <customValue>
+        <fullName>Albacore</fullName>
+        <default>false</default>
+        <label>Albacore</label>
+    </customValue>
+    <customValue>
+        <fullName>Amey Built Environment</fullName>
+        <default>false</default>
+        <label>Amey Built Environment</label>
+    </customValue>
+    <customValue>
+        <fullName>Anabas</fullName>
+        <default>false</default>
+        <label>Anabas</label>
+    </customValue>
+    <customValue>
+        <fullName>Anchor</fullName>
+        <default>false</default>
+        <label>Anchor</label>
+    </customValue>
+    <customValue>
+        <fullName>Apcan</fullName>
+        <default>false</default>
+        <label>Apcan</label>
+    </customValue>
+    <customValue>
+        <fullName>Apleona</fullName>
+        <default>false</default>
+        <label>Apleona</label>
+    </customValue>
+    <customValue>
+        <fullName>Aramark</fullName>
+        <default>false</default>
+        <label>Aramark</label>
+    </customValue>
+    <customValue>
+        <fullName>Arcus Solutions</fullName>
+        <default>false</default>
+        <label>Arcus Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Artic Building Services</fullName>
+        <default>false</default>
+        <label>Artic Building Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Artizian</fullName>
+        <default>false</default>
+        <label>Artizian</label>
+    </customValue>
+    <customValue>
+        <fullName>Axis Group</fullName>
+        <default>false</default>
+        <label>Axis Group</label>
+    </customValue>
+    <customValue>
+        <fullName>BAM FM</fullName>
+        <default>false</default>
+        <label>BAM FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Bartlett Mitchell</fullName>
+        <default>false</default>
+        <label>Bartlett Mitchell</label>
+    </customValue>
+    <customValue>
+        <fullName>Baxter Storey</fullName>
+        <default>false</default>
+        <label>Baxter Storey</label>
+    </customValue>
+    <customValue>
+        <fullName>Bellrock</fullName>
+        <default>false</default>
+        <label>Bellrock</label>
+    </customValue>
+    <customValue>
+        <fullName>Benugo</fullName>
+        <default>false</default>
+        <label>Benugo</label>
+    </customValue>
+    <customValue>
+        <fullName>Bidvest</fullName>
+        <default>false</default>
+        <label>Bidvest</label>
+    </customValue>
+    <customValue>
+        <fullName>Blue Apple</fullName>
+        <default>false</default>
+        <label>Blue Apple</label>
+    </customValue>
+    <customValue>
+        <fullName>Bouygues Energies &amp; Services</fullName>
+        <default>false</default>
+        <label>Bouygues Energies &amp; Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Britsafe</fullName>
+        <default>false</default>
+        <label>Britsafe</label>
+    </customValue>
+    <customValue>
+        <fullName>Carlisle</fullName>
+        <default>false</default>
+        <label>Carlisle</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Partnership</fullName>
+        <default>false</default>
+        <label>Catering Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>Caterlink</fullName>
+        <default>false</default>
+        <label>Caterlink</label>
+    </customValue>
+    <customValue>
+        <fullName>Catermasters</fullName>
+        <default>false</default>
+        <label>Catermasters</label>
+    </customValue>
+    <customValue>
+        <fullName>Caterplus</fullName>
+        <default>false</default>
+        <label>Caterplus</label>
+    </customValue>
+    <customValue>
+        <fullName>Celtic</fullName>
+        <default>false</default>
+        <label>Celtic</label>
+    </customValue>
+    <customValue>
+        <fullName>Centerplate</fullName>
+        <default>false</default>
+        <label>Centerplate</label>
+    </customValue>
+    <customValue>
+        <fullName>CFG</fullName>
+        <default>false</default>
+        <label>CFG</label>
+    </customValue>
+    <customValue>
+        <fullName>CH&amp;Co</fullName>
+        <default>false</default>
+        <label>CH&amp;Co</label>
+    </customValue>
+    <customValue>
+        <fullName>Charlton House</fullName>
+        <default>false</default>
+        <label>Charlton House</label>
+    </customValue>
+    <customValue>
+        <fullName>Chartwells</fullName>
+        <default>false</default>
+        <label>Chartwells</label>
+    </customValue>
+    <customValue>
+        <fullName>Churchill Services</fullName>
+        <default>false</default>
+        <label>Churchill Services</label>
+    </customValue>
+    <customValue>
+        <fullName>CIS Security</fullName>
+        <default>false</default>
+        <label>CIS Security</label>
+    </customValue>
+    <customValue>
+        <fullName>City FM</fullName>
+        <default>false</default>
+        <label>City FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud FM</fullName>
+        <default>false</default>
+        <label>Cloud FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Compass Group</fullName>
+        <default>false</default>
+        <label>Compass Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Connect</fullName>
+        <default>false</default>
+        <label>Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Constant</fullName>
+        <default>false</default>
+        <label>Constant</label>
+    </customValue>
+    <customValue>
+        <fullName>Cordant Services</fullName>
+        <default>false</default>
+        <label>Cordant Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Corps Security</fullName>
+        <default>false</default>
+        <label>Corps Security</label>
+    </customValue>
+    <customValue>
+        <fullName>CSG</fullName>
+        <default>false</default>
+        <label>CSG</label>
+    </customValue>
+    <customValue>
+        <fullName>Cube</fullName>
+        <default>false</default>
+        <label>Cube</label>
+    </customValue>
+    <customValue>
+        <fullName>Derwent FM</fullName>
+        <default>false</default>
+        <label>Derwent FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Dine</fullName>
+        <default>false</default>
+        <label>Dine</label>
+    </customValue>
+    <customValue>
+        <fullName>Directors Table</fullName>
+        <default>false</default>
+        <label>Directors Table</label>
+    </customValue>
+    <customValue>
+        <fullName>Duchy</fullName>
+        <default>false</default>
+        <label>Duchy</label>
+    </customValue>
+    <customValue>
+        <fullName>Ecolab</fullName>
+        <default>false</default>
+        <label>Ecolab</label>
+    </customValue>
+    <customValue>
+        <fullName>Edwards &amp; Blake</fullName>
+        <default>false</default>
+        <label>Edwards &amp; Blake</label>
+    </customValue>
+    <customValue>
+        <fullName>Elior UK</fullName>
+        <default>false</default>
+        <label>Elior UK</label>
+    </customValue>
+    <customValue>
+        <fullName>EMCOR UK</fullName>
+        <default>false</default>
+        <label>EMCOR UK</label>
+    </customValue>
+    <customValue>
+        <fullName>Emprise</fullName>
+        <default>false</default>
+        <label>Emprise</label>
+    </customValue>
+    <customValue>
+        <fullName>Enforce (Excellerate)</fullName>
+        <default>false</default>
+        <label>Enforce (Excellerate)</label>
+    </customValue>
+    <customValue>
+        <fullName>ENGIE</fullName>
+        <default>false</default>
+        <label>ENGIE</label>
+    </customValue>
+    <customValue>
+        <fullName>Eurest</fullName>
+        <default>false</default>
+        <label>Eurest</label>
+    </customValue>
+    <customValue>
+        <fullName>Facilicom</fullName>
+        <default>false</default>
+        <label>Facilicom</label>
+    </customValue>
+    <customValue>
+        <fullName>FES FM</fullName>
+        <default>false</default>
+        <label>FES FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Fidelity/ADT</fullName>
+        <default>false</default>
+        <label>Fidelity/ADT</label>
+    </customValue>
+    <customValue>
+        <fullName>Four Seasons</fullName>
+        <default>false</default>
+        <label>Four Seasons</label>
+    </customValue>
+    <customValue>
+        <fullName>G4S</fullName>
+        <default>false</default>
+        <label>G4S</label>
+    </customValue>
+    <customValue>
+        <fullName>Gather and Gather</fullName>
+        <default>false</default>
+        <label>Gather and Gather</label>
+    </customValue>
+    <customValue>
+        <fullName>Genuine Dining Company</fullName>
+        <default>false</default>
+        <label>Genuine Dining Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Graham Asset Management</fullName>
+        <default>false</default>
+        <label>Graham Asset Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Graysons</fullName>
+        <default>false</default>
+        <label>Graysons</label>
+    </customValue>
+    <customValue>
+        <fullName>Guarding UK</fullName>
+        <default>false</default>
+        <label>Guarding UK</label>
+    </customValue>
+    <customValue>
+        <fullName>Hallmark</fullName>
+        <default>false</default>
+        <label>Hallmark</label>
+    </customValue>
+    <customValue>
+        <fullName>Harbour &amp; Jones</fullName>
+        <default>false</default>
+        <label>Harbour &amp; Jones</label>
+    </customValue>
+    <customValue>
+        <fullName>Harrisons</fullName>
+        <default>false</default>
+        <label>Harrisons</label>
+    </customValue>
+    <customValue>
+        <fullName>Holroyd Howe</fullName>
+        <default>false</default>
+        <label>Holroyd Howe</label>
+    </customValue>
+    <customValue>
+        <fullName>Host</fullName>
+        <default>false</default>
+        <label>Host</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotel care solutions</fullName>
+        <default>false</default>
+        <label>Hotel care solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Hudsons</fullName>
+        <default>false</default>
+        <label>Hudsons</label>
+    </customValue>
+    <customValue>
+        <fullName>Hutchisons</fullName>
+        <default>false</default>
+        <label>Hutchisons</label>
+    </customValue>
+    <customValue>
+        <fullName>Imtech Inviron</fullName>
+        <default>false</default>
+        <label>Imtech Inviron</label>
+    </customValue>
+    <customValue>
+        <fullName>Imvula</fullName>
+        <default>false</default>
+        <label>Imvula</label>
+    </customValue>
+    <customValue>
+        <fullName>Incentive FM</fullName>
+        <default>false</default>
+        <label>Incentive FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Inhouse</fullName>
+        <default>false</default>
+        <label>Inhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial</fullName>
+        <default>false</default>
+        <label>Initial</label>
+    </customValue>
+    <customValue>
+        <fullName>Integral</fullName>
+        <default>false</default>
+        <label>Integral</label>
+    </customValue>
+    <customValue>
+        <fullName>Interserve</fullName>
+        <default>false</default>
+        <label>Interserve</label>
+    </customValue>
+    <customValue>
+        <fullName>ISS</fullName>
+        <default>false</default>
+        <label>ISS</label>
+    </customValue>
+    <customValue>
+        <fullName>Jaguar</fullName>
+        <default>false</default>
+        <label>Jaguar</label>
+    </customValue>
+    <customValue>
+        <fullName>JLL</fullName>
+        <default>false</default>
+        <label>JLL</label>
+    </customValue>
+    <customValue>
+        <fullName>Kier FM</fullName>
+        <default>false</default>
+        <label>Kier FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Kingdom</fullName>
+        <default>false</default>
+        <label>Kingdom</label>
+    </customValue>
+    <customValue>
+        <fullName>Leitch Landscapes</fullName>
+        <default>false</default>
+        <label>Leitch Landscapes</label>
+    </customValue>
+    <customValue>
+        <fullName>Levy Restaurants</fullName>
+        <default>false</default>
+        <label>Levy Restaurants</label>
+    </customValue>
+    <customValue>
+        <fullName>Lexington</fullName>
+        <default>false</default>
+        <label>Lexington</label>
+    </customValue>
+    <customValue>
+        <fullName>Life landscapes</fullName>
+        <default>false</default>
+        <label>Life landscapes</label>
+    </customValue>
+    <customValue>
+        <fullName>Local</fullName>
+        <default>false</default>
+        <label>Local</label>
+    </customValue>
+    <customValue>
+        <fullName>Macro</fullName>
+        <default>false</default>
+        <label>Macro</label>
+    </customValue>
+    <customValue>
+        <fullName>Majestic</fullName>
+        <default>false</default>
+        <label>Majestic</label>
+    </customValue>
+    <customValue>
+        <fullName>Mellors</fullName>
+        <default>false</default>
+        <label>Mellors</label>
+    </customValue>
+    <customValue>
+        <fullName>Midshires</fullName>
+        <default>false</default>
+        <label>Midshires</label>
+    </customValue>
+    <customValue>
+        <fullName>Mitie</fullName>
+        <default>false</default>
+        <label>Mitie</label>
+    </customValue>
+    <customValue>
+        <fullName>Nationwide</fullName>
+        <default>false</default>
+        <label>Nationwide</label>
+    </customValue>
+    <customValue>
+        <fullName>New Build</fullName>
+        <default>false</default>
+        <label>New Build</label>
+    </customValue>
+    <customValue>
+        <fullName>NG Bailey Facilities Services</fullName>
+        <default>false</default>
+        <label>NG Bailey Facilities Services</label>
+    </customValue>
+    <customValue>
+        <fullName>No Facilities</fullName>
+        <default>false</default>
+        <label>No Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Noonan</fullName>
+        <default>false</default>
+        <label>Noonan</label>
+    </customValue>
+    <customValue>
+        <fullName>Norse Group</fullName>
+        <default>false</default>
+        <label>Norse Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Northern Security</fullName>
+        <default>false</default>
+        <label>Northern Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Ocean</fullName>
+        <default>false</default>
+        <label>Ocean</label>
+    </customValue>
+    <customValue>
+        <fullName>OCS</fullName>
+        <default>false</default>
+        <label>OCS</label>
+    </customValue>
+    <customValue>
+        <fullName>Office &amp; General</fullName>
+        <default>false</default>
+        <label>Office &amp; General</label>
+    </customValue>
+    <customValue>
+        <fullName>Olive</fullName>
+        <default>false</default>
+        <label>Olive</label>
+    </customValue>
+    <customValue>
+        <fullName>Omega</fullName>
+        <default>false</default>
+        <label>Omega</label>
+    </customValue>
+    <customValue>
+        <fullName>Omini Facilities</fullName>
+        <default>false</default>
+        <label>Omini Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Optima</fullName>
+        <default>false</default>
+        <label>Optima</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Supplier</fullName>
+        <default>false</default>
+        <label>Other Supplier</label>
+    </customValue>
+    <customValue>
+        <fullName>P&amp;A Catering</fullName>
+        <default>false</default>
+        <label>P&amp;A Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Pabulum</fullName>
+        <default>false</default>
+        <label>Pabulum</label>
+    </customValue>
+    <customValue>
+        <fullName>PHS Group</fullName>
+        <default>false</default>
+        <label>PHS Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Profile Security</fullName>
+        <default>false</default>
+        <label>Profile Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Proserve</fullName>
+        <default>false</default>
+        <label>Proserve</label>
+    </customValue>
+    <customValue>
+        <fullName>Quadrant</fullName>
+        <default>false</default>
+        <label>Quadrant</label>
+    </customValue>
+    <customValue>
+        <fullName>Quartett</fullName>
+        <default>false</default>
+        <label>Quartett</label>
+    </customValue>
+    <customValue>
+        <fullName>QW Security</fullName>
+        <default>false</default>
+        <label>QW Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Radish</fullName>
+        <default>false</default>
+        <label>Radish</label>
+    </customValue>
+    <customValue>
+        <fullName>Red Alert</fullName>
+        <default>false</default>
+        <label>Red Alert</label>
+    </customValue>
+    <customValue>
+        <fullName>Rentokil Initial</fullName>
+        <default>false</default>
+        <label>Rentokil Initial</label>
+    </customValue>
+    <customValue>
+        <fullName>Restaurant Associates</fullName>
+        <default>false</default>
+        <label>Restaurant Associates</label>
+    </customValue>
+    <customValue>
+        <fullName>Robertson FM</fullName>
+        <default>false</default>
+        <label>Robertson FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Safeguard</fullName>
+        <default>false</default>
+        <label>Safeguard</label>
+    </customValue>
+    <customValue>
+        <fullName>Sanitech</fullName>
+        <default>false</default>
+        <label>Sanitech</label>
+    </customValue>
+    <customValue>
+        <fullName>Scholarest</fullName>
+        <default>false</default>
+        <label>Scholarest</label>
+    </customValue>
+    <customValue>
+        <fullName>Securitas</fullName>
+        <default>false</default>
+        <label>Securitas</label>
+    </customValue>
+    <customValue>
+        <fullName>Serco</fullName>
+        <default>false</default>
+        <label>Serco</label>
+    </customValue>
+    <customValue>
+        <fullName>Servest Group</fullName>
+        <default>false</default>
+        <label>Servest Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Shield Guarding Comapny</fullName>
+        <default>false</default>
+        <label>Shield Guarding Comapny</label>
+    </customValue>
+    <customValue>
+        <fullName>Sodexo</fullName>
+        <default>false</default>
+        <label>Sodexo</label>
+    </customValue>
+    <customValue>
+        <fullName>Southern Turf Management</fullName>
+        <default>false</default>
+        <label>Southern Turf Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Sovereign</fullName>
+        <default>false</default>
+        <label>Sovereign</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialist Pest</fullName>
+        <default>false</default>
+        <label>Specialist Pest</label>
+    </customValue>
+    <customValue>
+        <fullName>SPIE Facilities Services</fullName>
+        <default>false</default>
+        <label>SPIE Facilities Services</label>
+    </customValue>
+    <customValue>
+        <fullName>SRG</fullName>
+        <default>false</default>
+        <label>SRG</label>
+    </customValue>
+    <customValue>
+        <fullName>Stallion</fullName>
+        <default>false</default>
+        <label>Stallion</label>
+    </customValue>
+    <customValue>
+        <fullName>Supercare</fullName>
+        <default>false</default>
+        <label>Supercare</label>
+    </customValue>
+    <customValue>
+        <fullName>Superclean</fullName>
+        <default>false</default>
+        <label>Superclean</label>
+    </customValue>
+    <customValue>
+        <fullName>Talkington Bates</fullName>
+        <default>false</default>
+        <label>Talkington Bates</label>
+    </customValue>
+    <customValue>
+        <fullName>Taylor Shaw</fullName>
+        <default>false</default>
+        <label>Taylor Shaw</label>
+    </customValue>
+    <customValue>
+        <fullName>TC Facilities Management</fullName>
+        <default>false</default>
+        <label>TC Facilities Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Tenon FM</fullName>
+        <default>false</default>
+        <label>Tenon FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Thomas Frank</fullName>
+        <default>false</default>
+        <label>Thomas Frank</label>
+    </customValue>
+    <customValue>
+        <fullName>Thorburn (Tsebo)</fullName>
+        <default>false</default>
+        <label>Thorburn (Tsebo)</label>
+    </customValue>
+    <customValue>
+        <fullName>TNS</fullName>
+        <default>false</default>
+        <label>TNS</label>
+    </customValue>
+    <customValue>
+        <fullName>Trios Group</fullName>
+        <default>false</default>
+        <label>Trios Group</label>
+    </customValue>
+    <customValue>
+        <fullName>TSS Facilities</fullName>
+        <default>false</default>
+        <label>TSS Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Ultimate</fullName>
+        <default>false</default>
+        <label>Ultimate</label>
+    </customValue>
+    <customValue>
+        <fullName>Unique</fullName>
+        <default>false</default>
+        <label>Unique</label>
+    </customValue>
+    <customValue>
+        <fullName>Vacherin</fullName>
+        <default>false</default>
+        <label>Vacherin</label>
+    </customValue>
+    <customValue>
+        <fullName>Vending</fullName>
+        <default>false</default>
+        <label>Vending</label>
+    </customValue>
+    <customValue>
+        <fullName>Vinci Facilities</fullName>
+        <default>false</default>
+        <label>Vinci Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Vision</fullName>
+        <default>false</default>
+        <label>Vision</label>
+    </customValue>
+    <customValue>
+        <fullName>VSG</fullName>
+        <default>false</default>
+        <label>VSG</label>
+    </customValue>
+    <customValue>
+        <fullName>WGC Ltd</fullName>
+        <default>false</default>
+        <label>WGC Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Wilson James</fullName>
+        <default>false</default>
+        <label>Wilson James</label>
+    </customValue>
+    <customValue>
+        <fullName>Wilson Vale</fullName>
+        <default>false</default>
+        <label>Wilson Vale</label>
+    </customValue>
+    <customValue>
+        <fullName>Zest</fullName>
+        <default>false</default>
+        <label>Zest</label>
+    </customValue>
+    <description>List of Incumbents.</description>
+    <masterLabel>Incumbent</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

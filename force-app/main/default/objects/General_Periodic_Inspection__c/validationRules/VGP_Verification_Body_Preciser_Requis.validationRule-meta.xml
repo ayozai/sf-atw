@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VGP_Verification_Body_Preciser_Requis</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(VGP_Verification_Body__c, &quot;Autre&quot;),
+  ISBLANK(VGP_Verification_Body_Precision__c)
+)</errorConditionFormula>
+    <errorMessage>Merci de préciser l&apos;organisme de vérification</errorMessage>
+</ValidationRule>

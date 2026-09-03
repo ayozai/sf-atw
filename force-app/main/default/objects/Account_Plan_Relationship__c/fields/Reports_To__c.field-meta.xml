@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reports_To__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is the second lookup to contact to link the AP contact&apos;s manager.</description>
+    <label>Reports To</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Account Plan Relationships (Reports To)</relationshipLabel>
+    <relationshipName>Account_Plan_Relationships1</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

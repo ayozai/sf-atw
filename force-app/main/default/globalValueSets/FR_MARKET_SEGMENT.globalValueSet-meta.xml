@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Food Industry</fullName>
+        <default>false</default>
+        <label>Food Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Industries</fullName>
+        <default>false</default>
+        <label>Other Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>Shopping Centers</fullName>
+        <default>false</default>
+        <label>Shopping Centers</label>
+    </customValue>
+    <customValue>
+        <fullName>Leisure Facilities</fullName>
+        <default>false</default>
+        <label>Leisure Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Schools</fullName>
+        <default>false</default>
+        <label>Schools</label>
+    </customValue>
+    <customValue>
+        <fullName>Large Food Retail Stores</fullName>
+        <default>false</default>
+        <label>Large Food Retail Stores</label>
+    </customValue>
+    <customValue>
+        <fullName>Large Non-Food Retail Stores</fullName>
+        <default>false</default>
+        <label>Large Non-Food Retail Stores</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospitals</fullName>
+        <default>false</default>
+        <label>Hospitals</label>
+    </customValue>
+    <customValue>
+        <fullName>Retirement Homes</fullName>
+        <default>false</default>
+        <label>Retirement Homes</label>
+    </customValue>
+    <customValue>
+        <fullName>Common Areas of Buildings</fullName>
+        <default>false</default>
+        <label>Common Areas of Buildings</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive Sector</fullName>
+        <default>false</default>
+        <label>Automotive Sector</label>
+    </customValue>
+    <customValue>
+        <fullName>Tertiary Sector</fullName>
+        <default>false</default>
+        <label>Tertiary Sector</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Ultra-Clean Environment</fullName>
+        <default>false</default>
+        <label>Ultra-Clean Environment</label>
+    </customValue>
+    <customValue>
+        <fullName>Ultra-propreté</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ultra-propreté</label>
+    </customValue>
+    <customValue>
+        <fullName>Transports</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Transports</label>
+    </customValue>
+    <customValue>
+        <fullName>Secteur tertiaire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Secteur tertiaire</label>
+    </customValue>
+    <customValue>
+        <fullName>Secteur automobile</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Secteur automobile</label>
+    </customValue>
+    <customValue>
+        <fullName>Parties communes d&apos;immeubles</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Parties communes d&apos;immeubles</label>
+    </customValue>
+    <customValue>
+        <fullName>Maisons de retraite</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Maisons de retraite</label>
+    </customValue>
+    <customValue>
+        <fullName>Hôpitaux</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hôpitaux</label>
+    </customValue>
+    <customValue>
+        <fullName>Grandes surfaces non alimentaires</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Grandes surfaces non alimentaires</label>
+    </customValue>
+    <customValue>
+        <fullName>Grandes surfaces alimentaires</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Grandes surfaces alimentaires</label>
+    </customValue>
+    <customValue>
+        <fullName>Etablissements scolaires</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Etablissements scolaires</label>
+    </customValue>
+    <customValue>
+        <fullName>Etablissements de loisirs</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Etablissements de loisirs</label>
+    </customValue>
+    <customValue>
+        <fullName>Centres commerciaux</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Centres commerciaux</label>
+    </customValue>
+    <customValue>
+        <fullName>Autres industries</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Autres industries</label>
+    </customValue>
+    <customValue>
+        <fullName>Agro-alimentaire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Agro-alimentaire</label>
+    </customValue>
+    <masterLabel>FR MARKET SEGMENT</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

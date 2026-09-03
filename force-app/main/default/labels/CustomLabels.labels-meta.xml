@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Bid_Support_Request_Email_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bid Support Request Email Id</shortDescription>
+        <value>00XD0000001ZlbD</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Category_Script_Template</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Category Script Template</shortDescription>
+        <value>Thanks ! Can you please provide the main category ?</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Details_Template</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Details Template</shortDescription>
+        <value>Your case has been created. We will come back to you as soon as possible. Do you want to add an attachment to the case ?</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Site_Script_Template</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Site Script Template</shortDescription>
+        <value>Hello {!$User.FirstName}, can you please provide the site ? Please enter the first letters of the site name.</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_Type_Script_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case Type Script Template</shortDescription>
+        <value>Hello {!$User.FirstName}, can you please provide the type of the request ?</value>
+    </labels>
+    <labels>
+        <fullName>Community_Case_User_Information_Script_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Case User Information Script Template</shortDescription>
+        <value>Please provide your details :</value>
+    </labels>
+    <labels>
+        <fullName>Community_Subcat_Script_Template</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Subcat Script Template</shortDescription>
+        <value>Can you provide the subcategory for the category {!Domains.value} ?</value>
+    </labels>
+    <labels>
+        <fullName>Communty_Case_Final_Script_Template</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Communty Case Final Script Template</shortDescription>
+        <value>Thanks {!$User.FirstName}. You are almost done. Can you please provide the last information about location, description and priority of the case ?</value>
+    </labels>
+    <labels>
+        <fullName>Confirmation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirmation</shortDescription>
+        <value>Thank you!
+
+Your order is confirmed ﻿and the order form has been received.
+
+Our team will now process your request.</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Contract_Revenue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Contract Revenue</shortDescription>
+        <value>Customer Contract Revenue</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Service_France_Queue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Service France Queue</shortDescription>
+        <value>00G4G000005wFENUA2</value>
+    </labels>
+    <labels>
+        <fullName>Dead_Lead_Queue_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dead Lead Queue Id</shortDescription>
+        <value>00GD0000001dLFg</value>
+    </labels>
+    <labels>
+        <fullName>Experience_Cloud_Base_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Experience_Cloud_Base_URL</shortDescription>
+        <value>https://one.atalian.com</value>
+    </labels>
+    <labels>
+        <fullName>Instance_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Instance URL</shortDescription>
+        <value>https://cs83.salesforce.com/</value>
+    </labels>
+    <labels>
+        <fullName>Lightning_Base_URL</fullName>
+        <categories>URL de base de l&apos;org Salesforce Lightning (à mettre à jour par environnement)</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lightning_Base_URL interne</shortDescription>
+        <value>https://atalianworld.lightning.force.com</value>
+    </labels>
+    <labels>
+        <fullName>Market_Flow_Trigger_Error_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Market Flow Trigger Error Msg</shortDescription>
+        <value>You are not allowed to delete this record</value>
+    </labels>
+    <labels>
+        <fullName>New_Line</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Line</shortDescription>
+        <value>-
+-</value>
+    </labels>
+    <labels>
+        <fullName>Nurture_Lead_Queue_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nurture Lead Queue Id</shortDescription>
+        <value>00GD0000001dLFh</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Email_Subject_Add</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Email subject - member added (use String.format with opp name)</shortDescription>
+        <value>You have been added to the Opportunity Team: {0}</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Email_Subject_Role</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Email subject - role updated (use String.format with opp name)</shortDescription>
+        <value>Your role on Opportunity {0} has been updated</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Error_AlreadyMember</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Error - User already a team member</shortDescription>
+        <value>This user is already a member of the Opportunity Team.</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Error_NotFound</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Error - Team member record not found</shortDescription>
+        <value>The specified team member record was not found.</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Error_NotTeamMemberEdit</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Error - Caller is not a team member with Edit access</shortDescription>
+        <value>You must be an Opportunity Team Member with Edit (Read/Write) access to perform this action.</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Error_UserInactive</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Error - Target user is inactive</shortDescription>
+        <value>The selected user is inactive and cannot be added to the team.</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Label_Access</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Label - Access level field</shortDescription>
+        <value>Access Level</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Label_AccessValue</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Label - Fixed access value displayed to user</shortDescription>
+        <value>Read/Write (fixed)</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Label_NoMembers</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Label - Empty state for member list</shortDescription>
+        <value>No team members found.</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Label_Role</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Label - Role field</shortDescription>
+        <value>Role</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Label_User</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Label - User lookup field</shortDescription>
+        <value>User</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Success_Add</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Success - Member added</shortDescription>
+        <value>Team member added successfully.</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Success_Role</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Success - Role updated</shortDescription>
+        <value>Role updated successfully.</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Tab_AddMember</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Tab - Add member tab label</shortDescription>
+        <value>Add Member</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Tab_CurrentMembers</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Tab - Current members tab label</shortDescription>
+        <value>Current Members</value>
+    </labels>
+    <labels>
+        <fullName>OTM_Title</fullName>
+        <categories>OppTeamSelfService</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OTM Title - Modal title</shortDescription>
+        <value>Manage Opportunity Team</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Close_Without_Contact_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Close Without Contact Error</shortDescription>
+        <value>Please specify a Contact Role before closing the Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Ponumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ask for Po number</shortDescription>
+        <value>Please enter the purchase order number and the document (PDF only)</value>
+    </labels>
+    <labels>
+        <fullName>Telemarketing_Campaign_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Telemarketing Campaign Id</shortDescription>
+        <value>701D0000000hxQD</value>
+    </labels>
+    <labels>
+        <fullName>cancelProposal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PS111_cancelProposal</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>createProposal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PS111_createProposal</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>folderAlreadyExistsLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PS111_folderAlreadyExistsLabel</shortDescription>
+        <value>A folder already exists for</value>
+    </labels>
+    <labels>
+        <fullName>folderIdLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PS111_folderIdLabel</shortDescription>
+        <value>Folder Id:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_AccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccessLevel</shortDescription>
+        <value>Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Back</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ButtonIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ButtonIsNotSupportedMessage</shortDescription>
+        <value>Following buttons are note supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ConditionLogicHelpText</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConditionLogicHelpText</shortDescription>
+        <value>Use parentheses, AND, OR, and NOT to customize the logic. For example, if you enter “(1 AND 2 AND 3) OR 4”, the flow evaluates whether the first three conditions are true or only the fourth condition is true.</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Delete</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FieldIsNotSupportedMessage</shortDescription>
+        <value>Following fields are not supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldTypeNotSuportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fsc_FieldTypeNotSuportedMessage</shortDescription>
+        <value>You provided an unsupported value for the DataTypeFilter input on Object and Field Picker. Currently the only supported value is ’picklist’</value>
+    </labels>
+    <labels>
+        <fullName>fsc_For</fullName>
+        <categories>Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>For</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Key_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Key Label</shortDescription>
+        <value>Key</value>
+    </labels>
+    <labels>
+        <fullName>fsc_LackingPermissions</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LackingPermissions</shortDescription>
+        <value>You don\&apos;t have the proper permissions for ths action</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ManagerEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ManagerEmptyMessage</shortDescription>
+        <value>&quot;Manager APEX Class&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_MultipleGroupsForRole</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultipleGroupsForRole</shortDescription>
+        <value>There are multiple groups for that role</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Name</fullName>
+        <categories>quicklinks, Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>fsc_NonePicklistValueLabel</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NonePicklistValueLabel</shortDescription>
+        <value>-- None --</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OWDReadWrite</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OWDReadWrite</shortDescription>
+        <value>Sharing Settings must be private or public read/write to enable manual sharing</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OwnerAdminModify</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OwnerAdminModify</shortDescription>
+        <value>Only the record owner or administrators can modify permissions</value>
+    </labels>
+    <labels>
+        <fullName>fsc_PublicGroups</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PublicGroups</shortDescription>
+        <value>Public Groups</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Queues</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Queues</shortDescription>
+        <value>Queues</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Read</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Read</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ReadWrite</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReadWrite</shortDescription>
+        <value>Read / Write</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Reason</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Reason</value>
+    </labels>
+    <labels>
+        <fullName>fsc_RelatedUsers</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RelatedUsers</shortDescription>
+        <value>Related Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Roles</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Roles</shortDescription>
+        <value>Roles</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Search</fullName>
+        <categories>Actions,Buttons,quicklinks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search in</shortDescription>
+        <value>Search in</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SearchFor</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SearchFor</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SetAccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SetAccessLevel</shortDescription>
+        <value>Set Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedAddCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedAddCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Add Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedButtonsEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedButtonsEmptyMessage</shortDescription>
+        <value>&quot;Supported Buttons&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedEditCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedEditCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Edit Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_TooManyResultsMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TooManyResultsMessage</shortDescription>
+        <value>Your search found more than 200 results.  Keep typing to make it more specific</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Type</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>fsc_UserOrGroup</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserOrGroup</shortDescription>
+        <value>User Or Group</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Users</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Value_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Value Label</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>loadingLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PS111_loadingLabel</shortDescription>
+        <value>Loading</value>
+    </labels>
+    <labels>
+        <fullName>pleaseSelectGroupOppLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PS111_pleaseSelectGroupOppLabel</shortDescription>
+        <value>Please select a group for this Opportunity:</value>
+    </labels>
+    <labels>
+        <fullName>proposalStudioTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PS111_proposalStudioTitle</shortDescription>
+        <value>Create Proposal with PS111</value>
+    </labels>
+    <labels>
+        <fullName>sremailNoSearchResultsMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoSearchResultsMessage</shortDescription>
+        <value>No results found</value>
+    </labels>
+    <labels>
+        <fullName>sremailSearchMembers</fullName>
+        <categories>Actions,Buttons,quicklinks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search existing Flow resources</shortDescription>
+        <value>Search existing Flow resources</value>
+    </labels>
+</CustomLabels>

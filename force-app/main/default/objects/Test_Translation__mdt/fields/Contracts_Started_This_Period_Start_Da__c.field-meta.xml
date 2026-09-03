@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contracts_Started_This_Period_Start_Da__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Contracts Started This Period - Start Da</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contracts Started This Period - Start Date</fullName>
+                <default>true</default>
+                <label>Contracts Started This Period - Start Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

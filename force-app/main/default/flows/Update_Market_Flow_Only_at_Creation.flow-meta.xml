@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Accounting_System_Site_is_Set</name>
+        <label>Accounting System Site is Set</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Operations_Site__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Agency</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>CreatedDateWeekday</name>
+        <dataType>Number</dataType>
+        <expression>MOD( DATEVALUE({!$Record.CreatedDate})- DATE(1900, 1, 7), 7)+1</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>CreatedDateWeekNumber</name>
+        <dataType>Number</dataType>
+        <expression>FLOOR((DATEVALUE({!$Record.CreatedDate})- DATE( {!CreatedDateWeekYear},1,1) +
+MOD(
+(MOD( DATE({!CreatedDateWeekYear},1,1) - DATE(1900, 1, 7), 7)+1)
++1,7)-3) / 7 + 1)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>CreatedDateWeekString</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!CreatedDateWeekYear}) + &quot;-&quot; + IF({!CreatedDateWeekNumber}&lt;10,&quot;0&quot;,&quot;&quot;) + TEXT({!CreatedDateWeekNumber})</expression>
+    </formulas>
+    <formulas>
+        <name>CreatedDateWeekYear</name>
+        <dataType>Number</dataType>
+        <expression>YEAR(DATEVALUE({!$Record.CreatedDate})+ (MOD(8- {!CreatedDateWeekday} ,7)-3))</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>CreatedWeekNumberOLD</name>
+        <dataType>Number</dataType>
+        <expression>FLOOR((DATEVALUE({!$Record.CreatedDate}) - DATE( YEAR(DATEVALUE({!$Record.CreatedDate})),1,1) + MOD(DATE(YEAR(DATEVALUE({!$Record.CreatedDate})),1,1) - DATE(1900, 1, 7), 7))/7+1)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Update Market Flow Only at Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Market Flow Only at Creation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Agency</name>
+        <label>Set Agency</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Agency__c</field>
+            <value>
+                <elementReference>$Record.Operations_Site__r.Agency__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Market_Flow__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Market_Flow_Record</name>
+        <label>Update Market Flow Record</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <connector>
+            <targetReference>Accounting_System_Site_is_Set</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Created_Week_Number_2__c</field>
+            <value>
+                <elementReference>CreatedDateWeekString</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Market_Flow__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Market_Flow_Record</targetReference>
+        </connector>
+        <object>Market_Flow__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

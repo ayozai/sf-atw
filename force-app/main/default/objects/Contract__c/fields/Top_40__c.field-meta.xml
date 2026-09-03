@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_40__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is used to mark the contract as part of the top 40 dataset. Group initiative to start the retention process inside Salesforce with the top 40 contracts, by service line across the Group.</description>
+    <label>Top 40</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wins_Vs_FY_Target_Award_Date__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Wins Vs FY Target - Award Date</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wins Vs FY Target - Award Date</fullName>
+                <default>true</default>
+                <label>Wins Vs FY Target - Award Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

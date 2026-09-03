@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Enabled__c</fullName>
+    <label>Inspection Enabled</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Inactive - Closed site</fullName>
+                <default>false</default>
+                <label>Inactive - Closed site</label>
+            </value>
+            <value>
+                <fullName>Inactive - Written confirmation from the client</fullName>
+                <default>false</default>
+                <label>Inactive - Written confirmation from the client</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

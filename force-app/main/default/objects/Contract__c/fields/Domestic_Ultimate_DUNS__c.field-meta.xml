@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Domestic_Ultimate_DUNS__c</fullName>
+    <description>This is the Account&apos;s Domestic Ultimate DUNS.</description>
+    <externalId>false</externalId>
+    <formula>Account__r.Domestic_Ultimate_D_U_N_S__c</formula>
+    <label>Domestic Ultimate DUNS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

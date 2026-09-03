@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason_FR__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Case Reason FR</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A titre conservatoire</fullName>
+                <default>true</default>
+                <label>A titre conservatoire</label>
+            </value>
+            <value>
+                <fullName>Personnel Atalian</fullName>
+                <default>false</default>
+                <label>Personnel Atalian</label>
+            </value>
+            <value>
+                <fullName>Facturation</fullName>
+                <default>false</default>
+                <label>Facturation</label>
+            </value>
+            <value>
+                <fullName>Fournitures sanitaires</fullName>
+                <default>false</default>
+                <label>Fournitures sanitaires</label>
+            </value>
+            <value>
+                <fullName>Appel d&apos;offre / Consultation à venir</fullName>
+                <default>false</default>
+                <label>Appel d&apos;offre / Consultation à venir</label>
+            </value>
+            <value>
+                <fullName>Respect du cahier des charges</fullName>
+                <default>false</default>
+                <label>Respect du cahier des charges</label>
+            </value>
+            <value>
+                <fullName>Gestion du contrat</fullName>
+                <default>false</default>
+                <label>Gestion du contrat</label>
+            </value>
+            <value>
+                <fullName>Encadrement</fullName>
+                <default>false</default>
+                <label>Encadrement</label>
+            </value>
+            <value>
+                <fullName>Déménagement</fullName>
+                <default>false</default>
+                <label>Déménagement</label>
+            </value>
+            <value>
+                <fullName>Modifications juridiques</fullName>
+                <default>false</default>
+                <label>Modifications juridiques</label>
+            </value>
+            <value>
+                <fullName>Matériel</fullName>
+                <default>false</default>
+                <label>Matériel</label>
+            </value>
+            <value>
+                <fullName>Nouveau problème</fullName>
+                <default>false</default>
+                <label>Nouveau problème</label>
+            </value>
+            <value>
+                <fullName>Sans motif</fullName>
+                <default>false</default>
+                <label>Sans motif</label>
+            </value>
+            <value>
+                <fullName>Non renouvellement</fullName>
+                <default>false</default>
+                <label>Non renouvellement</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Revalorisation des tarifs</fullName>
+                <default>false</default>
+                <label>Revalorisation des tarifs</label>
+            </value>
+            <value>
+                <fullName>Qualité des prestations</fullName>
+                <default>false</default>
+                <label>Qualité des prestations</label>
+            </value>
+            <value>
+                <fullName>Respect des consignes de sécurité</fullName>
+                <default>false</default>
+                <label>Respect des consignes de sécurité</label>
+            </value>
+            <value>
+                <fullName>Absence de prestation</fullName>
+                <default>false</default>
+                <label>Absence de prestation</label>
+            </value>
+            <value>
+                <fullName>Fermeture site</fullName>
+                <default>false</default>
+                <label>Fermeture site</label>
+            </value>
+            <value>
+                <fullName>Organisation du site</fullName>
+                <default>false</default>
+                <label>Organisation du site</label>
+            </value>
+            <value>
+                <fullName>Absence de prestation vitrerie</fullName>
+                <default>false</default>
+                <label>Absence de prestation vitrerie</label>
+            </value>
+            <value>
+                <fullName>Environnement de travail</fullName>
+                <default>false</default>
+                <label>Environnement de travail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

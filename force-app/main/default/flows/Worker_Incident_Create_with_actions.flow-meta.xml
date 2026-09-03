@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>264</locationX>
+        <locationY>815</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Loop_on_account_team</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Get_Account_Team_User.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>EmailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>User_Status</name>
+        <label>User Status</label>
+        <locationX>396</locationX>
+        <locationY>695</locationY>
+        <defaultConnector>
+            <targetReference>Loop_on_account_team</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>is inactive</defaultConnectorLabel>
+        <rules>
+            <name>is_active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account_Team_User.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email</targetReference>
+            </connector>
+            <label>is active</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Worker Incident - Create with actions {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Worker Incident - Create with actions</label>
+    <loops>
+        <name>Loop_on_account_team</name>
+        <label>Loop on account team</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <collectionReference>Get_Account_Team</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Get_Account_Team_User</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account_Team</name>
+        <label>Get Account Team</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_on_account_team</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QSHE Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Contract Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Site Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer Service Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Operational Lead</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Contract Manager Assistant</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AccountTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Account_Team_User</name>
+        <label>Get Account Team User</label>
+        <locationX>396</locationX>
+        <locationY>575</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>User_Status</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_on_account_team.UserId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Account_Team</targetReference>
+        </connector>
+        <object>Worker_Incident__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello {!Get_Account_Team_User.FirstName},
+
+A new Worker Incident for the site {!$Record.Site__r.Name} has been created with the number {!$Record.Name}.
+
+Client : {!$Record.Account__r.Name}
+Incident Date : {!$Record.Incident_Date__c}
+Primary Service : {!$Record.Primary_Service__c}
+Type : {!$Record.Type__c}
+Number of Victims : {!$Record.Number_of__c}
+
+https://atalianworld.lightning.force.com/{!$Record.Id}
+
+The Atalian QSHE Team
+--------
+Bonjour {!Get_Account_Team_User.FirstName},
+
+Un nouvel accident de travail pour le site {!$Record.Site__r.Name} a été créé avec le numéro {!$Record.Name}.
+
+Client : {!$Record.Account__r.Name}
+Date de l&apos;accident : {!$Record.Incident_Date__c}
+Service principal : {!$Record.Primary_Service__c}
+Type : {!$Record.Type__c}
+Nombre de victimes : {!$Record.Number_of__c}
+
+https://atalianworld.lightning.force.com/{!$Record.Id}
+
+L&apos;équipe QHSE Atalian</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyHTML</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Hello {!Get_Account_Team_User.FirstName},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;A new Worker Incident for the site {!$Record.Site__r.Name} has been created with the number {!$Record.Name}.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: white;&quot;&gt;Client : {!$Record.Account__r.Name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: white;&quot;&gt;Incident Date : {!$Record.Incident_Date__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: white;&quot;&gt;Primary Service &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;: {!$Record.Primary_Service__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: white;&quot;&gt;Type&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt; : {!$Record.Type__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: white;&quot;&gt;Number of Victims&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt; : {!$Record.Number_of__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://atalianworld.lightning.force.com/%7B!$Record.Id%7D&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(55, 80, 192); background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;https://atalianworld.lightning.force.com/{!$Record.Id}&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;The Atalian QSHE Team&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;--------&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Bonjour {!Get_Account_Team_User.FirstName},&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Un nouvel accident de travail pour le site {!$Record.Site__r.Name} a été créé avec le numéro {!$Record.Name}.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: white; color: rgb(0, 0, 0);&quot;&gt;Client : {!$Record.Account__r.Name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: white; color: rgb(0, 0, 0);&quot;&gt;Date de l&apos;accident : {!$Record.Incident_Date__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: white; color: rgb(0, 0, 0);&quot;&gt;Service principal &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;: {!$Record.Primary_Service__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: white; color: rgb(0, 0, 0);&quot;&gt;Type&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt; : {!$Record.Type__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: white; color: rgb(0, 0, 0);&quot;&gt;Nombre de victimes &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;: {!$Record.Number_of__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://atalianworld.lightning.force.com/%7B!$Record.Id%7D&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(55, 80, 192); background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;https://atalianworld.lightning.force.com/{!$Record.Id}&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;L&apos;équipe QHSE Atalian&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>[ONE Atalian] New worker incident / Nouvel AT {!$Record.Id} {!$Record.Site__r.Name}</text>
+    </textTemplates>
+</Flow>

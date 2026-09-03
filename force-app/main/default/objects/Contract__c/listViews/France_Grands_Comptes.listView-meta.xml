@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>France_Grands_Comptes</fullName>
+    <booleanFilter>1 AND 2 AND 4 AND (3 or 5)</booleanFilter>
+    <columns>Account__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Contract_Name__c</columns>
+    <columns>Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Contract_Start_Date__c</columns>
+    <columns>Contract_End_Date__c</columns>
+    <columns>Initial_Annual_Revenue__c</columns>
+    <columns>Initial_Gross_Margin_Percent__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Corporate_Country__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Corporate_Country__c</field>
+        <operation>equals</operation>
+        <value>France</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contract__c.Global_Standard_Contract</value>
+    </filters>
+    <filters>
+        <field>Owner_Division__c</field>
+        <operation>contains</operation>
+        <value>Grands Comptes</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,In Negotiation</value>
+    </filters>
+    <filters>
+        <field>Support_Lead_Division__c</field>
+        <operation>contains</operation>
+        <value>Grands Comptes</value>
+    </filters>
+    <label>France Grands Comptes</label>
+</ListView>

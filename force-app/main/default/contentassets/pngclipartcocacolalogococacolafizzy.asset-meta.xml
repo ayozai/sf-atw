@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>pngclipartcocacolalogococacolafizzy</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>png-clipart-coca-cola-logo-coca-cola-fizzy-drinks-diet-coke-logo-cocacola-cdr-text-thumbnail.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

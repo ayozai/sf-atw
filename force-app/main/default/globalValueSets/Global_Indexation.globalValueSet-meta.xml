@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Annual Uplift</fullName>
+        <default>false</default>
+        <label>Annual Uplift</label>
+    </customValue>
+    <customValue>
+        <fullName>Fixed Price Contract (no uplift)</fullName>
+        <default>false</default>
+        <label>Fixed Price Contract (no uplift)</label>
+    </customValue>
+    <customValue>
+        <fullName>Indexation Uplift ATALIAN</fullName>
+        <default>false</default>
+        <label>Indexation Uplift ATALIAN</label>
+    </customValue>
+    <customValue>
+        <fullName>Indexation Uplift CLIENT</fullName>
+        <default>false</default>
+        <label>Indexation Uplift CLIENT</label>
+    </customValue>
+    <customValue>
+        <fullName>Indexation Uplift</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Indexation Uplift</label>
+    </customValue>
+    <customValue>
+        <fullName>Annuelle - Formule / Indice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Annuelle - Formule / Indice</label>
+    </customValue>
+    <customValue>
+        <fullName>Annuelle - Gré à gré</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Annuelle - Gré à gré</label>
+    </customValue>
+    <masterLabel>Global Indexation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

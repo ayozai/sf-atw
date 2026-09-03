@@ -1,0 +1,2394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Sector__c</fullName>
+    <label>Sub Sector</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air</fullName>
+                <default>false</default>
+                <label>Air</label>
+            </value>
+            <value>
+                <fullName>Casinos</fullName>
+                <default>false</default>
+                <label>Casinos</label>
+            </value>
+            <value>
+                <fullName>Central Government</fullName>
+                <default>false</default>
+                <label>Central Government</label>
+            </value>
+            <value>
+                <fullName>Cleaning</fullName>
+                <default>false</default>
+                <label>Cleaning</label>
+            </value>
+            <value>
+                <fullName>Colleges</fullName>
+                <default>false</default>
+                <label>Colleges</label>
+            </value>
+            <value>
+                <fullName>Commercial buildings</fullName>
+                <default>false</default>
+                <label>Commercial buildings</label>
+            </value>
+            <value>
+                <fullName>Department Stores</fullName>
+                <default>false</default>
+                <label>Department Stores</label>
+            </value>
+            <value>
+                <fullName>Distribution</fullName>
+                <default>false</default>
+                <label>Distribution</label>
+            </value>
+            <value>
+                <fullName>Domestic Buildings</fullName>
+                <default>false</default>
+                <label>Domestic Buildings</label>
+            </value>
+            <value>
+                <fullName>Electric</fullName>
+                <default>false</default>
+                <label>Electric</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>Facilities Management</fullName>
+                <default>false</default>
+                <label>Facilities Management</label>
+            </value>
+            <value>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+                <label>Fashion</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Fire</fullName>
+                <default>false</default>
+                <label>Fire</label>
+            </value>
+            <value>
+                <fullName>Food and Drink</fullName>
+                <default>false</default>
+                <label>Food and Drink</label>
+            </value>
+            <value>
+                <fullName>Gas</fullName>
+                <default>false</default>
+                <label>Gas</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Grocery</fullName>
+                <default>false</default>
+                <label>Grocery</label>
+            </value>
+            <value>
+                <fullName>Head Office</fullName>
+                <default>false</default>
+                <label>Head Office</label>
+            </value>
+            <value>
+                <fullName>Heritage Buildings</fullName>
+                <default>false</default>
+                <label>Heritage Buildings</label>
+            </value>
+            <value>
+                <fullName>Home and Garden</fullName>
+                <default>false</default>
+                <label>Home and Garden</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Hotels</fullName>
+                <default>false</default>
+                <label>Hotels</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Land</fullName>
+                <default>false</default>
+                <label>Land</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>Law</fullName>
+                <default>false</default>
+                <label>Law</label>
+            </value>
+            <value>
+                <fullName>Local Authority</fullName>
+                <default>false</default>
+                <label>Local Authority</label>
+            </value>
+            <value>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>Managing Agents</fullName>
+                <default>false</default>
+                <label>Managing Agents</label>
+            </value>
+            <value>
+                <fullName>Mining</fullName>
+                <default>false</default>
+                <label>Mining</label>
+            </value>
+            <value>
+                <fullName>Museums and Galleries</fullName>
+                <default>false</default>
+                <label>Museums and Galleries</label>
+            </value>
+            <value>
+                <fullName>Newspapers</fullName>
+                <default>false</default>
+                <label>Newspapers</label>
+            </value>
+            <value>
+                <fullName>Nursing/Care Homes</fullName>
+                <default>false</default>
+                <label>Nursing/Care Homes</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pest Control</fullName>
+                <default>false</default>
+                <label>Pest Control</label>
+            </value>
+            <value>
+                <fullName>Petrol Station</fullName>
+                <default>false</default>
+                <label>Petrol Station</label>
+            </value>
+            <value>
+                <fullName>Pets</fullName>
+                <default>false</default>
+                <label>Pets</label>
+            </value>
+            <value>
+                <fullName>Police</fullName>
+                <default>false</default>
+                <label>Police</label>
+            </value>
+            <value>
+                <fullName>Pre-School</fullName>
+                <default>false</default>
+                <label>Pre-School</label>
+            </value>
+            <value>
+                <fullName>Primary</fullName>
+                <default>false</default>
+                <label>Primary</label>
+            </value>
+            <value>
+                <fullName>Quarrying</fullName>
+                <default>false</default>
+                <label>Quarrying</label>
+            </value>
+            <value>
+                <fullName>Radio</fullName>
+                <default>false</default>
+                <label>Radio</label>
+            </value>
+            <value>
+                <fullName>Rail</fullName>
+                <default>false</default>
+                <label>Rail</label>
+            </value>
+            <value>
+                <fullName>Restaurants</fullName>
+                <default>false</default>
+                <label>Restaurants</label>
+            </value>
+            <value>
+                <fullName>Roads</fullName>
+                <default>false</default>
+                <label>Roads</label>
+            </value>
+            <value>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+                <label>Secondary</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Sports Centres</fullName>
+                <default>false</default>
+                <label>Sports Centres</label>
+            </value>
+            <value>
+                <fullName>Taxi</fullName>
+                <default>false</default>
+                <label>Taxi</label>
+            </value>
+            <value>
+                <fullName>Theatres</fullName>
+                <default>false</default>
+                <label>Theatres</label>
+            </value>
+            <value>
+                <fullName>Theme Parks</fullName>
+                <default>false</default>
+                <label>Theme Parks</label>
+            </value>
+            <value>
+                <fullName>Toiletries &amp; Cosmetics</fullName>
+                <default>false</default>
+                <label>Toiletries &amp; Cosmetics</label>
+            </value>
+            <value>
+                <fullName>TV &amp; Film</fullName>
+                <default>false</default>
+                <label>TV &amp; Film</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <label>University</label>
+            </value>
+            <value>
+                <fullName>Vehicles</fullName>
+                <default>false</default>
+                <label>Vehicles</label>
+            </value>
+            <value>
+                <fullName>Waste Management</fullName>
+                <default>false</default>
+                <label>Waste Management</label>
+            </value>
+            <value>
+                <fullName>Water</fullName>
+                <default>false</default>
+                <label>Water</label>
+            </value>
+            <value>
+                <fullName>Wholesale</fullName>
+                <default>false</default>
+                <label>Wholesale</label>
+            </value>
+            <value>
+                <fullName>Zoos</fullName>
+                <default>false</default>
+                <label>Zoos</label>
+            </value>
+            <value>
+                <fullName>Cash Grains</fullName>
+                <default>false</default>
+                <label>Cash Grains</label>
+            </value>
+            <value>
+                <fullName>Field Crops, Except Cash Grains</fullName>
+                <default>false</default>
+                <label>Field Crops, Except Cash Grains</label>
+            </value>
+            <value>
+                <fullName>Vegetables And Melons</fullName>
+                <default>false</default>
+                <label>Vegetables And Melons</label>
+            </value>
+            <value>
+                <fullName>Fruits And Tree Nuts</fullName>
+                <default>false</default>
+                <label>Fruits And Tree Nuts</label>
+            </value>
+            <value>
+                <fullName>Horticultural Specialties</fullName>
+                <default>false</default>
+                <label>Horticultural Specialties</label>
+            </value>
+            <value>
+                <fullName>General Farms, Primarily Crop</fullName>
+                <default>false</default>
+                <label>General Farms, Primarily Crop</label>
+            </value>
+            <value>
+                <fullName>Livestock, Except Dairy And Poultry</fullName>
+                <default>false</default>
+                <label>Livestock, Except Dairy And Poultry</label>
+            </value>
+            <value>
+                <fullName>Dairy Farms</fullName>
+                <default>false</default>
+                <label>Dairy Farms</label>
+            </value>
+            <value>
+                <fullName>Poultry And Eggs</fullName>
+                <default>false</default>
+                <label>Poultry And Eggs</label>
+            </value>
+            <value>
+                <fullName>Animal Specialties</fullName>
+                <default>false</default>
+                <label>Animal Specialties</label>
+            </value>
+            <value>
+                <fullName>General Farms, Primarily Livestock And Animal Specialties</fullName>
+                <default>false</default>
+                <label>General Farms, Primarily Livestock And Animal Specialties</label>
+            </value>
+            <value>
+                <fullName>Soil Preparation Services</fullName>
+                <default>false</default>
+                <label>Soil Preparation Services</label>
+            </value>
+            <value>
+                <fullName>Crop Services</fullName>
+                <default>false</default>
+                <label>Crop Services</label>
+            </value>
+            <value>
+                <fullName>Veterinary Services</fullName>
+                <default>false</default>
+                <label>Veterinary Services</label>
+            </value>
+            <value>
+                <fullName>Animal Services, Except Veterinary</fullName>
+                <default>false</default>
+                <label>Animal Services, Except Veterinary</label>
+            </value>
+            <value>
+                <fullName>Farm Labor And Management Services</fullName>
+                <default>false</default>
+                <label>Farm Labor And Management Services</label>
+            </value>
+            <value>
+                <fullName>Landscape And Horticultural Services</fullName>
+                <default>false</default>
+                <label>Landscape And Horticultural Services</label>
+            </value>
+            <value>
+                <fullName>Timber Tracts</fullName>
+                <default>false</default>
+                <label>Timber Tracts</label>
+            </value>
+            <value>
+                <fullName>Forest Nurseries And Gathering Of Forest Products</fullName>
+                <default>false</default>
+                <label>Forest Nurseries And Gathering Of Forest Products</label>
+            </value>
+            <value>
+                <fullName>Forestry Services</fullName>
+                <default>false</default>
+                <label>Forestry Services</label>
+            </value>
+            <value>
+                <fullName>Commercial Fishing</fullName>
+                <default>false</default>
+                <label>Commercial Fishing</label>
+            </value>
+            <value>
+                <fullName>Fish Hatcheries And Preserves</fullName>
+                <default>false</default>
+                <label>Fish Hatcheries And Preserves</label>
+            </value>
+            <value>
+                <fullName>Hunting And Trapping, And Game Propagation</fullName>
+                <default>false</default>
+                <label>Hunting And Trapping, And Game Propagation</label>
+            </value>
+            <value>
+                <fullName>Iron Ores</fullName>
+                <default>false</default>
+                <label>Iron Ores</label>
+            </value>
+            <value>
+                <fullName>Copper Ores</fullName>
+                <default>false</default>
+                <label>Copper Ores</label>
+            </value>
+            <value>
+                <fullName>Lead And Zinc Ores</fullName>
+                <default>false</default>
+                <label>Lead And Zinc Ores</label>
+            </value>
+            <value>
+                <fullName>Gold And Silver Ores</fullName>
+                <default>false</default>
+                <label>Gold And Silver Ores</label>
+            </value>
+            <value>
+                <fullName>Ferroalloy Ores, Except Vanadium</fullName>
+                <default>false</default>
+                <label>Ferroalloy Ores, Except Vanadium</label>
+            </value>
+            <value>
+                <fullName>Metal Mining Services</fullName>
+                <default>false</default>
+                <label>Metal Mining Services</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Metal Ores</fullName>
+                <default>false</default>
+                <label>Miscellaneous Metal Ores</label>
+            </value>
+            <value>
+                <fullName>Bituminous Coal And Lignite Mining</fullName>
+                <default>false</default>
+                <label>Bituminous Coal And Lignite Mining</label>
+            </value>
+            <value>
+                <fullName>Anthracite Mining</fullName>
+                <default>false</default>
+                <label>Anthracite Mining</label>
+            </value>
+            <value>
+                <fullName>Coal Mining Services</fullName>
+                <default>false</default>
+                <label>Coal Mining Services</label>
+            </value>
+            <value>
+                <fullName>Crude Petroleum And Natural Gas</fullName>
+                <default>false</default>
+                <label>Crude Petroleum And Natural Gas</label>
+            </value>
+            <value>
+                <fullName>Natural Gas Liquids</fullName>
+                <default>false</default>
+                <label>Natural Gas Liquids</label>
+            </value>
+            <value>
+                <fullName>Oil And Gas Field Services</fullName>
+                <default>false</default>
+                <label>Oil And Gas Field Services</label>
+            </value>
+            <value>
+                <fullName>Dimension Stone</fullName>
+                <default>false</default>
+                <label>Dimension Stone</label>
+            </value>
+            <value>
+                <fullName>Crushed And Broken Stone, Including Riprap</fullName>
+                <default>false</default>
+                <label>Crushed And Broken Stone, Including Riprap</label>
+            </value>
+            <value>
+                <fullName>Sand And Gravel</fullName>
+                <default>false</default>
+                <label>Sand And Gravel</label>
+            </value>
+            <value>
+                <fullName>Clay, Ceramic, And Refractory Minerals</fullName>
+                <default>false</default>
+                <label>Clay, Ceramic, And Refractory Minerals</label>
+            </value>
+            <value>
+                <fullName>Chemical And Fertilizer Mineral Mining</fullName>
+                <default>false</default>
+                <label>Chemical And Fertilizer Mineral Mining</label>
+            </value>
+            <value>
+                <fullName>Nonmetallic Minerals Services, Except Fuels</fullName>
+                <default>false</default>
+                <label>Nonmetallic Minerals Services, Except Fuels</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Nonmetallic Minerals, Except Fuels</fullName>
+                <default>false</default>
+                <label>Miscellaneous Nonmetallic Minerals, Except Fuels</label>
+            </value>
+            <value>
+                <fullName>General Building Contractors-Residential Buildings</fullName>
+                <default>false</default>
+                <label>General Building Contractors-Residential Buildings</label>
+            </value>
+            <value>
+                <fullName>Operative Builders</fullName>
+                <default>false</default>
+                <label>Operative Builders</label>
+            </value>
+            <value>
+                <fullName>General Building Contractors-Nonresidential Buildings</fullName>
+                <default>false</default>
+                <label>General Building Contractors-Nonresidential Buildings</label>
+            </value>
+            <value>
+                <fullName>Highway And Street Construction, Except Elevated Highways</fullName>
+                <default>false</default>
+                <label>Highway And Street Construction, Except Elevated Highways</label>
+            </value>
+            <value>
+                <fullName>Heavy Construction, Except Highway And Street Construction</fullName>
+                <default>false</default>
+                <label>Heavy Construction, Except Highway And Street Construction</label>
+            </value>
+            <value>
+                <fullName>Plumbing, Heating And Air-Conditioning</fullName>
+                <default>false</default>
+                <label>Plumbing, Heating And Air-Conditioning</label>
+            </value>
+            <value>
+                <fullName>Painting And Paper Hanging</fullName>
+                <default>false</default>
+                <label>Painting And Paper Hanging</label>
+            </value>
+            <value>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+                <label>Electrical Work</label>
+            </value>
+            <value>
+                <fullName>Masonry, Stonework, Tile Setting, And Plastering</fullName>
+                <default>false</default>
+                <label>Masonry, Stonework, Tile Setting, And Plastering</label>
+            </value>
+            <value>
+                <fullName>Carpentry And Floor Work</fullName>
+                <default>false</default>
+                <label>Carpentry And Floor Work</label>
+            </value>
+            <value>
+                <fullName>Roofing, Siding, And Sheet Metal Work</fullName>
+                <default>false</default>
+                <label>Roofing, Siding, And Sheet Metal Work</label>
+            </value>
+            <value>
+                <fullName>Concrete Work</fullName>
+                <default>false</default>
+                <label>Concrete Work</label>
+            </value>
+            <value>
+                <fullName>Water Well Drilling</fullName>
+                <default>false</default>
+                <label>Water Well Drilling</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Special Trade Contractors</fullName>
+                <default>false</default>
+                <label>Miscellaneous Special Trade Contractors</label>
+            </value>
+            <value>
+                <fullName>Meat Products</fullName>
+                <default>false</default>
+                <label>Meat Products</label>
+            </value>
+            <value>
+                <fullName>Dairy Products</fullName>
+                <default>false</default>
+                <label>Dairy Products</label>
+            </value>
+            <value>
+                <fullName>Canned, Frozen, And Preserved Fruits, Vegetables, And Food Special</fullName>
+                <default>false</default>
+                <label>Canned, Frozen, And Preserved Fruits, Vegetables, And Food Special</label>
+            </value>
+            <value>
+                <fullName>Grain Mill Products</fullName>
+                <default>false</default>
+                <label>Grain Mill Products</label>
+            </value>
+            <value>
+                <fullName>Bakery Products</fullName>
+                <default>false</default>
+                <label>Bakery Products</label>
+            </value>
+            <value>
+                <fullName>Sugar And Confectionery Products</fullName>
+                <default>false</default>
+                <label>Sugar And Confectionery Products</label>
+            </value>
+            <value>
+                <fullName>Fats And Oils</fullName>
+                <default>false</default>
+                <label>Fats And Oils</label>
+            </value>
+            <value>
+                <fullName>Beverages</fullName>
+                <default>false</default>
+                <label>Beverages</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Food Preparations And Kindred Products</fullName>
+                <default>false</default>
+                <label>Miscellaneous Food Preparations And Kindred Products</label>
+            </value>
+            <value>
+                <fullName>Cigarettes</fullName>
+                <default>false</default>
+                <label>Cigarettes</label>
+            </value>
+            <value>
+                <fullName>Cigars</fullName>
+                <default>false</default>
+                <label>Cigars</label>
+            </value>
+            <value>
+                <fullName>Chewing And Smoking Tobacco And Snuff</fullName>
+                <default>false</default>
+                <label>Chewing And Smoking Tobacco And Snuff</label>
+            </value>
+            <value>
+                <fullName>Tobacco Stemming And Redrying</fullName>
+                <default>false</default>
+                <label>Tobacco Stemming And Redrying</label>
+            </value>
+            <value>
+                <fullName>Broadwoven Fabric Mills, Cotton</fullName>
+                <default>false</default>
+                <label>Broadwoven Fabric Mills, Cotton</label>
+            </value>
+            <value>
+                <fullName>Broadwoven Fabric Mills, Manmade Fiber And Silk</fullName>
+                <default>false</default>
+                <label>Broadwoven Fabric Mills, Manmade Fiber And Silk</label>
+            </value>
+            <value>
+                <fullName>Broadwoven Fabric Mills, Wool (Including Dyeing And Finishing)</fullName>
+                <default>false</default>
+                <label>Broadwoven Fabric Mills, Wool (Including Dyeing And Finishing)</label>
+            </value>
+            <value>
+                <fullName>Narrow Fabric And Other Smallwares Mills: Cotton, Wool, Silk</fullName>
+                <default>false</default>
+                <label>Narrow Fabric And Other Smallwares Mills: Cotton, Wool, Silk</label>
+            </value>
+            <value>
+                <fullName>Knitting Mills</fullName>
+                <default>false</default>
+                <label>Knitting Mills</label>
+            </value>
+            <value>
+                <fullName>Dyeing And Finishing Textiles, Except Wool Fabrics And Knit Goods</fullName>
+                <default>false</default>
+                <label>Dyeing And Finishing Textiles, Except Wool Fabrics And Knit Goods</label>
+            </value>
+            <value>
+                <fullName>Carpets And Rugs</fullName>
+                <default>false</default>
+                <label>Carpets And Rugs</label>
+            </value>
+            <value>
+                <fullName>Yarn And Thread Mills</fullName>
+                <default>false</default>
+                <label>Yarn And Thread Mills</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Textile Goods</fullName>
+                <default>false</default>
+                <label>Miscellaneous Textile Goods</label>
+            </value>
+            <value>
+                <fullName>Men&apos;S And Boys&apos; Suits, Coats, And Overcoats</fullName>
+                <default>false</default>
+                <label>Men&apos;S And Boys&apos; Suits, Coats, And Overcoats</label>
+            </value>
+            <value>
+                <fullName>Men&apos;S And Boys&apos; Furnishings, Work Clothing, And Allied Garments</fullName>
+                <default>false</default>
+                <label>Men&apos;S And Boys&apos; Furnishings, Work Clothing, And Allied Garments</label>
+            </value>
+            <value>
+                <fullName>Women&apos;S, Misses&apos;, And Juniors&apos; Outerwear</fullName>
+                <default>false</default>
+                <label>Women&apos;S, Misses&apos;, And Juniors&apos; Outerwear</label>
+            </value>
+            <value>
+                <fullName>Women&apos;S, Misses&apos;, Children&apos;S, And Infants&apos; Undergarments</fullName>
+                <default>false</default>
+                <label>Women&apos;S, Misses&apos;, Children&apos;S, And Infants&apos; Undergarments</label>
+            </value>
+            <value>
+                <fullName>Hats, Caps, And Millinery</fullName>
+                <default>false</default>
+                <label>Hats, Caps, And Millinery</label>
+            </value>
+            <value>
+                <fullName>Girls&apos;, Children&apos;S, And Infants&apos; Outerwear</fullName>
+                <default>false</default>
+                <label>Girls&apos;, Children&apos;S, And Infants&apos; Outerwear</label>
+            </value>
+            <value>
+                <fullName>Fur Goods</fullName>
+                <default>false</default>
+                <label>Fur Goods</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Apparel And Accessories</fullName>
+                <default>false</default>
+                <label>Miscellaneous Apparel And Accessories</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Fabricated Textile Products</fullName>
+                <default>false</default>
+                <label>Miscellaneous Fabricated Textile Products</label>
+            </value>
+            <value>
+                <fullName>Logging</fullName>
+                <default>false</default>
+                <label>Logging</label>
+            </value>
+            <value>
+                <fullName>Sawmills And Planing Mills</fullName>
+                <default>false</default>
+                <label>Sawmills And Planing Mills</label>
+            </value>
+            <value>
+                <fullName>Millwork, Veneer, Plywood, And Structural Wood Members</fullName>
+                <default>false</default>
+                <label>Millwork, Veneer, Plywood, And Structural Wood Members</label>
+            </value>
+            <value>
+                <fullName>Wood Containers</fullName>
+                <default>false</default>
+                <label>Wood Containers</label>
+            </value>
+            <value>
+                <fullName>Wood Buildings And Mobile Homes</fullName>
+                <default>false</default>
+                <label>Wood Buildings And Mobile Homes</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Wood Products</fullName>
+                <default>false</default>
+                <label>Miscellaneous Wood Products</label>
+            </value>
+            <value>
+                <fullName>Household Furniture</fullName>
+                <default>false</default>
+                <label>Household Furniture</label>
+            </value>
+            <value>
+                <fullName>Office Furniture</fullName>
+                <default>false</default>
+                <label>Office Furniture</label>
+            </value>
+            <value>
+                <fullName>Public Building And Related Furniture</fullName>
+                <default>false</default>
+                <label>Public Building And Related Furniture</label>
+            </value>
+            <value>
+                <fullName>Partitions, Shelving, Lockers, And Office And Store Fixtures</fullName>
+                <default>false</default>
+                <label>Partitions, Shelving, Lockers, And Office And Store Fixtures</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Furniture And Fixtures</fullName>
+                <default>false</default>
+                <label>Miscellaneous Furniture And Fixtures</label>
+            </value>
+            <value>
+                <fullName>Pulp Mills</fullName>
+                <default>false</default>
+                <label>Pulp Mills</label>
+            </value>
+            <value>
+                <fullName>Paper Mills</fullName>
+                <default>false</default>
+                <label>Paper Mills</label>
+            </value>
+            <value>
+                <fullName>Paperboard Mills</fullName>
+                <default>false</default>
+                <label>Paperboard Mills</label>
+            </value>
+            <value>
+                <fullName>Paperboard Containers And Boxes</fullName>
+                <default>false</default>
+                <label>Paperboard Containers And Boxes</label>
+            </value>
+            <value>
+                <fullName>Converted Paper And Paperboard Products, Except Containers And Boxes</fullName>
+                <default>false</default>
+                <label>Converted Paper And Paperboard Products, Except Containers And Boxes</label>
+            </value>
+            <value>
+                <fullName>Newspapers: Publishing, Or Publishing And Printing</fullName>
+                <default>false</default>
+                <label>Newspapers: Publishing, Or Publishing And Printing</label>
+            </value>
+            <value>
+                <fullName>Periodicals: Publishing, Or Publishing And Printing</fullName>
+                <default>false</default>
+                <label>Periodicals: Publishing, Or Publishing And Printing</label>
+            </value>
+            <value>
+                <fullName>Books</fullName>
+                <default>false</default>
+                <label>Books</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Publishing</fullName>
+                <default>false</default>
+                <label>Miscellaneous Publishing</label>
+            </value>
+            <value>
+                <fullName>Commercial Printing</fullName>
+                <default>false</default>
+                <label>Commercial Printing</label>
+            </value>
+            <value>
+                <fullName>Manifold Business Forms</fullName>
+                <default>false</default>
+                <label>Manifold Business Forms</label>
+            </value>
+            <value>
+                <fullName>Greeting Cards</fullName>
+                <default>false</default>
+                <label>Greeting Cards</label>
+            </value>
+            <value>
+                <fullName>Blankbooks, Looseleaf Binders, And Bookbinding And Related Work</fullName>
+                <default>false</default>
+                <label>Blankbooks, Looseleaf Binders, And Bookbinding And Related Work</label>
+            </value>
+            <value>
+                <fullName>Service Industries For The Printing Trade</fullName>
+                <default>false</default>
+                <label>Service Industries For The Printing Trade</label>
+            </value>
+            <value>
+                <fullName>Industrial Inorganic Chemicals</fullName>
+                <default>false</default>
+                <label>Industrial Inorganic Chemicals</label>
+            </value>
+            <value>
+                <fullName>Plastics Materials And Synthetic Resins, Synthetic Rubber, Cellulosic</fullName>
+                <default>false</default>
+                <label>Plastics Materials And Synthetic Resins, Synthetic Rubber, Cellulosic</label>
+            </value>
+            <value>
+                <fullName>Drugs</fullName>
+                <default>false</default>
+                <label>Drugs</label>
+            </value>
+            <value>
+                <fullName>Soap, Detergents, And Cleaning Preparations; Perfumes, Cosmetics</fullName>
+                <default>false</default>
+                <label>Soap, Detergents, And Cleaning Preparations; Perfumes, Cosmetics</label>
+            </value>
+            <value>
+                <fullName>Paints, Varnishes, Lacquers, Enamels, And Allied Products</fullName>
+                <default>false</default>
+                <label>Paints, Varnishes, Lacquers, Enamels, And Allied Products</label>
+            </value>
+            <value>
+                <fullName>Industrial Organic Chemicals</fullName>
+                <default>false</default>
+                <label>Industrial Organic Chemicals</label>
+            </value>
+            <value>
+                <fullName>Agricultural Chemicals</fullName>
+                <default>false</default>
+                <label>Agricultural Chemicals</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Chemical Products</fullName>
+                <default>false</default>
+                <label>Miscellaneous Chemical Products</label>
+            </value>
+            <value>
+                <fullName>Petroleum Refining</fullName>
+                <default>false</default>
+                <label>Petroleum Refining</label>
+            </value>
+            <value>
+                <fullName>Asphalt Paving And Roofing Materials</fullName>
+                <default>false</default>
+                <label>Asphalt Paving And Roofing Materials</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Products Of Petroleum And Coal</fullName>
+                <default>false</default>
+                <label>Miscellaneous Products Of Petroleum And Coal</label>
+            </value>
+            <value>
+                <fullName>Tires And Inner Tubes</fullName>
+                <default>false</default>
+                <label>Tires And Inner Tubes</label>
+            </value>
+            <value>
+                <fullName>Rubber And Plastics Footwear</fullName>
+                <default>false</default>
+                <label>Rubber And Plastics Footwear</label>
+            </value>
+            <value>
+                <fullName>Gaskets, Packing, And Sealing Devices And Rubber And Plastics Hose</fullName>
+                <default>false</default>
+                <label>Gaskets, Packing, And Sealing Devices And Rubber And Plastics Hose</label>
+            </value>
+            <value>
+                <fullName>Fabricated Rubber Products, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Fabricated Rubber Products, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Plastics Products</fullName>
+                <default>false</default>
+                <label>Miscellaneous Plastics Products</label>
+            </value>
+            <value>
+                <fullName>Leather Tanning And Finishing</fullName>
+                <default>false</default>
+                <label>Leather Tanning And Finishing</label>
+            </value>
+            <value>
+                <fullName>Boot And Shoe Cut Stock And Findings</fullName>
+                <default>false</default>
+                <label>Boot And Shoe Cut Stock And Findings</label>
+            </value>
+            <value>
+                <fullName>Footwear, Except Rubber</fullName>
+                <default>false</default>
+                <label>Footwear, Except Rubber</label>
+            </value>
+            <value>
+                <fullName>Leather Gloves And Mittens</fullName>
+                <default>false</default>
+                <label>Leather Gloves And Mittens</label>
+            </value>
+            <value>
+                <fullName>Luggage</fullName>
+                <default>false</default>
+                <label>Luggage</label>
+            </value>
+            <value>
+                <fullName>Handbags And Other Personal Leather Goods</fullName>
+                <default>false</default>
+                <label>Handbags And Other Personal Leather Goods</label>
+            </value>
+            <value>
+                <fullName>Leather Goods, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Leather Goods, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Flat Glass</fullName>
+                <default>false</default>
+                <label>Flat Glass</label>
+            </value>
+            <value>
+                <fullName>Glass And Glassware, Pressed Or Blown</fullName>
+                <default>false</default>
+                <label>Glass And Glassware, Pressed Or Blown</label>
+            </value>
+            <value>
+                <fullName>Glass Products, Made Of Purchased Glass</fullName>
+                <default>false</default>
+                <label>Glass Products, Made Of Purchased Glass</label>
+            </value>
+            <value>
+                <fullName>Cement, Hydraulic</fullName>
+                <default>false</default>
+                <label>Cement, Hydraulic</label>
+            </value>
+            <value>
+                <fullName>Structural Clay Products</fullName>
+                <default>false</default>
+                <label>Structural Clay Products</label>
+            </value>
+            <value>
+                <fullName>Pottery And Related Products</fullName>
+                <default>false</default>
+                <label>Pottery And Related Products</label>
+            </value>
+            <value>
+                <fullName>Concrete, Gypsum, And Plaster Products</fullName>
+                <default>false</default>
+                <label>Concrete, Gypsum, And Plaster Products</label>
+            </value>
+            <value>
+                <fullName>Cut Stone And Stone Products</fullName>
+                <default>false</default>
+                <label>Cut Stone And Stone Products</label>
+            </value>
+            <value>
+                <fullName>Abrasive, Asbestos, And Miscellaneous Nonmetallic Mineral Products</fullName>
+                <default>false</default>
+                <label>Abrasive, Asbestos, And Miscellaneous Nonmetallic Mineral Products</label>
+            </value>
+            <value>
+                <fullName>Steel Works, Blast Furnaces, And Rolling And Finishing Mills</fullName>
+                <default>false</default>
+                <label>Steel Works, Blast Furnaces, And Rolling And Finishing Mills</label>
+            </value>
+            <value>
+                <fullName>Iron And Steel Foundries</fullName>
+                <default>false</default>
+                <label>Iron And Steel Foundries</label>
+            </value>
+            <value>
+                <fullName>Primary Smelting And Refining Of Nonferrous Metals</fullName>
+                <default>false</default>
+                <label>Primary Smelting And Refining Of Nonferrous Metals</label>
+            </value>
+            <value>
+                <fullName>Secondary Smelting And Refining Of Nonferrous Metals</fullName>
+                <default>false</default>
+                <label>Secondary Smelting And Refining Of Nonferrous Metals</label>
+            </value>
+            <value>
+                <fullName>Rolling, Drawing, And Extruding Of Nonferrous Metals</fullName>
+                <default>false</default>
+                <label>Rolling, Drawing, And Extruding Of Nonferrous Metals</label>
+            </value>
+            <value>
+                <fullName>Nonferrous Foundries (Castings)</fullName>
+                <default>false</default>
+                <label>Nonferrous Foundries (Castings)</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Primary Metal Products</fullName>
+                <default>false</default>
+                <label>Miscellaneous Primary Metal Products</label>
+            </value>
+            <value>
+                <fullName>Metal Cans And Shipping Containers</fullName>
+                <default>false</default>
+                <label>Metal Cans And Shipping Containers</label>
+            </value>
+            <value>
+                <fullName>Cutlery, Handtools, And General Hardware</fullName>
+                <default>false</default>
+                <label>Cutlery, Handtools, And General Hardware</label>
+            </value>
+            <value>
+                <fullName>Heating Equipment, Except Electric And Warm Air; And Plumbing Fixtures</fullName>
+                <default>false</default>
+                <label>Heating Equipment, Except Electric And Warm Air; And Plumbing Fixtures</label>
+            </value>
+            <value>
+                <fullName>Fabricated Structural Metal Products</fullName>
+                <default>false</default>
+                <label>Fabricated Structural Metal Products</label>
+            </value>
+            <value>
+                <fullName>Screw Machine Products, And Bolts, Nuts, Screws, Rivets, And Washers</fullName>
+                <default>false</default>
+                <label>Screw Machine Products, And Bolts, Nuts, Screws, Rivets, And Washers</label>
+            </value>
+            <value>
+                <fullName>Metal Forgings And Stampings</fullName>
+                <default>false</default>
+                <label>Metal Forgings And Stampings</label>
+            </value>
+            <value>
+                <fullName>Coating, Engraving, And Allied Services</fullName>
+                <default>false</default>
+                <label>Coating, Engraving, And Allied Services</label>
+            </value>
+            <value>
+                <fullName>Ordnance And Accessories, Except Vehicles And Guided Missiles</fullName>
+                <default>false</default>
+                <label>Ordnance And Accessories, Except Vehicles And Guided Missiles</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Fabricated Metal Products</fullName>
+                <default>false</default>
+                <label>Miscellaneous Fabricated Metal Products</label>
+            </value>
+            <value>
+                <fullName>Engines And Turbines</fullName>
+                <default>false</default>
+                <label>Engines And Turbines</label>
+            </value>
+            <value>
+                <fullName>Farm And Garden Machinery And Equipment</fullName>
+                <default>false</default>
+                <label>Farm And Garden Machinery And Equipment</label>
+            </value>
+            <value>
+                <fullName>Construction, Mining, And Materials Handling Machinery And Equipment</fullName>
+                <default>false</default>
+                <label>Construction, Mining, And Materials Handling Machinery And Equipment</label>
+            </value>
+            <value>
+                <fullName>Metalworking Machinery And Equipment</fullName>
+                <default>false</default>
+                <label>Metalworking Machinery And Equipment</label>
+            </value>
+            <value>
+                <fullName>Special Industry Machinery, Except Metalworking Machinery</fullName>
+                <default>false</default>
+                <label>Special Industry Machinery, Except Metalworking Machinery</label>
+            </value>
+            <value>
+                <fullName>General Industrial Machinery And Equipment</fullName>
+                <default>false</default>
+                <label>General Industrial Machinery And Equipment</label>
+            </value>
+            <value>
+                <fullName>Computer And Office Equipment</fullName>
+                <default>false</default>
+                <label>Computer And Office Equipment</label>
+            </value>
+            <value>
+                <fullName>Refrigeration And Service Industry Machinery</fullName>
+                <default>false</default>
+                <label>Refrigeration And Service Industry Machinery</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Industrial And Commercial Machinery And Equipment</fullName>
+                <default>false</default>
+                <label>Miscellaneous Industrial And Commercial Machinery And Equipment</label>
+            </value>
+            <value>
+                <fullName>Electric Transmission And Distribution Equipment</fullName>
+                <default>false</default>
+                <label>Electric Transmission And Distribution Equipment</label>
+            </value>
+            <value>
+                <fullName>Electrical Industrial Apparatus</fullName>
+                <default>false</default>
+                <label>Electrical Industrial Apparatus</label>
+            </value>
+            <value>
+                <fullName>Household Appliances</fullName>
+                <default>false</default>
+                <label>Household Appliances</label>
+            </value>
+            <value>
+                <fullName>Electric Lighting And Wiring Equipment</fullName>
+                <default>false</default>
+                <label>Electric Lighting And Wiring Equipment</label>
+            </value>
+            <value>
+                <fullName>Household Audio And Video Equipment, And Audio Recordings</fullName>
+                <default>false</default>
+                <label>Household Audio And Video Equipment, And Audio Recordings</label>
+            </value>
+            <value>
+                <fullName>Communications Equipment</fullName>
+                <default>false</default>
+                <label>Communications Equipment</label>
+            </value>
+            <value>
+                <fullName>Electronic Components And Accessories</fullName>
+                <default>false</default>
+                <label>Electronic Components And Accessories</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Electrical Machinery, Equipment, And Supplies</fullName>
+                <default>false</default>
+                <label>Miscellaneous Electrical Machinery, Equipment, And Supplies</label>
+            </value>
+            <value>
+                <fullName>Motor Vehicles And Motor Vehicle Equipment</fullName>
+                <default>false</default>
+                <label>Motor Vehicles And Motor Vehicle Equipment</label>
+            </value>
+            <value>
+                <fullName>Aircraft And Parts</fullName>
+                <default>false</default>
+                <label>Aircraft And Parts</label>
+            </value>
+            <value>
+                <fullName>Ship And Boat Building And Repairing</fullName>
+                <default>false</default>
+                <label>Ship And Boat Building And Repairing</label>
+            </value>
+            <value>
+                <fullName>Railroad Equipment</fullName>
+                <default>false</default>
+                <label>Railroad Equipment</label>
+            </value>
+            <value>
+                <fullName>Motorcycles, Bicycles, And Parts</fullName>
+                <default>false</default>
+                <label>Motorcycles, Bicycles, And Parts</label>
+            </value>
+            <value>
+                <fullName>Guided Missiles And Space Vehicles And Parts</fullName>
+                <default>false</default>
+                <label>Guided Missiles And Space Vehicles And Parts</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Transportation Equipment</fullName>
+                <default>false</default>
+                <label>Miscellaneous Transportation Equipment</label>
+            </value>
+            <value>
+                <fullName>Search, Detection, Navigation, Guidance, Aeronautical, And Nautical</fullName>
+                <default>false</default>
+                <label>Search, Detection, Navigation, Guidance, Aeronautical, And Nautical</label>
+            </value>
+            <value>
+                <fullName>Laboratory Apparatus And Analytical, Optical, Measuring, And Control</fullName>
+                <default>false</default>
+                <label>Laboratory Apparatus And Analytical, Optical, Measuring, And Control</label>
+            </value>
+            <value>
+                <fullName>Surgical, Medical, And Dental Instruments And Supplies</fullName>
+                <default>false</default>
+                <label>Surgical, Medical, And Dental Instruments And Supplies</label>
+            </value>
+            <value>
+                <fullName>Ophthalmic Goods</fullName>
+                <default>false</default>
+                <label>Ophthalmic Goods</label>
+            </value>
+            <value>
+                <fullName>Photographic Equipment And Supplies</fullName>
+                <default>false</default>
+                <label>Photographic Equipment And Supplies</label>
+            </value>
+            <value>
+                <fullName>Watches, Clocks, Clockwork Operated Devices, And Parts</fullName>
+                <default>false</default>
+                <label>Watches, Clocks, Clockwork Operated Devices, And Parts</label>
+            </value>
+            <value>
+                <fullName>Jewelry, Silverware, And Plated Ware</fullName>
+                <default>false</default>
+                <label>Jewelry, Silverware, And Plated Ware</label>
+            </value>
+            <value>
+                <fullName>Musical Instruments</fullName>
+                <default>false</default>
+                <label>Musical Instruments</label>
+            </value>
+            <value>
+                <fullName>Dolls, Toys, Games And Sporting And Athletic Goods</fullName>
+                <default>false</default>
+                <label>Dolls, Toys, Games And Sporting And Athletic Goods</label>
+            </value>
+            <value>
+                <fullName>Pens, Pencils, And Other Artists&apos; Materials</fullName>
+                <default>false</default>
+                <label>Pens, Pencils, And Other Artists&apos; Materials</label>
+            </value>
+            <value>
+                <fullName>Costume Jewelry, Costume Novelties, Buttons, And Miscellaneous</fullName>
+                <default>false</default>
+                <label>Costume Jewelry, Costume Novelties, Buttons, And Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Manufacturing Industries</fullName>
+                <default>false</default>
+                <label>Miscellaneous Manufacturing Industries</label>
+            </value>
+            <value>
+                <fullName>Railroads</fullName>
+                <default>false</default>
+                <label>Railroads</label>
+            </value>
+            <value>
+                <fullName>Local And Suburban Passenger Transportation</fullName>
+                <default>false</default>
+                <label>Local And Suburban Passenger Transportation</label>
+            </value>
+            <value>
+                <fullName>Taxicabs</fullName>
+                <default>false</default>
+                <label>Taxicabs</label>
+            </value>
+            <value>
+                <fullName>Intercity And Rural Bus Transportation</fullName>
+                <default>false</default>
+                <label>Intercity And Rural Bus Transportation</label>
+            </value>
+            <value>
+                <fullName>Bus Charter Service</fullName>
+                <default>false</default>
+                <label>Bus Charter Service</label>
+            </value>
+            <value>
+                <fullName>School Buses</fullName>
+                <default>false</default>
+                <label>School Buses</label>
+            </value>
+            <value>
+                <fullName>Terminal And Service Facilities For Motor Vehicle Passenger</fullName>
+                <default>false</default>
+                <label>Terminal And Service Facilities For Motor Vehicle Passenger</label>
+            </value>
+            <value>
+                <fullName>Trucking And Courier Services, Except Air</fullName>
+                <default>false</default>
+                <label>Trucking And Courier Services, Except Air</label>
+            </value>
+            <value>
+                <fullName>Public Warehousing And Storage</fullName>
+                <default>false</default>
+                <label>Public Warehousing And Storage</label>
+            </value>
+            <value>
+                <fullName>Terminal And Joint Terminal Maintenance Facilities For Motor Freight</fullName>
+                <default>false</default>
+                <label>Terminal And Joint Terminal Maintenance Facilities For Motor Freight</label>
+            </value>
+            <value>
+                <fullName>United States Postal Service</fullName>
+                <default>false</default>
+                <label>United States Postal Service</label>
+            </value>
+            <value>
+                <fullName>Deep Sea Foreign Transportation Of Freight</fullName>
+                <default>false</default>
+                <label>Deep Sea Foreign Transportation Of Freight</label>
+            </value>
+            <value>
+                <fullName>Deep Sea Domestic Transportation Of Freight</fullName>
+                <default>false</default>
+                <label>Deep Sea Domestic Transportation Of Freight</label>
+            </value>
+            <value>
+                <fullName>Freight Transportation On The Great Lakes¨St. Lawrence Seaway</fullName>
+                <default>false</default>
+                <label>Freight Transportation On The Great Lakes¨St. Lawrence Seaway</label>
+            </value>
+            <value>
+                <fullName>Water Transportation Of Freight, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Water Transportation Of Freight, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Water Transportation Of Passengers</fullName>
+                <default>false</default>
+                <label>Water Transportation Of Passengers</label>
+            </value>
+            <value>
+                <fullName>Services Incidental To Water Transportation</fullName>
+                <default>false</default>
+                <label>Services Incidental To Water Transportation</label>
+            </value>
+            <value>
+                <fullName>Air Transportation, Scheduled, And Air Courier Services</fullName>
+                <default>false</default>
+                <label>Air Transportation, Scheduled, And Air Courier Services</label>
+            </value>
+            <value>
+                <fullName>Air Transportation, Nonscheduled</fullName>
+                <default>false</default>
+                <label>Air Transportation, Nonscheduled</label>
+            </value>
+            <value>
+                <fullName>Airports, Flying Fields, And Airport Terminal Services</fullName>
+                <default>false</default>
+                <label>Airports, Flying Fields, And Airport Terminal Services</label>
+            </value>
+            <value>
+                <fullName>Pipelines, Except Natural Gas</fullName>
+                <default>false</default>
+                <label>Pipelines, Except Natural Gas</label>
+            </value>
+            <value>
+                <fullName>Arrangement Of Passenger Transportation</fullName>
+                <default>false</default>
+                <label>Arrangement Of Passenger Transportation</label>
+            </value>
+            <value>
+                <fullName>Arrangement Of Transportation Of Freight And Cargo</fullName>
+                <default>false</default>
+                <label>Arrangement Of Transportation Of Freight And Cargo</label>
+            </value>
+            <value>
+                <fullName>Rental Of Railroad Cars</fullName>
+                <default>false</default>
+                <label>Rental Of Railroad Cars</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Services Incidental To Transportation</fullName>
+                <default>false</default>
+                <label>Miscellaneous Services Incidental To Transportation</label>
+            </value>
+            <value>
+                <fullName>Telephone Communications</fullName>
+                <default>false</default>
+                <label>Telephone Communications</label>
+            </value>
+            <value>
+                <fullName>Telegraph And Other Message Communications</fullName>
+                <default>false</default>
+                <label>Telegraph And Other Message Communications</label>
+            </value>
+            <value>
+                <fullName>Radio And Television Broadcasting Stations</fullName>
+                <default>false</default>
+                <label>Radio And Television Broadcasting Stations</label>
+            </value>
+            <value>
+                <fullName>Cable And Other Pay Television Services</fullName>
+                <default>false</default>
+                <label>Cable And Other Pay Television Services</label>
+            </value>
+            <value>
+                <fullName>Communications Services, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Communications Services, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Electric Services</fullName>
+                <default>false</default>
+                <label>Electric Services</label>
+            </value>
+            <value>
+                <fullName>Gas Production And Distribution</fullName>
+                <default>false</default>
+                <label>Gas Production And Distribution</label>
+            </value>
+            <value>
+                <fullName>Combination Electric And Gas, And Other Utility Services</fullName>
+                <default>false</default>
+                <label>Combination Electric And Gas, And Other Utility Services</label>
+            </value>
+            <value>
+                <fullName>Water Supply</fullName>
+                <default>false</default>
+                <label>Water Supply</label>
+            </value>
+            <value>
+                <fullName>Sanitary Services</fullName>
+                <default>false</default>
+                <label>Sanitary Services</label>
+            </value>
+            <value>
+                <fullName>Steam And Air-Conditioning Supply</fullName>
+                <default>false</default>
+                <label>Steam And Air-Conditioning Supply</label>
+            </value>
+            <value>
+                <fullName>Irrigation Systems</fullName>
+                <default>false</default>
+                <label>Irrigation Systems</label>
+            </value>
+            <value>
+                <fullName>Motor Vehicles And Motor Vehicle Parts And Supplies</fullName>
+                <default>false</default>
+                <label>Motor Vehicles And Motor Vehicle Parts And Supplies</label>
+            </value>
+            <value>
+                <fullName>Furniture And Homefurnishings</fullName>
+                <default>false</default>
+                <label>Furniture And Homefurnishings</label>
+            </value>
+            <value>
+                <fullName>Lumber And Other Construction Materials</fullName>
+                <default>false</default>
+                <label>Lumber And Other Construction Materials</label>
+            </value>
+            <value>
+                <fullName>Professional And Commercial Equipment And Supplies</fullName>
+                <default>false</default>
+                <label>Professional And Commercial Equipment And Supplies</label>
+            </value>
+            <value>
+                <fullName>Metals And Minerals, Except Petroleum</fullName>
+                <default>false</default>
+                <label>Metals And Minerals, Except Petroleum</label>
+            </value>
+            <value>
+                <fullName>Electrical Goods</fullName>
+                <default>false</default>
+                <label>Electrical Goods</label>
+            </value>
+            <value>
+                <fullName>Hardware, And Plumbing And Heating Equipment And Supplies</fullName>
+                <default>false</default>
+                <label>Hardware, And Plumbing And Heating Equipment And Supplies</label>
+            </value>
+            <value>
+                <fullName>Machinery, Equipment, And Supplies</fullName>
+                <default>false</default>
+                <label>Machinery, Equipment, And Supplies</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Durable Goods</fullName>
+                <default>false</default>
+                <label>Miscellaneous Durable Goods</label>
+            </value>
+            <value>
+                <fullName>Paper And Paper Products</fullName>
+                <default>false</default>
+                <label>Paper And Paper Products</label>
+            </value>
+            <value>
+                <fullName>Drugs, Drug Proprietaries, And Druggists&apos; Sundries</fullName>
+                <default>false</default>
+                <label>Drugs, Drug Proprietaries, And Druggists&apos; Sundries</label>
+            </value>
+            <value>
+                <fullName>Apparel, Piece Goods, And Notions</fullName>
+                <default>false</default>
+                <label>Apparel, Piece Goods, And Notions</label>
+            </value>
+            <value>
+                <fullName>Groceries And Related Products</fullName>
+                <default>false</default>
+                <label>Groceries And Related Products</label>
+            </value>
+            <value>
+                <fullName>Farm-Product Raw Materials</fullName>
+                <default>false</default>
+                <label>Farm-Product Raw Materials</label>
+            </value>
+            <value>
+                <fullName>Chemicals And Allied Products</fullName>
+                <default>false</default>
+                <label>Chemicals And Allied Products</label>
+            </value>
+            <value>
+                <fullName>Petroleum And Petroleum Products</fullName>
+                <default>false</default>
+                <label>Petroleum And Petroleum Products</label>
+            </value>
+            <value>
+                <fullName>Beer, Wine, And Distilled Alcoholic Beverages</fullName>
+                <default>false</default>
+                <label>Beer, Wine, And Distilled Alcoholic Beverages</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Nondurable Goods</fullName>
+                <default>false</default>
+                <label>Miscellaneous Nondurable Goods</label>
+            </value>
+            <value>
+                <fullName>Lumber And Other Building Materials Dealers</fullName>
+                <default>false</default>
+                <label>Lumber And Other Building Materials Dealers</label>
+            </value>
+            <value>
+                <fullName>Paint, Glass, And Wallpaper Stores</fullName>
+                <default>false</default>
+                <label>Paint, Glass, And Wallpaper Stores</label>
+            </value>
+            <value>
+                <fullName>Hardware Stores</fullName>
+                <default>false</default>
+                <label>Hardware Stores</label>
+            </value>
+            <value>
+                <fullName>Retail Nurseries, Lawn And Garden Supply Stores</fullName>
+                <default>false</default>
+                <label>Retail Nurseries, Lawn And Garden Supply Stores</label>
+            </value>
+            <value>
+                <fullName>Mobile Home Dealers</fullName>
+                <default>false</default>
+                <label>Mobile Home Dealers</label>
+            </value>
+            <value>
+                <fullName>Variety Stores</fullName>
+                <default>false</default>
+                <label>Variety Stores</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous General Merchandise Stores</fullName>
+                <default>false</default>
+                <label>Miscellaneous General Merchandise Stores</label>
+            </value>
+            <value>
+                <fullName>Grocery Stores</fullName>
+                <default>false</default>
+                <label>Grocery Stores</label>
+            </value>
+            <value>
+                <fullName>Meat And Fish (Seafood) Markets, Including Freezer Provisioners</fullName>
+                <default>false</default>
+                <label>Meat And Fish (Seafood) Markets, Including Freezer Provisioners</label>
+            </value>
+            <value>
+                <fullName>Fruit And Vegetable Markets</fullName>
+                <default>false</default>
+                <label>Fruit And Vegetable Markets</label>
+            </value>
+            <value>
+                <fullName>Candy, Nut, And Confectionery Stores</fullName>
+                <default>false</default>
+                <label>Candy, Nut, And Confectionery Stores</label>
+            </value>
+            <value>
+                <fullName>Dairy Products Stores</fullName>
+                <default>false</default>
+                <label>Dairy Products Stores</label>
+            </value>
+            <value>
+                <fullName>Retail Bakeries</fullName>
+                <default>false</default>
+                <label>Retail Bakeries</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Food Stores</fullName>
+                <default>false</default>
+                <label>Miscellaneous Food Stores</label>
+            </value>
+            <value>
+                <fullName>Motor Vehicle Dealers (New And Used)</fullName>
+                <default>false</default>
+                <label>Motor Vehicle Dealers (New And Used)</label>
+            </value>
+            <value>
+                <fullName>Motor Vehicle Dealers (Used Only)</fullName>
+                <default>false</default>
+                <label>Motor Vehicle Dealers (Used Only)</label>
+            </value>
+            <value>
+                <fullName>Auto And Home Supply Stores</fullName>
+                <default>false</default>
+                <label>Auto And Home Supply Stores</label>
+            </value>
+            <value>
+                <fullName>Gasoline Service Stations</fullName>
+                <default>false</default>
+                <label>Gasoline Service Stations</label>
+            </value>
+            <value>
+                <fullName>Boat Dealers</fullName>
+                <default>false</default>
+                <label>Boat Dealers</label>
+            </value>
+            <value>
+                <fullName>Recreational Vehicle Dealers</fullName>
+                <default>false</default>
+                <label>Recreational Vehicle Dealers</label>
+            </value>
+            <value>
+                <fullName>Motorcycle Dealers</fullName>
+                <default>false</default>
+                <label>Motorcycle Dealers</label>
+            </value>
+            <value>
+                <fullName>Automotive Dealers, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Automotive Dealers, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Men&apos;S And Boys&apos; Clothing And Accessory Stores</fullName>
+                <default>false</default>
+                <label>Men&apos;S And Boys&apos; Clothing And Accessory Stores</label>
+            </value>
+            <value>
+                <fullName>Women&apos;S Clothing Stores</fullName>
+                <default>false</default>
+                <label>Women&apos;S Clothing Stores</label>
+            </value>
+            <value>
+                <fullName>Women&apos;S Accessory And Specialty Stores</fullName>
+                <default>false</default>
+                <label>Women&apos;S Accessory And Specialty Stores</label>
+            </value>
+            <value>
+                <fullName>Children&apos;S And Infants&apos; Wear Stores</fullName>
+                <default>false</default>
+                <label>Children&apos;S And Infants&apos; Wear Stores</label>
+            </value>
+            <value>
+                <fullName>Family Clothing Stores</fullName>
+                <default>false</default>
+                <label>Family Clothing Stores</label>
+            </value>
+            <value>
+                <fullName>Shoe Stores</fullName>
+                <default>false</default>
+                <label>Shoe Stores</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Apparel And Accessory Stores</fullName>
+                <default>false</default>
+                <label>Miscellaneous Apparel And Accessory Stores</label>
+            </value>
+            <value>
+                <fullName>Home Furniture And Furnishings Stores</fullName>
+                <default>false</default>
+                <label>Home Furniture And Furnishings Stores</label>
+            </value>
+            <value>
+                <fullName>Household Appliance Stores</fullName>
+                <default>false</default>
+                <label>Household Appliance Stores</label>
+            </value>
+            <value>
+                <fullName>Radio, Television, Consumer Electronics, And Music Stores</fullName>
+                <default>false</default>
+                <label>Radio, Television, Consumer Electronics, And Music Stores</label>
+            </value>
+            <value>
+                <fullName>Eating And Drinking Places</fullName>
+                <default>false</default>
+                <label>Eating And Drinking Places</label>
+            </value>
+            <value>
+                <fullName>Drug Stores And Proprietary Stores</fullName>
+                <default>false</default>
+                <label>Drug Stores And Proprietary Stores</label>
+            </value>
+            <value>
+                <fullName>Liquor Stores</fullName>
+                <default>false</default>
+                <label>Liquor Stores</label>
+            </value>
+            <value>
+                <fullName>Used Merchandise Stores</fullName>
+                <default>false</default>
+                <label>Used Merchandise Stores</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Shopping Goods Stores</fullName>
+                <default>false</default>
+                <label>Miscellaneous Shopping Goods Stores</label>
+            </value>
+            <value>
+                <fullName>Nonstore Retailers</fullName>
+                <default>false</default>
+                <label>Nonstore Retailers</label>
+            </value>
+            <value>
+                <fullName>Fuel Dealers</fullName>
+                <default>false</default>
+                <label>Fuel Dealers</label>
+            </value>
+            <value>
+                <fullName>Retail Stores, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Retail Stores, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Central Reserve Depository Institutions</fullName>
+                <default>false</default>
+                <label>Central Reserve Depository Institutions</label>
+            </value>
+            <value>
+                <fullName>Commercial Banks</fullName>
+                <default>false</default>
+                <label>Commercial Banks</label>
+            </value>
+            <value>
+                <fullName>Savings Institutions</fullName>
+                <default>false</default>
+                <label>Savings Institutions</label>
+            </value>
+            <value>
+                <fullName>Credit Unions</fullName>
+                <default>false</default>
+                <label>Credit Unions</label>
+            </value>
+            <value>
+                <fullName>Foreign Banking And Branches And Agencies Of Foreign Banks</fullName>
+                <default>false</default>
+                <label>Foreign Banking And Branches And Agencies Of Foreign Banks</label>
+            </value>
+            <value>
+                <fullName>Functions Related To Depository Banking</fullName>
+                <default>false</default>
+                <label>Functions Related To Depository Banking</label>
+            </value>
+            <value>
+                <fullName>Federal And Federally-Sponsored Credit Agencies</fullName>
+                <default>false</default>
+                <label>Federal And Federally-Sponsored Credit Agencies</label>
+            </value>
+            <value>
+                <fullName>Personal Credit Institutions</fullName>
+                <default>false</default>
+                <label>Personal Credit Institutions</label>
+            </value>
+            <value>
+                <fullName>Business Credit Institutions</fullName>
+                <default>false</default>
+                <label>Business Credit Institutions</label>
+            </value>
+            <value>
+                <fullName>Mortgage Bankers And Brokers</fullName>
+                <default>false</default>
+                <label>Mortgage Bankers And Brokers</label>
+            </value>
+            <value>
+                <fullName>Security Brokers, Dealers, And Flotation Companies</fullName>
+                <default>false</default>
+                <label>Security Brokers, Dealers, And Flotation Companies</label>
+            </value>
+            <value>
+                <fullName>Commodity Contracts Brokers And Dealers</fullName>
+                <default>false</default>
+                <label>Commodity Contracts Brokers And Dealers</label>
+            </value>
+            <value>
+                <fullName>Security And Commodity Exchanges</fullName>
+                <default>false</default>
+                <label>Security And Commodity Exchanges</label>
+            </value>
+            <value>
+                <fullName>Services Allied With The Exchange Of Securities Or Commodities</fullName>
+                <default>false</default>
+                <label>Services Allied With The Exchange Of Securities Or Commodities</label>
+            </value>
+            <value>
+                <fullName>Life Insurance</fullName>
+                <default>false</default>
+                <label>Life Insurance</label>
+            </value>
+            <value>
+                <fullName>Accident And Health Insurance And Medical Service Plans</fullName>
+                <default>false</default>
+                <label>Accident And Health Insurance And Medical Service Plans</label>
+            </value>
+            <value>
+                <fullName>Fire, Marine, And Casualty Insurance</fullName>
+                <default>false</default>
+                <label>Fire, Marine, And Casualty Insurance</label>
+            </value>
+            <value>
+                <fullName>Surety Insurance</fullName>
+                <default>false</default>
+                <label>Surety Insurance</label>
+            </value>
+            <value>
+                <fullName>Title Insurance</fullName>
+                <default>false</default>
+                <label>Title Insurance</label>
+            </value>
+            <value>
+                <fullName>Pension, Health, And Welfare Funds</fullName>
+                <default>false</default>
+                <label>Pension, Health, And Welfare Funds</label>
+            </value>
+            <value>
+                <fullName>Insurance Carriers, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Insurance Carriers, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Insurance Agents, Brokers, And Service</fullName>
+                <default>false</default>
+                <label>Insurance Agents, Brokers, And Service</label>
+            </value>
+            <value>
+                <fullName>Real Estate Operators (Except Developers) And Lessors</fullName>
+                <default>false</default>
+                <label>Real Estate Operators (Except Developers) And Lessors</label>
+            </value>
+            <value>
+                <fullName>Real Estate Agents And Managers</fullName>
+                <default>false</default>
+                <label>Real Estate Agents And Managers</label>
+            </value>
+            <value>
+                <fullName>Title Abstract Offices</fullName>
+                <default>false</default>
+                <label>Title Abstract Offices</label>
+            </value>
+            <value>
+                <fullName>Land Subdividers And Developers</fullName>
+                <default>false</default>
+                <label>Land Subdividers And Developers</label>
+            </value>
+            <value>
+                <fullName>Holding Offices</fullName>
+                <default>false</default>
+                <label>Holding Offices</label>
+            </value>
+            <value>
+                <fullName>Investment Offices</fullName>
+                <default>false</default>
+                <label>Investment Offices</label>
+            </value>
+            <value>
+                <fullName>Trusts</fullName>
+                <default>false</default>
+                <label>Trusts</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Investing</fullName>
+                <default>false</default>
+                <label>Miscellaneous Investing</label>
+            </value>
+            <value>
+                <fullName>Hotels And Motels</fullName>
+                <default>false</default>
+                <label>Hotels And Motels</label>
+            </value>
+            <value>
+                <fullName>Rooming And Boarding Houses</fullName>
+                <default>false</default>
+                <label>Rooming And Boarding Houses</label>
+            </value>
+            <value>
+                <fullName>Camps And Recreational Vehicle Parks</fullName>
+                <default>false</default>
+                <label>Camps And Recreational Vehicle Parks</label>
+            </value>
+            <value>
+                <fullName>Organization Hotels And Lodging Houses, On Membership Basis</fullName>
+                <default>false</default>
+                <label>Organization Hotels And Lodging Houses, On Membership Basis</label>
+            </value>
+            <value>
+                <fullName>Laundry, Cleaning, And Garment Services</fullName>
+                <default>false</default>
+                <label>Laundry, Cleaning, And Garment Services</label>
+            </value>
+            <value>
+                <fullName>Photographic Studios, Portrait</fullName>
+                <default>false</default>
+                <label>Photographic Studios, Portrait</label>
+            </value>
+            <value>
+                <fullName>Beauty Shops</fullName>
+                <default>false</default>
+                <label>Beauty Shops</label>
+            </value>
+            <value>
+                <fullName>Barber Shops</fullName>
+                <default>false</default>
+                <label>Barber Shops</label>
+            </value>
+            <value>
+                <fullName>Shoe Repair Shops And Shoeshine Parlors</fullName>
+                <default>false</default>
+                <label>Shoe Repair Shops And Shoeshine Parlors</label>
+            </value>
+            <value>
+                <fullName>Funeral Service And Crematories</fullName>
+                <default>false</default>
+                <label>Funeral Service And Crematories</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Personal Services</fullName>
+                <default>false</default>
+                <label>Miscellaneous Personal Services</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Consumer Credit Reporting Agencies, Mercantile Reporting Agencies</fullName>
+                <default>false</default>
+                <label>Consumer Credit Reporting Agencies, Mercantile Reporting Agencies</label>
+            </value>
+            <value>
+                <fullName>Mailing, Reproduction, Commercial Art And Photography, And</fullName>
+                <default>false</default>
+                <label>Mailing, Reproduction, Commercial Art And Photography, And</label>
+            </value>
+            <value>
+                <fullName>Services To Dwellings And Other Buildings</fullName>
+                <default>false</default>
+                <label>Services To Dwellings And Other Buildings</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Equipment Rental And Leasing</fullName>
+                <default>false</default>
+                <label>Miscellaneous Equipment Rental And Leasing</label>
+            </value>
+            <value>
+                <fullName>Personnel Supply Services</fullName>
+                <default>false</default>
+                <label>Personnel Supply Services</label>
+            </value>
+            <value>
+                <fullName>Computer Programming, Data Processing, And Other Computer Related</fullName>
+                <default>false</default>
+                <label>Computer Programming, Data Processing, And Other Computer Related</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Business Services</fullName>
+                <default>false</default>
+                <label>Miscellaneous Business Services</label>
+            </value>
+            <value>
+                <fullName>Automotive Rental And Leasing, Without Drivers</fullName>
+                <default>false</default>
+                <label>Automotive Rental And Leasing, Without Drivers</label>
+            </value>
+            <value>
+                <fullName>Automobile Parking</fullName>
+                <default>false</default>
+                <label>Automobile Parking</label>
+            </value>
+            <value>
+                <fullName>Automotive Repair Shops</fullName>
+                <default>false</default>
+                <label>Automotive Repair Shops</label>
+            </value>
+            <value>
+                <fullName>Automotive Services, Except Repair</fullName>
+                <default>false</default>
+                <label>Automotive Services, Except Repair</label>
+            </value>
+            <value>
+                <fullName>Electrical Repair Shops</fullName>
+                <default>false</default>
+                <label>Electrical Repair Shops</label>
+            </value>
+            <value>
+                <fullName>Watch, Clock, And Jewelry Repair</fullName>
+                <default>false</default>
+                <label>Watch, Clock, And Jewelry Repair</label>
+            </value>
+            <value>
+                <fullName>Reupholstery And Furniture Repair</fullName>
+                <default>false</default>
+                <label>Reupholstery And Furniture Repair</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Repair Shops And Related Services</fullName>
+                <default>false</default>
+                <label>Miscellaneous Repair Shops And Related Services</label>
+            </value>
+            <value>
+                <fullName>Motion Picture Production And Allied Services</fullName>
+                <default>false</default>
+                <label>Motion Picture Production And Allied Services</label>
+            </value>
+            <value>
+                <fullName>Motion Picture Distribution And Allied Services</fullName>
+                <default>false</default>
+                <label>Motion Picture Distribution And Allied Services</label>
+            </value>
+            <value>
+                <fullName>Motion Picture Theaters</fullName>
+                <default>false</default>
+                <label>Motion Picture Theaters</label>
+            </value>
+            <value>
+                <fullName>Video Tape Rental</fullName>
+                <default>false</default>
+                <label>Video Tape Rental</label>
+            </value>
+            <value>
+                <fullName>Dance Studios, Schools, And Halls</fullName>
+                <default>false</default>
+                <label>Dance Studios, Schools, And Halls</label>
+            </value>
+            <value>
+                <fullName>Theatrical Producers (Except Motion Picture), Bands, Orchestras</fullName>
+                <default>false</default>
+                <label>Theatrical Producers (Except Motion Picture), Bands, Orchestras</label>
+            </value>
+            <value>
+                <fullName>Bowling Centers</fullName>
+                <default>false</default>
+                <label>Bowling Centers</label>
+            </value>
+            <value>
+                <fullName>Commercial Sports</fullName>
+                <default>false</default>
+                <label>Commercial Sports</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Amusement And Recreation Services</fullName>
+                <default>false</default>
+                <label>Miscellaneous Amusement And Recreation Services</label>
+            </value>
+            <value>
+                <fullName>Offices And Clinics Of Doctors Of Medicine</fullName>
+                <default>false</default>
+                <label>Offices And Clinics Of Doctors Of Medicine</label>
+            </value>
+            <value>
+                <fullName>Offices And Clinics Of Dentists</fullName>
+                <default>false</default>
+                <label>Offices And Clinics Of Dentists</label>
+            </value>
+            <value>
+                <fullName>Offices And Clinics Of Doctors Of Osteopathy</fullName>
+                <default>false</default>
+                <label>Offices And Clinics Of Doctors Of Osteopathy</label>
+            </value>
+            <value>
+                <fullName>Offices And Clinics Of Other Health Practitioners</fullName>
+                <default>false</default>
+                <label>Offices And Clinics Of Other Health Practitioners</label>
+            </value>
+            <value>
+                <fullName>Nursing And Personal Care Facilities</fullName>
+                <default>false</default>
+                <label>Nursing And Personal Care Facilities</label>
+            </value>
+            <value>
+                <fullName>Hospitals</fullName>
+                <default>false</default>
+                <label>Hospitals</label>
+            </value>
+            <value>
+                <fullName>Medical And Dental Laboratories</fullName>
+                <default>false</default>
+                <label>Medical And Dental Laboratories</label>
+            </value>
+            <value>
+                <fullName>Home Health Care Services</fullName>
+                <default>false</default>
+                <label>Home Health Care Services</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Health And Allied Services, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Miscellaneous Health And Allied Services, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Legal Services</fullName>
+                <default>false</default>
+                <label>Legal Services</label>
+            </value>
+            <value>
+                <fullName>Elementary And Secondary Schools</fullName>
+                <default>false</default>
+                <label>Elementary And Secondary Schools</label>
+            </value>
+            <value>
+                <fullName>Colleges, Universities, Professional Schools, And Junior Colleges</fullName>
+                <default>false</default>
+                <label>Colleges, Universities, Professional Schools, And Junior Colleges</label>
+            </value>
+            <value>
+                <fullName>Libraries</fullName>
+                <default>false</default>
+                <label>Libraries</label>
+            </value>
+            <value>
+                <fullName>Vocational Schools</fullName>
+                <default>false</default>
+                <label>Vocational Schools</label>
+            </value>
+            <value>
+                <fullName>Schools And Educational Services, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Schools And Educational Services, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Individual And Family Social Services</fullName>
+                <default>false</default>
+                <label>Individual And Family Social Services</label>
+            </value>
+            <value>
+                <fullName>Job Training And Vocational Rehabilitation Services</fullName>
+                <default>false</default>
+                <label>Job Training And Vocational Rehabilitation Services</label>
+            </value>
+            <value>
+                <fullName>Child Day Care Services</fullName>
+                <default>false</default>
+                <label>Child Day Care Services</label>
+            </value>
+            <value>
+                <fullName>Residential Care</fullName>
+                <default>false</default>
+                <label>Residential Care</label>
+            </value>
+            <value>
+                <fullName>Social Services, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Social Services, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Museums And Art Galleries</fullName>
+                <default>false</default>
+                <label>Museums And Art Galleries</label>
+            </value>
+            <value>
+                <fullName>Arboreta And Botanical Or Zoological Gardens</fullName>
+                <default>false</default>
+                <label>Arboreta And Botanical Or Zoological Gardens</label>
+            </value>
+            <value>
+                <fullName>Business Associations</fullName>
+                <default>false</default>
+                <label>Business Associations</label>
+            </value>
+            <value>
+                <fullName>Professional Membership Organizations</fullName>
+                <default>false</default>
+                <label>Professional Membership Organizations</label>
+            </value>
+            <value>
+                <fullName>Labor Unions And Similar Labor Organizations</fullName>
+                <default>false</default>
+                <label>Labor Unions And Similar Labor Organizations</label>
+            </value>
+            <value>
+                <fullName>Civic, Social, And Fraternal Associations</fullName>
+                <default>false</default>
+                <label>Civic, Social, And Fraternal Associations</label>
+            </value>
+            <value>
+                <fullName>Political Organizations</fullName>
+                <default>false</default>
+                <label>Political Organizations</label>
+            </value>
+            <value>
+                <fullName>Religious Organizations</fullName>
+                <default>false</default>
+                <label>Religious Organizations</label>
+            </value>
+            <value>
+                <fullName>Membership Organizations, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Membership Organizations, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Engineering, Architectural, And Surveying Services</fullName>
+                <default>false</default>
+                <label>Engineering, Architectural, And Surveying Services</label>
+            </value>
+            <value>
+                <fullName>Accounting, Auditing, And Bookkeeping Services</fullName>
+                <default>false</default>
+                <label>Accounting, Auditing, And Bookkeeping Services</label>
+            </value>
+            <value>
+                <fullName>Research, Development, And Testing Services</fullName>
+                <default>false</default>
+                <label>Research, Development, And Testing Services</label>
+            </value>
+            <value>
+                <fullName>Management And Public Relations Services</fullName>
+                <default>false</default>
+                <label>Management And Public Relations Services</label>
+            </value>
+            <value>
+                <fullName>Private Households</fullName>
+                <default>false</default>
+                <label>Private Households</label>
+            </value>
+            <value>
+                <fullName>Services, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>Services, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Executive Offices</fullName>
+                <default>false</default>
+                <label>Executive Offices</label>
+            </value>
+            <value>
+                <fullName>Legislative Bodies</fullName>
+                <default>false</default>
+                <label>Legislative Bodies</label>
+            </value>
+            <value>
+                <fullName>Executive And Legislative Offices Combined</fullName>
+                <default>false</default>
+                <label>Executive And Legislative Offices Combined</label>
+            </value>
+            <value>
+                <fullName>General Government, Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>General Government, Not Elsewhere Classified</label>
+            </value>
+            <value>
+                <fullName>Courts</fullName>
+                <default>false</default>
+                <label>Courts</label>
+            </value>
+            <value>
+                <fullName>Public Order And Safety</fullName>
+                <default>false</default>
+                <label>Public Order And Safety</label>
+            </value>
+            <value>
+                <fullName>Public Finance, Taxation, And Monetary Policy</fullName>
+                <default>false</default>
+                <label>Public Finance, Taxation, And Monetary Policy</label>
+            </value>
+            <value>
+                <fullName>Administration Of Educational Programs</fullName>
+                <default>false</default>
+                <label>Administration Of Educational Programs</label>
+            </value>
+            <value>
+                <fullName>Administration Of Public Health Programs</fullName>
+                <default>false</default>
+                <label>Administration Of Public Health Programs</label>
+            </value>
+            <value>
+                <fullName>Administration Of Social, Human Resource And Income Maintenance</fullName>
+                <default>false</default>
+                <label>Administration Of Social, Human Resource And Income Maintenance</label>
+            </value>
+            <value>
+                <fullName>Administration Of Veterans&apos; Affairs, Except Health And Insurance</fullName>
+                <default>false</default>
+                <label>Administration Of Veterans&apos; Affairs, Except Health And Insurance</label>
+            </value>
+            <value>
+                <fullName>Administration Of Environmental Quality Programs</fullName>
+                <default>false</default>
+                <label>Administration Of Environmental Quality Programs</label>
+            </value>
+            <value>
+                <fullName>Administration Of Housing And Urban Development Programs</fullName>
+                <default>false</default>
+                <label>Administration Of Housing And Urban Development Programs</label>
+            </value>
+            <value>
+                <fullName>Administration Of General Economic Programs</fullName>
+                <default>false</default>
+                <label>Administration Of General Economic Programs</label>
+            </value>
+            <value>
+                <fullName>Regulation And Administration Of Transportation Programs</fullName>
+                <default>false</default>
+                <label>Regulation And Administration Of Transportation Programs</label>
+            </value>
+            <value>
+                <fullName>Regulation And Administration Of Communications, Electric, Gas</fullName>
+                <default>false</default>
+                <label>Regulation And Administration Of Communications, Electric, Gas</label>
+            </value>
+            <value>
+                <fullName>Regulation Of Agricultural Marketing And Commodities</fullName>
+                <default>false</default>
+                <label>Regulation Of Agricultural Marketing And Commodities</label>
+            </value>
+            <value>
+                <fullName>Regulation, Licensing, And Inspection Of Miscellaneous Commercial</fullName>
+                <default>false</default>
+                <label>Regulation, Licensing, And Inspection Of Miscellaneous Commercial</label>
+            </value>
+            <value>
+                <fullName>Space Research And Technology</fullName>
+                <default>false</default>
+                <label>Space Research And Technology</label>
+            </value>
+            <value>
+                <fullName>National Security</fullName>
+                <default>false</default>
+                <label>National Security</label>
+            </value>
+            <value>
+                <fullName>International Affairs</fullName>
+                <default>false</default>
+                <label>International Affairs</label>
+            </value>
+            <value>
+                <fullName>Nonclassifiable Establishments</fullName>
+                <default>false</default>
+                <label>Nonclassifiable Establishments</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

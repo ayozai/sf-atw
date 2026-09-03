@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Bosnia_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Bosnia CEO / Europe</label>
+        <sharedTo>
+            <role>Bosnia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CZ_Czech_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CZ Czech CEO / Europe</label>
+        <sharedTo>
+            <role>CZ_Czech_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Cedric_COTREL</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Cedric COTREL</label>
+        <sharedTo>
+            <group>Cedric_COTREL</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_PACA_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Croatia_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Croatia CEO / Europe</label>
+        <sharedTo>
+            <role>Croatia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_NA_Canejan</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique NA Canejan</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_NA_Canejan_Assistant</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_NA_Canejan_Assistant</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Nouvelle_Aquitaine_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Nouvelle Aquitaine Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Nouvelle_Aquitaine_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Nouvelle_Aquitaine_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Ouest_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Ouest Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Centre_Ouest_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Centre_Ouest_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Sud_Ouest_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Sud Ouest Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Occitanie_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Occitanie_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Centre_Ouest_BE_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Centre Ouest BE Manager</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Centre_Ouest_BE_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Centre_Ouest_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Centre_Ouest_Director_2</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Centre Ouest Director 2</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Centre_Ouest_Sales_Team</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Centre_Ouest_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Est</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Est</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Est_BE_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Est_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Est_2</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Est 2</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Est_CdV</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Est_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Est_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Est Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Est_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Est_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Grands Comptes Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Grands_Comptes_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_Director2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Grands Comptes Director2</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_Cleaning</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_Institutionnels</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Grands Comptes Institutionnels</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_Institutionnels</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_Production</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Grands Comptes Production</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_Production</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_R_seaux_Tertiaires</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Grands Comptes Réseaux Tertiaires</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_R_seaux_Tertiaires</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_IDF_Director</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning IDF Director</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_IDF_BE_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_IDF_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_IDF_Director_2</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning IDF Director 2</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_IDF_CdV</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_IDF_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_GD_Retail_Director2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME GD&amp;Retail Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_GD_Retail_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_BeNeLux</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_IAA_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME IAA Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_IAA_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_BeNeLux</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_Indus_Assistant</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME Indus Assistant</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_Indus_Assistant</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Logistique_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_Indus_Director2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME Indus Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_Indus_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_BeNeLux</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_Sante_UP_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME Sante&amp;UP Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_Sante_UP_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_BeNeLux</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Nord_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Nord Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Nord_Normandie_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Nord_Normandie_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Nord_Normandie</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Nord Normandie</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Nord_Normandie_BE_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Nord_Normandie_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Nord_Normandie_2</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Nord Normandie 2</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Nord_Normandie_Sales_Team</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Nord_Normandie_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Normandie_Cong_s_mat</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Accès pour Zacharia Echahid pendant le congé mat de Blandine Fernandes</description>
+        <label>FR Cleaning Normandie Congés mat</label>
+        <sharedTo>
+            <group>FR_Cleaning_Normandie_Cong_s_mat</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Normandie_Cong_s_mat</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_PACA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning PACA</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_PACA_Sales_Director</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_PACA_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Rhone_Alpes</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Rhone Alpes</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Rhone_Alpes_Sales_Director</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Rhone_Alpes_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Sud_Est_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Sud Est Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_PACA_Rhone_Alpes</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_PACA_Rhone_Alpes</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Sud_Ouest</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Sud Ouest</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Sud_Ouest_BE_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Sud_Ouest_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Sud_Ouest_2</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Sud Ouest 2</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Sud_Ouest_Sales_Team</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Sud_Ouest_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Multitech</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Multitech</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Multitech_Sales_Director</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_Multitech</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_Cleaning</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France Cleaning</label>
+        <sharedTo>
+            <role>France_Cleaning</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_Cleaning</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_Cleaning_Aero_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France Cleaning Aero Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Airbus_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Airbus_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_FM_Director_s_Assistant</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Accès aux contrats FM au BE</description>
+        <label>France FM Director&apos;s Assistant</label>
+        <sharedTo>
+            <group>Customer_Contract_FM_BE</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Customer_Contract_FM_Assistante</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_Security</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France Security</label>
+        <sharedTo>
+            <role>France_Security_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_Security_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_Security_Sales_Director</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>France Security Sales Director</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>France_Security_Sales_Director</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_Security_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Hungary_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Hungary CEO / Europe</label>
+        <sharedTo>
+            <role>Hungary_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Poland_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Poland CEO / Europe</label>
+        <sharedTo>
+            <role>Poland_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Romania_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Romania CEO / Europe</label>
+        <sharedTo>
+            <role>Romania_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Serbia_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Serbia CEO / Europe</label>
+        <sharedTo>
+            <role>Serbia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_Contract_Ouest_to_transition</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Visibilité Florent Corre aux contrats pendant la transition</description>
+        <label>Share_Contract_Ouest_to_transition</label>
+        <sharedTo>
+            <group>Transition_IDF_CentreOuest</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Centre_Ouest_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Slovakia_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Slovakia CEO / Europe</label>
+        <sharedTo>
+            <role>Slovakia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Turkey_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Turkey CEO / Europe</label>
+        <sharedTo>
+            <role>Turkey_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Visibilit_KAM_Contrats</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Visibilité à certains KAM à l&apos;ensemble des contrats clients</description>
+        <label>Visibilité KAM Contrats</label>
+        <sharedTo>
+            <group>Visibilit_KAM</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

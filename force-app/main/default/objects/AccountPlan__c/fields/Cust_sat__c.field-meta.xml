@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cust_sat__c</fullName>
+    <description>this is a dummy filed as section needs developing or need to create a related list to hold month on month stats.</description>
+    <inlineHelpText>this is a dummy filed as section needs developing or need to create a related list to hold month on month stats.</inlineHelpText>
+    <label>Cust sat</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

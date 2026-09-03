@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_loss_only_for_type_loss</fullName>
+    <active>true</active>
+    <errorConditionFormula>!CONTAINS($Profile.Name, &quot;Admin&quot;) &amp;&amp;
+!CONTAINS($User.Username, &apos;autoproc@&apos;) &amp;&amp;
+
+!ISPICKVAL(Loss_Reason__c , &quot;&quot;) &amp;&amp;
+!ISPICKVAL( Type__c , &quot;Loss&quot;)</errorConditionFormula>
+    <errorDisplayField>Loss_Reason__c</errorDisplayField>
+    <errorMessage>Please select a reason of loss only for type loss.</errorMessage>
+</ValidationRule>

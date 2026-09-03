@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposal_Submitted_5m__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Proposal Submitted 5m</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Proposal Submitted - Annual Revenue &gt; 5M</fullName>
+                <default>true</default>
+                <label>Proposal Submitted - Annual Revenue &gt; 5M</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

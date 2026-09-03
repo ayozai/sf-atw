@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Baseline_estimation_by_Client__c</fullName>
+    <inlineHelpText>Total des invoices Bosch</inlineHelpText>
+    <label>Baseline estimation by Client</label>
+    <summarizedField>Site_Service_Line__c.BaselineValue_LC__c</summarizedField>
+    <summaryForeignKey>Site_Service_Line__c.Site__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

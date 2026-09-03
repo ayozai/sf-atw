@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Segment de Marché</label>
+    <protected>false</protected>
+    <values>
+        <field>eready__DynamicFilterGroup__c</field>
+        <value xsi:type="xsd:string">eready__defaultOpportunity</value>
+    </values>
+    <values>
+        <field>eready__FieldApiName__c</field>
+        <value xsi:type="xsd:string">FR_Market_Segment__c</value>
+    </values>
+    <values>
+        <field>eready__FieldType__c</field>
+        <value xsi:type="xsd:string">Picklist</value>
+    </values>
+</CustomMetadata>

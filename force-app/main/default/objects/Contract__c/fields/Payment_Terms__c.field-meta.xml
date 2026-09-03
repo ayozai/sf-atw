@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms__c</fullName>
+    <label>Payment Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;30 Days</fullName>
+                <default>false</default>
+                <label>&lt;30 Days</label>
+            </value>
+            <value>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+                <label>30 Days</label>
+            </value>
+            <value>
+                <fullName>45 Days</fullName>
+                <default>false</default>
+                <label>45 Days</label>
+            </value>
+            <value>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+                <label>60 Days</label>
+            </value>
+            <value>
+                <fullName>60+ Days</fullName>
+                <default>false</default>
+                <label>60+ Days</label>
+            </value>
+            <value>
+                <fullName>30 days EOM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>30 days EOM</label>
+            </value>
+            <value>
+                <fullName>30 days invoice date</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>30 days invoice date</label>
+            </value>
+            <value>
+                <fullName>45 days EOM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 days EOM</label>
+            </value>
+            <value>
+                <fullName>45 days invoice date</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45 days invoice date</label>
+            </value>
+            <value>
+                <fullName>&gt;60 days</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>&gt;60 days</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

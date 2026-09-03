@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Incident_Date__c</columns>
+    <columns>Type__c</columns>
+    <columns>Circumstances__c</columns>
+    <columns>Severity__c</columns>
+    <columns>Cause__c</columns>
+    <columns>Worker_Type__c</columns>
+    <columns>Interruption_one_day__c</columns>
+    <columns>Fatal_accident__c</columns>
+    <columns>Number_of_lost_work_day__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All / Tous</label>
+</ListView>

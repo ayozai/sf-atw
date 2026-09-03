@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ENG_User_Guide_Videos</fullName>
+    <columns>NAME</columns>
+    <columns>User_Guide_description__c</columns>
+    <columns>User_Guide_URL__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Video</value>
+    </filters>
+    <label>ENG User Guide - Videos</label>
+</ListView>

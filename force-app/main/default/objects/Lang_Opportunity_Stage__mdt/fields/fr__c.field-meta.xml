@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fr__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>fr</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2. Opportunité Identifiée</fullName>
+                <default>true</default>
+                <label>2. Opportunité Identifiée</label>
+            </value>
+            <value>
+                <fullName>3. Offre</fullName>
+                <default>false</default>
+                <label>3. Offre</label>
+            </value>
+            <value>
+                <fullName>4. Négociation / Must Win</fullName>
+                <default>false</default>
+                <label>4. Négociation / Must Win</label>
+            </value>
+            <value>
+                <fullName>5. Fermée conclue</fullName>
+                <default>false</default>
+                <label>5. Fermée conclue</label>
+            </value>
+            <value>
+                <fullName>6. Fermée perdue</fullName>
+                <default>false</default>
+                <label>6. Fermée perdue</label>
+            </value>
+            <value>
+                <fullName>7. NO GO</fullName>
+                <default>false</default>
+                <label>7. NO GO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

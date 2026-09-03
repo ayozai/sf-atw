@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Value_between_0_and_10</fullName>
+    <active>false</active>
+    <description>NPS scores, values need to be between 0 and 10</description>
+    <errorConditionFormula>Communication_and_proactivity__c &gt; 10 || 
+Quotes_and_invoices_management__c &gt; 10 || 
+Quality_of_service__c &gt; 10 || 
+Overall_satisfaction__c &gt; 10 || 
+On_time_delivery__c &gt; 10 || 
+Management_on_the_field__c &gt; 10 || 
+Health_and_safety__c &gt; 10 || 
+Fulfilling_commitments__c &gt; 10 || 
+Field_agents__c &gt; 10 || 
+Equipments__c &gt; 10 || 
+CSR_Environmental_compliance__c &gt; 10 || 
+Source_of_proposals_Innovation__c &gt; 10 || 
+Social_climate__c &gt; 10 || 
+Score__c &gt; 10 || 
+Recommendation_rate__c &gt; 10</errorConditionFormula>
+    <errorMessage>Please enter a value between 0 and 10</errorMessage>
+</ValidationRule>

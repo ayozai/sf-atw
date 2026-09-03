@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIR_FRANCE</fullName>
+    <columns>Category__c</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Type__c</columns>
+    <columns>Frequency_of_review__c</columns>
+    <columns>Target_relation__c</columns>
+    <columns>Target__c</columns>
+    <columns>Last_Value_Date__c</columns>
+    <columns>Last_Value__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>AIR FRANCE</value>
+    </filters>
+    <label>AIR FRANCE</label>
+    <sharedTo>
+        <group>FM_FR_AIR_FRANCE</group>
+    </sharedTo>
+</ListView>

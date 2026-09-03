@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>fr</language>
+    <masterLabel>WhatsApp_Image_20250503_114417_a8e</masterLabel>
+    <relationships>
+        <insightsApplication>
+            <access>VIEWER</access>
+            <name>Archive_FM</name>
+        </insightsApplication>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>WhatsApp Image 2025-05-03 à 11.44.17_a8e6d9f8.jpg</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

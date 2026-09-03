@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency_Label__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Operations_Site__c &lt;&gt; NULL,
+IF(Operations_Site__r.Agency__r.Agency_ERP_ID__c&lt;&gt;&apos;&apos;, &quot;[&quot;+ Operations_Site__r.Agency__r.Agency_ERP_ID__c +&quot;] &quot;+  Operations_Site__r.Agency__r.Agency_Name__c ,Operations_Site__r.Agency__r.Agency_Name__c),
+IF( Agency__c &lt;&gt; NULL, IF(Agency__r.Agency_ERP_ID__c &lt;&gt; &apos;&apos;, &quot;[&quot;+Agency__r.Agency_ERP_ID__c +&quot;] &quot;+Agency__r.Agency_Name__c, Agency__r.Agency_Name__c),&apos;&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Agency Full Label</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

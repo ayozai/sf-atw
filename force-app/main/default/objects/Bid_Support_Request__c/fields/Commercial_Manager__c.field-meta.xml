@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commercial_Manager__c</fullName>
+    <label>Commercial Manager</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Ben Mills</fullName>
+                <default>false</default>
+                <label>Ben Mills</label>
+            </value>
+            <value>
+                <fullName>Brad Bosman</fullName>
+                <default>false</default>
+                <label>Brad Bosman</label>
+            </value>
+            <value>
+                <fullName>Ciaran Crook</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ciaran Crook</label>
+            </value>
+            <value>
+                <fullName>Gerry McCarron</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gerry McCarron</label>
+            </value>
+            <value>
+                <fullName>James Stephenson-Wall</fullName>
+                <default>false</default>
+                <label>James Stephenson-Wall</label>
+            </value>
+            <value>
+                <fullName>Jessica Simpson</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Jessica Simpson</label>
+            </value>
+            <value>
+                <fullName>Juliette Brinkley</fullName>
+                <default>false</default>
+                <label>Juliette Brinkley</label>
+            </value>
+            <value>
+                <fullName>Kayleigh Richards</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kayleigh Richards</label>
+            </value>
+            <value>
+                <fullName>Keith Spurgeon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Keith Spurgeon</label>
+            </value>
+            <value>
+                <fullName>Laura Haryluck</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Laura Haryluck</label>
+            </value>
+            <value>
+                <fullName>Liam McBride</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Liam McBride</label>
+            </value>
+            <value>
+                <fullName>Mark Crake</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mark Crake</label>
+            </value>
+            <value>
+                <fullName>Martin Gardiner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Martin Gardiner</label>
+            </value>
+            <value>
+                <fullName>Sheun Badza</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sheun Badza</label>
+            </value>
+            <value>
+                <fullName>Stephen Begg</fullName>
+                <default>false</default>
+                <label>Stephen Begg</label>
+            </value>
+            <value>
+                <fullName>Tony Morton</fullName>
+                <default>false</default>
+                <label>Tony Morton</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

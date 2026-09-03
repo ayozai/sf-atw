@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metric_Name__c</fullName>
+    <label>Metric Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Number of anomaly detected</fullName>
+                <default>false</default>
+                <label>Number of anomaly detected</label>
+            </value>
+            <value>
+                <fullName>Number of access denied</fullName>
+                <default>false</default>
+                <label>Number of access denied</label>
+            </value>
+            <value>
+                <fullName>Number of suspicious activity detected</fullName>
+                <default>false</default>
+                <label>Number of suspicious activity detected</label>
+            </value>
+            <value>
+                <fullName>Number of round carried out</fullName>
+                <default>false</default>
+                <label>Number of round carried out</label>
+            </value>
+            <value>
+                <fullName>Number of security equipment problem handled</fullName>
+                <default>false</default>
+                <label>Number of security equipment problem handled</label>
+            </value>
+            <value>
+                <fullName>Number of clocking</fullName>
+                <default>false</default>
+                <label>Number of clocking</label>
+            </value>
+            <value>
+                <fullName>Number of incident</fullName>
+                <default>false</default>
+                <label>Number of incident</label>
+            </value>
+            <value>
+                <fullName>Number of subcontractor access badge</fullName>
+                <default>false</default>
+                <label>Number of subcontractor access badge</label>
+            </value>
+            <value>
+                <fullName>Number of temp worker access badge</fullName>
+                <default>false</default>
+                <label>Number of temp worker access badge</label>
+            </value>
+            <value>
+                <fullName>Number of call</fullName>
+                <default>false</default>
+                <label>Number of call</label>
+            </value>
+            <value>
+                <fullName>Number of intern visitor</fullName>
+                <default>false</default>
+                <label>Number of intern visitor</label>
+            </value>
+            <value>
+                <fullName>Number of subcontractor visitor</fullName>
+                <default>false</default>
+                <label>Number of subcontractor visitor</label>
+            </value>
+            <value>
+                <fullName>Number of received mail</fullName>
+                <default>false</default>
+                <label>Number of received mail</label>
+            </value>
+            <value>
+                <fullName>Number of mail sent</fullName>
+                <default>false</default>
+                <label>Number of mail sent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Approval_Change_After_Allocate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT ISPICKVAL(  Approval__c ,&apos;Approved&apos;),
+  NOT ISBLANK( Allocated_Date__c )
+)</errorConditionFormula>
+    <errorDisplayField>Approval__c</errorDisplayField>
+    <errorMessage>Approval cannot be changed for an allocated Request</errorMessage>
+</ValidationRule>

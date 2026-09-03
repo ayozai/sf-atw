@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Division__c</fullName>
+    <label>Sales Division</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sales Development</fullName>
+                <default>false</default>
+                <label>Sales Development</label>
+            </value>
+            <value>
+                <fullName>Retention</fullName>
+                <default>false</default>
+                <label>Retention</label>
+            </value>
+            <value>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+                <label>Facilities</label>
+            </value>
+            <value>
+                <fullName>Operations Development</fullName>
+                <default>false</default>
+                <label>Operations Development</label>
+            </value>
+            <value>
+                <fullName>FR - Facilities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FR - Facilities</label>
+            </value>
+            <value>
+                <fullName>FR - Operations Development</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FR - Operations Development</label>
+            </value>
+            <value>
+                <fullName>FR - Retention</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FR - Retention</label>
+            </value>
+            <value>
+                <fullName>FR - Sales Development</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FR - Sales Development</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

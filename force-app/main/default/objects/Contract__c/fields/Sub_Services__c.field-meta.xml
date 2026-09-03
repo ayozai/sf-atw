@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Services__c</fullName>
+    <label>Sub Services</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Primary_Service__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Global_Sub_Services</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Access Control - Install &amp; Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Administrative Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Alarm Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>AV Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Battery charging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Builders Clean</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Building Mechanical Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Airport Services</controllingFieldValue>
+            <valueName>Cabin Armament and Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Cage repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Cage repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Airport Services</controllingFieldValue>
+            <valueName>Cart Recycling and laundry Sorting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>CCTV - Install &amp; Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>CCTV - Temporary Hire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Chewing Gum Removal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Close Protection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Coffee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Compliance Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Concierge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Conference Room Set-Up and Take Downs (Coordination and Booking)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Consumables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Courier and Mailroom Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Decontamination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>De-kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Diamond Polishing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Documentation, Procedures and Manuals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Document Management and Archiving</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Dog Handling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Energy Management</controllingFieldValue>
+            <valueName>Energy Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Energy Management</controllingFieldValue>
+            <valueName>Energy Performance Contracting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Environmental, Health and Safety Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>External Building Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Feminine Hygiene</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Fencing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Finance and Administration Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Fire - Safety Directors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Fire - Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Fire -  Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Airport Services</controllingFieldValue>
+            <valueName>Flight Preparation and Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Gatehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>General Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Graffiti Removal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Grease Tanks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Gritting and Snow Clearance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Guttering and Drain Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Waste Management</controllingFieldValue>
+            <valueName>Hazardous Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Helpdesk Managed Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>High level cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Housekeeping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Internal Plants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Intruder Alarm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Janitorial Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Key Card Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Kitchen Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Kitchen Equipment Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Lab Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Landscape Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Laundry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Library</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Litter Picking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Airport Services</controllingFieldValue>
+            <valueName>Luggage Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Manned Guarding -  Armed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Manned Guarding - Unarmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Medical Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Move Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Night Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Operational Reporting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Waste Management</controllingFieldValue>
+            <valueName>Other Specialist Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Pallet management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Airport Services</controllingFieldValue>
+            <valueName>Passenger Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Pavement,  Sidewalk and Road Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Payment / Till Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Physical Reception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Pick/place management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Pick/place management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Pipe Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Pest Control</controllingFieldValue>
+            <valueName>Planned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Porterage/Porters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Pressure Washing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Procurement Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Production Line Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Production Line Deep Clean</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Project Management Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Projects</controllingFieldValue>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Pest Control</controllingFieldValue>
+            <valueName>Reactive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Reactive Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Re-coup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Waste Management</controllingFieldValue>
+            <valueName>Recycling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Remote monitoring - CCTV and Alarms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Reprographics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Restaurant and Kitchen Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Restaurants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Airport Services</controllingFieldValue>
+            <valueName>Rigging, inventory management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Airport Services</controllingFieldValue>
+            <valueName>Runway support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Security Patrols</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Space Planning Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Specialist Area and Room Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Specialist Catering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Waste Management</controllingFieldValue>
+            <valueName>Standard Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Storage Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Strip and Seal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Management Services</controllingFieldValue>
+            <valueName>Supplier management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Switchboard Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Ticketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Transport / Shuttle Bus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Upholstery / CarpetCleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Valet Parking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Vehicle Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Vending Machine Purchase/Lease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Vent Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Venting System Disinfection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Vertical Scale Elimination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Airport Services</controllingFieldValue>
+            <valueName>VIP Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Voids Cleans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Washroom and Restroom Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Waste Shaft Disinfection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Workwear Cleaning Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Backup Generators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Building Automation System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Building Installations and Fabric Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Chartered Surveying</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Compressed Air / Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Electrical Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Equipment Supply and Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Fabric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Fire and Security Systems Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Gas Detection and Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>General Repairs and Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>High and Medium Voltage Installations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>HVAC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>HVAC Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Interior and Exterior Non-Mechanical Building Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Lightning Installation and Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Low Voltage Switchgear Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>PAT Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Periodic Statutory Testing and Inspections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Planned Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Planned Preventative Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Power-operated Doors and Gates Installation and Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Public Lightning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Reactive Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Specialist Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Sun Blinds Repairs and Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Waste Water Treatment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Back of House</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Canopy cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Case cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Catering - Coffee Shop / Deli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Catering - Kitchen Equipment Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Catering - Payment / Till Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Catering - Restaurant and Kitchen Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Catering - Restaurants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Catering Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Catering - Vending Machine Purchase/Lease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>CCTV - Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Energy Management</controllingFieldValue>
+            <valueName>Claims Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Common Area Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Communications Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Energy Management</controllingFieldValue>
+            <valueName>Consultancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Daily periodic cleaning (PHC cleans)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Data centre cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Deep Clean</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Distribution/Warehouse Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Energy Management</controllingFieldValue>
+            <valueName>ECO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Environmental Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Escalator/Elevator cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Fire Other Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>FM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Food hygiene cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Front of House</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>General Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Grab and Go</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Hirewatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Industrial and Office Painting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Janitorial services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Key holding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Lock &amp; Unlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Logistics (Aktrion)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Mailroom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Manned Guarding – Contractual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Metal, Marble and Wood Restoration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Office Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Oven cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Periodic Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Pest - Planned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Pest - Reactive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Production Area Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Industrial Processes</controllingFieldValue>
+            <valueName>Production Operations (Aktrion)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Project Works</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Reception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Refridgeration/freezer cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Retail Store Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Road sweeping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Safety shower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Signage and facia cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Sparkle cleans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Trailer cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Vending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Warehouse Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Waste Management - Hazardous Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Waste Management - Other Specialist Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Waste Management - Recycling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Waste Management Standard Waste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Window cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Total Facilities Management Services</controllingFieldValue>
+            <valueName>Wood clearance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Dry Carpet Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Low Rise Facade Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Marble Crystalization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Post Construction Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Steam Sanitation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Systems Solutions</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

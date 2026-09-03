@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referentiel__c</fullName>
+    <label>Referentiel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ISO 9001/45001</fullName>
+                <default>false</default>
+                <label>ISO 9001/45001</label>
+            </value>
+            <value>
+                <fullName>ISO 14001</fullName>
+                <default>false</default>
+                <label>ISO 14001</label>
+            </value>
+            <value>
+                <fullName>CEFRI</fullName>
+                <default>false</default>
+                <label>CEFRI</label>
+            </value>
+            <value>
+                <fullName>Certiphyto</fullName>
+                <default>false</default>
+                <label>Certiphyto</label>
+            </value>
+            <value>
+                <fullName>EN 9100</fullName>
+                <default>false</default>
+                <label>EN 9100</label>
+            </value>
+            <value>
+                <fullName>MASE</fullName>
+                <default>false</default>
+                <label>MASE</label>
+            </value>
+            <value>
+                <fullName>Social</fullName>
+                <default>false</default>
+                <label>Social</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

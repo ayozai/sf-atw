@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Duration</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Profile.Name&lt;&gt;&apos;Automated Process&apos; &amp;&amp;
+$Profile.Name&lt;&gt;&apos;System Administrator&apos; &amp;&amp;
+$Profile.Name&lt;&gt;&apos;Global Delegated Admin&apos; &amp;&amp;
+(ISBLANK( Contract_Duration__c ) || Contract_Duration__c &lt; 12) &amp;&amp;
+(ISPICKVAL( Type__c, &apos;Win&apos;) || ISPICKVAL( Type__c, &apos;Upsell&apos;) || ISPICKVAL( Type__c, &apos;Downsell&apos;) || ISPICKVAL( Type__c, &apos;Upward renewal&apos;) || ISPICKVAL( Type__c, &apos;Downward renewal&apos;))</errorConditionFormula>
+    <errorDisplayField>Contract_Duration__c</errorDisplayField>
+    <errorMessage>Please add a contract duration greater than or equal to 12 months for win or upsell or downsell</errorMessage>
+</ValidationRule>

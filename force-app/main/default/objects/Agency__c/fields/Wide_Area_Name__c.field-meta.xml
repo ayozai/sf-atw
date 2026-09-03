@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wide_Area_Name__c</fullName>
+    <label>Wide Area Name</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AERONAUTIQUE</fullName>
+                <default>false</default>
+                <label>AERONAUTIQUE</label>
+            </value>
+            <value>
+                <fullName>AK</fullName>
+                <default>false</default>
+                <label>AK</label>
+            </value>
+            <value>
+                <fullName>ATLANTIQUE HORS AERONAUTIQUE</fullName>
+                <default>false</default>
+                <label>ATLANTIQUE HORS AERONAUTIQUE</label>
+            </value>
+            <value>
+                <fullName>C1</fullName>
+                <default>false</default>
+                <label>C1</label>
+            </value>
+            <value>
+                <fullName>C2</fullName>
+                <default>false</default>
+                <label>C2</label>
+            </value>
+            <value>
+                <fullName>C3</fullName>
+                <default>false</default>
+                <label>C3</label>
+            </value>
+            <value>
+                <fullName>C4</fullName>
+                <default>false</default>
+                <label>C4</label>
+            </value>
+            <value>
+                <fullName>C5</fullName>
+                <default>false</default>
+                <label>C5</label>
+            </value>
+            <value>
+                <fullName>C6</fullName>
+                <default>false</default>
+                <label>C6</label>
+            </value>
+            <value>
+                <fullName>C7</fullName>
+                <default>false</default>
+                <label>C7</label>
+            </value>
+            <value>
+                <fullName>C8</fullName>
+                <default>false</default>
+                <label>C8</label>
+            </value>
+            <value>
+                <fullName>C9</fullName>
+                <default>false</default>
+                <label>C9</label>
+            </value>
+            <value>
+                <fullName>CAT</fullName>
+                <default>false</default>
+                <label>CAT</label>
+            </value>
+            <value>
+                <fullName>ECRITURES DE BILAN</fullName>
+                <default>false</default>
+                <label>ECRITURES DE BILAN</label>
+            </value>
+            <value>
+                <fullName>FERROVIAIRE &amp; ADP</fullName>
+                <default>false</default>
+                <label>FERROVIAIRE &amp; ADP</label>
+            </value>
+            <value>
+                <fullName>HOLDING</fullName>
+                <default>false</default>
+                <label>HOLDING</label>
+            </value>
+            <value>
+                <fullName>HOLDING GROUPE</fullName>
+                <default>false</default>
+                <label>HOLDING GROUPE</label>
+            </value>
+            <value>
+                <fullName>ILE DE FRANCE</fullName>
+                <default>false</default>
+                <label>ILE DE FRANCE</label>
+            </value>
+            <value>
+                <fullName>Multi-agencies</fullName>
+                <default>false</default>
+                <label>Multi-agencies</label>
+            </value>
+            <value>
+                <fullName>NORD &amp; EST</fullName>
+                <default>false</default>
+                <label>NORD &amp; EST</label>
+            </value>
+            <value>
+                <fullName>SUD EST</fullName>
+                <default>false</default>
+                <label>SUD EST</label>
+            </value>
+            <value>
+                <fullName>TECH</fullName>
+                <default>false</default>
+                <label>TECH</label>
+            </value>
+            <value>
+                <fullName>TRANSIT</fullName>
+                <default>false</default>
+                <label>TRANSIT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

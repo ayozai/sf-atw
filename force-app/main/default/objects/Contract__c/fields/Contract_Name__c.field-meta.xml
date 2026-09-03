@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK( &quot;/&quot; + Id , Name + &quot; - &quot; +  Account__r.Name  + &quot; - &quot; +  TEXT(Primary_Service__c) + &quot; - &quot; + Reference__c + &quot; - &quot; +  TEXT(Type__c), &quot;_self&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contract Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

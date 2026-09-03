@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FM</fullName>
+        <default>false</default>
+        <label>FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Industry</fullName>
+        <default>false</default>
+        <label>Food Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare</fullName>
+        <default>false</default>
+        <label>Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Housing</fullName>
+        <default>false</default>
+        <label>Housing</label>
+    </customValue>
+    <customValue>
+        <fullName>Industry</fullName>
+        <default>false</default>
+        <label>Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Public access building</fullName>
+        <default>false</default>
+        <label>Public access building</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Market</fullName>
+        <default>false</default>
+        <label>Public Market</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Strategic Accounts Director</fullName>
+        <default>false</default>
+        <label>Strategic Accounts Director</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport</fullName>
+        <default>false</default>
+        <label>Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Ultra Cleaning</fullName>
+        <default>false</default>
+        <label>Ultra Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>No SME</label>
+    </customValue>
+    <customValue>
+        <fullName>Central Purchasing Expert</fullName>
+        <default>false</default>
+        <label>Central Purchasing Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate Expert</fullName>
+        <default>false</default>
+        <label>Real Estate Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Leisure Facilities Expert</fullName>
+        <default>false</default>
+        <label>Leisure Facilities Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Airport Expert</fullName>
+        <default>false</default>
+        <label>Airport Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotel Expert</fullName>
+        <default>false</default>
+        <label>Hotel Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Educational Facilities Expert</fullName>
+        <default>false</default>
+        <label>Educational Facilities Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Territorial Community Expert</fullName>
+        <default>false</default>
+        <label>Territorial Community Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Facilities Expert</fullName>
+        <default>false</default>
+        <label>Government Facilities Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Military Facilities Expert</fullName>
+        <default>false</default>
+        <label>Military Facilities Expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics Facilities Expert</fullName>
+        <default>false</default>
+        <label>Logistics Facilities Expert</label>
+    </customValue>
+    <masterLabel>Business Experts</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides Read access to &apos;Contracts&apos;.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Contracts - Read - No Tab</label>
+    <permissionSets>Contract_and_Contracted_Services</permissionSets>
+    <permissionSets>Contracted_Services_Read</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

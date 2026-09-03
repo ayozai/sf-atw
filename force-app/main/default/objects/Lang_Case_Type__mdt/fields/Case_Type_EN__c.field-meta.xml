@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type_EN__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Case Type EN</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service Request</fullName>
+                <default>true</default>
+                <label>Service Request</label>
+            </value>
+            <value>
+                <fullName>Question</fullName>
+                <default>false</default>
+                <label>Question</label>
+            </value>
+            <value>
+                <fullName>Claim</fullName>
+                <default>false</default>
+                <label>Claim</label>
+            </value>
+            <value>
+                <fullName>Contract termination</fullName>
+                <default>false</default>
+                <label>Contract termination</label>
+            </value>
+            <value>
+                <fullName>Claim with penalty</fullName>
+                <default>false</default>
+                <label>Claim with penalty</label>
+            </value>
+            <value>
+                <fullName>Claim with credit note</fullName>
+                <default>false</default>
+                <label>Claim with credit note</label>
+            </value>
+            <value>
+                <fullName>Contract modification</fullName>
+                <default>false</default>
+                <label>Contract modification</label>
+            </value>
+            <value>
+                <fullName>Internal Support Request</fullName>
+                <default>false</default>
+                <label>Internal Support Request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

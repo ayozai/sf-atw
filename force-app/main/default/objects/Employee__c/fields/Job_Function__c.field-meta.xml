@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Function__c</fullName>
+    <label>Job Function</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>QA &amp; H&amp;S Manager</fullName>
+                <default>false</default>
+                <label>QA &amp; H&amp;S Manager</label>
+            </value>
+            <value>
+                <fullName>Operations Manager</fullName>
+                <default>false</default>
+                <label>Operations Manager</label>
+            </value>
+            <value>
+                <fullName>Health &amp; Safety Manager</fullName>
+                <default>false</default>
+                <label>Health &amp; Safety Manager</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Agency Director</fullName>
+                <default>false</default>
+                <label>Agency Director</label>
+            </value>
+            <value>
+                <fullName>Charge de clientele</fullName>
+                <default>false</default>
+                <label>Charge de clientele</label>
+            </value>
+            <value>
+                <fullName>Chef d&apos;équipe</fullName>
+                <default>false</default>
+                <label>Chef d&apos;équipe</label>
+            </value>
+            <value>
+                <fullName>Apprentie CC</fullName>
+                <default>false</default>
+                <label>Apprentie CC</label>
+            </value>
+            <value>
+                <fullName>Responsable de site</fullName>
+                <default>false</default>
+                <label>Responsable de site</label>
+            </value>
+            <value>
+                <fullName>Responsable d&apos;exploitation</fullName>
+                <default>false</default>
+                <label>Responsable d&apos;exploitation</label>
+            </value>
+            <value>
+                <fullName>RQSE</fullName>
+                <default>false</default>
+                <label>RQSE</label>
+            </value>
+            <value>
+                <fullName>AQSE</fullName>
+                <default>false</default>
+                <label>AQSE</label>
+            </value>
+            <value>
+                <fullName>Formatrice interne</fullName>
+                <default>false</default>
+                <label>Formatrice interne</label>
+            </value>
+            <value>
+                <fullName>Coordinateur QSE</fullName>
+                <default>false</default>
+                <label>Coordinateur QSE</label>
+            </value>
+            <value>
+                <fullName>Directeur d&apos;Exploitation</fullName>
+                <default>false</default>
+                <label>Directeur d&apos;Exploitation</label>
+            </value>
+            <value>
+                <fullName>Responsable Space</fullName>
+                <default>false</default>
+                <label>Responsable Space</label>
+            </value>
+            <value>
+                <fullName>Assistant d&apos;exploitation</fullName>
+                <default>false</default>
+                <label>Assistant d&apos;exploitation</label>
+            </value>
+            <value>
+                <fullName>Chef de site</fullName>
+                <default>false</default>
+                <label>Chef de site</label>
+            </value>
+            <value>
+                <fullName>Resp. Pôle TS</fullName>
+                <default>false</default>
+                <label>Resp. Pôle TS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

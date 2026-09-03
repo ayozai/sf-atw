@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_RequiredFields_Termination</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Profile.Name&lt;&gt;&apos;System Administrator&apos;
+
+&amp;&amp; $Profile.Name&lt;&gt;&apos;Global Delegated Admin&apos;
+
+&amp;&amp; ISPICKVAL(Indexation_Status__c, &quot;Negotiation Done&quot;) 
+
+&amp;&amp; ISPICKVAL(Mutual_Termination_Status__c, &quot;Accepted&quot;)
+
+&amp;&amp; ISBLANK(Mutual_Termination_Date__c)</errorConditionFormula>
+    <errorMessage>Please provide following fields : Mutual Termination Date</errorMessage>
+</ValidationRule>

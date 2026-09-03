@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Process__c</fullName>
+    <label>Process</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Achat</fullName>
+                <default>false</default>
+                <label>Achat</label>
+            </value>
+            <value>
+                <fullName>Commerce</fullName>
+                <default>false</default>
+                <label>Commerce</label>
+            </value>
+            <value>
+                <fullName>Certification</fullName>
+                <default>false</default>
+                <label>Certification</label>
+            </value>
+            <value>
+                <fullName>Direction administrative &amp; financière</fullName>
+                <default>false</default>
+                <label>Direction administrative &amp; financière</label>
+            </value>
+            <value>
+                <fullName>Direction ATMP</fullName>
+                <default>false</default>
+                <label>Direction ATMP</label>
+            </value>
+            <value>
+                <fullName>Direction Générale</fullName>
+                <default>false</default>
+                <label>Direction Générale</label>
+            </value>
+            <value>
+                <fullName>Direction juridique</fullName>
+                <default>false</default>
+                <label>Direction juridique</label>
+            </value>
+            <value>
+                <fullName>DSI</fullName>
+                <default>false</default>
+                <label>DSI</label>
+            </value>
+            <value>
+                <fullName>Environnement</fullName>
+                <default>false</default>
+                <label>Environnement</label>
+            </value>
+            <value>
+                <fullName>Innovation</fullName>
+                <default>false</default>
+                <label>Innovation</label>
+            </value>
+            <value>
+                <fullName>RP</fullName>
+                <default>false</default>
+                <label>RP</label>
+            </value>
+            <value>
+                <fullName>Services généraux</fullName>
+                <default>false</default>
+                <label>Services généraux</label>
+            </value>
+            <value>
+                <fullName>Sureté nucléaire</fullName>
+                <default>false</default>
+                <label>Sureté nucléaire</label>
+            </value>
+            <value>
+                <fullName>Exploitation</fullName>
+                <default>false</default>
+                <label>Exploitation</label>
+            </value>
+            <value>
+                <fullName>Facturation</fullName>
+                <default>false</default>
+                <label>Facturation</label>
+            </value>
+            <value>
+                <fullName>Fidélisation</fullName>
+                <default>false</default>
+                <label>Fidélisation</label>
+            </value>
+            <value>
+                <fullName>Management</fullName>
+                <default>false</default>
+                <label>Management</label>
+            </value>
+            <value>
+                <fullName>RH, formation</fullName>
+                <default>false</default>
+                <label>RH, formation</label>
+            </value>
+            <value>
+                <fullName>STRFAB</fullName>
+                <default>false</default>
+                <label>STRFAB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

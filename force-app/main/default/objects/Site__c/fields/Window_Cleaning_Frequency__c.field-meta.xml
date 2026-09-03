@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Window_Cleaning_Frequency__c</fullName>
+    <defaultValue>&quot;Not applicable&quot;</defaultValue>
+    <label>Window Cleaning Frequency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Every week</fullName>
+                <default>false</default>
+                <label>Every week</label>
+            </value>
+            <value>
+                <fullName>Every 2 weeks</fullName>
+                <default>false</default>
+                <label>Every 2 weeks</label>
+            </value>
+            <value>
+                <fullName>Every month</fullName>
+                <default>false</default>
+                <label>Every month</label>
+            </value>
+            <value>
+                <fullName>Every 2 months</fullName>
+                <default>false</default>
+                <label>Every 2 months</label>
+            </value>
+            <value>
+                <fullName>Every 3 months</fullName>
+                <default>false</default>
+                <label>Every 3 months</label>
+            </value>
+            <value>
+                <fullName>Every 4 months</fullName>
+                <default>false</default>
+                <label>Every 4 months</label>
+            </value>
+            <value>
+                <fullName>Every 6 months</fullName>
+                <default>false</default>
+                <label>Every 6 months</label>
+            </value>
+            <value>
+                <fullName>Every year</fullName>
+                <default>false</default>
+                <label>Every year</label>
+            </value>
+            <value>
+                <fullName>Not applicable</fullName>
+                <default>false</default>
+                <label>Not applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

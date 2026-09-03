@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Atalian_Revenue__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Revenue that will not be taken into account in the sales results (external partner in direct contact with the customer, no Atalian margin)</description>
+    <inlineHelpText>Revenue that will not be taken into account in the sales results (external partner in direct contact with the customer, no Atalian margin)</inlineHelpText>
+    <label>Non Atalian Revenue</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

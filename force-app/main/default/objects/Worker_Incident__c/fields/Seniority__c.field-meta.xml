@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seniority__c</fullName>
+    <label>Seniority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Less than a week</fullName>
+                <default>false</default>
+                <label>Less than a week</label>
+            </value>
+            <value>
+                <fullName>One week to less than a month</fullName>
+                <default>false</default>
+                <label>One week to less than a month</label>
+            </value>
+            <value>
+                <fullName>One month to less than 3 months</fullName>
+                <default>false</default>
+                <label>One month to less than 3 months</label>
+            </value>
+            <value>
+                <fullName>3 months to less than a year</fullName>
+                <default>false</default>
+                <label>3 months to less than a year</label>
+            </value>
+            <value>
+                <fullName>More than a year</fullName>
+                <default>false</default>
+                <label>More than a year</label>
+            </value>
+            <value>
+                <fullName>Unspecified</fullName>
+                <default>false</default>
+                <label>Unspecified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

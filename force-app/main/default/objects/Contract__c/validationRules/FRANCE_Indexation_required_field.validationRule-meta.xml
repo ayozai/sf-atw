@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FRANCE_Indexation_required_field</fullName>
+    <active>false</active>
+    <errorConditionFormula>!ISCHANGED(Status__c) &amp;&amp; 
+!ISCHANGED(Attachments__c) &amp;&amp; 
+!ISCHANGED(Number_of_Contacts__c) &amp;&amp; 
+!ISNEW() &amp;&amp; 
+$UserRole.DeveloperName &lt;&gt; &apos;France_BeNeLux_Africa&apos; &amp;&amp;  
+$Profile.Name &lt;&gt; &apos;System Administrator&apos; &amp;&amp; 
+$Profile.Name &lt;&gt; &apos;Global Delegated Admin&apos; &amp;&amp; 
+$Profile.Name &lt;&gt; &apos;Global Controlling User&apos; &amp;&amp; 
+$Profile.Name &lt;&gt; &apos;Integration User&apos; &amp;&amp; 
+Corporate_Country__c = &quot;France&quot; &amp;&amp; 
+ISPICKVAL( Indexation__c ,&quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Indexation__c</errorDisplayField>
+    <errorMessage>Please select an indexation type</errorMessage>
+</ValidationRule>

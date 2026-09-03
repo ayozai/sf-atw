@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Worker_Incident</fullName>
+    <active>true</active>
+    <label>Worker Incident</label>
+    <picklistValues>
+        <picklist>Cause__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsafe Act</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsafe Condition</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Circumstances__c</picklist>
+        <values>
+            <fullName>Bite%2C sting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact with Electrical source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact with Hazardous substances %28biological%2C toxic%2C corrosive%2C poison%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crush %2F Pinch %2F Caught by</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cut from knife or sharp edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exposure to flame%2C fire or explosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faintness%2C malaise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food poisoning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handling%2C lifting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harassment%2C Stress%2C PSR %28psychosocial risks%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hypoxia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irradiation%2C contamination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSD %28musculoskeletal disorders%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non work related%2C natural causes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Particle projection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road Traffic Accident or in a public area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robbery%2C criminal assault%2C workplace violence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slip%2C Trip%2C Fall from height</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slip%2C Trip%2C Fall on the same level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Struck or Injury by falling object</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Injury_Location__c</picklist>
+        <values>
+            <fullName>Abdomen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ankle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buttocks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cervicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coccyx</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collarbone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elbow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eyes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Face</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forearm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mouth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple locations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pelvis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shoulder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thigh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Throat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tibia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trunk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrist</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Injury_Type__c</picklist>
+        <values>
+            <fullName>Bruises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cervical injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dislocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faintness%2C malaise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fracture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haematoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lombosciatic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lumbago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muscle tear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychological shock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redness%2C irritation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrape%2C scratch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sprain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Superficial wound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tendonitis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trauma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Service__c</picklist>
+        <values>
+            <fullName>Airport Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning and Janitorial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House and Concierge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handling Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Processes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Space Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Total Facilities Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_to_work_Status__c</picklist>
+        <values>
+            <fullName>Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To do</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seniority__c</picklist>
+        <values>
+            <fullName>3 months to less than a year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than a week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than a year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One month to less than 3 months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One week to less than a month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unspecified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Severity__c</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Major</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Action plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Under investigation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Takeover__c</picklist>
+        <values>
+            <fullName>No follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not recognized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recognized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recognized with registration in the special account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under investigation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Commuting incident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Occupational disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workplace Near-miss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workplace incident</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Worker_Type__c</picklist>
+        <values>
+            <fullName>Internal worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subcontractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temp worker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Alerts_Update_account_hierarchy</fullName>
+        <description>Email Alerts: Update account hierarchy</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mahdi.ghariani@atalianworld.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>France/Update_account_hierarchy</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Alerts_Update_account_hierarchy_role</fullName>
+        <description>Email Alerts: Update account hierarchy role</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mahdi.ghariani@atalianworld.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>France/Update_account_hierarchy_role</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Alerts_Update_account_operating_Status</fullName>
+        <description>Email Alerts: Update account operating Status</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mahdi.ghariani@atalianworld.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>France/Update_account_Operating_Status</template>
+    </alerts>
+</Workflow>

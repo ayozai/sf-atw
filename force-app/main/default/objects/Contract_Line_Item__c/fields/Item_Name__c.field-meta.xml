@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Name__c</fullName>
+    <label>Item Name</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Service__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Global_Contract_Line_Item</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Restoration cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Window</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pest Control</controllingFieldValue>
+            <valueName>Pest Control</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

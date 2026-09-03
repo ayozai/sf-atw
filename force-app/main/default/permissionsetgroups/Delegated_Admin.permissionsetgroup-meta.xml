@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides Users with Delegated Admin rights.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Delegated Admin</label>
+    <permissionSets>Config_permissions_for_delegated_admins</permissionSets>
+    <permissionSets>Contracts_Create_Missing_Contracts</permissionSets>
+    <permissionSets>Manage_Users</permissionSets>
+    <permissionSets>Report_and_Dashboard_Management</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

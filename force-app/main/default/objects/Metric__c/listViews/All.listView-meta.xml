@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Designation__c</columns>
+    <columns>Label__c</columns>
+    <columns>Date__c</columns>
+    <columns>Delivered_quantity__c</columns>
+    <columns>Planned_Quantity__c</columns>
+    <columns>Type__c</columns>
+    <columns>Remaining_Quantity__c</columns>
+    <columns>Value__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>ORLY</value>
+    </filters>
+    <label>All</label>
+</ListView>

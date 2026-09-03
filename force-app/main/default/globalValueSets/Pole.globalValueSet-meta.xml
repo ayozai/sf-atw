@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Belgium</fullName>
+        <default>false</default>
+        <label>Belgium</label>
+    </customValue>
+    <customValue>
+        <fullName>Bosnia</fullName>
+        <default>false</default>
+        <label>Bosnia</label>
+    </customValue>
+    <customValue>
+        <fullName>Croatia</fullName>
+        <default>false</default>
+        <label>Croatia</label>
+    </customValue>
+    <customValue>
+        <fullName>Czech Republic</fullName>
+        <default>false</default>
+        <label>Czech Republic</label>
+    </customValue>
+    <customValue>
+        <fullName>France – Cleaning</fullName>
+        <default>false</default>
+        <label>France – Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>France – Holding</fullName>
+        <default>false</default>
+        <label>France – Holding</label>
+    </customValue>
+    <customValue>
+        <fullName>France – iFM</fullName>
+        <default>false</default>
+        <label>France – iFM</label>
+    </customValue>
+    <customValue>
+        <fullName>France – Maintenance et Energie</fullName>
+        <default>false</default>
+        <label>France – Maintenance et Energie</label>
+    </customValue>
+    <customValue>
+        <fullName>France – Security</fullName>
+        <default>false</default>
+        <label>France – Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Hungary</fullName>
+        <default>false</default>
+        <label>Hungary</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxembourg</fullName>
+        <default>false</default>
+        <label>Luxembourg</label>
+    </customValue>
+    <customValue>
+        <fullName>Mauritius</fullName>
+        <default>false</default>
+        <label>Mauritius</label>
+    </customValue>
+    <customValue>
+        <fullName>Netherlands</fullName>
+        <default>false</default>
+        <label>Netherlands</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Poland</fullName>
+        <default>false</default>
+        <label>Poland</label>
+    </customValue>
+    <customValue>
+        <fullName>Romania</fullName>
+        <default>false</default>
+        <label>Romania</label>
+    </customValue>
+    <customValue>
+        <fullName>Russia</fullName>
+        <default>false</default>
+        <label>Russia</label>
+    </customValue>
+    <customValue>
+        <fullName>Serbia</fullName>
+        <default>false</default>
+        <label>Serbia</label>
+    </customValue>
+    <customValue>
+        <fullName>Slovakia</fullName>
+        <default>false</default>
+        <label>Slovakia</label>
+    </customValue>
+    <customValue>
+        <fullName>Turkiye</fullName>
+        <default>false</default>
+        <label>Turkiye</label>
+    </customValue>
+    <customValue>
+        <fullName>France – PPR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>France – PPR</label>
+    </customValue>
+    <customValue>
+        <fullName>Turkey</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Turkey</label>
+    </customValue>
+    <description>Activity by pole</description>
+    <masterLabel>Pole</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

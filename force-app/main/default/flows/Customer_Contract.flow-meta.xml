@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Search_Text</name>
+        <label>Update Search Text</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Search_Text__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SearchText</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>IACRM-326 : remove automatique storage of risk values</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>SearchText</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account__r.Name} + &quot; &quot; + {!$Record.Account__r.Account_usual_name__c} + &quot; &quot; + {!$Record.Account__r.Account_Name_Short__c}</expression>
+    </formulas>
+    <interviewLabel>Customer Contract {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Customer Contract - Create or Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Search_Text</targetReference>
+        </connector>
+        <object>Contract__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

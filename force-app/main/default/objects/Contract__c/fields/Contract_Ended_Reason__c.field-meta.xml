@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Ended_Reason__c</fullName>
+    <description>This is the list of reasons why the contract has been ended.</description>
+    <label>DELContract Ended Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bad credit check</fullName>
+                <default>false</default>
+                <label>Bad credit check</label>
+            </value>
+            <value>
+                <fullName>Change in service provision</fullName>
+                <default>false</default>
+                <label>Change in service provision</label>
+            </value>
+            <value>
+                <fullName>Lost in retender</fullName>
+                <default>false</default>
+                <label>Lost in retender</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Service quality</fullName>
+                <default>false</default>
+                <label>Service quality</label>
+            </value>
+            <value>
+                <fullName>Taken inhouse</fullName>
+                <default>false</default>
+                <label>Taken inhouse</label>
+            </value>
+            <value>
+                <fullName>No reason given</fullName>
+                <default>false</default>
+                <label>No reason given</label>
+            </value>
+            <value>
+                <fullName>No longer trading</fullName>
+                <default>false</default>
+                <label>No longer trading</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

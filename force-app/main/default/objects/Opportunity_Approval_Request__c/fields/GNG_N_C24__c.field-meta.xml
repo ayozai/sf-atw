@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_N_C24__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Insurance_amount_imposed_by_client__c, &apos;No&apos;), 4,
+(IF(ISPICKVAL(Insurance_amount_imposed_by_client__c, &apos;Not known&apos;), 1, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score C2.4 — Assurance imposée</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

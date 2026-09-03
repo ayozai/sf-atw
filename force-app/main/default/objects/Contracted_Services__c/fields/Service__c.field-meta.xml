@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service__c</fullName>
+    <label>Service</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Airport Services</fullName>
+                <default>false</default>
+                <label>Airport Services</label>
+            </value>
+            <value>
+                <fullName>Aktrion</fullName>
+                <default>false</default>
+                <label>Aktrion</label>
+            </value>
+            <value>
+                <fullName>AMK - Air Conditioning</fullName>
+                <default>false</default>
+                <label>AMK - Air Conditioning</label>
+            </value>
+            <value>
+                <fullName>AMK - Cabling &amp; Networks</fullName>
+                <default>false</default>
+                <label>AMK - Cabling &amp; Networks</label>
+            </value>
+            <value>
+                <fullName>AMK - Fire</fullName>
+                <default>false</default>
+                <label>AMK - Fire</label>
+            </value>
+            <value>
+                <fullName>AMK - M&amp;E Projects</fullName>
+                <default>false</default>
+                <label>AMK - M&amp;E Projects</label>
+            </value>
+            <value>
+                <fullName>AMK - Multi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AMK - Multi</label>
+            </value>
+            <value>
+                <fullName>Building Services</fullName>
+                <default>false</default>
+                <label>Building Services</label>
+            </value>
+            <value>
+                <fullName>Catering</fullName>
+                <default>false</default>
+                <label>Catering</label>
+            </value>
+            <value>
+                <fullName>Cleaning</fullName>
+                <default>false</default>
+                <label>Cleaning</label>
+            </value>
+            <value>
+                <fullName>Cleaning and Janitorial Services</fullName>
+                <default>false</default>
+                <label>Cleaning and Janitorial Services</label>
+            </value>
+            <value>
+                <fullName>Energy Management</fullName>
+                <default>false</default>
+                <label>Energy Management</label>
+            </value>
+            <value>
+                <fullName>FM</fullName>
+                <default>false</default>
+                <label>FM</label>
+            </value>
+            <value>
+                <fullName>Front of House and Concierge</fullName>
+                <default>false</default>
+                <label>Front of House and Concierge</label>
+            </value>
+            <value>
+                <fullName>Handling Services</fullName>
+                <default>false</default>
+                <label>Handling Services</label>
+            </value>
+            <value>
+                <fullName>Industrial Processes</fullName>
+                <default>false</default>
+                <label>Industrial Processes</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>Logistics Services</fullName>
+                <default>false</default>
+                <label>Logistics Services</label>
+            </value>
+            <value>
+                <fullName>Mail Management</fullName>
+                <default>false</default>
+                <label>Mail Management</label>
+            </value>
+            <value>
+                <fullName>Management Services</fullName>
+                <default>false</default>
+                <label>Management Services</label>
+            </value>
+            <value>
+                <fullName>Pest Control</fullName>
+                <default>false</default>
+                <label>Pest Control</label>
+            </value>
+            <value>
+                <fullName>Projects</fullName>
+                <default>false</default>
+                <label>Projects</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Soft Services</fullName>
+                <default>false</default>
+                <label>Soft Services</label>
+            </value>
+            <value>
+                <fullName>Space Management</fullName>
+                <default>false</default>
+                <label>Space Management</label>
+            </value>
+            <value>
+                <fullName>Specialist Window Cleaning</fullName>
+                <default>false</default>
+                <label>Specialist Window Cleaning</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>Total Facilities Management Services</fullName>
+                <default>false</default>
+                <label>Total Facilities Management Services</label>
+            </value>
+            <value>
+                <fullName>Waste Management</fullName>
+                <default>false</default>
+                <label>Waste Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

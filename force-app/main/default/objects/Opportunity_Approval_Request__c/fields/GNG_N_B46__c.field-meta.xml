@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_N_B46__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISNULL(CapEx__c), ISNULL(Annual_Revenue__c), Annual_Revenue__c = 0), 0,
+  IF(CapEx__c &gt; Annual_Revenue__c / 12 * 2, 0,
+    IF(CapEx__c &gt; Annual_Revenue__c / 12, 2, 4)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score B4.6 — CAPEX</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

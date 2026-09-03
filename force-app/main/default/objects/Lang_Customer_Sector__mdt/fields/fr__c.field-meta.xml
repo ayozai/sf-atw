@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fr__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>fr_FR</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Administration Publique</fullName>
+                <default>true</default>
+                <label>Administration Publique</label>
+            </value>
+            <value>
+                <fullName>Autres Services</fullName>
+                <default>false</default>
+                <label>Autres Services</label>
+            </value>
+            <value>
+                <fullName>Construction Bâtiment</fullName>
+                <default>false</default>
+                <label>Construction Bâtiment</label>
+            </value>
+            <value>
+                <fullName>Distribution Eau &amp; Energie</fullName>
+                <default>false</default>
+                <label>Distribution Eau &amp; Energie</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Hôtellerie</fullName>
+                <default>false</default>
+                <label>Hôtellerie</label>
+            </value>
+            <value>
+                <fullName>Industrie Agro-Alimentaire</fullName>
+                <default>false</default>
+                <label>Industrie Agro-Alimentaire</label>
+            </value>
+            <value>
+                <fullName>Industrie Chimique</fullName>
+                <default>false</default>
+                <label>Industrie Chimique</label>
+            </value>
+            <value>
+                <fullName>Industrie de Production Energie</fullName>
+                <default>false</default>
+                <label>Industrie de Production Energie</label>
+            </value>
+            <value>
+                <fullName>Industrie des Machines et Outils</fullName>
+                <default>false</default>
+                <label>Industrie des Machines et Outils</label>
+            </value>
+            <value>
+                <fullName>Industrie du Bois</fullName>
+                <default>false</default>
+                <label>Industrie du Bois</label>
+            </value>
+            <value>
+                <fullName>Industrie du Meuble</fullName>
+                <default>false</default>
+                <label>Industrie du Meuble</label>
+            </value>
+            <value>
+                <fullName>Industrie du Tabac</fullName>
+                <default>false</default>
+                <label>Industrie du Tabac</label>
+            </value>
+            <value>
+                <fullName>Industrie du Verre et du Béton</fullName>
+                <default>false</default>
+                <label>Industrie du Verre et du Béton</label>
+            </value>
+            <value>
+                <fullName>Industrie Electronique</fullName>
+                <default>false</default>
+                <label>Industrie Electronique</label>
+            </value>
+            <value>
+                <fullName>Industrie Manufacturière</fullName>
+                <default>false</default>
+                <label>Industrie Manufacturière</label>
+            </value>
+            <value>
+                <fullName>Industrie Matériel de Transport</fullName>
+                <default>false</default>
+                <label>Industrie Matériel de Transport</label>
+            </value>
+            <value>
+                <fullName>Industrie Médicale</fullName>
+                <default>false</default>
+                <label>Industrie Médicale</label>
+            </value>
+            <value>
+                <fullName>Industrie Metallurgique</fullName>
+                <default>false</default>
+                <label>Industrie Metallurgique</label>
+            </value>
+            <value>
+                <fullName>Industrie Minière</fullName>
+                <default>false</default>
+                <label>Industrie Minière</label>
+            </value>
+            <value>
+                <fullName>Industrie Papetière</fullName>
+                <default>false</default>
+                <label>Industrie Papetière</label>
+            </value>
+            <value>
+                <fullName>Industrie Pétrolière</fullName>
+                <default>false</default>
+                <label>Industrie Pétrolière</label>
+            </value>
+            <value>
+                <fullName>Industrie Plasturgique</fullName>
+                <default>false</default>
+                <label>Industrie Plasturgique</label>
+            </value>
+            <value>
+                <fullName>Industrie Textile</fullName>
+                <default>false</default>
+                <label>Industrie Textile</label>
+            </value>
+            <value>
+                <fullName>Logistique</fullName>
+                <default>false</default>
+                <label>Logistique</label>
+            </value>
+            <value>
+                <fullName>Médias</fullName>
+                <default>false</default>
+                <label>Médias</label>
+            </value>
+            <value>
+                <fullName>Restauration</fullName>
+                <default>false</default>
+                <label>Restauration</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Santé</fullName>
+                <default>false</default>
+                <label>Santé</label>
+            </value>
+            <value>
+                <fullName>Services à la Personne</fullName>
+                <default>false</default>
+                <label>Services à la Personne</label>
+            </value>
+            <value>
+                <fullName>Services aux Entreprises</fullName>
+                <default>false</default>
+                <label>Services aux Entreprises</label>
+            </value>
+            <value>
+                <fullName>Services Bancaires</fullName>
+                <default>false</default>
+                <label>Services Bancaires</label>
+            </value>
+            <value>
+                <fullName>Services d&apos;Assurance</fullName>
+                <default>false</default>
+                <label>Services d&apos;Assurance</label>
+            </value>
+            <value>
+                <fullName>Services Gares et Connexions</fullName>
+                <default>false</default>
+                <label>Services Gares et Connexions</label>
+            </value>
+            <value>
+                <fullName>Services Immobiliers</fullName>
+                <default>false</default>
+                <label>Services Immobiliers</label>
+            </value>
+            <value>
+                <fullName>Services Juridiques</fullName>
+                <default>false</default>
+                <label>Services Juridiques</label>
+            </value>
+            <value>
+                <fullName>Services Télécommunication</fullName>
+                <default>false</default>
+                <label>Services Télécommunication</label>
+            </value>
+            <value>
+                <fullName>Sièges Sociaux</fullName>
+                <default>false</default>
+                <label>Sièges Sociaux</label>
+            </value>
+            <value>
+                <fullName>Sports, Loisirs et Tourisme</fullName>
+                <default>false</default>
+                <label>Sports, Loisirs et Tourisme</label>
+            </value>
+            <value>
+                <fullName>Transport Aérien</fullName>
+                <default>false</default>
+                <label>Transport Aérien</label>
+            </value>
+            <value>
+                <fullName>Transport Autre</fullName>
+                <default>false</default>
+                <label>Transport Autre</label>
+            </value>
+            <value>
+                <fullName>Transport Ferroviaire</fullName>
+                <default>false</default>
+                <label>Transport Ferroviaire</label>
+            </value>
+            <value>
+                <fullName>Transport Maritime</fullName>
+                <default>false</default>
+                <label>Transport Maritime</label>
+            </value>
+            <value>
+                <fullName>Transport Urbain</fullName>
+                <default>false</default>
+                <label>Transport Urbain</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

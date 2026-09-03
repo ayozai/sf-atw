@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RT_OAR_Simplified_Mode</fullName>
+    <active>true</active>
+    <description>Mode d&apos;évaluation GoNoGo — Simplified Mode (mode intermédiaire)</description>
+    <label>Simplified Mode</label>
+    <picklistValues>
+        <picklist>Administrative_Burden__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Agreement_Type__c</picklist>
+        <values>
+            <fullName>Contract request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Framework agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Means</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Results</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Agreement_with_Client__c</picklist>
+        <values>
+            <fullName>NDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Request_Type__c</picklist>
+        <values>
+            <fullName>Project validation</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approver_1_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approver_2_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Atalian_Reputation__c</picklist>
+        <values>
+            <fullName>Bad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very good</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bank_Guarantee_Required2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bank_Guarantee_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_frequency__c</picklist>
+        <values>
+            <fullName>In advance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In arrears</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Type__c</picklist>
+        <values>
+            <fullName>Amendment on Existing Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension on Existing Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Centralized_procurement_policy__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Certifications__c</picklist>
+        <values>
+            <fullName>ISO 14001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 22000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 9001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MASE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OHSAS 18001 %2F ISO 45001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALIPROPRE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Clearance_Authorization__c</picklist>
+        <values>
+            <fullName>Military confidentiality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military secrecy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_provider_satisfaction_level__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Sector__c</picklist>
+        <values>
+            <fullName>Agriculture and Food Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Contruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Production Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glass and Concrete Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plastics Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rail Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports%2C Leisure %26 Tourism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tabacco Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textile Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urban Transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wood Industry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_relationship_quality__c</picklist>
+        <values>
+            <fullName>Bad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very good</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Account_Dev_Potential__c</picklist>
+        <values>
+            <fullName>Elevée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Business_Dev_Potential__c</picklist>
+        <values>
+            <fullName>Elevée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_CC_Capacity_Need__c</picklist>
+        <values>
+            <fullName>Faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Cross_Selling__c</picklist>
+        <values>
+            <fullName>Elevée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Evaluation_Mode__c</picklist>
+        <values>
+            <fullName>Full Mode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Criteria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simplified Mode</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Key_Decision_Makers__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui mais aucun contact préalable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui%2C contact récent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui%2C contacté ces dernières années</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Payment_Method__c</picklist>
+        <values>
+            <fullName>Non connu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prélèvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virement bancaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Quoting_Knowledge__c</picklist>
+        <values>
+            <fullName>High_Knowledge_High_Expertise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High_Knowledge_Low_Expertise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low_Knowledge_High_Expertise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low_Knowledge_Low_Expertise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Resources_Availability__c</picklist>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Response_Deadline__c</picklist>
+        <values>
+            <fullName>%3C 1 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E 6 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entre 1 à 3 mois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entre 3 à 6 mois</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_Sectoral_Ref_Interest__c</picklist>
+        <values>
+            <fullName>Faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GNG_TS_Opportunity__c</picklist>
+        <values>
+            <fullName>Elevée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Indexation__c</picklist>
+        <values>
+            <fullName>Annual Uplift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed Price Contract %28no uplift%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indexation Uplift ATALIAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indexation Uplift CLIENT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Insurance_amount_imposed_by_client__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Beneficiary_of_sponsorship__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Commercial_agent__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Commercial_partner__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Key_account_clients__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Other_Screening_Level_1__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Other_Screening_Level_2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Provides_intellectual_services__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Subcontractor_imposed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OT_Target_for_acquisition__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Terms__c</picklist>
+        <values>
+            <fullName>%3C30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60%2B Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Penalities2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C unlimited</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Service__c</picklist>
+        <values>
+            <fullName>Airport Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning and Janitorial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House and Concierge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handling Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indoor Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Processes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Space Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Total Facilities Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Progress_Plan__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Public_Private_Market__c</picklist>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Safeguard_Clause__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Similar_references_at_Atalian__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Social_Climate__c</picklist>
+        <values>
+            <fullName>Bad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very good</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Social_Engineering__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C not supported by client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C partially supported by client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C supported by client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Synergies_with_other_business_lines__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Take_Over_of_Staff__c</picklist>
+        <values>
+            <fullName>No take over</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Take over with high risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Take over with low risk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unlimited_Liability_Clause__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

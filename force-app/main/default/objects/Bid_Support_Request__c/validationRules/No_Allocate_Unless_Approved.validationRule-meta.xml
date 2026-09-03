@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Allocate_Unless_Approved</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+  NOT ISPICKVAL( Approval__c , &apos;Approved&apos; ),
+  Allocated__c,
+  ISBLANK( Allocated_Date__c )
+)</errorConditionFormula>
+    <errorDisplayField>Allocated__c</errorDisplayField>
+    <errorMessage>Unable to Allocate a request that has not been Approved</errorMessage>
+</ValidationRule>

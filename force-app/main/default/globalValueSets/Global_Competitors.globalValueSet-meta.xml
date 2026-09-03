@@ -1,0 +1,4997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>2&apos;Nm</fullName>
+        <default>false</default>
+        <label>2&apos;Nm</label>
+    </customValue>
+    <customValue>
+        <fullName>4M</fullName>
+        <default>false</default>
+        <label>4M</label>
+    </customValue>
+    <customValue>
+        <fullName>911</fullName>
+        <default>false</default>
+        <label>911</label>
+    </customValue>
+    <customValue>
+        <fullName>A.R.K. technické služby s.r.o.</fullName>
+        <default>false</default>
+        <label>A.R.K. technické služby s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>AA PLUS</fullName>
+        <default>false</default>
+        <label>AA PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>Aardwolf Pest Care</fullName>
+        <default>false</default>
+        <label>Aardwolf Pest Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Aber Proprete</fullName>
+        <default>false</default>
+        <label>Aber Proprete</label>
+    </customValue>
+    <customValue>
+        <fullName>Able</fullName>
+        <default>false</default>
+        <label>Able</label>
+    </customValue>
+    <customValue>
+        <fullName>ABM</fullName>
+        <default>false</default>
+        <label>ABM</label>
+    </customValue>
+    <customValue>
+        <fullName>Abm Catering</fullName>
+        <default>false</default>
+        <label>Abm Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>ABM Support Services</fullName>
+        <default>false</default>
+        <label>ABM Support Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Absolue Proprete</fullName>
+        <default>false</default>
+        <label>Absolue Proprete</label>
+    </customValue>
+    <customValue>
+        <fullName>Absolute </fullName>
+        <default>false</default>
+        <label>Absolute </label>
+    </customValue>
+    <customValue>
+        <fullName>Acs</fullName>
+        <default>false</default>
+        <label>Acs</label>
+    </customValue>
+    <customValue>
+        <fullName>Activa</fullName>
+        <default>false</default>
+        <label>Activa</label>
+    </customValue>
+    <customValue>
+        <fullName>Aden</fullName>
+        <default>false</default>
+        <label>Aden</label>
+    </customValue>
+    <customValue>
+        <fullName>Adria Grupa</fullName>
+        <default>false</default>
+        <label>Adria Grupa</label>
+    </customValue>
+    <customValue>
+        <fullName>Adriatic Servis</fullName>
+        <default>false</default>
+        <label>Adriatic Servis</label>
+    </customValue>
+    <customValue>
+        <fullName>Advance Group</fullName>
+        <default>false</default>
+        <label>Advance Group</label>
+    </customValue>
+    <customValue>
+        <fullName>AECOM Malaysia</fullName>
+        <default>false</default>
+        <label>AECOM Malaysia</label>
+    </customValue>
+    <customValue>
+        <fullName>AGAOGLU</fullName>
+        <default>false</default>
+        <label>AGAOGLU</label>
+    </customValue>
+    <customValue>
+        <fullName>Agenor</fullName>
+        <default>false</default>
+        <label>Agenor</label>
+    </customValue>
+    <customValue>
+        <fullName>Agom</fullName>
+        <default>false</default>
+        <label>Agom</label>
+    </customValue>
+    <customValue>
+        <fullName>AGRITEC</fullName>
+        <default>false</default>
+        <label>AGRITEC</label>
+    </customValue>
+    <customValue>
+        <fullName>AG Sjaj</fullName>
+        <default>false</default>
+        <label>AG Sjaj</label>
+    </customValue>
+    <customValue>
+        <fullName>AINSI MAROC</fullName>
+        <default>false</default>
+        <label>AINSI MAROC</label>
+    </customValue>
+    <customValue>
+        <fullName>AKDENIZ</fullName>
+        <default>false</default>
+        <label>AKDENIZ</label>
+    </customValue>
+    <customValue>
+        <fullName>A La Concierge Services</fullName>
+        <default>false</default>
+        <label>A La Concierge Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Albacore</fullName>
+        <default>false</default>
+        <label>Albacore</label>
+    </customValue>
+    <customValue>
+        <fullName>Albron (Facilicom)</fullName>
+        <default>false</default>
+        <label>Albron (Facilicom)</label>
+    </customValue>
+    <customValue>
+        <fullName>ALL Cleaning and Chemical Phuket</fullName>
+        <default>false</default>
+        <label>ALL Cleaning and Chemical Phuket</label>
+    </customValue>
+    <customValue>
+        <fullName>Allen Industries</fullName>
+        <default>false</default>
+        <label>Allen Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>Allied Universal</fullName>
+        <default>false</default>
+        <label>Allied Universal</label>
+    </customValue>
+    <customValue>
+        <fullName>ALOMRA</fullName>
+        <default>false</default>
+        <label>ALOMRA</label>
+    </customValue>
+    <customValue>
+        <fullName>Alterra Grupa</fullName>
+        <default>false</default>
+        <label>Alterra Grupa</label>
+    </customValue>
+    <customValue>
+        <fullName>Alter Services</fullName>
+        <default>false</default>
+        <label>Alter Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Ambijenti</fullName>
+        <default>false</default>
+        <label>Ambijenti</label>
+    </customValue>
+    <customValue>
+        <fullName>Amercorp</fullName>
+        <default>false</default>
+        <label>Amercorp</label>
+    </customValue>
+    <customValue>
+        <fullName>American Cleaning Company</fullName>
+        <default>false</default>
+        <label>American Cleaning Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Amey Built Environment</fullName>
+        <default>false</default>
+        <label>Amey Built Environment</label>
+    </customValue>
+    <customValue>
+        <fullName>Amg Proprete</fullName>
+        <default>false</default>
+        <label>Amg Proprete</label>
+    </customValue>
+    <customValue>
+        <fullName>Amids</fullName>
+        <default>false</default>
+        <label>Amids</label>
+    </customValue>
+    <customValue>
+        <fullName>A Million Tree</fullName>
+        <default>false</default>
+        <label>A Million Tree</label>
+    </customValue>
+    <customValue>
+        <fullName>Amlux</fullName>
+        <default>false</default>
+        <label>Amlux</label>
+    </customValue>
+    <customValue>
+        <fullName>Anabas</fullName>
+        <default>false</default>
+        <label>Anabas</label>
+    </customValue>
+    <customValue>
+        <fullName>Ana HUP</fullName>
+        <default>false</default>
+        <label>Ana HUP</label>
+    </customValue>
+    <customValue>
+        <fullName>Anchor</fullName>
+        <default>false</default>
+        <label>Anchor</label>
+    </customValue>
+    <customValue>
+        <fullName>Andhika Makmur Persada</fullName>
+        <default>false</default>
+        <label>Andhika Makmur Persada</label>
+    </customValue>
+    <customValue>
+        <fullName>ANEL</fullName>
+        <default>false</default>
+        <label>ANEL</label>
+    </customValue>
+    <customValue>
+        <fullName>Anetra</fullName>
+        <default>false</default>
+        <label>Anetra</label>
+    </customValue>
+    <customValue>
+        <fullName>Angkasa Pura Solution</fullName>
+        <default>false</default>
+        <label>Angkasa Pura Solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Angkasa Pura Support</fullName>
+        <default>false</default>
+        <label>Angkasa Pura Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Anjou Hygiene Service</fullName>
+        <default>false</default>
+        <label>Anjou Hygiene Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Annapurna</fullName>
+        <default>false</default>
+        <label>Annapurna</label>
+    </customValue>
+    <customValue>
+        <fullName>Anten</fullName>
+        <default>false</default>
+        <label>Anten</label>
+    </customValue>
+    <customValue>
+        <fullName>Anticimex Pest Management Pte Ltd</fullName>
+        <default>false</default>
+        <label>Anticimex Pest Management Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Antitermite</fullName>
+        <default>false</default>
+        <label>Antitermite</label>
+    </customValue>
+    <customValue>
+        <fullName>Apleona</fullName>
+        <default>false</default>
+        <label>Apleona</label>
+    </customValue>
+    <customValue>
+        <fullName>A PLUS</fullName>
+        <default>false</default>
+        <label>A PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>Appèl</fullName>
+        <default>false</default>
+        <label>Appèl</label>
+    </customValue>
+    <customValue>
+        <fullName>Apr</fullName>
+        <default>false</default>
+        <label>Apr</label>
+    </customValue>
+    <customValue>
+        <fullName>Aramark</fullName>
+        <default>false</default>
+        <label>Aramark</label>
+    </customValue>
+    <customValue>
+        <fullName>Arcade</fullName>
+        <default>false</default>
+        <label>Arcade</label>
+    </customValue>
+    <customValue>
+        <fullName>Arc-En-Ciel</fullName>
+        <default>false</default>
+        <label>Arc-En-Ciel</label>
+    </customValue>
+    <customValue>
+        <fullName>Arcus Solutions</fullName>
+        <default>false</default>
+        <label>Arcus Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Arfa</fullName>
+        <default>false</default>
+        <label>Arfa</label>
+    </customValue>
+    <customValue>
+        <fullName>Armour Security Systems (M) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Armour Security Systems (M) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Artic Building Services</fullName>
+        <default>false</default>
+        <label>Artic Building Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Artizian</fullName>
+        <default>false</default>
+        <label>Artizian</label>
+    </customValue>
+    <customValue>
+        <fullName>Artizian Catering</fullName>
+        <default>false</default>
+        <label>Artizian Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Aser</fullName>
+        <default>false</default>
+        <label>Aser</label>
+    </customValue>
+    <customValue>
+        <fullName>Asian Center for Energy Management</fullName>
+        <default>false</default>
+        <label>Asian Center for Energy Management</label>
+    </customValue>
+    <customValue>
+        <fullName>ASM (Famour for Airports)</fullName>
+        <default>false</default>
+        <label>ASM (Famour for Airports)</label>
+    </customValue>
+    <customValue>
+        <fullName>Asn</fullName>
+        <default>false</default>
+        <label>Asn</label>
+    </customValue>
+    <customValue>
+        <fullName>Assaut Proprete</fullName>
+        <default>false</default>
+        <label>Assaut Proprete</label>
+    </customValue>
+    <customValue>
+        <fullName>ASSIYANA</fullName>
+        <default>false</default>
+        <label>ASSIYANA</label>
+    </customValue>
+    <customValue>
+        <fullName>ATHENA</fullName>
+        <default>false</default>
+        <label>ATHENA</label>
+    </customValue>
+    <customValue>
+        <fullName>Atlantique Nettoyage Industriel</fullName>
+        <default>false</default>
+        <label>Atlantique Nettoyage Industriel</label>
+    </customValue>
+    <customValue>
+        <fullName>Atmos</fullName>
+        <default>false</default>
+        <label>Atmos</label>
+    </customValue>
+    <customValue>
+        <fullName>A TO Z</fullName>
+        <default>false</default>
+        <label>A TO Z</label>
+    </customValue>
+    <customValue>
+        <fullName>ATS</fullName>
+        <default>false</default>
+        <label>ATS</label>
+    </customValue>
+    <customValue>
+        <fullName>ATTILA-KOULA</fullName>
+        <default>false</default>
+        <label>ATTILA-KOULA</label>
+    </customValue>
+    <customValue>
+        <fullName>Autograph/Interserve</fullName>
+        <default>false</default>
+        <label>Autograph/Interserve</label>
+    </customValue>
+    <customValue>
+        <fullName>Autres</fullName>
+        <default>false</default>
+        <label>Autres</label>
+    </customValue>
+    <customValue>
+        <fullName>AVE</fullName>
+        <default>false</default>
+        <label>AVE</label>
+    </customValue>
+    <customValue>
+        <fullName>Avenance</fullName>
+        <default>false</default>
+        <label>Avenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Aviation Support International, Inc.</fullName>
+        <default>false</default>
+        <label>Aviation Support International, Inc.</label>
+    </customValue>
+    <customValue>
+        <fullName>Avica</fullName>
+        <default>false</default>
+        <label>Avica</label>
+    </customValue>
+    <customValue>
+        <fullName>Axis</fullName>
+        <default>false</default>
+        <label>Axis</label>
+    </customValue>
+    <customValue>
+        <fullName>Axis Group</fullName>
+        <default>false</default>
+        <label>Axis Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Axxicom (Facilicom)</fullName>
+        <default>false</default>
+        <label>Axxicom (Facilicom)</label>
+    </customValue>
+    <customValue>
+        <fullName>Az Clean</fullName>
+        <default>false</default>
+        <label>Az Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Aziris</fullName>
+        <default>false</default>
+        <label>Aziris</label>
+    </customValue>
+    <customValue>
+        <fullName>Azon&apos;s Catering Services</fullName>
+        <default>false</default>
+        <label>Azon&apos;s Catering Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Azur</fullName>
+        <default>false</default>
+        <label>Azur</label>
+    </customValue>
+    <customValue>
+        <fullName>B+N Referencia</fullName>
+        <default>false</default>
+        <label>B+N Referencia</label>
+    </customValue>
+    <customValue>
+        <fullName>BAM FM</fullName>
+        <default>false</default>
+        <label>BAM FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Bartlett Mitchell</fullName>
+        <default>false</default>
+        <label>Bartlett Mitchell</label>
+    </customValue>
+    <customValue>
+        <fullName>BASAMAK</fullName>
+        <default>false</default>
+        <label>BASAMAK</label>
+    </customValue>
+    <customValue>
+        <fullName>BAŞKENT</fullName>
+        <default>false</default>
+        <label>BAŞKENT</label>
+    </customValue>
+    <customValue>
+        <fullName>BAVARIS FACILITY SERVICES, s.r.o.</fullName>
+        <default>false</default>
+        <label>BAVARIS FACILITY SERVICES, s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>Baxter Storey</fullName>
+        <default>false</default>
+        <label>Baxter Storey</label>
+    </customValue>
+    <customValue>
+        <fullName>BAZ</fullName>
+        <default>false</default>
+        <label>BAZ</label>
+    </customValue>
+    <customValue>
+        <fullName>Bees Clean</fullName>
+        <default>false</default>
+        <label>Bees Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>BelEz</fullName>
+        <default>false</default>
+        <label>BelEz</label>
+    </customValue>
+    <customValue>
+        <fullName>Belgocatering</fullName>
+        <default>false</default>
+        <label>Belgocatering</label>
+    </customValue>
+    <customValue>
+        <fullName>Bellrock</fullName>
+        <default>false</default>
+        <label>Bellrock</label>
+    </customValue>
+    <customValue>
+        <fullName>Belveder</fullName>
+        <default>false</default>
+        <label>Belveder</label>
+    </customValue>
+    <customValue>
+        <fullName>Benugo</fullName>
+        <default>false</default>
+        <label>Benugo</label>
+    </customValue>
+    <customValue>
+        <fullName>Best Security Agency, Inc.</fullName>
+        <default>false</default>
+        <label>Best Security Agency, Inc.</label>
+    </customValue>
+    <customValue>
+        <fullName>BEST Tech</fullName>
+        <default>false</default>
+        <label>BEST Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Bilfinger Europa FM</fullName>
+        <default>false</default>
+        <label>Bilfinger Europa FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Bio Freash Cleaning Services</fullName>
+        <default>false</default>
+        <label>Bio Freash Cleaning Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotech System</fullName>
+        <default>false</default>
+        <label>Biotech System</label>
+    </customValue>
+    <customValue>
+        <fullName>BİZİM SERVİS</fullName>
+        <default>false</default>
+        <label>BİZİM SERVİS</label>
+    </customValue>
+    <customValue>
+        <fullName>BİZ TEMİZLİK</fullName>
+        <default>false</default>
+        <label>BİZ TEMİZLİK</label>
+    </customValue>
+    <customValue>
+        <fullName>BK Group a.s.</fullName>
+        <default>false</default>
+        <label>BK Group a.s.</label>
+    </customValue>
+    <customValue>
+        <fullName>Blattaria</fullName>
+        <default>false</default>
+        <label>Blattaria</label>
+    </customValue>
+    <customValue>
+        <fullName>Blue Apple</fullName>
+        <default>false</default>
+        <label>Blue Apple</label>
+    </customValue>
+    <customValue>
+        <fullName>Blue Apple Catering</fullName>
+        <default>false</default>
+        <label>Blue Apple Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Blue I Security</fullName>
+        <default>false</default>
+        <label>Blue I Security</label>
+    </customValue>
+    <customValue>
+        <fullName>BMF</fullName>
+        <default>false</default>
+        <label>BMF</label>
+    </customValue>
+    <customValue>
+        <fullName>BMS</fullName>
+        <default>false</default>
+        <label>BMS</label>
+    </customValue>
+    <customValue>
+        <fullName>BOE</fullName>
+        <default>false</default>
+        <label>BOE</label>
+    </customValue>
+    <customValue>
+        <fullName>BOGAZICI</fullName>
+        <default>false</default>
+        <label>BOGAZICI</label>
+    </customValue>
+    <customValue>
+        <fullName>Boldt Brothers</fullName>
+        <default>false</default>
+        <label>Boldt Brothers</label>
+    </customValue>
+    <customValue>
+        <fullName>BONUL, s.r.o.</fullName>
+        <default>false</default>
+        <label>BONUL, s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>Bouygues Energie Et Services</fullName>
+        <default>false</default>
+        <label>Bouygues Energie Et Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Bouygues Energies &amp; Services</fullName>
+        <default>false</default>
+        <label>Bouygues Energies &amp; Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Bravo Security</fullName>
+        <default>false</default>
+        <label>Bravo Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Briggs &amp; Forrester</fullName>
+        <default>false</default>
+        <label>Briggs &amp; Forrester</label>
+    </customValue>
+    <customValue>
+        <fullName>BRIGHT</fullName>
+        <default>false</default>
+        <label>BRIGHT</label>
+    </customValue>
+    <customValue>
+        <fullName>Britsafe</fullName>
+        <default>false</default>
+        <label>Britsafe</label>
+    </customValue>
+    <customValue>
+        <fullName>BROLL</fullName>
+        <default>false</default>
+        <label>BROLL</label>
+    </customValue>
+    <customValue>
+        <fullName>BSC</fullName>
+        <default>false</default>
+        <label>BSC</label>
+    </customValue>
+    <customValue>
+        <fullName>Bsl</fullName>
+        <default>false</default>
+        <label>Bsl</label>
+    </customValue>
+    <customValue>
+        <fullName>BSS</fullName>
+        <default>false</default>
+        <label>BSS</label>
+    </customValue>
+    <customValue>
+        <fullName>BTL</fullName>
+        <default>false</default>
+        <label>BTL</label>
+    </customValue>
+    <customValue>
+        <fullName>Bug Begone</fullName>
+        <default>false</default>
+        <label>Bug Begone</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Management Services</fullName>
+        <default>false</default>
+        <label>Building Management Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Stars</fullName>
+        <default>false</default>
+        <label>Building Stars</label>
+    </customValue>
+    <customValue>
+        <fullName>Bumi Hijau Landscape</fullName>
+        <default>false</default>
+        <label>Bumi Hijau Landscape</label>
+    </customValue>
+    <customValue>
+        <fullName>BUTEC PROPERTY MANAGEMENT (BPM)</fullName>
+        <default>false</default>
+        <label>BUTEC PROPERTY MANAGEMENT (BPM)</label>
+    </customValue>
+    <customValue>
+        <fullName>BUYRUK</fullName>
+        <default>false</default>
+        <label>BUYRUK</label>
+    </customValue>
+    <customValue>
+        <fullName>BVG</fullName>
+        <default>false</default>
+        <label>BVG</label>
+    </customValue>
+    <customValue>
+        <fullName>Byblos Human Security</fullName>
+        <default>false</default>
+        <label>Byblos Human Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Bybloss</fullName>
+        <default>false</default>
+        <label>Bybloss</label>
+    </customValue>
+    <customValue>
+        <fullName>Byś</fullName>
+        <default>false</default>
+        <label>Byś</label>
+    </customValue>
+    <customValue>
+        <fullName>CA&amp;T</fullName>
+        <default>false</default>
+        <label>CA&amp;T</label>
+    </customValue>
+    <customValue>
+        <fullName>Cambodia Air Catering Services</fullName>
+        <default>false</default>
+        <label>Cambodia Air Catering Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Campaign Complete Solutions Pte Ltd</fullName>
+        <default>false</default>
+        <label>Campaign Complete Solutions Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Caravan/Knight</fullName>
+        <default>false</default>
+        <label>Caravan/Knight</label>
+    </customValue>
+    <customValue>
+        <fullName>Care</fullName>
+        <default>false</default>
+        <label>Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Care /Vebego</fullName>
+        <default>false</default>
+        <label>Care /Vebego</label>
+    </customValue>
+    <customValue>
+        <fullName>Care Vietnam</fullName>
+        <default>false</default>
+        <label>Care Vietnam</label>
+    </customValue>
+    <customValue>
+        <fullName>Carillion</fullName>
+        <default>false</default>
+        <label>Carillion</label>
+    </customValue>
+    <customValue>
+        <fullName>Carillion Services</fullName>
+        <default>false</default>
+        <label>Carillion Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Carlisle</fullName>
+        <default>false</default>
+        <label>Carlisle</label>
+    </customValue>
+    <customValue>
+        <fullName>CARNIHERBA</fullName>
+        <default>false</default>
+        <label>CARNIHERBA</label>
+    </customValue>
+    <customValue>
+        <fullName>Caronet</fullName>
+        <default>false</default>
+        <label>Caronet</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrard Services</fullName>
+        <default>false</default>
+        <label>Carrard Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Cas</fullName>
+        <default>false</default>
+        <label>Cas</label>
+    </customValue>
+    <customValue>
+        <fullName>Cas B</fullName>
+        <default>false</default>
+        <label>Cas B</label>
+    </customValue>
+    <customValue>
+        <fullName>CAT</fullName>
+        <default>false</default>
+        <label>CAT</label>
+    </customValue>
+    <customValue>
+        <fullName>Cat Armor</fullName>
+        <default>false</default>
+        <label>Cat Armor</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Academy</fullName>
+        <default>false</default>
+        <label>Catering Academy</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Alliance</fullName>
+        <default>false</default>
+        <label>Catering Alliance</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Kvatrić</fullName>
+        <default>false</default>
+        <label>Catering Kvatrić</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Lisak</fullName>
+        <default>false</default>
+        <label>Catering Lisak</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Lobby</fullName>
+        <default>false</default>
+        <label>Catering Lobby</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Mix SK s. r. o.</fullName>
+        <default>false</default>
+        <label>Catering Mix SK s. r. o.</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Partnership</fullName>
+        <default>false</default>
+        <label>Catering Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>Caterlink</fullName>
+        <default>false</default>
+        <label>Caterlink</label>
+    </customValue>
+    <customValue>
+        <fullName>Catermasters</fullName>
+        <default>false</default>
+        <label>Catermasters</label>
+    </customValue>
+    <customValue>
+        <fullName>Caterplus</fullName>
+        <default>false</default>
+        <label>Caterplus</label>
+    </customValue>
+    <customValue>
+        <fullName>Caverion</fullName>
+        <default>false</default>
+        <label>Caverion</label>
+    </customValue>
+    <customValue>
+        <fullName>CBE</fullName>
+        <default>false</default>
+        <label>CBE</label>
+    </customValue>
+    <customValue>
+        <fullName>CBRE</fullName>
+        <default>false</default>
+        <label>CBRE</label>
+    </customValue>
+    <customValue>
+        <fullName>CBRE GWS</fullName>
+        <default>false</default>
+        <label>CBRE GWS</label>
+    </customValue>
+    <customValue>
+        <fullName>CBS</fullName>
+        <default>false</default>
+        <label>CBS</label>
+    </customValue>
+    <customValue>
+        <fullName>Cec</fullName>
+        <default>false</default>
+        <label>Cec</label>
+    </customValue>
+    <customValue>
+        <fullName>Cegelec</fullName>
+        <default>false</default>
+        <label>Cegelec</label>
+    </customValue>
+    <customValue>
+        <fullName>Cekap Technical Services Sdn Bhd</fullName>
+        <default>false</default>
+        <label>Cekap Technical Services Sdn Bhd</label>
+    </customValue>
+    <customValue>
+        <fullName>ÇELEBİ</fullName>
+        <default>false</default>
+        <label>ÇELEBİ</label>
+    </customValue>
+    <customValue>
+        <fullName>Celtic</fullName>
+        <default>false</default>
+        <label>Celtic</label>
+    </customValue>
+    <customValue>
+        <fullName>Celtic Catering</fullName>
+        <default>false</default>
+        <label>Celtic Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Century Pacific Management</fullName>
+        <default>false</default>
+        <label>Century Pacific Management</label>
+    </customValue>
+    <customValue>
+        <fullName>ÇETİN GRUP</fullName>
+        <default>false</default>
+        <label>ÇETİN GRUP</label>
+    </customValue>
+    <customValue>
+        <fullName>ČEZ</fullName>
+        <default>false</default>
+        <label>ČEZ</label>
+    </customValue>
+    <customValue>
+        <fullName>CFG</fullName>
+        <default>false</default>
+        <label>CFG</label>
+    </customValue>
+    <customValue>
+        <fullName>CH&amp;Co</fullName>
+        <default>false</default>
+        <label>CH&amp;Co</label>
+    </customValue>
+    <customValue>
+        <fullName>Challancin</fullName>
+        <default>false</default>
+        <label>Challancin</label>
+    </customValue>
+    <customValue>
+        <fullName>CHALLENGE</fullName>
+        <default>false</default>
+        <label>CHALLENGE</label>
+    </customValue>
+    <customValue>
+        <fullName>Challenge Unlimited</fullName>
+        <default>false</default>
+        <label>Challenge Unlimited</label>
+    </customValue>
+    <customValue>
+        <fullName>Charlton House</fullName>
+        <default>false</default>
+        <label>Charlton House</label>
+    </customValue>
+    <customValue>
+        <fullName>Chartwells</fullName>
+        <default>false</default>
+        <label>Chartwells</label>
+    </customValue>
+    <customValue>
+        <fullName>Checkmate Services</fullName>
+        <default>false</default>
+        <label>Checkmate Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Chem-Dry (M) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Chem-Dry (M) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Chen Wa landscape</fullName>
+        <default>false</default>
+        <label>Chen Wa landscape</label>
+    </customValue>
+    <customValue>
+        <fullName>Chistiy Svet</fullName>
+        <default>false</default>
+        <label>Chistiy Svet</label>
+    </customValue>
+    <customValue>
+        <fullName>Chiyoda Malaysia Sdn Bhd</fullName>
+        <default>false</default>
+        <label>Chiyoda Malaysia Sdn Bhd</label>
+    </customValue>
+    <customValue>
+        <fullName>Churchill Catering</fullName>
+        <default>false</default>
+        <label>Churchill Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Churchills</fullName>
+        <default>false</default>
+        <label>Churchills</label>
+    </customValue>
+    <customValue>
+        <fullName>Churchill Services</fullName>
+        <default>false</default>
+        <label>Churchill Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Churchill Services Redcliffe</fullName>
+        <default>false</default>
+        <label>Churchill Services Redcliffe</label>
+    </customValue>
+    <customValue>
+        <fullName>Chye Thiam Maintenance Pte Ltd</fullName>
+        <default>false</default>
+        <label>Chye Thiam Maintenance Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>CIS Security</fullName>
+        <default>false</default>
+        <label>CIS Security</label>
+    </customValue>
+    <customValue>
+        <fullName>City FM</fullName>
+        <default>false</default>
+        <label>City FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Citywide</fullName>
+        <default>false</default>
+        <label>Citywide</label>
+    </customValue>
+    <customValue>
+        <fullName>Civil + Pajzs 07</fullName>
+        <default>false</default>
+        <label>Civil + Pajzs 07</label>
+    </customValue>
+    <customValue>
+        <fullName>Claro</fullName>
+        <default>false</default>
+        <label>Claro</label>
+    </customValue>
+    <customValue>
+        <fullName>Clar System</fullName>
+        <default>false</default>
+        <label>Clar System</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean and Care</fullName>
+        <default>false</default>
+        <label>Clean and Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean Attitude</fullName>
+        <default>false</default>
+        <label>Clean Attitude</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean House Vietnam </fullName>
+        <default>false</default>
+        <label>Clean House Vietnam </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Masters</fullName>
+        <default>false</default>
+        <label>Cleaning Masters</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Services Group</fullName>
+        <default>false</default>
+        <label>Cleaning Services Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean Nettoyage</fullName>
+        <default>false</default>
+        <label>Clean Nettoyage</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean Power</fullName>
+        <default>false</default>
+        <label>Clean Power</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean Pro</fullName>
+        <default>false</default>
+        <label>Clean Pro</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleansave Waste   Corporation</fullName>
+        <default>false</default>
+        <label>Cleansave Waste   Corporation</label>
+    </customValue>
+    <customValue>
+        <fullName>CLEAN SERVICES</fullName>
+        <default>false</default>
+        <label>CLEAN SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean Solutions Pte Ltd</fullName>
+        <default>false</default>
+        <label>Clean Solutions Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleantech</fullName>
+        <default>false</default>
+        <label>Cleantech</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean Unique</fullName>
+        <default>false</default>
+        <label>Clean Unique</label>
+    </customValue>
+    <customValue>
+        <fullName>Clear Waste</fullName>
+        <default>false</default>
+        <label>Clear Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Clinitex</fullName>
+        <default>false</default>
+        <label>Clinitex</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud FM</fullName>
+        <default>false</default>
+        <label>Cloud FM</label>
+    </customValue>
+    <customValue>
+        <fullName>CLR Facility Services</fullName>
+        <default>false</default>
+        <label>CLR Facility Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Cmr</fullName>
+        <default>false</default>
+        <label>Cmr</label>
+    </customValue>
+    <customValue>
+        <fullName>Cnh</fullName>
+        <default>false</default>
+        <label>Cnh</label>
+    </customValue>
+    <customValue>
+        <fullName>Cofely</fullName>
+        <default>false</default>
+        <label>Cofely</label>
+    </customValue>
+    <customValue>
+        <fullName>Colliers</fullName>
+        <default>false</default>
+        <label>Colliers</label>
+    </customValue>
+    <customValue>
+        <fullName>Collins Building Services</fullName>
+        <default>false</default>
+        <label>Collins Building Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Comin Asia</fullName>
+        <default>false</default>
+        <label>Comin Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Comin Khmer</fullName>
+        <default>false</default>
+        <label>Comin Khmer</label>
+    </customValue>
+    <customValue>
+        <fullName>Comme à la Maison</fullName>
+        <default>false</default>
+        <label>Comme à la Maison</label>
+    </customValue>
+    <customValue>
+        <fullName>COMMERCIAL INVESTIGATION SERVICES (CIS)</fullName>
+        <default>false</default>
+        <label>COMMERCIAL INVESTIGATION SERVICES (CIS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Compass</fullName>
+        <default>false</default>
+        <label>Compass</label>
+    </customValue>
+    <customValue>
+        <fullName>Concept 3P</fullName>
+        <default>false</default>
+        <label>Concept 3P</label>
+    </customValue>
+    <customValue>
+        <fullName>Concept Proprete Services</fullName>
+        <default>false</default>
+        <label>Concept Proprete Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Connect</fullName>
+        <default>false</default>
+        <label>Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Connect Catering</fullName>
+        <default>false</default>
+        <label>Connect Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Constant</fullName>
+        <default>false</default>
+        <label>Constant</label>
+    </customValue>
+    <customValue>
+        <fullName>Coopservice BMK</fullName>
+        <default>false</default>
+        <label>Coopservice BMK</label>
+    </customValue>
+    <customValue>
+        <fullName>Copest</fullName>
+        <default>false</default>
+        <label>Copest</label>
+    </customValue>
+    <customValue>
+        <fullName>Coral</fullName>
+        <default>false</default>
+        <label>Coral</label>
+    </customValue>
+    <customValue>
+        <fullName>Cordant Services</fullName>
+        <default>false</default>
+        <label>Cordant Services</label>
+    </customValue>
+    <customValue>
+        <fullName>CORE</fullName>
+        <default>false</default>
+        <label>CORE</label>
+    </customValue>
+    <customValue>
+        <fullName>Corps Security</fullName>
+        <default>false</default>
+        <label>Corps Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Corser</fullName>
+        <default>false</default>
+        <label>Corser</label>
+    </customValue>
+    <customValue>
+        <fullName>COVERALL</fullName>
+        <default>false</default>
+        <label>COVERALL</label>
+    </customValue>
+    <customValue>
+        <fullName>C PLUS</fullName>
+        <default>false</default>
+        <label>C PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>Crioti Deva.</fullName>
+        <default>false</default>
+        <label>Crioti Deva.</label>
+    </customValue>
+    <customValue>
+        <fullName>CRS Facility Services</fullName>
+        <default>false</default>
+        <label>CRS Facility Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Crushman and Wakefield </fullName>
+        <default>false</default>
+        <label>Crushman and Wakefield </label>
+    </customValue>
+    <customValue>
+        <fullName>CSG</fullName>
+        <default>false</default>
+        <label>CSG</label>
+    </customValue>
+    <customValue>
+        <fullName>CS Group Of Companies</fullName>
+        <default>false</default>
+        <label>CS Group Of Companies</label>
+    </customValue>
+    <customValue>
+        <fullName>CSI International</fullName>
+        <default>false</default>
+        <label>CSI International</label>
+    </customValue>
+    <customValue>
+        <fullName>CSS Building Services</fullName>
+        <default>false</default>
+        <label>CSS Building Services</label>
+    </customValue>
+    <customValue>
+        <fullName>CSU</fullName>
+        <default>false</default>
+        <label>CSU</label>
+    </customValue>
+    <customValue>
+        <fullName>Cube</fullName>
+        <default>false</default>
+        <label>Cube</label>
+    </customValue>
+    <customValue>
+        <fullName>Cushman &amp; Wakefield</fullName>
+        <default>false</default>
+        <label>Cushman &amp; Wakefield</label>
+    </customValue>
+    <customValue>
+        <fullName>Cushman Wakefield</fullName>
+        <default>false</default>
+        <label>Cushman Wakefield</label>
+    </customValue>
+    <customValue>
+        <fullName>CW SERVICES</fullName>
+        <default>false</default>
+        <label>CW SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>CWW</fullName>
+        <default>false</default>
+        <label>CWW</label>
+    </customValue>
+    <customValue>
+        <fullName>Dalkia</fullName>
+        <default>false</default>
+        <label>Dalkia</label>
+    </customValue>
+    <customValue>
+        <fullName>Dalkia Penelope</fullName>
+        <default>false</default>
+        <label>Dalkia Penelope</label>
+    </customValue>
+    <customValue>
+        <fullName>DBD Engineering</fullName>
+        <default>false</default>
+        <label>DBD Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>DDD Star s.r.o.</fullName>
+        <default>false</default>
+        <label>DDD Star s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>Deca France</fullName>
+        <default>false</default>
+        <label>Deca France</label>
+    </customValue>
+    <customValue>
+        <fullName>Dekra</fullName>
+        <default>false</default>
+        <label>Dekra</label>
+    </customValue>
+    <customValue>
+        <fullName>Delta Building</fullName>
+        <default>false</default>
+        <label>Delta Building</label>
+    </customValue>
+    <customValue>
+        <fullName>Delta Force Security Services &amp; Consultancy Sdn. B</fullName>
+        <default>false</default>
+        <label>Delta Force Security Services &amp; Consultancy Sdn. B</label>
+    </customValue>
+    <customValue>
+        <fullName>Densico</fullName>
+        <default>false</default>
+        <label>Densico</label>
+    </customValue>
+    <customValue>
+        <fullName>Derichbourg / Penauille</fullName>
+        <default>false</default>
+        <label>Derichbourg / Penauille</label>
+    </customValue>
+    <customValue>
+        <fullName>Derichbourg Angers</fullName>
+        <default>false</default>
+        <label>Derichbourg Angers</label>
+    </customValue>
+    <customValue>
+        <fullName>Derichebourg</fullName>
+        <default>false</default>
+        <label>Derichebourg</label>
+    </customValue>
+    <customValue>
+        <fullName>Derwent FM</fullName>
+        <default>false</default>
+        <label>Derwent FM</label>
+    </customValue>
+    <customValue>
+        <fullName>DGR</fullName>
+        <default>false</default>
+        <label>DGR</label>
+    </customValue>
+    <customValue>
+        <fullName>Dine</fullName>
+        <default>false</default>
+        <label>Dine</label>
+    </customValue>
+    <customValue>
+        <fullName>Directors Table</fullName>
+        <default>false</default>
+        <label>Directors Table</label>
+    </customValue>
+    <customValue>
+        <fullName>Diversified</fullName>
+        <default>false</default>
+        <label>Diversified</label>
+    </customValue>
+    <customValue>
+        <fullName>Diz higijena</fullName>
+        <default>false</default>
+        <label>Diz higijena</label>
+    </customValue>
+    <customValue>
+        <fullName>Dmh Securite</fullName>
+        <default>false</default>
+        <label>Dmh Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>DOGA</fullName>
+        <default>false</default>
+        <label>DOGA</label>
+    </customValue>
+    <customValue>
+        <fullName>Dong Quang Group (dongquanggroup.vn)</fullName>
+        <default>false</default>
+        <label>Dong Quang Group (dongquanggroup.vn)</label>
+    </customValue>
+    <customValue>
+        <fullName>Donkergroen</fullName>
+        <default>false</default>
+        <label>Donkergroen</label>
+    </customValue>
+    <customValue>
+        <fullName>Dpsa</fullName>
+        <default>false</default>
+        <label>Dpsa</label>
+    </customValue>
+    <customValue>
+        <fullName>Dpsi</fullName>
+        <default>false</default>
+        <label>Dpsi</label>
+    </customValue>
+    <customValue>
+        <fullName>DRAGON SECURITY</fullName>
+        <default>false</default>
+        <label>DRAGON SECURITY</label>
+    </customValue>
+    <customValue>
+        <fullName>Dsn</fullName>
+        <default>false</default>
+        <label>Dsn</label>
+    </customValue>
+    <customValue>
+        <fullName>Duchy</fullName>
+        <default>false</default>
+        <label>Duchy</label>
+    </customValue>
+    <customValue>
+        <fullName>Dussmann</fullName>
+        <default>false</default>
+        <label>Dussmann</label>
+    </customValue>
+    <customValue>
+        <fullName>Duster/DTSS</fullName>
+        <default>false</default>
+        <label>Duster/DTSS</label>
+    </customValue>
+    <customValue>
+        <fullName>EAGLE CORPS</fullName>
+        <default>false</default>
+        <label>EAGLE CORPS</label>
+    </customValue>
+    <customValue>
+        <fullName>EAGLE SECURITY, a.s.</fullName>
+        <default>false</default>
+        <label>EAGLE SECURITY, a.s.</label>
+    </customValue>
+    <customValue>
+        <fullName>Eastern Janitorial</fullName>
+        <default>false</default>
+        <label>Eastern Janitorial</label>
+    </customValue>
+    <customValue>
+        <fullName>Easysay</fullName>
+        <default>false</default>
+        <label>Easysay</label>
+    </customValue>
+    <customValue>
+        <fullName>Eclaircir</fullName>
+        <default>false</default>
+        <label>Eclaircir</label>
+    </customValue>
+    <customValue>
+        <fullName>Eclanet</fullName>
+        <default>false</default>
+        <label>Eclanet</label>
+    </customValue>
+    <customValue>
+        <fullName>Eclat Du Morvan</fullName>
+        <default>false</default>
+        <label>Eclat Du Morvan</label>
+    </customValue>
+    <customValue>
+        <fullName>ECOLIFE</fullName>
+        <default>false</default>
+        <label>ECOLIFE</label>
+    </customValue>
+    <customValue>
+        <fullName>ECOLINE</fullName>
+        <default>false</default>
+        <label>ECOLINE</label>
+    </customValue>
+    <customValue>
+        <fullName>Eco Outdoor Asia, artificial grass Malaysia</fullName>
+        <default>false</default>
+        <label>Eco Outdoor Asia, artificial grass Malaysia</label>
+    </customValue>
+    <customValue>
+        <fullName>Eco Shield Pest Control Selangor</fullName>
+        <default>false</default>
+        <label>Eco Shield Pest Control Selangor</label>
+    </customValue>
+    <customValue>
+        <fullName>Ecotime</fullName>
+        <default>false</default>
+        <label>Ecotime</label>
+    </customValue>
+    <customValue>
+        <fullName>Eden</fullName>
+        <default>false</default>
+        <label>Eden</label>
+    </customValue>
+    <customValue>
+        <fullName>Eden Garden</fullName>
+        <default>false</default>
+        <label>Eden Garden</label>
+    </customValue>
+    <customValue>
+        <fullName>Eds Labrenne Propreté</fullName>
+        <default>false</default>
+        <label>Eds Labrenne Propreté</label>
+    </customValue>
+    <customValue>
+        <fullName>Edwards &amp; Blake</fullName>
+        <default>false</default>
+        <label>Edwards &amp; Blake</label>
+    </customValue>
+    <customValue>
+        <fullName>EFM</fullName>
+        <default>false</default>
+        <label>EFM</label>
+    </customValue>
+    <customValue>
+        <fullName>EGIDA</fullName>
+        <default>false</default>
+        <label>EGIDA</label>
+    </customValue>
+    <customValue>
+        <fullName>Egs</fullName>
+        <default>false</default>
+        <label>Egs</label>
+    </customValue>
+    <customValue>
+        <fullName>Eiffage Energie</fullName>
+        <default>false</default>
+        <label>Eiffage Energie</label>
+    </customValue>
+    <customValue>
+        <fullName>Eko-deratizacija</fullName>
+        <default>false</default>
+        <label>Eko-deratizacija</label>
+    </customValue>
+    <customValue>
+        <fullName>Eko Fokus</fullName>
+        <default>false</default>
+        <label>Eko Fokus</label>
+    </customValue>
+    <customValue>
+        <fullName>EKOLAS, s.r.o</fullName>
+        <default>false</default>
+        <label>EKOLAS, s.r.o</label>
+    </customValue>
+    <customValue>
+        <fullName>EKOL GRUP GÜVENLİK</fullName>
+        <default>false</default>
+        <label>EKOL GRUP GÜVENLİK</label>
+    </customValue>
+    <customValue>
+        <fullName>Eko standard</fullName>
+        <default>false</default>
+        <label>Eko standard</label>
+    </customValue>
+    <customValue>
+        <fullName>Ekotrade</fullName>
+        <default>false</default>
+        <label>Ekotrade</label>
+    </customValue>
+    <customValue>
+        <fullName>EKSPRES</fullName>
+        <default>false</default>
+        <label>EKSPRES</label>
+    </customValue>
+    <customValue>
+        <fullName>Elior</fullName>
+        <default>false</default>
+        <label>Elior</label>
+    </customValue>
+    <customValue>
+        <fullName>Elior UK</fullName>
+        <default>false</default>
+        <label>Elior UK</label>
+    </customValue>
+    <customValue>
+        <fullName>Elite Catering</fullName>
+        <default>false</default>
+        <label>Elite Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>EMCOR UK</fullName>
+        <default>false</default>
+        <label>EMCOR UK</label>
+    </customValue>
+    <customValue>
+        <fullName>EMG (part of MMG Group)</fullName>
+        <default>false</default>
+        <label>EMG (part of MMG Group)</label>
+    </customValue>
+    <customValue>
+        <fullName>Emprise</fullName>
+        <default>false</default>
+        <label>Emprise</label>
+    </customValue>
+    <customValue>
+        <fullName>EMS</fullName>
+        <default>false</default>
+        <label>EMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Emtec</fullName>
+        <default>false</default>
+        <label>Emtec</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Workforce Group of Companies</fullName>
+        <default>false</default>
+        <label>Energy Workforce Group of Companies</label>
+    </customValue>
+    <customValue>
+        <fullName>Engie</fullName>
+        <default>false</default>
+        <label>Engie</label>
+    </customValue>
+    <customValue>
+        <fullName>Engie Cofely Services</fullName>
+        <default>false</default>
+        <label>Engie Cofely Services</label>
+    </customValue>
+    <customValue>
+        <fullName>ENGIE Services</fullName>
+        <default>false</default>
+        <label>ENGIE Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Entreprise Locale</fullName>
+        <default>false</default>
+        <label>Entreprise Locale</label>
+    </customValue>
+    <customValue>
+        <fullName>Epicure Catering</fullName>
+        <default>false</default>
+        <label>Epicure Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Eris Securite</fullName>
+        <default>false</default>
+        <label>Eris Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>Ernett</fullName>
+        <default>false</default>
+        <label>Ernett</label>
+    </customValue>
+    <customValue>
+        <fullName>Espace Deco</fullName>
+        <default>false</default>
+        <label>Espace Deco</label>
+    </customValue>
+    <customValue>
+        <fullName>Essensi</fullName>
+        <default>false</default>
+        <label>Essensi</label>
+    </customValue>
+    <customValue>
+        <fullName>Essi</fullName>
+        <default>false</default>
+        <label>Essi</label>
+    </customValue>
+    <customValue>
+        <fullName>EUBSA</fullName>
+        <default>false</default>
+        <label>EUBSA</label>
+    </customValue>
+    <customValue>
+        <fullName>Eurest</fullName>
+        <default>false</default>
+        <label>Eurest</label>
+    </customValue>
+    <customValue>
+        <fullName>Euroclean</fullName>
+        <default>false</default>
+        <label>Euroclean</label>
+    </customValue>
+    <customValue>
+        <fullName>Euronet</fullName>
+        <default>false</default>
+        <label>Euronet</label>
+    </customValue>
+    <customValue>
+        <fullName>Europass Group</fullName>
+        <default>false</default>
+        <label>Europass Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Euro Pest control </fullName>
+        <default>false</default>
+        <label>Euro Pest control </label>
+    </customValue>
+    <customValue>
+        <fullName>Eurosan</fullName>
+        <default>false</default>
+        <label>Eurosan</label>
+    </customValue>
+    <customValue>
+        <fullName>EUROSERVE</fullName>
+        <default>false</default>
+        <label>EUROSERVE</label>
+    </customValue>
+    <customValue>
+        <fullName>EUROVIA</fullName>
+        <default>false</default>
+        <label>EUROVIA</label>
+    </customValue>
+    <customValue>
+        <fullName>Ever</fullName>
+        <default>false</default>
+        <label>Ever</label>
+    </customValue>
+    <customValue>
+        <fullName>Evergreen Cleantech</fullName>
+        <default>false</default>
+        <label>Evergreen Cleantech</label>
+    </customValue>
+    <customValue>
+        <fullName>Exera</fullName>
+        <default>false</default>
+        <label>Exera</label>
+    </customValue>
+    <customValue>
+        <fullName>Express Service</fullName>
+        <default>false</default>
+        <label>Express Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Exprim</fullName>
+        <default>false</default>
+        <label>Exprim</label>
+    </customValue>
+    <customValue>
+        <fullName>Fabulous Track Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Fabulous Track Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Faceo</fullName>
+        <default>false</default>
+        <label>Faceo</label>
+    </customValue>
+    <customValue>
+        <fullName>Facilicom</fullName>
+        <default>false</default>
+        <label>Facilicom</label>
+    </customValue>
+    <customValue>
+        <fullName>FACILISERV</fullName>
+        <default>false</default>
+        <label>FACILISERV</label>
+    </customValue>
+    <customValue>
+        <fullName>Faciliteam</fullName>
+        <default>false</default>
+        <label>Faciliteam</label>
+    </customValue>
+    <customValue>
+        <fullName>Fakultás FM</fullName>
+        <default>false</default>
+        <label>Fakultás FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Falcon</fullName>
+        <default>false</default>
+        <label>Falcon</label>
+    </customValue>
+    <customValue>
+        <fullName>FBSerwis</fullName>
+        <default>false</default>
+        <label>FBSerwis</label>
+    </customValue>
+    <customValue>
+        <fullName>FCC Slovensko, s.r.o.</fullName>
+        <default>false</default>
+        <label>FCC Slovensko, s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>FCS Concierge Service Management</fullName>
+        <default>false</default>
+        <label>FCS Concierge Service Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Fd40</fullName>
+        <default>false</default>
+        <label>Fd40</label>
+    </customValue>
+    <customValue>
+        <fullName>Fern Landscape Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Fern Landscape Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>FES</fullName>
+        <default>false</default>
+        <label>FES</label>
+    </customValue>
+    <customValue>
+        <fullName>FES FM</fullName>
+        <default>false</default>
+        <label>FES FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Fiducial</fullName>
+        <default>false</default>
+        <label>Fiducial</label>
+    </customValue>
+    <customValue>
+        <fullName>Fiducial Security</fullName>
+        <default>false</default>
+        <label>Fiducial Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Fiona</fullName>
+        <default>false</default>
+        <label>Fiona</label>
+    </customValue>
+    <customValue>
+        <fullName>First facility</fullName>
+        <default>false</default>
+        <label>First facility</label>
+    </customValue>
+    <customValue>
+        <fullName>First Quality</fullName>
+        <default>false</default>
+        <label>First Quality</label>
+    </customValue>
+    <customValue>
+        <fullName>First Security</fullName>
+        <default>false</default>
+        <label>First Security</label>
+    </customValue>
+    <customValue>
+        <fullName>FKS</fullName>
+        <default>false</default>
+        <label>FKS</label>
+    </customValue>
+    <customValue>
+        <fullName>FMS HİZMET</fullName>
+        <default>false</default>
+        <label>FMS HİZMET</label>
+    </customValue>
+    <customValue>
+        <fullName>Forset</fullName>
+        <default>false</default>
+        <label>Forset</label>
+    </customValue>
+    <customValue>
+        <fullName>Framex</fullName>
+        <default>false</default>
+        <label>Framex</label>
+    </customValue>
+    <customValue>
+        <fullName>France Gardiennage</fullName>
+        <default>false</default>
+        <label>France Gardiennage</label>
+    </customValue>
+    <customValue>
+        <fullName>Franchise</fullName>
+        <default>false</default>
+        <label>Franchise</label>
+    </customValue>
+    <customValue>
+        <fullName>Fsi</fullName>
+        <default>false</default>
+        <label>Fsi</label>
+    </customValue>
+    <customValue>
+        <fullName>Full Facilities Management</fullName>
+        <default>false</default>
+        <label>Full Facilities Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Future FM</fullName>
+        <default>false</default>
+        <label>Future FM</label>
+    </customValue>
+    <customValue>
+        <fullName>G4S</fullName>
+        <default>false</default>
+        <label>G4S</label>
+    </customValue>
+    <customValue>
+        <fullName>G4S NETTOYAGE</fullName>
+        <default>false</default>
+        <label>G4S NETTOYAGE</label>
+    </customValue>
+    <customValue>
+        <fullName>Gallier</fullName>
+        <default>false</default>
+        <label>Gallier</label>
+    </customValue>
+    <customValue>
+        <fullName>Gally</fullName>
+        <default>false</default>
+        <label>Gally</label>
+    </customValue>
+    <customValue>
+        <fullName>Gather and Gather</fullName>
+        <default>false</default>
+        <label>Gather and Gather</label>
+    </customValue>
+    <customValue>
+        <fullName>G Distribute</fullName>
+        <default>false</default>
+        <label>G Distribute</label>
+    </customValue>
+    <customValue>
+        <fullName>Gegenbauer</fullName>
+        <default>false</default>
+        <label>Gegenbauer</label>
+    </customValue>
+    <customValue>
+        <fullName>General Property</fullName>
+        <default>false</default>
+        <label>General Property</label>
+    </customValue>
+    <customValue>
+        <fullName>Genesa</fullName>
+        <default>false</default>
+        <label>Genesa</label>
+    </customValue>
+    <customValue>
+        <fullName>GENSER</fullName>
+        <default>false</default>
+        <label>GENSER</label>
+    </customValue>
+    <customValue>
+        <fullName>Genuine Dining Company</fullName>
+        <default>false</default>
+        <label>Genuine Dining Company</label>
+    </customValue>
+    <customValue>
+        <fullName>GESA</fullName>
+        <default>false</default>
+        <label>GESA</label>
+    </customValue>
+    <customValue>
+        <fullName>GGI</fullName>
+        <default>false</default>
+        <label>GGI</label>
+    </customValue>
+    <customValue>
+        <fullName>Ghp</fullName>
+        <default>false</default>
+        <label>Ghp</label>
+    </customValue>
+    <customValue>
+        <fullName>Glantz</fullName>
+        <default>false</default>
+        <label>Glantz</label>
+    </customValue>
+    <customValue>
+        <fullName>Glassi Glas</fullName>
+        <default>false</default>
+        <label>Glassi Glas</label>
+    </customValue>
+    <customValue>
+        <fullName>GLOBNET</fullName>
+        <default>false</default>
+        <label>GLOBNET</label>
+    </customValue>
+    <customValue>
+        <fullName>Gmt</fullName>
+        <default>false</default>
+        <label>Gmt</label>
+    </customValue>
+    <customValue>
+        <fullName>Go Clean</fullName>
+        <default>false</default>
+        <label>Go Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Golden Star</fullName>
+        <default>false</default>
+        <label>Golden Star</label>
+    </customValue>
+    <customValue>
+        <fullName>GOM</fullName>
+        <default>false</default>
+        <label>GOM</label>
+    </customValue>
+    <customValue>
+        <fullName>Goron</fullName>
+        <default>false</default>
+        <label>Goron</label>
+    </customValue>
+    <customValue>
+        <fullName>Gouze</fullName>
+        <default>false</default>
+        <label>Gouze</label>
+    </customValue>
+    <customValue>
+        <fullName>GÖZEN</fullName>
+        <default>false</default>
+        <label>GÖZEN</label>
+    </customValue>
+    <customValue>
+        <fullName>GPS Security Agency</fullName>
+        <default>false</default>
+        <label>GPS Security Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Graham Asset Management</fullName>
+        <default>false</default>
+        <label>Graham Asset Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Graysons</fullName>
+        <default>false</default>
+        <label>Graysons</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Decor</fullName>
+        <default>false</default>
+        <label>Green Decor</label>
+    </customValue>
+    <customValue>
+        <fullName>GSF</fullName>
+        <default>false</default>
+        <label>GSF</label>
+    </customValue>
+    <customValue>
+        <fullName>Gss</fullName>
+        <default>false</default>
+        <label>Gss</label>
+    </customValue>
+    <customValue>
+        <fullName>GTH</fullName>
+        <default>false</default>
+        <label>GTH</label>
+    </customValue>
+    <customValue>
+        <fullName>Guardforce</fullName>
+        <default>false</default>
+        <label>Guardforce</label>
+    </customValue>
+    <customValue>
+        <fullName>Guardian</fullName>
+        <default>false</default>
+        <label>Guardian</label>
+    </customValue>
+    <customValue>
+        <fullName>Guardian Security</fullName>
+        <default>false</default>
+        <label>Guardian Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Guarding UK</fullName>
+        <default>false</default>
+        <label>Guarding UK</label>
+    </customValue>
+    <customValue>
+        <fullName>GUNTAY</fullName>
+        <default>false</default>
+        <label>GUNTAY</label>
+    </customValue>
+    <customValue>
+        <fullName>GURSAN</fullName>
+        <default>false</default>
+        <label>GURSAN</label>
+    </customValue>
+    <customValue>
+        <fullName>H&amp;A PROPERTIES</fullName>
+        <default>false</default>
+        <label>H&amp;A PROPERTIES</label>
+    </customValue>
+    <customValue>
+        <fullName>H2o Cleaning Services Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>H2o Cleaning Services Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Hadžo stil</fullName>
+        <default>false</default>
+        <label>Hadžo stil</label>
+    </customValue>
+    <customValue>
+        <fullName>Hagar</fullName>
+        <default>false</default>
+        <label>Hagar</label>
+    </customValue>
+    <customValue>
+        <fullName>HAGO (Vebego)</fullName>
+        <default>false</default>
+        <label>HAGO (Vebego)</label>
+    </customValue>
+    <customValue>
+        <fullName>Hallmark</fullName>
+        <default>false</default>
+        <label>Hallmark</label>
+    </customValue>
+    <customValue>
+        <fullName>Harbour &amp; Jones</fullName>
+        <default>false</default>
+        <label>Harbour &amp; Jones</label>
+    </customValue>
+    <customValue>
+        <fullName>Harrisons</fullName>
+        <default>false</default>
+        <label>Harrisons</label>
+    </customValue>
+    <customValue>
+        <fullName>Harvard</fullName>
+        <default>false</default>
+        <label>Harvard</label>
+    </customValue>
+    <customValue>
+        <fullName>Haseca</fullName>
+        <default>false</default>
+        <label>Haseca</label>
+    </customValue>
+    <customValue>
+        <fullName>Hauzmajstor</fullName>
+        <default>false</default>
+        <label>Hauzmajstor</label>
+    </customValue>
+    <customValue>
+        <fullName>HCC</fullName>
+        <default>false</default>
+        <label>HCC</label>
+    </customValue>
+    <customValue>
+        <fullName>Hcm Grp Catermasters/Host</fullName>
+        <default>false</default>
+        <label>Hcm Grp Catermasters/Host</label>
+    </customValue>
+    <customValue>
+        <fullName>HEDEF GÜVENLİK</fullName>
+        <default>false</default>
+        <label>HEDEF GÜVENLİK</label>
+    </customValue>
+    <customValue>
+        <fullName>Hervé Thermique</fullName>
+        <default>false</default>
+        <label>Hervé Thermique</label>
+    </customValue>
+    <customValue>
+        <fullName>Hiap Huat Holdings Berhad</fullName>
+        <default>false</default>
+        <label>Hiap Huat Holdings Berhad</label>
+    </customValue>
+    <customValue>
+        <fullName>Hoffmen</fullName>
+        <default>false</default>
+        <label>Hoffmen</label>
+    </customValue>
+    <customValue>
+        <fullName>Host</fullName>
+        <default>false</default>
+        <label>Host</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotel care solutions</fullName>
+        <default>false</default>
+        <label>Hotel care solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Hudsons</fullName>
+        <default>false</default>
+        <label>Hudsons</label>
+    </customValue>
+    <customValue>
+        <fullName>Hutchisons</fullName>
+        <default>false</default>
+        <label>Hutchisons</label>
+    </customValue>
+    <customValue>
+        <fullName>Huy Bao Cleaning</fullName>
+        <default>false</default>
+        <label>Huy Bao Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Hygitec</fullName>
+        <default>false</default>
+        <label>Hygitec</label>
+    </customValue>
+    <customValue>
+        <fullName>IB EGE</fullName>
+        <default>false</default>
+        <label>IB EGE</label>
+    </customValue>
+    <customValue>
+        <fullName>I Care</fullName>
+        <default>false</default>
+        <label>I Care</label>
+    </customValue>
+    <customValue>
+        <fullName>ICC Cleaning Services</fullName>
+        <default>false</default>
+        <label>ICC Cleaning Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Icts</fullName>
+        <default>false</default>
+        <label>Icts</label>
+    </customValue>
+    <customValue>
+        <fullName>Id Eko</fullName>
+        <default>false</default>
+        <label>Id Eko</label>
+    </customValue>
+    <customValue>
+        <fullName>Idex</fullName>
+        <default>false</default>
+        <label>Idex</label>
+    </customValue>
+    <customValue>
+        <fullName>IDG Myanmar</fullName>
+        <default>false</default>
+        <label>IDG Myanmar</label>
+    </customValue>
+    <customValue>
+        <fullName>Id Verde</fullName>
+        <default>false</default>
+        <label>Id Verde</label>
+    </customValue>
+    <customValue>
+        <fullName>IGG</fullName>
+        <default>false</default>
+        <label>IGG</label>
+    </customValue>
+    <customValue>
+        <fullName>IH SERVICES</fullName>
+        <default>false</default>
+        <label>IH SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>Ikari</fullName>
+        <default>false</default>
+        <label>Ikari</label>
+    </customValue>
+    <customValue>
+        <fullName>Ikari (M) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Ikari (M) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Impel</fullName>
+        <default>false</default>
+        <label>Impel</label>
+    </customValue>
+    <customValue>
+        <fullName>Imtech</fullName>
+        <default>false</default>
+        <label>Imtech</label>
+    </customValue>
+    <customValue>
+        <fullName>Imtech Inviron</fullName>
+        <default>false</default>
+        <label>Imtech Inviron</label>
+    </customValue>
+    <customValue>
+        <fullName>Incentive FM</fullName>
+        <default>false</default>
+        <label>Incentive FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Independent</fullName>
+        <default>false</default>
+        <label>Independent</label>
+    </customValue>
+    <customValue>
+        <fullName>Indocater</fullName>
+        <default>false</default>
+        <label>Indocater</label>
+    </customValue>
+    <customValue>
+        <fullName>Inhouse</fullName>
+        <default>false</default>
+        <label>Inhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>In house</fullName>
+        <default>false</default>
+        <label>In house</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial</fullName>
+        <default>false</default>
+        <label>Initial</label>
+    </customValue>
+    <customValue>
+        <fullName>In-Kal Security</fullName>
+        <default>false</default>
+        <label>In-Kal Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Innoclean</fullName>
+        <default>false</default>
+        <label>Innoclean</label>
+    </customValue>
+    <customValue>
+        <fullName>Innovation</fullName>
+        <default>false</default>
+        <label>Innovation</label>
+    </customValue>
+    <customValue>
+        <fullName>Integral</fullName>
+        <default>false</default>
+        <label>Integral</label>
+    </customValue>
+    <customValue>
+        <fullName>INTER&apos;NET</fullName>
+        <default>false</default>
+        <label>INTER&apos;NET</label>
+    </customValue>
+    <customValue>
+        <fullName>Inter Clean</fullName>
+        <default>false</default>
+        <label>Inter Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Interne</fullName>
+        <default>false</default>
+        <label>Interne</label>
+    </customValue>
+    <customValue>
+        <fullName>Interserve</fullName>
+        <default>false</default>
+        <label>Interserve</label>
+    </customValue>
+    <customValue>
+        <fullName>Interserve Support Services</fullName>
+        <default>false</default>
+        <label>Interserve Support Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Inwemer</fullName>
+        <default>false</default>
+        <label>Inwemer</label>
+    </customValue>
+    <customValue>
+        <fullName>IOS</fullName>
+        <default>false</default>
+        <label>IOS</label>
+    </customValue>
+    <customValue>
+        <fullName>IPM Pest Masters</fullName>
+        <default>false</default>
+        <label>IPM Pest Masters</label>
+    </customValue>
+    <customValue>
+        <fullName>IRIS</fullName>
+        <default>false</default>
+        <label>IRIS</label>
+    </customValue>
+    <customValue>
+        <fullName>İŞ MER</fullName>
+        <default>false</default>
+        <label>İŞ MER</label>
+    </customValue>
+    <customValue>
+        <fullName>Isopro</fullName>
+        <default>false</default>
+        <label>Isopro</label>
+    </customValue>
+    <customValue>
+        <fullName>Isor</fullName>
+        <default>false</default>
+        <label>Isor</label>
+    </customValue>
+    <customValue>
+        <fullName>ISS</fullName>
+        <default>false</default>
+        <label>ISS</label>
+    </customValue>
+    <customValue>
+        <fullName>ISS Catering</fullName>
+        <default>false</default>
+        <label>ISS Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Iss Eaton</fullName>
+        <default>false</default>
+        <label>Iss Eaton</label>
+    </customValue>
+    <customValue>
+        <fullName>IS Servisystem Pte Ltd</fullName>
+        <default>false</default>
+        <label>IS Servisystem Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>ISS Facility Services</fullName>
+        <default>false</default>
+        <label>ISS Facility Services</label>
+    </customValue>
+    <customValue>
+        <fullName>ISS Facility Services Pte Ltd</fullName>
+        <default>false</default>
+        <label>ISS Facility Services Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Jacobs Engineering Group Malaysia Sdn Bhd</fullName>
+        <default>false</default>
+        <label>Jacobs Engineering Group Malaysia Sdn Bhd</label>
+    </customValue>
+    <customValue>
+        <fullName>Jaguar</fullName>
+        <default>false</default>
+        <label>Jaguar</label>
+    </customValue>
+    <customValue>
+        <fullName>JAMAIN BACO</fullName>
+        <default>false</default>
+        <label>JAMAIN BACO</label>
+    </customValue>
+    <customValue>
+        <fullName>JANI KING</fullName>
+        <default>false</default>
+        <label>JANI KING</label>
+    </customValue>
+    <customValue>
+        <fullName>JANITRONICS</fullName>
+        <default>false</default>
+        <label>JANITRONICS</label>
+    </customValue>
+    <customValue>
+        <fullName>Jánosik</fullName>
+        <default>false</default>
+        <label>Jánosik</label>
+    </customValue>
+    <customValue>
+        <fullName>JAN PRO</fullName>
+        <default>false</default>
+        <label>JAN PRO</label>
+    </customValue>
+    <customValue>
+        <fullName>JGM</fullName>
+        <default>false</default>
+        <label>JGM</label>
+    </customValue>
+    <customValue>
+        <fullName>JKP Rad</fullName>
+        <default>false</default>
+        <label>JKP Rad</label>
+    </customValue>
+    <customValue>
+        <fullName>JLL</fullName>
+        <default>false</default>
+        <label>JLL</label>
+    </customValue>
+    <customValue>
+        <fullName>Jlm</fullName>
+        <default>false</default>
+        <label>Jlm</label>
+    </customValue>
+    <customValue>
+        <fullName>JM Ecotech Solutions Co.</fullName>
+        <default>false</default>
+        <label>JM Ecotech Solutions Co.</label>
+    </customValue>
+    <customValue>
+        <fullName>Johnson Controls</fullName>
+        <default>false</default>
+        <label>Johnson Controls</label>
+    </customValue>
+    <customValue>
+        <fullName>Jones Lang Lasalle</fullName>
+        <default>false</default>
+        <label>Jones Lang Lasalle</label>
+    </customValue>
+    <customValue>
+        <fullName>Juventus</fullName>
+        <default>false</default>
+        <label>Juventus</label>
+    </customValue>
+    <customValue>
+        <fullName>K.U Cleaning Service</fullName>
+        <default>false</default>
+        <label>K.U Cleaning Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Kamiks Eko</fullName>
+        <default>false</default>
+        <label>Kamiks Eko</label>
+    </customValue>
+    <customValue>
+        <fullName>KARAR GLOBAL</fullName>
+        <default>false</default>
+        <label>KARAR GLOBAL</label>
+    </customValue>
+    <customValue>
+        <fullName>KATTENBECK</fullName>
+        <default>false</default>
+        <label>KATTENBECK</label>
+    </customValue>
+    <customValue>
+        <fullName>KBS</fullName>
+        <default>false</default>
+        <label>KBS</label>
+    </customValue>
+    <customValue>
+        <fullName>KEEP PROPERTIES</fullName>
+        <default>false</default>
+        <label>KEEP PROPERTIES</label>
+    </customValue>
+    <customValue>
+        <fullName>Keolis</fullName>
+        <default>false</default>
+        <label>Keolis</label>
+    </customValue>
+    <customValue>
+        <fullName>Kharisma</fullName>
+        <default>false</default>
+        <label>Kharisma</label>
+    </customValue>
+    <customValue>
+        <fullName>Kier FM</fullName>
+        <default>false</default>
+        <label>Kier FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Killem Pest Pte Ltd</fullName>
+        <default>false</default>
+        <label>Killem Pest Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>KIMCO</fullName>
+        <default>false</default>
+        <label>KIMCO</label>
+    </customValue>
+    <customValue>
+        <fullName>Kingdom</fullName>
+        <default>false</default>
+        <label>Kingdom</label>
+    </customValue>
+    <customValue>
+        <fullName>KLEEN SERVICES</fullName>
+        <default>false</default>
+        <label>KLEEN SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>KLUH</fullName>
+        <default>false</default>
+        <label>KLUH</label>
+    </customValue>
+    <customValue>
+        <fullName>Kolektiv</fullName>
+        <default>false</default>
+        <label>Kolektiv</label>
+    </customValue>
+    <customValue>
+        <fullName>Komfort v Kube</fullName>
+        <default>false</default>
+        <label>Komfort v Kube</label>
+    </customValue>
+    <customValue>
+        <fullName>KOMWAG</fullName>
+        <default>false</default>
+        <label>KOMWAG</label>
+    </customValue>
+    <customValue>
+        <fullName>Konis</fullName>
+        <default>false</default>
+        <label>Konis</label>
+    </customValue>
+    <customValue>
+        <fullName>Konsalnet</fullName>
+        <default>false</default>
+        <label>Konsalnet</label>
+    </customValue>
+    <customValue>
+        <fullName>Konzept Garden</fullName>
+        <default>false</default>
+        <label>Konzept Garden</label>
+    </customValue>
+    <customValue>
+        <fullName>KOSIT a.s.</fullName>
+        <default>false</default>
+        <label>KOSIT a.s.</label>
+    </customValue>
+    <customValue>
+        <fullName>KOZA YONETİM</fullName>
+        <default>false</default>
+        <label>KOZA YONETİM</label>
+    </customValue>
+    <customValue>
+        <fullName>K Proprete</fullName>
+        <default>false</default>
+        <label>K Proprete</label>
+    </customValue>
+    <customValue>
+        <fullName>Kraft FM</fullName>
+        <default>false</default>
+        <label>Kraft FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Krinkels</fullName>
+        <default>false</default>
+        <label>Krinkels</label>
+    </customValue>
+    <customValue>
+        <fullName>Kristal</fullName>
+        <default>false</default>
+        <label>Kristal</label>
+    </customValue>
+    <customValue>
+        <fullName>L&apos;Anneau</fullName>
+        <default>false</default>
+        <label>L&apos;Anneau</label>
+    </customValue>
+    <customValue>
+        <fullName>Lachaux</fullName>
+        <default>false</default>
+        <label>Lachaux</label>
+    </customValue>
+    <customValue>
+        <fullName>La Costa</fullName>
+        <default>false</default>
+        <label>La Costa</label>
+    </customValue>
+    <customValue>
+        <fullName>LA LAVANDIERE</fullName>
+        <default>false</default>
+        <label>LA LAVANDIERE</label>
+    </customValue>
+    <customValue>
+        <fullName>LA MAIN VERTE</fullName>
+        <default>false</default>
+        <label>LA MAIN VERTE</label>
+    </customValue>
+    <customValue>
+        <fullName>La Normande De Nettoyage</fullName>
+        <default>false</default>
+        <label>La Normande De Nettoyage</label>
+    </customValue>
+    <customValue>
+        <fullName>La Professionnelle Du Nettoyage</fullName>
+        <default>false</default>
+        <label>La Professionnelle Du Nettoyage</label>
+    </customValue>
+    <customValue>
+        <fullName>Laurenty</fullName>
+        <default>false</default>
+        <label>Laurenty</label>
+    </customValue>
+    <customValue>
+        <fullName>LAV&apos;NET</fullName>
+        <default>false</default>
+        <label>LAV&apos;NET</label>
+    </customValue>
+    <customValue>
+        <fullName>Lay</fullName>
+        <default>false</default>
+        <label>Lay</label>
+    </customValue>
+    <customValue>
+        <fullName>Lc Net</fullName>
+        <default>false</default>
+        <label>Lc Net</label>
+    </customValue>
+    <customValue>
+        <fullName>Leadec s.r.o.</fullName>
+        <default>false</default>
+        <label>Leadec s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>Lekaro</fullName>
+        <default>false</default>
+        <label>Lekaro</label>
+    </customValue>
+    <customValue>
+        <fullName>Le Vôtre Traiteur</fullName>
+        <default>false</default>
+        <label>Le Vôtre Traiteur</label>
+    </customValue>
+    <customValue>
+        <fullName>Lexington</fullName>
+        <default>false</default>
+        <label>Lexington</label>
+    </customValue>
+    <customValue>
+        <fullName>Lfe</fullName>
+        <default>false</default>
+        <label>Lfe</label>
+    </customValue>
+    <customValue>
+        <fullName>Libra</fullName>
+        <default>false</default>
+        <label>Libra</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Bites Catering</fullName>
+        <default>false</default>
+        <label>Life Bites Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>LIFEQUO</fullName>
+        <default>false</default>
+        <label>LIFEQUO</label>
+    </customValue>
+    <customValue>
+        <fullName>Local</fullName>
+        <default>false</default>
+        <label>Local</label>
+    </customValue>
+    <customValue>
+        <fullName>Local Provider</fullName>
+        <default>false</default>
+        <label>Local Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Lotus</fullName>
+        <default>false</default>
+        <label>Lotus</label>
+    </customValue>
+    <customValue>
+        <fullName>Lotus Green Team</fullName>
+        <default>false</default>
+        <label>Lotus Green Team</label>
+    </customValue>
+    <customValue>
+        <fullName>LS2 Services Pte Ltd</fullName>
+        <default>false</default>
+        <label>LS2 Services Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Lustral</fullName>
+        <default>false</default>
+        <label>Lustral</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxant Securite</fullName>
+        <default>false</default>
+        <label>Luxant Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>Lynn&apos;s Catering</fullName>
+        <default>false</default>
+        <label>Lynn&apos;s Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>LYNX</fullName>
+        <default>false</default>
+        <label>LYNX</label>
+    </customValue>
+    <customValue>
+        <fullName>Lynx Securite</fullName>
+        <default>false</default>
+        <label>Lynx Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>Lyode</fullName>
+        <default>false</default>
+        <label>Lyode</label>
+    </customValue>
+    <customValue>
+        <fullName>M2C</fullName>
+        <default>false</default>
+        <label>M2C</label>
+    </customValue>
+    <customValue>
+        <fullName>Macro</fullName>
+        <default>false</default>
+        <label>Macro</label>
+    </customValue>
+    <customValue>
+        <fullName>Mahena</fullName>
+        <default>false</default>
+        <label>Mahena</label>
+    </customValue>
+    <customValue>
+        <fullName>MAIN LB</fullName>
+        <default>false</default>
+        <label>MAIN LB</label>
+    </customValue>
+    <customValue>
+        <fullName>Maintenance Industrie</fullName>
+        <default>false</default>
+        <label>Maintenance Industrie</label>
+    </customValue>
+    <customValue>
+        <fullName>Majatik</fullName>
+        <default>false</default>
+        <label>Majatik</label>
+    </customValue>
+    <customValue>
+        <fullName>Majestic</fullName>
+        <default>false</default>
+        <label>Majestic</label>
+    </customValue>
+    <customValue>
+        <fullName>Majestic Cleaning</fullName>
+        <default>false</default>
+        <label>Majestic Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Majordomo</fullName>
+        <default>false</default>
+        <label>Majordomo</label>
+    </customValue>
+    <customValue>
+        <fullName>Malaysian Pest Control Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Malaysian Pest Control Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Manpower</fullName>
+        <default>false</default>
+        <label>Manpower</label>
+    </customValue>
+    <customValue>
+        <fullName>Marcel Villette</fullName>
+        <default>false</default>
+        <label>Marcel Villette</label>
+    </customValue>
+    <customValue>
+        <fullName>MARIUS PEDERSEN</fullName>
+        <default>false</default>
+        <label>Marius Pedersen</label>
+    </customValue>
+    <customValue>
+        <fullName>MARMARA</fullName>
+        <default>false</default>
+        <label>MARMARA</label>
+    </customValue>
+    <customValue>
+        <fullName>Master Clean</fullName>
+        <default>false</default>
+        <label>Master Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>MASTER SERVIS</fullName>
+        <default>false</default>
+        <label>MASTER SERVIS</label>
+    </customValue>
+    <customValue>
+        <fullName>Matsuda Sangyo (Malaysia) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Matsuda Sangyo (Malaysia) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Maverick Building</fullName>
+        <default>false</default>
+        <label>Maverick Building</label>
+    </customValue>
+    <customValue>
+        <fullName>MAVİ TEMİZLİK</fullName>
+        <default>false</default>
+        <label>MAVİ TEMİZLİK</label>
+    </customValue>
+    <customValue>
+        <fullName>McLean</fullName>
+        <default>false</default>
+        <label>McLean</label>
+    </customValue>
+    <customValue>
+        <fullName>Mcm</fullName>
+        <default>false</default>
+        <label>Mcm</label>
+    </customValue>
+    <customValue>
+        <fullName>Mcnet</fullName>
+        <default>false</default>
+        <label>Mcnet</label>
+    </customValue>
+    <customValue>
+        <fullName>Mcts</fullName>
+        <default>false</default>
+        <label>Mcts</label>
+    </customValue>
+    <customValue>
+        <fullName>Mech FS</fullName>
+        <default>false</default>
+        <label>Mech FS</label>
+    </customValue>
+    <customValue>
+        <fullName>Medline</fullName>
+        <default>false</default>
+        <label>Medline</label>
+    </customValue>
+    <customValue>
+        <fullName>Meganet</fullName>
+        <default>false</default>
+        <label>Meganet</label>
+    </customValue>
+    <customValue>
+        <fullName>Melipropnet</fullName>
+        <default>false</default>
+        <label>Melipropnet</label>
+    </customValue>
+    <customValue>
+        <fullName>Mellors</fullName>
+        <default>false</default>
+        <label>Mellors</label>
+    </customValue>
+    <customValue>
+        <fullName>Men in Blue Security Services Inc.</fullName>
+        <default>false</default>
+        <label>Men in Blue Security Services Inc.</label>
+    </customValue>
+    <customValue>
+        <fullName>Metger</fullName>
+        <default>false</default>
+        <label>Metger</label>
+    </customValue>
+    <customValue>
+        <fullName>Metronet</fullName>
+        <default>false</default>
+        <label>Metronet</label>
+    </customValue>
+    <customValue>
+        <fullName>METROPOL</fullName>
+        <default>false</default>
+        <label>METROPOL</label>
+    </customValue>
+    <customValue>
+        <fullName>METROPOLITAN</fullName>
+        <default>false</default>
+        <label>METROPOLITAN</label>
+    </customValue>
+    <customValue>
+        <fullName>MIDDLE EAST SECURITY</fullName>
+        <default>false</default>
+        <label>MIDDLE EAST SECURITY</label>
+    </customValue>
+    <customValue>
+        <fullName>Midshires</fullName>
+        <default>false</default>
+        <label>Midshires</label>
+    </customValue>
+    <customValue>
+        <fullName>Mina Catering </fullName>
+        <default>false</default>
+        <label>Mina Catering </label>
+    </customValue>
+    <customValue>
+        <fullName>MİNERAL</fullName>
+        <default>false</default>
+        <label>MİNERAL</label>
+    </customValue>
+    <customValue>
+        <fullName>Misanet</fullName>
+        <default>false</default>
+        <label>Misanet</label>
+    </customValue>
+    <customValue>
+        <fullName>Mitie</fullName>
+        <default>false</default>
+        <label>Mitie</label>
+    </customValue>
+    <customValue>
+        <fullName>MMG</fullName>
+        <default>false</default>
+        <label>MMG</label>
+    </customValue>
+    <customValue>
+        <fullName>Modri Val</fullName>
+        <default>false</default>
+        <label>Modri Val</label>
+    </customValue>
+    <customValue>
+        <fullName>Mondial Gardiennage</fullName>
+        <default>false</default>
+        <label>Mondial Gardiennage</label>
+    </customValue>
+    <customValue>
+        <fullName>Mondial Protection</fullName>
+        <default>false</default>
+        <label>Mondial Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>MPA</fullName>
+        <default>false</default>
+        <label>MPA</label>
+    </customValue>
+    <customValue>
+        <fullName>Mpa Nettoyage</fullName>
+        <default>false</default>
+        <label>Mpa Nettoyage</label>
+    </customValue>
+    <customValue>
+        <fullName>Mugo</fullName>
+        <default>false</default>
+        <label>Mugo</label>
+    </customValue>
+    <customValue>
+        <fullName>MW - DIAS</fullName>
+        <default>false</default>
+        <label>MW - DIAS</label>
+    </customValue>
+    <customValue>
+        <fullName>NAFA System Pte Ltd</fullName>
+        <default>false</default>
+        <label>NAFA System Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Nai</fullName>
+        <default>false</default>
+        <label>Nai</label>
+    </customValue>
+    <customValue>
+        <fullName>NAP</fullName>
+        <default>false</default>
+        <label>NAP</label>
+    </customValue>
+    <customValue>
+        <fullName>Nationwide</fullName>
+        <default>false</default>
+        <label>Nationwide</label>
+    </customValue>
+    <customValue>
+        <fullName>N A T S</fullName>
+        <default>false</default>
+        <label>N A T S</label>
+    </customValue>
+    <customValue>
+        <fullName>Nature Landscape</fullName>
+        <default>false</default>
+        <label>Nature Landscape</label>
+    </customValue>
+    <customValue>
+        <fullName>Nawakara</fullName>
+        <default>false</default>
+        <label>Nawakara</label>
+    </customValue>
+    <customValue>
+        <fullName>Nbs</fullName>
+        <default>false</default>
+        <label>Nbs</label>
+    </customValue>
+    <customValue>
+        <fullName>NETALL</fullName>
+        <default>false</default>
+        <label>NETALL</label>
+    </customValue>
+    <customValue>
+        <fullName>Net Eclair</fullName>
+        <default>false</default>
+        <label>Net Eclair</label>
+    </customValue>
+    <customValue>
+        <fullName>Netman</fullName>
+        <default>false</default>
+        <label>Netman</label>
+    </customValue>
+    <customValue>
+        <fullName>Net Plus</fullName>
+        <default>false</default>
+        <label>Net Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>Nett Diffusion</fullName>
+        <default>false</default>
+        <label>Nett Diffusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Netto Decor</fullName>
+        <default>false</default>
+        <label>Netto Decor</label>
+    </customValue>
+    <customValue>
+        <fullName>Nettoservice</fullName>
+        <default>false</default>
+        <label>Nettoservice</label>
+    </customValue>
+    <customValue>
+        <fullName>New Build</fullName>
+        <default>false</default>
+        <label>New Build</label>
+    </customValue>
+    <customValue>
+        <fullName>New York trade</fullName>
+        <default>false</default>
+        <label>New York trade</label>
+    </customValue>
+    <customValue>
+        <fullName>NG Bailey Facilities Services</fullName>
+        <default>false</default>
+        <label>NG Bailey Facilities Services</label>
+    </customValue>
+    <customValue>
+        <fullName>NG Baileys</fullName>
+        <default>false</default>
+        <label>NG Baileys</label>
+    </customValue>
+    <customValue>
+        <fullName>Nguyen Khang Food</fullName>
+        <default>false</default>
+        <label>Nguyen Khang Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Nhn</fullName>
+        <default>false</default>
+        <label>Nhn</label>
+    </customValue>
+    <customValue>
+        <fullName>Nimmathai Cleaning</fullName>
+        <default>false</default>
+        <label>Nimmathai Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>NISA Group</fullName>
+        <default>false</default>
+        <label>NISA Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Noble</fullName>
+        <default>false</default>
+        <label>Noble</label>
+    </customValue>
+    <customValue>
+        <fullName>No Facilities</fullName>
+        <default>false</default>
+        <label>No Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>No Facility</fullName>
+        <default>false</default>
+        <label>No Facility</label>
+    </customValue>
+    <customValue>
+        <fullName>Noonan</fullName>
+        <default>false</default>
+        <label>Noonan</label>
+    </customValue>
+    <customValue>
+        <fullName>Noonans</fullName>
+        <default>false</default>
+        <label>Noonans</label>
+    </customValue>
+    <customValue>
+        <fullName>Norse Group</fullName>
+        <default>false</default>
+        <label>Norse Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Northern Security</fullName>
+        <default>false</default>
+        <label>Northern Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Nouvel Facilities</fullName>
+        <default>false</default>
+        <label>Nouvel Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>NWG</fullName>
+        <default>false</default>
+        <label>NWG</label>
+    </customValue>
+    <customValue>
+        <fullName>Ocean</fullName>
+        <default>false</default>
+        <label>Ocean</label>
+    </customValue>
+    <customValue>
+        <fullName>OCS</fullName>
+        <default>false</default>
+        <label>OCS</label>
+    </customValue>
+    <customValue>
+        <fullName>OCS/PWB (M) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>OCS/PWB (M) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>OCS PCS</fullName>
+        <default>false</default>
+        <label>OCS PCS</label>
+    </customValue>
+    <customValue>
+        <fullName>Octo High Rise Cleaning</fullName>
+        <default>false</default>
+        <label>Octo High Rise Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Office &amp; General</fullName>
+        <default>false</default>
+        <label>Office &amp; General</label>
+    </customValue>
+    <customValue>
+        <fullName>OKIN</fullName>
+        <default>false</default>
+        <label>OKIN</label>
+    </customValue>
+    <customValue>
+        <fullName>Olive</fullName>
+        <default>false</default>
+        <label>Olive</label>
+    </customValue>
+    <customValue>
+        <fullName>Omega Concierge Services</fullName>
+        <default>false</default>
+        <label>Omega Concierge Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Omini Facilities</fullName>
+        <default>false</default>
+        <label>Omini Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Oms Synergie</fullName>
+        <default>false</default>
+        <label>Oms Synergie</label>
+    </customValue>
+    <customValue>
+        <fullName>Omulane</fullName>
+        <default>false</default>
+        <label>Omulane</label>
+    </customValue>
+    <customValue>
+        <fullName>One Building Maintenance</fullName>
+        <default>false</default>
+        <label>One Building Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>One Concierge</fullName>
+        <default>false</default>
+        <label>One Concierge</label>
+    </customValue>
+    <customValue>
+        <fullName>Onet</fullName>
+        <default>false</default>
+        <label>Onet</label>
+    </customValue>
+    <customValue>
+        <fullName>Onet Belgie</fullName>
+        <default>false</default>
+        <label>Onet Belgie</label>
+    </customValue>
+    <customValue>
+        <fullName>Onet Securite</fullName>
+        <default>false</default>
+        <label>Onet Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>Onett</fullName>
+        <default>false</default>
+        <label>Onett</label>
+    </customValue>
+    <customValue>
+        <fullName>OPERATORS</fullName>
+        <default>false</default>
+        <label>OPERATORS</label>
+    </customValue>
+    <customValue>
+        <fullName>Optima</fullName>
+        <default>false</default>
+        <label>Optima</label>
+    </customValue>
+    <customValue>
+        <fullName>Orchid Life Horticulture Nursery</fullName>
+        <default>false</default>
+        <label>Orchid Life Horticulture Nursery</label>
+    </customValue>
+    <customValue>
+        <fullName>Origin Exterminators Pte Ltd</fullName>
+        <default>false</default>
+        <label>Origin Exterminators Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Orion FMS</fullName>
+        <default>false</default>
+        <label>Orion FMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Orkin Cambodia</fullName>
+        <default>false</default>
+        <label>Orkin Cambodia</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>O-Wat Cleaning </fullName>
+        <default>false</default>
+        <label>O-Wat Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>OYAK</fullName>
+        <default>false</default>
+        <label>OYAK</label>
+    </customValue>
+    <customValue>
+        <fullName>P&amp;A Catering</fullName>
+        <default>false</default>
+        <label>P&amp;A Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Pabulum</fullName>
+        <default>false</default>
+        <label>Pabulum</label>
+    </customValue>
+    <customValue>
+        <fullName>PAL GÜVENLİK</fullName>
+        <default>false</default>
+        <label>PAL GÜVENLİK</label>
+    </customValue>
+    <customValue>
+        <fullName>Pangansari</fullName>
+        <default>false</default>
+        <label>Pangansari</label>
+    </customValue>
+    <customValue>
+        <fullName>Pan Pacific</fullName>
+        <default>false</default>
+        <label>Pan Pacific</label>
+    </customValue>
+    <customValue>
+        <fullName>Panthera Securite</fullName>
+        <default>false</default>
+        <label>Panthera Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>PAPATYA</fullName>
+        <default>false</default>
+        <label>PAPATYA</label>
+    </customValue>
+    <customValue>
+        <fullName>Parc Espace</fullName>
+        <default>false</default>
+        <label>Parc Espace</label>
+    </customValue>
+    <customValue>
+        <fullName>Paris Vers Ouest</fullName>
+        <default>false</default>
+        <label>Paris Vers Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>PartnerGroup</fullName>
+        <default>false</default>
+        <label>PartnerGroup</label>
+    </customValue>
+    <customValue>
+        <fullName>Patra</fullName>
+        <default>false</default>
+        <label>Patra</label>
+    </customValue>
+    <customValue>
+        <fullName>Patrick Meltzer</fullName>
+        <default>false</default>
+        <label>Patrick Meltzer</label>
+    </customValue>
+    <customValue>
+        <fullName>Pauleau Libet Souillac</fullName>
+        <default>false</default>
+        <label>Pauleau Libet Souillac</label>
+    </customValue>
+    <customValue>
+        <fullName>PBM</fullName>
+        <default>false</default>
+        <label>PBM</label>
+    </customValue>
+    <customValue>
+        <fullName>Pcs</fullName>
+        <default>false</default>
+        <label>Pcs</label>
+    </customValue>
+    <customValue>
+        <fullName>Pekat Group of Companies</fullName>
+        <default>false</default>
+        <label>Pekat Group of Companies</label>
+    </customValue>
+    <customValue>
+        <fullName>Penauille</fullName>
+        <default>false</default>
+        <label>Penauille</label>
+    </customValue>
+    <customValue>
+        <fullName>Perfect Canteen</fullName>
+        <default>false</default>
+        <label>Perfect Canteen</label>
+    </customValue>
+    <customValue>
+        <fullName>Pestaway</fullName>
+        <default>false</default>
+        <label>Pestaway</label>
+    </customValue>
+    <customValue>
+        <fullName>Pest Butter</fullName>
+        <default>false</default>
+        <label>Pest Butter</label>
+    </customValue>
+    <customValue>
+        <fullName>Petrosetco Assets Management (PSA)</fullName>
+        <default>false</default>
+        <label>Petrosetco Assets Management (PSA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Pg Clean</fullName>
+        <default>false</default>
+        <label>Pg Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Phrixus</fullName>
+        <default>false</default>
+        <label>Phrixus</label>
+    </customValue>
+    <customValue>
+        <fullName>PHS Group</fullName>
+        <default>false</default>
+        <label>PHS Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Phuket Inter Cleaning</fullName>
+        <default>false</default>
+        <label>Phuket Inter Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>PHYTO CI</fullName>
+        <default>false</default>
+        <label>PHYTO CI</label>
+    </customValue>
+    <customValue>
+        <fullName>Pincuran</fullName>
+        <default>false</default>
+        <label>Pincuran</label>
+    </customValue>
+    <customValue>
+        <fullName>Planned Companies</fullName>
+        <default>false</default>
+        <label>Planned Companies</label>
+    </customValue>
+    <customValue>
+        <fullName>Platinum</fullName>
+        <default>false</default>
+        <label>Platinum</label>
+    </customValue>
+    <customValue>
+        <fullName>Pld</fullName>
+        <default>false</default>
+        <label>Pld</label>
+    </customValue>
+    <customValue>
+        <fullName>Pleter Usluge</fullName>
+        <default>false</default>
+        <label>Pleter Usluge</label>
+    </customValue>
+    <customValue>
+        <fullName>Pluservices</fullName>
+        <default>false</default>
+        <label>Pluservices</label>
+    </customValue>
+    <customValue>
+        <fullName>Plus Property</fullName>
+        <default>false</default>
+        <label>Plus Property</label>
+    </customValue>
+    <customValue>
+        <fullName>PMA</fullName>
+        <default>false</default>
+        <label>PMA</label>
+    </customValue>
+    <customValue>
+        <fullName>PMG (part of MMG Group)</fullName>
+        <default>false</default>
+        <label>PMG (part of MMG Group)</label>
+    </customValue>
+    <customValue>
+        <fullName>PPCS Cleaning</fullName>
+        <default>false</default>
+        <label>PPCS Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>PQS</fullName>
+        <default>false</default>
+        <label>PQS</label>
+    </customValue>
+    <customValue>
+        <fullName>PREMIUM</fullName>
+        <default>false</default>
+        <label>PREMIUM</label>
+    </customValue>
+    <customValue>
+        <fullName>Prevtot</fullName>
+        <default>false</default>
+        <label>Prevtot</label>
+    </customValue>
+    <customValue>
+        <fullName>Primula</fullName>
+        <default>false</default>
+        <label>Primula</label>
+    </customValue>
+    <customValue>
+        <fullName>Prince Landscape &amp; Construction</fullName>
+        <default>false</default>
+        <label>Prince Landscape &amp; Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Pritchard</fullName>
+        <default>false</default>
+        <label>Pritchard</label>
+    </customValue>
+    <customValue>
+        <fullName>PROASIST</fullName>
+        <default>false</default>
+        <label>PROASIST</label>
+    </customValue>
+    <customValue>
+        <fullName>PRo Clean</fullName>
+        <default>false</default>
+        <label>PRo Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Procusys</fullName>
+        <default>false</default>
+        <label>Procusys</label>
+    </customValue>
+    <customValue>
+        <fullName>Profile Security</fullName>
+        <default>false</default>
+        <label>Profile Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Progard</fullName>
+        <default>false</default>
+        <label>Progard</label>
+    </customValue>
+    <customValue>
+        <fullName>Progems</fullName>
+        <default>false</default>
+        <label>Progems</label>
+    </customValue>
+    <customValue>
+        <fullName>Prohygiene</fullName>
+        <default>false</default>
+        <label>Prohygiene</label>
+    </customValue>
+    <customValue>
+        <fullName>Pro Impec</fullName>
+        <default>false</default>
+        <label>Pro Impec</label>
+    </customValue>
+    <customValue>
+        <fullName>Prompt Techno</fullName>
+        <default>false</default>
+        <label>Prompt Techno</label>
+    </customValue>
+    <customValue>
+        <fullName>Prompt Techno Service</fullName>
+        <default>false</default>
+        <label>Prompt Techno Service</label>
+    </customValue>
+    <customValue>
+        <fullName>PRONET</fullName>
+        <default>false</default>
+        <label>PRONET</label>
+    </customValue>
+    <customValue>
+        <fullName>Property &amp; Management Company (pmcweb.vn)</fullName>
+        <default>false</default>
+        <label>Property &amp; Management Company (pmcweb.vn)</label>
+    </customValue>
+    <customValue>
+        <fullName>Prorest</fullName>
+        <default>false</default>
+        <label>Prorest</label>
+    </customValue>
+    <customValue>
+        <fullName>PRORITE SERVICES</fullName>
+        <default>false</default>
+        <label>PRORITE SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>Prosegur</fullName>
+        <default>false</default>
+        <label>Prosegur</label>
+    </customValue>
+    <customValue>
+        <fullName>PROSER</fullName>
+        <default>false</default>
+        <label>PROSER</label>
+    </customValue>
+    <customValue>
+        <fullName>Proserve</fullName>
+        <default>false</default>
+        <label>Proserve</label>
+    </customValue>
+    <customValue>
+        <fullName>PROSERVICES</fullName>
+        <default>false</default>
+        <label>PROSERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>PROSOLUTIONS</fullName>
+        <default>false</default>
+        <label>PROSOLUTIONS</label>
+    </customValue>
+    <customValue>
+        <fullName>PROTECTAS</fullName>
+        <default>false</default>
+        <label>PROTECTAS</label>
+    </customValue>
+    <customValue>
+        <fullName>Protectim</fullName>
+        <default>false</default>
+        <label>Protectim</label>
+    </customValue>
+    <customValue>
+        <fullName>PROTECTRON</fullName>
+        <default>false</default>
+        <label>PROTECTRON</label>
+    </customValue>
+    <customValue>
+        <fullName>Protek</fullName>
+        <default>false</default>
+        <label>Protek</label>
+    </customValue>
+    <customValue>
+        <fullName>Providence</fullName>
+        <default>false</default>
+        <label>Providence</label>
+    </customValue>
+    <customValue>
+        <fullName>PS Generation</fullName>
+        <default>false</default>
+        <label>PS Generation</label>
+    </customValue>
+    <customValue>
+        <fullName>PWB (M) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>PWB (M) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>QBS</fullName>
+        <default>false</default>
+        <label>QBS</label>
+    </customValue>
+    <customValue>
+        <fullName>Quadrant</fullName>
+        <default>false</default>
+        <label>Quadrant</label>
+    </customValue>
+    <customValue>
+        <fullName>Quality Property Management</fullName>
+        <default>false</default>
+        <label>Quality Property Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Quartett</fullName>
+        <default>false</default>
+        <label>Quartett</label>
+    </customValue>
+    <customValue>
+        <fullName>Quess (Avon FMS)</fullName>
+        <default>false</default>
+        <label>Quess (Avon FMS)</label>
+    </customValue>
+    <customValue>
+        <fullName>QUINTESSENTIALLY</fullName>
+        <default>false</default>
+        <label>QUINTESSENTIALLY</label>
+    </customValue>
+    <customValue>
+        <fullName>QW Security</fullName>
+        <default>false</default>
+        <label>QW Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Radish</fullName>
+        <default>false</default>
+        <label>Radish</label>
+    </customValue>
+    <customValue>
+        <fullName>Raja Yok Chemical</fullName>
+        <default>false</default>
+        <label>Raja Yok Chemical</label>
+    </customValue>
+    <customValue>
+        <fullName>Raritan Building Services</fullName>
+        <default>false</default>
+        <label>Raritan Building Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Redcliffe</fullName>
+        <default>false</default>
+        <label>Redcliffe</label>
+    </customValue>
+    <customValue>
+        <fullName>Regency</fullName>
+        <default>false</default>
+        <label>Regency</label>
+    </customValue>
+    <customValue>
+        <fullName>Reiwag Facility Services</fullName>
+        <default>false</default>
+        <label>Reiwag Facility Services</label>
+    </customValue>
+    <customValue>
+        <fullName>REKEEP UNITED</fullName>
+        <default>false</default>
+        <label>REKEEP UNITED</label>
+    </customValue>
+    <customValue>
+        <fullName>Renewi (fromer Van Gansewinkel)</fullName>
+        <default>false</default>
+        <label>Renewi (fromer Van Gansewinkel)</label>
+    </customValue>
+    <customValue>
+        <fullName>Renosol</fullName>
+        <default>false</default>
+        <label>Renosol</label>
+    </customValue>
+    <customValue>
+        <fullName>Rent A Pot Landscape</fullName>
+        <default>false</default>
+        <label>Rent A Pot Landscape</label>
+    </customValue>
+    <customValue>
+        <fullName>Rentokil</fullName>
+        <default>false</default>
+        <label>Rentokil</label>
+    </customValue>
+    <customValue>
+        <fullName>Rentokil Initial</fullName>
+        <default>false</default>
+        <label>Rentokil Initial</label>
+    </customValue>
+    <customValue>
+        <fullName>Rentokil Initial Singapore Pte Ltd</fullName>
+        <default>false</default>
+        <label>Rentokil Initial Singapore Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Rentokill Pest Control</fullName>
+        <default>false</default>
+        <label>Rentokill Pest Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Restaurant Associates</fullName>
+        <default>false</default>
+        <label>Restaurant Associates</label>
+    </customValue>
+    <customValue>
+        <fullName>Restaurant Associates (Compass)</fullName>
+        <default>false</default>
+        <label>Restaurant Associates (Compass)</label>
+    </customValue>
+    <customValue>
+        <fullName>Revnost</fullName>
+        <default>false</default>
+        <label>Revnost</label>
+    </customValue>
+    <customValue>
+        <fullName>RGM TURKEY</fullName>
+        <default>false</default>
+        <label>RGM TURKEY</label>
+    </customValue>
+    <customValue>
+        <fullName>Ria Cleaning Service</fullName>
+        <default>false</default>
+        <label>Ria Cleaning Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Riječki Uslužni Servis</fullName>
+        <default>false</default>
+        <label>Riječki Uslužni Servis</label>
+    </customValue>
+    <customValue>
+        <fullName>RMC Catering &amp; Services (M) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>RMC Catering &amp; Services (M) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>RMO</fullName>
+        <default>false</default>
+        <label>RMO</label>
+    </customValue>
+    <customValue>
+        <fullName>Robert Paysage</fullName>
+        <default>false</default>
+        <label>Robert Paysage</label>
+    </customValue>
+    <customValue>
+        <fullName>Robertson FM</fullName>
+        <default>false</default>
+        <label>Robertson FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Romprest</fullName>
+        <default>false</default>
+        <label>Romprest</label>
+    </customValue>
+    <customValue>
+        <fullName>Roussel</fullName>
+        <default>false</default>
+        <label>Roussel</label>
+    </customValue>
+    <customValue>
+        <fullName>S.O.S. Security</fullName>
+        <default>false</default>
+        <label>S.O.S. Security</label>
+    </customValue>
+    <customValue>
+        <fullName>S2G Systemes Service</fullName>
+        <default>false</default>
+        <label>S2G Systemes Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Safeguard</fullName>
+        <default>false</default>
+        <label>Safeguard</label>
+    </customValue>
+    <customValue>
+        <fullName>Safeguard Investigation and Security Agency Inc.</fullName>
+        <default>false</default>
+        <label>Safeguard Investigation and Security Agency Inc.</label>
+    </customValue>
+    <customValue>
+        <fullName>SAMCO</fullName>
+        <default>false</default>
+        <label>SAMCO</label>
+    </customValue>
+    <customValue>
+        <fullName>Samsic</fullName>
+        <default>false</default>
+        <label>Samsic</label>
+    </customValue>
+    <customValue>
+        <fullName>Samsic Securite</fullName>
+        <default>false</default>
+        <label>Samsic Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>Sanhy-Tech</fullName>
+        <default>false</default>
+        <label>Sanhy-Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Sanitacija</fullName>
+        <default>false</default>
+        <label>Sanitacija</label>
+    </customValue>
+    <customValue>
+        <fullName>Sanit Pest Control</fullName>
+        <default>false</default>
+        <label>Sanit Pest Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Sathorn Thani</fullName>
+        <default>false</default>
+        <label>Sathorn Thani</label>
+    </customValue>
+    <customValue>
+        <fullName>Savills Malaysia&apos;s Facilities Management</fullName>
+        <default>false</default>
+        <label>Savills Malaysia&apos;s Facilities Management</label>
+    </customValue>
+    <customValue>
+        <fullName>SAWBAC Slovensko, a.s.</fullName>
+        <default>false</default>
+        <label>SAWBAC Slovensko, a.s.</label>
+    </customValue>
+    <customValue>
+        <fullName>SBM</fullName>
+        <default>false</default>
+        <label>SBM</label>
+    </customValue>
+    <customValue>
+        <fullName>Scholarest</fullName>
+        <default>false</default>
+        <label>Scholarest</label>
+    </customValue>
+    <customValue>
+        <fullName>Scioto/Marsden</fullName>
+        <default>false</default>
+        <label>Scioto/Marsden</label>
+    </customValue>
+    <customValue>
+        <fullName>Scotnet</fullName>
+        <default>false</default>
+        <label>Scotnet</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS Cleaning Malaysia</fullName>
+        <default>false</default>
+        <label>SCS Cleaning Malaysia</label>
+    </customValue>
+    <customValue>
+        <fullName>SE</fullName>
+        <default>false</default>
+        <label>SE</label>
+    </customValue>
+    <customValue>
+        <fullName>Sebni</fullName>
+        <default>false</default>
+        <label>Sebni</label>
+    </customValue>
+    <customValue>
+        <fullName>Seccom</fullName>
+        <default>false</default>
+        <label>Seccom</label>
+    </customValue>
+    <customValue>
+        <fullName>SE CLUB</fullName>
+        <default>false</default>
+        <label>SE CLUB</label>
+    </customValue>
+    <customValue>
+        <fullName>Secom (M) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Secom (M) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Securalliance</fullName>
+        <default>false</default>
+        <label>Securalliance</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Parking Solutions</fullName>
+        <default>false</default>
+        <label>Secure Parking Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURE PLUS</fullName>
+        <default>false</default>
+        <label>SECURE PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>Securiforce Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Securiforce Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Securitas</fullName>
+        <default>false</default>
+        <label>Securitas</label>
+    </customValue>
+    <customValue>
+        <fullName>Securitas India</fullName>
+        <default>false</default>
+        <label>Securitas India</label>
+    </customValue>
+    <customValue>
+        <fullName>Securite Protection</fullName>
+        <default>false</default>
+        <label>Securite Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURITON Servis, spol. s.r.o.</fullName>
+        <default>false</default>
+        <label>SECURITON Servis, spol. s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>Securitus</fullName>
+        <default>false</default>
+        <label>Securitus</label>
+    </customValue>
+    <customValue>
+        <fullName>Secut</fullName>
+        <default>false</default>
+        <label>Secut</label>
+    </customValue>
+    <customValue>
+        <fullName>Segex</fullName>
+        <default>false</default>
+        <label>Segex</label>
+    </customValue>
+    <customValue>
+        <fullName>Segip</fullName>
+        <default>false</default>
+        <label>Segip</label>
+    </customValue>
+    <customValue>
+        <fullName>SELF OP.</fullName>
+        <default>false</default>
+        <label>SELF OP.</label>
+    </customValue>
+    <customValue>
+        <fullName>Seng Hok Heng Catering Services</fullName>
+        <default>false</default>
+        <label>Seng Hok Heng Catering Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Seni</fullName>
+        <default>false</default>
+        <label>Seni</label>
+    </customValue>
+    <customValue>
+        <fullName>Sequoia</fullName>
+        <default>false</default>
+        <label>Sequoia</label>
+    </customValue>
+    <customValue>
+        <fullName>Serco</fullName>
+        <default>false</default>
+        <label>Serco</label>
+    </customValue>
+    <customValue>
+        <fullName>Serdeco</fullName>
+        <default>false</default>
+        <label>Serdeco</label>
+    </customValue>
+    <customValue>
+        <fullName>Seris</fullName>
+        <default>false</default>
+        <label>Seris</label>
+    </customValue>
+    <customValue>
+        <fullName>Seris Security</fullName>
+        <default>false</default>
+        <label>Seris Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Servest</fullName>
+        <default>false</default>
+        <label>Servest</label>
+    </customValue>
+    <customValue>
+        <fullName>Servest Group</fullName>
+        <default>false</default>
+        <label>Servest Group</label>
+    </customValue>
+    <customValue>
+        <fullName>SERVICEMASTER</fullName>
+        <default>false</default>
+        <label>SERVICEMASTER</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Master</fullName>
+        <default>false</default>
+        <label>Service Master</label>
+    </customValue>
+    <customValue>
+        <fullName>ServiceMax</fullName>
+        <default>false</default>
+        <label>ServiceMax</label>
+    </customValue>
+    <customValue>
+        <fullName>Serviclean</fullName>
+        <default>false</default>
+        <label>Serviclean</label>
+    </customValue>
+    <customValue>
+        <fullName>SERVIS 360</fullName>
+        <default>false</default>
+        <label>SERVIS 360</label>
+    </customValue>
+    <customValue>
+        <fullName>SES</fullName>
+        <default>false</default>
+        <label>SES</label>
+    </customValue>
+    <customValue>
+        <fullName>SEVIIS CI</fullName>
+        <default>false</default>
+        <label>SEVIIS CI</label>
+    </customValue>
+    <customValue>
+        <fullName>Sgp</fullName>
+        <default>false</default>
+        <label>Sgp</label>
+    </customValue>
+    <customValue>
+        <fullName>SGS (Malaysia) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>SGS (Malaysia) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>SGS Philippines</fullName>
+        <default>false</default>
+        <label>SGS Philippines</label>
+    </customValue>
+    <customValue>
+        <fullName>Shield Guarding Comapny</fullName>
+        <default>false</default>
+        <label>Shield Guarding Comapny</label>
+    </customValue>
+    <customValue>
+        <fullName>Siemens</fullName>
+        <default>false</default>
+        <label>Siemens</label>
+    </customValue>
+    <customValue>
+        <fullName>Siem Ouest</fullName>
+        <default>false</default>
+        <label>Siem Ouest</label>
+    </customValue>
+    <customValue>
+        <fullName>Sigap</fullName>
+        <default>false</default>
+        <label>Sigap</label>
+    </customValue>
+    <customValue>
+        <fullName>SİMYA TESİS</fullName>
+        <default>false</default>
+        <label>SİMYA TESİS</label>
+    </customValue>
+    <customValue>
+        <fullName>Sinergi</fullName>
+        <default>false</default>
+        <label>Sinergi</label>
+    </customValue>
+    <customValue>
+        <fullName>Sinestes</fullName>
+        <default>false</default>
+        <label>Sinestes</label>
+    </customValue>
+    <customValue>
+        <fullName>Sipropre</fullName>
+        <default>false</default>
+        <label>Sipropre</label>
+    </customValue>
+    <customValue>
+        <fullName>Sis Securite</fullName>
+        <default>false</default>
+        <label>Sis Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>SITEPLUS</fullName>
+        <default>false</default>
+        <label>SITEPLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>Sitim</fullName>
+        <default>false</default>
+        <label>Sitim</label>
+    </customValue>
+    <customValue>
+        <fullName>Sjs</fullName>
+        <default>false</default>
+        <label>Sjs</label>
+    </customValue>
+    <customValue>
+        <fullName>SKANSKA</fullName>
+        <default>false</default>
+        <label>SKANSKA</label>
+    </customValue>
+    <customValue>
+        <fullName>SLOVCLEAN s.r.o.</fullName>
+        <default>false</default>
+        <label>SLOVCLEAN s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>SMEC (M) SDN BHD </fullName>
+        <default>false</default>
+        <label>SMEC (M) SDN BHD </label>
+    </customValue>
+    <customValue>
+        <fullName>SMG Corporate Services</fullName>
+        <default>false</default>
+        <label>SMG Corporate Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Smni</fullName>
+        <default>false</default>
+        <label>Smni</label>
+    </customValue>
+    <customValue>
+        <fullName>SMS</fullName>
+        <default>false</default>
+        <label>SMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Sngst</fullName>
+        <default>false</default>
+        <label>Sngst</label>
+    </customValue>
+    <customValue>
+        <fullName>SNS</fullName>
+        <default>false</default>
+        <label>SNS</label>
+    </customValue>
+    <customValue>
+        <fullName>Sobenet</fullName>
+        <default>false</default>
+        <label>Sobenet</label>
+    </customValue>
+    <customValue>
+        <fullName>Sodexo</fullName>
+        <default>false</default>
+        <label>Sodexo</label>
+    </customValue>
+    <customValue>
+        <fullName>Sodexo Malaysia Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Sodexo Malaysia Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Sodexo s.r.o.</fullName>
+        <default>false</default>
+        <label>Sodexo s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>Sokken</fullName>
+        <default>false</default>
+        <label>Sokken</label>
+    </customValue>
+    <customValue>
+        <fullName>Solar Naturally (M) Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Solar Naturally (M) Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>SOLIDERE MANAGEMENT SERVICES (SMS)</fullName>
+        <default>false</default>
+        <label>SOLIDERE MANAGEMENT SERVICES (SMS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid Security</fullName>
+        <default>false</default>
+        <label>Solid Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Solinet</fullName>
+        <default>false</default>
+        <label>Solinet</label>
+    </customValue>
+    <customValue>
+        <fullName>Solo Services</fullName>
+        <default>false</default>
+        <label>Solo Services</label>
+    </customValue>
+    <customValue>
+        <fullName>SOLUTO</fullName>
+        <default>false</default>
+        <label>SOLUTO</label>
+    </customValue>
+    <customValue>
+        <fullName>Sos</fullName>
+        <default>false</default>
+        <label>Sos</label>
+    </customValue>
+    <customValue>
+        <fullName>Sovereign</fullName>
+        <default>false</default>
+        <label>Sovereign</label>
+    </customValue>
+    <customValue>
+        <fullName>Sp3</fullName>
+        <default>false</default>
+        <label>Sp3</label>
+    </customValue>
+    <customValue>
+        <fullName>SPC</fullName>
+        <default>false</default>
+        <label>SPC</label>
+    </customValue>
+    <customValue>
+        <fullName>Spd</fullName>
+        <default>false</default>
+        <label>Spd</label>
+    </customValue>
+    <customValue>
+        <fullName>Spectra</fullName>
+        <default>false</default>
+        <label>Spectra</label>
+    </customValue>
+    <customValue>
+        <fullName>Spectra Solusindo</fullName>
+        <default>false</default>
+        <label>Spectra Solusindo</label>
+    </customValue>
+    <customValue>
+        <fullName>Spid Anjou</fullName>
+        <default>false</default>
+        <label>Spid Anjou</label>
+    </customValue>
+    <customValue>
+        <fullName>Spie</fullName>
+        <default>false</default>
+        <label>Spie</label>
+    </customValue>
+    <customValue>
+        <fullName>SPIE Facilities Services</fullName>
+        <default>false</default>
+        <label>SPIE Facilities Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Spm</fullName>
+        <default>false</default>
+        <label>Spm</label>
+    </customValue>
+    <customValue>
+        <fullName>Spn</fullName>
+        <default>false</default>
+        <label>Spn</label>
+    </customValue>
+    <customValue>
+        <fullName>Spotless</fullName>
+        <default>false</default>
+        <label>Spotless</label>
+    </customValue>
+    <customValue>
+        <fullName>Sps</fullName>
+        <default>false</default>
+        <label>Sps</label>
+    </customValue>
+    <customValue>
+        <fullName>SRG</fullName>
+        <default>false</default>
+        <label>SRG</label>
+    </customValue>
+    <customValue>
+        <fullName>SSC</fullName>
+        <default>false</default>
+        <label>SSC</label>
+    </customValue>
+    <customValue>
+        <fullName>SSI</fullName>
+        <default>false</default>
+        <label>SSI</label>
+    </customValue>
+    <customValue>
+        <fullName>Stallion Security Agency Incorporated</fullName>
+        <default>false</default>
+        <label>Stallion Security Agency Incorporated</label>
+    </customValue>
+    <customValue>
+        <fullName>Steam&apos;O</fullName>
+        <default>false</default>
+        <label>Steam&apos;O</label>
+    </customValue>
+    <customValue>
+        <fullName>Strabag</fullName>
+        <default>false</default>
+        <label>Strabag</label>
+    </customValue>
+    <customValue>
+        <fullName>STRABAG Property and Facility Services s.r.o.</fullName>
+        <default>false</default>
+        <label>STRABAG Property and Facility Services s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>Stratus</fullName>
+        <default>false</default>
+        <label>Stratus</label>
+    </customValue>
+    <customValue>
+        <fullName>Strukton</fullName>
+        <default>false</default>
+        <label>Strukton</label>
+    </customValue>
+    <customValue>
+        <fullName>Sud Service Nicolin</fullName>
+        <default>false</default>
+        <label>Sud Service Nicolin</label>
+    </customValue>
+    <customValue>
+        <fullName>SULOMAS Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>SULOMAS Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Summer Pond &amp; Landscaping</fullName>
+        <default>false</default>
+        <label>Summer Pond &amp; Landscaping</label>
+    </customValue>
+    <customValue>
+        <fullName>Summit Security</fullName>
+        <default>false</default>
+        <label>Summit Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Suri Waste Management</fullName>
+        <default>false</default>
+        <label>Suri Waste Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Talkington Bates</fullName>
+        <default>false</default>
+        <label>Talkington Bates</label>
+    </customValue>
+    <customValue>
+        <fullName>TAV</fullName>
+        <default>false</default>
+        <label>TAV</label>
+    </customValue>
+    <customValue>
+        <fullName>TAV GÜVENLİK</fullName>
+        <default>false</default>
+        <label>TAV GÜVENLİK</label>
+    </customValue>
+    <customValue>
+        <fullName>Taylor Shaw</fullName>
+        <default>false</default>
+        <label>Taylor Shaw</label>
+    </customValue>
+    <customValue>
+        <fullName>TC Facilities Management</fullName>
+        <default>false</default>
+        <label>TC Facilities Management</label>
+    </customValue>
+    <customValue>
+        <fullName>T Clarke</fullName>
+        <default>false</default>
+        <label>T Clarke</label>
+    </customValue>
+    <customValue>
+        <fullName>TDEVS Services, Inc</fullName>
+        <default>false</default>
+        <label>TDEVS Services, Inc</label>
+    </customValue>
+    <customValue>
+        <fullName>Tdn</fullName>
+        <default>false</default>
+        <label>Tdn</label>
+    </customValue>
+    <customValue>
+        <fullName>Team Guards Security Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Team Guards Security Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Teams</fullName>
+        <default>false</default>
+        <label>Teams</label>
+    </customValue>
+    <customValue>
+        <fullName>Tefid</fullName>
+        <default>false</default>
+        <label>Tefid</label>
+    </customValue>
+    <customValue>
+        <fullName>TEKFEN</fullName>
+        <default>false</default>
+        <label>TEKFEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Telus</fullName>
+        <default>false</default>
+        <label>Telus</label>
+    </customValue>
+    <customValue>
+        <fullName>Tenaga</fullName>
+        <default>false</default>
+        <label>Tenaga</label>
+    </customValue>
+    <customValue>
+        <fullName>Tenon FM</fullName>
+        <default>false</default>
+        <label>Tenon FM</label>
+    </customValue>
+    <customValue>
+        <fullName>TEPE GUVENLİK</fullName>
+        <default>false</default>
+        <label>TEPE GUVENLİK</label>
+    </customValue>
+    <customValue>
+        <fullName>TEPE SERVİS</fullName>
+        <default>false</default>
+        <label>TEPE SERVİS</label>
+    </customValue>
+    <customValue>
+        <fullName>Termibait Facility Services Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Termibait Facility Services Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>Ternet</fullName>
+        <default>false</default>
+        <label>Ternet</label>
+    </customValue>
+    <customValue>
+        <fullName>TFM</fullName>
+        <default>false</default>
+        <label>TFM</label>
+    </customValue>
+    <customValue>
+        <fullName>TGS</fullName>
+        <default>false</default>
+        <label>TGS</label>
+    </customValue>
+    <customValue>
+        <fullName>THE BUDD GROUP</fullName>
+        <default>false</default>
+        <label>THE BUDD GROUP</label>
+    </customValue>
+    <customValue>
+        <fullName>The Caterers</fullName>
+        <default>false</default>
+        <label>The Caterers</label>
+    </customValue>
+    <customValue>
+        <fullName>The Genuine Dining Co</fullName>
+        <default>false</default>
+        <label>The Genuine Dining Co</label>
+    </customValue>
+    <customValue>
+        <fullName>The Pestman Pte Ltd</fullName>
+        <default>false</default>
+        <label>The Pestman Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>The Workshop</fullName>
+        <default>false</default>
+        <label>The Workshop</label>
+    </customValue>
+    <customValue>
+        <fullName>Thomas Frank</fullName>
+        <default>false</default>
+        <label>Thomas Frank</label>
+    </customValue>
+    <customValue>
+        <fullName>TIP TOP</fullName>
+        <default>false</default>
+        <label>TIP TOP</label>
+    </customValue>
+    <customValue>
+        <fullName>Tkc</fullName>
+        <default>false</default>
+        <label>Tkc</label>
+    </customValue>
+    <customValue>
+        <fullName>TMR Urus Harta</fullName>
+        <default>false</default>
+        <label>TMR Urus Harta</label>
+    </customValue>
+    <customValue>
+        <fullName>T Net</fullName>
+        <default>false</default>
+        <label>T Net</label>
+    </customValue>
+    <customValue>
+        <fullName>TNS</fullName>
+        <default>false</default>
+        <label>TNS</label>
+    </customValue>
+    <customValue>
+        <fullName>TOPEX-CI</fullName>
+        <default>false</default>
+        <label>TOPEX-CI</label>
+    </customValue>
+    <customValue>
+        <fullName>Top Serve </fullName>
+        <default>false</default>
+        <label>Top Serve </label>
+    </customValue>
+    <customValue>
+        <fullName>Top Services</fullName>
+        <default>false</default>
+        <label>Top Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Tops Security Ltd</fullName>
+        <default>false</default>
+        <label>Tops Security Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Torann</fullName>
+        <default>false</default>
+        <label>Torann</label>
+    </customValue>
+    <customValue>
+        <fullName>TREND</fullName>
+        <default>false</default>
+        <label>TREND</label>
+    </customValue>
+    <customValue>
+        <fullName>Trenkwalder</fullName>
+        <default>false</default>
+        <label>Trenkwalder</label>
+    </customValue>
+    <customValue>
+        <fullName>Triangle</fullName>
+        <default>false</default>
+        <label>Triangle</label>
+    </customValue>
+    <customValue>
+        <fullName>Trigion</fullName>
+        <default>false</default>
+        <label>Trigion</label>
+    </customValue>
+    <customValue>
+        <fullName>Triomphe Securite</fullName>
+        <default>false</default>
+        <label>Triomphe Securite</label>
+    </customValue>
+    <customValue>
+        <fullName>Trios Group</fullName>
+        <default>false</default>
+        <label>Trios Group</label>
+    </customValue>
+    <customValue>
+        <fullName>Tropic Planner</fullName>
+        <default>false</default>
+        <label>Tropic Planner</label>
+    </customValue>
+    <customValue>
+        <fullName>True Clean</fullName>
+        <default>false</default>
+        <label>True Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Tsn</fullName>
+        <default>false</default>
+        <label>Tsn</label>
+    </customValue>
+    <customValue>
+        <fullName>TSP</fullName>
+        <default>false</default>
+        <label>TSP</label>
+    </customValue>
+    <customValue>
+        <fullName>Tucs Services</fullName>
+        <default>false</default>
+        <label>Tucs Services</label>
+    </customValue>
+    <customValue>
+        <fullName>U.S. Security Associates</fullName>
+        <default>false</default>
+        <label>U.S. Security Associates</label>
+    </customValue>
+    <customValue>
+        <fullName>Ucar</fullName>
+        <default>false</default>
+        <label>Ucar</label>
+    </customValue>
+    <customValue>
+        <fullName>UDS</fullName>
+        <default>false</default>
+        <label>UDS</label>
+    </customValue>
+    <customValue>
+        <fullName>UEMS Solutions Pte Ltd</fullName>
+        <default>false</default>
+        <label>UEMS Solutions Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>UFS TESİS</fullName>
+        <default>false</default>
+        <label>UFS TESİS</label>
+    </customValue>
+    <customValue>
+        <fullName>UG2</fullName>
+        <default>false</default>
+        <label>UG2</label>
+    </customValue>
+    <customValue>
+        <fullName>Ultimate</fullName>
+        <default>false</default>
+        <label>Ultimate</label>
+    </customValue>
+    <customValue>
+        <fullName>ULUSAL</fullName>
+        <default>false</default>
+        <label>ULUSAL</label>
+    </customValue>
+    <customValue>
+        <fullName>Uniprotect</fullName>
+        <default>false</default>
+        <label>Uniprotect</label>
+    </customValue>
+    <customValue>
+        <fullName>Unique</fullName>
+        <default>false</default>
+        <label>Unique</label>
+    </customValue>
+    <customValue>
+        <fullName>UNITED</fullName>
+        <default>false</default>
+        <label>UNITED</label>
+    </customValue>
+    <customValue>
+        <fullName>United Building Maintenance</fullName>
+        <default>false</default>
+        <label>United Building Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Updater Services</fullName>
+        <default>false</default>
+        <label>Updater Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Uslužni Centar</fullName>
+        <default>false</default>
+        <label>Uslužni Centar</label>
+    </customValue>
+    <customValue>
+        <fullName>USM</fullName>
+        <default>false</default>
+        <label>USM</label>
+    </customValue>
+    <customValue>
+        <fullName>UTI</fullName>
+        <default>false</default>
+        <label>UTI</label>
+    </customValue>
+    <customValue>
+        <fullName>Utile Et Agréable</fullName>
+        <default>false</default>
+        <label>Utile Et Agréable</label>
+    </customValue>
+    <customValue>
+        <fullName>Vacherin</fullName>
+        <default>false</default>
+        <label>Vacherin</label>
+    </customValue>
+    <customValue>
+        <fullName>Vaco</fullName>
+        <default>false</default>
+        <label>Vaco</label>
+    </customValue>
+    <customValue>
+        <fullName>Valton Security</fullName>
+        <default>false</default>
+        <label>Valton Security</label>
+    </customValue>
+    <customValue>
+        <fullName>VARIANCE</fullName>
+        <default>false</default>
+        <label>VARIANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>Varsity Facility Services</fullName>
+        <default>false</default>
+        <label>Varsity Facility Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Vaš Vrt</fullName>
+        <default>false</default>
+        <label>Vaš Vrt</label>
+    </customValue>
+    <customValue>
+        <fullName>Vendi</fullName>
+        <default>false</default>
+        <label>Vendi</label>
+    </customValue>
+    <customValue>
+        <fullName>Vending</fullName>
+        <default>false</default>
+        <label>Vending</label>
+    </customValue>
+    <customValue>
+        <fullName>Veolia</fullName>
+        <default>false</default>
+        <label>Veolia</label>
+    </customValue>
+    <customValue>
+        <fullName>Verdeco</fullName>
+        <default>false</default>
+        <label>Verdeco</label>
+    </customValue>
+    <customValue>
+        <fullName>Vermaat</fullName>
+        <default>false</default>
+        <label>Vermaat</label>
+    </customValue>
+    <customValue>
+        <fullName>VFC</fullName>
+        <default>false</default>
+        <label>VFC</label>
+    </customValue>
+    <customValue>
+        <fullName>Vietnam Catering </fullName>
+        <default>false</default>
+        <label>Vietnam Catering </label>
+    </customValue>
+    <customValue>
+        <fullName>Vinci</fullName>
+        <default>false</default>
+        <label>Vinci</label>
+    </customValue>
+    <customValue>
+        <fullName>Vinci Facilities</fullName>
+        <default>false</default>
+        <label>Vinci Facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtus</fullName>
+        <default>false</default>
+        <label>Virtus</label>
+    </customValue>
+    <customValue>
+        <fullName>Vision</fullName>
+        <default>false</default>
+        <label>Vision</label>
+    </customValue>
+    <customValue>
+        <fullName>Vit&apos;Clean</fullName>
+        <default>false</default>
+        <label>Vit&apos;Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Vitam</fullName>
+        <default>false</default>
+        <label>Vitam</label>
+    </customValue>
+    <customValue>
+        <fullName>Vitre Nettoyage Systene</fullName>
+        <default>false</default>
+        <label>Vitre Nettoyage Systene</label>
+    </customValue>
+    <customValue>
+        <fullName>Voisin</fullName>
+        <default>false</default>
+        <label>Voisin</label>
+    </customValue>
+    <customValue>
+        <fullName>VSG</fullName>
+        <default>false</default>
+        <label>VSG</label>
+    </customValue>
+    <customValue>
+        <fullName>Wasco Energy Group Of Companies</fullName>
+        <default>false</default>
+        <label>Wasco Energy Group Of Companies</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management Indonesia</fullName>
+        <default>false</default>
+        <label>Waste Management Indonesia</label>
+    </customValue>
+    <customValue>
+        <fullName>Weishen Industrial Services Pte Ltd</fullName>
+        <default>false</default>
+        <label>Weishen Industrial Services Pte Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Welkom! (Securitas)</fullName>
+        <default>false</default>
+        <label>Welkom! (Securitas)</label>
+    </customValue>
+    <customValue>
+        <fullName>Wespack Waste Management Sdn. Bhd.</fullName>
+        <default>false</default>
+        <label>Wespack Waste Management Sdn. Bhd.</label>
+    </customValue>
+    <customValue>
+        <fullName>WGC Ltd</fullName>
+        <default>false</default>
+        <label>WGC Ltd</label>
+    </customValue>
+    <customValue>
+        <fullName>Wika</fullName>
+        <default>false</default>
+        <label>Wika</label>
+    </customValue>
+    <customValue>
+        <fullName>Wilson James</fullName>
+        <default>false</default>
+        <label>Wilson James</label>
+    </customValue>
+    <customValue>
+        <fullName>Wilson Vale</fullName>
+        <default>false</default>
+        <label>Wilson Vale</label>
+    </customValue>
+    <customValue>
+        <fullName>Wira Garda</fullName>
+        <default>false</default>
+        <label>Wira Garda</label>
+    </customValue>
+    <customValue>
+        <fullName>Wpest Control</fullName>
+        <default>false</default>
+        <label>Wpest Control</label>
+    </customValue>
+    <customValue>
+        <fullName>W SERVICES</fullName>
+        <default>false</default>
+        <label>W SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>Yanet</fullName>
+        <default>false</default>
+        <label>Yanet</label>
+    </customValue>
+    <customValue>
+        <fullName>YENİÇERİ</fullName>
+        <default>false</default>
+        <label>YENİÇERİ</label>
+    </customValue>
+    <customValue>
+        <fullName>YENIGUN</fullName>
+        <default>false</default>
+        <label>YENIGUN</label>
+    </customValue>
+    <customValue>
+        <fullName>YKS</fullName>
+        <default>false</default>
+        <label>YKS</label>
+    </customValue>
+    <customValue>
+        <fullName>YÜKSEL</fullName>
+        <default>false</default>
+        <label>YÜKSEL</label>
+    </customValue>
+    <customValue>
+        <fullName>Zest</fullName>
+        <default>false</default>
+        <label>Zest</label>
+    </customValue>
+    <customValue>
+        <fullName>ZORLU</fullName>
+        <default>false</default>
+        <label>ZORLU</label>
+    </customValue>
+    <customValue>
+        <fullName>ZORLU TESİS</fullName>
+        <default>false</default>
+        <label>ZORLU TESİS</label>
+    </customValue>
+    <customValue>
+        <fullName>Parkers</fullName>
+        <default>false</default>
+        <label>Parkers</label>
+    </customValue>
+    <customValue>
+        <fullName>SSE</fullName>
+        <default>false</default>
+        <label>SSE</label>
+    </customValue>
+    <customValue>
+        <fullName>Lonsdale</fullName>
+        <default>false</default>
+        <label>Lonsdale</label>
+    </customValue>
+    <customValue>
+        <fullName>Gratte Brothers</fullName>
+        <default>false</default>
+        <label>Gratte Brothers</label>
+    </customValue>
+    <customValue>
+        <fullName>Essex Building Services</fullName>
+        <default>false</default>
+        <label>Essex Building Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Castle Building Services</fullName>
+        <default>false</default>
+        <label>Castle Building Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Stothers</fullName>
+        <default>false</default>
+        <label>Stothers</label>
+    </customValue>
+    <customValue>
+        <fullName>AES</fullName>
+        <default>false</default>
+        <label>AES</label>
+    </customValue>
+    <customValue>
+        <fullName>Derry Building Services</fullName>
+        <default>false</default>
+        <label>Derry Building Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Weir &amp; McQuiston</fullName>
+        <default>false</default>
+        <label>Weir &amp; McQuiston</label>
+    </customValue>
+    <customValue>
+        <fullName>Cushman and Wakefield </fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cushman and Wakefield </label>
+    </customValue>
+    <description>List of Global Companies used as providers and competitors</description>
+    <masterLabel>Global Competitors</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

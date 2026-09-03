@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>800</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Academy</label>
+    <motif>Custom55: Books</motif>
+    <url>https://servest.artes181.com/login-salesforce-sso.php?email={!User.Email}&amp;academySSOID=7a6b2cd0-851b-11e4-a037-00259013cb7e</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

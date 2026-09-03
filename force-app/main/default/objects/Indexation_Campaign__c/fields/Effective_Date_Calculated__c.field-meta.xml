@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Date_Calculated__c</fullName>
+    <formula>CASE(
+    Indexation_Status__c,
+    &quot;In Preparation&quot;, Revaluation_Effective_Date_Targeted__c,
+    &quot;Communicated to Customer&quot;, Reval_Effective_Date_Communicated__c,
+    &quot;Negotiation Done&quot;, Indexation_Effective_Date__c,
+    &quot;Approved by Controlling&quot;, Indexation_Effective_Date__c,
+    Revaluation_Effective_Date_Targeted__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Effective Date Calculated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

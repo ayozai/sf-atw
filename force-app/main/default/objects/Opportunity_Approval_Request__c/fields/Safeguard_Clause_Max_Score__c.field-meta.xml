@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Safeguard_Clause_Max_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISPICKVAL(Safeguard_Clause__c , &apos;&apos;) || ISPICKVAL(Safeguard_Clause__c , &apos;Not known&apos;), 0, 3)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Safeguard Clause - Max Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Approval_Unless_Reason_given</fullName>
+    <active>true</active>
+    <description>When the ‘Approval’ status is updated to ‘Approved’ by the SD, prompt them to enter the reasons why they have approved the request.</description>
+    <errorConditionFormula>AND(
+  ISBLANK( Approval_Reason__c ) , 
+  ISPICKVAL( Approval__c , &apos;Approved&apos;)
+ )</errorConditionFormula>
+    <errorDisplayField>Approval_Reason__c</errorDisplayField>
+    <errorMessage>Please enter the reason for approval.</errorMessage>
+</ValidationRule>

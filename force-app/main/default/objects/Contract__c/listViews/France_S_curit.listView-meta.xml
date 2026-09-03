@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>France_S_curit</fullName>
+    <columns>Contract_Name__c</columns>
+    <columns>Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Contract_Start_Date__c</columns>
+    <columns>Contract_End_Date__c</columns>
+    <columns>Effective_Monthly_Revenue__c</columns>
+    <columns>Effective_Gross_Margin_Percent__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Corporate_Country__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Corporate_Country__c</field>
+        <operation>equals</operation>
+        <value>France</value>
+    </filters>
+    <filters>
+        <field>Owner_Division__c</field>
+        <operation>startsWith</operation>
+        <value>France Secur,FR OP security</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Draft,Active,In Negotiation</value>
+    </filters>
+    <label>Contrats France Sécurité</label>
+</ListView>

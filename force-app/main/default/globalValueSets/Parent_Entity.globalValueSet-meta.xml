@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>03ASIN</fullName>
+        <default>false</default>
+        <label>03ASIN</label>
+    </customValue>
+    <customValue>
+        <fullName>03ASMM</fullName>
+        <default>false</default>
+        <label>03ASMM</label>
+    </customValue>
+    <customValue>
+        <fullName>RU=HOL000</fullName>
+        <default>false</default>
+        <label>RU=HOL000</label>
+    </customValue>
+    <customValue>
+        <fullName>RU=HOL006</fullName>
+        <default>false</default>
+        <label>RU=HOL006</label>
+    </customValue>
+    <customValue>
+        <fullName>RU=INT0112</fullName>
+        <default>false</default>
+        <label>RU=INT0112</label>
+    </customValue>
+    <customValue>
+        <fullName>RU=INT0120</fullName>
+        <default>false</default>
+        <label>RU=INT0120</label>
+    </customValue>
+    <customValue>
+        <fullName>RU=INT0602</fullName>
+        <default>false</default>
+        <label>RU=INT0602</label>
+    </customValue>
+    <customValue>
+        <fullName>RU=INT0605</fullName>
+        <default>false</default>
+        <label>RU=INT0605</label>
+    </customValue>
+    <customValue>
+        <fullName>RU=INT0606</fullName>
+        <default>false</default>
+        <label>RU=INT0606</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 01cl</fullName>
+        <default>false</default>
+        <label>RU sum 01cl</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 01FMFM</fullName>
+        <default>false</default>
+        <label>RU sum 01FMFM</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 01FMMT</fullName>
+        <default>false</default>
+        <label>RU sum 01FMMT</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 01FMPP</fullName>
+        <default>false</default>
+        <label>RU sum 01FMPP</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 01FMSE</fullName>
+        <default>false</default>
+        <label>RU sum 01FMSE</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03AFLB</fullName>
+        <default>false</default>
+        <label>RU sum 03AFLB</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03AFMU</fullName>
+        <default>false</default>
+        <label>RU sum 03AFMU</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03BXBE21</fullName>
+        <default>false</default>
+        <label>RU sum 03BXBE21</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03BXLU</fullName>
+        <default>false</default>
+        <label>RU sum 03BXLU</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03BXNL</fullName>
+        <default>false</default>
+        <label>RU sum 03BXNL</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUBA</fullName>
+        <default>false</default>
+        <label>RU sum 03EUBA</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUBG</fullName>
+        <default>false</default>
+        <label>RU sum 03EUBG</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUBY</fullName>
+        <default>false</default>
+        <label>RU sum 03EUBY</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUCZ</fullName>
+        <default>false</default>
+        <label>RU sum 03EUCZ</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUHR</fullName>
+        <default>false</default>
+        <label>RU sum 03EUHR</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUHU</fullName>
+        <default>false</default>
+        <label>RU sum 03EUHU</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUPL</fullName>
+        <default>false</default>
+        <label>RU sum 03EUPL</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EURO</fullName>
+        <default>false</default>
+        <label>RU sum 03EURO</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EURS</fullName>
+        <default>false</default>
+        <label>RU sum 03EURS</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EURU</fullName>
+        <default>false</default>
+        <label>RU sum 03EURU</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUSK</fullName>
+        <default>false</default>
+        <label>RU sum 03EUSK</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03EUTR</fullName>
+        <default>false</default>
+        <label>RU sum 03EUTR</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 04CORP24</fullName>
+        <default>false</default>
+        <label>RU sum 04CORP24</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 04EU</fullName>
+        <default>false</default>
+        <label>RU sum 04EU</label>
+    </customValue>
+    <customValue>
+        <fullName>Ru sum 04FR</fullName>
+        <default>false</default>
+        <label>Ru sum 04FR</label>
+    </customValue>
+    <customValue>
+        <fullName>01cl</fullName>
+        <default>false</default>
+        <label>01cl</label>
+    </customValue>
+    <customValue>
+        <fullName>03BXNL</fullName>
+        <default>false</default>
+        <label>03BXNL</label>
+    </customValue>
+    <customValue>
+        <fullName>03EUBA</fullName>
+        <default>false</default>
+        <label>03EUBA</label>
+    </customValue>
+    <customValue>
+        <fullName>03EUCZ</fullName>
+        <default>false</default>
+        <label>03EUCZ</label>
+    </customValue>
+    <customValue>
+        <fullName>01FMSE</fullName>
+        <default>false</default>
+        <label>01FMSE</label>
+    </customValue>
+    <customValue>
+        <fullName>01FMFM</fullName>
+        <default>false</default>
+        <label>01FMFM</label>
+    </customValue>
+    <customValue>
+        <fullName>ING005</fullName>
+        <default>false</default>
+        <label>ING005</label>
+    </customValue>
+    <customValue>
+        <fullName>03EUHR</fullName>
+        <default>false</default>
+        <label>03EUHR</label>
+    </customValue>
+    <customValue>
+        <fullName>03EUHU</fullName>
+        <default>false</default>
+        <label>03EUHU</label>
+    </customValue>
+    <customValue>
+        <fullName>03EUPL</fullName>
+        <default>false</default>
+        <label>03EUPL</label>
+    </customValue>
+    <customValue>
+        <fullName>INT0701</fullName>
+        <default>false</default>
+        <label>INT0701</label>
+    </customValue>
+    <customValue>
+        <fullName>03EURO</fullName>
+        <default>false</default>
+        <label>03EURO</label>
+    </customValue>
+    <customValue>
+        <fullName>03EURS</fullName>
+        <default>false</default>
+        <label>03EURS</label>
+    </customValue>
+    <customValue>
+        <fullName>03EUSK</fullName>
+        <default>false</default>
+        <label>03EUSK</label>
+    </customValue>
+    <customValue>
+        <fullName>03EUTR</fullName>
+        <default>false</default>
+        <label>03EUTR</label>
+    </customValue>
+    <description>Unité parent
+Panrent entities used by Finance</description>
+    <masterLabel>Parent Entity</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

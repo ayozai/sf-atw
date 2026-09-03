@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Termination_date_uper_than_onboarding</fullName>
+    <active>true</active>
+    <errorConditionFormula>Termination_date__c &lt;  Onboarding_date__c</errorConditionFormula>
+    <errorMessage>Attention ! La date de fin de contrat ne peut pas être inférieur à la date de début</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avg_Contractual_Ongoing_Opport_GMP__c</fullName>
+    <formula>if( Contractual_Ongoing_Opport_GM__c &gt;0,if( Contractual_Ongoing_Opport_Amount__c &gt;0,Contractual_Ongoing_Opport_GM__c/Contractual_Ongoing_Opport_Amount__c,0),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Avg Contractual Ongoing Opport. GM %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

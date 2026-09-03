@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Report Exports with PowerBi</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Reports Super User With Export</label>
+    <permissionSets>Export_Reports</permissionSets>
+    <permissionSets>Power_BI_API_user</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

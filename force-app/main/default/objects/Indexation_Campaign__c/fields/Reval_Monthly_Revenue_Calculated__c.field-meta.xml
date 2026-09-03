@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reval_Monthly_Revenue_Calculated__c</fullName>
+    <formula>CASE(
+    Indexation_Status__c,
+    &quot;In Preparation&quot;, Monthly_Revaluation_Amount_Targeted__c,
+    &quot;Communicated to Customer&quot;, Monthly_Reval_Amount_Communicated__c,
+    &quot;Negotiation Done&quot;, Monthly_Reval_Amount_Accepted__c,
+    &quot;Approved by Controlling&quot;, Monthly_Reval_Amount_Billed__c,
+    Monthly_Reval_Amount_Business_Target__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Reval Monthly Revenue Calculated</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

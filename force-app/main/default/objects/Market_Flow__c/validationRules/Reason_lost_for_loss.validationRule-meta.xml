@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_lost_for_loss</fullName>
+    <active>true</active>
+    <description>!ISPICKVAL($User.Controlling_Approver__c,&apos;Country Approver&apos;) &amp;&amp;</description>
+    <errorConditionFormula>!CONTAINS($Profile.Name, &quot;Admin&quot;) &amp;&amp; 
+!CONTAINS($User.Username, &apos;autoproc@&apos;) &amp;&amp;
+ISPICKVAL( Loss_Reason__c , &apos;&apos;) &amp;&amp;
+ISPICKVAL( Type__c, &apos;Loss&apos;)</errorConditionFormula>
+    <errorDisplayField>Loss_Reason__c</errorDisplayField>
+    <errorMessage>Please select a reason lost for loss.</errorMessage>
+</ValidationRule>

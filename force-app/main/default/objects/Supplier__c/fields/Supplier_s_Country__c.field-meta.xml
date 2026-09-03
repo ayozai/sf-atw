@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier_s_Country__c</fullName>
+    <description>This is the corporate country field of the supplier identified in the account look up field on this record.Populated in the &apos;Get Suppliers Country&apos; Flow.</description>
+    <externalId>false</externalId>
+    <label>Supplier&apos;s Country</label>
+    <length>120</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

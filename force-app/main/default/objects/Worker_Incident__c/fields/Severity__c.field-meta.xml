@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Severity__c</fullName>
+    <description>Minor - Near miss or accident or illness without work stoppage (0 to 3 days off)
+Moderate - Accident or illness with work stoppage (&gt; 4 to 15 days off)
+Major - Accident or illness with sick leave (16 to 90 days of sick leave) and/or partial permanent incapacity &lt;10%
+Critical - Accident or sickness with sick leave (91 to &gt; 151 days sick leave) and/or permanent partial incapacity &gt;10% and or fatal illness (0 to 3 days sick leave)</description>
+    <inlineHelpText>Minor - Near miss or accident or illness without work stoppage (0 to 3 days off)
+
+Moderate - Accident or illness with work stoppage (&gt; 4 to 15 days off)
+
+Major - Accident or illness with sick leave (16 to 90 days of sick leave) and/or partial permanent incapacity &lt;10%
+
+Critical - Accident or sickness with sick leave (91 to &gt; 151 days sick leave) and/or permanent partial incapacity &gt;10% and or fatal illness (0 to 3 days sick leave)</inlineHelpText>
+    <label>Severity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Critical</fullName>
+                <default>false</default>
+                <label>Critical</label>
+            </value>
+            <value>
+                <fullName>Moderate</fullName>
+                <default>false</default>
+                <label>Moderate</label>
+            </value>
+            <value>
+                <fullName>Major</fullName>
+                <default>false</default>
+                <label>Major</label>
+            </value>
+            <value>
+                <fullName>Minor</fullName>
+                <default>false</default>
+                <label>Minor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

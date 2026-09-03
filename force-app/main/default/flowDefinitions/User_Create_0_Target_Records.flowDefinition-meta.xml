@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>replaced by User_Initiate_Contractual_Targets FLOW // Deactivated by @MahdiGHARIANI</description>
+    <masterLabel>User - Create 0 Target Records</masterLabel>
+</FlowDefinition>

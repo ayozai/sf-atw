@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VGP_Verification_Type__c</fullName>
+    <label>VGP Verification Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>VGP_Verification__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Electrique</fullName>
+                <default>false</default>
+                <label>Electrique</label>
+            </value>
+            <value>
+                <fullName>Incendie</fullName>
+                <default>false</default>
+                <label>Incendie</label>
+            </value>
+            <value>
+                <fullName>Chaufferie</fullName>
+                <default>false</default>
+                <label>Chaufferie</label>
+            </value>
+            <value>
+                <fullName>Chariot élévateur</fullName>
+                <default>false</default>
+                <label>Chariot élévateur</label>
+            </value>
+            <value>
+                <fullName>GERBEUR</fullName>
+                <default>false</default>
+                <label>GERBEUR</label>
+            </value>
+            <value>
+                <fullName>Transpalette électrique</fullName>
+                <default>false</default>
+                <label>Transpalette électrique</label>
+            </value>
+            <value>
+                <fullName>Gilets de sauvetage</fullName>
+                <default>false</default>
+                <label>Gilets de sauvetage</label>
+            </value>
+            <value>
+                <fullName>Clim &amp; VMC</fullName>
+                <default>false</default>
+                <label>Clim &amp; VMC</label>
+            </value>
+            <value>
+                <fullName>Porte &amp; Portail</fullName>
+                <default>false</default>
+                <label>Porte &amp; Portail</label>
+            </value>
+            <value>
+                <fullName>Amiante</fullName>
+                <default>false</default>
+                <label>Amiante</label>
+            </value>
+            <value>
+                <fullName>CT Véhicule</fullName>
+                <default>false</default>
+                <label>CT Véhicule</label>
+            </value>
+            <value>
+                <fullName>Harnais</fullName>
+                <default>false</default>
+                <label>Harnais</label>
+            </value>
+            <value>
+                <fullName>Mousqueton</fullName>
+                <default>false</default>
+                <label>Mousqueton</label>
+            </value>
+            <value>
+                <fullName>Connecteur</fullName>
+                <default>false</default>
+                <label>Connecteur</label>
+            </value>
+            <value>
+                <fullName>Longe</fullName>
+                <default>false</default>
+                <label>Longe</label>
+            </value>
+            <value>
+                <fullName>Casque avec jugulaire</fullName>
+                <default>false</default>
+                <label>Casque avec jugulaire</label>
+            </value>
+            <value>
+                <fullName>Hayon</fullName>
+                <default>false</default>
+                <label>Hayon</label>
+            </value>
+            <value>
+                <fullName>Escabeau</fullName>
+                <default>false</default>
+                <label>Escabeau</label>
+            </value>
+            <value>
+                <fullName>PIRL</fullName>
+                <default>false</default>
+                <label>PIRL</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Electrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Incendie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Chaufferie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Clim &amp; VMC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Porte &amp; Portail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Amiante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Chariot élévateur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>GERBEUR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Transpalette électrique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Gilets de sauvetage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>CT Véhicule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Harnais</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Mousqueton</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Connecteur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Longe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Casque avec jugulaire</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

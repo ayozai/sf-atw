@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ATALIAN_FACILITIES</fullName>
+    <columns>NAME</columns>
+    <columns>Agency_Name__c</columns>
+    <columns>Division__c</columns>
+    <columns>Company_Name__c</columns>
+    <columns>Wide_Area_Name__c</columns>
+    <columns>DR_Name__c</columns>
+    <columns>DO_Name__c</columns>
+    <columns>DRD_Name__c</columns>
+    <columns>Agency_Director__c</columns>
+    <columns>Active__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DRD_Name__c</field>
+        <operation>equals</operation>
+        <value>ATALIAN FACILITIES</value>
+    </filters>
+    <label>ATALIAN FACILITIES</label>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avg_All_Opportunities_GMP__c</fullName>
+    <formula>if( Total_Opportunities_Amount__c &gt;0,if( All_Opportunities_GM__c &gt;0,All_Opportunities_GM__c/Total_Opportunities_Amount__c,0),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Avg All Opportunities GM %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

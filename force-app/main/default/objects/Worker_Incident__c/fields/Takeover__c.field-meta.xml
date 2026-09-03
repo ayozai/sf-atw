@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Takeover__c</fullName>
+    <label>Takeover</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under investigation</fullName>
+                <default>false</default>
+                <label>Under investigation</label>
+            </value>
+            <value>
+                <fullName>Recognized</fullName>
+                <default>false</default>
+                <label>Recognized</label>
+            </value>
+            <value>
+                <fullName>No instruction</fullName>
+                <default>false</default>
+                <label>No instruction</label>
+            </value>
+            <value>
+                <fullName>No follow-up</fullName>
+                <default>false</default>
+                <label>No follow-up</label>
+            </value>
+            <value>
+                <fullName>Not recognized</fullName>
+                <default>false</default>
+                <label>Not recognized</label>
+            </value>
+            <value>
+                <fullName>Recognized with registration in the special account</fullName>
+                <default>false</default>
+                <label>Recognized with registration in the special account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

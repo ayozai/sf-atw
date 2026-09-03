@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Error_Unable_to_retrieve_Forecast_Category_Default</name>
+        <label>Error - Unable to retrieve Forecast Category Default</label>
+        <locationX>433</locationX>
+        <locationY>160</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>fault message is: {!$Flow.FaultMessage}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Error - Unable to retrieve Forecast Category Default</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>patrinalee88@yahoo.co.uk</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Error_Unable_to_set_Default_Forecast_Category</name>
+        <label>Error - Unable to set Default Forecast Category</label>
+        <locationX>431</locationX>
+        <locationY>355</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>Error - Unable to retrieve Forecast Category Default</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Error - Unable to set Default Forecast Category</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Set Default Forecast Category.
+Use case: To be activated via process builder when type changes from &quot;Rebid&quot; to other business type.</description>
+    <interviewLabel>Opportunity - Set Default Forecast Category {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Set Default Forecast Category</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Retrieve_Default_Forecast_Category</name>
+        <label>Retrieve Default Forecast Category</label>
+        <locationX>92</locationX>
+        <locationY>176</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Opportunity_Forecast_Category</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Unable_to_retrieve_Forecast_Category_Default</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>MasterLabel</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Stage</elementReference>
+            </value>
+        </filters>
+        <object>OpportunityStage</object>
+        <outputReference>SOV_OpportunityStage</outputReference>
+        <queriedFields>ForecastCategoryName</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Opportunity_Forecast_Category</name>
+        <label>Update Opportunity Forecast Category</label>
+        <locationX>114</locationX>
+        <locationY>331</locationY>
+        <connector>
+            <targetReference>Error_Unable_to_set_Default_Forecast_Category</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OppId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ForecastCategoryName</field>
+            <value>
+                <elementReference>SOV_OpportunityStage.ForecastCategoryName</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <startElementReference>Retrieve_Default_Forecast_Category</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <name>OppId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SOV_OpportunityStage</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>OpportunityStage</objectType>
+    </variables>
+    <variables>
+        <name>Stage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>quotation_send_email</name>
+        <label>quotation send email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recipientAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>varRecipientEmails</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ccAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>get_support_email_adress.Atalian_Support_Email_Address__c</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>one.atalian@atalianworld.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>$Record__Prior.Name</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>&lt;div style=&quot;font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333333;&quot;&gt;
+  &lt;div style=&quot;background-color: #FFFFFF; padding: 30px 24px; text-align: center; border-bottom: 3px solid #F07B1A;&quot;&gt;
+    &lt;img src=&quot;https://atalianworld.my.salesforce.com/servlet/servlet.ImageServer?id=015Q30000071UUf&amp;oid=00DD0000000nF3N&amp;lastMod=1776954122000&quot; alt=&quot;Atalian Global Services&quot; width=&quot;200&quot; style=&quot;display: inline-block;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 28px 24px 24px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+    &lt;div style=&quot;background-color: #FFF3E6; border-left: 4px solid #F07B1A; padding: 12px 16px; margin: 0 0 24px;&quot;&gt;
+      &lt;p style=&quot;font-size: 16px; font-weight: bold; margin: 0; color: #333333;&quot;&gt;
+        Quotation {!$Record.Name} has been ordered
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 20px;&quot;&gt;
+      A quotation has been ordered for the following account:
+    &lt;/p&gt;
+    &lt;div style=&quot;background-color: #F8F8F8; border-radius: 4px; padding: 4px 0; margin: 0 0 24px;&quot;&gt;
+      &lt;table style=&quot;width: 100%; border-collapse: collapse;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 130px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Account&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Account__r.Name}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Subject&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Subject__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Description&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Description__c}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px;&quot;&gt;Amount&lt;/td&gt;
+          &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold;&quot;&gt;{!$Record.Amount__c}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: center; margin: 0 0 24px;&quot;&gt;
+      &lt;a href=&quot;{!$Label.Lightning_Base_URL}/lightning/r/Quotation__c/{!$Record.Id}/view&quot; style=&quot;display: inline-block; background-color: #F07B1A; color: #FFFFFF; text-decoration: none; padding: 12px 32px; font-size: 14px; font-weight: bold; border-radius: 4px;&quot;&gt;View Quotation&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;background-color: #F5F5F5; padding: 16px 24px; text-align: center; border: 1px solid #E0E0E0; border-top: none;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; margin: 0;&quot;&gt;
+      Atalian Global Services &amp;mdash; Internal notification &amp;mdash; Do not forward
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+                <inputConfiguratorMode>Resource</inputConfiguratorMode>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assignment_1</name>
+        <label>Assignment 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>varUserIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>varAccountTeam.UserId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>varAccountTeam</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignment_email</name>
+        <label>Assignment email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>varRecipientEmails</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_sur_varUsers.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_sur_varUsers</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>HasRecipients</name>
+        <label>HasRecipients?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRecipientEmails</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>quotation_send_email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Quotation Ordered email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Quotation Ordered email</label>
+    <loops>
+        <name>Loop_sur_varUsers</name>
+        <label>Loop sur varUsers</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>getUser</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assignment_email</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>HasRecipients</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>varAccountTeam</name>
+        <label>varAccountTeam</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>getaccountteam</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assignment_1</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>getUser</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>get_support_email_adress</name>
+        <label>get support email adress</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>getaccountteam</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>getaccountteam</name>
+        <label>getaccountteam</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>varAccountTeam</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5 )</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Operational Lead</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Partner</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Contract Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer Service Manager</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AccountTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>getUser</name>
+        <label>getUser</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_sur_varUsers</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>varUserIds</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>get_support_email_adress</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ordered by customer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Quotation__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>varRecipientEmails</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varRecipientIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varUserIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

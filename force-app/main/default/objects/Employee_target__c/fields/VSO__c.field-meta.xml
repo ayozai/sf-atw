@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VSO__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISBLANK(Employee__r.Termination_date__c),  
+ VSO_Yearly_Target__c / 12,
+     VSO_Yearly_Target__c  / (
+        (MONTH(
+            IF(Target_date__c &gt; DATE(YEAR(Target_date__c), 12, 31),
+               DATE(YEAR(Target_date__c), 12, 31),
+               Employee__r.Termination_date__c
+            )
+        )
+        -
+        MONTH(
+            IF( Employee__r.Onboarding_date__c &lt; DATE(YEAR(Target_date__c), 1, 1),
+               DATE(YEAR(Target_date__c), 1, 1),
+               Employee__r.Onboarding_date__c
+            )
+        )
+        + 1)
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>VSO Monthly Target</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

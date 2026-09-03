@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Catering - Catering Services</fullName>
+        <default>false</default>
+        <label>Catering - Catering Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Coffee Machines</fullName>
+        <default>false</default>
+        <label>Catering - Coffee Machines</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Hospitality</fullName>
+        <default>false</default>
+        <label>Catering - Hospitality</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Office Fruit</fullName>
+        <default>false</default>
+        <label>Catering - Office Fruit</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Vending Machines</fullName>
+        <default>false</default>
+        <label>Catering - Vending Machines</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Water Dispensers / Taps</fullName>
+        <default>false</default>
+        <label>Catering - Water Dispensers / Taps</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Bio-cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Bio-cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Cryogenic cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Cryogenic cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Healthcare - Adverse Event Activity</fullName>
+        <default>false</default>
+        <label>Cleaning Healthcare - Adverse Event Activity</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Healthcare - Distribution of meals</fullName>
+        <default>false</default>
+        <label>Cleaning Healthcare - Distribution of meals</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Healthcare - HACCP</fullName>
+        <default>false</default>
+        <label>Cleaning Healthcare - HACCP</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Industrial cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Industrial cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Other</fullName>
+        <default>false</default>
+        <label>Cleaning - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Standard</fullName>
+        <default>false</default>
+        <label>Cleaning - Standard</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Transport - N1 sur la piste de charge</fullName>
+        <default>false</default>
+        <label>Cleaning Transport - N1 sur la piste de charge</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Transport - N1 sur le remisage</fullName>
+        <default>false</default>
+        <label>Cleaning Transport - N1 sur le remisage</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Transport - N2</fullName>
+        <default>false</default>
+        <label>Cleaning Transport - N2</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Transport - N3</fullName>
+        <default>false</default>
+        <label>Cleaning Transport - N3</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Transport - N5</fullName>
+        <default>false</default>
+        <label>Cleaning Transport - N5</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning Transport - Vacation</fullName>
+        <default>false</default>
+        <label>Cleaning Transport - Vacation</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Washroom Supplies</fullName>
+        <default>false</default>
+        <label>Cleaning - Washroom Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Window</fullName>
+        <default>false</default>
+        <label>Cleaning - Window</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Mailroom</fullName>
+        <default>false</default>
+        <label>Front of House - Mailroom</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Reception Services</fullName>
+        <default>false</default>
+        <label>Front of House - Reception Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Handyman Services</fullName>
+        <default>false</default>
+        <label>Handyman Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping - Flowers</fullName>
+        <default>false</default>
+        <label>Landscaping - Flowers</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping - Internal Plants</fullName>
+        <default>false</default>
+        <label>Landscaping - Internal Plants</label>
+    </customValue>
+    <customValue>
+        <fullName>Material transport and flow management with loaders</fullName>
+        <default>false</default>
+        <label>Material transport and flow management with loaders</label>
+    </customValue>
+    <customValue>
+        <fullName>Pest Control</fullName>
+        <default>false</default>
+        <label>Pest Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Guarding Services</fullName>
+        <default>false</default>
+        <label>Security - Guarding Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Subscription Alarm Follow Up</fullName>
+        <default>false</default>
+        <label>Security - Subscription Alarm Follow Up</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Maintenance</fullName>
+        <default>false</default>
+        <label>Technical Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management</fullName>
+        <default>false</default>
+        <label>Waste Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Sanitary supplies</fullName>
+        <default>false</default>
+        <label>Cleaning - Sanitary supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Floor cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Floor cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Carpet deep cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Carpet deep cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Restoration cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Restoration cleaning</label>
+    </customValue>
+    <masterLabel>Global Contract Line Item</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

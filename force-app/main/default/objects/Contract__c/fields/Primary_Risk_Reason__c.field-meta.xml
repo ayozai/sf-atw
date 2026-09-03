@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Risk_Reason__c</fullName>
+    <label>Primary Risk Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Contract end date soon without tender information</fullName>
+                <default>false</default>
+                <label>Contract end date soon without tender information</label>
+            </value>
+            <value>
+                <fullName>Customer financial risk</fullName>
+                <default>false</default>
+                <label>Customer financial risk</label>
+            </value>
+            <value>
+                <fullName>Customer relationship</fullName>
+                <default>false</default>
+                <label>Customer relationship</label>
+            </value>
+            <value>
+                <fullName>Indexation withdraw</fullName>
+                <default>false</default>
+                <label>Indexation withdraw</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Tender</fullName>
+                <default>false</default>
+                <label>Tender</label>
+            </value>
+            <value>
+                <fullName>Termination</fullName>
+                <default>false</default>
+                <label>Termination</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

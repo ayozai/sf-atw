@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HR_Expert__c</fullName>
+    <description>Bids over £5M require HR sign off.</description>
+    <inlineHelpText>Bids over £5M require HR sign off.</inlineHelpText>
+    <label>HR Expert</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Karen Talbot</fullName>
+                <default>false</default>
+                <label>Karen Talbot</label>
+            </value>
+            <value>
+                <fullName>Kelly Howell</fullName>
+                <default>false</default>
+                <label>Kelly Howell</label>
+            </value>
+            <value>
+                <fullName>Parm Badesha</fullName>
+                <default>false</default>
+                <label>Parm Badesha</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

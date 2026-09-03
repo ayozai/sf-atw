@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technical_Expert__c</fullName>
+    <label>Technical Expert</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Anthony Hewitt</fullName>
+                <default>false</default>
+                <label>Anthony Hewitt</label>
+            </value>
+            <value>
+                <fullName>Lewis Richards</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lewis Richards</label>
+            </value>
+            <value>
+                <fullName>Pete Curson</fullName>
+                <default>false</default>
+                <label>Pete Curson</label>
+            </value>
+            <value>
+                <fullName>Simon Jones</fullName>
+                <default>false</default>
+                <label>Simon Jones</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

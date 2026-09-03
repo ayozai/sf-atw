@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lookups</fullName>
+    <active>true</active>
+    <errorConditionFormula>($Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp; 
+$Profile.Name &lt;&gt; &quot;Automated Process&quot; &amp;&amp;
+$Profile.Name &lt;&gt; &quot;Global Delegated Admin&quot; &amp;&amp;
+!ISPICKVAL($User.Controlling_Approver__c, &quot;Country Approver&quot;) &amp;&amp;
+(
+($User.Country = &quot;France&quot; &amp;&amp;  ISBLANK( Operations_Site__c ) )
+|| ($User.Country &lt;&gt; &quot;France&quot; &amp;&amp; (ISBLANK(Account__c) || ISBLANK(Agency__c)))
+))
+||
+(ISBLANK(Operations_Site__c ) &amp;&amp; (ISBLANK(Account__c) || ISBLANK(Agency__c) ) )</errorConditionFormula>
+    <errorMessage>Please select an account and an agency, or a site (France).</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Senttocustomer_to_Orderedbycustomer</fullName>
+    <active>true</active>
+    <description>Autoriser uniquement la transition “Sent to customer” → “Ordered by customer” pour les utilisateurs avec la custom permission</description>
+    <errorConditionFormula>/* Bloque toute modification de Status__c par les utilisateurs ciblés
+   SAUF la transition &quot;Sent to customer&quot; --&gt; &quot;Ordered by customer&quot; */
+
+AND(
+  ISCHANGED(Status__c),
+  $Permission.CanConfirmOrder,
+  NOT(
+    AND(
+      TEXT(PRIORVALUE(Status__c)) = &quot;Sent to customer&quot;,
+      TEXT(Status__c) = &quot;Ordered by customer&quot;
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>You re not allowed to proceed this action</errorMessage>
+</ValidationRule>

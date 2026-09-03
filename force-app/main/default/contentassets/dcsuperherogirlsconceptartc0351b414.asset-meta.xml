@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>fr</language>
+    <masterLabel>dcsuperherogirlsconceptartc0351b414</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>dc-super-hero-girls-concept-art-c0351b41-4b40-4d67-8d6b-8cfed3f94d2c.jpg</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allocated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Manually entered by Sales Admin to confirm allocation of Bid Support allocated in Catalyst.</description>
+    <label>Allocated</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

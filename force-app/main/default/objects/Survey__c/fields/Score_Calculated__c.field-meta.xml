@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score_Calculated__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF(ISPICKVAL(Communication_and_proactivity__c,&quot;&quot;),0,VALUE(TEXT(Communication_and_proactivity__c)))+
+IF(ISPICKVAL(CSR_Environmental_compliance__c,&quot;&quot;),0,VALUE(TEXT(CSR_Environmental_compliance__c)))+
+IF(ISPICKVAL(Equipments__c,&quot;&quot;),0,VALUE(TEXT(Equipments__c)))+
+IF(ISPICKVAL(Field_agents__c,&quot;&quot;),0,VALUE(TEXT(Field_agents__c)))+
+IF(ISPICKVAL(Fulfilling_commitments__c,&quot;&quot;),0,VALUE(TEXT(Fulfilling_commitments__c)))+
+IF(ISPICKVAL(Health_and_safety__c,&quot;&quot;),0,VALUE(TEXT(Health_and_safety__c)))+
+IF(ISPICKVAL(Management_on_the_field__c,&quot;&quot;),0,VALUE(TEXT(Management_on_the_field__c)))+
+IF(ISPICKVAL(On_time_delivery__c,&quot;&quot;),0,VALUE(TEXT(On_time_delivery__c)))+
+IF(ISPICKVAL(Overall_satisfaction__c,&quot;&quot;),0,VALUE(TEXT(Overall_satisfaction__c)))+
+IF(ISPICKVAL(Quality_of_service__c,&quot;&quot;),0,VALUE(TEXT(Quality_of_service__c)))+
+IF(ISPICKVAL(Quotes_and_invoices_management__c,&quot;&quot;),0,VALUE(TEXT(Quotes_and_invoices_management__c)))+
+IF(ISPICKVAL(Social_climate__c,&quot;&quot;),0,VALUE(TEXT(Social_climate__c)))+
+IF(ISPICKVAL(Source_of_proposals_Innovation__c,&quot;&quot;),0,VALUE(TEXT(Source_of_proposals_Innovation__c)))
+)/(
+IF(ISPICKVAL(Communication_and_proactivity__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(CSR_Environmental_compliance__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Equipments__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Field_agents__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Fulfilling_commitments__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Health_and_safety__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Management_on_the_field__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(On_time_delivery__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Overall_satisfaction__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Quality_of_service__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Quotes_and_invoices_management__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Social_climate__c,&quot;&quot;),0,1)+
+IF(ISPICKVAL(Source_of_proposals_Innovation__c,&quot;&quot;),0,1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Old_Contract_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The original record that this customer contract was replicated from</description>
+    <label>Old Contract Record</label>
+    <referenceTo>Contract</referenceTo>
+    <relationshipLabel>Customer Contracts</relationshipLabel>
+    <relationshipName>Customer_Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warning_Message__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  YEAR(Effective_Date__c) &lt;&gt; YEAR(TODAY()),
+			IF(
+							OR(ISPICKVAL($User.CountryCode,&quot;FR&quot;),
+										ISPICKVAL($User.CountryCode,&quot;CI&quot;),
+										ISPICKVAL($User.CountryCode,&quot;SN&quot;),
+										ISPICKVAL($User.CountryCode,&quot;MA&quot;)),
+							&quot;Attention, le flux ne concerne pas l&apos;année en cours&quot;,
+							&quot;Warning - This market flow record is not set for this FY&quot;
+			),
+			&quot;&quot;
+		)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Warning Message</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Block_IndexationUplift</fullName>
+    <active>true</active>
+    <description>Temporary VR to block choosing the value &quot;Indexation Uplift&quot; until cleaning the existing contracts // Exception for Integration User</description>
+    <errorConditionFormula>ISCHANGED(Indexation__c ) &amp;&amp; ISPICKVAL(Indexation__c  , &quot;Indexation Uplift&quot;) &amp;&amp;  NOT(CONTAINS($Profile.Name, &quot;Integration User&quot;))</errorConditionFormula>
+    <errorDisplayField>Indexation__c</errorDisplayField>
+    <errorMessage>You are no longer allowed to choose this type of indexation. Please select another value.</errorMessage>
+</ValidationRule>

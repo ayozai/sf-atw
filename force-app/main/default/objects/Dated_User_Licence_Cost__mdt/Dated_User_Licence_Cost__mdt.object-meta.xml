@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Costs for different types of internal and external user or feature licences within SF, to allow User Licence Audit records to correctly calculate proportional cost when created</description>
+    <label>Dated User Licence Cost</label>
+    <pluralLabel>Dated User Licence Costs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_AuditDate_NoPast</fullName>
+    <active>true</active>
+    <description>Empêcher de saisir une date d’audit antérieure à la date du jour.</description>
+    <errorConditionFormula>DATEVALUE(Audit_Date__c) &lt; TODAY()</errorConditionFormula>
+    <errorMessage>La date d’audit ne peut pas être antérieure à la date du jour.</errorMessage>
+</ValidationRule>

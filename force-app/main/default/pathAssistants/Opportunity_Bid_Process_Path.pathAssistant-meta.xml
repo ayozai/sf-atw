@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Opportunity Bid Process Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Contract_Type__c</fieldNames>
+        <info>&lt;p&gt;If you have created this opportunity from converting a lead:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Don&amp;#39;t forget to adjust the &lt;b&gt;Award Date &lt;/b&gt;as this has just been set to a system default!&lt;/li&gt;&lt;li&gt;Check over all the details that have been carried over from the lead.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Please select the right contract type so that the correct turnover is calculated.&lt;/p&gt;</info>
+        <picklistValueName>2. Prospect</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Global_Bid</recordTypeName>
+</PathAssistant>

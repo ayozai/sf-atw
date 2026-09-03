@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>en_US__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>en_US</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air Conditioning</fullName>
+                <default>true</default>
+                <label>Air Conditioning</label>
+            </value>
+            <value>
+                <fullName>Airport Services</fullName>
+                <default>false</default>
+                <label>Airport Services</label>
+            </value>
+            <value>
+                <fullName>Cabling &amp; Networks</fullName>
+                <default>false</default>
+                <label>Cabling &amp; Networks</label>
+            </value>
+            <value>
+                <fullName>Catering</fullName>
+                <default>false</default>
+                <label>Catering</label>
+            </value>
+            <value>
+                <fullName>Cleaning and Janitorial Services</fullName>
+                <default>false</default>
+                <label>Cleaning and Janitorial Services</label>
+            </value>
+            <value>
+                <fullName>Energy Management</fullName>
+                <default>false</default>
+                <label>Energy Management</label>
+            </value>
+            <value>
+                <fullName>Fire</fullName>
+                <default>false</default>
+                <label>Fire</label>
+            </value>
+            <value>
+                <fullName>Front of House and Concierge</fullName>
+                <default>false</default>
+                <label>Front of House and Concierge</label>
+            </value>
+            <value>
+                <fullName>Industrial Processes</fullName>
+                <default>false</default>
+                <label>Industrial Processes</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>M&amp;E Frameworks</fullName>
+                <default>false</default>
+                <label>M&amp;E Frameworks</label>
+            </value>
+            <value>
+                <fullName>M&amp;E Projects</fullName>
+                <default>false</default>
+                <label>M&amp;E Projects</label>
+            </value>
+            <value>
+                <fullName>Mail Management</fullName>
+                <default>false</default>
+                <label>Mail Management</label>
+            </value>
+            <value>
+                <fullName>Management Services</fullName>
+                <default>false</default>
+                <label>Management Services</label>
+            </value>
+            <value>
+                <fullName>Multi</fullName>
+                <default>false</default>
+                <label>Multi</label>
+            </value>
+            <value>
+                <fullName>Pest Control</fullName>
+                <default>false</default>
+                <label>Pest Control</label>
+            </value>
+            <value>
+                <fullName>Projects</fullName>
+                <default>false</default>
+                <label>Projects</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Soft Services</fullName>
+                <default>false</default>
+                <label>Soft Services</label>
+            </value>
+            <value>
+                <fullName>Space Management</fullName>
+                <default>false</default>
+                <label>Space Management</label>
+            </value>
+            <value>
+                <fullName>Technical Services</fullName>
+                <default>false</default>
+                <label>Technical Services</label>
+            </value>
+            <value>
+                <fullName>Total Facilities Management Services</fullName>
+                <default>false</default>
+                <label>Total Facilities Management Services</label>
+            </value>
+            <value>
+                <fullName>Waste Management</fullName>
+                <default>false</default>
+                <label>Waste Management</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Based_On_Login__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is the activity of a user for this Licence Type determined by when they login, as opposed to their status?</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Is the activity of a user for this Licence Type determined by when they login, as opposed to their status?</inlineHelpText>
+    <label>Activity Based On Login</label>
+    <type>Checkbox</type>
+</CustomField>

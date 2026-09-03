@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason_EN__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Case Reason EN</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>As a precaution</fullName>
+                <default>true</default>
+                <label>As a precaution</label>
+            </value>
+            <value>
+                <fullName>Atalian Staff</fullName>
+                <default>false</default>
+                <label>Atalian Staff</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Breakdown of consumable supplies</fullName>
+                <default>false</default>
+                <label>Breakdown of consumable supplies</label>
+            </value>
+            <value>
+                <fullName>Call for tender</fullName>
+                <default>false</default>
+                <label>Call for tender</label>
+            </value>
+            <value>
+                <fullName>Compliance with specifications</fullName>
+                <default>false</default>
+                <label>Compliance with specifications</label>
+            </value>
+            <value>
+                <fullName>Contract management</fullName>
+                <default>false</default>
+                <label>Contract management</label>
+            </value>
+            <value>
+                <fullName>Customer management staff</fullName>
+                <default>false</default>
+                <label>Customer management staff</label>
+            </value>
+            <value>
+                <fullName>Customer relocation</fullName>
+                <default>false</default>
+                <label>Customer relocation</label>
+            </value>
+            <value>
+                <fullName>Legal changes</fullName>
+                <default>false</default>
+                <label>Legal changes</label>
+            </value>
+            <value>
+                <fullName>Material, product</fullName>
+                <default>false</default>
+                <label>Material, product</label>
+            </value>
+            <value>
+                <fullName>New problem</fullName>
+                <default>false</default>
+                <label>New problem</label>
+            </value>
+            <value>
+                <fullName>No reason</fullName>
+                <default>false</default>
+                <label>No reason</label>
+            </value>
+            <value>
+                <fullName>No renewal</fullName>
+                <default>false</default>
+                <label>No renewal</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Price Revaluation</fullName>
+                <default>false</default>
+                <label>Price Revaluation</label>
+            </value>
+            <value>
+                <fullName>Quality of services</fullName>
+                <default>false</default>
+                <label>Quality of services</label>
+            </value>
+            <value>
+                <fullName>Safety compliance</fullName>
+                <default>false</default>
+                <label>Safety compliance</label>
+            </value>
+            <value>
+                <fullName>Service breakdown</fullName>
+                <default>false</default>
+                <label>Service breakdown</label>
+            </value>
+            <value>
+                <fullName>Site closure</fullName>
+                <default>false</default>
+                <label>Site closure</label>
+            </value>
+            <value>
+                <fullName>Site organization</fullName>
+                <default>false</default>
+                <label>Site organization</label>
+            </value>
+            <value>
+                <fullName>Window cleaning service breakdown</fullName>
+                <default>false</default>
+                <label>Window cleaning service breakdown</label>
+            </value>
+            <value>
+                <fullName>Workplace</fullName>
+                <default>false</default>
+                <label>Workplace</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rule_for_approvers</fullName>
+    <active>true</active>
+    <errorConditionFormula>(( $User.Id =  Approver__c  || $User.Id =  Approver_2__c) &amp;&amp; 
+ISPICKVAL(Status__c , &apos;Sent&apos;) &amp;&amp;
+( ISCHANGED( Opportunity__c ) ||  
+  ISCHANGED( Business_Type__c ) || 
+  ISCHANGED( Public_Private_Market__c ) || 
+  ISCHANGED( Primary_Service__c ) || 
+  ISCHANGED( Number_of_Sites__c ) || 
+  ISCHANGED( Certifications__c  ) ||
+  ISCHANGED( Clearance_Authorization__c ) ||  
+  ISCHANGED( Agreement_Type__c ) || 
+  ISCHANGED( Synergies_with_other_business_lines__c )  ||
+  ISCHANGED( Current_provider_satisfaction_level__c ) || 
+  ISCHANGED( Similar_references_at_Atalian__c ) || 
+  ISCHANGED( Centralized_procurement_policy__c ) || 
+  ISCHANGED( Customer_relationship_quality__c ) || 
+  ISCHANGED( Atalian_Reputation__c ) || 
+  ISCHANGED( Payment_Terms__c ) || 
+  ISCHANGED( Billing_frequency__c ) || 
+  ISCHANGED( CapEx__c ) || 
+  ISCHANGED( Penalities2__c ) || 
+  ISCHANGED( Progress_Plan__c ) || 
+  ISCHANGED( Indexation__c ) || 
+  ISCHANGED( Indexation_Formula__c ) ||
+  ISCHANGED( Safeguard_Clause__c ) || 
+  ISCHANGED( Administrative_Burden__c ) || 
+  ISCHANGED( Social_Climate__c ) || 
+  ISCHANGED( Take_Over_of_Staff__c ) || 
+  ISCHANGED( Social_Engineering__c ) || 
+  ISCHANGED( Bank_Guarantee_Required2__c ) ||
+  ISCHANGED( Unlimited_Liability_Clause__c ) ||
+  ISCHANGED( Agreement_with_Client__c ) ||  
+  ISCHANGED( Insurance_amount_imposed_by_client__c ) || 
+  ISCHANGED( Insurance_amount__c ) || 
+  ISCHANGED( Issuer_Comment2__c )
+))
+
+||
+
+(ISCHANGED( Approver_Comment__c ) &amp;&amp; $User.Id &lt;&gt; Approver__c)
+
+||
+
+(ISCHANGED( Approver_2_Comment__c ) &amp;&amp; $User.Id &lt;&gt; Approver_2__c)</errorConditionFormula>
+    <errorMessage>You are only allowed to edit the approver comment and the status of this record.</errorMessage>
+</ValidationRule>

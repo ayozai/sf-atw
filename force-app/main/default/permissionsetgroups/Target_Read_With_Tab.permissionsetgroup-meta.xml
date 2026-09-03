@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides Read access to Target with Tab</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Target - Read - With Tab</label>
+    <permissionSets>Target_Tab</permissionSets>
+    <permissionSets>Target_read</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

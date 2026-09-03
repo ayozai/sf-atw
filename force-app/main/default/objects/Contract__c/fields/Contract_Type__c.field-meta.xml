@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Type__c</fullName>
+    <description>This is the contract type and is used to segment the data for retention. Should we rename to annuity / non annuity/one off etc?</description>
+    <label>Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contractual</fullName>
+                <default>true</default>
+                <label>Contractual</label>
+            </value>
+            <value>
+                <fullName>Non Contractual</fullName>
+                <default>false</default>
+                <label>Non Contractual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

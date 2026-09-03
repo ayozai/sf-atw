@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Less than 1 000m²</fullName>
+        <default>false</default>
+        <label>Less than 1 000m²</label>
+    </customValue>
+    <customValue>
+        <fullName>1 000m² to 4 999m²</fullName>
+        <default>false</default>
+        <label>1 000m² to 4 999m²</label>
+    </customValue>
+    <customValue>
+        <fullName>5 000m² to 19 999m²</fullName>
+        <default>false</default>
+        <label>5 000m² to 19 999m²</label>
+    </customValue>
+    <customValue>
+        <fullName>20 000m² to 49 999m²</fullName>
+        <default>false</default>
+        <label>20 000m² to 49 999m²</label>
+    </customValue>
+    <customValue>
+        <fullName>More than 50 000m²</fullName>
+        <default>false</default>
+        <label>More than 50 000m²</label>
+    </customValue>
+    <description>List of building surfaces coming from Dynamics in France</description>
+    <masterLabel>Global Surface</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

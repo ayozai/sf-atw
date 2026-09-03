@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Framework_Agreement</fullName>
+    <active>true</active>
+    <description>Customer Contract cannot be Framework or Reference Agreement if accounting system site linked</description>
+    <errorConditionFormula>!ISCHANGED(Status__c) &amp;&amp; 
+!ISCHANGED(Number_of_Contacts__c) &amp;&amp; 
+!ISCHANGED(Attachments__c) &amp;&amp;
+(ISPICKVAL(Type__c , &quot;Framework Agreement&quot;) 
+ || ISPICKVAL(Type__c , &quot;Reference Agreement&quot;) 
+)&amp;&amp;  Accounting_System_Site_Count__c &gt; 0</errorConditionFormula>
+    <errorDisplayField>Type__c</errorDisplayField>
+    <errorMessage>Customer Contract cannot be of type Framework or Reference Agreement if accounting system site linked</errorMessage>
+</ValidationRule>

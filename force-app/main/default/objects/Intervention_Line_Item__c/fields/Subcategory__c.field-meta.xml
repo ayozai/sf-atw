@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subcategory__c</fullName>
+    <description>This picklist allows the user to choose the subcategory</description>
+    <label>Subcategory</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Additional works - Quote</fullName>
+                <default>false</default>
+                <label>Additional works - Quote</label>
+            </value>
+            <value>
+                <fullName>Anti-intrusion system</fullName>
+                <default>false</default>
+                <label>Anti-intrusion system</label>
+            </value>
+            <value>
+                <fullName>Archives</fullName>
+                <default>false</default>
+                <label>Archives</label>
+            </value>
+            <value>
+                <fullName>Archiving</fullName>
+                <default>false</default>
+                <label>Archiving</label>
+            </value>
+            <value>
+                <fullName>Automatic barrier</fullName>
+                <default>false</default>
+                <label>Automatic barrier</label>
+            </value>
+            <value>
+                <fullName>Automatic door</fullName>
+                <default>false</default>
+                <label>Automatic door</label>
+            </value>
+            <value>
+                <fullName>Badge creation</fullName>
+                <default>false</default>
+                <label>Badge creation</label>
+            </value>
+            <value>
+                <fullName>Badge holder</fullName>
+                <default>false</default>
+                <label>Badge holder</label>
+            </value>
+            <value>
+                <fullName>Badge modification</fullName>
+                <default>false</default>
+                <label>Badge modification</label>
+            </value>
+            <value>
+                <fullName>Badge removal</fullName>
+                <default>false</default>
+                <label>Badge removal</label>
+            </value>
+            <value>
+                <fullName>Bin area clean</fullName>
+                <default>false</default>
+                <label>Bin area clean</label>
+            </value>
+            <value>
+                <fullName>Bin overflowing</fullName>
+                <default>false</default>
+                <label>Bin overflowing</label>
+            </value>
+            <value>
+                <fullName>Bin removal</fullName>
+                <default>false</default>
+                <label>Bin removal</label>
+            </value>
+            <value>
+                <fullName>Birds</fullName>
+                <default>false</default>
+                <label>Birds</label>
+            </value>
+            <value>
+                <fullName>Blockage</fullName>
+                <default>false</default>
+                <label>Blockage</label>
+            </value>
+            <value>
+                <fullName>Booking</fullName>
+                <default>false</default>
+                <label>Booking</label>
+            </value>
+            <value>
+                <fullName>Building management system</fullName>
+                <default>false</default>
+                <label>Building management system</label>
+            </value>
+            <value>
+                <fullName>CCTV system</fullName>
+                <default>false</default>
+                <label>CCTV system</label>
+            </value>
+            <value>
+                <fullName>Ceiling</fullName>
+                <default>false</default>
+                <label>Ceiling</label>
+            </value>
+            <value>
+                <fullName>Chemical risk</fullName>
+                <default>false</default>
+                <label>Chemical risk</label>
+            </value>
+            <value>
+                <fullName>Cleaning after work/disaster/move</fullName>
+                <default>false</default>
+                <label>Cleaning after work/disaster/move</label>
+            </value>
+            <value>
+                <fullName>Clearing</fullName>
+                <default>false</default>
+                <label>Clearing</label>
+            </value>
+            <value>
+                <fullName>Clearing / snow removal</fullName>
+                <default>false</default>
+                <label>Clearing / snow removal</label>
+            </value>
+            <value>
+                <fullName>Cold equipment</fullName>
+                <default>false</default>
+                <label>Cold equipment</label>
+            </value>
+            <value>
+                <fullName>Cold water</fullName>
+                <default>false</default>
+                <label>Cold water</label>
+            </value>
+            <value>
+                <fullName>Compactor removal</fullName>
+                <default>false</default>
+                <label>Compactor removal</label>
+            </value>
+            <value>
+                <fullName>Concierge</fullName>
+                <default>false</default>
+                <label>Concierge</label>
+            </value>
+            <value>
+                <fullName>Confidential waste</fullName>
+                <default>false</default>
+                <label>Confidential waste</label>
+            </value>
+            <value>
+                <fullName>Consumables supply</fullName>
+                <default>false</default>
+                <label>Consumables supply</label>
+            </value>
+            <value>
+                <fullName>Control system</fullName>
+                <default>false</default>
+                <label>Control system</label>
+            </value>
+            <value>
+                <fullName>Courier</fullName>
+                <default>false</default>
+                <label>Courier</label>
+            </value>
+            <value>
+                <fullName>Cut / injury risk</fullName>
+                <default>false</default>
+                <label>Cut / injury risk</label>
+            </value>
+            <value>
+                <fullName>Decoration</fullName>
+                <default>false</default>
+                <label>Decoration</label>
+            </value>
+            <value>
+                <fullName>Disinfection</fullName>
+                <default>false</default>
+                <label>Disinfection</label>
+            </value>
+            <value>
+                <fullName>Dispenser</fullName>
+                <default>false</default>
+                <label>Dispenser</label>
+            </value>
+            <value>
+                <fullName>Door</fullName>
+                <default>false</default>
+                <label>Door</label>
+            </value>
+            <value>
+                <fullName>Drum</fullName>
+                <default>false</default>
+                <label>Drum</label>
+            </value>
+            <value>
+                <fullName>Dumpster removal</fullName>
+                <default>false</default>
+                <label>Dumpster removal</label>
+            </value>
+            <value>
+                <fullName>Dusting</fullName>
+                <default>false</default>
+                <label>Dusting</label>
+            </value>
+            <value>
+                <fullName>Electrical network (high voltage)</fullName>
+                <default>false</default>
+                <label>Electrical network (high voltage)</label>
+            </value>
+            <value>
+                <fullName>Electrical network (low voltage)</fullName>
+                <default>false</default>
+                <label>Electrical network (low voltage)</label>
+            </value>
+            <value>
+                <fullName>Electrical risk</fullName>
+                <default>false</default>
+                <label>Electrical risk</label>
+            </value>
+            <value>
+                <fullName>Emergency lighting</fullName>
+                <default>false</default>
+                <label>Emergency lighting</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Facade</fullName>
+                <default>false</default>
+                <label>Facade</label>
+            </value>
+            <value>
+                <fullName>Falling-object risk</fullName>
+                <default>false</default>
+                <label>Falling-object risk</label>
+            </value>
+            <value>
+                <fullName>Fall risk</fullName>
+                <default>false</default>
+                <label>Fall risk</label>
+            </value>
+            <value>
+                <fullName>Fence</fullName>
+                <default>false</default>
+                <label>Fence</label>
+            </value>
+            <value>
+                <fullName>Fire detection equipment, smoke detector</fullName>
+                <default>false</default>
+                <label>Fire detection equipment, smoke detector</label>
+            </value>
+            <value>
+                <fullName>Fire extinguisher</fullName>
+                <default>false</default>
+                <label>Fire extinguisher</label>
+            </value>
+            <value>
+                <fullName>Flies</fullName>
+                <default>false</default>
+                <label>Flies</label>
+            </value>
+            <value>
+                <fullName>Floor cleaning</fullName>
+                <default>false</default>
+                <label>Floor cleaning</label>
+            </value>
+            <value>
+                <fullName>Flooring</fullName>
+                <default>false</default>
+                <label>Flooring</label>
+            </value>
+            <value>
+                <fullName>Garage door</fullName>
+                <default>false</default>
+                <label>Garage door</label>
+            </value>
+            <value>
+                <fullName>Garment cleaning</fullName>
+                <default>false</default>
+                <label>Garment cleaning</label>
+            </value>
+            <value>
+                <fullName>Garment other request</fullName>
+                <default>false</default>
+                <label>Garment other request</label>
+            </value>
+            <value>
+                <fullName>Garment replacement</fullName>
+                <default>false</default>
+                <label>Garment replacement</label>
+            </value>
+            <value>
+                <fullName>Gas suppression</fullName>
+                <default>false</default>
+                <label>Gas suppression</label>
+            </value>
+            <value>
+                <fullName>Gate</fullName>
+                <default>false</default>
+                <label>Gate</label>
+            </value>
+            <value>
+                <fullName>Handling</fullName>
+                <default>false</default>
+                <label>Handling</label>
+            </value>
+            <value>
+                <fullName>Hazardous waste</fullName>
+                <default>false</default>
+                <label>Hazardous waste</label>
+            </value>
+            <value>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+                <label>Hotel</label>
+            </value>
+            <value>
+                <fullName>Hot equipment</fullName>
+                <default>false</default>
+                <label>Hot equipment</label>
+            </value>
+            <value>
+                <fullName>Hot water</fullName>
+                <default>false</default>
+                <label>Hot water</label>
+            </value>
+            <value>
+                <fullName>Indoor plants</fullName>
+                <default>false</default>
+                <label>Indoor plants</label>
+            </value>
+            <value>
+                <fullName>Industrial Cleaning</fullName>
+                <default>false</default>
+                <label>Industrial Cleaning</label>
+            </value>
+            <value>
+                <fullName>Insects</fullName>
+                <default>false</default>
+                <label>Insects</label>
+            </value>
+            <value>
+                <fullName>IT and telephony equipment</fullName>
+                <default>false</default>
+                <label>IT and telephony equipment</label>
+            </value>
+            <value>
+                <fullName>Kitchen hood</fullName>
+                <default>false</default>
+                <label>Kitchen hood</label>
+            </value>
+            <value>
+                <fullName>Layout</fullName>
+                <default>false</default>
+                <label>Layout</label>
+            </value>
+            <value>
+                <fullName>Leaf and branche removal</fullName>
+                <default>false</default>
+                <label>Leaf and branche removal</label>
+            </value>
+            <value>
+                <fullName>Leak</fullName>
+                <default>false</default>
+                <label>Leak</label>
+            </value>
+            <value>
+                <fullName>Leak, infiltration</fullName>
+                <default>false</default>
+                <label>Leak, infiltration</label>
+            </value>
+            <value>
+                <fullName>Lift/escalator blocked</fullName>
+                <default>false</default>
+                <label>Lift/escalator blocked</label>
+            </value>
+            <value>
+                <fullName>Lighting</fullName>
+                <default>false</default>
+                <label>Lighting</label>
+            </value>
+            <value>
+                <fullName>Locksmithing</fullName>
+                <default>false</default>
+                <label>Locksmithing</label>
+            </value>
+            <value>
+                <fullName>Mail reception</fullName>
+                <default>false</default>
+                <label>Mail reception</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Markup</fullName>
+                <default>false</default>
+                <label>Markup</label>
+            </value>
+            <value>
+                <fullName>Moving boxes</fullName>
+                <default>false</default>
+                <label>Moving boxes</label>
+            </value>
+            <value>
+                <fullName>Moving furniture</fullName>
+                <default>false</default>
+                <label>Moving furniture</label>
+            </value>
+            <value>
+                <fullName>No air conditioning</fullName>
+                <default>false</default>
+                <label>No air conditioning</label>
+            </value>
+            <value>
+                <fullName>No heating</fullName>
+                <default>false</default>
+                <label>No heating</label>
+            </value>
+            <value>
+                <fullName>Noise</fullName>
+                <default>false</default>
+                <label>Noise</label>
+            </value>
+            <value>
+                <fullName>No ventilation</fullName>
+                <default>false</default>
+                <label>No ventilation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Out of ink</fullName>
+                <default>false</default>
+                <label>Out of ink</label>
+            </value>
+            <value>
+                <fullName>Out of paper</fullName>
+                <default>false</default>
+                <label>Out of paper</label>
+            </value>
+            <value>
+                <fullName>Out of service</fullName>
+                <default>false</default>
+                <label>Out of service</label>
+            </value>
+            <value>
+                <fullName>Painting repair</fullName>
+                <default>false</default>
+                <label>Painting repair</label>
+            </value>
+            <value>
+                <fullName>Parcel reception</fullName>
+                <default>false</default>
+                <label>Parcel reception</label>
+            </value>
+            <value>
+                <fullName>Parking</fullName>
+                <default>false</default>
+                <label>Parking</label>
+            </value>
+            <value>
+                <fullName>Phone system</fullName>
+                <default>false</default>
+                <label>Phone system</label>
+            </value>
+            <value>
+                <fullName>Photovoltaics</fullName>
+                <default>false</default>
+                <label>Photovoltaics</label>
+            </value>
+            <value>
+                <fullName>Pollution risk</fullName>
+                <default>false</default>
+                <label>Pollution risk</label>
+            </value>
+            <value>
+                <fullName>Poster</fullName>
+                <default>false</default>
+                <label>Poster</label>
+            </value>
+            <value>
+                <fullName>Power generator</fullName>
+                <default>false</default>
+                <label>Power generator</label>
+            </value>
+            <value>
+                <fullName>Projector</fullName>
+                <default>false</default>
+                <label>Projector</label>
+            </value>
+            <value>
+                <fullName>Pruning, hedging</fullName>
+                <default>false</default>
+                <label>Pruning, hedging</label>
+            </value>
+            <value>
+                <fullName>Quotation request</fullName>
+                <default>false</default>
+                <label>Quotation request</label>
+            </value>
+            <value>
+                <fullName>Regulatory</fullName>
+                <default>false</default>
+                <label>Regulatory</label>
+            </value>
+            <value>
+                <fullName>Removal</fullName>
+                <default>false</default>
+                <label>Removal</label>
+            </value>
+            <value>
+                <fullName>Request a compactor</fullName>
+                <default>false</default>
+                <label>Request a compactor</label>
+            </value>
+            <value>
+                <fullName>Request a dumpster</fullName>
+                <default>false</default>
+                <label>Request a dumpster</label>
+            </value>
+            <value>
+                <fullName>Request for a bin</fullName>
+                <default>false</default>
+                <label>Request for a bin</label>
+            </value>
+            <value>
+                <fullName>Request for Destruction of Finished Products</fullName>
+                <default>false</default>
+                <label>Request for Destruction of Finished Products</label>
+            </value>
+            <value>
+                <fullName>Request for Destruction of Packaging Materials</fullName>
+                <default>false</default>
+                <label>Request for Destruction of Packaging Materials</label>
+            </value>
+            <value>
+                <fullName>Request for Destruction of Raw Materials</fullName>
+                <default>false</default>
+                <label>Request for Destruction of Raw Materials</label>
+            </value>
+            <value>
+                <fullName>Risk of slipping</fullName>
+                <default>false</default>
+                <label>Risk of slipping</label>
+            </value>
+            <value>
+                <fullName>Road risk</fullName>
+                <default>false</default>
+                <label>Road risk</label>
+            </value>
+            <value>
+                <fullName>Rodents</fullName>
+                <default>false</default>
+                <label>Rodents</label>
+            </value>
+            <value>
+                <fullName>Roller shutter</fullName>
+                <default>false</default>
+                <label>Roller shutter</label>
+            </value>
+            <value>
+                <fullName>Roof and gutters cleaning</fullName>
+                <default>false</default>
+                <label>Roof and gutters cleaning</label>
+            </value>
+            <value>
+                <fullName>Safety</fullName>
+                <default>false</default>
+                <label>Safety</label>
+            </value>
+            <value>
+                <fullName>Salt</fullName>
+                <default>false</default>
+                <label>Salt</label>
+            </value>
+            <value>
+                <fullName>Screen Display</fullName>
+                <default>false</default>
+                <label>Screen Display</label>
+            </value>
+            <value>
+                <fullName>Send mail</fullName>
+                <default>false</default>
+                <label>Send mail</label>
+            </value>
+            <value>
+                <fullName>Send parcel</fullName>
+                <default>false</default>
+                <label>Send parcel</label>
+            </value>
+            <value>
+                <fullName>Sewer Cleaning</fullName>
+                <default>false</default>
+                <label>Sewer Cleaning</label>
+            </value>
+            <value>
+                <fullName>Shock risk</fullName>
+                <default>false</default>
+                <label>Shock risk</label>
+            </value>
+            <value>
+                <fullName>Shutter / blind</fullName>
+                <default>false</default>
+                <label>Shutter / blind</label>
+            </value>
+            <value>
+                <fullName>Signage</fullName>
+                <default>false</default>
+                <label>Signage</label>
+            </value>
+            <value>
+                <fullName>Sinks, taps, toilets</fullName>
+                <default>false</default>
+                <label>Sinks, taps, toilets</label>
+            </value>
+            <value>
+                <fullName>Smell</fullName>
+                <default>false</default>
+                <label>Smell</label>
+            </value>
+            <value>
+                <fullName>Smoke extraction</fullName>
+                <default>false</default>
+                <label>Smoke extraction</label>
+            </value>
+            <value>
+                <fullName>Specialist support</fullName>
+                <default>false</default>
+                <label>Specialist support</label>
+            </value>
+            <value>
+                <fullName>Sprinkler</fullName>
+                <default>false</default>
+                <label>Sprinkler</label>
+            </value>
+            <value>
+                <fullName>Standard Cleaning</fullName>
+                <default>false</default>
+                <label>Standard Cleaning</label>
+            </value>
+            <value>
+                <fullName>Standard lighting</fullName>
+                <default>false</default>
+                <label>Standard lighting</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Sustainability</fullName>
+                <default>false</default>
+                <label>Sustainability</label>
+            </value>
+            <value>
+                <fullName>Switches &amp; sockets</fullName>
+                <default>false</default>
+                <label>Switches &amp; sockets</label>
+            </value>
+            <value>
+                <fullName>Tapes and boxes</fullName>
+                <default>false</default>
+                <label>Tapes and boxes</label>
+            </value>
+            <value>
+                <fullName>Taxi / car rental</fullName>
+                <default>false</default>
+                <label>Taxi / car rental</label>
+            </value>
+            <value>
+                <fullName>Ticket (flight, train, etc.)</fullName>
+                <default>false</default>
+                <label>Ticket (flight, train, etc.)</label>
+            </value>
+            <value>
+                <fullName>Toilet cleaning</fullName>
+                <default>false</default>
+                <label>Toilet cleaning</label>
+            </value>
+            <value>
+                <fullName>Too cold</fullName>
+                <default>false</default>
+                <label>Too cold</label>
+            </value>
+            <value>
+                <fullName>Too hot</fullName>
+                <default>false</default>
+                <label>Too hot</label>
+            </value>
+            <value>
+                <fullName>Vending machine</fullName>
+                <default>false</default>
+                <label>Vending machine</label>
+            </value>
+            <value>
+                <fullName>VIP support</fullName>
+                <default>false</default>
+                <label>VIP support</label>
+            </value>
+            <value>
+                <fullName>Visitor information (event)</fullName>
+                <default>false</default>
+                <label>Visitor information (event)</label>
+            </value>
+            <value>
+                <fullName>Visitor welcome request</fullName>
+                <default>false</default>
+                <label>Visitor welcome request</label>
+            </value>
+            <value>
+                <fullName>Waste disposal</fullName>
+                <default>false</default>
+                <label>Waste disposal</label>
+            </value>
+            <value>
+                <fullName>Waste removal</fullName>
+                <default>false</default>
+                <label>Waste removal</label>
+            </value>
+            <value>
+                <fullName>Water cooler</fullName>
+                <default>false</default>
+                <label>Water cooler</label>
+            </value>
+            <value>
+                <fullName>Watering system</fullName>
+                <default>false</default>
+                <label>Watering system</label>
+            </value>
+            <value>
+                <fullName>Water leak</fullName>
+                <default>false</default>
+                <label>Water leak</label>
+            </value>
+            <value>
+                <fullName>Weeding</fullName>
+                <default>false</default>
+                <label>Weeding</label>
+            </value>
+            <value>
+                <fullName>Window</fullName>
+                <default>false</default>
+                <label>Window</label>
+            </value>
+            <value>
+                <fullName>Window/facade cleaning</fullName>
+                <default>false</default>
+                <label>Window/facade cleaning</label>
+            </value>
+            <value>
+                <fullName>Work request</fullName>
+                <default>false</default>
+                <label>Work request</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

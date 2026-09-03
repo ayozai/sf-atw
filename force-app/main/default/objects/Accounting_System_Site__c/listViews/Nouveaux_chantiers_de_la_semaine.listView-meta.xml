@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nouveaux_chantiers_de_la_semaine</fullName>
+    <columns>NAME</columns>
+    <columns>Site__c</columns>
+    <columns>Controlling_Group_Name__c</columns>
+    <columns>City__c</columns>
+    <columns>Zip_Code__c</columns>
+    <columns>Street_1__c</columns>
+    <columns>Agency__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Customer_Contract__c</columns>
+    <columns>Market_Flow_Count__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site_ERP_ID__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>notEqual</operation>
+        <value>PAPET</value>
+    </filters>
+    <filters>
+        <field>Customer_Contract__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Market_Flow_Count__c</field>
+        <operation>notEqual</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Market_Flow_Count__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Nouveaux chantiers PROP de la semaine</label>
+</ListView>

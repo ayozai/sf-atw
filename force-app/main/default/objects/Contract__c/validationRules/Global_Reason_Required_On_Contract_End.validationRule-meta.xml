@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Reason_Required_On_Contract_End</fullName>
+    <active>false</active>
+    <description>When a contract is ended further details must be given.
+--&gt; To be done at Market Flow Level for France</description>
+    <errorConditionFormula>$Profile.Name&lt;&gt;&apos;System Administrator&apos; 
+&amp;&amp; $Profile.Name &lt;&gt;&apos;Global Delegated Admin&apos; 
+&amp;&amp; $Profile.Name &lt;&gt;&apos;Global Controlling User&apos;
+&amp;&amp; $Profile.Name &lt;&gt; &apos;Integration User&apos; 
+&amp;&amp; ISPICKVAL( Status__c, &apos;Ended&apos;) &amp;&amp; (ISBLANK(TEXT(Global_Contract_Ended_Reason__c)) || ISBLANK (Further_Details__c))</errorConditionFormula>
+    <errorDisplayField>Global_Contract_Ended_Reason__c</errorDisplayField>
+    <errorMessage>The contract ended reason field must be selected and further details added when the contract status is changed to ended.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Score_for_Servest__c</fullName>
+    <formula>(( Professionalism_Score__c  +  Security_Standards_Score__c  +  Comms_Centre_Score__c  +  Overall_score_for_Service__c  +   Ops_Mgr_score__c) *100)/500</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Overall Score for Servest</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>PSet for the International FM users</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Countries_In_Scope__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Opport_Countries_in_scope_Edit</label>
+</PermissionSet>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_Quoting_Knowledge__c</fullName>
+    <label>Connaissance pour chiffrage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low_Knowledge_Low_Expertise</fullName>
+                <default>false</default>
+                <label>Low Knowledge - Low Expertise</label>
+            </value>
+            <value>
+                <fullName>High_Knowledge_Low_Expertise</fullName>
+                <default>false</default>
+                <label>High Knowledge - Low Expertise</label>
+            </value>
+            <value>
+                <fullName>Low_Knowledge_High_Expertise</fullName>
+                <default>false</default>
+                <label>Low Knowledge - High Expertise</label>
+            </value>
+            <value>
+                <fullName>High_Knowledge_High_Expertise</fullName>
+                <default>false</default>
+                <label>High Knowledge - High Expertise</label>
+            </value>
+            <value>
+                <fullName>Expertise</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Expertise</label>
+            </value>
+            <value>
+                <fullName>Maitrise partielle</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Maitrise partielle</label>
+            </value>
+            <value>
+                <fullName>Maîtrise complète</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Maîtrise complète</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

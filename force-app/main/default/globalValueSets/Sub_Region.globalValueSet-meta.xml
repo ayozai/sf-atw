@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>UK/Ireland</fullName>
+        <default>false</default>
+        <label>UK/Ireland</label>
+    </customValue>
+    <customValue>
+        <fullName>Southern Africa</fullName>
+        <default>false</default>
+        <label>Southern Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>Central Africa</fullName>
+        <default>false</default>
+        <label>Central Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>East Africa</fullName>
+        <default>false</default>
+        <label>East Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>West Africa</fullName>
+        <default>false</default>
+        <label>West Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>South America</fullName>
+        <default>false</default>
+        <label>South America</label>
+    </customValue>
+    <customValue>
+        <fullName>North America</fullName>
+        <default>false</default>
+        <label>North America</label>
+    </customValue>
+    <customValue>
+        <fullName>South Africa</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>South Africa</label>
+    </customValue>
+    <description>List of Sub-Regions.</description>
+    <masterLabel>Sub-Region</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

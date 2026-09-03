@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fr__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>fr</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air Conditioning</fullName>
+                <default>true</default>
+                <label>Air Conditioning</label>
+            </value>
+            <value>
+                <fullName>Services Aéroportuaires</fullName>
+                <default>false</default>
+                <label>Services Aéroportuaires</label>
+            </value>
+            <value>
+                <fullName>Cabling &amp; Networks</fullName>
+                <default>false</default>
+                <label>Cabling &amp; Networks</label>
+            </value>
+            <value>
+                <fullName>Catering</fullName>
+                <default>false</default>
+                <label>Catering</label>
+            </value>
+            <value>
+                <fullName>Propreté et services associés</fullName>
+                <default>false</default>
+                <label>Propreté et services associés</label>
+            </value>
+            <value>
+                <fullName>Energy Management</fullName>
+                <default>false</default>
+                <label>Energy Management</label>
+            </value>
+            <value>
+                <fullName>Fire</fullName>
+                <default>false</default>
+                <label>Fire</label>
+            </value>
+            <value>
+                <fullName>Accueil et Conciergerie</fullName>
+                <default>false</default>
+                <label>Accueil et Conciergerie</label>
+            </value>
+            <value>
+                <fullName>Process Industriel</fullName>
+                <default>false</default>
+                <label>Process Industriel</label>
+            </value>
+            <value>
+                <fullName>Espaces Verts</fullName>
+                <default>false</default>
+                <label>Espaces Verts</label>
+            </value>
+            <value>
+                <fullName>M&amp;E Frameworks</fullName>
+                <default>false</default>
+                <label>M&amp;E Frameworks</label>
+            </value>
+            <value>
+                <fullName>M&amp;E Projects</fullName>
+                <default>false</default>
+                <label>M&amp;E Projects</label>
+            </value>
+            <value>
+                <fullName>Gestion du Courrier</fullName>
+                <default>false</default>
+                <label>Gestion du Courrier</label>
+            </value>
+            <value>
+                <fullName>Services de Gestion</fullName>
+                <default>false</default>
+                <label>Services de Gestion</label>
+            </value>
+            <value>
+                <fullName>Multi</fullName>
+                <default>false</default>
+                <label>Multi</label>
+            </value>
+            <value>
+                <fullName>3D</fullName>
+                <default>false</default>
+                <label>3D</label>
+            </value>
+            <value>
+                <fullName>Projects</fullName>
+                <default>false</default>
+                <label>Projects</label>
+            </value>
+            <value>
+                <fullName>Sécurité</fullName>
+                <default>false</default>
+                <label>Sécurité</label>
+            </value>
+            <value>
+                <fullName>Soft Services</fullName>
+                <default>false</default>
+                <label>Soft Services</label>
+            </value>
+            <value>
+                <fullName>Gestion des Espaces</fullName>
+                <default>false</default>
+                <label>Gestion des Espaces</label>
+            </value>
+            <value>
+                <fullName>Services Techniques</fullName>
+                <default>false</default>
+                <label>Services Techniques</label>
+            </value>
+            <value>
+                <fullName>Pilotage FM</fullName>
+                <default>false</default>
+                <label>Pilotage FM</label>
+            </value>
+            <value>
+                <fullName>Gestion des Déchets</fullName>
+                <default>false</default>
+                <label>Gestion des Déchets</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

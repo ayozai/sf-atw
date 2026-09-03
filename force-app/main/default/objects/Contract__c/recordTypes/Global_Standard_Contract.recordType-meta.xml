@@ -1,0 +1,3056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Standard_Contract</fullName>
+    <active>true</active>
+    <label>Global Standard Contract</label>
+    <picklistValues>
+        <picklist>Atalian_Agency__c</picklist>
+        <values>
+            <fullName>BE - AK - Aktrion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C1 - Brussels Large accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C2 - Antwerpen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C3 - Gent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C4 - Key accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C5 - Limburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C6 - Brussels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C7 - Walloon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C8 - Commission Européenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - C9 - Window Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - CAT - Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - Multi-agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE - TECH - Technical Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 Agence - Auterive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 Agence - Bordeaux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 Agence - Dijon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 Agence - La Maine Maromme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 Agence - Nantes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 Agence - Pérols</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 DR - Aubervilliers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 DR - Bouc-Bel-Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 DR - Canéjan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 DR - Illkirch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 DR - Landerneau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 DR - Meyzieu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 DR - Orchies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 AME %E2%80%93 DR - Rungis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR %E2%80%93 MAROMME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - AGEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - AIX EN PROVENCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - AMIENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - ANGERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - ANNECY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - AST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - AUXERRE-SENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - AVIGNON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - BAYONNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - BIOT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - BLOIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - BORDEAUX - MULTITECH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - BORDEAUX CANEJAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - BORDEAUX GRADIGNAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - BOURG EN BRESSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - BREST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - CAEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - CALAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - CAMMARATA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - CANTELEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - CHAMBERY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - CHRONOPOST CORBAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - CLERMONT-FERRAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - CORMONTREUIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - COURTHEZON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - DIJON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - EPERNAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - EPPSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - FINISTERE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - FOS SUR MER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - GARDANNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - GRENOBLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - GUEUGNON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - HEI-CMR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF FM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF NORD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF SUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF-CDG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF-HOPITAUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF-MULTISERVICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF-OPAC-DA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - IDF-TURGY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LA ROCHE SUR YON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LA SEYNE SUR MER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LAGNY LE SEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LE HAVRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LE MANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LES PENNES MIRABEAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LIMOGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LNH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LORIENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LORRAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LOUVIERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LUNEL VIEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LYON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LYON CARRARD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - LYON-GERLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MARCOULE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MAROLLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MARSEILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MARSEILLE - SECURITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MASSENA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - METZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MEYZIEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MEYZIEU LIMPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MONTARGIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MONTLUCON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MONTPELLIER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - MULHOUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NANCY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NANTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NANTES AIRBUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NATIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NET EXPRESS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NEVERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NIMES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - NIORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - ORANGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - ORLEANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - PALAISEAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - PAOLI CALMETTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - PARIS 1 - SECURITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - PARIS 12 - SECURITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - PARIS 2 - SECURITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - PARIS 6 SNCF - SECURITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - PAU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - PERPIGNAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - REIMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - RENNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - RODEZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - ROUEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SAINT BRIEUC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SAINT ETIENNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SAINT-NAZAIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SAINTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SECURITE - AEROPORTUAIRE %28APFS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SECURITE - AQUITAINE %E2%80%93 OCCITANIE %28CANEJAN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SECURITE - AURA %28MEYZIEU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SECURITE - GRAND EST %28REIMS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SECURITE - HAUTS DE FRANCE %28ORCHIES%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SECURITE - NORMANDIE %28LE HAVRE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SECURITE - OUEST %28CARQUEFOU %E2%80%93 LE MANS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SNCF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - ST MICRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - STRASBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - SUCY-LEROUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TAISSY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TOULOUSE - MULTITECH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TOULOUSE AUTERIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TOULOUSE RAMONVILLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TOURS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TRANSKEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TREMERY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TRICASTIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - TROYES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - USP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - USP-CHARTRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - USP-CLICHY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - USP-MONTROUGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - USP-RATP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - VALENCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - VAR-TOULON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - VENISSIEUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - VILLEFONTAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - VILLENEUVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - VITRY LE FRANCOIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR - WAMBRECHIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUX - AGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUX - CITY ONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUX - MTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUX - Multi-agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL - VISSCHEDIJK - Multi-agencies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL - VISSCHEDIJK CATERING BV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL - VISSCHEDIJK FACILITAIR BV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL - VISSCHEDIJK SHOONMAAK %2B BV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL - VISSCHEDIJK SHOONMAAK NO BV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL - VISSCHEDIJK SHOONMAAK ZW BV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_End_Risk_Level__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Ended_Reason__c</picklist>
+        <values>
+            <fullName>Bad credit check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change in service provision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost in retender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No reason given</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taken inhouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Market_Segment__c</picklist>
+        <values>
+            <fullName>Automotive Sector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Areas of Buildings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Food Retail Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Non-Food Retail Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leisure Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retirement Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shopping Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary Sector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ultra-Clean Environment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>Contractual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Contractual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Copy_of_Signed_Contract__c</picklist>
+        <values>
+            <fullName>Extension No%2C Original Yes - With Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension Yes%2C Original No - With Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No%2C contract not found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Client Signature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Legal - Copy Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivery_Against_Tender_Risk_Level__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Department_FR_Contract__c</picklist>
+        <values>
+            <fullName>01_Ain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02_Aisne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03_Allier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04_Alpes-de-Haute-Provence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05_Hautes-Alpes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06_Alpes-Maritimes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07_Ardèche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08_Ardennes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09_Ariège</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10_Aube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11_Aude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12_Aveyron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13_Bouches-du-Rhône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14_Calvados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15_Cantal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16_Charente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17_Charente-Maritime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18_Cher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19_Corrèze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21_Côte-d%27Or</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22_Côtes-d%27Armor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23_Creuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24_Dordogne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25_Doubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26_Drôme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27_Eure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28_Eure-et-Loir</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>29_Finistère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2A_Corse-du-Sud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2B_Haute-Corse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30_Gard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31_Haute-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32_Gers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33_Gironde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34_Hérault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35_Ille-et-Vilaine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36_Indre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37_Indre-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>38_Isère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>39_Jura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40_Landes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41_Loir-et-Cher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42_Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43_Haute-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44_Loire-Atlantique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45_Loiret</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46_Lot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47_Lot-et-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48_Lozère</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>49_Maine-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50_Manche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51_Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52_Haute-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53_Mayenne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54_Meurthe-et-Moselle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55_Meuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56_Morbihan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>57_Moselle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>58_Nièvre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>59_Nord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60_Oise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>61_Orne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>62_Pas-de-Calais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>63_Puy-de-Dôme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>64_Pyrénées-Atlantiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65_Hautes-Pyrénées</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>66_Pyrénées-Orientales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>67_Bas-Rhin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>68_Haut-Rhin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>69_Rhône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70_Haute-Saône</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71_Saône-et-Loire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72_Sarthe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>73_Savoie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>74_Haute-Savoie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75_Paris</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>76_Seine-Maritime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>77_Seine-et-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>78_Yvelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>79_Deux-Sèvres</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80_Somme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81_Tarn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>82_Tarn-et-Garonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>83_Var</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>84_Vaucluse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>85_Vendée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>86_Vienne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>87_Haute-Vienne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>88_Vosges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>89_Yonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90_Territoire de Belfort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>91_Essonne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>92_Hauts-de-Seine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>93_Seine-Saint-Denis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>94_Val-de-Marne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>95_Val-d%27Oise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Départements</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Financial_Risk_Level__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Global_Contract_Ended_Reason__c</picklist>
+        <values>
+            <fullName>Bad credit check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change in service provision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost in retender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No re-bid due to financials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No re-bid submission date missed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No reason given</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taken in-house</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated due to financial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Global_Risk_Level__c</picklist>
+        <values>
+            <fullName>High risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium risk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Indexation_Formula__c</picklist>
+        <values>
+            <fullName>Atalian Formula</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Formula</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Indexation__c</picklist>
+        <values>
+            <fullName>Annual Uplift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed Price Contract %28no uplift%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indexation Uplift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indexation Uplift ATALIAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indexation Uplift CLIENT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoicing_Type__c</picklist>
+        <values>
+            <fullName>Centralized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LEGAL_Compliant_non_conform__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LEGAL_Contract_updated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LEGAL_Reason_for_non_conformity__c</picklist>
+        <values>
+            <fullName>Deadline passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsigned contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong attachment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Operational_Risk_Level__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Terms__c</picklist>
+        <values>
+            <fullName>%3C30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60%2B Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Risk_Reason__c</picklist>
+        <values>
+            <fullName>Contract end date soon without tender information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer financial risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indexation withdraw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termination</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Service__c</picklist>
+        <values>
+            <fullName>Airport Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning and Janitorial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House and Concierge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handling Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Processes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Space Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Total Facilities Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Public_Private_Market__c</picklist>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region_FR__c</picklist>
+        <values>
+            <fullName>M%26E_AURA - BFC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26E_BRETAGNE - PAYS DE LA LOIRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26E_EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26E_IDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26E_MEDITERRANEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26E_NATIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26E_NORD-NORMANDIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26E_SUD-OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MULTI-REGIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPRETE_AURA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPRETE_CENTRE OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPRETE_EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPRETE_IDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPRETE_NATIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPRETE_NORD-NORMANDIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPRETE_PACA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPRETE_SUD-OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECURITE_IDF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECURITE_NATIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECURITE_NORD-NORMANDIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECURITE_SUD-EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECURITE_SUD-OUEST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relationship_Risk_Level__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Renewal_Type__c</picklist>
+        <values>
+            <fullName>Fixed Term Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rolling Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Review_Frequency__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bi-Annual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SME__c</picklist>
+        <values>
+            <fullName>Airport Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Purchasing Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educational Facilities Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government Facilities Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leisure Facilities Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics Facilities Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military Facilities Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public access building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Accounts Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Territorial Community Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ultra Cleaning</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Termination</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Services__c</picklist>
+        <values>
+            <fullName>AV Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access Control - Install%C2%A0%26 Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrative Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alarm Response%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back of House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backup Generators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery charging%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builders Clean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Automation System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Installations and Fabric Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Mechanical Maintenance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV - Install %26 Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV - Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV - Temporary Hire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cabin Armament and Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cage repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cage repair%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canopy cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cart Recycling and laundry Sorting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering - Coffee Shop %2F Deli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering - Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering - Kitchen Equipment Maintenance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering - Payment %2F Till Systems%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering - Restaurant and Kitchen Design%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering - Restaurants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering - Vending Machine Purchase%2FLease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chartered Surveying%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chewing Gum Removal%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claims Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Builders Clean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Consumables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Data Centre Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Dry Carpet Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - External Building Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Feminine Hygiene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - General Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - High level cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Housekeeping%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Janitorial Services%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Kitchen Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Lab Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Laundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Low Rise Facade Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Marble Crystalization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Night Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Post Construction Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Production Line Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Reactive Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Specialist Area and Room Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Steam Sanitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Upholstery %2F CarpetCleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Vehicle Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Vent Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning - Voids Cleans%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Close Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coffee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Common Area Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance%C2%A0Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compressed Air %2F Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concierge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conference Room Set-Up and Take Downs %28Coordination and Booking%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumables</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courier and Mailroom Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily periodic cleaning %28PHC cleans%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data centre cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De-kit%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decontamination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Clean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diamond Polishing%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribution%2FWarehouse Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document Management and Archiving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation%2C Procedures and Manuals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dog Handling%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Management - Energy Management%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Management%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Performance Contracting%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental%2C Health and Safety Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Supply and Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalator%2FElevator cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Building Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feminine Hygiene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fencing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance and Administration Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire -  Systems%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire - Safety Directors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire - Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Other Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire and Security Systems Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flight Preparation and Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food hygiene cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - AV Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Administrative Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Concierge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Conference Room Set-Up and Take Downs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Courier and Mailroom Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Document Management and Archiving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Medical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Physical Reception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Porterage%2FPorters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Reprographics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Storage Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Switchboard Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Ticketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Transport %2F Shuttle Bus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House - Valet Parking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Detection and Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gatehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Repairs and Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grab and Go</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graffiti Removal%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grease Tanks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gritting and Snow Clearance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guttering and Drain Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC%C2%A0Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hazardous Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helpdesk Managed Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High and Medium Voltage Installations%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High level cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hirewatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housekeeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial and Office Painting%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interior and Exterior Non-Mechanical Building Maintenance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Plants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intruder Alarm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitorial Services%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitorial services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Card Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key holding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen Equipment Maintenance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lab Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscape Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping - Fencing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping - Gritting and Snow Clearance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping - Internal Plants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping - Landscape Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping - Pavement%2C %C2%A0Sidewalk and Road Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping - Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Library</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lightning Installation and Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Litter Picking%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lock %26 Unlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics %28Aktrion%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Voltage Switchgear Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luggage Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailroom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Documentation%2C Procedures and Manuals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Environmental%2C Health and Safety Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Finance and Administration Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Helpdesk Managed Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Move Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Operational Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Procurement Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Project Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Space Planning Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services - Supplier management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manned Guarding %E2%80%93 Contractual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manned Guarding -  Armed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manned Guarding%C2%A0- Unarmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal%2C Marble and Wood Restoration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Night Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational Reporting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Specialist Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oven cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAT Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pallet management%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passenger Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pavement%2C %C2%A0Sidewalk and Road Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment %2F Till Systems%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Periodic Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Periodic Statutory Testing and Inspections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest - Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest - Reactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Reception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick%2Fplace management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick%2Fplace management%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Preventative Maintenance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porterage%2FPorters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power-operated Doors and Gates Installation and Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure Washing%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procurement Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Area Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Line Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Line Deep Clean%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Operations %28Aktrion%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Lightning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-coup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive Maintenance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refridgeration%2Ffreezer cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote monitoring - CCTV and Alarms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reprographics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant and Kitchen Design%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Store Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rigging%2C inventory management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road sweeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runway support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety shower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security -  Patrols</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Access Control - Install%C2%A0%26 Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Alarm Response%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - CCTV Install %26 Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - CCTV Temporary Hire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Close Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Dog Handling%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Fire Safety Directors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Fire Systems%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Gatehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Intruder Alarm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Key Card Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Manned Guarding -  Armed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Manned Guarding%C2%A0- Unarmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - Remote monitoring - CCTV and Alarms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Patrols</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signage and facia cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Space Planning Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sparkle cleans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialist Area and Room Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialist Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specialist Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strip and Seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sun Blinds Repairs and Maintenance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switchboard Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Systems Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services - Backup Generators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services - Building Automation System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services - Building Installations and Fabric Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services - Building Mechanical Maintenance%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services - Electrical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ticketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trailer cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport %2F Shuttle Bus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upholstery %2F CarpetCleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIP Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valet Parking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vending Machine Purchase%2FLease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vent Cleaning%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venting System Disinfection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertical Scale Elimination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voids Cleans%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washroom and Restroom Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Management - Hazardous Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Management - Other Specialist Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Management - Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Management Standard Waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Shaft Disinfection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Water Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wood clearance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workwear Cleaning Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Contract linked to a Framework Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract linked to a Reference Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Framework Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi-Site Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reference Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single-Site Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

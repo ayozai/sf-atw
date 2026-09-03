@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <label>Reason Lost</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>At the Initiative of Atalian</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>At the Initiative of Atalian</label>
+            </value>
+            <value>
+                <fullName>Call for Tender</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Call for Tender</label>
+            </value>
+            <value>
+                <fullName>Deficit Site</fullName>
+                <default>false</default>
+                <label>Deficit Site</label>
+            </value>
+            <value>
+                <fullName>Dossier FM</fullName>
+                <default>false</default>
+                <label>Dossier FM</label>
+            </value>
+            <value>
+                <fullName>Financial Rating and Notoriety</fullName>
+                <default>false</default>
+                <label>Financial Rating and Notoriety</label>
+            </value>
+            <value>
+                <fullName>Internalization</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Internalization</label>
+            </value>
+            <value>
+                <fullName>Judicial Liquidation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Judicial Liquidation</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Qualitatif restructuration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qualitatif restructuration</label>
+            </value>
+            <value>
+                <fullName>Qualitative</fullName>
+                <default>false</default>
+                <label>Qualitative</label>
+            </value>
+            <value>
+                <fullName>Rotation plaque</fullName>
+                <default>false</default>
+                <label>Rotation plaque</label>
+            </value>
+            <value>
+                <fullName>Site Closure</fullName>
+                <default>false</default>
+                <label>Site Closure</label>
+            </value>
+            <value>
+                <fullName>Uncategorized</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Uncategorized</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

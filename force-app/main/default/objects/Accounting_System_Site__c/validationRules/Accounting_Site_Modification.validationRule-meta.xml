@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounting_Site_Modification</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(Site_ERP_ID__c) &amp;&amp; 
+(ISCHANGED(Site__c)
+|| ISCHANGED(Controlling_Group_Name__c)
+|| ISCHANGED(City__c)
+|| ISCHANGED(Site_ERP_ID__c)
+|| ISCHANGED( Zip_Code__c )
+|| ISCHANGED( Street_1__c  )
+|| ISCHANGED( Street_2__c )
+|| ISCHANGED( Street_3__c )
+|| ISCHANGED( Agency__c )
+|| ISCHANGED( Public_Private__c  )
+|| ISCHANGED( OwnerId )
+)
+&amp;&amp;  $Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;  $Profile.Name &lt;&gt; &quot;Global Delegated Admin&quot;
+&amp;&amp; $Profile.Name &lt;&gt; &apos;Integration User&apos;</errorConditionFormula>
+    <errorMessage>You are not allowed to modify this field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#06E424</headerColor>
+        <logo>image_4</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>true</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>QHSE by Atalian</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>Employee__c</tabs>
+    <tabs>Agency__c</tabs>
+    <tabs>Site__c</tabs>
+    <tabs>Inspection__c</tabs>
+    <tabs>Survey__c</tabs>
+    <tabs>Training__c</tabs>
+    <tabs>Worker_Incident__c</tabs>
+    <tabs>Prevention_Plan__c</tabs>
+    <tabs>Accounting_System_Site__c</tabs>
+    <tabs>Intervention__c</tabs>
+    <tabs>General_Periodic_Inspection__c</tabs>
+    <tabs>Audit__c</tabs>
+    <tabs>Audit_Planning__c</tabs>
+    <tabs>Emergency_Situation__c</tabs>
+    <tabs>QHSE_Report__c</tabs>
+    <tabs>standard-Task</tabs>
+    <tabs>Employee_target__c</tabs>
+    <tabs>Employee_performance__c</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>Contract__c</tabs>
+    <tabs>standard-File</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>One_Atalian_QHSE_UtilityBar</utilityBar>
+</CustomApplication>

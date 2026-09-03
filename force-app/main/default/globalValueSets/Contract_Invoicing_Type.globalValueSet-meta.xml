@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Local</fullName>
+        <default>false</default>
+        <label>Local (Single Site Invoicing)</label>
+    </customValue>
+    <customValue>
+        <fullName>Centralized</fullName>
+        <default>false</default>
+        <label>Centralized (Multi Site Invoicing)</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Locale</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Locale</label>
+    </customValue>
+    <customValue>
+        <fullName>Centralisée</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Centralisée</label>
+    </customValue>
+    <customValue>
+        <fullName>Autre</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Autre</label>
+    </customValue>
+    <masterLabel>Contract Invoicing Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

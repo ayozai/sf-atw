@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bloemfontein</fullName>
+        <default>false</default>
+        <label>Bloemfontein</label>
+    </customValue>
+    <customValue>
+        <fullName>Cape Region</fullName>
+        <default>false</default>
+        <label>Cape Region</label>
+    </customValue>
+    <customValue>
+        <fullName>Cape Town</fullName>
+        <default>false</default>
+        <label>Cape Town</label>
+    </customValue>
+    <customValue>
+        <fullName>Eastern Cape</fullName>
+        <default>false</default>
+        <label>Eastern Cape</label>
+    </customValue>
+    <customValue>
+        <fullName>Eastrand</fullName>
+        <default>false</default>
+        <label>Eastrand</label>
+    </customValue>
+    <customValue>
+        <fullName>Free State</fullName>
+        <default>false</default>
+        <label>Free State</label>
+    </customValue>
+    <customValue>
+        <fullName>Gauteng</fullName>
+        <default>false</default>
+        <label>Gauteng</label>
+    </customValue>
+    <customValue>
+        <fullName>Gauteng Central</fullName>
+        <default>false</default>
+        <label>Gauteng Central</label>
+    </customValue>
+    <customValue>
+        <fullName>Gauteng North</fullName>
+        <default>false</default>
+        <label>Gauteng North</label>
+    </customValue>
+    <customValue>
+        <fullName>Gauteng South</fullName>
+        <default>false</default>
+        <label>Gauteng South</label>
+    </customValue>
+    <customValue>
+        <fullName>JHB CBD</fullName>
+        <default>false</default>
+        <label>JHB CBD</label>
+    </customValue>
+    <customValue>
+        <fullName>JHB South</fullName>
+        <default>false</default>
+        <label>JHB South</label>
+    </customValue>
+    <customValue>
+        <fullName>Johannesburg</fullName>
+        <default>false</default>
+        <label>Johannesburg</label>
+    </customValue>
+    <customValue>
+        <fullName>KZN</fullName>
+        <default>false</default>
+        <label>KZN</label>
+    </customValue>
+    <customValue>
+        <fullName>Limpopo</fullName>
+        <default>false</default>
+        <label>Limpopo</label>
+    </customValue>
+    <customValue>
+        <fullName>Midrand</fullName>
+        <default>false</default>
+        <label>Midrand</label>
+    </customValue>
+    <customValue>
+        <fullName>Mpumalanga</fullName>
+        <default>false</default>
+        <label>Mpumalanga</label>
+    </customValue>
+    <customValue>
+        <fullName>National</fullName>
+        <default>false</default>
+        <label>National</label>
+    </customValue>
+    <customValue>
+        <fullName>Northern Cape</fullName>
+        <default>false</default>
+        <label>Northern Cape</label>
+    </customValue>
+    <customValue>
+        <fullName>Northern Suburbs</fullName>
+        <default>false</default>
+        <label>Northern Suburbs</label>
+    </customValue>
+    <customValue>
+        <fullName>North West</fullName>
+        <default>false</default>
+        <label>North West</label>
+    </customValue>
+    <customValue>
+        <fullName>Port Elizabeth</fullName>
+        <default>false</default>
+        <label>Port Elizabeth</label>
+    </customValue>
+    <customValue>
+        <fullName>Pretoria</fullName>
+        <default>false</default>
+        <label>Pretoria</label>
+    </customValue>
+    <customValue>
+        <fullName>Regional</fullName>
+        <default>false</default>
+        <label>Regional</label>
+    </customValue>
+    <customValue>
+        <fullName>Vaal Triangle</fullName>
+        <default>false</default>
+        <label>Vaal Triangle</label>
+    </customValue>
+    <customValue>
+        <fullName>Western Cape</fullName>
+        <default>false</default>
+        <label>Western Cape</label>
+    </customValue>
+    <customValue>
+        <fullName>Westrand</fullName>
+        <default>false</default>
+        <label>Westrand</label>
+    </customValue>
+    <masterLabel>Geographical Area</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

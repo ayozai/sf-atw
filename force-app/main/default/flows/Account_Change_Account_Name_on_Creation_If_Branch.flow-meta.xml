@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Change_Account_Name</name>
+        <label>Change Account Name</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ConcatNameAndCity</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Branch_Name_Changed__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>add checkbox to make sure the name has been changed by the flow</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>ConcatNameAndCity</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Name}&amp;&quot; - &quot;&amp;{!$Record.BillingCity}</expression>
+    </formulas>
+    <interviewLabel>Account - Change Account Name on Creation If Branch {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account - Change Account Name on Creation If Branch</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Change_Account_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ESCONNECT__TCH_countryCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>FRA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ESCONNECT__TCH_estbType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>branch</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

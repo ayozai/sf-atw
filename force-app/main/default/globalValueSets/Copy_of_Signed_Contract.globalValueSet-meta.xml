@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <customValue>
+        <fullName>No, contract not found</fullName>
+        <default>false</default>
+        <label>No, contract not found</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Client Signature</fullName>
+        <default>false</default>
+        <label>Pending Client Signature</label>
+    </customValue>
+    <customValue>
+        <fullName>With Legal</fullName>
+        <default>false</default>
+        <label>With Legal</label>
+    </customValue>
+    <customValue>
+        <fullName>With Legal - Copy Requested</fullName>
+        <default>false</default>
+        <label>With Legal - Copy Requested</label>
+    </customValue>
+    <customValue>
+        <fullName>Extension Yes, Original No - With Legal</fullName>
+        <default>false</default>
+        <label>Extension Yes, Original No - With Legal</label>
+    </customValue>
+    <customValue>
+        <fullName>Extension No, Original Yes - With Legal</fullName>
+        <default>false</default>
+        <label>Extension No, Original Yes - With Legal</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes</fullName>
+        <default>false</default>
+        <label>Yes</label>
+    </customValue>
+    <masterLabel>Copy of Signed Contract</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

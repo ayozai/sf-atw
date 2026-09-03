@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Contact_Role_on_Close__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>If enabled, Opportunities must have at least 1 contact role defined before it can be closed</description>
+    <label>Enforce Contact Role on Close</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

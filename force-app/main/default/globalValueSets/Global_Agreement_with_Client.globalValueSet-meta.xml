@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Yes</fullName>
+        <default>false</default>
+        <label>Yes</label>
+    </customValue>
+    <customValue>
+        <fullName>NDA</fullName>
+        <default>false</default>
+        <label>NDA</label>
+    </customValue>
+    <customValue>
+        <fullName>Not known</fullName>
+        <default>false</default>
+        <label>Not known</label>
+    </customValue>
+    <customValue>
+        <fullName>No agreement</fullName>
+        <default>false</default>
+        <label>No agreement</label>
+    </customValue>
+    <customValue>
+        <fullName>Exclusivity</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Exclusivity</label>
+    </customValue>
+    <masterLabel>Global Agreement with Client</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Audit Interne Agence</fullName>
+        <default>false</default>
+        <label>Audit Interne Agence</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit 6M</fullName>
+        <default>false</default>
+        <label>Audit 6M</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit Interne site environnement</fullName>
+        <default>false</default>
+        <label>Audit Interne site environnement</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit Interne site IFS</fullName>
+        <default>false</default>
+        <label>Audit Interne site IFS</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit Fournisseur</fullName>
+        <default>false</default>
+        <label>Audit Fournisseur</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit Site Simplifié</fullName>
+        <default>false</default>
+        <label>Audit Site Simplifié</label>
+    </customValue>
+    <masterLabel>Audit Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

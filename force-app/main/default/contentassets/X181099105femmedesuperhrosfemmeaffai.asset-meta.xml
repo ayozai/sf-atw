@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>fr</language>
+    <masterLabel>X181099105femmedesuperhrosfemmeaffai</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>181099105-femme-de-super-héros-femme-affaires-dans-cape-rouge-voler.jpg</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

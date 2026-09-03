@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_PaymentTerms_MandatoryFields</fullName>
+    <active>true</active>
+    <description>When the Payment_Terms__c is checked, user must provide complementary information</description>
+    <errorConditionFormula>$Profile.Name&lt;&gt;&apos;System Administrator&apos;
+
+&amp;&amp; $Profile.Name&lt;&gt;&apos;Global Delegated Admin&apos;
+
+&amp;&amp; Payment_Terms__c = true
+
+&amp;&amp; ( ISBLANK(Payment_Terms_Comments__c)    
+
+   || ISPICKVAL( Old_Payment_Terms__c, &quot;&quot; ) 
+
+   || ISPICKVAL( New_Payment_Terms__c , &quot;&quot;) 
+
+   )</errorConditionFormula>
+    <errorMessage>Please provide the following fields : New Payment Terms, Old Payment Terms, Payment Terms Comments</errorMessage>
+</ValidationRule>

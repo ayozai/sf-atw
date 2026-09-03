@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Kilograms (kg)</fullName>
+        <default>false</default>
+        <label>Kilograms (kg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Tons (t)</fullName>
+        <default>false</default>
+        <label>Tons (t)</label>
+    </customValue>
+    <customValue>
+        <fullName>Square meters (m2)</fullName>
+        <default>false</default>
+        <label>Square meters (m2)</label>
+    </customValue>
+    <customValue>
+        <fullName>Cubic meters (m3)</fullName>
+        <default>false</default>
+        <label>Cubic meters (m3)</label>
+    </customValue>
+    <masterLabel>Globale Picklist Unit</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

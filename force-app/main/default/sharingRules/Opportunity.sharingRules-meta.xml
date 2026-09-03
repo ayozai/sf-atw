@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Aktrion_BeNeLux</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - BeNeLux</label>
+        <sharedTo>
+            <role>Aktrion_BeNeLux</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_BeNeLux</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_Czech</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - Czech</label>
+        <sharedTo>
+            <role>Aktrion_Czech</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_Czech</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_France</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Aktrion - France</label>
+        <sharedTo>
+            <role>Aktrion_France</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_France</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_Germany</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - Germany</label>
+        <sharedTo>
+            <role>Aktrion_Germany</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_Germany</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_Hungary</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - Hungary</label>
+        <sharedTo>
+            <role>Aktrion_Hungary</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_Hungary</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_Poland</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - Poland</label>
+        <sharedTo>
+            <role>Aktrion_Poland</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_Poland</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_Portugal</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - Portugal</label>
+        <sharedTo>
+            <role>Aktrion_Portugal</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_Portugal</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_Romania</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - Romania</label>
+        <sharedTo>
+            <role>Aktrion_Romania</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_Romania</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_Slovakia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - Slovakia</label>
+        <sharedTo>
+            <role>Aktrion_Slovakia</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_Slovakia</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_Spain</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - Spain</label>
+        <sharedTo>
+            <role>Aktrion_Spain</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_Spain</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Aktrion_UK</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Aktrion - UK</label>
+        <sharedTo>
+            <role>Aktrion_UK</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Aktrion_UK</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>AsiaSeniorTeam</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows users in Asia role to see peer&apos;s opptys.</description>
+        <label>Asia Senior Team</label>
+        <sharedTo>
+            <role>Asia</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Asia</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Asia_Delegated_Admin</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Edit Access to Opportunity</description>
+        <label>Asia - Delegated Admin</label>
+        <sharedTo>
+            <group>Delegated_Admin_Asia</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>Asia</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Atalian_Servest_UK</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allow exec team and admin support access</description>
+        <label>Atalian Servest UK</label>
+        <sharedTo>
+            <role>Executive_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Atalian_Servest</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>BeLux</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>BeLux</label>
+        <sharedTo>
+            <role>Belgium</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Belgium</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Belgium_Sales_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Belgium Sales Director</label>
+        <sharedTo>
+            <role>Belgium_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Belgium_Sales_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Belgium_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Belgium Sales Director / Europe</label>
+        <sharedTo>
+            <role>Belgium</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Benelux_Peers</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows Benelux peers to see each others opptys.</description>
+        <label>Benelux Peers</label>
+        <sharedTo>
+            <role>BeNeLux</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>BeNeLux</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Bid_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Bid Manager</label>
+        <sharedTo>
+            <role>Bid_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Bid_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Bosnia_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Bosnia CEO / Europe</label>
+        <sharedTo>
+            <role>Bosnia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Bosnia_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Bosnia Sales Director / Europe</label>
+        <sharedTo>
+            <role>Bosnia_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CEO_sharing_Sales_team_Croatia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows sales team to see and modify CEO opportunities.</description>
+        <label>CEO sharing Sales team Croatia</label>
+        <sharedTo>
+            <role>Croatia_Sales_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Croatia_CEO</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CZ_Czech_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CZ Czech CEO / Europe</label>
+        <sharedTo>
+            <role>CZ_Czech_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CZ_Czech_Sales_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CZ Czech Sales Team</label>
+        <sharedTo>
+            <role>CZ_Czech_Sales_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>CZ_Czech_Sales_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CZ_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>CZ Sales Director / Europe</label>
+        <sharedTo>
+            <role>CZ_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CZ_Seniors</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows senior team managers to see each others opptys</description>
+        <label>CZ Seniors</label>
+        <sharedTo>
+            <role>CZ_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>CZ_Director_of_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Cambodia_Senior_Peers</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows senior peers to see each others opptys</description>
+        <label>Cambodia Senior Peers</label>
+        <sharedTo>
+            <role>Cambodia_AGS_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Cambodia_AGS_Sales_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Cedric_COTREL</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Cedric COTREL</label>
+        <sharedTo>
+            <group>Cedric_COTREL</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_PACA_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Client_Relationship_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Client Relationship Director</label>
+        <sharedTo>
+            <role>Client_Relationship_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Client_Relationship_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Client_Solutions</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Client Solutions</label>
+        <sharedTo>
+            <role>Client_Solutions</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Client_Solutions</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Client_Solutions_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Client Solutions Director</label>
+        <sharedTo>
+            <role>Client_Solutions_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Client_Solutions_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Croatia_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Croatia CEO / Europe</label>
+        <sharedTo>
+            <role>Croatia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Croatia_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Croatia Sales Director / Europe</label>
+        <sharedTo>
+            <role>Croatia_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Director_Angel_Hill_Catering</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Director Angel Hill Catering</label>
+        <sharedTo>
+            <role>Director_Angel_Hill_Catering</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Director_Angel_Hill_Catering</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Director_Catering_Academy</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Director Catering Academy</label>
+        <sharedTo>
+            <role>Director_Catering_Academy</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Director_Catering_Academy</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Director_SWC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Director SWC</label>
+        <sharedTo>
+            <role>Director_SWC</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Director_SWC</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>DivestCo</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>DivestCo</label>
+        <sharedTo>
+            <role>DivestCo</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>DivestCo</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Divisional_Director_AMK_Projects</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Divisional Director AMK Projects</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Divisional_Director_AMK_Projects</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>Divisional_Director_AMK_Projects</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Divisional_Director_Catering</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Divisional Director Catering</label>
+        <sharedTo>
+            <role>Divisional_Director_Catering</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Divisional_Director_Catering</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Divisional_Director_Cleaning</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Divisional Director Cleaning</label>
+        <sharedTo>
+            <role>Divisional_Director_Cleaning</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Divisional_Director_Cleaning</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Divisional_Director_FM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Divisional Director FM</label>
+        <sharedTo>
+            <role>Divisional_Director_FM</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Divisional_Director_FM</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Divisional_Director_Integrated_Solutions</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Divisional Director Integrated Solutions</label>
+        <sharedTo>
+            <role>Divisional_Director_Integrated_Solutions</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Divisional_Director_Integrated_Solutions</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Divisional_Director_Ireland</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Divisional Director Ireland</label>
+        <sharedTo>
+            <role>Divisional_Director_Ireland</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Divisional_Director_Ireland</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Divisional_Director_Security</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Divisional Director Security</label>
+        <sharedTo>
+            <role>Divisional_Director_Security</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Divisional_Director_Security</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Divisional_Director_Technical_Services</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Divisional Director Technical Services</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Divisional_Director_Technical_Services</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Divisional_Director_Technical_Services</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_NA_SO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique NA + SO</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Sales_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Nouvelle_Aquitaine_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Nouvelle Aquitaine Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Nouvelle_Aquitaine_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Nouvelle_Aquitaine_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Ouest_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Ouest Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Centre_Ouest_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Centre_Ouest_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Sud_Ouest_BE_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Sud Ouest BE Manager</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_BE_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_BE_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Sud_Ouest_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Sud Ouest Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Occitanie_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Occitanie_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Est_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Est Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Est_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Est_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Grands Comptes Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Grands_Comptes_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_Institutionnels</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Grands Comptes Institutionnels</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_Institutionnels</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_Production</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Grands Comptes Production</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_Production</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_R_seaux_Tertiaires</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Grands Comptes Réseaux Tertiaires</label>
+        <sharedTo>
+            <role>FR_Cleaning_Grands_Comptes_R_seaux_Tertiaires</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_IDF_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning IDF Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_IDF_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_IDF_Sales_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_GD_Retail_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME GD&amp;Retail Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_GD_Retail_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_IAA_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME IAA Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_IAA_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_Indus_Assistant</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME Indus Assistant</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_Indus_Assistant</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_Indus_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME Indus Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_Indus_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_Sante_UP_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning ME Sante&amp;UP Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_Sante_UP_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Nord_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Nord Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Nord_Normandie_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Nord_Normandie_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Sud_Est_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Sud Est Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_PACA_Rhone_Alpes</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_PACA_Rhone_Alpes</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_IDF_Controlling</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR IDF Controlling</label>
+        <sharedTo>
+            <group>FR_IDF_Controlling</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_IDF_Sales_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Multitech_Sales_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Multitech Sales Director</label>
+        <sharedTo>
+            <role>FR_Multitech_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Multitech_Sales_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_Cleaning_Security_Transport</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France Cleaning Security Transport</label>
+        <sharedTo>
+            <role>France_Cleaning_Security</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_Cleaning_Security</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_FM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France FM</label>
+        <sharedTo>
+            <role>France_FM_Directors</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_FM_Directors</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_FM_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France FM Sales</label>
+        <sharedTo>
+            <role>France_FM_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_FM_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Hungary_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Hungary CEO / Europe</label>
+        <sharedTo>
+            <role>Hungary_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Hungary_Exec_Director_of_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Hungary Exec / Director of Sales</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Hungary_CEO</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Hungary_CEO</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Hungary_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Hungary Sales Director / Europe</label>
+        <sharedTo>
+            <role>Hungary_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>India_Seniors</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Peer sharing</description>
+        <label>India Seniors</label>
+        <sharedTo>
+            <role>India_CEO_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>India_CEO_Sales_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Indonesia_Senior_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows peer visibility for seniors</description>
+        <label>Indonesia Senior Team</label>
+        <sharedTo>
+            <role>Indonesia_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Indonesia_Director_of_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Ireland_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Ireland Manager</label>
+        <sharedTo>
+            <role>Ireland_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Ireland_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Ireland_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Ireland Sales</label>
+        <sharedTo>
+            <role>Ireland_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Ireland_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Luxembourg_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Luxembourg CEO / Europe</label>
+        <sharedTo>
+            <role>Luxembourg_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Luxembourg_Sales_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Luxembourg Sales Director</label>
+        <sharedTo>
+            <role>Luxembourg_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Luxembourg_Sales_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Luxembourg_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Luxembourg Sales Director / Europe</label>
+        <sharedTo>
+            <role>Luxembourg_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Netherlands_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Netherlands CEO / Europe</label>
+        <sharedTo>
+            <role>Netherlands_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Netherlands_Sales_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Netherlands Sales Director</label>
+        <sharedTo>
+            <role>Netherlands_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Netherlands_Sales_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Netherlands_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Netherlands Sales Director / Europe</label>
+        <sharedTo>
+            <role>Netherlands_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Opp_Ouest_IDF</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Visibilité opp Ouest par DIRCO IDF</description>
+        <label>Opp_Ouest=&gt;IDF</label>
+        <sharedTo>
+            <group>Transition_IDF_CentreOuest</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Centre_Ouest_Director</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Belgium</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Belgium users</description>
+        <label>Overview_opps_Belgium</label>
+        <sharedTo>
+            <group>Inter_Belgium_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Belgium_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Bosnia</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Bosnia users</description>
+        <label>Overview_opps_Bosnia</label>
+        <sharedTo>
+            <group>Inter_Bosnia_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Bosnia_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Croatia</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Croatia users</description>
+        <label>Overview_opps_Croatia</label>
+        <sharedTo>
+            <group>Inter_Croatia_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Croatia_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_CzechRepublic</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Czech Republic users</description>
+        <label>Overview_opps_CzechRepublic</label>
+        <sharedTo>
+            <group>Inter_CzechRepublic_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_CzechRepublic_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Hungary</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Hungary users</description>
+        <label>Overview_opps_Hungary</label>
+        <sharedTo>
+            <group>Inter_Hungary_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Hungary_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Luxembourg</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Luxembourg users</description>
+        <label>Overview_opps_Luxembourg</label>
+        <sharedTo>
+            <group>Inter_Luxembourg_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Luxembourg_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Netherlands</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Netherlands users</description>
+        <label>Overview_opps_Netherlands</label>
+        <sharedTo>
+            <group>Inter_Netherlands_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Netherlands_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Poland</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Poland users</description>
+        <label>Overview_opps_Poland</label>
+        <sharedTo>
+            <group>Inter_Poland_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Poland_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Romania</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Romania users</description>
+        <label>Overview_opps_Romania</label>
+        <sharedTo>
+            <group>Inter_Romania_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Romania_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Serbia</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Serbia users</description>
+        <label>Overview_opps_Serbia</label>
+        <sharedTo>
+            <group>Inter_Serbia_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Serbia_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Slovakia</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Slovakia users</description>
+        <label>Overview_opps_Slovakia</label>
+        <sharedTo>
+            <group>Inter_Slovakia_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Slovakia_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Overview_opps_Turkey</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Overview of opportunities for all Turkey users</description>
+        <label>Overview_opps_Turkey</label>
+        <sharedTo>
+            <group>Inter_Turkey_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Inter_Turkey_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Peer_Sharing_for_Croatia</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows senior sales peers to see each others oppty.</description>
+        <label>Peer Sharing for Croatia</label>
+        <sharedTo>
+            <role>Croatia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Croatia_CEO</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Philippines_seniors</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows peer sharing for senior team</description>
+        <label>Philippines seniors</label>
+        <sharedTo>
+            <role>Philippines_CEO_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Philippines_CEO_Director_of_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Poland_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Poland CEO / Europe</label>
+        <sharedTo>
+            <role>Poland_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Poland_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Poland Sales Director / Europe</label>
+        <sharedTo>
+            <role>Poland_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Poland_Sales_director</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Poland director of sales shares the view of his opportunities with Poland sales team</description>
+        <label>Poland Sales director</label>
+        <sharedTo>
+            <role>Poland_Sales_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Poland_Director_of_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Poland_Sales_team</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows peer sharing for Poland Sales teams</description>
+        <label>Poland Sales team</label>
+        <sharedTo>
+            <role>Poland_Sales_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Poland_Sales_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Poland_Seniors</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows peer sharing for Poland Seniors</description>
+        <label>Poland Seniors</label>
+        <sharedTo>
+            <role>Poland_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Poland_CEO</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Romania_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Romania CEO / Europe</label>
+        <sharedTo>
+            <role>Romania_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Romania_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Romania Sales Director / Europe</label>
+        <sharedTo>
+            <role>Romania_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Russia_Seniors</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows senior team in Russia to view each others opptys</description>
+        <label>Russia Seniors</label>
+        <sharedTo>
+            <role>Russia_Head_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Russia_CIS_Regional_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Russia_Seniors_Peers</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Russia Senior Peers</label>
+        <sharedTo>
+            <role>Russia_Head_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Russia_Head_of_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SWC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SWC</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Director_SWC</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Director_SWC</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sales_Cleaning</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Sales Cleaning</label>
+        <sharedTo>
+            <role>Sales_Cleaning</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Sales_Cleaning</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sales_SWC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sales SWC</label>
+        <sharedTo>
+            <role>Sales_SWC</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Sales_SWC</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Security_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Security Manager</label>
+        <sharedTo>
+            <role>Security_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Security_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Security_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Security Sales</label>
+        <sharedTo>
+            <role>Security_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Security_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Security_Systems_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Security Systems Manager</label>
+        <sharedTo>
+            <role>Security_Systems_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Security_Systems_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Security_Systems_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Security Systems Sales</label>
+        <sharedTo>
+            <role>Security_Systems_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Security_Systems_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Senior_Serbian_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows senior peers to view each others opptys.</description>
+        <label>Senior Serbian Team</label>
+        <sharedTo>
+            <role>Serbia_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Serbia_Director_of_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Serbia_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Serbia CEO / Europe</label>
+        <sharedTo>
+            <role>Serbia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Serbia_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Serbia Sales Director / Europe</label>
+        <sharedTo>
+            <role>Serbia_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Shar_Rule_France_Benelux_Europe</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Give Edit access on opportunities to users with &quot;France Benelux Europe&quot; role</description>
+        <label>Shar_Rule_France_Benelux_Europe</label>
+        <sharedTo>
+            <role>France_Benelux_Europe</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_Benelux_Europe</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sharing_Opps_between_international_CEO_and_CSO</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Sharing Opps between international CEO and CSO</label>
+        <sharedTo>
+            <group>Inter_CEO_CSO</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe_Benelux</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Singapore_Sales_Director_Execs</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Singapore Sales Director / Execs</label>
+        <sharedTo>
+            <role>Singapore_Sales_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Singapore_Sales_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Singapore_Sales_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Singapore Sales Manager</label>
+        <sharedTo>
+            <role>Singapore_CE_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Singapore_CE_Sales_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Slovakia_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Slovakia CEO / Europe</label>
+        <sharedTo>
+            <role>Slovakia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Slovakia_Exec_Director_of_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Slovakia Exec / Director of Sales</label>
+        <sharedTo>
+            <role>Slovakia_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Slovakia_CEO</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Slovakia_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Slovakia Sales Director / Europe</label>
+        <sharedTo>
+            <role>Slovakia_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Telesales</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Telesales</label>
+        <sharedTo>
+            <role>Telesales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Telesales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Thailand_Seniors</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Peer sharing</description>
+        <label>Thailand Seniors</label>
+        <sharedTo>
+            <role>Thailand_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Thailand_Sales_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Turkey_CEO_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Turkey CEO / Europe</label>
+        <sharedTo>
+            <role>Turkey_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Turkey_Sales_Director_Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Turkey Sales Director / Europe</label>
+        <sharedTo>
+            <role>Turkey_Director_of_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Europe</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>UK_Execs_and_Seniors</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Allows MC, TW &amp; DMG to share opptys</description>
+        <label>UK Execs and Seniors</label>
+        <sharedTo>
+            <role>Atalian_Servest</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Atalian_Servest</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>UK_Senior_Team_Sector_Chairs</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>UK Senior Team / Sector Chairs</label>
+        <sharedTo>
+            <role>Executive_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Executive_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>USA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>USA</label>
+        <sharedTo>
+            <role>USA</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>USA</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Visibilit_KAM</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Visibilité pour certains KAM à l&apos;ensemble des opportunités</description>
+        <label>Visibilité KAM</label>
+        <sharedTo>
+            <group>Visibilit_KAM</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

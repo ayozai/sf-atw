@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_waste_recycled__c</fullName>
+    <formula>IF( ISPICKVAL( Waste_Treatment__c  , &quot;Waste to energy&quot;) || ISPICKVAL(Waste_Treatment__c , &quot;Waste to material&quot;), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is waste recycled</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

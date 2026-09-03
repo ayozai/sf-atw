@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FR_Users_Guides</fullName>
+    <columns>NAME</columns>
+    <columns>User_Guide_description__c</columns>
+    <columns>User_Guide_URL__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>FR</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Manuel</value>
+    </filters>
+    <label>FR User Guide - Manuels</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Belgium</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>France_BeNeLux</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>France_DG</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Luxembourg_Sales_Director</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

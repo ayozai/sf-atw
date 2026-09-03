@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Worker_Incident__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Worker Incident</masterLabel>
+    <recordTypeName>Worker_Incident</recordTypeName>
+</PathAssistant>

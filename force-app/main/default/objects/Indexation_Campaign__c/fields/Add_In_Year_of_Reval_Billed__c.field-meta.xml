@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_In_Year_of_Reval_Billed__c</fullName>
+    <formula>IF(
+  NOT(ISBLANK(Additional_Approval_Date__c)),
+  (12 - MONTH(Additional_Approval_Date__c) + 1) / 12,
+  IF(
+    NOT(ISBLANK(Additional_Indexation_Effective_Date__c)),
+    (12 - MONTH(Additional_Indexation_Effective_Date__c) + 1) / 12,
+    (12 - MONTH(Additional_Reval_Effective_Date_Com__c) + 1) / 12
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Add. In Year % of Reval (Billed)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

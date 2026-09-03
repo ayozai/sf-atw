@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enable &quot;Set Audit Fields upon Record Creation&quot; and &quot;Update Records with Inactive Owners&quot; User Permissions 
+You will not be able to grant these on a standard profile only on a custom profile, instead you can use a permission set</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Set audit fields</label>
+    <license>Salesforce</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateAuditFields</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EditReadonlyFields</name>
+    </userPermissions>
+</PermissionSet>

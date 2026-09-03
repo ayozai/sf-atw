@@ -1,0 +1,21 @@
+<template>
+    <template if:true={showButton}>
+        <div style="text-align:center; margin:20px 0;">
+            <button onclick={handleClick}
+                style="display:inline-block; background:#19305f; color:white; 
+                       border:none; padding:12px 20px; border-radius:6px; 
+                       font-weight:600; font-family:Arial,sans-serif; cursor:pointer;">
+                <span style="font-size:18px;">🛒</span>
+                <span style="margin-left:8px;">Confirmer la commande</span>
+            </button>
+        </div>
+    </template>
+
+    <template if:true={showFlow}>
+        <lightning-flow
+            flow-api-name="Community_Quotation_validation"
+            flow-input-variables={flowInputVariables}
+            onstatuschange={handleFlowStatusChange}>
+        </lightning-flow>
+    </template>
+</template>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training</fullName>
+    <active>true</active>
+    <label>Training</label>
+    <picklistValues>
+        <picklist>Assembly_point__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>Apprentice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixed-term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Domain__c</picklist>
+        <values>
+            <fullName>CSR %28Corporate Social Responsibility%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuclear safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiation protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Emergency_Accidental_spill__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Emergency_Attack__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Infirmary__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Personal_Protective_Equipment__c</picklist>
+        <values>
+            <fullName>Coverall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ear Defenders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gloves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Visibility Vests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jacket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parka %2F Fleece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Protective Glasses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Boots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Shoes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smock%2FApron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tee Shirt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trousers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Shoes %28Non-Safety%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Service__c</picklist>
+        <values>
+            <fullName>Airport Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning and Janitorial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front of House and Concierge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handling Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Processes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landscaping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Space Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Total Facilities Management Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Procedures_and_instructions__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Chemical_risk__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Safety_Talk_Origin__c</picklist>
+        <values>
+            <fullName>Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accidental spill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire drill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hazardous situation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near-miss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsafe action</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_visit__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Size_work_clothes__c</picklist>
+        <values>
+            <fullName>L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Topic_Covered__c</picklist>
+        <values>
+            <fullName>Biological agents %28Infectious medical waste%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collapses and falling objects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confined spaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed-readout dosimeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Different types of radiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dust %2F Chemical agents %2F CMR %28Carcinogenic%2C Mutagenic%2C Reprotoxic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Effects of radiation on health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment with hot surfaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evacuation %2F Fire %2F Explosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyperbaric work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intervention Reliability Practices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lifting equipment %2F Aerial work platforms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lockout %2F Electrical installations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lone working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery%2C equipment%2C installations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual handling of loads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Movement of machinery %2F vehicles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>My dosimetric data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Night work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuclear safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuclear waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational dosimeter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPE %28Personal Protective Equipment%29 %2F PPC %28Personal Protective Clothing%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pregnancy%2Fbreastfeeding%2C effects of radiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevention plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiation protection notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repetitive work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Right of withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road travel on mission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety induction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screen-based work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slip%2C trip%2C and fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stress and psychosocial risks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work at height</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work posture %2F Ergonomics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X-ray generators</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mentorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Talk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

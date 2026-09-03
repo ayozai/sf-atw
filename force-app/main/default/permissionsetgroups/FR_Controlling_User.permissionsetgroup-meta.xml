@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>true</hasActivationRequired>
+    <label>FR Controlling User</label>
+    <permissionSets>FR_Cases_for_Agencies</permissionSets>
+    <permissionSets>FR_Contract_and_associated_config_read_only</permissionSets>
+    <permissionSets>FR_UserFeatures</permissionSets>
+    <permissionSets>Market_Flow_Standard</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Servest_Survey_Administrator__c</fullName>
+    <label>Servest Survey Administrator</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beau Rothwell</fullName>
+                <default>false</default>
+                <label>Beau Rothwell</label>
+            </value>
+            <value>
+                <fullName>Chloe Bullett</fullName>
+                <default>false</default>
+                <label>Chloe Bullett</label>
+            </value>
+            <value>
+                <fullName>Emma Smith</fullName>
+                <default>false</default>
+                <label>Emma Smith</label>
+            </value>
+            <value>
+                <fullName>Karen Burrowes</fullName>
+                <default>false</default>
+                <label>Karen Burrowes</label>
+            </value>
+            <value>
+                <fullName>Katie Clark</fullName>
+                <default>false</default>
+                <label>Katie Clark</label>
+            </value>
+            <value>
+                <fullName>Lydia Stoodley</fullName>
+                <default>false</default>
+                <label>Lydia Stoodley</label>
+            </value>
+            <value>
+                <fullName>Mel Thompson</fullName>
+                <default>false</default>
+                <label>Mel Thompson</label>
+            </value>
+            <value>
+                <fullName>Olivia Wheeler</fullName>
+                <default>false</default>
+                <label>Olivia Wheeler</label>
+            </value>
+            <value>
+                <fullName>Ryan Dixon</fullName>
+                <default>false</default>
+                <label>Ryan Dixon</label>
+            </value>
+            <value>
+                <fullName>Sam Parish</fullName>
+                <default>false</default>
+                <label>Sam Parish</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

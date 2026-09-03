@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>send_Email</name>
+        <label>send Email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recipientAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>Get_Customer_Contact.Email</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ccAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>get_support_email_adress.Atalian_Support_Email_Address__c</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.CreatedBy.Email</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>one.atalian@atalianworld.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subjectemail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>&lt;div style=&quot;font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333333;&quot;&gt;
+  &lt;div style=&quot;background-color: #FFFFFF; padding: 30px 24px; text-align: center; border-bottom: 3px solid #F07B1A;&quot;&gt;
+    &lt;img src=&quot;https://atalianworld.my.salesforce.com/servlet/servlet.ImageServer?id=015Q30000071UUf&amp;oid=00DD0000000nF3N&amp;lastMod=1776954122000&quot; alt=&quot;Atalian Global Services&quot; width=&quot;200&quot; style=&quot;display: inline-block;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 28px 24px 24px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 16px;&quot;&gt;Fran&amp;ccedil;ais&lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 16px;&quot;&gt;
+      Bonjour &lt;strong&gt;{!Get_Customer_Contact.FirstName} {!Get_Customer_Contact.LastName}&lt;/strong&gt;,
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 20px;&quot;&gt;
+      Nous avons le plaisir de vous informer que votre devis est disponible.
+    &lt;/p&gt;
+    &lt;table style=&quot;width: 100%; border-collapse: collapse; margin: 0 0 20px; background-color: #F8F8F8;&quot;&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 120px; border-bottom: 1px solid #EEEEEE;&quot;&gt;R&amp;eacute;f&amp;eacute;rence&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Name}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Objet&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Subject__c}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px;&quot;&gt;Description&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold;&quot;&gt;{!$Record.Description__c}&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div style=&quot;text-align: center; margin: 0 0 24px;&quot;&gt;
+      &lt;a href=&quot;{!$Label.Experience_Cloud_Base_URL}/s/quotation/{!$Record.Id}&quot; style=&quot;display: inline-block; background-color: #F07B1A; color: #FFFFFF; text-decoration: none; padding: 12px 32px; font-size: 14px; font-weight: bold; border-radius: 4px;&quot;&gt;Acc&amp;eacute;der au devis&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 4px;&quot;&gt;
+      Nous restons &amp;agrave; votre enti&amp;egrave;re disposition pour toute question ou compl&amp;eacute;ment d&apos;information.
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0;&quot;&gt;
+      Cordialement,&lt;br/&gt;&lt;strong&gt;L&apos;&amp;eacute;quipe Atalian&lt;/strong&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+    &lt;div style=&quot;margin: 0 24px; border-top: 2px solid #E0E0E0;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 24px 24px 28px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 16px;&quot;&gt;English&lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 16px;&quot;&gt;
+      Dear &lt;strong&gt;{!Get_Customer_Contact.FirstName} {!Get_Customer_Contact.LastName}&lt;/strong&gt;,
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 20px;&quot;&gt;
+      We are pleased to inform you that your quotation is now available.
+    &lt;/p&gt;
+    &lt;table style=&quot;width: 100%; border-collapse: collapse; margin: 0 0 20px; background-color: #F8F8F8;&quot;&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 120px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Reference&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Name}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Subject&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Subject__c}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px;&quot;&gt;Description&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold;&quot;&gt;{!$Record.Description__c}&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div style=&quot;text-align: center; margin: 0 0 24px;&quot;&gt;
+      &lt;a href=&quot;{!$Label.Experience_Cloud_Base_URL}/s/quotation/{!$Record.Id}&quot; style=&quot;display: inline-block; background-color: #F07B1A; color: #FFFFFF; text-decoration: none; padding: 12px 32px; font-size: 14px; font-weight: bold; border-radius: 4px;&quot;&gt;View Quotation&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 4px;&quot;&gt;
+      Please do not hesitate to contact us should you have any questions or require any further information.
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0;&quot;&gt;
+      Kind regards,&lt;br/&gt;&lt;strong&gt;The Atalian Team&lt;/strong&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;background-color: #F5F5F5; padding: 16px 24px; text-align: center; border: 1px solid #E0E0E0; border-top: none;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; margin: 0;&quot;&gt;
+      Atalian Global Services &amp;mdash; Cet email a &amp;eacute;t&amp;eacute; envoy&amp;eacute; automatiquement / This is an automated email
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Contact_a_un_email</name>
+        <label>Contact a un email ?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Customer_Contact.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Customer_Contact.Email</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue> </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>send_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Email quotation customer {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Email quotation customer</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Customer_Contact</name>
+        <label>Get Customer Contact</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>get_support_email_adress</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Contact__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>get_support_email_adress</name>
+        <label>get support email adress</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Contact_a_un_email</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Customer_Contact</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sent to customer</stringValue>
+            </value>
+        </filters>
+        <object>Quotation__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>emailBodyHTML</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div style=&quot;font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333333;&quot;&gt;
+  &lt;div style=&quot;background-color: #FFFFFF; padding: 30px 24px; text-align: center; border-bottom: 3px solid #F07B1A;&quot;&gt;
+    &lt;img src=&quot; https://atalianworld--uat.sandbox.file.force.com/sfc/servlet.shepherd/version/renditionDownloadrendition=ORIGINAL_Png&amp;versionId=068UE000008aEXh&amp;operationContext=CHATTER&amp;contentId=05TUE00000FazIr&quot;
+alt=&quot;Atalian Global Services&quot; width=&quot;200&quot; style=&quot;display: inline-block;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 28px 24px 24px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 16px;&quot;&gt;Fran&amp;ccedil;ais&lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 16px;&quot;&gt;
+      Bonjour &lt;strong&gt;{!Get_Customer_Contact.FirstName} {!Get_Customer_Contact.LastName}&lt;/strong&gt;,
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 20px;&quot;&gt;
+      Nous avons le plaisir de vous informer que votre devis est disponible.
+    &lt;/p&gt;
+    &lt;table style=&quot;width: 100%; border-collapse: collapse; margin: 0 0 20px; background-color: #F8F8F8;&quot;&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 120px; border-bottom: 1px solid #EEEEEE;&quot;&gt;R&amp;eacute;f&amp;eacute;rence&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Name}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Objet&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Subject__c}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px;&quot;&gt;Description&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold;&quot;&gt;{!$Record.Description__c}&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 4px;&quot;&gt;
+      Nous restons &amp;agrave; votre enti&amp;egrave;re disposition pour toute question ou compl&amp;eacute;ment d&apos;information.
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0;&quot;&gt;
+      Cordialement,&lt;br/&gt;&lt;strong&gt;L&apos;&amp;eacute;quipe Atalian&lt;/strong&gt;
+    &lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div style=&quot;border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+    &lt;div style=&quot;margin: 0 24px; border-top: 2px solid #E0E0E0;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 24px 24px 28px; border-left: 1px solid #E0E0E0; border-right: 1px solid #E0E0E0;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 16px;&quot;&gt;English&lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 16px;&quot;&gt;
+      Dear &lt;strong&gt;{!Get_Customer_Contact.FirstName} {!Get_Customer_Contact.LastName}&lt;/strong&gt;,
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 20px;&quot;&gt;
+      We are pleased to inform you that your quotation is now available.
+    &lt;/p&gt;
+
+    &lt;table style=&quot;width: 100%; border-collapse: collapse; margin: 0 0 20px; background-color: #F8F8F8;&quot;&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; width: 120px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Reference&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Name}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #EEEEEE;&quot;&gt;Subject&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold; border-bottom: 1px solid #EEEEEE;&quot;&gt;{!$Record.Subject__c}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style=&quot;padding: 10px 16px; color: #888888; font-size: 13px;&quot;&gt;Description&lt;/td&gt;
+        &lt;td style=&quot;padding: 10px 16px; font-size: 13px; font-weight: bold;&quot;&gt;{!$Record.Description__c}&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0 0 4px;&quot;&gt;
+      Please do not hesitate to contact us should you have any questions or require any further information.
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 14px; line-height: 1.6; margin: 0;&quot;&gt;
+      Kind regards,&lt;br/&gt;&lt;strong&gt;The Atalian Team&lt;/strong&gt;
+    &lt;/p&gt;
+  &lt;/div
+  &lt;div style=&quot;background-color: #F5F5F5; padding: 16px 24px; text-align: center; border: 1px solid #E0E0E0; border-top: none;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; margin: 0;&quot;&gt;
+      Atalian Global Services &amp;mdash; Cet email a &amp;eacute;t&amp;eacute; envoy&amp;eacute; automatiquement / This is an automated email
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subjectemail</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Votre devis / Your quotation {!$Record.Name} - {!$Record.Subject__c}</text>
+    </textTemplates>
+</Flow>

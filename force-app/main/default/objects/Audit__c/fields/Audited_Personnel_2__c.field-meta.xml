@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audited_Personnel_2__c</fullName>
+    <label>Audited Personnel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DA</fullName>
+                <default>false</default>
+                <label>DA</label>
+            </value>
+            <value>
+                <fullName>REX</fullName>
+                <default>false</default>
+                <label>REX</label>
+            </value>
+            <value>
+                <fullName>CC</fullName>
+                <default>false</default>
+                <label>CC</label>
+            </value>
+            <value>
+                <fullName>Assistant Facturation</fullName>
+                <default>false</default>
+                <label>Assistant Facturation</label>
+            </value>
+            <value>
+                <fullName>Assistant achat</fullName>
+                <default>false</default>
+                <label>Assistant achat</label>
+            </value>
+            <value>
+                <fullName>Assistant RH</fullName>
+                <default>false</default>
+                <label>Assistant RH</label>
+            </value>
+            <value>
+                <fullName>ATC</fullName>
+                <default>false</default>
+                <label>ATC</label>
+            </value>
+            <value>
+                <fullName>AQSE</fullName>
+                <default>false</default>
+                <label>AQSE</label>
+            </value>
+            <value>
+                <fullName>RQSE</fullName>
+                <default>false</default>
+                <label>RQSE</label>
+            </value>
+            <value>
+                <fullName>Chef d&apos;équipe</fullName>
+                <default>false</default>
+                <label>Chef d&apos;équipe</label>
+            </value>
+            <value>
+                <fullName>Chef de site</fullName>
+                <default>false</default>
+                <label>Chef de site</label>
+            </value>
+            <value>
+                <fullName>Salarié</fullName>
+                <default>false</default>
+                <label>Salarié</label>
+            </value>
+            <value>
+                <fullName>Assistant Fcturation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assistant Fcturation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

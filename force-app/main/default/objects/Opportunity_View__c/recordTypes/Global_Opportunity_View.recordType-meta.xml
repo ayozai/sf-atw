@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Opportunity_View</fullName>
+    <active>true</active>
+    <label>Global Opportunity View</label>
+</RecordType>

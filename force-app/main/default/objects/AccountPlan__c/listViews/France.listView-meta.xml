@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>France</fullName>
+    <columns>LAST_UPDATE</columns>
+    <columns>NAME</columns>
+    <columns>Owner_Full_Name__c</columns>
+    <columns>Account_Name__c</columns>
+    <columns>Account_Sales_Target__c</columns>
+    <columns>Plan_Type__c</columns>
+    <columns>Account_Plan_Start_Date__c</columns>
+    <columns>Account_Plan_End_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Division__c</field>
+        <operation>contains</operation>
+        <value>FR</value>
+    </filters>
+    <label>France</label>
+</ListView>

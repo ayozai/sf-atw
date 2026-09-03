@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>AssignNewSite</name>
+        <label>AssignNewSite</label>
+        <locationX>1296</locationX>
+        <locationY>42</locationY>
+        <assignmentItems>
+            <assignToReference>RecOppSite.Site__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NewSiteId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecOppSite.Opportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varLoopOpp.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AssignOppSitetoCreate</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignOppSite</name>
+        <label>AssignOppSite</label>
+        <locationX>736</locationX>
+        <locationY>815</locationY>
+        <assignmentItems>
+            <assignToReference>RecOppSite.Opportunity__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varLoopOpp.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecOppSite.Site__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NewSiteId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>vListOpportunities</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>varLoopOpp.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>vListOpportunities</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>NewLine</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LoopSetOpp</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignOppSitetoCreate</name>
+        <label>AssignOppSitetoCreate</label>
+        <locationX>1289</locationX>
+        <locationY>153</locationY>
+        <assignmentItems>
+            <assignToReference>OppSiteToCreate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>RecOppSite</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LoppOppToLink</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>atNumberOfOppsCurrentAccount</name>
+        <label>atNumberOfOppsCurrentAccount</label>
+        <locationX>172</locationX>
+        <locationY>305</locationY>
+        <assignmentItems>
+            <assignToReference>vCurrentAccOpps</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rCurrentAccount.Number_of_opps__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>vCurrentAccountName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rCurrentAccount.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Convert_Account_to_Site</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>ClearCollection</name>
+        <label>ClearCollection</label>
+        <locationX>942</locationX>
+        <locationY>89</locationY>
+        <assignmentItems>
+            <assignToReference>OppSiteToCreate</assignToReference>
+            <operator>RemoveAll</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>LoppOppToLink</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Use_Current_Account</name>
+        <label>Use Current Account</label>
+        <locationX>303</locationX>
+        <locationY>444</locationY>
+        <assignmentItems>
+            <assignToReference>newAccountId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>FetAccountForSiteData</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>chNo</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>chNo</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chUseCurrentAccount</name>
+        <choiceText>Use Current Account</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>UseCurrentAccount</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chUseOtherAccount</name>
+        <choiceText>Use Other Account</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>UseOtherAccount</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>chUseTargetAccount</name>
+        <choiceText>Use Target Account</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>UseTargetAccount</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ChYes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>CheckActivityExist</name>
+        <label>CheckActivityExist</label>
+        <locationX>1537</locationX>
+        <locationY>810</locationY>
+        <defaultConnector>
+            <targetReference>UpdateLinkAccOpp</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>ActivityExist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recActivities</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Activity</targetReference>
+            </connector>
+            <label>ActivityExist</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CheckIfChoosenAccount</name>
+        <label>CheckIfChoosenAccount</label>
+        <locationX>276</locationX>
+        <locationY>683</locationY>
+        <defaultConnector>
+            <targetReference>Aborted</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>ChoosenAccount</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>newAccountId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Account_Data</targetReference>
+            </connector>
+            <label>ChoosenAccount</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CheckIfEventExist</name>
+        <label>CheckIfEventExist</label>
+        <locationX>1776</locationX>
+        <locationY>671</locationY>
+        <defaultConnector>
+            <targetReference>GetActivities</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>EventExist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recEvent</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Event</targetReference>
+            </connector>
+            <label>EventExist</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CheckIfUseCurrentAccount</name>
+        <label>CheckIfUseCurrentAccount</label>
+        <locationX>62</locationX>
+        <locationY>571</locationY>
+        <defaultConnector>
+            <targetReference>Use_Current_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>Not_Use_Current_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Account_to_use</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>chUseOtherAccount</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Choose_Account</targetReference>
+            </connector>
+            <label>Not Use Current Account</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>chkCurrentandNew</name>
+        <label>chkCurrentandNew</label>
+        <locationX>1089</locationX>
+        <locationY>258</locationY>
+        <defaultConnector>
+            <targetReference>vCreateOppSite</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>isCurrentNotTheNew</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>newAccountId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetContracts</targetReference>
+            </connector>
+            <label>isCurrentNotTheNew</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ChkDeleteCurrentAccount</name>
+        <label>ChkDeleteCurrentAccount</label>
+        <locationX>914</locationX>
+        <locationY>517</locationY>
+        <defaultConnector>
+            <targetReference>Site_creation</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>DeleteCurrentAccount</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Delete_Current_Account</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ChYes</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Account_to_use</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>chUseOtherAccount</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Delete_Source_Account</targetReference>
+            </connector>
+            <label>DeleteCurrentAccount</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>DLinkOpp</name>
+        <label>DLinkOpp</label>
+        <locationX>524</locationX>
+        <locationY>356</locationY>
+        <defaultConnector>
+            <targetReference>Create_Site</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>DLinkYes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fCheckifLinkedOpp</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetOpp</targetReference>
+            </connector>
+            <label>DLinkYes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>dLinkOpportunities</name>
+        <label>dLinkOpportunities</label>
+        <locationX>943</locationX>
+        <locationY>263</locationY>
+        <defaultConnector>
+            <targetReference>ChkDeleteCurrentAccount</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Résultat par défaut</defaultConnectorLabel>
+        <rules>
+            <name>LinkOpportunitiesYes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fCheckifLinkedOpp</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ClearCollection</targetReference>
+            </connector>
+            <label>LinkOpportunitiesYes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>IsAuthorized</name>
+        <label>IsAuthorized</label>
+        <locationX>169</locationX>
+        <locationY>57</locationY>
+        <defaultConnector>
+            <targetReference>GetCurrentAccount</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsAdminOk</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>vIsAdmin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Not_Authorized</targetReference>
+            </connector>
+            <label>IsAdminOk</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>TestIfContactsExist</name>
+        <label>TestIfContactsExist</label>
+        <locationX>1662</locationX>
+        <locationY>463</locationY>
+        <defaultConnector>
+            <targetReference>GetEvent</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ContactsExist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ListContacts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateContacts</targetReference>
+            </connector>
+            <label>ContactsExist</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>TestIfContractsExist</name>
+        <label>TestIfContractsExist</label>
+        <locationX>1463</locationX>
+        <locationY>195</locationY>
+        <defaultConnector>
+            <targetReference>GetContacts</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ExistingContracts</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ListContracts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateContracts</targetReference>
+            </connector>
+            <label>ExistingContracts</label>
+        </rules>
+    </decisions>
+    <description>Flow used to create site on an account and link the existing opportunities</description>
+    <dynamicChoiceSets>
+        <name>CurrencyListe</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>CurrencyIsoCode</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>LinkOpp</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Supplier__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <formulas>
+        <name>fAccountName</name>
+        <dataType>String</dataType>
+        <expression>{!rAccount.Name}</expression>
+    </formulas>
+    <formulas>
+        <name>fCheckifLinkedOpp</name>
+        <dataType>Boolean</dataType>
+        <expression>if( AND({!Link_all_opportunities_to_the_site}=&quot;Yes&quot;,{!vCurrentAccOpps}&gt;0),TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>fDeleteCurrentAccount</name>
+        <dataType>Boolean</dataType>
+        <expression>if(AND({!Delete_Current_Account}=&quot;Yes&quot;,{!Account_to_use}={!chUseOtherAccount}),TRUE,FALSE)</expression>
+    </formulas>
+    <formulas>
+        <name>fLblLinkOppSite</name>
+        <dataType>String</dataType>
+        <expression>if({!Link_all_opportunities_to_the_site}=&quot;Yes&quot;,&quot;List of opportunities :&quot;,&quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fListOpportunities</name>
+        <dataType>String</dataType>
+        <expression>IF( {!vListOpportunities}=&quot;&quot;,&quot;The selected Account has no opportunities&quot;,{!vListOpportunities})</expression>
+    </formulas>
+    <formulas>
+        <name>fmsgInfoDeleteAccount</name>
+        <dataType>String</dataType>
+        <expression>if(AND({!Delete_Current_Account}=&quot;Yes&quot;,{!Account_to_use}={!chUseOtherAccount}),&quot;The current Account will be deleted&quot;,&quot;The current Account will NOT be deleted&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>fmsgTargetAccount</name>
+        <dataType>String</dataType>
+        <expression>if({!Account_to_use}={!chUseOtherAccount},&quot;Target Account Name : &quot;&amp;{!rAccount.Name},&quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>frmNewCountry</name>
+        <dataType>String</dataType>
+        <expression>CASE( {!NewCountry}, 
+&quot;Afghanistan&quot;,&quot;AF&quot;, 
+&quot;Albania&quot;,&quot;AL&quot;, 
+&quot;Algeria&quot;,&quot;DZ&quot;, 
+&quot;American Samoa&quot;,&quot;AS&quot;, 
+&quot;Andora&quot;,&quot;AD&quot;, 
+&quot;Argentina&quot;,&quot;AR&quot;, 
+&quot;Australia&quot;,&quot;AU&quot;, 
+&quot;Austria&quot;,&quot;AT&quot;, 
+&quot;Bahrain&quot;,&quot;BH&quot;, 
+&quot;Bangladesh&quot;,&quot;BD&quot;, 
+&quot;Barbados&quot;,&quot;BB&quot;, 
+&quot;Belarus&quot;,&quot;BY&quot;, 
+&quot;Belgium&quot;,&quot;BE&quot;, 
+&quot;Belize&quot;,&quot;BZ&quot;, 
+&quot;Bermuda&quot;,&quot;BM&quot;, 
+&quot;Bosnia And Herzegovina&quot;,&quot;BA&quot;, 
+&quot;Brazil&quot;,&quot;BR&quot;, 
+&quot;Brunei &quot;,&quot;BN&quot;, 
+&quot;Bulgaria&quot;,&quot;BG&quot;, 
+&quot;Cameroon&quot;,&quot;CM&quot;, 
+&quot;Canada&quot;,&quot;CA&quot;, 
+&quot;Chile&quot;,&quot;CL&quot;, 
+&quot;China&quot;,&quot;CN&quot;, 
+&quot;Colombia&quot;,&quot;CO&quot;, 
+&quot;Costa Rica&quot;,&quot;CR&quot;, 
+&quot;Cote D’Ivoire&quot;,&quot;CI&quot;, 
+&quot;Croatia (local name: Hrvatska&quot;,&quot;HR&quot;, 
+&quot;Czech Republic&quot;,&quot;CZ&quot;, 
+&quot;Denmark&quot;,&quot;DK&quot;, 
+&quot;Dominican Republic&quot;,&quot;DO&quot;, 
+&quot;Ecuador&quot;,&quot;EC&quot;, 
+&quot;Egypt&quot;,&quot;EG&quot;, 
+&quot;El Salvador&quot;,&quot;SV&quot;, 
+&quot;Estonia&quot;,&quot;EE&quot;, 
+&quot;Ethiopia&quot;,&quot;ET&quot;, 
+&quot;Finland&quot;,&quot;FI&quot;, 
+&quot;France&quot;,&quot;FR&quot;, 
+&quot;Gambia&quot;,&quot;GM&quot;, 
+&quot;Georgia&quot;,&quot;GE&quot;, 
+&quot;Germany&quot;,&quot;DE&quot;, 
+&quot;Ghana&quot;,&quot;GH&quot;, 
+&quot;Greece&quot;,&quot;GR&quot;, 
+&quot;Greenland&quot;,&quot;GL&quot;, 
+&quot;Guatemala&quot;,&quot;GT&quot;, 
+&quot;Guinea-Bissau&quot;,&quot;GW&quot;, 
+&quot;Honduras&quot;,&quot;HN&quot;, 
+&quot;Hong Kong&quot;,&quot;HK&quot;, 
+&quot;Hungary&quot;,&quot;HU&quot;, 
+&quot;India&quot;,&quot;IN&quot;, 
+&quot;Indonesia&quot;,&quot;ID&quot;, 
+&quot;Iran (Islamic Republic Of)&quot;,&quot;IR&quot;, 
+&quot;Iraq&quot;,&quot;IQ&quot;, 
+&quot;Ireland&quot;,&quot;IE&quot;, 
+&quot;Israel&quot;,&quot;IL&quot;, 
+&quot;Italy&quot;,&quot;IT&quot;, 
+&quot;Jamaica&quot;,&quot;JM&quot;, 
+&quot;Japan&quot;,&quot;JP&quot;, 
+&quot;Jordan&quot;,&quot;JO&quot;, 
+&quot;Kenya&quot;,&quot;KE&quot;, 
+&quot;Korea, Republic Of&quot;,&quot;KR&quot;, 
+&quot;Kuwait&quot;,&quot;KW&quot;, 
+&quot;Latvia&quot;,&quot;LV&quot;, 
+&quot;Lebanon&quot;,&quot;LB&quot;, 
+&quot;Libyan Arab Jamahiriya&quot;,&quot;LY&quot;, 
+&quot;Liechtenstein&quot;,&quot;LI&quot;, 
+&quot;Lithuania&quot;,&quot;LT&quot;, 
+&quot;Luxembourg&quot;,&quot;LU&quot;, 
+&quot;Malaysia&quot;,&quot;MY&quot;,
+&quot;Mali&quot;,&quot;ML&quot;,
+&quot;Mauritania&quot;,&quot;MR&quot;,
+&quot;Mexico&quot;,&quot;MX&quot;,
+&quot;Mongolia&quot;,&quot;MN&quot;,
+&quot;Morocco&quot;,&quot;MA&quot;,
+&quot;Myanmar&quot;,&quot;MM&quot;,
+&quot;Nepal&quot;,&quot;NP&quot;,
+&quot;Netherlands&quot;,&quot;NL&quot;,
+&quot;Netherlands Antilles&quot;,&quot;AN&quot;,
+&quot;New Caledonia&quot;,&quot;NC&quot;,
+&quot;New Zealand&quot;,&quot;NZ&quot;,
+&quot;Niger&quot;,&quot;NE&quot;,
+&quot;Nigeria&quot;,&quot;NG&quot;,
+&quot;Niue&quot;,&quot;NU&quot;,
+&quot;Norway&quot;,&quot;NO&quot;,
+&quot;Oman&quot;,&quot;OM&quot;,
+&quot;Pakistan&quot;,&quot;PK&quot;,
+&quot;Panama&quot;,&quot;PA&quot;,
+&quot;Paraguay&quot;,&quot;PY&quot;,
+&quot;People’s Republic of China&quot;,&quot;CN&quot;,
+&quot;Peru&quot;,&quot;PE&quot;,
+&quot;Philippines, Republic of the&quot;,&quot;PH&quot;,
+&quot;Poland&quot;,&quot;PL&quot;,
+&quot;Portugal&quot;,&quot;PT&quot;,
+&quot;Puerto Rico&quot;,&quot;PR&quot;,
+&quot;Qatar&quot;,&quot;QA&quot;,
+&quot;Romania&quot;,&quot;RO&quot;,
+&quot;Russian Federation&quot;,&quot;RU&quot;,
+&quot;San Marino&quot;,&quot;SM&quot;,
+&quot;Saudi Arabia&quot;,&quot;SA&quot;,
+&quot;Serbia&quot;,&quot;RS&quot;,
+&quot;Sierra Leone&quot;,&quot;SL&quot;,
+&quot;Singapore&quot;,&quot;SG&quot;,
+&quot;Slovakia (Slovak Republic)&quot;,&quot;SK&quot;,
+&quot;Slovenia&quot;,&quot;SI&quot;,
+&quot;South Africa&quot;,&quot;ZA&quot;,
+&quot;Spain&quot;,&quot;ES&quot;,
+&quot;Sri Lanka&quot;,&quot;LK&quot;,
+&quot;St. Helena&quot;,&quot;SH&quot;,
+&quot;Sudan&quot;,&quot;SD&quot;,
+&quot;Suriname&quot;,&quot;SR&quot;,
+&quot;Swaziland&quot;,&quot;SZ&quot;,
+&quot;Sweden&quot;,&quot;SE&quot;,
+&quot;Switzerland&quot;,&quot;CH&quot;,
+&quot;Syrian Arab Republic&quot;,&quot;SY&quot;,
+&quot;Taiwan&quot;,&quot;TW&quot;,
+&quot;Tanzania, United Republic Of&quot;,&quot;TZ&quot;,
+&quot;Thailand&quot;,&quot;TH&quot;,
+&quot;The Former Yugoslav Republic Of&quot;,&quot;MK&quot;,
+&quot;Tokelau&quot;,&quot;TK&quot;,
+&quot;Tunisia&quot;,&quot;TN&quot;,
+&quot;Turkey&quot;,&quot;TR&quot;,
+&quot;Ukraine&quot;,&quot;UA&quot;,
+&quot;United Arab Emirates&quot;,&quot;AE&quot;,
+&quot;United Kingdom&quot;,&quot;GB&quot;,
+&quot;United States&quot;,&quot;US&quot;,
+&quot;United States&quot;,&quot;usa&quot;,
+&quot;United States Minor Outlying Islands&quot;,&quot;UM&quot;,
+&quot;Uruguay&quot;,&quot;UY&quot;,
+&quot;Uzbekistan&quot;,&quot;UZ&quot;,
+&quot;Venezuela&quot;,&quot;VE&quot;,
+&quot;Vietnam&quot;,&quot;VN&quot;,
+NULL)</expression>
+    </formulas>
+    <formulas>
+        <name>fSiteAccountSource</name>
+        <dataType>String</dataType>
+        <expression>if({!Account_to_use_for_site_creation}=&quot;Use Current Account&quot;,{!recordId},{!newAccountId})</expression>
+    </formulas>
+    <formulas>
+        <name>ftxtLinkedOpportunities</name>
+        <dataType>String</dataType>
+        <expression>If({!Link_all_opportunities_to_the_site}=&quot;Yes&quot;,
+
+CASE({!vCurrentAccOpps},0,&quot; No existing opportunities linked to the selected account &quot;,
+                                     1,&quot;One opportunity linked to the selected account will be linked to the new site&quot;,TEXT({!vCurrentAccOpps})&amp;&quot; opportunities linked to the selected account will be linked to the new site&quot;),
+CASE({!vCurrentAccOpps},0,&quot; No existing opportunities linked to the selected account &quot;,
+                                     1,&quot;One opportunity linked to the selected account will NOT be linked to the new site&quot;,TEXT({!vCurrentAccOpps})&amp;&quot; opportunities linked to the selected account will NOT be linked to the new site&quot;) )</expression>
+    </formulas>
+    <formulas>
+        <name>fWhereClause</name>
+        <dataType>String</dataType>
+        <expression>&quot;Id!=&apos;&quot;&amp;{!recordId}&amp;&quot;&apos;&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>HyperLinkNewSite</name>
+        <dataType>String</dataType>
+        <expression>HYPERLINK(&quot;/&quot;&amp;{!NewSiteId}, &quot;Site&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>MessageFinal</name>
+        <dataType>String</dataType>
+        <expression>If({!Link_all_opportunities_to_the_site}=&quot;Yes&quot;,
+
+CASE({!vCurrentAccOpps},0,&quot;Site created. No existing opportunities linked to the selected account &quot;,
+                                     1,&quot;Site created. One opportunity linked to the new site&quot;,&quot;Site created. &quot;&amp;TEXT({!vCurrentAccOpps})&amp;&quot; opportunities linked to the new site&quot;),
+CASE({!vCurrentAccOpps},0,&quot;Site created. No existing opportunities linked to the selected account &quot;,
+                                     1,&quot;Site created. &quot;&amp;&quot;One opportunity NOT linked to the new site&quot;,&quot;Site created. &quot;&amp;TEXT({!vCurrentAccOpps})&amp;&quot; opportunities NOT linked to the new site&quot;) ) &amp;{!NewLine}&amp;if({!Delete_Current_Account}=&quot;Yes&quot;,&quot;Account &quot;&amp;{!vCurrentAccountName}&amp;&quot; deleted&quot;,&quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>vIsAdmin</name>
+        <dataType>Boolean</dataType>
+        <expression>IF( OR({!$Profile.Name}=&quot;Administrateur système&quot;,{!$Profile.Name}=&quot;System Administrator&quot;,{!$Profile.Name}=&quot;Global Delegated Admin&quot;),TRUE,FALSE)</expression>
+    </formulas>
+    <interviewLabel>Create Site {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Site</label>
+    <loops>
+        <name>LoopSetOpp</name>
+        <label>LoopSetOpp</label>
+        <locationX>724</locationX>
+        <locationY>650</locationY>
+        <assignNextValueToReference>varLoopOpp</assignNextValueToReference>
+        <collectionReference>SetOpportunies</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AssignOppSite</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Create_Site</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>LoppOppToLink</name>
+        <label>LoppOppToLink</label>
+        <locationX>1077</locationX>
+        <locationY>89</locationY>
+        <assignNextValueToReference>varLoopOpp</assignNextValueToReference>
+        <collectionReference>SetOpportunies</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AssignNewSite</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>chkCurrentandNew</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>CreateSite</name>
+        <label>CreateSite</label>
+        <locationX>833</locationX>
+        <locationY>261</locationY>
+        <assignRecordIdToReference>NewSiteId</assignRecordIdToReference>
+        <connector>
+            <targetReference>dLinkOpportunities</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>newAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>City__c</field>
+            <value>
+                <elementReference>NewCity</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country2__c</field>
+            <value>
+                <elementReference>frmNewCountry</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <elementReference>rAccountForSiteData.CurrencyIsoCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>D_U_N_S_Number__c</field>
+            <value>
+                <elementReference>D_U_N_S</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HQ_D_U_N_S_Number__c</field>
+            <value>
+                <elementReference>D_U_N_S_HQ</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Site_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId__NotFound</field>
+            <value>
+                <elementReference>rAccountForSiteData.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone__c</field>
+            <value>
+                <elementReference>Phone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>State_Province__c</field>
+            <value>
+                <elementReference>NewState</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Street__c</field>
+            <value>
+                <elementReference>NewStreet</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Zip_Postal_code__c</field>
+            <value>
+                <elementReference>NewPostalCode</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Site__c</object>
+    </recordCreates>
+    <recordCreates>
+        <name>vCreateOppSite</name>
+        <label>vCreateOppSite</label>
+        <locationX>1154</locationX>
+        <locationY>432</locationY>
+        <connector>
+            <targetReference>ChkDeleteCurrentAccount</targetReference>
+        </connector>
+        <inputReference>OppSiteToCreate</inputReference>
+    </recordCreates>
+    <recordDeletes>
+        <name>Delete_Source_Account</name>
+        <label>Delete Source Account</label>
+        <locationX>1335</locationX>
+        <locationY>578</locationY>
+        <connector>
+            <targetReference>Site_creation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+    </recordDeletes>
+    <recordLookups>
+        <name>FetAccountForSiteData</name>
+        <label>FetAccountForSiteData</label>
+        <locationX>441</locationX>
+        <locationY>444</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>DLinkOpp</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fSiteAccountSource</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputReference>rAccountForSiteData</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>BillingAddress</queriedFields>
+        <queriedFields>BillingCity</queriedFields>
+        <queriedFields>BillingCountry</queriedFields>
+        <queriedFields>BillingCountryCode</queriedFields>
+        <queriedFields>BillingPostalCode</queriedFields>
+        <queriedFields>BillingState</queriedFields>
+        <queriedFields>BillingStateCode</queriedFields>
+        <queriedFields>BillingStreet</queriedFields>
+        <queriedFields>DUNS__c</queriedFields>
+        <queriedFields>HeadQuarter_D_U_N_S__c</queriedFields>
+        <queriedFields>Value_Added_Tax_Number__c</queriedFields>
+        <queriedFields>Number_of_opps__c</queriedFields>
+        <queriedFields>OwnerId</queriedFields>
+        <queriedFields>Phone</queriedFields>
+        <queriedFields>Description</queriedFields>
+        <queriedFields>CurrencyIsoCode</queriedFields>
+        <queriedFields>Name</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Account_Data</name>
+        <label>Get Account Data</label>
+        <locationX>486</locationX>
+        <locationY>653</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>FetAccountForSiteData</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>newAccountId</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputReference>rAccount</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>BillingCity</queriedFields>
+        <queriedFields>BillingCountry</queriedFields>
+        <queriedFields>BillingCountryCode</queriedFields>
+        <queriedFields>BillingPostalCode</queriedFields>
+        <queriedFields>BillingState</queriedFields>
+        <queriedFields>BillingStreet</queriedFields>
+        <queriedFields>BillingStateCode</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>DUNS__c</queriedFields>
+        <queriedFields>OwnerId</queriedFields>
+        <queriedFields>Value_Added_Tax_Number__c</queriedFields>
+        <queriedFields>Phone</queriedFields>
+        <queriedFields>Description</queriedFields>
+        <queriedFields>CurrencyIsoCode</queriedFields>
+        <queriedFields>Number_of_opps__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>GetActivities</name>
+        <label>GetActivities</label>
+        <locationX>1679</locationX>
+        <locationY>805</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CheckActivityExist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>WhatId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Task</object>
+        <outputReference>recActivities</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>GetContacts</name>
+        <label>GetContacts</label>
+        <locationX>1479</locationX>
+        <locationY>358</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>TestIfContactsExist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>ListContacts</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>GetContracts</name>
+        <label>GetContracts</label>
+        <locationX>1326</locationX>
+        <locationY>252</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>TestIfContractsExist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Contract</object>
+        <outputReference>ListContracts</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>GetCurrentAccount</name>
+        <label>GetCurrentAccount</label>
+        <locationX>175</locationX>
+        <locationY>189</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>atNumberOfOppsCurrentAccount</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputReference>rCurrentAccount</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>BillingCity</queriedFields>
+        <queriedFields>BillingCountry</queriedFields>
+        <queriedFields>BillingCountryCode</queriedFields>
+        <queriedFields>BillingPostalCode</queriedFields>
+        <queriedFields>BillingState</queriedFields>
+        <queriedFields>BillingStreet</queriedFields>
+        <queriedFields>BillingStateCode</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>DUNS__c</queriedFields>
+        <queriedFields>OwnerId</queriedFields>
+        <queriedFields>Value_Added_Tax_Number__c</queriedFields>
+        <queriedFields>Phone</queriedFields>
+        <queriedFields>Description</queriedFields>
+        <queriedFields>CurrencyIsoCode</queriedFields>
+        <queriedFields>Number_of_opps__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>GetEvent</name>
+        <label>GetEvent</label>
+        <locationX>1875</locationX>
+        <locationY>553</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CheckIfEventExist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>WhatId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Event</object>
+        <outputReference>recEvent</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>GetOpp</name>
+        <label>GetOpp</label>
+        <locationX>631</locationX>
+        <locationY>649</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>LoopSetOpp</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <outputReference>SetOpportunies</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>AccountId</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Activity</name>
+        <label>Update Activity</label>
+        <locationX>1389</locationX>
+        <locationY>801</locationY>
+        <connector>
+            <targetReference>UpdateLinkAccOpp</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>WhatId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>newAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Event</name>
+        <label>Update Event</label>
+        <locationX>1910</locationX>
+        <locationY>803</locationY>
+        <connector>
+            <targetReference>GetActivities</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>WhatId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>newAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Event</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>UpdateContacts</name>
+        <label>UpdateContacts</label>
+        <locationX>1874</locationX>
+        <locationY>370</locationY>
+        <connector>
+            <targetReference>GetEvent</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>newAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>UpdateContracts</name>
+        <label>UpdateContracts</label>
+        <locationX>1694</locationX>
+        <locationY>274</locationY>
+        <connector>
+            <targetReference>GetContacts</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>newAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contract</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>UpdateLinkAccOpp</name>
+        <label>UpdateLinkAccOpp</label>
+        <locationX>1463</locationX>
+        <locationY>512</locationY>
+        <connector>
+            <targetReference>vCreateOppSite</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>newAccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <screens>
+        <name>Aborted</name>
+        <label>Aborted</label>
+        <locationX>397</locationX>
+        <locationY>906</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>msgAbort</name>
+            <fieldText>No Target Account selected</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Choose_Account</name>
+        <label>Choose Account</label>
+        <locationX>152</locationX>
+        <locationY>681</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>CheckIfChoosenAccount</targetReference>
+        </connector>
+        <fields>
+            <name>Account</name>
+            <extensionName>mp35:lookupFSC</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>objectName</name>
+                <value>
+                    <stringValue>Account</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>displayFieldName</name>
+                <value>
+                    <stringValue>Name</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Account Name</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>whereClause</name>
+                <value>
+                    <elementReference>fWhereClause</elementReference>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>newAccountId</assignToReference>
+                <name>selectedValue</name>
+            </outputParameters>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>texte7</name>
+            <fieldText>Please choose an Account:
+
+The site will be created and linked to the selected account
+
+{!ftxtLinkedOpportunities}
+
+ 
+   
+    
+ 
+   
+  
+
+   
+
+   
+   
+{!fmsgInfoDeleteAccount}</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Confirmation</name>
+        <label>Confirmation</label>
+        <locationX>569</locationX>
+        <locationY>171</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>CreateSite</targetReference>
+        </connector>
+        <fields>
+            <name>txtConfiration</name>
+            <fieldText>Are you sure to create a site with the following informations  :</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>txtAccount</name>
+            <fieldText>Current Account :  {!vCurrentAccountName}
+{!fmsgTargetAccount}
+Site Name : {!Site_Name}
+Link opportunities to site : {!Link_all_opportunities_to_the_site}
+
+{!fLblLinkOppSite}</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>dspListOpportunities</name>
+            <fieldText>{!vListOpportunities}</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Convert_Account_to_Site</name>
+        <label>Convert Account to Site</label>
+        <locationX>170</locationX>
+        <locationY>417</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>CheckIfUseCurrentAccount</targetReference>
+        </connector>
+        <fields>
+            <name>ScrCurrentAccount</name>
+            <fieldText>Current Account : {!rCurrentAccount.Name}</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Account_to_use</name>
+            <choiceReferences>chUseCurrentAccount</choiceReferences>
+            <choiceReferences>chUseOtherAccount</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>chUseOtherAccount</defaultSelectedChoiceReference>
+            <fieldText>Target Account :</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Link_all_opportunities_to_the_site</name>
+            <choiceReferences>ChYes</choiceReferences>
+            <choiceReferences>chNo</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>ChYes</defaultSelectedChoiceReference>
+            <fieldText>Link all opportunities to the Site :</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Account_to_use_for_site_creation</name>
+            <choiceReferences>chUseCurrentAccount</choiceReferences>
+            <choiceReferences>chUseTargetAccount</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>chUseCurrentAccount</defaultSelectedChoiceReference>
+            <fieldText>Account source for Site data :</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <helpText>If using the current Account this option has no effect , the current Account will be used to populate Site data</helpText>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Delete_Current_Account</name>
+            <choiceReferences>ChYes</choiceReferences>
+            <choiceReferences>chNo</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>ChYes</defaultSelectedChoiceReference>
+            <fieldText>Delete Current Account after conversion :</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <helpText>If using the current Account this option has no effect , the current Account will not be deleted</helpText>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Create_Site</name>
+        <label>Create Site</label>
+        <locationX>745</locationX>
+        <locationY>432</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Confirmation</targetReference>
+        </connector>
+        <fields>
+            <name>Site_Name</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>rAccountForSiteData.Name</elementReference>
+            </defaultValue>
+            <fieldText>Site Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>D_U_N_S</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>rAccountForSiteData.DUNS__c</elementReference>
+            </defaultValue>
+            <fieldText>D-U-N-S</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>D_U_N_S_HQ</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>rAccountForSiteData.DUNS__c</elementReference>
+            </defaultValue>
+            <fieldText>D-U-N-S HQ</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Description</name>
+            <defaultValue>
+                <stringValue>{!rAccountForSiteData.Description}</stringValue>
+            </defaultValue>
+            <fieldText>Description</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Phone</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>rAccountForSiteData.Phone</elementReference>
+            </defaultValue>
+            <fieldText>Phone</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Address</name>
+            <extensionName>flowruntime:address</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>postalCode</name>
+                <value>
+                    <elementReference>rAccountForSiteData.BillingPostalCode</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>province</name>
+                <value>
+                    <elementReference>rAccountForSiteData.BillingState</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>country</name>
+                <value>
+                    <elementReference>rAccountForSiteData.BillingCountryCode</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>street</name>
+                <value>
+                    <elementReference>rAccountForSiteData.BillingStreet</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>city</name>
+                <value>
+                    <elementReference>rAccountForSiteData.BillingCity</elementReference>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>NewCity</assignToReference>
+                <name>city</name>
+            </outputParameters>
+            <outputParameters>
+                <assignToReference>NewStreet</assignToReference>
+                <name>street</name>
+            </outputParameters>
+            <outputParameters>
+                <assignToReference>NewCountry</assignToReference>
+                <name>country</name>
+            </outputParameters>
+            <outputParameters>
+                <assignToReference>NewState</assignToReference>
+                <name>province</name>
+            </outputParameters>
+            <outputParameters>
+                <assignToReference>NewPostalCode</assignToReference>
+                <name>postalCode</name>
+            </outputParameters>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Not_Authorized</name>
+        <label>Not Authorized</label>
+        <locationX>321</locationX>
+        <locationY>49</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>NotAuhtorized</name>
+            <fieldText>Please check with your Administrator.</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Site_creation</name>
+        <label>Site creation</label>
+        <locationX>1033</locationX>
+        <locationY>730</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>MessageOppinked</name>
+            <fieldText>{!MessageFinal}</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>IsAuthorized</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>NewLine</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;br/&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>ListContacts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <name>ListContracts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contract</objectType>
+    </variables>
+    <variables>
+        <name>newAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>NewCity</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>NewCountry</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>NewPostalCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>NewSiteId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>NewState</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>NewStreet</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>OppSiteToCreate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity_Site__c</objectType>
+    </variables>
+    <variables>
+        <name>rAccount</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>rAccountForSiteData</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>rCurrentAccount</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>recActivities</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+    <variables>
+        <name>recContrat</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contract</objectType>
+    </variables>
+    <variables>
+        <name>recEvent</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Event</objectType>
+    </variables>
+    <variables>
+        <name>RecOppSite</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity_Site__c</objectType>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SetOpportunies</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>varLoopOpp</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>vCurrentAccOpps</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>vCurrentAccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>vListOpportunities</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>vOppCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+</Flow>

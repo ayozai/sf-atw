@@ -1,0 +1,31 @@
+<apex:page id="olbico_cdp_update_account" sidebar="false" tabStyle="Account" standardController="Account" extensions="OlbicoCdpController">
+    <apex:outputPanel layout="block" id="detail">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.3/iframeResizer.min.js"></script>
+        
+        <script type="text/javascript">
+            window.onload=function(){
+                var isOldIE = (navigator.userAgent.indexOf("MSIE") !== -1);
+                var firefox = (navigator.userAgent.indexOf("firefox") !== -1);
+
+                var method; if(isOldIE) {method = 'max';} else if(firefox){method = 'taggedElement';} else{method = 'taggedElement';};
+                
+                iFrameResize( {
+                    heightCalculationMethod: method,
+                    log: true
+                });
+            };
+        </script>
+        <script type="text/javascript">
+            // Create IE + others compatible event handler
+            var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+            var eventer = window[eventMethod];
+            var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+            
+            // Listen to message from child window
+            eventer(messageEvent,function(e) {
+              console.log('parent received message!:  ',e.data);
+            },false);
+        </script>
+        <apex:iframe src="https://crmplugin.dqbox.com/CrmUserRedirect.html?token={!token}&updateAccount=true&userpage=company&language={!language}&userId={!$User.Id}&profile={!profile}&RecordType={!recordType}&AvailableRecordTypes={!AvailableRecordTypes}&ID={!accountId}&companyName={!companyName}&companyAddress={!companyAddress}&companyCity={!companyCity}&companyPostcode={!companyPostcode}&companyCountry={!companyCountry}&companyDuns={!companyDuns}&companyRegistrationNumber={!companyRegistrationNumber}&theme={!$User.UIThemeDisplayed}" scrolling="false" height="870px" width="100%" />
+    </apex:outputPanel>
+</apex:page>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>No take over</fullName>
+        <default>false</default>
+        <label>No take over</label>
+    </customValue>
+    <customValue>
+        <fullName>Take over with low risk</fullName>
+        <default>false</default>
+        <label>Take over with low risk</label>
+    </customValue>
+    <customValue>
+        <fullName>Take over with high risk</fullName>
+        <default>false</default>
+        <label>Take over with high risk</label>
+    </customValue>
+    <masterLabel>Global Take Over of Staff</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

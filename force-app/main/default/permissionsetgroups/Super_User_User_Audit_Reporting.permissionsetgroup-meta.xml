@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides user access to view user login data</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Super User - User Audit Reporting</label>
+    <permissionSets>User_Login_Auditing</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Fixed Term Contract</fullName>
+        <default>false</default>
+        <label>Fixed Term Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Rolling Contract</fullName>
+        <default>false</default>
+        <label>Rolling contract (tacit/automatic renewal)</label>
+    </customValue>
+    <customValue>
+        <fullName>Permanent Contract</fullName>
+        <default>false</default>
+        <label>Permanent Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Durée ferme</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Durée ferme</label>
+    </customValue>
+    <customValue>
+        <fullName>CDI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CDI</label>
+    </customValue>
+    <customValue>
+        <fullName>Tacite Reconduction</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tacite Reconduction</label>
+    </customValue>
+    <description>Contract renewal type, first entered on opportunity at closed won.</description>
+    <masterLabel>Global Renewal Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

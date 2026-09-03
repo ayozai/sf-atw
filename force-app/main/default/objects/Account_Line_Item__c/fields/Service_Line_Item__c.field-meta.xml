@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Line_Item__c</fullName>
+    <label>Service Line Item</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Service__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Global_Contract_Line_Item</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Soft Services</controllingFieldValue>
+            <valueName>Handyman Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technical Services</controllingFieldValue>
+            <valueName>Technical Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waste Management</controllingFieldValue>
+            <valueName>Waste Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Catering - Catering Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Catering - Coffee Machines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Catering - Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Catering - Office Fruit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Catering - Vending Machines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catering</controllingFieldValue>
+            <valueName>Catering - Water Dispensers / Taps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Bio-cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Carpet deep cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Cryogenic cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Floor cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Healthcare - Adverse Event Activity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Healthcare - Distribution of meals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Healthcare - HACCP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Industrial cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Restoration cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Sanitary supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Transport - N1 sur la piste de charge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Transport - N1 sur le remisage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Transport - N2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Transport - N3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Transport - N5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning Transport - Vacation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Washroom Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Cleaning - Window</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cleaning and Janitorial Services</controllingFieldValue>
+            <valueName>Material transport and flow management with loaders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Front of House - Mailroom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Front of House and Concierge</controllingFieldValue>
+            <valueName>Front of House - Reception Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Landscaping - Flowers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Landscaping</controllingFieldValue>
+            <valueName>Landscaping - Internal Plants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pest Control</controllingFieldValue>
+            <valueName>Pest Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Security - Guarding Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Security - Subscription Alarm Follow Up</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

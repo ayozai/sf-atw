@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>SEND_EMAIL</name>
+        <label>SEND EMAIL</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>mark_J30_notification_as_sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recipientAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>$Record.VGP_AQSE_1__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.VGP_AQSE_2__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.VGP_Users__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.OwnerId</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>one.atalian@atalianworld.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue> VGP à réaliser dans 30 jours</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>Bonjour,
+La VGP arrive à échéance dans 30 jours.
+
+Lien : https://atalianworld--uat.sandbox.lightning.force.com/lightning/r/General_Periodic_Inspection__c/{!$Record.Id}/view
+
+Date prévue : {!$Record.VGP_Next_Verification_Date__c}
+Merci de prendre les dispositions nécessaires.
+
+Cordialement,
+
+L’équipe Digital</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
+    </actionCalls>
+    <actionCalls>
+        <name>SEND_EMAIL_1J</name>
+        <label>SEND EMAIL 1J</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Mark_J1_notification_as_sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recipientAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>$Record.VGP_AQSE_1__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.VGP_AQSE_2__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.VGP_Users__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.Owner:User.Email</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>one.atalian@atalianworld.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>VGP à réaliser dans 1 jours</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>Bonjour,
+La VGP arrive à échéance dans 1 jours.
+
+Lien : https://atalianworld--uat.sandbox.lightning.force.com/lightning/r/General_Periodic_Inspection__c/{!$Record.Id}/view
+
+Date prévue : {!$Record.VGP_Next_Verification_Date__c}
+Merci de prendre les dispositions nécessaires.
+
+Cordialement,
+
+L’équipe Digital</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
+    </actionCalls>
+    <actionCalls>
+        <name>SEND_EMAIL_7J</name>
+        <label>SEND EMAIL 7J</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Mark_J7_notification_as_sent</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recipientAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>$Record.VGP_AQSE_1__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.VGP_AQSE_2__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.VGP_Users__r.Email</elementReference>
+                </collectionElements>
+                <collectionElements>
+                    <elementReference>$Record.Owner:User.Email</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>one.atalian@atalianworld.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>VGP à réaliser dans 7 jours</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>Bonjour,
+La VGP arrive à échéance dans 7 jours.
+
+Lien : https://atalianworld--uat.sandbox.lightning.force.com/lightning/r/General_Periodic_Inspection__c/{!$Record.Id}/view
+
+Date prévue : {!$Record.VGP_Next_Verification_Date__c}
+Merci de prendre les dispositions nécessaires.
+
+Cordialement,
+
+L’équipe Digital</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
+    </actionCalls>
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Decision_1</name>
+        <label>Send Email J-30 ?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Send_Email_J30</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.VGP_Next_Verification_Date_Stored__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.VGP_Notification_30_Days_Before_Sent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SEND_EMAIL</targetReference>
+            </connector>
+            <label>Send Email J30</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Send_Email_J_1</name>
+        <label>Send Email J-1 ?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Send_Email_J1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.VGP_Next_Verification_Date_Stored__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.VGP_Notification_1_Day_Before_Sent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SEND_EMAIL_1J</targetReference>
+            </connector>
+            <label>Send Email J1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Send_Email_J_7</name>
+        <label>Send Email J-7 ?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Send_Email_J7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.VGP_Next_Verification_Date_Stored__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.VGP_Notification_7_Days_Before_Sent__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SEND_EMAIL_7J</targetReference>
+            </connector>
+            <label>Send Email J7</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>VGP Email Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>VGP Email Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Mark_J1_notification_as_sent</name>
+        <label>Mark J1 notification as sent</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>VGP_Notification_1_Day_Before_Sent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>mark_J30_notification_as_sent</name>
+        <label>Mark J30 notification as sent</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>VGP_Notification_30_Days_Before_Sent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Mark_J7_notification_as_sent</name>
+        <label>Mark J7 notification as sent</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>VGP_Notification_7_Days_Before_Sent__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>VGP_Next_Verification_Date_Stored__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>General_Periodic_Inspection__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>J_30_Reminder</name>
+            <connector>
+                <targetReference>Decision_1</targetReference>
+            </connector>
+            <label>J-30 Reminder</label>
+            <offsetNumber>-30</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>VGP_Next_Verification_Date_Stored__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>J_7_Reminder</name>
+            <connector>
+                <targetReference>Send_Email_J_7</targetReference>
+            </connector>
+            <label>J-7 Reminder</label>
+            <offsetNumber>-7</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>VGP_Next_Verification_Date_Stored__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>J_1_Reminder</name>
+            <connector>
+                <targetReference>Send_Email_J_1</targetReference>
+            </connector>
+            <label>J-1 Reminder</label>
+            <offsetNumber>-1</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>VGP_Next_Verification_Date_Stored__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>MailEnvoi30J</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Bonjour, La VGP arrive à échéance dans 30 jours.
+Lien :
+https://atalianworld--uat.sandbox.lightning.force.com/lightning/r/General_Periodic_Inspection__c/{!$Record.Id}/view
+
+Date prévue : {!$Record.VGP_Next_Verification_Date__c}
+
+Merci de prendre les dispositions nécessaires.
+
+Cordialement,
+
+L’équipe Digital</text>
+    </textTemplates>
+    <variables>
+        <name>EmailEnvoie30JVariable</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>MailEnvoi30J</elementReference>
+        </value>
+    </variables>
+</Flow>

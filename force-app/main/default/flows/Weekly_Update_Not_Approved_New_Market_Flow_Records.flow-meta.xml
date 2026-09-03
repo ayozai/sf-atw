@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Weekly Update Not Approved New Market Flow Records</description>
+    <formulas>
+        <name>CurrentDateWeekDay</name>
+        <dataType>Number</dataType>
+        <expression>MOD( {!$Flow.CurrentDate}- DATE(1900, 1, 7), 7)+1</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>CurrentDateWeekNumber</name>
+        <dataType>Number</dataType>
+        <expression>FLOOR(({!$Flow.CurrentDate}- DATE( {!CurrentDateWeekYear},1,1) +
+MOD(
+(MOD( DATE({!CurrentDateWeekYear},1,1) - DATE(1900, 1, 7), 7)+1)
++1,7)-3) / 7 + 1)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>CurrentDateWeekString</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!CurrentDateWeekYear}) + &quot;-&quot; + IF({!CurrentDateWeekNumber}&lt;10,&quot;0&quot;,&quot;&quot;) + TEXT({!CurrentDateWeekNumber})</expression>
+    </formulas>
+    <formulas>
+        <name>CurrentDateWeekYear</name>
+        <dataType>Number</dataType>
+        <expression>YEAR({!$Flow.CurrentDate}+ (MOD(8- {!CurrentDateWeekDay} ,7)-3))</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Weekly Update Not Approved New Market Flow Records {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Weekly Update Not Approved New Market Flow Records</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_MF_Created_Week_Number</name>
+        <label>Update MF Created Week Number</label>
+        <locationX>176</locationX>
+        <locationY>276</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Approved_country</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Created_Week_Number_2__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>CurrentDateWeekString</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Created_Week_Number_2__c</field>
+            <value>
+                <elementReference>CurrentDateWeekString</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Market_Flow__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_MF_Created_Week_Number</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Weekly</frequency>
+            <startDate>2021-03-01</startDate>
+            <startTime>02:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

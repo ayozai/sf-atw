@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Access Control - Install &amp; Maintenance</fullName>
+        <default>false</default>
+        <label>Access Control - Install &amp; Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Administrative Services</fullName>
+        <default>false</default>
+        <label>Administrative Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Alarm Response </fullName>
+        <default>false</default>
+        <label>Alarm Response </label>
+    </customValue>
+    <customValue>
+        <fullName>AV Support</fullName>
+        <default>false</default>
+        <label>AV Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Backup Generators</fullName>
+        <default>false</default>
+        <label>Backup Generators</label>
+    </customValue>
+    <customValue>
+        <fullName>Battery charging </fullName>
+        <default>false</default>
+        <label>Battery charging </label>
+    </customValue>
+    <customValue>
+        <fullName>Builders Clean</fullName>
+        <default>false</default>
+        <label>Builders Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Automation System</fullName>
+        <default>false</default>
+        <label>Building Automation System</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Installations and Fabric Maintenance</fullName>
+        <default>false</default>
+        <label>Building Installations and Fabric Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Mechanical Maintenance </fullName>
+        <default>false</default>
+        <label>Building Mechanical Maintenance </label>
+    </customValue>
+    <customValue>
+        <fullName>Cabin Armament and Cleaning</fullName>
+        <default>false</default>
+        <label>Cabin Armament and Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cage repair </fullName>
+        <default>false</default>
+        <label>Cage repair </label>
+    </customValue>
+    <customValue>
+        <fullName>Cart Recycling and laundry Sorting</fullName>
+        <default>false</default>
+        <label>Cart Recycling and laundry Sorting</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Coffee Shop / Deli</fullName>
+        <default>false</default>
+        <label>Catering - Coffee Shop / Deli</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Hospitality</fullName>
+        <default>false</default>
+        <label>Catering - Hospitality</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Kitchen Equipment Maintenance </fullName>
+        <default>false</default>
+        <label>Catering - Kitchen Equipment Maintenance </label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Payment / Till Systems </fullName>
+        <default>false</default>
+        <label>Catering - Payment / Till Systems </label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Restaurant and Kitchen Design </fullName>
+        <default>false</default>
+        <label>Catering - Restaurant and Kitchen Design </label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Restaurants</fullName>
+        <default>false</default>
+        <label>Catering - Restaurants</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering - Vending Machine Purchase/Lease</fullName>
+        <default>false</default>
+        <label>Catering - Vending Machine Purchase/Lease</label>
+    </customValue>
+    <customValue>
+        <fullName>CCTV - Install &amp; Maintenance</fullName>
+        <default>false</default>
+        <label>CCTV - Install &amp; Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>CCTV - Temporary Hire</fullName>
+        <default>false</default>
+        <label>CCTV - Temporary Hire</label>
+    </customValue>
+    <customValue>
+        <fullName>Chartered Surveying </fullName>
+        <default>false</default>
+        <label>Chartered Surveying </label>
+    </customValue>
+    <customValue>
+        <fullName>Chewing Gum Removal </fullName>
+        <default>false</default>
+        <label>Chewing Gum Removal </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Builders Clean</fullName>
+        <default>false</default>
+        <label>Cleaning - Builders Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Consumables</fullName>
+        <default>false</default>
+        <label>Cleaning - Consumables</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Data Centre Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Data Centre Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Dry Carpet Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Dry Carpet Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - External Building Cleaning </fullName>
+        <default>false</default>
+        <label>Cleaning - External Building Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Feminine Hygiene</fullName>
+        <default>false</default>
+        <label>Cleaning - Feminine Hygiene</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - General Cleaning </fullName>
+        <default>false</default>
+        <label>Cleaning - General Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - High level cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - High level cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Housekeeping </fullName>
+        <default>false</default>
+        <label>Cleaning - Housekeeping </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Janitorial Services </fullName>
+        <default>false</default>
+        <label>Cleaning - Janitorial Services </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Kitchen Cleaning </fullName>
+        <default>false</default>
+        <label>Cleaning - Kitchen Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Lab Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Lab Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Laundry</fullName>
+        <default>false</default>
+        <label>Cleaning - Laundry</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Low Rise Facade Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Low Rise Facade Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Marble Crystalization</fullName>
+        <default>false</default>
+        <label>Cleaning - Marble Crystalization</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Night Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Night Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Post Construction Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Post Construction Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Production Line Cleaning </fullName>
+        <default>false</default>
+        <label>Cleaning - Production Line Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Reactive Cleaning </fullName>
+        <default>false</default>
+        <label>Cleaning - Reactive Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Specialist Area and Room Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning - Specialist Area and Room Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Steam Sanitation</fullName>
+        <default>false</default>
+        <label>Cleaning - Steam Sanitation</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Upholstery / CarpetCleaning </fullName>
+        <default>false</default>
+        <label>Cleaning - Upholstery / CarpetCleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Vehicle Cleaning </fullName>
+        <default>false</default>
+        <label>Cleaning - Vehicle Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Vent Cleaning </fullName>
+        <default>false</default>
+        <label>Cleaning - Vent Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning - Voids Cleans </fullName>
+        <default>false</default>
+        <label>Cleaning - Voids Cleans </label>
+    </customValue>
+    <customValue>
+        <fullName>Close Protection</fullName>
+        <default>false</default>
+        <label>Close Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>Coffee</fullName>
+        <default>false</default>
+        <label>Coffee</label>
+    </customValue>
+    <customValue>
+        <fullName>Communications Systems</fullName>
+        <default>false</default>
+        <label>Communications Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Compliance Services</fullName>
+        <default>false</default>
+        <label>Compliance Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Compressed Air / Gas</fullName>
+        <default>false</default>
+        <label>Compressed Air / Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Concierge</fullName>
+        <default>false</default>
+        <label>Concierge</label>
+    </customValue>
+    <customValue>
+        <fullName>Conference Room Set-Up and Take Downs (Coordination and Booking)</fullName>
+        <default>false</default>
+        <label>Conference Room Set-Up and Take Downs (Coordination and Booking)</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumables</fullName>
+        <default>false</default>
+        <label>Consumables</label>
+    </customValue>
+    <customValue>
+        <fullName>Courier and Mailroom Services</fullName>
+        <default>false</default>
+        <label>Courier and Mailroom Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Decontamination</fullName>
+        <default>false</default>
+        <label>Decontamination</label>
+    </customValue>
+    <customValue>
+        <fullName>De-kit </fullName>
+        <default>false</default>
+        <label>De-kit </label>
+    </customValue>
+    <customValue>
+        <fullName>Diamond Polishing </fullName>
+        <default>false</default>
+        <label>Diamond Polishing </label>
+    </customValue>
+    <customValue>
+        <fullName>Documentation, Procedures and Manuals</fullName>
+        <default>false</default>
+        <label>Documentation, Procedures and Manuals</label>
+    </customValue>
+    <customValue>
+        <fullName>Document Management and Archiving</fullName>
+        <default>false</default>
+        <label>Document Management and Archiving</label>
+    </customValue>
+    <customValue>
+        <fullName>Dog Handling </fullName>
+        <default>false</default>
+        <label>Dog Handling </label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical Services</fullName>
+        <default>false</default>
+        <label>Electrical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Management </fullName>
+        <default>false</default>
+        <label>Energy Management </label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Management - Energy Management </fullName>
+        <default>false</default>
+        <label>Energy Management - Energy Management </label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Performance Contracting </fullName>
+        <default>false</default>
+        <label>Energy Performance Contracting </label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental, Health and Safety Support</fullName>
+        <default>false</default>
+        <label>Environmental, Health and Safety Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipment Supply and Maintenance</fullName>
+        <default>false</default>
+        <label>Equipment Supply and Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>External Building Cleaning </fullName>
+        <default>false</default>
+        <label>External Building Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Feminine Hygiene</fullName>
+        <default>false</default>
+        <label>Feminine Hygiene</label>
+    </customValue>
+    <customValue>
+        <fullName>Fencing</fullName>
+        <default>false</default>
+        <label>Fencing</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance and Administration Support</fullName>
+        <default>false</default>
+        <label>Finance and Administration Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Fire and Security Systems Maintenance</fullName>
+        <default>false</default>
+        <label>Fire and Security Systems Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Fire - Safety Directors</fullName>
+        <default>false</default>
+        <label>Fire - Safety Directors</label>
+    </customValue>
+    <customValue>
+        <fullName>Fire -  Systems </fullName>
+        <default>false</default>
+        <label>Fire -  Systems </label>
+    </customValue>
+    <customValue>
+        <fullName>Flight Preparation and Management</fullName>
+        <default>false</default>
+        <label>Flight Preparation and Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Administrative Services</fullName>
+        <default>false</default>
+        <label>Front of House - Administrative Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - AV Support</fullName>
+        <default>false</default>
+        <label>Front of House - AV Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Concierge</fullName>
+        <default>false</default>
+        <label>Front of House - Concierge</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Conference Room Set-Up and Take Downs</fullName>
+        <default>false</default>
+        <label>Front of House - Conference Room Set-Up and Take Downs</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Courier and Mailroom Services</fullName>
+        <default>false</default>
+        <label>Front of House - Courier and Mailroom Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Document Management and Archiving</fullName>
+        <default>false</default>
+        <label>Front of House - Document Management and Archiving</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Library</fullName>
+        <default>false</default>
+        <label>Front of House - Library</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Medical Services</fullName>
+        <default>false</default>
+        <label>Front of House - Medical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Physical Reception</fullName>
+        <default>false</default>
+        <label>Front of House - Physical Reception</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Porterage/Porters</fullName>
+        <default>false</default>
+        <label>Front of House - Porterage/Porters</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Reprographics</fullName>
+        <default>false</default>
+        <label>Front of House - Reprographics</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Storage Management</fullName>
+        <default>false</default>
+        <label>Front of House - Storage Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Switchboard Operations</fullName>
+        <default>false</default>
+        <label>Front of House - Switchboard Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Ticketing</fullName>
+        <default>false</default>
+        <label>Front of House - Ticketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Training</fullName>
+        <default>false</default>
+        <label>Front of House - Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Transport / Shuttle Bus</fullName>
+        <default>false</default>
+        <label>Front of House - Transport / Shuttle Bus</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House - Valet Parking</fullName>
+        <default>false</default>
+        <label>Front of House - Valet Parking</label>
+    </customValue>
+    <customValue>
+        <fullName>Gas Detection and Maintenance</fullName>
+        <default>false</default>
+        <label>Gas Detection and Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Gatehouse</fullName>
+        <default>false</default>
+        <label>Gatehouse</label>
+    </customValue>
+    <customValue>
+        <fullName>General Cleaning </fullName>
+        <default>false</default>
+        <label>General Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>General Repairs and Maintenance</fullName>
+        <default>false</default>
+        <label>General Repairs and Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Graffiti Removal </fullName>
+        <default>false</default>
+        <label>Graffiti Removal </label>
+    </customValue>
+    <customValue>
+        <fullName>Grease Tanks</fullName>
+        <default>false</default>
+        <label>Grease Tanks</label>
+    </customValue>
+    <customValue>
+        <fullName>Gritting and Snow Clearance</fullName>
+        <default>false</default>
+        <label>Gritting and Snow Clearance</label>
+    </customValue>
+    <customValue>
+        <fullName>Guttering and Drain Cleaning </fullName>
+        <default>false</default>
+        <label>Guttering and Drain Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Hazardous Waste</fullName>
+        <default>false</default>
+        <label>Hazardous Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Helpdesk Managed Services</fullName>
+        <default>false</default>
+        <label>Helpdesk Managed Services</label>
+    </customValue>
+    <customValue>
+        <fullName>High and Medium Voltage Installations </fullName>
+        <default>false</default>
+        <label>High and Medium Voltage Installations </label>
+    </customValue>
+    <customValue>
+        <fullName>High level cleaning</fullName>
+        <default>false</default>
+        <label>High level cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Housekeeping</fullName>
+        <default>false</default>
+        <label>Housekeeping</label>
+    </customValue>
+    <customValue>
+        <fullName>HVAC Maintenance</fullName>
+        <default>false</default>
+        <label>HVAC Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial and Office Painting </fullName>
+        <default>false</default>
+        <label>Industrial and Office Painting </label>
+    </customValue>
+    <customValue>
+        <fullName>Interior and Exterior Non-Mechanical Building Maintenance </fullName>
+        <default>false</default>
+        <label>Interior and Exterior Non-Mechanical Building Maintenance </label>
+    </customValue>
+    <customValue>
+        <fullName>Internal Plants</fullName>
+        <default>false</default>
+        <label>Internal Plants</label>
+    </customValue>
+    <customValue>
+        <fullName>Intruder Alarm</fullName>
+        <default>false</default>
+        <label>Intruder Alarm</label>
+    </customValue>
+    <customValue>
+        <fullName>Janitorial Services </fullName>
+        <default>false</default>
+        <label>Janitorial Services </label>
+    </customValue>
+    <customValue>
+        <fullName>Key Card Management</fullName>
+        <default>false</default>
+        <label>Key Card Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Kitchen Cleaning </fullName>
+        <default>false</default>
+        <label>Kitchen Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Kitchen Equipment Maintenance </fullName>
+        <default>false</default>
+        <label>Kitchen Equipment Maintenance </label>
+    </customValue>
+    <customValue>
+        <fullName>Lab Cleaning</fullName>
+        <default>false</default>
+        <label>Lab Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscape Maintenance</fullName>
+        <default>false</default>
+        <label>Landscape Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping - Fencing</fullName>
+        <default>false</default>
+        <label>Landscaping - Fencing</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping - Gritting and Snow Clearance</fullName>
+        <default>false</default>
+        <label>Landscaping - Gritting and Snow Clearance</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping - Internal Plants</fullName>
+        <default>false</default>
+        <label>Landscaping - Internal Plants</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping - Landscape Maintenance</fullName>
+        <default>false</default>
+        <label>Landscaping - Landscape Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping - Pavement,  Sidewalk and Road Service</fullName>
+        <default>false</default>
+        <label>Landscaping - Pavement,  Sidewalk and Road Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping - Projects</fullName>
+        <default>false</default>
+        <label>Landscaping - Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>Laundry</fullName>
+        <default>false</default>
+        <label>Laundry</label>
+    </customValue>
+    <customValue>
+        <fullName>Library</fullName>
+        <default>false</default>
+        <label>Library</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightning Installation and Maintenance</fullName>
+        <default>false</default>
+        <label>Lightning Installation and Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Litter Picking </fullName>
+        <default>false</default>
+        <label>Litter Picking </label>
+    </customValue>
+    <customValue>
+        <fullName>Low Voltage Switchgear Installation</fullName>
+        <default>false</default>
+        <label>Low Voltage Switchgear Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Luggage Services</fullName>
+        <default>false</default>
+        <label>Luggage Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Documentation, Procedures and Manuals</fullName>
+        <default>false</default>
+        <label>Management Services - Documentation, Procedures and Manuals</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Environmental, Health and Safety Support</fullName>
+        <default>false</default>
+        <label>Management Services - Environmental, Health and Safety Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Finance and Administration Support</fullName>
+        <default>false</default>
+        <label>Management Services - Finance and Administration Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Helpdesk Managed Services</fullName>
+        <default>false</default>
+        <label>Management Services - Helpdesk Managed Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Move Management</fullName>
+        <default>false</default>
+        <label>Management Services - Move Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Operational Reporting</fullName>
+        <default>false</default>
+        <label>Management Services - Operational Reporting</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Procurement Services</fullName>
+        <default>false</default>
+        <label>Management Services - Procurement Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Project Management Services</fullName>
+        <default>false</default>
+        <label>Management Services - Project Management Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Space Planning Services</fullName>
+        <default>false</default>
+        <label>Management Services - Space Planning Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services - Supplier management</fullName>
+        <default>false</default>
+        <label>Management Services - Supplier management</label>
+    </customValue>
+    <customValue>
+        <fullName>Manned Guarding -  Armed</fullName>
+        <default>false</default>
+        <label>Manned Guarding -  Armed</label>
+    </customValue>
+    <customValue>
+        <fullName>Manned Guarding - Unarmed</fullName>
+        <default>false</default>
+        <label>Manned Guarding - Unarmed</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Services</fullName>
+        <default>false</default>
+        <label>Medical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Metal, Marble and Wood Restoration</fullName>
+        <default>false</default>
+        <label>Metal, Marble and Wood Restoration</label>
+    </customValue>
+    <customValue>
+        <fullName>Move Management</fullName>
+        <default>false</default>
+        <label>Move Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Night Cleaning</fullName>
+        <default>false</default>
+        <label>Night Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Operational Reporting</fullName>
+        <default>false</default>
+        <label>Operational Reporting</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Specialist Waste</fullName>
+        <default>false</default>
+        <label>Other Specialist Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Pallet management </fullName>
+        <default>false</default>
+        <label>Pallet management </label>
+    </customValue>
+    <customValue>
+        <fullName>Passenger Services</fullName>
+        <default>false</default>
+        <label>Passenger Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Pavement,  Sidewalk and Road Service</fullName>
+        <default>false</default>
+        <label>Pavement,  Sidewalk and Road Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment / Till Systems </fullName>
+        <default>false</default>
+        <label>Payment / Till Systems </label>
+    </customValue>
+    <customValue>
+        <fullName>Periodic Statutory Testing and Inspections</fullName>
+        <default>false</default>
+        <label>Periodic Statutory Testing and Inspections</label>
+    </customValue>
+    <customValue>
+        <fullName>Pest - Planned</fullName>
+        <default>false</default>
+        <label>Pest - Planned</label>
+    </customValue>
+    <customValue>
+        <fullName>Pest - Reactive</fullName>
+        <default>false</default>
+        <label>Pest - Reactive</label>
+    </customValue>
+    <customValue>
+        <fullName>Physical Reception</fullName>
+        <default>false</default>
+        <label>Physical Reception</label>
+    </customValue>
+    <customValue>
+        <fullName>Pick/place management </fullName>
+        <default>false</default>
+        <label>Pick/place management </label>
+    </customValue>
+    <customValue>
+        <fullName>Pipe Cleaning</fullName>
+        <default>false</default>
+        <label>Pipe Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Planned</fullName>
+        <default>false</default>
+        <label>Planned</label>
+    </customValue>
+    <customValue>
+        <fullName>Planned Preventative Maintenance </fullName>
+        <default>false</default>
+        <label>Planned Preventative Maintenance </label>
+    </customValue>
+    <customValue>
+        <fullName>Porterage/Porters</fullName>
+        <default>false</default>
+        <label>Porterage/Porters</label>
+    </customValue>
+    <customValue>
+        <fullName>Power-operated Doors and Gates Installation and Maintenance</fullName>
+        <default>false</default>
+        <label>Power-operated Doors and Gates Installation and Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Pressure Washing </fullName>
+        <default>false</default>
+        <label>Pressure Washing </label>
+    </customValue>
+    <customValue>
+        <fullName>Procurement Services</fullName>
+        <default>false</default>
+        <label>Procurement Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Production Line Cleaning </fullName>
+        <default>false</default>
+        <label>Production Line Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Production Line Deep Clean </fullName>
+        <default>false</default>
+        <label>Production Line Deep Clean </label>
+    </customValue>
+    <customValue>
+        <fullName>Project Management Services</fullName>
+        <default>false</default>
+        <label>Project Management Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Projects</fullName>
+        <default>false</default>
+        <label>Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Works</fullName>
+        <default>false</default>
+        <label>Project Works</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Lightning</fullName>
+        <default>false</default>
+        <label>Public Lightning</label>
+    </customValue>
+    <customValue>
+        <fullName>Reactive</fullName>
+        <default>false</default>
+        <label>Reactive</label>
+    </customValue>
+    <customValue>
+        <fullName>Reactive Cleaning </fullName>
+        <default>false</default>
+        <label>Reactive Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Reactive Maintenance </fullName>
+        <default>false</default>
+        <label>Reactive Maintenance </label>
+    </customValue>
+    <customValue>
+        <fullName>Re-coup</fullName>
+        <default>false</default>
+        <label>Re-coup</label>
+    </customValue>
+    <customValue>
+        <fullName>Recycling</fullName>
+        <default>false</default>
+        <label>Recycling</label>
+    </customValue>
+    <customValue>
+        <fullName>Remote monitoring - CCTV and Alarms</fullName>
+        <default>false</default>
+        <label>Remote monitoring - CCTV and Alarms</label>
+    </customValue>
+    <customValue>
+        <fullName>Reprographics</fullName>
+        <default>false</default>
+        <label>Reprographics</label>
+    </customValue>
+    <customValue>
+        <fullName>Restaurant and Kitchen Design </fullName>
+        <default>false</default>
+        <label>Restaurant and Kitchen Design </label>
+    </customValue>
+    <customValue>
+        <fullName>Restaurants</fullName>
+        <default>false</default>
+        <label>Restaurants</label>
+    </customValue>
+    <customValue>
+        <fullName>Rigging, inventory management</fullName>
+        <default>false</default>
+        <label>Rigging, inventory management</label>
+    </customValue>
+    <customValue>
+        <fullName>Runway support</fullName>
+        <default>false</default>
+        <label>Runway support</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety shower</fullName>
+        <default>false</default>
+        <label>Safety shower</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Access Control - Install &amp; Maintenance</fullName>
+        <default>false</default>
+        <label>Security - Access Control - Install &amp; Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Alarm Response </fullName>
+        <default>false</default>
+        <label>Security - Alarm Response </label>
+    </customValue>
+    <customValue>
+        <fullName>Security - CCTV Install &amp; Maintenance</fullName>
+        <default>false</default>
+        <label>Security - CCTV Install &amp; Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - CCTV Temporary Hire</fullName>
+        <default>false</default>
+        <label>Security - CCTV Temporary Hire</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Close Protection</fullName>
+        <default>false</default>
+        <label>Security - Close Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Dog Handling </fullName>
+        <default>false</default>
+        <label>Security - Dog Handling </label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Fire Safety Directors</fullName>
+        <default>false</default>
+        <label>Security - Fire Safety Directors</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Fire Systems </fullName>
+        <default>false</default>
+        <label>Security - Fire Systems </label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Gatehouse</fullName>
+        <default>false</default>
+        <label>Security - Gatehouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Intruder Alarm</fullName>
+        <default>false</default>
+        <label>Security - Intruder Alarm</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Key Card Management</fullName>
+        <default>false</default>
+        <label>Security - Key Card Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Manned Guarding -  Armed</fullName>
+        <default>false</default>
+        <label>Security - Manned Guarding -  Armed</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Manned Guarding - Unarmed</fullName>
+        <default>false</default>
+        <label>Security - Manned Guarding - Unarmed</label>
+    </customValue>
+    <customValue>
+        <fullName>Security Patrols</fullName>
+        <default>false</default>
+        <label>Security Patrols</label>
+    </customValue>
+    <customValue>
+        <fullName>Security -  Patrols</fullName>
+        <default>false</default>
+        <label>Security -  Patrols</label>
+    </customValue>
+    <customValue>
+        <fullName>Security - Remote monitoring - CCTV and Alarms</fullName>
+        <default>false</default>
+        <label>Security - Remote monitoring - CCTV and Alarms</label>
+    </customValue>
+    <customValue>
+        <fullName>Space Planning Services</fullName>
+        <default>false</default>
+        <label>Space Planning Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialist Area and Room Cleaning</fullName>
+        <default>false</default>
+        <label>Specialist Area and Room Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialist Catering</fullName>
+        <default>false</default>
+        <label>Specialist Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Standard Waste</fullName>
+        <default>false</default>
+        <label>Standard Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Storage Management</fullName>
+        <default>false</default>
+        <label>Storage Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Strip and Seal</fullName>
+        <default>false</default>
+        <label>Strip and Seal</label>
+    </customValue>
+    <customValue>
+        <fullName>Sun Blinds Repairs and Maintenance </fullName>
+        <default>false</default>
+        <label>Sun Blinds Repairs and Maintenance </label>
+    </customValue>
+    <customValue>
+        <fullName>Supplier management</fullName>
+        <default>false</default>
+        <label>Supplier management</label>
+    </customValue>
+    <customValue>
+        <fullName>Switchboard Operations</fullName>
+        <default>false</default>
+        <label>Switchboard Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services - Backup Generators</fullName>
+        <default>false</default>
+        <label>Technical Services - Backup Generators</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services - Building Automation System</fullName>
+        <default>false</default>
+        <label>Technical Services - Building Automation System</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services - Building Installations and Fabric Maintenance</fullName>
+        <default>false</default>
+        <label>Technical Services - Building Installations and Fabric Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services - Building Mechanical Maintenance </fullName>
+        <default>false</default>
+        <label>Technical Services - Building Mechanical Maintenance </label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services - Electrical Services</fullName>
+        <default>false</default>
+        <label>Technical Services - Electrical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Ticketing</fullName>
+        <default>false</default>
+        <label>Ticketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport / Shuttle Bus</fullName>
+        <default>false</default>
+        <label>Transport / Shuttle Bus</label>
+    </customValue>
+    <customValue>
+        <fullName>Upholstery / CarpetCleaning </fullName>
+        <default>false</default>
+        <label>Upholstery / CarpetCleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Valet Parking</fullName>
+        <default>false</default>
+        <label>Valet Parking</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehicle Cleaning </fullName>
+        <default>false</default>
+        <label>Vehicle Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Vending Machine Purchase/Lease</fullName>
+        <default>false</default>
+        <label>Vending Machine Purchase/Lease</label>
+    </customValue>
+    <customValue>
+        <fullName>Vent Cleaning </fullName>
+        <default>false</default>
+        <label>Vent Cleaning </label>
+    </customValue>
+    <customValue>
+        <fullName>Venting System Disinfection</fullName>
+        <default>false</default>
+        <label>Venting System Disinfection</label>
+    </customValue>
+    <customValue>
+        <fullName>Vertical Scale Elimination</fullName>
+        <default>false</default>
+        <label>Vertical Scale Elimination</label>
+    </customValue>
+    <customValue>
+        <fullName>VIP Services</fullName>
+        <default>false</default>
+        <label>VIP Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Voids Cleans </fullName>
+        <default>false</default>
+        <label>Voids Cleans </label>
+    </customValue>
+    <customValue>
+        <fullName>Washroom and Restroom Services</fullName>
+        <default>false</default>
+        <label>Washroom and Restroom Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management - Hazardous Waste</fullName>
+        <default>false</default>
+        <label>Waste Management - Hazardous Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management - Other Specialist Waste</fullName>
+        <default>false</default>
+        <label>Waste Management - Other Specialist Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management - Recycling</fullName>
+        <default>false</default>
+        <label>Waste Management - Recycling</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management Standard Waste</fullName>
+        <default>false</default>
+        <label>Waste Management Standard Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Shaft Disinfection</fullName>
+        <default>false</default>
+        <label>Waste Shaft Disinfection</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Water Treatment</fullName>
+        <default>false</default>
+        <label>Waste Water Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>Workwear Cleaning Services</fullName>
+        <default>false</default>
+        <label>Workwear Cleaning Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Back of House</fullName>
+        <default>false</default>
+        <label>Back of House</label>
+    </customValue>
+    <customValue>
+        <fullName>Cage repair</fullName>
+        <default>false</default>
+        <label>Cage repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Canopy cleaning</fullName>
+        <default>false</default>
+        <label>Canopy cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Case cleaning</fullName>
+        <default>false</default>
+        <label>Case cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering Services</fullName>
+        <default>false</default>
+        <label>Catering Services</label>
+    </customValue>
+    <customValue>
+        <fullName>CCTV - Monitoring</fullName>
+        <default>false</default>
+        <label>CCTV - Monitoring</label>
+    </customValue>
+    <customValue>
+        <fullName>Claims Services</fullName>
+        <default>false</default>
+        <label>Claims Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Common Area Only</fullName>
+        <default>false</default>
+        <label>Common Area Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Consultancy</fullName>
+        <default>false</default>
+        <label>Consultancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Daily periodic cleaning (PHC cleans)</fullName>
+        <default>false</default>
+        <label>Daily periodic cleaning (PHC cleans)</label>
+    </customValue>
+    <customValue>
+        <fullName>Data centre cleaning</fullName>
+        <default>false</default>
+        <label>Data centre cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Deep Clean</fullName>
+        <default>false</default>
+        <label>Deep Clean</label>
+    </customValue>
+    <customValue>
+        <fullName>Distribution/Warehouse Cleaning</fullName>
+        <default>false</default>
+        <label>Distribution/Warehouse Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>ECO</fullName>
+        <default>false</default>
+        <label>ECO</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Cleaning</fullName>
+        <default>false</default>
+        <label>Environmental Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Escalator/Elevator cleaning</fullName>
+        <default>false</default>
+        <label>Escalator/Elevator cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Events</fullName>
+        <default>false</default>
+        <label>Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Fabric</fullName>
+        <default>false</default>
+        <label>Fabric</label>
+    </customValue>
+    <customValue>
+        <fullName>Fire Other Services</fullName>
+        <default>false</default>
+        <label>Fire Other Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Fire - Systems</fullName>
+        <default>false</default>
+        <label>Fire - Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>FM</fullName>
+        <default>false</default>
+        <label>FM</label>
+    </customValue>
+    <customValue>
+        <fullName>Food hygiene cleaning</fullName>
+        <default>false</default>
+        <label>Food hygiene cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House</fullName>
+        <default>false</default>
+        <label>Front of House</label>
+    </customValue>
+    <customValue>
+        <fullName>General Cleaning</fullName>
+        <default>false</default>
+        <label>General Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Grab and Go</fullName>
+        <default>false</default>
+        <label>Grab and Go</label>
+    </customValue>
+    <customValue>
+        <fullName>Hirewatch</fullName>
+        <default>false</default>
+        <label>Hirewatch</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospitality</fullName>
+        <default>false</default>
+        <label>Hospitality</label>
+    </customValue>
+    <customValue>
+        <fullName>HVAC</fullName>
+        <default>false</default>
+        <label>HVAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Janitorial services</fullName>
+        <default>false</default>
+        <label>Janitorial services</label>
+    </customValue>
+    <customValue>
+        <fullName>Key holding</fullName>
+        <default>false</default>
+        <label>Key holding</label>
+    </customValue>
+    <customValue>
+        <fullName>Lock &amp; Unlock</fullName>
+        <default>false</default>
+        <label>Lock &amp; Unlock</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics (Aktrion)</fullName>
+        <default>false</default>
+        <label>Logistics (Aktrion)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mailroom</fullName>
+        <default>false</default>
+        <label>Mailroom</label>
+    </customValue>
+    <customValue>
+        <fullName>Manned Guarding – Contractual</fullName>
+        <default>false</default>
+        <label>Manned Guarding – Contractual</label>
+    </customValue>
+    <customValue>
+        <fullName>Office Cleaning</fullName>
+        <default>false</default>
+        <label>Office Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Oven cleaning</fullName>
+        <default>false</default>
+        <label>Oven cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>PAT Testing</fullName>
+        <default>false</default>
+        <label>PAT Testing</label>
+    </customValue>
+    <customValue>
+        <fullName>Periodic Cleaning</fullName>
+        <default>false</default>
+        <label>Periodic Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Pick/place management</fullName>
+        <default>false</default>
+        <label>Pick/place management</label>
+    </customValue>
+    <customValue>
+        <fullName>Planned Maintenance</fullName>
+        <default>false</default>
+        <label>Planned Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Production Area Cleaning</fullName>
+        <default>false</default>
+        <label>Production Area Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Production Operations (Aktrion)</fullName>
+        <default>false</default>
+        <label>Production Operations (Aktrion)</label>
+    </customValue>
+    <customValue>
+        <fullName>Reception</fullName>
+        <default>false</default>
+        <label>Reception</label>
+    </customValue>
+    <customValue>
+        <fullName>Refridgeration/freezer cleaning</fullName>
+        <default>false</default>
+        <label>Refridgeration/freezer cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail Store Cleaning</fullName>
+        <default>false</default>
+        <label>Retail Store Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Road sweeping</fullName>
+        <default>false</default>
+        <label>Road sweeping</label>
+    </customValue>
+    <customValue>
+        <fullName>Security</fullName>
+        <default>false</default>
+        <label>Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Signage and facia cleaning</fullName>
+        <default>false</default>
+        <label>Signage and facia cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Sparkle cleans</fullName>
+        <default>false</default>
+        <label>Sparkle cleans</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialist Testing</fullName>
+        <default>false</default>
+        <label>Specialist Testing</label>
+    </customValue>
+    <customValue>
+        <fullName>Systems Solutions</fullName>
+        <default>false</default>
+        <label>Systems Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Trailer cleaning</fullName>
+        <default>false</default>
+        <label>Trailer cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Vending</fullName>
+        <default>false</default>
+        <label>Vending</label>
+    </customValue>
+    <customValue>
+        <fullName>Warehouse Cleaning</fullName>
+        <default>false</default>
+        <label>Warehouse Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Window cleaning</fullName>
+        <default>false</default>
+        <label>Window cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood clearance</fullName>
+        <default>false</default>
+        <label>Wood clearance</label>
+    </customValue>
+    <description>List of SubServices agreed on August 2018</description>
+    <masterLabel>Global Sub Services</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

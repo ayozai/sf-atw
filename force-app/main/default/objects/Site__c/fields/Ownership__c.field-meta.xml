@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ownership__c</fullName>
+    <label>Ownership</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Freehold</fullName>
+                <default>false</default>
+                <label>Freehold</label>
+            </value>
+            <value>
+                <fullName>Freehold, Land use right</fullName>
+                <default>false</default>
+                <label>Freehold, Land use right</label>
+            </value>
+            <value>
+                <fullName>Freehold, Lease</fullName>
+                <default>false</default>
+                <label>Freehold, Lease</label>
+            </value>
+            <value>
+                <fullName>Land use right, Lease</fullName>
+                <default>false</default>
+                <label>Land use right, Lease</label>
+            </value>
+            <value>
+                <fullName>Lease</fullName>
+                <default>false</default>
+                <label>Lease</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

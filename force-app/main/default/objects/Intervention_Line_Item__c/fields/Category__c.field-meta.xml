@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <description>This picklist allows the user to choose the category</description>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Auto Doors/Access</fullName>
+                <default>false</default>
+                <label>Auto Doors/Access</label>
+            </value>
+            <value>
+                <fullName>Catering</fullName>
+                <default>false</default>
+                <label>Catering</label>
+            </value>
+            <value>
+                <fullName>Cleaning</fullName>
+                <default>false</default>
+                <label>Cleaning</label>
+            </value>
+            <value>
+                <fullName>Concierge</fullName>
+                <default>false</default>
+                <label>Concierge</label>
+            </value>
+            <value>
+                <fullName>Display &amp; Communication</fullName>
+                <default>false</default>
+                <label>Display &amp; Communication</label>
+            </value>
+            <value>
+                <fullName>Electrical &amp; Lighting</fullName>
+                <default>false</default>
+                <label>Electrical &amp; Lighting</label>
+            </value>
+            <value>
+                <fullName>Fabric - Internal</fullName>
+                <default>false</default>
+                <label>Fabric - Internal</label>
+            </value>
+            <value>
+                <fullName>Fire &amp; Security</fullName>
+                <default>false</default>
+                <label>Fire &amp; Security</label>
+            </value>
+            <value>
+                <fullName>Gritting</fullName>
+                <default>false</default>
+                <label>Gritting</label>
+            </value>
+            <value>
+                <fullName>Hazards</fullName>
+                <default>false</default>
+                <label>Hazards</label>
+            </value>
+            <value>
+                <fullName>HVAC</fullName>
+                <default>false</default>
+                <label>HVAC</label>
+            </value>
+            <value>
+                <fullName>Imaging (copiers, printers)</fullName>
+                <default>false</default>
+                <label>Imaging (copiers, printers)</label>
+            </value>
+            <value>
+                <fullName>Landscaping</fullName>
+                <default>false</default>
+                <label>Landscaping</label>
+            </value>
+            <value>
+                <fullName>Lifts/Escalators</fullName>
+                <default>false</default>
+                <label>Lifts/Escalators</label>
+            </value>
+            <value>
+                <fullName>Mail Management</fullName>
+                <default>false</default>
+                <label>Mail Management</label>
+            </value>
+            <value>
+                <fullName>Meeting Room</fullName>
+                <default>false</default>
+                <label>Meeting Room</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Plumbing &amp; Drainage</fullName>
+                <default>false</default>
+                <label>Plumbing &amp; Drainage</label>
+            </value>
+            <value>
+                <fullName>Porterage</fullName>
+                <default>false</default>
+                <label>Porterage</label>
+            </value>
+            <value>
+                <fullName>Reception</fullName>
+                <default>false</default>
+                <label>Reception</label>
+            </value>
+            <value>
+                <fullName>Riddance</fullName>
+                <default>false</default>
+                <label>Riddance</label>
+            </value>
+            <value>
+                <fullName>Roofing</fullName>
+                <default>false</default>
+                <label>Roofing</label>
+            </value>
+            <value>
+                <fullName>Systems &amp; Controls</fullName>
+                <default>false</default>
+                <label>Systems &amp; Controls</label>
+            </value>
+            <value>
+                <fullName>Vending</fullName>
+                <default>false</default>
+                <label>Vending</label>
+            </value>
+            <value>
+                <fullName>Waste Management</fullName>
+                <default>false</default>
+                <label>Waste Management</label>
+            </value>
+            <value>
+                <fullName>Windows/Doors/Locks</fullName>
+                <default>false</default>
+                <label>Windows/Doors/Locks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

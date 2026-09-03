@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>UK_Lost_Notification</name>
+        <label>UK Lost Notification</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>Opportunity.UK_Lost_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.UK_Lost_Alert</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>UK_Win_Notification</name>
+        <label>UK Win Notification</label>
+        <locationX>886</locationX>
+        <locationY>1031</locationY>
+        <actionName>Opportunity.UK_Win_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.UK_Win_Alert</nameSegment>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Contract_Type</name>
+        <label>Contract Type</label>
+        <locationX>1018</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Contractual</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Contract_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Contractual</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Contractual_Stage</targetReference>
+            </connector>
+            <label>Contractual</label>
+        </rules>
+        <rules>
+            <name>Non_Contractual</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Contract_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non Contractual</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Non_Contractual_Stage</targetReference>
+            </connector>
+            <label>Non Contractual</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Contractual_Stage</name>
+        <label>Contractual Stage</label>
+        <locationX>226</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Contractual_Won</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>5. Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Global_Annual_Revenue_100K</targetReference>
+            </connector>
+            <label>Contractual Won</label>
+        </rules>
+        <rules>
+            <name>Contractual_Lost</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>6. Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UK_Lost_Notification</targetReference>
+            </connector>
+            <label>Contractual Lost</label>
+        </rules>
+        <rules>
+            <name>Contractual_Withdrawn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>7. Closed Withdrawn</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Contractual Withdrawn</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Global_Annual_Revenue_100K</name>
+        <label>Global Annual Revenue 100K</label>
+        <locationX>1018</locationX>
+        <locationY>923</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Global_Annual_Turnover__c</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>100000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UK_Win_Notification</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Non_Contractual_Stage</name>
+        <label>Non Contractual Stage</label>
+        <locationX>1194</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Non_Contractual_Won</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>5. Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Global_Annual_Revenue_100K</targetReference>
+            </connector>
+            <label>Non Contractual Won</label>
+        </rules>
+        <rules>
+            <name>Non_Contractual_Loss</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>6. Closed Lost</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Non Contractual Loss</label>
+        </rules>
+        <rules>
+            <name>Non_Contractual_Withdrawn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>7. Closed Withdrawn</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Non Contractual Withdrawn</label>
+        </rules>
+    </decisions>
+    <description>UK Email Alerts for: 
+Contactual / Non-Contactual Wins
+Contactual Loss / Withdrawn</description>
+    <environments>Default</environments>
+    <interviewLabel>UK Win &amp; Loss Alerts {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>UK Win &amp; Loss Alerts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>892</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Contract_Type</targetReference>
+        </connector>
+        <filterLogic>((1 OR 2 OR 3) AND (5 OR 6)) AND 4</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>5. Closed Won</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>6. Closed Lost</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>7. Closed Withdrawn</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Owner_Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>United Kingdom</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Owner_Country__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Ireland</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

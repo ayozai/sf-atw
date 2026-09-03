@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Fournisseur</fullName>
+    <active>true</active>
+    <label>Audit Fournisseur</label>
+    <picklistValues>
+        <picklist>Audit_Activity_Sector__c</picklist>
+        <values>
+            <fullName>Agroalimentaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aéronautique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radioprotection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ultra Propreté</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Departement_Management__c</picklist>
+        <values>
+            <fullName>QHSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Origin__c</picklist>
+        <values>
+            <fullName>Audit Inopiné</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit programmé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_Type__c</picklist>
+        <values>
+            <fullName>Audit 6M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit Fournisseur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit Interne Agence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit Interne site IFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit Interne site environnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit Site Simplifié</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audit_reason__c</picklist>
+        <values>
+            <fullName>Result Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worker incident</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audited_Personnel_2__c</picklist>
+        <values>
+            <fullName>AQSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant RH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistant achat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chef d%27équipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chef de site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RQSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salarié</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Domain__c</picklist>
+        <values>
+            <fullName>Environnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sécurité</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

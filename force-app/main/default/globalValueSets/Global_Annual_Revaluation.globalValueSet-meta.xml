@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Firm price contract (no annual revaluation)</fullName>
+        <default>false</default>
+        <label>Firm price contract (no annual revaluation)</label>
+    </customValue>
+    <customValue>
+        <fullName>Annually - Index/formula based revaluation</fullName>
+        <default>false</default>
+        <label>Annually - Index/formula based revaluation</label>
+    </customValue>
+    <customValue>
+        <fullName>Annually - Private arrangements</fullName>
+        <default>false</default>
+        <label>Annually - Private arrangements</label>
+    </customValue>
+    <description>The annual revaluation type is used on oppty and contracts</description>
+    <masterLabel>Global Annual Revaluation</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

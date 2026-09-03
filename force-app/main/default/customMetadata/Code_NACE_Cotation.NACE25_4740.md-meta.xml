@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>NACE25_4740</label>
+    <protected>false</protected>
+    <values>
+        <field>Code_NACE__c</field>
+        <value xsi:type="xsd:string">4740</value>
+    </values>
+    <values>
+        <field>Cotation__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Commerce de détail d&apos;équipements de l&apos;information et de la communication</value>
+    </values>
+</CustomMetadata>

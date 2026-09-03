@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adj_Monthly_Revaluation_Amt_Targeted__c</fullName>
+    <formula>IF(
+Adjusted_Monthly_Contractual_Amount__c &lt;&gt; 0,
+Adjusted_Monthly_Contractual_Amount__c * Indexation_Percentage_Targeted__c,
+Monthly_Contractual_Amount__c * Indexation_Percentage_Targeted__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Adj. Monthly Reval Amt (Targeted)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

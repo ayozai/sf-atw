@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>fr</language>
+    <masterLabel>heure_de_taffPNG</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>heure de taff.PNG</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

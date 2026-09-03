@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PROPRETE - AERONAUTIQUE</fullName>
+        <default>false</default>
+        <label>PROPRETE - AERONAUTIQUE</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - CENTRE OUEST</fullName>
+        <default>false</default>
+        <label>PROPRETE - CENTRE OUEST</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - EST</fullName>
+        <default>false</default>
+        <label>PROPRETE - EST</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - IDF</fullName>
+        <default>false</default>
+        <label>PROPRETE - IDF</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - IDF EST</fullName>
+        <default>false</default>
+        <label>PROPRETE - IDF EST</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - IDF NORD</fullName>
+        <default>false</default>
+        <label>PROPRETE - IDF NORD</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - IDF OUEST</fullName>
+        <default>false</default>
+        <label>PROPRETE - IDF OUEST</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - IDF SUD</fullName>
+        <default>false</default>
+        <label>PROPRETE - IDF SUD</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - LOGISTIQUE</fullName>
+        <default>false</default>
+        <label>PROPRETE - LOGISTIQUE</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - NORD NORMANDIE</fullName>
+        <default>false</default>
+        <label>PROPRETE - NORD NORMANDIE</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - PACA</fullName>
+        <default>false</default>
+        <label>PROPRETE - PACA</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - RHONE-ALPES</fullName>
+        <default>false</default>
+        <label>PROPRETE - RHONE-ALPES</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - SUD OUEST</fullName>
+        <default>false</default>
+        <label>PROPRETE - SUD OUEST</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - TRANSPORT</fullName>
+        <default>false</default>
+        <label>PROPRETE - TRANSPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURITE - EST</fullName>
+        <default>false</default>
+        <label>SECURITE - EST</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURITE - ILE DE FRANCE</fullName>
+        <default>false</default>
+        <label>SECURITE - ILE DE FRANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURITE - NORD NORMANDIE</fullName>
+        <default>false</default>
+        <label>SECURITE - NORD NORMANDIE</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURITE - SUD EST</fullName>
+        <default>false</default>
+        <label>SECURITE - SUD EST</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURITE - SUD OUEST</fullName>
+        <default>false</default>
+        <label>SECURITE - SUD OUEST</label>
+    </customValue>
+    <customValue>
+        <fullName>FM</fullName>
+        <default>false</default>
+        <label>FM</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - IDF HOTELLERIE</fullName>
+        <default>false</default>
+        <label>PROPRETE - IDF HOTELLERIE</label>
+    </customValue>
+    <customValue>
+        <fullName>NETHERLANDS</fullName>
+        <default>false</default>
+        <label>NETHERLANDS</label>
+    </customValue>
+    <customValue>
+        <fullName>LUXEMBOURG</fullName>
+        <default>false</default>
+        <label>LUXEMBOURG</label>
+    </customValue>
+    <customValue>
+        <fullName>BELGIUM</fullName>
+        <default>false</default>
+        <label>BELGIUM</label>
+    </customValue>
+    <customValue>
+        <fullName>MULTIMETIERS</fullName>
+        <default>false</default>
+        <label>MULTIMETIERS</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;E</fullName>
+        <default>false</default>
+        <label>M&amp;E</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - NATIONAL</fullName>
+        <default>false</default>
+        <label>PROPRETE - NATIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>SECURITE - NATIONAL</fullName>
+        <default>false</default>
+        <label>SECURITE - NATIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - AME</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - AME</label>
+    </customValue>
+    <customValue>
+        <fullName>PROPRETE - ATALIAN</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PROPRETE - ATALIAN</label>
+    </customValue>
+    <description>Toutes les combinaisons Métier | Région qui sont disponibles pour les agences</description>
+    <masterLabel>GLOBAL METIER REGION</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

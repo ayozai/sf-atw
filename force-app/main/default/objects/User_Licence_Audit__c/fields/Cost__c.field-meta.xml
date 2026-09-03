@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost__c</fullName>
+    <description>What is the base cost of this type of licence? Taken from the custom MDT</description>
+    <inlineHelpText>What is the base cost of this type of licence? Taken from the custom MDT</inlineHelpText>
+    <label>Cost</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

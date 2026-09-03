@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_N_B31__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(GNG_Key_Decision_Makers__c, &apos;Oui, contact récent&apos;), 4,
+  IF(ISPICKVAL(GNG_Key_Decision_Makers__c, &apos;Oui, contacté ces dernières années&apos;), 3,
+    IF(ISPICKVAL(GNG_Key_Decision_Makers__c, &apos;Oui mais aucun contact préalable&apos;), 2, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score B3.1 — Décideurs connus</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

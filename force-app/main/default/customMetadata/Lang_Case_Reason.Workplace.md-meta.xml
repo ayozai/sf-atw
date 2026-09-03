@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Workplace</label>
+    <protected>false</protected>
+    <values>
+        <field>Case_Reason_EN__c</field>
+        <value xsi:type="xsd:string">Workplace</value>
+    </values>
+    <values>
+        <field>Case_Reason_FR__c</field>
+        <value xsi:type="xsd:string">Environnement de travail</value>
+    </values>
+</CustomMetadata>

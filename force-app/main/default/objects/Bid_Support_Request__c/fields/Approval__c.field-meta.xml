@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval__c</fullName>
+    <inlineHelpText>This is used by Sales or Client Solutions to indicate whether or not the BSR is approved by the SD or if the bid can be supported by Client Solutions.</inlineHelpText>
+    <label>Approval</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Denied</fullName>
+                <default>false</default>
+                <label>Denied</label>
+            </value>
+            <value>
+                <fullName>Discuss</fullName>
+                <default>false</default>
+                <label>Discuss</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

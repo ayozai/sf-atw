@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_LockChangesBeforeApproval</fullName>
+    <active>false</active>
+    <description>Block edits to Negotiation fields once status is &quot;Approved by Controller&quot;</description>
+    <errorConditionFormula>$Profile.Name&lt;&gt;&apos;System Administrator&apos;
+
+&amp;&amp; $Profile.Name&lt;&gt;&apos;Global Delegated Admin&apos;
+
+&amp;&amp; $Profile.Name&lt;&gt;&apos;Global Controlling User&apos;
+
+&amp;&amp; ISPICKVAL(Indexation_Status__c, &quot;Approved by Controlling&quot;)
+&amp;&amp;
+   (
+    ISCHANGED(Indexation_Percentage_Accepted__c)
+    || ISCHANGED(Indexation_Effective_Date__c)
+    || ISCHANGED(Arranged_Service__c)
+    || ISCHANGED(Mutual_Termination_Status__c)
+    || ISCHANGED(Mutual_Termination_Date__c)
+    || ISCHANGED(Communication_Date__c)
+    || ISCHANGED(Means_of_communication__c)
+    || ISCHANGED(Indexation_Amount_Communicated__c)
+    || ISCHANGED(Indexation_Percentage_Communicated__c)
+    || ISCHANGED(Campaign_Start_Date__c)
+    || ISCHANGED(Campaign_End_Date__c)
+    || ISCHANGED(Indexation_Percentage_Targeted__c)
+   )</errorConditionFormula>
+    <errorMessage>You cannot modify fields already filled before &quot;Approved by Controlling&quot;.</errorMessage>
+</ValidationRule>

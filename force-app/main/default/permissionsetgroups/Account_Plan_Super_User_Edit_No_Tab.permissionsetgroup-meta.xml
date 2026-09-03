@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides user access to Create &amp; Edit Account Plans - without Tab</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account Plan - Super User - Edit - No Tab</label>
+    <permissionSets>Account_Plan_Super_user</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

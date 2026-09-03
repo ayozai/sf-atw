@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Feature_Licence__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is this licence a feature licence controlled by a User property (checkbox)</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Is this licence a feature licence controlled by a User property (checkbox)</inlineHelpText>
+    <label>Feature Licence</label>
+    <type>Checkbox</type>
+</CustomField>

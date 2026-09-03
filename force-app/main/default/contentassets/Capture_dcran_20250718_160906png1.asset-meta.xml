@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>fr</language>
+    <masterLabel>Capture_dcran_20250718_160906png1</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>Capture d’écran 2025-07-18 160906.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

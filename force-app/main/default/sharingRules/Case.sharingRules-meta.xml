@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_IDF_Ouest_IGR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning IDF Ouest IGR</label>
+        <sharedTo>
+            <role>FR_Cleaning_IDF_Ouest_IGR</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_IDF_Ouest_IGR</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Nord</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Nord</label>
+        <sharedTo>
+            <group>FR_Cleaning_Nord_Market_Flow</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Nord_Normandie_Sales_Team</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_Security</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France Security</label>
+        <sharedTo>
+            <role>France_Security_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_Security_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

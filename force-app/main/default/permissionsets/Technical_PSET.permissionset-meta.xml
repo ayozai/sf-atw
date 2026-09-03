@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Technical PSET to allow Integration User and Security User access to fields requested by CRMA</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Worker_Incident__c.Return_to_work_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Technical_PSET</label>
+</PermissionSet>

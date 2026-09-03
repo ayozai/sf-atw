@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>RU sum 06FR+H</fullName>
+        <default>false</default>
+        <label>RU sum 06FR+H</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 03BX21</fullName>
+        <default>false</default>
+        <label>RU sum 03BX21</label>
+    </customValue>
+    <customValue>
+        <fullName>RU sum 06EU+H20</fullName>
+        <default>false</default>
+        <label>RU sum 06EU+H20</label>
+    </customValue>
+    <description>Region Code used by the Finance Team</description>
+    <masterLabel>NZC Region Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

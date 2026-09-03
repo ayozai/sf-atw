@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InYear_Number_of_Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Contract_Duration__c&gt;0 &amp;&amp; Contract_Duration__c &lt; 12 &amp;&amp; !ISPICKVAL(Type__c, &quot;Loss&quot;),   MIN(13 - MONTH(Effective_Date__c ),Contract_Duration__c )  , 13 - MONTH(Effective_Date__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>InYear Number of Month</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

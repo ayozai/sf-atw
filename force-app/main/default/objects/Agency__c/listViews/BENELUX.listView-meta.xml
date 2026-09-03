@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BENELUX</fullName>
+    <columns>NAME</columns>
+    <columns>Agency_ERP_ID__c</columns>
+    <columns>Agency_Name__c</columns>
+    <columns>Division__c</columns>
+    <columns>Company_ERP_ID__c</columns>
+    <columns>Company_Name__c</columns>
+    <columns>Wide_Area_ID__c</columns>
+    <columns>Wide_Area_Name__c</columns>
+    <columns>Agency_Director__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Country__c</field>
+        <operation>equals</operation>
+        <value>BE,LU,NL</value>
+    </filters>
+    <label>BENELUX</label>
+    <sharedTo>
+        <roleAndSubordinates>BeNeLux</roleAndSubordinates>
+    </sharedTo>
+</ListView>

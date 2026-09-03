@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Amendment on Existing Account</fullName>
+        <default>false</default>
+        <label>Amendment to Existing Account</label>
+    </customValue>
+    <customValue>
+        <fullName>Extension on Existing Account</fullName>
+        <default>false</default>
+        <label>Extension to Existing Account</label>
+    </customValue>
+    <customValue>
+        <fullName>Rebid</fullName>
+        <default>false</default>
+        <label>Rebid</label>
+    </customValue>
+    <customValue>
+        <fullName>New Account</fullName>
+        <default>false</default>
+        <label>New Account</label>
+    </customValue>
+    <customValue>
+        <fullName>Existing Account</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Existing Account</label>
+    </customValue>
+    <masterLabel>Global Business Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

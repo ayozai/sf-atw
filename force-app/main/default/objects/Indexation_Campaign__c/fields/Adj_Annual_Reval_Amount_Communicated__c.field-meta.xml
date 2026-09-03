@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adj_Annual_Reval_Amount_Communicated__c</fullName>
+    <formula>IF(
+Adjusted_Annual_Contractual_Amount__c &lt;&gt; 0,
+Adjusted_Annual_Contractual_Amount__c * Indexation_Percentage_Communicated__c,
+Contract_Amount__c * Indexation_Percentage_Communicated__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Adj. Annual Reval Amount (Communicated)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

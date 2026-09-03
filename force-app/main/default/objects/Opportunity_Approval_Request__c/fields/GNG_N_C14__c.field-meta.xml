@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_N_C14__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL(Payment_Terms__c, &apos;&lt;30 Days&apos;), ISPICKVAL(Payment_Terms__c, &apos;30 Days&apos;)), 4,
+  IF(ISPICKVAL(Payment_Terms__c, &apos;45 Days&apos;), 3,
+    IF(ISPICKVAL(Payment_Terms__c, &apos;60 Days&apos;), 2, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score C1.4 — Délai paiement</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

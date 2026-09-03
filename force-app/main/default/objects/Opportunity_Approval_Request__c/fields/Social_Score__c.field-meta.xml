@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Social_Score__c</fullName>
+    <formula>(  Take_Over_of_Staff_Score__c +  Social_Climate_Score__c +  Social_Engineering_Score__c ) / (  Take_Over_of_Staff_Max_Score__c +  Social_Climate_Max_Score__c +  Social_Engineering_Max_Score__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Social Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

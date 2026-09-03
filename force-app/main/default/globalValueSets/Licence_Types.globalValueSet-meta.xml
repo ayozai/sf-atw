@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Analytics Cloud Integration User</fullName>
+        <default>false</default>
+        <label>Analytics Cloud Integration User</label>
+    </customValue>
+    <customValue>
+        <fullName>Chatter External</fullName>
+        <default>false</default>
+        <label>Chatter External</label>
+    </customValue>
+    <customValue>
+        <fullName>Chatter Free</fullName>
+        <default>false</default>
+        <label>Chatter Free</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Community Plus</fullName>
+        <default>false</default>
+        <label>Customer Community Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Community Plus Login</fullName>
+        <default>false</default>
+        <label>Customer Community Plus Login</label>
+    </customValue>
+    <customValue>
+        <fullName>Guest User License</fullName>
+        <default>false</default>
+        <label>Guest User License</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner Community</fullName>
+        <default>false</default>
+        <label>Partner Community</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Insights Integration User</fullName>
+        <default>false</default>
+        <label>Sales Insights Integration User</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce</fullName>
+        <default>false</default>
+        <label>Salesforce</label>
+    </customValue>
+    <customValue>
+        <fullName>SalesforceIQ Integration User</fullName>
+        <default>false</default>
+        <label>SalesforceIQ Integration User</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics Template Administration</fullName>
+        <default>false</default>
+        <label>Analytics Template Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>Backup and Restore User</fullName>
+        <default>false</default>
+        <label>Backup and Restore User</label>
+    </customValue>
+    <customValue>
+        <fullName>CRM Analytics Plus</fullName>
+        <default>false</default>
+        <label>CRM Analytics Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>CRM User</fullName>
+        <default>false</default>
+        <label>CRM User</label>
+    </customValue>
+    <customValue>
+        <fullName>Einstein Agent</fullName>
+        <default>false</default>
+        <label>Einstein Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>Einstein Agent CWU</fullName>
+        <default>false</default>
+        <label>Einstein Agent CWU</label>
+    </customValue>
+    <customValue>
+        <fullName>Einstein Analytics for Community Members</fullName>
+        <default>false</default>
+        <label>Einstein Analytics for Community Members</label>
+    </customValue>
+    <customValue>
+        <fullName>Einstein Predictions Manager</fullName>
+        <default>false</default>
+        <label>Einstein Predictions Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Einstein Predictions PSL</fullName>
+        <default>false</default>
+        <label>Einstein Predictions PSL</label>
+    </customValue>
+    <customValue>
+        <fullName>Einstein Search</fullName>
+        <default>false</default>
+        <label>Einstein Search</label>
+    </customValue>
+    <customValue>
+        <fullName>Event Monitoring Analytics Apps</fullName>
+        <default>false</default>
+        <label>Event Monitoring Analytics Apps</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Service Dispatcher</fullName>
+        <default>false</default>
+        <label>Field Service Dispatcher</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Service Mobile</fullName>
+        <default>false</default>
+        <label>Field Service Mobile</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Service Scheduling</fullName>
+        <default>false</default>
+        <label>Field Service Scheduling</label>
+    </customValue>
+    <customValue>
+        <fullName>Inbox</fullName>
+        <default>false</default>
+        <label>Inbox</label>
+    </customValue>
+    <customValue>
+        <fullName>Messaging User</fullName>
+        <default>false</default>
+        <label>Messaging User</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Cloud Einstein</fullName>
+        <default>false</default>
+        <label>Sales Cloud Einstein</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Console User</fullName>
+        <default>false</default>
+        <label>Sales Console User</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales User</fullName>
+        <default>false</default>
+        <label>Sales User</label>
+    </customValue>
+    <customValue>
+        <fullName>Service User</fullName>
+        <default>false</default>
+        <label>Service User</label>
+    </customValue>
+    <customValue>
+        <fullName>Slack Service User</fullName>
+        <default>false</default>
+        <label>Slack Service User</label>
+    </customValue>
+    <customValue>
+        <fullName>Standard Einstein Activity Capture User</fullName>
+        <default>false</default>
+        <label>Standard Einstein Activity Capture User</label>
+    </customValue>
+    <customValue>
+        <fullName>Trust Card Manager</fullName>
+        <default>false</default>
+        <label>Trust Card Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Your Account App</fullName>
+        <default>false</default>
+        <label>Your Account App</label>
+    </customValue>
+    <customValue>
+        <fullName>Chatter Answers User</fullName>
+        <default>false</default>
+        <label>Chatter Answers User</label>
+    </customValue>
+    <customValue>
+        <fullName>Flow User</fullName>
+        <default>false</default>
+        <label>Flow User</label>
+    </customValue>
+    <customValue>
+        <fullName>Knowledge User</fullName>
+        <default>false</default>
+        <label>Knowledge User</label>
+    </customValue>
+    <customValue>
+        <fullName>Chat User</fullName>
+        <default>false</default>
+        <label>Chat User</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing User</fullName>
+        <default>false</default>
+        <label>Marketing User</label>
+    </customValue>
+    <customValue>
+        <fullName>Offline User</fullName>
+        <default>false</default>
+        <label>Offline User</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce CRM Content User</fullName>
+        <default>false</default>
+        <label>Salesforce CRM Content User</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Cloud User</fullName>
+        <default>false</default>
+        <label>Service Cloud User</label>
+    </customValue>
+    <customValue>
+        <fullName>Site.com Contributor User</fullName>
+        <default>false</default>
+        <label>Site.com Contributor User</label>
+    </customValue>
+    <customValue>
+        <fullName>Site.com Publisher User</fullName>
+        <default>false</default>
+        <label>Site.com Publisher User</label>
+    </customValue>
+    <customValue>
+        <fullName>WDC User</fullName>
+        <default>false</default>
+        <label>WDC User</label>
+    </customValue>
+    <description>Licence Types to be used for User Licence Audit and corresponding MDT</description>
+    <masterLabel>Licence Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

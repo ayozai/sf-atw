@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>France_AG_Est</fullName>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Contract_Name__c</columns>
+    <columns>Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Contract_Start_Date__c</columns>
+    <columns>Contract_End_Date__c</columns>
+    <columns>Initial_Annual_Revenue__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Corporate_Country__c</field>
+        <operation>equals</operation>
+        <value>France</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contract__c.Global_Standard_Contract</value>
+    </filters>
+    <filters>
+        <field>Owner_Division__c</field>
+        <operation>equals</operation>
+        <value>France AG Est</value>
+    </filters>
+    <label>France AG Est</label>
+</ListView>

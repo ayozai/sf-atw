@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CEE</fullName>
+        <default>false</default>
+        <label>CEE</label>
+    </customValue>
+    <customValue>
+        <fullName>Benelux</fullName>
+        <default>false</default>
+        <label>Benelux</label>
+    </customValue>
+    <customValue>
+        <fullName>France</fullName>
+        <default>false</default>
+        <label>France</label>
+    </customValue>
+    <description>List of region used to categorize procurement item in NZC</description>
+    <masterLabel>NZC Region</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

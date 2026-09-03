@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Filtre</fullName>
+    <columns>NAME</columns>
+    <columns>Site__c</columns>
+    <columns>Account__c</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>Fixed_Fees__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>contains</operation>
+        <value>HENNESSY</value>
+    </filters>
+    <label>HENNESSY</label>
+</ListView>

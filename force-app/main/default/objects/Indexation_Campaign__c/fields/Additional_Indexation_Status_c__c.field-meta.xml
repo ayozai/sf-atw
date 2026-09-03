@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Indexation_Status_c__c</fullName>
+    <label>Additional Indexation Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Communicated to Customer</fullName>
+                <default>false</default>
+                <label>Communicated to Customer</label>
+            </value>
+            <value>
+                <fullName>Negotiation Done</fullName>
+                <default>false</default>
+                <label>Negotiation Done</label>
+            </value>
+            <value>
+                <fullName>Approved by Controlling</fullName>
+                <default>false</default>
+                <label>Approved by Controlling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

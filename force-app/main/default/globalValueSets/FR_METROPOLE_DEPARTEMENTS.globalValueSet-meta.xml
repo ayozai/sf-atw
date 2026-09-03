@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>01_Ain</fullName>
+        <default>false</default>
+        <label>01_Ain</label>
+    </customValue>
+    <customValue>
+        <fullName>02_Aisne</fullName>
+        <default>false</default>
+        <label>02_Aisne</label>
+    </customValue>
+    <customValue>
+        <fullName>03_Allier</fullName>
+        <default>false</default>
+        <label>03_Allier</label>
+    </customValue>
+    <customValue>
+        <fullName>04_Alpes-de-Haute-Provence</fullName>
+        <default>false</default>
+        <label>04_Alpes-de-Haute-Provence</label>
+    </customValue>
+    <customValue>
+        <fullName>05_Hautes-Alpes</fullName>
+        <default>false</default>
+        <label>05_Hautes-Alpes</label>
+    </customValue>
+    <customValue>
+        <fullName>06_Alpes-Maritimes</fullName>
+        <default>false</default>
+        <label>06_Alpes-Maritimes</label>
+    </customValue>
+    <customValue>
+        <fullName>07_Ardèche</fullName>
+        <default>false</default>
+        <label>07_Ardèche</label>
+    </customValue>
+    <customValue>
+        <fullName>08_Ardennes</fullName>
+        <default>false</default>
+        <label>08_Ardennes</label>
+    </customValue>
+    <customValue>
+        <fullName>09_Ariège</fullName>
+        <default>false</default>
+        <label>09_Ariège</label>
+    </customValue>
+    <customValue>
+        <fullName>10_Aube</fullName>
+        <default>false</default>
+        <label>10_Aube</label>
+    </customValue>
+    <customValue>
+        <fullName>11_Aude</fullName>
+        <default>false</default>
+        <label>11_Aude</label>
+    </customValue>
+    <customValue>
+        <fullName>12_Aveyron</fullName>
+        <default>false</default>
+        <label>12_Aveyron</label>
+    </customValue>
+    <customValue>
+        <fullName>13_Bouches-du-Rhône</fullName>
+        <default>false</default>
+        <label>13_Bouches-du-Rhône</label>
+    </customValue>
+    <customValue>
+        <fullName>14_Calvados</fullName>
+        <default>false</default>
+        <label>14_Calvados</label>
+    </customValue>
+    <customValue>
+        <fullName>15_Cantal</fullName>
+        <default>false</default>
+        <label>15_Cantal</label>
+    </customValue>
+    <customValue>
+        <fullName>16_Charente</fullName>
+        <default>false</default>
+        <label>16_Charente</label>
+    </customValue>
+    <customValue>
+        <fullName>17_Charente-Maritime</fullName>
+        <default>false</default>
+        <label>17_Charente-Maritime</label>
+    </customValue>
+    <customValue>
+        <fullName>18_Cher</fullName>
+        <default>false</default>
+        <label>18_Cher</label>
+    </customValue>
+    <customValue>
+        <fullName>19_Corrèze</fullName>
+        <default>false</default>
+        <label>19_Corrèze</label>
+    </customValue>
+    <customValue>
+        <fullName>21_Côte-d&apos;Or</fullName>
+        <default>false</default>
+        <label>21_Côte-d&apos;Or</label>
+    </customValue>
+    <customValue>
+        <fullName>22_Côtes-d&apos;Armor</fullName>
+        <default>false</default>
+        <label>22_Côtes-d&apos;Armor</label>
+    </customValue>
+    <customValue>
+        <fullName>23_Creuse</fullName>
+        <default>false</default>
+        <label>23_Creuse</label>
+    </customValue>
+    <customValue>
+        <fullName>24_Dordogne</fullName>
+        <default>false</default>
+        <label>24_Dordogne</label>
+    </customValue>
+    <customValue>
+        <fullName>25_Doubs</fullName>
+        <default>false</default>
+        <label>25_Doubs</label>
+    </customValue>
+    <customValue>
+        <fullName>26_Drôme</fullName>
+        <default>false</default>
+        <label>26_Drôme</label>
+    </customValue>
+    <customValue>
+        <fullName>27_Eure</fullName>
+        <default>false</default>
+        <label>27_Eure</label>
+    </customValue>
+    <customValue>
+        <fullName>28_Eure-et-Loir</fullName>
+        <default>false</default>
+        <label>28_Eure-et-Loir</label>
+    </customValue>
+    <customValue>
+        <fullName>29_Finistère</fullName>
+        <default>false</default>
+        <label>29_Finistère</label>
+    </customValue>
+    <customValue>
+        <fullName>2A_Corse-du-Sud</fullName>
+        <default>false</default>
+        <label>2A_Corse-du-Sud</label>
+    </customValue>
+    <customValue>
+        <fullName>2B_Haute-Corse</fullName>
+        <default>false</default>
+        <label>2B_Haute-Corse</label>
+    </customValue>
+    <customValue>
+        <fullName>30_Gard</fullName>
+        <default>false</default>
+        <label>30_Gard</label>
+    </customValue>
+    <customValue>
+        <fullName>31_Haute-Garonne</fullName>
+        <default>false</default>
+        <label>31_Haute-Garonne</label>
+    </customValue>
+    <customValue>
+        <fullName>32_Gers</fullName>
+        <default>false</default>
+        <label>32_Gers</label>
+    </customValue>
+    <customValue>
+        <fullName>33_Gironde</fullName>
+        <default>false</default>
+        <label>33_Gironde</label>
+    </customValue>
+    <customValue>
+        <fullName>34_Hérault</fullName>
+        <default>false</default>
+        <label>34_Hérault</label>
+    </customValue>
+    <customValue>
+        <fullName>35_Ille-et-Vilaine</fullName>
+        <default>false</default>
+        <label>35_Ille-et-Vilaine</label>
+    </customValue>
+    <customValue>
+        <fullName>36_Indre</fullName>
+        <default>false</default>
+        <label>36_Indre</label>
+    </customValue>
+    <customValue>
+        <fullName>37_Indre-et-Loire</fullName>
+        <default>false</default>
+        <label>37_Indre-et-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>38_Isère</fullName>
+        <default>false</default>
+        <label>38_Isère</label>
+    </customValue>
+    <customValue>
+        <fullName>39_Jura</fullName>
+        <default>false</default>
+        <label>39_Jura</label>
+    </customValue>
+    <customValue>
+        <fullName>40_Landes</fullName>
+        <default>false</default>
+        <label>40_Landes</label>
+    </customValue>
+    <customValue>
+        <fullName>41_Loir-et-Cher</fullName>
+        <default>false</default>
+        <label>41_Loir-et-Cher</label>
+    </customValue>
+    <customValue>
+        <fullName>42_Loire</fullName>
+        <default>false</default>
+        <label>42_Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>43_Haute-Loire</fullName>
+        <default>false</default>
+        <label>43_Haute-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>44_Loire-Atlantique</fullName>
+        <default>false</default>
+        <label>44_Loire-Atlantique</label>
+    </customValue>
+    <customValue>
+        <fullName>45_Loiret</fullName>
+        <default>false</default>
+        <label>45_Loiret</label>
+    </customValue>
+    <customValue>
+        <fullName>46_Lot</fullName>
+        <default>false</default>
+        <label>46_Lot</label>
+    </customValue>
+    <customValue>
+        <fullName>47_Lot-et-Garonne</fullName>
+        <default>false</default>
+        <label>47_Lot-et-Garonne</label>
+    </customValue>
+    <customValue>
+        <fullName>48_Lozère</fullName>
+        <default>false</default>
+        <label>48_Lozère</label>
+    </customValue>
+    <customValue>
+        <fullName>49_Maine-et-Loire</fullName>
+        <default>false</default>
+        <label>49_Maine-et-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>50_Manche</fullName>
+        <default>false</default>
+        <label>50_Manche</label>
+    </customValue>
+    <customValue>
+        <fullName>51_Marne</fullName>
+        <default>false</default>
+        <label>51_Marne</label>
+    </customValue>
+    <customValue>
+        <fullName>52_Haute-Marne</fullName>
+        <default>false</default>
+        <label>52_Haute-Marne</label>
+    </customValue>
+    <customValue>
+        <fullName>53_Mayenne</fullName>
+        <default>false</default>
+        <label>53_Mayenne</label>
+    </customValue>
+    <customValue>
+        <fullName>54_Meurthe-et-Moselle</fullName>
+        <default>false</default>
+        <label>54_Meurthe-et-Moselle</label>
+    </customValue>
+    <customValue>
+        <fullName>55_Meuse</fullName>
+        <default>false</default>
+        <label>55_Meuse</label>
+    </customValue>
+    <customValue>
+        <fullName>56_Morbihan</fullName>
+        <default>false</default>
+        <label>56_Morbihan</label>
+    </customValue>
+    <customValue>
+        <fullName>57_Moselle</fullName>
+        <default>false</default>
+        <label>57_Moselle</label>
+    </customValue>
+    <customValue>
+        <fullName>58_Nièvre</fullName>
+        <default>false</default>
+        <label>58_Nièvre</label>
+    </customValue>
+    <customValue>
+        <fullName>59_Nord</fullName>
+        <default>false</default>
+        <label>59_Nord</label>
+    </customValue>
+    <customValue>
+        <fullName>60_Oise</fullName>
+        <default>false</default>
+        <label>60_Oise</label>
+    </customValue>
+    <customValue>
+        <fullName>61_Orne</fullName>
+        <default>false</default>
+        <label>61_Orne</label>
+    </customValue>
+    <customValue>
+        <fullName>62_Pas-de-Calais</fullName>
+        <default>false</default>
+        <label>62_Pas-de-Calais</label>
+    </customValue>
+    <customValue>
+        <fullName>63_Puy-de-Dôme</fullName>
+        <default>false</default>
+        <label>63_Puy-de-Dôme</label>
+    </customValue>
+    <customValue>
+        <fullName>64_Pyrénées-Atlantiques</fullName>
+        <default>false</default>
+        <label>64_Pyrénées-Atlantiques</label>
+    </customValue>
+    <customValue>
+        <fullName>65_Hautes-Pyrénées</fullName>
+        <default>false</default>
+        <label>65_Hautes-Pyrénées</label>
+    </customValue>
+    <customValue>
+        <fullName>66_Pyrénées-Orientales</fullName>
+        <default>false</default>
+        <label>66_Pyrénées-Orientales</label>
+    </customValue>
+    <customValue>
+        <fullName>67_Bas-Rhin</fullName>
+        <default>false</default>
+        <label>67_Bas-Rhin</label>
+    </customValue>
+    <customValue>
+        <fullName>68_Haut-Rhin</fullName>
+        <default>false</default>
+        <label>68_Haut-Rhin</label>
+    </customValue>
+    <customValue>
+        <fullName>69_Rhône</fullName>
+        <default>false</default>
+        <label>69_Rhône</label>
+    </customValue>
+    <customValue>
+        <fullName>70_Haute-Saône</fullName>
+        <default>false</default>
+        <label>70_Haute-Saône</label>
+    </customValue>
+    <customValue>
+        <fullName>71_Saône-et-Loire</fullName>
+        <default>false</default>
+        <label>71_Saône-et-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>72_Sarthe</fullName>
+        <default>false</default>
+        <label>72_Sarthe</label>
+    </customValue>
+    <customValue>
+        <fullName>73_Savoie</fullName>
+        <default>false</default>
+        <label>73_Savoie</label>
+    </customValue>
+    <customValue>
+        <fullName>74_Haute-Savoie</fullName>
+        <default>false</default>
+        <label>74_Haute-Savoie</label>
+    </customValue>
+    <customValue>
+        <fullName>75_Paris</fullName>
+        <default>false</default>
+        <label>75_Paris</label>
+    </customValue>
+    <customValue>
+        <fullName>76_Seine-Maritime</fullName>
+        <default>false</default>
+        <label>76_Seine-Maritime</label>
+    </customValue>
+    <customValue>
+        <fullName>77_Seine-et-Marne</fullName>
+        <default>false</default>
+        <label>77_Seine-et-Marne</label>
+    </customValue>
+    <customValue>
+        <fullName>78_Yvelines</fullName>
+        <default>false</default>
+        <label>78_Yvelines</label>
+    </customValue>
+    <customValue>
+        <fullName>79_Deux-Sèvres</fullName>
+        <default>false</default>
+        <label>79_Deux-Sèvres</label>
+    </customValue>
+    <customValue>
+        <fullName>80_Somme</fullName>
+        <default>false</default>
+        <label>80_Somme</label>
+    </customValue>
+    <customValue>
+        <fullName>81_Tarn</fullName>
+        <default>false</default>
+        <label>81_Tarn</label>
+    </customValue>
+    <customValue>
+        <fullName>82_Tarn-et-Garonne</fullName>
+        <default>false</default>
+        <label>82_Tarn-et-Garonne</label>
+    </customValue>
+    <customValue>
+        <fullName>83_Var</fullName>
+        <default>false</default>
+        <label>83_Var</label>
+    </customValue>
+    <customValue>
+        <fullName>84_Vaucluse</fullName>
+        <default>false</default>
+        <label>84_Vaucluse</label>
+    </customValue>
+    <customValue>
+        <fullName>85_Vendée</fullName>
+        <default>false</default>
+        <label>85_Vendée</label>
+    </customValue>
+    <customValue>
+        <fullName>86_Vienne</fullName>
+        <default>false</default>
+        <label>86_Vienne</label>
+    </customValue>
+    <customValue>
+        <fullName>87_Haute-Vienne</fullName>
+        <default>false</default>
+        <label>87_Haute-Vienne</label>
+    </customValue>
+    <customValue>
+        <fullName>88_Vosges</fullName>
+        <default>false</default>
+        <label>88_Vosges</label>
+    </customValue>
+    <customValue>
+        <fullName>89_Yonne</fullName>
+        <default>false</default>
+        <label>89_Yonne</label>
+    </customValue>
+    <customValue>
+        <fullName>90_Territoire de Belfort</fullName>
+        <default>false</default>
+        <label>90_Territoire de Belfort</label>
+    </customValue>
+    <customValue>
+        <fullName>91_Essonne</fullName>
+        <default>false</default>
+        <label>91_Essonne</label>
+    </customValue>
+    <customValue>
+        <fullName>92_Hauts-de-Seine</fullName>
+        <default>false</default>
+        <label>92_Hauts-de-Seine</label>
+    </customValue>
+    <customValue>
+        <fullName>93_Seine-Saint-Denis</fullName>
+        <default>false</default>
+        <label>93_Seine-Saint-Denis</label>
+    </customValue>
+    <customValue>
+        <fullName>94_Val-de-Marne</fullName>
+        <default>false</default>
+        <label>94_Val-de-Marne</label>
+    </customValue>
+    <customValue>
+        <fullName>95_Val-d&apos;Oise</fullName>
+        <default>false</default>
+        <label>95_Val-d&apos;Oise</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi-Départements</fullName>
+        <default>false</default>
+        <label>Multi-Départements</label>
+    </customValue>
+    <customValue>
+        <fullName>01	Ain</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>01	Ain</label>
+    </customValue>
+    <customValue>
+        <fullName>95	Val-d&apos;Oise</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>95	Val-d&apos;Oise</label>
+    </customValue>
+    <customValue>
+        <fullName>94	Val-de-Marne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>94	Val-de-Marne</label>
+    </customValue>
+    <customValue>
+        <fullName>93	Seine-Saint-Denis</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>93	Seine-Saint-Denis</label>
+    </customValue>
+    <customValue>
+        <fullName>92	Hauts-de-Seine</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>92	Hauts-de-Seine</label>
+    </customValue>
+    <customValue>
+        <fullName>91	Essonne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>91	Essonne</label>
+    </customValue>
+    <customValue>
+        <fullName>90	Territoire de Belfort</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>90	Territoire de Belfort</label>
+    </customValue>
+    <customValue>
+        <fullName>89	Yonne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>89	Yonne</label>
+    </customValue>
+    <customValue>
+        <fullName>88	Vosges</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>88	Vosges</label>
+    </customValue>
+    <customValue>
+        <fullName>87	Haute-Vienne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>87	Haute-Vienne</label>
+    </customValue>
+    <customValue>
+        <fullName>86	Vienne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>86	Vienne</label>
+    </customValue>
+    <customValue>
+        <fullName>85	Vendée</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>85	Vendée</label>
+    </customValue>
+    <customValue>
+        <fullName>84	Vaucluse</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>84	Vaucluse</label>
+    </customValue>
+    <customValue>
+        <fullName>83	Var</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>83	Var</label>
+    </customValue>
+    <customValue>
+        <fullName>82	Tarn-et-Garonne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>82	Tarn-et-Garonne</label>
+    </customValue>
+    <customValue>
+        <fullName>81	Tarn</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>81	Tarn</label>
+    </customValue>
+    <customValue>
+        <fullName>80	Somme</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>80	Somme</label>
+    </customValue>
+    <customValue>
+        <fullName>79	Deux-Sèvres</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>79	Deux-Sèvres</label>
+    </customValue>
+    <customValue>
+        <fullName>78	Yvelines</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>78	Yvelines</label>
+    </customValue>
+    <customValue>
+        <fullName>77	Seine-et-Marne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>77	Seine-et-Marne</label>
+    </customValue>
+    <customValue>
+        <fullName>76	Seine-Maritime</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>76	Seine-Maritime</label>
+    </customValue>
+    <customValue>
+        <fullName>75	Paris</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>75	Paris</label>
+    </customValue>
+    <customValue>
+        <fullName>74	Haute-Savoie</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>74	Haute-Savoie</label>
+    </customValue>
+    <customValue>
+        <fullName>73	Savoie</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>73	Savoie</label>
+    </customValue>
+    <customValue>
+        <fullName>72	Sarthe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>72	Sarthe</label>
+    </customValue>
+    <customValue>
+        <fullName>71	Saône-et-Loire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>71	Saône-et-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>70	Haute-Saône</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>70	Haute-Saône</label>
+    </customValue>
+    <customValue>
+        <fullName>69	Rhône</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>69	Rhône</label>
+    </customValue>
+    <customValue>
+        <fullName>68	Haut-Rhin</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>68	Haut-Rhin</label>
+    </customValue>
+    <customValue>
+        <fullName>67	Bas-Rhin</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>67	Bas-Rhin</label>
+    </customValue>
+    <customValue>
+        <fullName>66	Pyrénées-Orientales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>66	Pyrénées-Orientales</label>
+    </customValue>
+    <customValue>
+        <fullName>65	Hautes-Pyrénées</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>65	Hautes-Pyrénées</label>
+    </customValue>
+    <customValue>
+        <fullName>64	Pyrénées-Atlantiques</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>64	Pyrénées-Atlantiques</label>
+    </customValue>
+    <customValue>
+        <fullName>63	Puy-de-Dôme</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>63	Puy-de-Dôme</label>
+    </customValue>
+    <customValue>
+        <fullName>62	Pas-de-Calais</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>62	Pas-de-Calais</label>
+    </customValue>
+    <customValue>
+        <fullName>61	Orne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>61	Orne</label>
+    </customValue>
+    <customValue>
+        <fullName>60	Oise</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>60	Oise</label>
+    </customValue>
+    <customValue>
+        <fullName>59	Nord</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>59	Nord</label>
+    </customValue>
+    <customValue>
+        <fullName>58	Nièvre</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>58	Nièvre</label>
+    </customValue>
+    <customValue>
+        <fullName>57	Moselle</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>57	Moselle</label>
+    </customValue>
+    <customValue>
+        <fullName>56	Morbihan</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>56	Morbihan</label>
+    </customValue>
+    <customValue>
+        <fullName>55	Meuse</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>55	Meuse</label>
+    </customValue>
+    <customValue>
+        <fullName>54	Meurthe-et-Moselle</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>54	Meurthe-et-Moselle</label>
+    </customValue>
+    <customValue>
+        <fullName>53	Mayenne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>53	Mayenne</label>
+    </customValue>
+    <customValue>
+        <fullName>52	Haute-Marne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>52	Haute-Marne</label>
+    </customValue>
+    <customValue>
+        <fullName>51	Marne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>51	Marne</label>
+    </customValue>
+    <customValue>
+        <fullName>50	Manche</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>50	Manche</label>
+    </customValue>
+    <customValue>
+        <fullName>49	Maine-et-Loire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>49	Maine-et-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>48	Lozère</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>48	Lozère</label>
+    </customValue>
+    <customValue>
+        <fullName>47	Lot-et-Garonne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>47	Lot-et-Garonne</label>
+    </customValue>
+    <customValue>
+        <fullName>46	Lot</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>46	Lot</label>
+    </customValue>
+    <customValue>
+        <fullName>45	Loiret</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>45	Loiret</label>
+    </customValue>
+    <customValue>
+        <fullName>44	Loire-Atlantique</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>44	Loire-Atlantique</label>
+    </customValue>
+    <customValue>
+        <fullName>43	Haute-Loire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>43	Haute-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>42	Loire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>42	Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>41	Loir-et-Cher</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>41	Loir-et-Cher</label>
+    </customValue>
+    <customValue>
+        <fullName>40	Landes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>40	Landes</label>
+    </customValue>
+    <customValue>
+        <fullName>39	Jura</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>39	Jura</label>
+    </customValue>
+    <customValue>
+        <fullName>38	Isère</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>38	Isère</label>
+    </customValue>
+    <customValue>
+        <fullName>37	Indre-et-Loire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>37	Indre-et-Loire</label>
+    </customValue>
+    <customValue>
+        <fullName>36	Indre</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>36	Indre</label>
+    </customValue>
+    <customValue>
+        <fullName>35	Ille-et-Vilaine</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>35	Ille-et-Vilaine</label>
+    </customValue>
+    <customValue>
+        <fullName>34	Hérault</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>34	Hérault</label>
+    </customValue>
+    <customValue>
+        <fullName>33	Gironde</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>33	Gironde</label>
+    </customValue>
+    <customValue>
+        <fullName>32	Gers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>32	Gers</label>
+    </customValue>
+    <customValue>
+        <fullName>31	Haute-Garonne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>31	Haute-Garonne</label>
+    </customValue>
+    <customValue>
+        <fullName>30	Gard</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>30	Gard</label>
+    </customValue>
+    <customValue>
+        <fullName>2B	Haute-Corse</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>2B	Haute-Corse</label>
+    </customValue>
+    <customValue>
+        <fullName>2A	Corse-du-Sud</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>2A	Corse-du-Sud</label>
+    </customValue>
+    <customValue>
+        <fullName>29	Finistère</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>29	Finistère</label>
+    </customValue>
+    <customValue>
+        <fullName>28	Eure-et-Loir</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>28	Eure-et-Loir</label>
+    </customValue>
+    <customValue>
+        <fullName>27	Eure</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>27	Eure</label>
+    </customValue>
+    <customValue>
+        <fullName>26	Drôme</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>26	Drôme</label>
+    </customValue>
+    <customValue>
+        <fullName>25	Doubs</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>25	Doubs</label>
+    </customValue>
+    <customValue>
+        <fullName>24	Dordogne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>24	Dordogne</label>
+    </customValue>
+    <customValue>
+        <fullName>23	Creuse</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>23	Creuse</label>
+    </customValue>
+    <customValue>
+        <fullName>22	Côtes-d&apos;Armor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>22	Côtes-d&apos;Armor</label>
+    </customValue>
+    <customValue>
+        <fullName>21	Côte-d&apos;Or</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>21	Côte-d&apos;Or</label>
+    </customValue>
+    <customValue>
+        <fullName>19	Corrèze</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>19	Corrèze</label>
+    </customValue>
+    <customValue>
+        <fullName>18	Cher</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>18	Cher</label>
+    </customValue>
+    <customValue>
+        <fullName>17	Charente-Maritime</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>17	Charente-Maritime</label>
+    </customValue>
+    <customValue>
+        <fullName>16	Charente</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>16	Charente</label>
+    </customValue>
+    <customValue>
+        <fullName>15	Cantal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>15	Cantal</label>
+    </customValue>
+    <customValue>
+        <fullName>14	Calvados</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>14	Calvados</label>
+    </customValue>
+    <customValue>
+        <fullName>13	Bouches-du-Rhône</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>13	Bouches-du-Rhône</label>
+    </customValue>
+    <customValue>
+        <fullName>12	Aveyron</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>12	Aveyron</label>
+    </customValue>
+    <customValue>
+        <fullName>11	Aude</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>11	Aude</label>
+    </customValue>
+    <customValue>
+        <fullName>10	Aube</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>10	Aube</label>
+    </customValue>
+    <customValue>
+        <fullName>09	Ariège</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>09	Ariège</label>
+    </customValue>
+    <customValue>
+        <fullName>08	Ardennes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>08	Ardennes</label>
+    </customValue>
+    <customValue>
+        <fullName>07	Ardèche</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>07	Ardèche</label>
+    </customValue>
+    <customValue>
+        <fullName>06	Alpes-Maritimes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>06	Alpes-Maritimes</label>
+    </customValue>
+    <customValue>
+        <fullName>05	Hautes-Alpes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>05	Hautes-Alpes</label>
+    </customValue>
+    <customValue>
+        <fullName>04	Alpes-de-Haute-Provence</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>04	Alpes-de-Haute-Provence</label>
+    </customValue>
+    <customValue>
+        <fullName>03	Allier</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>03	Allier</label>
+    </customValue>
+    <customValue>
+        <fullName>02	Aisne</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>02	Aisne</label>
+    </customValue>
+    <masterLabel>FR_METROPOLE_DEPARTEMENTS</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

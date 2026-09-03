@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effective_Date</fullName>
+    <active>true</active>
+    <description>Please select the first day of a month as an effective date for wins, upsells and renewals.
+Please select the last day of a month as an effective date for losses.</description>
+    <errorConditionFormula>$Profile.Name&lt;&gt;&apos;Automated Process&apos; &amp;&amp;
+$Profile.Name&lt;&gt;&apos;System Administrator&apos; &amp;&amp;
+$Profile.Name&lt;&gt;&apos;Global Delegated Admin&apos; &amp;&amp;
+
+DAY(Effective_Date__c) &lt;&gt; 1
+
+
+/*((!ISPICKVAL( Type__c , &quot;Loss&quot;) &amp;&amp; DAY(Effective_Date__c) &lt;&gt; 1)
+||
+(ISPICKVAL( Type__c , &quot;Loss&quot;) &amp;&amp; Effective_Date__c &lt;&gt; DATE(
+                YEAR(Effective_Date__c),
+                MONTH(Effective_Date__c),
+                CASE(
+                    MONTH(Effective_Date__c),
+                    1, 31,
+                    2, IF(MOD(YEAR(Effective_Date__c), 4) = 0 &amp;&amp; (MOD(YEAR(Effective_Date__c), 100) &lt;&gt; 0 || MOD(YEAR(Effective_Date__c), 400) = 0), 29, 28),
+                    3, 31,
+                    4, 30,
+                    5, 31,
+                    6, 30,
+                    7, 31,
+                    8, 31,
+                    9, 30,
+                    10, 31,
+                    11, 30,
+                    12, 31,
+                    31
+                )
+            )))
+*/
+
+
+/*
+La date d&apos;effet doit être le premier jour d&apos;un mois pour les prises, avenants et renouvellements. La date doit être le dernier jour du mois pour les pertes.
+*/</errorConditionFormula>
+    <errorDisplayField>Effective_Date__c</errorDisplayField>
+    <errorMessage>Please select the first day of a month as an effective date.</errorMessage>
+</ValidationRule>

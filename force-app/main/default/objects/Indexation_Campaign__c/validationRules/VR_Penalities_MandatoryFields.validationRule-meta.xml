@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Penalities_MandatoryFields</fullName>
+    <active>true</active>
+    <description>When the Penalities__c is checked, user must provide complementary information</description>
+    <errorConditionFormula>$Profile.Name&lt;&gt;&apos;System Administrator&apos;
+
+&amp;&amp; $Profile.Name&lt;&gt;&apos;Global Delegated Admin&apos;
+
+&amp;&amp; Penalities__c = true
+
+&amp;&amp; ( ISBLANK(Penalities_Amount__c)    
+
+   || ISBLANK( Penalities_Comments__c ) 
+
+   )</errorConditionFormula>
+    <errorMessage>Please provide the following fields : Penalities Amount, Penalities Comments</errorMessage>
+</ValidationRule>

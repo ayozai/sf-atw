@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Inbox</label>
+    <protected>false</protected>
+    <values>
+        <field>Activity_Based_On_Login__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Cost_Period__c</field>
+        <value xsi:type="xsd:string">Monthly</value>
+    </values>
+    <values>
+        <field>Cost__c</field>
+        <value xsi:type="xsd:double">20.0</value>
+    </values>
+    <values>
+        <field>End_Date__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Feature_Licence_User_Field_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Feature_Licence__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Licence_Type__c</field>
+        <value xsi:type="xsd:string">Inbox</value>
+    </values>
+    <values>
+        <field>Start_Date__c</field>
+        <value xsi:type="xsd:date">2023-01-01</value>
+    </values>
+    <values>
+        <field>User_Profile_Licence__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Less than 1 Million</fullName>
+        <default>false</default>
+        <label>Less than 1 Million</label>
+    </customValue>
+    <customValue>
+        <fullName>from 1 to 5 Million</fullName>
+        <default>false</default>
+        <label>from 1 to 5 Million</label>
+    </customValue>
+    <customValue>
+        <fullName>from 5 to 50 Million</fullName>
+        <default>false</default>
+        <label>from 5 to 50 Million</label>
+    </customValue>
+    <customValue>
+        <fullName>from 50 to 100 Million</fullName>
+        <default>false</default>
+        <label>from 50 to 100 Million</label>
+    </customValue>
+    <customValue>
+        <fullName>from 100 to 200 Million</fullName>
+        <default>false</default>
+        <label>from 100 to 200 Million</label>
+    </customValue>
+    <customValue>
+        <fullName>More than 200 Million</fullName>
+        <default>false</default>
+        <label>More than 200 Million</label>
+    </customValue>
+    <description>List of company turnover coming from Dynamics in France</description>
+    <masterLabel>Global Company Turnover</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

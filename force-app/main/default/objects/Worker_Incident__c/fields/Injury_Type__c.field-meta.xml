@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Injury_Type__c</fullName>
+    <label>Injury Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Bruises</fullName>
+                <default>false</default>
+                <label>Bruises</label>
+            </value>
+            <value>
+                <fullName>Cervical injury</fullName>
+                <default>false</default>
+                <label>Cervical injury</label>
+            </value>
+            <value>
+                <fullName>Cut</fullName>
+                <default>false</default>
+                <label>Cut</label>
+            </value>
+            <value>
+                <fullName>Dislocation</fullName>
+                <default>false</default>
+                <label>Dislocation</label>
+            </value>
+            <value>
+                <fullName>Faintness, malaise</fullName>
+                <default>false</default>
+                <label>Faintness, malaise</label>
+            </value>
+            <value>
+                <fullName>Fracture</fullName>
+                <default>false</default>
+                <label>Fracture</label>
+            </value>
+            <value>
+                <fullName>Haematoma</fullName>
+                <default>false</default>
+                <label>Haematoma</label>
+            </value>
+            <value>
+                <fullName>Lombosciatic</fullName>
+                <default>false</default>
+                <label>Lombosciatic</label>
+            </value>
+            <value>
+                <fullName>Lumbago</fullName>
+                <default>false</default>
+                <label>Lumbago</label>
+            </value>
+            <value>
+                <fullName>Muscle tear</fullName>
+                <default>false</default>
+                <label>Muscle tear</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pain</fullName>
+                <default>false</default>
+                <label>Pain</label>
+            </value>
+            <value>
+                <fullName>Psychological shock</fullName>
+                <default>false</default>
+                <label>Psychological shock</label>
+            </value>
+            <value>
+                <fullName>Redness, irritation</fullName>
+                <default>false</default>
+                <label>Redness, irritation</label>
+            </value>
+            <value>
+                <fullName>Scrape, scratch</fullName>
+                <default>false</default>
+                <label>Scrape, scratch</label>
+            </value>
+            <value>
+                <fullName>Sprain</fullName>
+                <default>false</default>
+                <label>Sprain</label>
+            </value>
+            <value>
+                <fullName>Superficial wound</fullName>
+                <default>false</default>
+                <label>Superficial wound</label>
+            </value>
+            <value>
+                <fullName>Tendonitis</fullName>
+                <default>false</default>
+                <label>Tendonitis</label>
+            </value>
+            <value>
+                <fullName>Trauma</fullName>
+                <default>false</default>
+                <label>Trauma</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Wound</fullName>
+                <default>false</default>
+                <label>Wound</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

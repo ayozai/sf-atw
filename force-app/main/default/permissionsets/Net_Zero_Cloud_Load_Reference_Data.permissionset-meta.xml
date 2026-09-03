@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>View and upload datasets by using Load Reference Data.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Net Zero Cloud Load Reference Data</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageLoadReferenceData</name>
+    </userPermissions>
+</PermissionSet>

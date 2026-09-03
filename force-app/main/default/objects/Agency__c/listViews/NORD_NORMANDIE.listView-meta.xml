@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NORD_NORMANDIE</fullName>
+    <columns>Agency_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Agency_ERP_ID__c</columns>
+    <columns>Agency_Director__c</columns>
+    <columns>Wide_Area_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Wide_Area_Name__c</field>
+        <operation>startsWith</operation>
+    </filters>
+    <label>NORD NORMANDIE</label>
+</ListView>

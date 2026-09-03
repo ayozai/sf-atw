@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FRANCE_SME_required_field</fullName>
+    <active>false</active>
+    <description>The SME field is required for France</description>
+    <errorConditionFormula>!ISCHANGED(Status__c) &amp;&amp; 
+!ISCHANGED(Number_of_Contacts__c) &amp;&amp; 
+!ISCHANGED(Attachments__c) &amp;&amp;
+$UserRole.DeveloperName&lt;&gt;&apos;France_BeNeLux_Africa&apos; &amp;&amp; 
+$Profile.Name&lt;&gt;&apos;System Administrator&apos; &amp;&amp; 
+$Profile.Name &lt;&gt;&apos;Global Delegated Admin&apos; &amp;&amp; 
+$Profile.Name &lt;&gt;&apos;Global Controlling User&apos;
+&amp;&amp; Corporate_Country__c = &quot;France&quot;
+&amp;&amp; ISPICKVAL( SME__c ,&quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>SME__c</errorDisplayField>
+    <errorMessage>Please select a SME</errorMessage>
+</ValidationRule>

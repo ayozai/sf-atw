@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Airport Services</fullName>
+        <default>false</default>
+        <label>Airport Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering</fullName>
+        <default>false</default>
+        <label>Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning and Janitorial Services</fullName>
+        <default>false</default>
+        <label>Cleaning and Janitorial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Management</fullName>
+        <default>false</default>
+        <label>Energy Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Front of House and Concierge</fullName>
+        <default>false</default>
+        <label>Front of House and Concierge</label>
+    </customValue>
+    <customValue>
+        <fullName>Handling Services</fullName>
+        <default>false</default>
+        <label>Handling Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Processes</fullName>
+        <default>false</default>
+        <label>Industrial Processes</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping</fullName>
+        <default>false</default>
+        <label>Landscaping</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics Services</fullName>
+        <default>false</default>
+        <label>Logistics Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Mail Management</fullName>
+        <default>false</default>
+        <label>Mail Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Services</fullName>
+        <default>false</default>
+        <label>Management Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Pest Control</fullName>
+        <default>false</default>
+        <label>Pest Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Projects</fullName>
+        <default>false</default>
+        <label>Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>Security</fullName>
+        <default>false</default>
+        <label>Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Soft Services</fullName>
+        <default>false</default>
+        <label>Soft Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Space Management</fullName>
+        <default>false</default>
+        <label>Space Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Services</fullName>
+        <default>false</default>
+        <label>Technical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Total Facilities Management Services</fullName>
+        <default>false</default>
+        <label>Total Facilities Management Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management</fullName>
+        <default>false</default>
+        <label>Waste Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Indoor Plant</fullName>
+        <default>false</default>
+        <label>Indoor Plant</label>
+    </customValue>
+    <customValue>
+        <fullName>Outsourced Workforce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Outsourced Workforce</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialist Window Cleaning</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Specialist Window Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;E Frameworks</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>M&amp;E Frameworks</label>
+    </customValue>
+    <customValue>
+        <fullName>Air Conditioning</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Air Conditioning</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;E Projects</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>M&amp;E Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>Fire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fire</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Multi</label>
+    </customValue>
+    <customValue>
+        <fullName>Cabling &amp; Networks</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cabling &amp; Networks</label>
+    </customValue>
+    <description>List of Primary Services agreed on August 2018. 	Specialist Window Cleaning added 19th January 2022</description>
+    <masterLabel>Global Primary Services</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

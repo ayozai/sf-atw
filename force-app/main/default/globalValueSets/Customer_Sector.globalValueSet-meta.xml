@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agriculture and Food Industry</fullName>
+        <default>false</default>
+        <label>Agriculture and Food Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Air Transportation</fullName>
+        <default>false</default>
+        <label>Air Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Bank Services</fullName>
+        <default>false</default>
+        <label>Bank Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Contruction</fullName>
+        <default>false</default>
+        <label>Building Contruction</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Services</fullName>
+        <default>false</default>
+        <label>Business Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering</fullName>
+        <default>false</default>
+        <label>Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemical Industry</fullName>
+        <default>false</default>
+        <label>Chemical Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Communications Services</fullName>
+        <default>false</default>
+        <label>Communications Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Electronic Industry</fullName>
+        <default>false</default>
+        <label>Electronic Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Production Industry</fullName>
+        <default>false</default>
+        <label>Energy Production Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Furniture Industry</fullName>
+        <default>false</default>
+        <label>Furniture Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Glass and Concrete Industry</fullName>
+        <default>false</default>
+        <label>Glass and Concrete Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare</fullName>
+        <default>false</default>
+        <label>Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Holding</fullName>
+        <default>false</default>
+        <label>Holding</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotel Industry</fullName>
+        <default>false</default>
+        <label>Hotel Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Services</fullName>
+        <default>false</default>
+        <label>Insurance Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal Services</fullName>
+        <default>false</default>
+        <label>Legal Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics</fullName>
+        <default>false</default>
+        <label>Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Machinery Industry</fullName>
+        <default>false</default>
+        <label>Machinery Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing Industry</fullName>
+        <default>false</default>
+        <label>Manufacturing Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Media Industry</fullName>
+        <default>false</default>
+        <label>Media Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Industry</fullName>
+        <default>false</default>
+        <label>Medical Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Metal Industry</fullName>
+        <default>false</default>
+        <label>Metal Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining Industry</fullName>
+        <default>false</default>
+        <label>Mining Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil Industry</fullName>
+        <default>false</default>
+        <label>Oil Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Services</fullName>
+        <default>false</default>
+        <label>Other Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Transportation</fullName>
+        <default>false</default>
+        <label>Other Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Paper Industry</fullName>
+        <default>false</default>
+        <label>Paper Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Services</fullName>
+        <default>false</default>
+        <label>Personal Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Plastics Industry</fullName>
+        <default>false</default>
+        <label>Plastics Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Administration</fullName>
+        <default>false</default>
+        <label>Public Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>Rail Transportation</fullName>
+        <default>false</default>
+        <label>Rail Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate</fullName>
+        <default>false</default>
+        <label>Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Sports, Leisure &amp; Tourism</fullName>
+        <default>false</default>
+        <label>Sports, Leisure &amp; Tourism</label>
+    </customValue>
+    <customValue>
+        <fullName>Tabacco Industry</fullName>
+        <default>false</default>
+        <label>Tabacco Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Textile Industry</fullName>
+        <default>false</default>
+        <label>Textile Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation Equipment</fullName>
+        <default>false</default>
+        <label>Transportation Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation Services</fullName>
+        <default>false</default>
+        <label>Transportation Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Urban Transport</fullName>
+        <default>false</default>
+        <label>Urban Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Utilities</fullName>
+        <default>false</default>
+        <label>Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Transportation</fullName>
+        <default>false</default>
+        <label>Water Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Industry</fullName>
+        <default>false</default>
+        <label>Wood Industry</label>
+    </customValue>
+    <masterLabel>Customer Sector</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

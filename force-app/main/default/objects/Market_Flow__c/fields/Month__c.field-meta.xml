@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL($User.LanguageLocaleKey,&quot;fr&quot;),
+   CASE(MONTH(Effective_Date__c),
+   1, &quot;Janvier&quot;,
+   2, &quot;Fevrier&quot;,
+   3, &quot;Mars&quot;, 
+   4, &quot;Avril&quot;, 
+   5, &quot;Mai&quot;, 
+   6, &quot;Juin&quot;,
+   7, &quot;Juillet&quot;,
+   8, &quot;Aout&quot;,
+   9, &quot;Septembre&quot;,
+   10, &quot;Octobre&quot;,
+   11, &quot;Novembre&quot;,
+   12, &quot;Decembre&quot;,
+   &quot;None&quot;), 
+
+   CASE(MONTH(Effective_Date__c),
+   1, &quot;January&quot;,
+   2, &quot;February&quot;,
+   3, &quot;March&quot;, 
+   4, &quot;April&quot;, 
+   5, &quot;May&quot;, 
+   6, &quot;June&quot;,
+   7, &quot;July&quot;,
+   8, &quot;August&quot;,
+   9, &quot;September&quot;,
+   10, &quot;October&quot;,
+   11, &quot;November&quot;,
+   12, &quot;December&quot;,
+   &quot;None&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Month Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

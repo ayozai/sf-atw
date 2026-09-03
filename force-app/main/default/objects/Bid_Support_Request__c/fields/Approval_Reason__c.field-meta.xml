@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Reason__c</fullName>
+    <description>When the ‘Approval’ status is updated to ‘Approved’ by the SD, prompt them to enter the reasons why they have approved the request in this field.</description>
+    <inlineHelpText>Enter the reasons why this Bid Support Request has been approved.</inlineHelpText>
+    <label>Approval Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

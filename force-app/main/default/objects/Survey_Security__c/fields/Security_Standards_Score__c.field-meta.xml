@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Security_Standards_Score__c</fullName>
+    <formula>( (  Rate_Security_Officers_record_keeping__c  
++ CASE(Overall_security_spec_being_delivered__c  , &quot;Yes&quot;, 5, &quot;No&quot;, 0, 0) 
++  (our_standard_of_Security_across_site__c ) )
+/ ( 7 + 5 + 7) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Security Standards Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

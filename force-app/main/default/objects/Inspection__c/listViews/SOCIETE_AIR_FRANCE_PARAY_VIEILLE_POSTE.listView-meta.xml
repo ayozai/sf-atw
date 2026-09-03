@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOCIETE_AIR_FRANCE_PARAY_VIEILLE_POSTE</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Site__c</columns>
+    <columns>Audit_Date_Time__c</columns>
+    <columns>Status__c</columns>
+    <columns>Requirement__c</columns>
+    <columns>Score__c</columns>
+    <columns>Primary_Service__c</columns>
+    <columns>Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>SOCIETE AIR FRANCE PARAY VIEILLE POSTE</value>
+    </filters>
+    <label>SOCIETE AIR FRANCE PARAY VIEILLE POSTE</label>
+    <sharedTo>
+        <group>FM_FR_AIR_FRANCE</group>
+    </sharedTo>
+</ListView>

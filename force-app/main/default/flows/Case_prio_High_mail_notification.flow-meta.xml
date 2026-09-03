@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Copy_1_of_Send_Email</name>
+        <label>Send Email support adress</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recipientAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>Account_Atalian_support_email_adress.Atalian_Support_Email_Address__c</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>one.atalian@atalianworld.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subjecttexte</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>&lt;p&gt;{!emailBody}&lt;/p&gt;</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email&quot;</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Loop_on_Team_Members</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>recipientAddresses</name>
+            <value>
+                <collectionElements>
+                    <elementReference>Get_Member_Email.Email</elementReference>
+                </collectionElements>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>one.atalian@atalianworld.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subjecttexte</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>&lt;p&gt;{!emailBody}&lt;/p&gt;</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Has_Members</name>
+        <label>Has Members</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account_Team_Members</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_on_Team_Members</targetReference>
+            </connector>
+            <label>yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Support_Email</name>
+        <label>Support Email ?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>not Exist</defaultConnectorLabel>
+        <rules>
+            <name>Exist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Account_Atalian_support_email_adress.Atalian_Support_Email_Address__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Send_Email</targetReference>
+            </connector>
+            <label>Exist</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Case prio High mail notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case prio High mail notification</label>
+    <loops>
+        <name>Loop_on_Team_Members</name>
+        <label>Loop on Team Members</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_Account_Team_Members</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Get_Member_Email</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Support_Email</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Account_Atalian_support_email_adress</name>
+        <label>Account Atalian support email adress</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Account_Team_Members</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Account_Team_Members</name>
+        <label>Get Account Team Members</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Has_Members</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6)</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer Service Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Operational Lead</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Partner</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Site Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QSHE Manager</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AccountTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Member_Email</name>
+        <label>Get Member Email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_on_Team_Members.User.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Account_Atalian_support_email_adress</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Priority</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>emailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;div style=&quot;font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333333;&quot;&gt;
+  &lt;div style=&quot;background-color: #FFFFFF; padding: 30px 24px; text-align: center; border-bottom: 4px solid #D32F2F;&quot;&gt;
+    &lt;img src=&quot;https://atalianworld.my.salesforce.com/servlet/servlet.ImageServer?id=015Q30000071UUf&amp;oid=00DD0000000nF3N&amp;lastMod=1776954122000&quot; alt=&quot;Atalian Global Services&quot; width=&quot;200&quot; style=&quot;display: inline-block;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;background-color: #D32F2F; padding: 20px 24px; text-align: center;&quot;&gt;
+    &lt;p style=&quot;font-size: 24px; font-weight: bold; margin: 0; color: #FFFFFF; text-transform: uppercase; letter-spacing: 2px;&quot;&gt;&amp;#9888; URGENT &amp;#9888;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 28px 24px 24px; border-left: 2px solid #D32F2F; border-right: 2px solid #D32F2F;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 16px;&quot;&gt;Fran&amp;ccedil;ais&lt;/p&gt;
+    &lt;p style=&quot;font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 16px; color: #D32F2F;&quot;&gt;
+      Une demande d&apos;intervention de priorit&amp;eacute; haute a &amp;eacute;t&amp;eacute; cr&amp;eacute;&amp;eacute;e sur l&apos;un de vos comptes.
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 15px; line-height: 1.6; margin: 0 0 20px;&quot;&gt;
+      &lt;strong&gt;Veuillez traiter cette demande en priorit&amp;eacute;.&lt;/strong&gt; Les d&amp;eacute;tails sont indiqu&amp;eacute;s ci-dessous.
+    &lt;/p&gt;
+    &lt;div style=&quot;background-color: #FDE8E8; border-radius: 4px; padding: 4px 0; margin: 0 0 20px; border: 1px solid #F5C6C6;&quot;&gt;
+      &lt;table style=&quot;width: 100%; border-collapse: collapse;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 12px 16px; color: #888888; font-size: 13px; width: 140px; border-bottom: 1px solid #F5C6C6;&quot;&gt;N&amp;deg; de la demande&lt;/td&gt;
+          &lt;td style=&quot;padding: 12px 16px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #F5C6C6;&quot;&gt;{!$Record.CaseNumber}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 12px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #F5C6C6;&quot;&gt;Compte&lt;/td&gt;
+          &lt;td style=&quot;padding: 12px 16px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #F5C6C6;&quot;&gt;{!$Record.Account.Name}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 12px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #F5C6C6;&quot;&gt;Objet&lt;/td&gt;
+          &lt;td style=&quot;padding: 12px 16px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #F5C6C6;&quot;&gt;{!$Record.Subject}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 12px 16px; color: #888888; font-size: 13px;&quot;&gt;Priorit&amp;eacute;&lt;/td&gt;
+          &lt;td style=&quot;padding: 12px 16px; font-size: 16px; font-weight: bold; color: #D32F2F;&quot;&gt;HAUTE&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: center; margin: 0 0 24px;&quot;&gt;
+      &lt;a href=&quot;{!$Label.Lightning_Base_URL}/lightning/r/Case/{!$Record.Id}/view&quot; style=&quot;display: inline-block; background-color: #D32F2F; color: #FFFFFF; text-decoration: none; padding: 14px 40px; font-size: 16px; font-weight: bold; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px;&quot;&gt;Acc&amp;eacute;der &amp;agrave; la demande&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;border-left: 2px solid #D32F2F; border-right: 2px solid #D32F2F;&quot;&gt;
+    &lt;div style=&quot;margin: 0 24px; border-top: 2px solid #E0E0E0;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 24px 24px 28px; border-left: 2px solid #D32F2F; border-right: 2px solid #D32F2F;&quot;&gt;
+    &lt;p style=&quot;color: #999999; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 16px;&quot;&gt;English&lt;/p&gt;
+    &lt;p style=&quot;font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 16px; color: #D32F2F;&quot;&gt;
+      A high priority case has been created on one of your accounts.
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 15px; line-height: 1.6; margin: 0 0 20px;&quot;&gt;
+      &lt;strong&gt;Please treat this case as a priority.&lt;/strong&gt; Details are provided below.
+    &lt;/p&gt;
+    &lt;div style=&quot;background-color: #FDE8E8; border-radius: 4px; padding: 4px 0; margin: 0 0 20px; border: 1px solid #F5C6C6;&quot;&gt;
+      &lt;table style=&quot;width: 100%; border-collapse: collapse;&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 12px 16px; color: #888888; font-size: 13px; width: 140px; border-bottom: 1px solid #F5C6C6;&quot;&gt;Case Number&lt;/td&gt;
+          &lt;td style=&quot;padding: 12px 16px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #F5C6C6;&quot;&gt;{!$Record.CaseNumber}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 12px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #F5C6C6;&quot;&gt;Account&lt;/td&gt;
+          &lt;td style=&quot;padding: 12px 16px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #F5C6C6;&quot;&gt;{!$Record.Account.Name}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 12px 16px; color: #888888; font-size: 13px; border-bottom: 1px solid #F5C6C6;&quot;&gt;Subject&lt;/td&gt;
+          &lt;td style=&quot;padding: 12px 16px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #F5C6C6;&quot;&gt;{!$Record.Subject}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;padding: 12px 16px; color: #888888; font-size: 13px;&quot;&gt;Priority&lt;/td&gt;
+          &lt;td style=&quot;padding: 12px 16px; font-size: 16px; font-weight: bold; color: #D32F2F;&quot;&gt;HIGH&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: center; margin: 0 0 24px;&quot;&gt;
+      &lt;a href=&quot;{!$Label.Lightning_Base_URL}/lightning/r/Case/{!$Record.Id}/view&quot; style=&quot;display: inline-block; background-color: #D32F2F; color: #FFFFFF; text-decoration: none; padding: 14px 40px; font-size: 16px; font-weight: bold; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px;&quot;&gt;View Case&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;background-color: #D32F2F; padding: 16px 24px; text-align: center;&quot;&gt;
+    &lt;p style=&quot;color: #FFFFFF; font-size: 11px; margin: 0;&quot;&gt;
+      Atalian Global Services &amp;mdash; Notification interne / Internal notification &amp;mdash; Ne pas transf&amp;eacute;rer / Do not forward
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subjecttexte</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>IMPORTANT {!$Record.CaseNumber} - {!$Record.Account.Name} - {!$Record.Description}</text>
+    </textTemplates>
+    <variables>
+        <name>varMemberEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

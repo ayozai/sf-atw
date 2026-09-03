@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contr_le_R_glementaire</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Site__c</columns>
+    <columns>Service_Category_Customer_Label__c</columns>
+    <columns>Primary_Service__c</columns>
+    <columns>Status__c</columns>
+    <columns>Subject__c</columns>
+    <columns>End_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>SE-</value>
+    </filters>
+    <filters>
+        <field>Service_Category_Customer_Label__c</field>
+        <operation>contains</operation>
+        <value>#CONTROLES REGLEMENTAIRES</value>
+    </filters>
+    <label>Regulatory Control</label>
+    <sharedTo>
+        <group>SCHNEIDER_ELECTRIC</group>
+        <group>SCHNEIDER_ELECTRIC_FRANCE</group>
+    </sharedTo>
+</ListView>

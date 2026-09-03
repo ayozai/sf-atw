@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CacheNamespace__c</fullName>
+    <defaultValue>&quot;&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Platform cache namespace and partition</label>
+    <length>250</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

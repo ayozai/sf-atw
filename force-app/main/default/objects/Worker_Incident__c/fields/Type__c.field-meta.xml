@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>true</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Commuting incident</fullName>
+                <default>false</default>
+                <label>Commuting incident</label>
+            </value>
+            <value>
+                <fullName>Occupational disease</fullName>
+                <default>false</default>
+                <label>Occupational disease</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Workplace incident</fullName>
+                <default>false</default>
+                <label>Workplace incident</label>
+            </value>
+            <value>
+                <fullName>Workplace Near-miss</fullName>
+                <default>false</default>
+                <label>Workplace Near-miss</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

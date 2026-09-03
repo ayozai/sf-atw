@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>&lt;30 Days</fullName>
+        <default>false</default>
+        <label>&lt;30 Days</label>
+    </customValue>
+    <customValue>
+        <fullName>30 Days</fullName>
+        <default>false</default>
+        <label>30 Days</label>
+    </customValue>
+    <customValue>
+        <fullName>45 Days</fullName>
+        <default>false</default>
+        <label>45 Days</label>
+    </customValue>
+    <customValue>
+        <fullName>60 Days</fullName>
+        <default>false</default>
+        <label>60 Days</label>
+    </customValue>
+    <customValue>
+        <fullName>60+ Days</fullName>
+        <default>false</default>
+        <label>60+ Days</label>
+    </customValue>
+    <customValue>
+        <fullName>45 days EOM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>45 days EOM</label>
+    </customValue>
+    <customValue>
+        <fullName>30 days EOM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>30 days EOM</label>
+    </customValue>
+    <masterLabel>Global Payment Terms</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

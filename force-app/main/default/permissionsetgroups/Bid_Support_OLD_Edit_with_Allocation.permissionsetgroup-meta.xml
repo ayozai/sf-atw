@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides Edit access to Bid Support (with allocation rights)</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Bid Support (OLD) - Edit with Allocation</label>
+    <permissionSets>Allocate_Bid_Support_Requests</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

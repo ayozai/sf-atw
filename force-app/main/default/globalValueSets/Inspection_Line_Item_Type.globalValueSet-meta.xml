@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OFF</fullName>
+        <default>false</default>
+        <label>Office</label>
+    </customValue>
+    <customValue>
+        <fullName>MEE</fullName>
+        <default>false</default>
+        <label>Meeting room</label>
+    </customValue>
+    <customValue>
+        <fullName>COR</fullName>
+        <default>false</default>
+        <label>Corridors and stairs</label>
+    </customValue>
+    <customValue>
+        <fullName>CAF</fullName>
+        <default>false</default>
+        <label>Relaxation room and cafeteria</label>
+    </customValue>
+    <customValue>
+        <fullName>BAT</fullName>
+        <default>false</default>
+        <label>Bathroom and shower</label>
+    </customValue>
+    <customValue>
+        <fullName>INF</fullName>
+        <default>false</default>
+        <label>Infirmary</label>
+    </customValue>
+    <customValue>
+        <fullName>LIF</fullName>
+        <default>false</default>
+        <label>Lifts</label>
+    </customValue>
+    <customValue>
+        <fullName>SMO</fullName>
+        <default>false</default>
+        <label>Smoking area</label>
+    </customValue>
+    <customValue>
+        <fullName>PHA</fullName>
+        <default>false</default>
+        <label>Pharmaceutical and cold room</label>
+    </customValue>
+    <customValue>
+        <fullName>RES</fullName>
+        <default>false</default>
+        <label>Restaurant</label>
+    </customValue>
+    <customValue>
+        <fullName>HAL</fullName>
+        <default>false</default>
+        <label>Hall and Reception</label>
+    </customValue>
+    <customValue>
+        <fullName>LAB</fullName>
+        <default>false</default>
+        <label>Laboratory</label>
+    </customValue>
+    <customValue>
+        <fullName>PAR</fullName>
+        <default>false</default>
+        <label>Parking</label>
+    </customValue>
+    <customValue>
+        <fullName>GAR</fullName>
+        <default>false</default>
+        <label>Garbage room</label>
+    </customValue>
+    <customValue>
+        <fullName>TEC</fullName>
+        <default>false</default>
+        <label>Technical room</label>
+    </customValue>
+    <customValue>
+        <fullName>ARC</fullName>
+        <default>false</default>
+        <label>Archive room, Photocopy room</label>
+    </customValue>
+    <customValue>
+        <fullName>SSB</fullName>
+        <default>false</default>
+        <label>Self service banking</label>
+    </customValue>
+    <customValue>
+        <fullName>RET</fullName>
+        <default>false</default>
+        <label>Retail space</label>
+    </customValue>
+    <customValue>
+        <fullName>CHE</fullName>
+        <default>false</default>
+        <label>Checkout area</label>
+    </customValue>
+    <customValue>
+        <fullName>TRA</fullName>
+        <default>false</default>
+        <label>Traditional area</label>
+    </customValue>
+    <customValue>
+        <fullName>SSF</fullName>
+        <default>false</default>
+        <label>Self service fresh food area</label>
+    </customValue>
+    <customValue>
+        <fullName>NFA</fullName>
+        <default>false</default>
+        <label>Non-food area</label>
+    </customValue>
+    <customValue>
+        <fullName>CHA</fullName>
+        <default>false</default>
+        <label>Changing room</label>
+    </customValue>
+    <customValue>
+        <fullName>GAS</fullName>
+        <default>false</default>
+        <label>Gas station</label>
+    </customValue>
+    <customValue>
+        <fullName>TRO</fullName>
+        <default>false</default>
+        <label>Trolley shelter</label>
+    </customValue>
+    <customValue>
+        <fullName>IND</fullName>
+        <default>false</default>
+        <label>Industrial area</label>
+    </customValue>
+    <customValue>
+        <fullName>STO</fullName>
+        <default>false</default>
+        <label>Store</label>
+    </customValue>
+    <customValue>
+        <fullName>VIP</fullName>
+        <default>false</default>
+        <label>VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>ZAC</fullName>
+        <default>false</default>
+        <label>Controlled atmosphere room</label>
+    </customValue>
+    <customValue>
+        <fullName>BAS</fullName>
+        <default>false</default>
+        <label>Basement</label>
+    </customValue>
+    <customValue>
+        <fullName>CON</fullName>
+        <default>false</default>
+        <label>Contaminant areas</label>
+    </customValue>
+    <customValue>
+        <fullName>STA</fullName>
+        <default>false</default>
+        <label>Storage area</label>
+    </customValue>
+    <customValue>
+        <fullName>AGR</fullName>
+        <default>false</default>
+        <label>Food industry</label>
+    </customValue>
+    <customValue>
+        <fullName>AER</fullName>
+        <default>false</default>
+        <label>Aeronautic</label>
+    </customValue>
+    <customValue>
+        <fullName>OFV</fullName>
+        <default>false</default>
+        <label>Office VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>EXT</fullName>
+        <default>false</default>
+        <label>Exterior</label>
+    </customValue>
+    <customValue>
+        <fullName>EXV</fullName>
+        <default>false</default>
+        <label>Exterior VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>PAV</fullName>
+        <default>false</default>
+        <label>Parking VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>MEV</fullName>
+        <default>false</default>
+        <label>Meeting room VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>BAV</fullName>
+        <default>false</default>
+        <label>Bathroom and shower VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>HAV</fullName>
+        <default>false</default>
+        <label>Hall and Reception VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>CAV</fullName>
+        <default>false</default>
+        <label>Relaxation room and cafeteria VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>COV</fullName>
+        <default>false</default>
+        <label>Corridors and stairs VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>ARV</fullName>
+        <default>false</default>
+        <label>Archive room, Photocopy room VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>INV</fullName>
+        <default>false</default>
+        <label>Infirmary VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>IDV</fullName>
+        <default>false</default>
+        <label>Industrial area VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>TEV</fullName>
+        <default>false</default>
+        <label>Technical room VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>STP</fullName>
+        <default>false</default>
+        <label>Studio presidency</label>
+    </customValue>
+    <customValue>
+        <fullName>COP</fullName>
+        <default>false</default>
+        <label>Counters</label>
+    </customValue>
+    <customValue>
+        <fullName>CEL</fullName>
+        <default>false</default>
+        <label>Accomodation cell</label>
+    </customValue>
+    <customValue>
+        <fullName>CHM</fullName>
+        <default>false</default>
+        <label>Bedroom</label>
+    </customValue>
+    <customValue>
+        <fullName>ENT</fullName>
+        <default>false</default>
+        <label>Training - Cabins - Classroom - Simulator - Fire Cabins</label>
+    </customValue>
+    <customValue>
+        <fullName>SLN</fullName>
+        <default>false</default>
+        <label>Living room</label>
+    </customValue>
+    <customValue>
+        <fullName>FNT</fullName>
+        <default>false</default>
+        <label>Water fountain</label>
+    </customValue>
+    <customValue>
+        <fullName>QDL</fullName>
+        <default>false</default>
+        <label>Delivery platform</label>
+    </customValue>
+    <customValue>
+        <fullName>CCO</fullName>
+        <default>false</default>
+        <label>Circulations - Hallways</label>
+    </customValue>
+    <customValue>
+        <fullName>LOC</fullName>
+        <default>false</default>
+        <label>Cash room</label>
+    </customValue>
+    <customValue>
+        <fullName>ZDD</fullName>
+        <default>false</default>
+        <label>Distribution area</label>
+    </customValue>
+    <customValue>
+        <fullName>ZDR</fullName>
+        <default>false</default>
+        <label>Reception - Area - Drink room</label>
+    </customValue>
+    <customValue>
+        <fullName>GUA</fullName>
+        <default>false</default>
+        <label>Guard - Warrior post</label>
+    </customValue>
+    <customValue>
+        <fullName>MDT</fullName>
+        <default>false</default>
+        <label>Media library</label>
+    </customValue>
+    <customValue>
+        <fullName>AMH</fullName>
+        <default>false</default>
+        <label>Workshop - Store - Shed - Test bench</label>
+    </customValue>
+    <customValue>
+        <fullName>SPT</fullName>
+        <default>false</default>
+        <label>Gym</label>
+    </customValue>
+    <customValue>
+        <fullName>REG</fullName>
+        <default>false</default>
+        <label>Regulations</label>
+    </customValue>
+    <customValue>
+        <fullName>SOA</fullName>
+        <default>false</default>
+        <label>Sorting Area</label>
+    </customValue>
+    <customValue>
+        <fullName>TRS</fullName>
+        <default>false</default>
+        <label>Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>WIN</fullName>
+        <default>false</default>
+        <label>Window Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>MED</fullName>
+        <default>false</default>
+        <label>Medical Room</label>
+    </customValue>
+    <customValue>
+        <fullName>QDT</fullName>
+        <default>false</default>
+        <label>Sorting quality</label>
+    </customValue>
+    <customValue>
+        <fullName>PEI</fullName>
+        <default>false</default>
+        <label>Intervention Staff</label>
+    </customValue>
+    <customValue>
+        <fullName>PLI</fullName>
+        <default>false</default>
+        <label>Planning and intervention</label>
+    </customValue>
+    <customValue>
+        <fullName>MTL</fullName>
+        <default>false</default>
+        <label>Equipement and areas</label>
+    </customValue>
+    <customValue>
+        <fullName>BLA</fullName>
+        <default>false</default>
+        <label>Signage and display</label>
+    </customValue>
+    <customValue>
+        <fullName>OUT</fullName>
+        <default>false</default>
+        <label>Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>RGD</fullName>
+        <default>false</default>
+        <label>Waste grouping</label>
+    </customValue>
+    <customValue>
+        <fullName>PRC</fullName>
+        <default>false</default>
+        <label>PARC 106</label>
+    </customValue>
+    <customValue>
+        <fullName>ETD</fullName>
+        <default>false</default>
+        <label>Temperature-controlled chambers</label>
+    </customValue>
+    <customValue>
+        <fullName>COB</fullName>
+        <default>false</default>
+        <label>Corridors and stairs basic</label>
+    </customValue>
+    <customValue>
+        <fullName>STV</fullName>
+        <default>false</default>
+        <label>Storage area VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>LOA</fullName>
+        <default>false</default>
+        <label>Logistic area</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA</fullName>
+        <default>false</default>
+        <label>Test area</label>
+    </customValue>
+    <customValue>
+        <fullName>SSE</fullName>
+        <default>false</default>
+        <label>Server Room</label>
+    </customValue>
+    <customValue>
+        <fullName>PLA</fullName>
+        <default>false</default>
+        <label>Elevator level</label>
+    </customValue>
+    <customValue>
+        <fullName>CIL</fullName>
+        <default>false</default>
+        <label>Ceiling</label>
+    </customValue>
+    <customValue>
+        <fullName>GRH</fullName>
+        <default>false</default>
+        <label>Great height</label>
+    </customValue>
+    <customValue>
+        <fullName>RFT</fullName>
+        <default>false</default>
+        <label>Rooftop</label>
+    </customValue>
+    <customValue>
+        <fullName>REP</fullName>
+        <default>false</default>
+        <label>Reprography area</label>
+    </customValue>
+    <customValue>
+        <fullName>QVT</fullName>
+        <default>false</default>
+        <label>QVT room</label>
+    </customValue>
+    <customValue>
+        <fullName>LIV</fullName>
+        <default>false</default>
+        <label>Lif VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>GAV</fullName>
+        <default>false</default>
+        <label>Garbage room VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>QVV</fullName>
+        <default>false</default>
+        <label>QVT room VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>RPV</fullName>
+        <default>false</default>
+        <label>Reprography area VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>SCL</fullName>
+        <default>false</default>
+        <label>Scale</label>
+    </customValue>
+    <customValue>
+        <fullName>OVN</fullName>
+        <default>false</default>
+        <label>Oven</label>
+    </customValue>
+    <customValue>
+        <fullName>CRO</fullName>
+        <default>false</default>
+        <label>Collective room</label>
+    </customValue>
+    <customValue>
+        <fullName>CMP</fullName>
+        <default>false</default>
+        <label>Command post</label>
+    </customValue>
+    <customValue>
+        <fullName>SST</fullName>
+        <default>false</default>
+        <label>Studio set</label>
+    </customValue>
+    <customValue>
+        <fullName>SHM</fullName>
+        <default>false</default>
+        <label>Shopping Mall</label>
+    </customValue>
+    <customValue>
+        <fullName>LDR</fullName>
+        <default>false</default>
+        <label>Laundry</label>
+    </customValue>
+    <customValue>
+        <fullName>WIR</fullName>
+        <default>false</default>
+        <label>Waiting Room</label>
+    </customValue>
+    <customValue>
+        <fullName>VCL</fullName>
+        <default>false</default>
+        <label>Vehicle</label>
+    </customValue>
+    <customValue>
+        <fullName>ARS</fullName>
+        <default>false</default>
+        <label>Annual Rolling Stock</label>
+    </customValue>
+    <customValue>
+        <fullName>PRS</fullName>
+        <default>false</default>
+        <label>Periodic Rolling Stock</label>
+    </customValue>
+    <customValue>
+        <fullName>DRV</fullName>
+        <default>false</default>
+        <label>Driver’s room</label>
+    </customValue>
+    <customValue>
+        <fullName>TVE</fullName>
+        <default>false</default>
+        <label>Traveler environment</label>
+    </customValue>
+    <customValue>
+        <fullName>CTA</fullName>
+        <default>false</default>
+        <label>Customer area</label>
+    </customValue>
+    <customValue>
+        <fullName>DRC</fullName>
+        <default>false</default>
+        <label>Driver’s cabin</label>
+    </customValue>
+    <customValue>
+        <fullName>CHR</fullName>
+        <default>false</default>
+        <label>Church</label>
+    </customValue>
+    <customValue>
+        <fullName>CNP</fullName>
+        <default>false</default>
+        <label>Common part</label>
+    </customValue>
+    <customValue>
+        <fullName>LDV</fullName>
+        <default>false</default>
+        <label>Laundry VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>CLA</fullName>
+        <default>false</default>
+        <label>Cleaning area</label>
+    </customValue>
+    <customValue>
+        <fullName>CLV</fullName>
+        <default>false</default>
+        <label>Cleaning area VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>PRA</fullName>
+        <default>false</default>
+        <label>Production area</label>
+    </customValue>
+    <customValue>
+        <fullName>BOR</fullName>
+        <default>false</default>
+        <label>Boiler room</label>
+    </customValue>
+    <customValue>
+        <fullName>MRV</fullName>
+        <default>false</default>
+        <label>Medical room VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>SAS</fullName>
+        <default>false</default>
+        <label>SAS</label>
+    </customValue>
+    <customValue>
+        <fullName>BUS</fullName>
+        <default>false</default>
+        <label>BUS</label>
+    </customValue>
+    <customValue>
+        <fullName>GSA</fullName>
+        <default>false</default>
+        <label>Gas Station Attendant</label>
+    </customValue>
+    <customValue>
+        <fullName>ELE</fullName>
+        <default>false</default>
+        <label>Electrical Cell</label>
+    </customValue>
+    <customValue>
+        <fullName>ACC</fullName>
+        <default>false</default>
+        <label>Access</label>
+    </customValue>
+    <customValue>
+        <fullName>SAC</fullName>
+        <default>false</default>
+        <label>Truck Airlock</label>
+    </customValue>
+    <customValue>
+        <fullName>SSZ</fullName>
+        <default>false</default>
+        <label>Zone Exit Airlock</label>
+    </customValue>
+    <customValue>
+        <fullName>SDC</fullName>
+        <default>false</default>
+        <label>Control Room</label>
+    </customValue>
+    <customValue>
+        <fullName>LRE</fullName>
+        <default>false</default>
+        <label>Reactive Areas</label>
+    </customValue>
+    <customValue>
+        <fullName>ADM</fullName>
+        <default>false</default>
+        <label>Public administration</label>
+    </customValue>
+    <customValue>
+        <fullName>AGV</fullName>
+        <default>false</default>
+        <label>FOOD INDUSTY VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>SOC</fullName>
+        <default>false</default>
+        <label>Staff facilities</label>
+    </customValue>
+    <customValue>
+        <fullName>PAC</fullName>
+        <default>false</default>
+        <label>Packaging area</label>
+    </customValue>
+    <customValue>
+        <fullName>SAM</fullName>
+        <default>false</default>
+        <label>Sampling area</label>
+    </customValue>
+    <customValue>
+        <fullName>LOV</fullName>
+        <default>false</default>
+        <label>Logistic area VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>ENI</fullName>
+        <default>false</default>
+        <label>Energy Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>EIV</fullName>
+        <default>false</default>
+        <label>Energy Industry VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>ENP</fullName>
+        <default>false</default>
+        <label>Energy Industry Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>EIP</fullName>
+        <default>false</default>
+        <label>Energy Industry Premium</label>
+    </customValue>
+    <customValue>
+        <fullName>CPV</fullName>
+        <default>false</default>
+        <label>Common part VIP</label>
+    </customValue>
+    <customValue>
+        <fullName>PD1</fullName>
+        <default>false</default>
+        <label>PONDERATION 1</label>
+    </customValue>
+    <customValue>
+        <fullName>PD2</fullName>
+        <default>false</default>
+        <label>PONDERATION 2</label>
+    </customValue>
+    <customValue>
+        <fullName>PLB</fullName>
+        <default>false</default>
+        <label>Plumbing and Sanitary Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>HVA</fullName>
+        <default>false</default>
+        <label>Heating, Ventilation and Air Conditioning</label>
+    </customValue>
+    <customValue>
+        <fullName>VCO</fullName>
+        <default>false</default>
+        <label>Unit Heaters and Fan Coil Units</label>
+    </customValue>
+    <customValue>
+        <fullName>CTE</fullName>
+        <default>false</default>
+        <label>Air Handling Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>PFR</fullName>
+        <default>false</default>
+        <label>Cold Production</label>
+    </customValue>
+    <customValue>
+        <fullName>RDE</fullName>
+        <default>false</default>
+        <label>Hot and Chilled Water Distribution Network</label>
+    </customValue>
+    <customValue>
+        <fullName>CAC</fullName>
+        <default>false</default>
+        <label>Compressed Air Plant</label>
+    </customValue>
+    <customValue>
+        <fullName>RON</fullName>
+        <default>false</default>
+        <label>Inspection Round</label>
+    </customValue>
+    <masterLabel>Inspection Line Item Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

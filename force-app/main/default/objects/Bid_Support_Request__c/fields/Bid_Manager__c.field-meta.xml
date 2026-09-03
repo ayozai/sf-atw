@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bid_Manager__c</fullName>
+    <description>Used to hold the bid manager.</description>
+    <label>Bid Manager</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Senior_Bid_Manager__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Angela Grey</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Angela Grey</label>
+            </value>
+            <value>
+                <fullName>Anna McMillan</fullName>
+                <default>false</default>
+                <label>Anna McMillan</label>
+            </value>
+            <value>
+                <fullName>Anne Smith</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anne Smith</label>
+            </value>
+            <value>
+                <fullName>Fiona Paton</fullName>
+                <default>false</default>
+                <label>Fiona Paton</label>
+            </value>
+            <value>
+                <fullName>Frank Okunwanne</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Frank Okunwanne</label>
+            </value>
+            <value>
+                <fullName>George Picton-Clarke</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>George Picton-Clarke</label>
+            </value>
+            <value>
+                <fullName>Gillian Newton</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gillian Newton</label>
+            </value>
+            <value>
+                <fullName>Helen Salmon</fullName>
+                <default>false</default>
+                <label>Helen Salmon</label>
+            </value>
+            <value>
+                <fullName>Ian Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ian Price</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>James Mabbett</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>James Mabbett</label>
+            </value>
+            <value>
+                <fullName>Kat Coogan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kat Coogan</label>
+            </value>
+            <value>
+                <fullName>Kate Fife</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kate Fife</label>
+            </value>
+            <value>
+                <fullName>Kim Kelly</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kim Kelly</label>
+            </value>
+            <value>
+                <fullName>Kundai Matiringe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kundai Matiringe</label>
+            </value>
+            <value>
+                <fullName>Lauren Davidson</fullName>
+                <default>false</default>
+                <label>Lauren Davidson</label>
+            </value>
+            <value>
+                <fullName>Luke Scales</fullName>
+                <default>false</default>
+                <label>Luke Scales</label>
+            </value>
+            <value>
+                <fullName>Marina Turcati</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marina Turcati</label>
+            </value>
+            <value>
+                <fullName>Michael Bone</fullName>
+                <default>false</default>
+                <label>Michael Bone</label>
+            </value>
+            <value>
+                <fullName>Naomi Molyneux</fullName>
+                <default>false</default>
+                <label>Naomi Molyneux</label>
+            </value>
+            <value>
+                <fullName>Nathan Beales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nathan Beales</label>
+            </value>
+            <value>
+                <fullName>Paul Grant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paul Grant</label>
+            </value>
+            <value>
+                <fullName>Rebecca Houghton</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rebecca Houghton</label>
+            </value>
+            <value>
+                <fullName>Rona Chisholm</fullName>
+                <default>false</default>
+                <label>Rona Chisholm</label>
+            </value>
+            <value>
+                <fullName>Ryan Lynch</fullName>
+                <default>false</default>
+                <label>Ryan Lynch</label>
+            </value>
+            <value>
+                <fullName>Sam Wordingham</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sam Wordingham</label>
+            </value>
+            <value>
+                <fullName>Sandra Jepson</fullName>
+                <default>false</default>
+                <label>Sandra Jepson</label>
+            </value>
+            <value>
+                <fullName>Sarah Simpson</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sarah Simpson</label>
+            </value>
+            <value>
+                <fullName>Seller Lead</fullName>
+                <default>false</default>
+                <label>Seller Lead</label>
+            </value>
+            <value>
+                <fullName>Susan Broadwater</fullName>
+                <default>false</default>
+                <label>Susan Broadwater</label>
+            </value>
+            <value>
+                <fullName>Tim Sewell</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tim Sewell</label>
+            </value>
+            <value>
+                <fullName>Tracey Miller</fullName>
+                <default>false</default>
+                <label>Tracey Miller</label>
+            </value>
+            <value>
+                <fullName>Wesley Bell Surette</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Wesley Bell Surette</label>
+            </value>
+            <value>
+                <fullName>Zara Thomas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Zara Thomas</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Fiona Paton</controllingFieldValue>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Anna McMillan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fiona Paton</controllingFieldValue>
+            <controllingFieldValue>Tracey Miller</controllingFieldValue>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <controllingFieldValue>Michael Bone</controllingFieldValue>
+            <valueName>International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fiona Paton</controllingFieldValue>
+            <valueName>Lauren Davidson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fiona Paton</controllingFieldValue>
+            <controllingFieldValue>Tracey Miller</controllingFieldValue>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Naomi Molyneux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fiona Paton</controllingFieldValue>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Rona Chisholm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fiona Paton</controllingFieldValue>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Ryan Lynch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fiona Paton</controllingFieldValue>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Sandra Jepson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fiona Paton</controllingFieldValue>
+            <controllingFieldValue>Tracey Miller</controllingFieldValue>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <controllingFieldValue>Michael Bone</controllingFieldValue>
+            <valueName>Seller Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracey Miller</controllingFieldValue>
+            <valueName>Luke Scales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tracey Miller</controllingFieldValue>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Susan Broadwater</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Fiona Paton</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>James Mabbett</controllingFieldValue>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Tracey Miller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Helen Salmon</controllingFieldValue>
+            <valueName>Michael Bone</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

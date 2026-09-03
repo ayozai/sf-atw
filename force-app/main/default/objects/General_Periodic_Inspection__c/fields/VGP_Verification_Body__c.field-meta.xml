@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VGP_Verification_Body__c</fullName>
+    <label>VGP Verification Body</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>APAVE</fullName>
+                <default>false</default>
+                <label>APAVE</label>
+            </value>
+            <value>
+                <fullName>CHUBB/SICLI</fullName>
+                <default>false</default>
+                <label>CHUBB/SICLI</label>
+            </value>
+            <value>
+                <fullName>DEKRA</fullName>
+                <default>false</default>
+                <label>DEKRA</label>
+            </value>
+            <value>
+                <fullName>NORISKO</fullName>
+                <default>false</default>
+                <label>NORISKO</label>
+            </value>
+            <value>
+                <fullName>SOCOTEC</fullName>
+                <default>false</default>
+                <label>SOCOTEC</label>
+            </value>
+            <value>
+                <fullName>VERITAS</fullName>
+                <default>false</default>
+                <label>VERITAS</label>
+            </value>
+            <value>
+                <fullName>Vérificateur Interne</fullName>
+                <default>false</default>
+                <label>Vérificateur Interne</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

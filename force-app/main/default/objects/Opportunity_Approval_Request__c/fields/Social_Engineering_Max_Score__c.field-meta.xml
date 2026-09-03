@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Social_Engineering_Max_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISPICKVAL(Social_Engineering__c , &apos;&apos;) || ISPICKVAL(Social_Engineering__c , &apos;No&apos;), 0, 3)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Social Engineering - Max Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>FR_Telemarketing_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Telemarketing Team</label>
+        <sharedTo>
+            <roleAndSubordinates>TO_BE_DELETED</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>France</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Telesales_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Telesales Sharing</label>
+        <sharedTo>
+            <role>Telemarketing_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Telemarketing_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Test</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Test</label>
+        <sharedTo>
+            <role>Atalian_Servest_Global</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Atalian_Servest_Global</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

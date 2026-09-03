@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_A_RENSEIGNER_FONTAINE</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Designation__c</columns>
+    <columns>Label__c</columns>
+    <columns>Date__c</columns>
+    <columns>Type__c</columns>
+    <columns>Delivered_quantity__c</columns>
+    <columns>Remaining_Quantity__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>ORLY ESCALE</value>
+    </filters>
+    <filters>
+        <field>Date__c</field>
+        <operation>equals</operation>
+        <value>1/1/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Metric__c.Cleaning_materials</value>
+    </filters>
+    <label>RENSEIGNER PROPRETE</label>
+    <sharedTo>
+        <group>FM_FR_AIR_FRANCE</group>
+    </sharedTo>
+</ListView>

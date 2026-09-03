@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIR_FRANCE_D_chet</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Site__c</columns>
+    <columns>Audit_Date_Time__c</columns>
+    <columns>Status__c</columns>
+    <columns>Requirement__c</columns>
+    <columns>Score__c</columns>
+    <columns>Primary_Service__c</columns>
+    <columns>Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Service__c</field>
+        <operation>equals</operation>
+        <value>Waste Management</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>AIR FRANCE</value>
+    </filters>
+    <label>AIR FRANCE Déchet</label>
+    <sharedTo>
+        <group>FM_FR_AIR_FRANCE</group>
+        <portalRoleAndSubordinates>SOCIETEAIRFRANCECARGOCustomerUser</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>SOCIETEAIRFRANCECDGESCALECustomerUser</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>SOCIETEAIRFRANCECustomerUser</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>SOCIETEAIRFRANCEDGINORDCustomerUser</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>SOCIETEAIRFRANCEDGISUDCustomerUser</portalRoleAndSubordinates>
+        <portalRoleAndSubordinates>SOCIETEAIRFRANCEORLYESCALECustomerUser</portalRoleAndSubordinates>
+    </sharedTo>
+</ListView>

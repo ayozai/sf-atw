@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contrats_IDF_OUEST</fullName>
+    <columns>LAST_UPDATE</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Contract_Name__c</columns>
+    <columns>Atalian_Agency__c</columns>
+    <columns>Type__c</columns>
+    <columns>Accounting_System_Site_Revenue__c</columns>
+    <columns>Local_customer__c</columns>
+    <columns>Contract_End_Date__c</columns>
+    <columns>Total_Contract_Risk__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,In Negotiation</value>
+    </filters>
+    <filters>
+        <field>Local_customer__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Owner_Division__c</field>
+        <operation>equals</operation>
+        <value>FR OP Cleaning IDF Ouest</value>
+    </filters>
+    <label>Contrats IDF OUEST hors MC</label>
+</ListView>

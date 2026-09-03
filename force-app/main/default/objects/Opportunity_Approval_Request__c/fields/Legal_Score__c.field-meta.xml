@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Score__c</fullName>
+    <formula>( Bank_Guarantee_Score__c +  Unlimited_Liability_Clause_Score__c +  Agreement_with_Client_Score__c +  Insurance_amount_imposed_Score__c ) / ( Bank_Guarantee_Max_Score__c +  Unlimited_Liability_Clause_Max_Score__c +  Agreement_with_Client_Max_Score__c +  Insurance_amount_imposed_Max_Score__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Legal Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

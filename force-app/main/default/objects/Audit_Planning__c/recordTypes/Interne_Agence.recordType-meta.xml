@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interne_Agence</fullName>
+    <active>true</active>
+    <label>Interne Agence</label>
+    <picklistValues>
+        <picklist>Audit_type__c</picklist>
+        <values>
+            <fullName>Audit Interne Agence</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Domain__c</picklist>
+        <values>
+            <fullName>Environnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Process__c</picklist>
+        <values>
+            <fullName>Achat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direction ATMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direction Générale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direction administrative %26 financière</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direction juridique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environnement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facturation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fidélisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RH%2C formation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STRFAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services généraux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sureté nucléaire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referentiel__c</picklist>
+        <values>
+            <fullName>CEFRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certiphyto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EN 9100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 14001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISO 9001%2F45001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MASE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

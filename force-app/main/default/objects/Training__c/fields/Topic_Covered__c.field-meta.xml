@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Topic_Covered__c</fullName>
+    <label>Topic Covered</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Safety induction</fullName>
+                <default>false</default>
+                <label>Safety induction</label>
+            </value>
+            <value>
+                <fullName>Biological agents (Infectious medical waste)</fullName>
+                <default>false</default>
+                <label>Biological agents (Infectious medical waste)</label>
+            </value>
+            <value>
+                <fullName>Noise</fullName>
+                <default>false</default>
+                <label>Noise</label>
+            </value>
+            <value>
+                <fullName>Slip, trip, and fall</fullName>
+                <default>false</default>
+                <label>Slip, trip, and fall</label>
+            </value>
+            <value>
+                <fullName>Movement of machinery / vehicles</fullName>
+                <default>false</default>
+                <label>Movement of machinery / vehicles</label>
+            </value>
+            <value>
+                <fullName>Lockout / Electrical installations</fullName>
+                <default>false</default>
+                <label>Lockout / Electrical installations</label>
+            </value>
+            <value>
+                <fullName>Road travel on mission</fullName>
+                <default>false</default>
+                <label>Road travel on mission</label>
+            </value>
+            <value>
+                <fullName>Right of withdrawal</fullName>
+                <default>false</default>
+                <label>Right of withdrawal</label>
+            </value>
+            <value>
+                <fullName>PPE (Personal Protective Equipment) / PPC (Personal Protective Clothing)</fullName>
+                <default>false</default>
+                <label>PPE (Personal Protective Equipment) / PPC (Personal Protective Clothing)</label>
+            </value>
+            <value>
+                <fullName>Lighting</fullName>
+                <default>false</default>
+                <label>Lighting</label>
+            </value>
+            <value>
+                <fullName>Collapses and falling objects</fullName>
+                <default>false</default>
+                <label>Collapses and falling objects</label>
+            </value>
+            <value>
+                <fullName>Lifting equipment / Aerial work platforms</fullName>
+                <default>false</default>
+                <label>Lifting equipment / Aerial work platforms</label>
+            </value>
+            <value>
+                <fullName>Equipment with hot surfaces</fullName>
+                <default>false</default>
+                <label>Equipment with hot surfaces</label>
+            </value>
+            <value>
+                <fullName>Pressure equipment</fullName>
+                <default>false</default>
+                <label>Pressure equipment</label>
+            </value>
+            <value>
+                <fullName>Confined spaces</fullName>
+                <default>false</default>
+                <label>Confined spaces</label>
+            </value>
+            <value>
+                <fullName>Evacuation / Fire / Explosion</fullName>
+                <default>false</default>
+                <label>Evacuation / Fire / Explosion</label>
+            </value>
+            <value>
+                <fullName>Machinery, equipment, installations</fullName>
+                <default>false</default>
+                <label>Machinery, equipment, installations</label>
+            </value>
+            <value>
+                <fullName>Manual handling of loads</fullName>
+                <default>false</default>
+                <label>Manual handling of loads</label>
+            </value>
+            <value>
+                <fullName>Hand tools</fullName>
+                <default>false</default>
+                <label>Hand tools</label>
+            </value>
+            <value>
+                <fullName>Work posture / Ergonomics</fullName>
+                <default>false</default>
+                <label>Work posture / Ergonomics</label>
+            </value>
+            <value>
+                <fullName>Dust / Chemical agents / CMR (Carcinogenic, Mutagenic, Reprotoxic)</fullName>
+                <default>false</default>
+                <label>Dust / Chemical agents / CMR (Carcinogenic, Mutagenic, Reprotoxic)</label>
+            </value>
+            <value>
+                <fullName>Prevention plan</fullName>
+                <default>false</default>
+                <label>Prevention plan</label>
+            </value>
+            <value>
+                <fullName>Stress and psychosocial risks</fullName>
+                <default>false</default>
+                <label>Stress and psychosocial risks</label>
+            </value>
+            <value>
+                <fullName>Night work</fullName>
+                <default>false</default>
+                <label>Night work</label>
+            </value>
+            <value>
+                <fullName>Hyperbaric work</fullName>
+                <default>false</default>
+                <label>Hyperbaric work</label>
+            </value>
+            <value>
+                <fullName>Lone working</fullName>
+                <default>false</default>
+                <label>Lone working</label>
+            </value>
+            <value>
+                <fullName>Screen-based work</fullName>
+                <default>false</default>
+                <label>Screen-based work</label>
+            </value>
+            <value>
+                <fullName>Work at height</fullName>
+                <default>false</default>
+                <label>Work at height</label>
+            </value>
+            <value>
+                <fullName>Repetitive work</fullName>
+                <default>false</default>
+                <label>Repetitive work</label>
+            </value>
+            <value>
+                <fullName>Vibration</fullName>
+                <default>false</default>
+                <label>Vibration</label>
+            </value>
+            <value>
+                <fullName>Radiation protection notice</fullName>
+                <default>false</default>
+                <label>Radiation protection notice</label>
+            </value>
+            <value>
+                <fullName>Pregnancy/breastfeeding, effects of radiation</fullName>
+                <default>false</default>
+                <label>Pregnancy/breastfeeding, effects of radiation</label>
+            </value>
+            <value>
+                <fullName>Effects of radiation on health</fullName>
+                <default>false</default>
+                <label>Effects of radiation on health</label>
+            </value>
+            <value>
+                <fullName>Different types of radiation</fullName>
+                <default>false</default>
+                <label>Different types of radiation</label>
+            </value>
+            <value>
+                <fullName>My dosimetric data</fullName>
+                <default>false</default>
+                <label>My dosimetric data</label>
+            </value>
+            <value>
+                <fullName>Delayed-readout dosimeter</fullName>
+                <default>false</default>
+                <label>Delayed-readout dosimeter</label>
+            </value>
+            <value>
+                <fullName>Operational dosimeter</fullName>
+                <default>false</default>
+                <label>Operational dosimeter</label>
+            </value>
+            <value>
+                <fullName>Nuclear waste</fullName>
+                <default>false</default>
+                <label>Nuclear waste</label>
+            </value>
+            <value>
+                <fullName>Radon</fullName>
+                <default>false</default>
+                <label>Radon</label>
+            </value>
+            <value>
+                <fullName>Nuclear safety</fullName>
+                <default>false</default>
+                <label>Nuclear safety</label>
+            </value>
+            <value>
+                <fullName>Intervention Reliability Practices</fullName>
+                <default>false</default>
+                <label>Intervention Reliability Practices</label>
+            </value>
+            <value>
+                <fullName>X-ray generators</fullName>
+                <default>false</default>
+                <label>X-ray generators</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

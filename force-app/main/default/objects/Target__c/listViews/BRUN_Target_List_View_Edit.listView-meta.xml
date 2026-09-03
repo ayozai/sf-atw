@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BRUN_Target_List_View_Edit</fullName>
+    <columns>User__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>NAME</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>User_Monthly_Revenue_Target__c</columns>
+    <columns>User_Monthly_GM_Target__c</columns>
+    <columns>User_Monthly_In_Year_Revenue_Target__c</columns>
+    <columns>User_Monthly_In_Year_GM_Target__c</columns>
+    <columns>User_Appointments_Target__c</columns>
+    <columns>Contract_Type__c</columns>
+    <columns>Local_Currency__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>End_Date__c</field>
+        <operation>lessOrEqual</operation>
+        <value>12/31/2025</value>
+    </filters>
+    <filters>
+        <field>Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2025</value>
+    </filters>
+    <filters>
+        <field>Contract_Type__c</field>
+        <operation>equals</operation>
+        <value>Contractual</value>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>contains</operation>
+        <value>IPAKALA</value>
+    </filters>
+    <label>Admin - Target List View Edit Année N</label>
+    <sharedTo>
+        <role>France_BeNeLux</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALL</fullName>
+    <columns>NAME</columns>
+    <columns>Year__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Date__c</columns>
+    <columns>Number_of_Talk__c</columns>
+    <columns>Number_of_FISAA__c</columns>
+    <columns>Number_of_Inspection_agent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Date__c</field>
+        <operation>lessThan</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <label>ALL</label>
+</ListView>

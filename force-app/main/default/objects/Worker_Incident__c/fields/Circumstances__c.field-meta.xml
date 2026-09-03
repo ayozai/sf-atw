@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Circumstances__c</fullName>
+    <label>Circumstances</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Bite, sting</fullName>
+                <default>false</default>
+                <label>Bite, sting</label>
+            </value>
+            <value>
+                <fullName>Contact with Electrical source</fullName>
+                <default>false</default>
+                <label>Contact with Electrical source</label>
+            </value>
+            <value>
+                <fullName>Contact with Hazardous substances (biological, toxic, corrosive, poison, etc.)</fullName>
+                <default>false</default>
+                <label>Contact with Hazardous substances (biological, toxic, corrosive, poison, etc.)</label>
+            </value>
+            <value>
+                <fullName>Crush / Pinch / Caught by</fullName>
+                <default>false</default>
+                <label>Crush / Pinch / Caught by</label>
+            </value>
+            <value>
+                <fullName>Cut from knife or sharp edge</fullName>
+                <default>false</default>
+                <label>Cut from knife or sharp edge</label>
+            </value>
+            <value>
+                <fullName>Exposure to flame, fire or explosion</fullName>
+                <default>false</default>
+                <label>Exposure to flame, fire or explosion</label>
+            </value>
+            <value>
+                <fullName>Faintness, malaise</fullName>
+                <default>false</default>
+                <label>Faintness, malaise</label>
+            </value>
+            <value>
+                <fullName>Food poisoning</fullName>
+                <default>false</default>
+                <label>Food poisoning</label>
+            </value>
+            <value>
+                <fullName>Handling, lifting</fullName>
+                <default>false</default>
+                <label>Handling, lifting</label>
+            </value>
+            <value>
+                <fullName>Harassment, Stress, PSR (psychosocial risks)</fullName>
+                <default>false</default>
+                <label>Harassment, Stress, PSR (psychosocial risks)</label>
+            </value>
+            <value>
+                <fullName>Hypoxia</fullName>
+                <default>false</default>
+                <label>Hypoxia</label>
+            </value>
+            <value>
+                <fullName>Irradiation, contamination</fullName>
+                <default>false</default>
+                <label>Irradiation, contamination</label>
+            </value>
+            <value>
+                <fullName>MSD (musculoskeletal disorders)</fullName>
+                <default>false</default>
+                <label>MSD (musculoskeletal disorders)</label>
+            </value>
+            <value>
+                <fullName>Non work related, natural causes</fullName>
+                <default>false</default>
+                <label>Non work related, natural causes</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Particle projection</fullName>
+                <default>false</default>
+                <label>Particle projection</label>
+            </value>
+            <value>
+                <fullName>Road Traffic Accident or in a public area</fullName>
+                <default>false</default>
+                <label>Road Traffic Accident or in a public area</label>
+            </value>
+            <value>
+                <fullName>Robbery, criminal assault, workplace violence</fullName>
+                <default>false</default>
+                <label>Robbery, criminal assault, workplace violence</label>
+            </value>
+            <value>
+                <fullName>Slip, Trip, Fall from height</fullName>
+                <default>false</default>
+                <label>Slip, Trip, Fall from height</label>
+            </value>
+            <value>
+                <fullName>Slip, Trip, Fall on the same level</fullName>
+                <default>false</default>
+                <label>Slip, Trip, Fall on the same level</label>
+            </value>
+            <value>
+                <fullName>Struck or Injury by falling object</fullName>
+                <default>false</default>
+                <label>Struck or Injury by falling object</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

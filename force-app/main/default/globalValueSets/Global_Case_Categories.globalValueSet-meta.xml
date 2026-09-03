@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Auto Doors/Access</fullName>
+        <default>false</default>
+        <label>Auto Doors/Access</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering</fullName>
+        <default>false</default>
+        <label>Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning</fullName>
+        <default>false</default>
+        <label>Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>Systems &amp; Controls</fullName>
+        <default>false</default>
+        <label>Systems &amp; Controls</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical &amp; Lighting</fullName>
+        <default>false</default>
+        <label>Electrical &amp; Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Fabric - Internal</fullName>
+        <default>false</default>
+        <label>Fabric - Internal</label>
+    </customValue>
+    <customValue>
+        <fullName>Fire &amp; Security</fullName>
+        <default>false</default>
+        <label>Fire &amp; Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Gritting</fullName>
+        <default>false</default>
+        <label>Gritting</label>
+    </customValue>
+    <customValue>
+        <fullName>HVAC</fullName>
+        <default>false</default>
+        <label>HVAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Imaging (copiers, printers)</fullName>
+        <default>false</default>
+        <label>Imaging (copiers, printers)</label>
+    </customValue>
+    <customValue>
+        <fullName>Landscaping</fullName>
+        <default>false</default>
+        <label>Landscaping</label>
+    </customValue>
+    <customValue>
+        <fullName>Lifts/Escalators</fullName>
+        <default>false</default>
+        <label>Lifts/Escalators</label>
+    </customValue>
+    <customValue>
+        <fullName>Mail Management</fullName>
+        <default>false</default>
+        <label>Mail Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Meeting Room</fullName>
+        <default>false</default>
+        <label>Meeting Room</label>
+    </customValue>
+    <customValue>
+        <fullName>Plumbing &amp; Drainage</fullName>
+        <default>false</default>
+        <label>Plumbing &amp; Drainage</label>
+    </customValue>
+    <customValue>
+        <fullName>Porterage</fullName>
+        <default>false</default>
+        <label>Porterage</label>
+    </customValue>
+    <customValue>
+        <fullName>Reception</fullName>
+        <default>false</default>
+        <label>Reception</label>
+    </customValue>
+    <customValue>
+        <fullName>Riddance</fullName>
+        <default>false</default>
+        <label>Riddance</label>
+    </customValue>
+    <customValue>
+        <fullName>Roofing</fullName>
+        <default>false</default>
+        <label>Roofing</label>
+    </customValue>
+    <customValue>
+        <fullName>Vending</fullName>
+        <default>false</default>
+        <label>Vending</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management</fullName>
+        <default>false</default>
+        <label>Waste Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Windows/Doors/Locks</fullName>
+        <default>false</default>
+        <label>Windows/Doors/Locks</label>
+    </customValue>
+    <customValue>
+        <fullName>Concierge</fullName>
+        <default>false</default>
+        <label>Concierge</label>
+    </customValue>
+    <customValue>
+        <fullName>Display &amp; Communication</fullName>
+        <default>false</default>
+        <label>Display &amp; Communication</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazards</fullName>
+        <default>false</default>
+        <label>Hazards</label>
+    </customValue>
+    <customValue>
+        <fullName>Locks</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Locks</label>
+    </customValue>
+    <customValue>
+        <fullName>Space management</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Space management</label>
+    </customValue>
+    <customValue>
+        <fullName>Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Office supplies</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Office supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Electrical</label>
+    </customValue>
+    <customValue>
+        <fullName>Minor repairs</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Minor repairs</label>
+    </customValue>
+    <customValue>
+        <fullName>Tag, Graffiti</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tag, Graffiti</label>
+    </customValue>
+    <masterLabel>Global Case Categories</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When a lead is converted to an opportunity and the business expert (picklist field) is referenced, the appropriate user needs to be added to the opportunity team member list. 
+
+In order to accomplish this functionality, we had to create this custom metadata type and populated with the respective users&apos; Names along with their UserdID, Region and their secteur(Secteur = Business Expert value: Healthcare, Retail, Industry .....)
+
+Example when a lead is converted to an opportunity, the business expert value is equal to Retail and the owner country code is equal to France, (as of Friday 03/06/2020) Fernando DESOUSA must be added to the opportunity team member list
+
+Important Note: UserId changes from one org to another ( from sandbox to production ONLY). So make sure to update the userId when deploying this metaDataType to production.</description>
+    <label>Subject mater expert Director</label>
+    <pluralLabel>Subject mater expert Directors</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

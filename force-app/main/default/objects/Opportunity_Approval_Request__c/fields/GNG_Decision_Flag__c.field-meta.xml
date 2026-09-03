@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_Decision_Flag__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    GNG_Calc_Decision__c= &quot;Go&quot;,
+    IMAGE(&quot;/resource/1723641953000/green_circle_50&quot;, &quot;Go&quot;, 30, 30),
+    IMAGE(&quot;/resource/1723641919000/red_circle_50&quot;, &quot;No-Go&quot;, 30, 30)
+    
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Indicateur décision GNG</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

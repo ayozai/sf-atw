@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sending_delay__c</fullName>
+    <description>Delay Between quotation created and sending
+Use in report</description>
+    <externalId>false</externalId>
+    <formula>ABS(if( ! ISNULL( Sending_Date__c ),
+(CASE(MOD( DATEVALUE(Case__r.CreatedDate) - DATE(1985,6,24),7),
+0 , CASE(MOD(Sending_Date__c - DATEVALUE(Case__r.CreatedDate),7),1,2,2,3,3,4,4,5,5,5,6,5,1),
+1 , CASE(MOD(Sending_Date__c - DATEVALUE(Case__r.CreatedDate),7),1,2,2,3,3,4,4,4,5,4,6,5,1),
+2 , CASE(MOD(Sending_Date__c - DATEVALUE(Case__r.CreatedDate),7),1,2,2,3,3,3,4,3,5,4,6,5,1),
+3 , CASE(MOD(Sending_Date__c - DATEVALUE(Case__r.CreatedDate),7),1,2,2,2,3,2,4,3,5,4,6,5,1),
+4 , CASE(MOD(Sending_Date__c - DATEVALUE(Case__r.CreatedDate),7),1,1,2,1,3,2,4,3,5,4,6,5,1),
+5 , CASE(MOD(Sending_Date__c - DATEVALUE(Case__r.CreatedDate),7),1,0,2,1,3,2,4,3,5,4,6,5,0),
+6 , CASE(MOD(Sending_Date__c - DATEVALUE(Case__r.CreatedDate),7),1,1,2,2,3,3,4,4,5,5,6,5,0),
+999)
++ (FLOOR((Sending_Date__c-DATEVALUE(Case__r.CreatedDate))/7)*5)
+-
+IF(OR(
+NOT(MOD( DATEVALUE(Case__r.CreatedDate) - DATE (2000 ,1, 1) ,7)=0),
+NOT(MOD( DATEVALUE(Case__r.CreatedDate) - DATE (2000 ,1, 1) ,7)=1)), 1, 0)),
+0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sending delay (days)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>customer_Order_ID</fullName>
+    <active>true</active>
+    <description>Exiger le numéro de commande lors de la confirmation par le client</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(Status__c),
+  $Permission.CanConfirmOrder,
+  TEXT(Status__c) = &quot;Ordered by customer&quot;,
+  ISBLANK(Customer_Order_ID__c)
+)</errorConditionFormula>
+    <errorMessage>Please fill the customer order ID field</errorMessage>
+</ValidationRule>

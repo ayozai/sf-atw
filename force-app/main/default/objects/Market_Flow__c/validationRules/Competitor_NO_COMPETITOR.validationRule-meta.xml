@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_NO_COMPETITOR</fullName>
+    <active>true</active>
+    <errorConditionFormula>!CONTAINS($Profile.Name, &quot;Admin&quot;) &amp;&amp;
+!CONTAINS($User.Username, &apos;autoproc@&apos;) &amp;&amp;
+
+!ISPICKVAL(Loss_Reason__c , &quot;Site Closure&quot;) &amp;&amp;
+ISPICKVAL(Competitor_Name__c, &quot;NO COMPETITOR&quot;)</errorConditionFormula>
+    <errorDisplayField>Loss_Reason__c</errorDisplayField>
+    <errorMessage>In case of competitor, please select site closure or internal takeover.</errorMessage>
+</ValidationRule>

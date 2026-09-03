@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FR - AGEN</fullName>
+        <default>false</default>
+        <label>FR - AGEN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - AIX EN PROVENCE</fullName>
+        <default>false</default>
+        <label>FR - AIX EN PROVENCE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - AMIENS</fullName>
+        <default>false</default>
+        <label>FR - AMIENS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - ANGERS</fullName>
+        <default>false</default>
+        <label>FR - ANGERS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - ANNECY</fullName>
+        <default>false</default>
+        <label>FR - ANNECY</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TOULOUSE AUTERIVE</fullName>
+        <default>false</default>
+        <label>FR - TOULOUSE AUTERIVE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - AUXERRE-SENS</fullName>
+        <default>false</default>
+        <label>FR - AUXERRE-SENS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - AVIGNON</fullName>
+        <default>false</default>
+        <label>FR - AVIGNON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BAYONNE</fullName>
+        <default>false</default>
+        <label>FR - BAYONNE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BIOT</fullName>
+        <default>false</default>
+        <label>FR - BIOT</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BLOIS</fullName>
+        <default>false</default>
+        <label>FR - BLOIS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BORDEAUX CANEJAN</fullName>
+        <default>false</default>
+        <label>FR - BORDEAUX CANEJAN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BORDEAUX GRADIGNAN</fullName>
+        <default>false</default>
+        <label>FR - BORDEAUX GRADIGNAN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BOURG EN BRESSE</fullName>
+        <default>false</default>
+        <label>FR - BOURG EN BRESSE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BREST</fullName>
+        <default>false</default>
+        <label>FR - BREST</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CAEN</fullName>
+        <default>false</default>
+        <label>FR - CAEN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CALAIS</fullName>
+        <default>false</default>
+        <label>FR - CALAIS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CHAMBERY</fullName>
+        <default>false</default>
+        <label>FR - CHAMBERY</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CLERMONT-FERRAND</fullName>
+        <default>false</default>
+        <label>FR - CLERMONT-FERRAND</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CORMONTREUIL</fullName>
+        <default>false</default>
+        <label>FR - CORMONTREUIL</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - COURTHEZON</fullName>
+        <default>false</default>
+        <label>FR - COURTHEZON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - DIJON</fullName>
+        <default>false</default>
+        <label>FR - DIJON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - EPERNAY</fullName>
+        <default>false</default>
+        <label>FR - EPERNAY</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - EPPSI</fullName>
+        <default>false</default>
+        <label>FR - EPPSI</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - FINISTERE</fullName>
+        <default>false</default>
+        <label>FR - FINISTERE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - FOS SUR MER</fullName>
+        <default>false</default>
+        <label>FR - FOS SUR MER</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - GARDANNE</fullName>
+        <default>false</default>
+        <label>FR - GARDANNE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - GRENOBLE</fullName>
+        <default>false</default>
+        <label>FR - GRENOBLE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF-CDG</fullName>
+        <default>false</default>
+        <label>FR - IDF-CDG</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF EST</fullName>
+        <default>false</default>
+        <label>FR - IDF EST</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF-HOPITAUX</fullName>
+        <default>false</default>
+        <label>FR - IDF-HOPITAUX</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF-MULTISERVICE</fullName>
+        <default>false</default>
+        <label>FR - IDF-MULTISERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF NORD</fullName>
+        <default>false</default>
+        <label>FR - IDF NORD</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF-OPAC-DA</fullName>
+        <default>false</default>
+        <label>FR - IDF-OPAC-DA</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF OUEST</fullName>
+        <default>false</default>
+        <label>FR - IDF OUEST</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF SUD</fullName>
+        <default>false</default>
+        <label>FR - IDF SUD</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF-TURGY</fullName>
+        <default>false</default>
+        <label>FR - IDF-TURGY</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LA ROCHE SUR YON</fullName>
+        <default>false</default>
+        <label>FR - LA ROCHE SUR YON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LA SEYNE SUR MER</fullName>
+        <default>false</default>
+        <label>FR - LA SEYNE SUR MER</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LE HAVRE</fullName>
+        <default>false</default>
+        <label>FR - LE HAVRE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LE MANS</fullName>
+        <default>false</default>
+        <label>FR - LE MANS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LES PENNES MIRABEAU</fullName>
+        <default>false</default>
+        <label>FR - LES PENNES MIRABEAU</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LILLE</fullName>
+        <default>false</default>
+        <label>FR - LILLE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LIMOGES</fullName>
+        <default>false</default>
+        <label>FR - LIMOGES</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LNH</fullName>
+        <default>false</default>
+        <label>FR - LNH</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LORIENT</fullName>
+        <default>false</default>
+        <label>FR - LORIENT</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LORRAINE</fullName>
+        <default>false</default>
+        <label>FR - LORRAINE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LOUVIERS</fullName>
+        <default>false</default>
+        <label>FR - LOUVIERS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LUNEL VIEL</fullName>
+        <default>false</default>
+        <label>FR - LUNEL VIEL</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LYON</fullName>
+        <default>false</default>
+        <label>FR - LYON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LYON-GERLAND</fullName>
+        <default>false</default>
+        <label>FR - LYON-GERLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MARCOULE</fullName>
+        <default>false</default>
+        <label>FR - MARCOULE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MAROLLES</fullName>
+        <default>false</default>
+        <label>FR - MAROLLES</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MASSENA</fullName>
+        <default>false</default>
+        <label>FR - MASSENA</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - METZ</fullName>
+        <default>false</default>
+        <label>FR - METZ</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MEYZIEU</fullName>
+        <default>false</default>
+        <label>FR - MEYZIEU</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MONTARGIS</fullName>
+        <default>false</default>
+        <label>FR - MONTARGIS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MONTLUCON</fullName>
+        <default>false</default>
+        <label>FR - MONTLUCON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MONTPELLIER</fullName>
+        <default>false</default>
+        <label>FR - MONTPELLIER</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MULHOUSE</fullName>
+        <default>false</default>
+        <label>FR - MULHOUSE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NANCY</fullName>
+        <default>false</default>
+        <label>FR - NANCY</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NANTES</fullName>
+        <default>false</default>
+        <label>FR - NANTES</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NANTES AIRBUS</fullName>
+        <default>false</default>
+        <label>FR - NANTES AIRBUS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NATIONAL</fullName>
+        <default>false</default>
+        <label>FR - NATIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NET EXPRESS</fullName>
+        <default>false</default>
+        <label>FR - NET EXPRESS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NEVERS</fullName>
+        <default>false</default>
+        <label>FR - NEVERS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NICE</fullName>
+        <default>false</default>
+        <label>FR - NICE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - ORANGE</fullName>
+        <default>false</default>
+        <label>FR - ORANGE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - ORLEANS</fullName>
+        <default>false</default>
+        <label>FR - ORLEANS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - PAOLI CALMETTE</fullName>
+        <default>false</default>
+        <label>FR - PAOLI CALMETTE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - PAU</fullName>
+        <default>false</default>
+        <label>FR - PAU</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - PERPIGNAN</fullName>
+        <default>false</default>
+        <label>FR - PERPIGNAN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TOULOUSE RAMONVILLE</fullName>
+        <default>false</default>
+        <label>FR - TOULOUSE RAMONVILLE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - REIMS</fullName>
+        <default>false</default>
+        <label>FR - REIMS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - RENNES</fullName>
+        <default>false</default>
+        <label>FR - RENNES</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - RODEZ</fullName>
+        <default>false</default>
+        <label>FR - RODEZ</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - ROUEN</fullName>
+        <default>false</default>
+        <label>FR - ROUEN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SAINT BRIEUC</fullName>
+        <default>false</default>
+        <label>FR - SAINT BRIEUC</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SAINTES</fullName>
+        <default>false</default>
+        <label>FR - SAINTES</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SAINT ETIENNE</fullName>
+        <default>false</default>
+        <label>FR - SAINT ETIENNE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SAINT-NAZAIRE</fullName>
+        <default>false</default>
+        <label>FR - SAINT-NAZAIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SNCF</fullName>
+        <default>false</default>
+        <label>FR - SNCF</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - STRASBOURG</fullName>
+        <default>false</default>
+        <label>FR - STRASBOURG</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SUCY-LEROUX</fullName>
+        <default>false</default>
+        <label>FR - SUCY-LEROUX</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TAISSY</fullName>
+        <default>false</default>
+        <label>FR - TAISSY</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TOURS</fullName>
+        <default>false</default>
+        <label>FR - TOURS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TRANSKEO</fullName>
+        <default>false</default>
+        <label>FR - TRANSKEO</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TREMERY</fullName>
+        <default>false</default>
+        <label>FR - TREMERY</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TRICASTIN</fullName>
+        <default>false</default>
+        <label>FR - TRICASTIN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TROYES</fullName>
+        <default>false</default>
+        <label>FR - TROYES</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - USP</fullName>
+        <default>false</default>
+        <label>FR - USP</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - USP-CHARTRES</fullName>
+        <default>false</default>
+        <label>FR - USP-CHARTRES</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - USP-CLICHY</fullName>
+        <default>false</default>
+        <label>FR - USP-CLICHY</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - USP-MONTROUGE</fullName>
+        <default>false</default>
+        <label>FR - USP-MONTROUGE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - USP-RATP</fullName>
+        <default>false</default>
+        <label>FR - USP-RATP</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - VAR-TOULON</fullName>
+        <default>false</default>
+        <label>FR - VAR-TOULON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - VENISSIEUX</fullName>
+        <default>false</default>
+        <label>FR - VENISSIEUX</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - VILLEFONTAINE</fullName>
+        <default>false</default>
+        <label>FR - VILLEFONTAINE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - VILLENEUVE</fullName>
+        <default>false</default>
+        <label>FR - VILLENEUVE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - VITRY LE FRANCOIS</fullName>
+        <default>false</default>
+        <label>FR - VITRY LE FRANCOIS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - WAMBRECHIES</fullName>
+        <default>false</default>
+        <label>FR - WAMBRECHIES</label>
+    </customValue>
+    <customValue>
+        <fullName>NL - VISSCHEDIJK CATERING BV</fullName>
+        <default>false</default>
+        <label>NL - CATERING</label>
+    </customValue>
+    <customValue>
+        <fullName>NL - VISSCHEDIJK FACILITAIR BV</fullName>
+        <default>false</default>
+        <label>NL - FACILITAIR</label>
+    </customValue>
+    <customValue>
+        <fullName>NL - VISSCHEDIJK SHOONMAAK + BV</fullName>
+        <default>false</default>
+        <label>NL - SHOONMAAK +</label>
+    </customValue>
+    <customValue>
+        <fullName>NL - VISSCHEDIJK SHOONMAAK NO BV</fullName>
+        <default>false</default>
+        <label>NL - SHOONMAAK NO</label>
+    </customValue>
+    <customValue>
+        <fullName>NL - VISSCHEDIJK SHOONMAAK ZW BV</fullName>
+        <default>false</default>
+        <label>NL - SHOONMAAK ZW</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BORDEAUX - MULTITECH</fullName>
+        <default>false</default>
+        <label>FR - BORDEAUX - MULTITECH</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TOULOUSE - MULTITECH</fullName>
+        <default>false</default>
+        <label>FR - TOULOUSE - MULTITECH</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - PALAISEAU</fullName>
+        <default>false</default>
+        <label>FR - PALAISEAU</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - VALENCE</fullName>
+        <default>false</default>
+        <label>FR - VALENCE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CAMMARATA</fullName>
+        <default>false</default>
+        <label>FR - CAMMARATA</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CANTELEU</fullName>
+        <default>false</default>
+        <label>FR - CANTELEU</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CHRONOPOST CORBAS</fullName>
+        <default>false</default>
+        <label>FR - CHRONOPOST CORBAS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - GUEUGNON</fullName>
+        <default>false</default>
+        <label>FR - GUEUGNON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - HEI-CMR</fullName>
+        <default>false</default>
+        <label>FR - HEI-CMR</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LAGNY LE SEC</fullName>
+        <default>false</default>
+        <label>FR - LAGNY LE SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - LYON CARRARD</fullName>
+        <default>false</default>
+        <label>FR - LYON CARRARD</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MEYZIEU LIMPA</fullName>
+        <default>false</default>
+        <label>FR - MEYZIEU LIMPA</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NIMES</fullName>
+        <default>false</default>
+        <label>FR - NIMES</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - NIORT</fullName>
+        <default>false</default>
+        <label>FR - NIORT</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - PARIS 1 - SECURITE</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - PARIS 1</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - PARIS 12 - SECURITE</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - PARIS 12 - DISTRIBUTION</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - PARIS 2 - SECURITE</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - PARIS 2</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - PARIS 6 SNCF - SECURITE</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - PARIS 6 - FERROVIAIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - ST MICRO</fullName>
+        <default>false</default>
+        <label>FR - ST MICRO</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MARSEILLE - SECURITE</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - PACA (MARSEILLE)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - CAT - Catering</fullName>
+        <default>false</default>
+        <label>BE - CAT - Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C1 - Brussels Large accounts</fullName>
+        <default>false</default>
+        <label>BE - C1 - Brussels Large accounts</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C2 - Antwerpen</fullName>
+        <default>false</default>
+        <label>BE - C2 - Antwerpen</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C3 - Gent</fullName>
+        <default>false</default>
+        <label>BE - C3 - Gent</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C4 - Key accounts</fullName>
+        <default>false</default>
+        <label>BE - C4 - Key accounts</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C5 - Limburg</fullName>
+        <default>false</default>
+        <label>BE - C5 - Limburg</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C6 - Brussels</fullName>
+        <default>false</default>
+        <label>BE - C6 - Brussels</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C7 - Walloon</fullName>
+        <default>false</default>
+        <label>BE - C7 - Walloon</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - Multi-agencies</fullName>
+        <default>false</default>
+        <label>BE - Multi-agencies</label>
+    </customValue>
+    <customValue>
+        <fullName>LUX - AGS</fullName>
+        <default>false</default>
+        <label>LUX - AGS</label>
+    </customValue>
+    <customValue>
+        <fullName>LUX - CITY ONE</fullName>
+        <default>false</default>
+        <label>LUX - CITY ONE</label>
+    </customValue>
+    <customValue>
+        <fullName>LUX - MTO</fullName>
+        <default>false</default>
+        <label>LUX - MTO</label>
+    </customValue>
+    <customValue>
+        <fullName>LUX - Multi-agencies</fullName>
+        <default>false</default>
+        <label>LUX - Multi-agencies</label>
+    </customValue>
+    <customValue>
+        <fullName>NL - VISSCHEDIJK - Multi-agencies</fullName>
+        <default>false</default>
+        <label>NL - Multi-agencies</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C8 - Commission Européenne</fullName>
+        <default>false</default>
+        <label>BE - C8 - Commission Européenne</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - C9 - Window Cleaning</fullName>
+        <default>false</default>
+        <label>BE - C9 - Window Cleaning</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - TECH - Technical Maintenance</fullName>
+        <default>false</default>
+        <label>BE - TECH - Technical Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>BE - AK - Aktrion</fullName>
+        <default>false</default>
+        <label>BE - AK - Aktrion</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - AST</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - TECHNOLOGIE (AST)</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – MAROMME</fullName>
+        <default>false</default>
+        <label>FR – MAROMME</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - IDF FM</fullName>
+        <default>false</default>
+        <label>FR - IDF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SECURITE - HAUTS DE FRANCE (ORCHIES)</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - HAUTS DE FRANCE (ORCHIES)</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SECURITE - NORMANDIE (LE HAVRE)</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - NORMANDIE (LE HAVRE)</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SECURITE - GRAND EST (REIMS)</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - GRAND EST (REIMS)</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SECURITE - AURA (MEYZIEU)</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - AURA (MEYZIEU)</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SECURITE - OUEST (CARQUEFOU – LE MANS)</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - OUEST (CARQUEFOU – LE MANS)</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SECURITE - AQUITAINE – OCCITANIE (CANEJAN)</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - AQUITAINE – OCCITANIE (CANEJAN)</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SECURITE - AEROPORTUAIRE (APFS)</fullName>
+        <default>false</default>
+        <label>FR - SECURITE - AEROPORTUAIRE (APFS)</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - MARSEILLE</fullName>
+        <default>false</default>
+        <label>FR - MARSEILLE</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – DR - Canéjan</fullName>
+        <default>false</default>
+        <label>FR – AME – DR - Canéjan</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – DR - Rungis</fullName>
+        <default>false</default>
+        <label>FR – AME – DR - Rungis</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – DR - Bouc-Bel-Air</fullName>
+        <default>false</default>
+        <label>FR – AME – DR - Bouc-Bel-Air</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – Agence - Auterive</fullName>
+        <default>false</default>
+        <label>FR – AME – Agence - Auterive</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – Agence - Bordeaux</fullName>
+        <default>false</default>
+        <label>FR – AME – Agence - Bordeaux</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – Agence - Dijon</fullName>
+        <default>false</default>
+        <label>FR – AME – Agence - Dijon</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – Agence - La Maine Maromme</fullName>
+        <default>false</default>
+        <label>FR – AME – Agence - La Maine Maromme</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – Agence - Nantes</fullName>
+        <default>false</default>
+        <label>FR – AME – Agence - Nantes</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – Agence - Pérols</fullName>
+        <default>false</default>
+        <label>FR – AME – Agence - Pérols</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – DR - Aubervilliers</fullName>
+        <default>false</default>
+        <label>FR – AME – DR - Aubervilliers</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – DR - Illkirch</fullName>
+        <default>false</default>
+        <label>FR – AME – DR - Illkirch</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – DR - Landerneau</fullName>
+        <default>false</default>
+        <label>FR – AME – DR - Landerneau</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – DR - Meyzieu</fullName>
+        <default>false</default>
+        <label>FR – AME – DR - Meyzieu</label>
+    </customValue>
+    <customValue>
+        <fullName>FR – AME – DR - Orchies</fullName>
+        <default>false</default>
+        <label>FR – AME – DR - Orchies</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - ANGLET</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - ANGLET</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - AVEYRON</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - AVEYRON</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - BORDEAUX 3</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - BORDEAUX 3</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - CANEJAN</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - CANEJAN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - GRADIGNAN</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - GRADIGNAN</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - POITIERS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - POITIERS</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TOULOUSE 1</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - TOULOUSE 1</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - TOULOUSE 2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - TOULOUSE 2</label>
+    </customValue>
+    <customValue>
+        <fullName>FR - SUCY EN BRIE - SECURITE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FR - SECURITE - SUCY EN BRIE</label>
+    </customValue>
+    <masterLabel>Atalian Agency</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

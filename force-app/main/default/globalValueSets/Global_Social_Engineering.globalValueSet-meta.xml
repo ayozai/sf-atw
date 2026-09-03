@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Yes, supported by client</fullName>
+        <default>false</default>
+        <label>Yes, supported by client</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes, partially supported by client</fullName>
+        <default>false</default>
+        <label>Yes, partially supported by client</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes, not supported by client</fullName>
+        <default>false</default>
+        <label>Yes, not supported by client</label>
+    </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <masterLabel>Global Social Engineering</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

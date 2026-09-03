@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AUTRES</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Agency_ERP_ID__c</columns>
+    <columns>Agency_Name__c</columns>
+    <columns>Division__c</columns>
+    <columns>Company_ERP_ID__c</columns>
+    <columns>Company_Name__c</columns>
+    <columns>Wide_Area_ID__c</columns>
+    <columns>Wide_Area_Name__c</columns>
+    <columns>DR_ERP_ID__c</columns>
+    <columns>DR_Name__c</columns>
+    <columns>DO_ERP_ID__c</columns>
+    <columns>DO_Name__c</columns>
+    <columns>DRD_ERP_ID__c</columns>
+    <columns>DRD_Name__c</columns>
+    <columns>Agency_Director__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Division__c</field>
+        <operation>startsWith</operation>
+        <value>P</value>
+    </filters>
+    <filters>
+        <field>Wide_Area_ID__c</field>
+        <operation>notContain</operation>
+        <value>A,O,F,I,S,E</value>
+    </filters>
+    <label>AUTRES</label>
+    <sharedTo>
+        <role>France_BeNeLux</role>
+    </sharedTo>
+</ListView>

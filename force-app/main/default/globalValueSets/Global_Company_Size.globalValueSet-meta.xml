@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Less than 50 employees</fullName>
+        <default>false</default>
+        <label>Less than 50 employees</label>
+    </customValue>
+    <customValue>
+        <fullName>50 to 99</fullName>
+        <default>false</default>
+        <label>50 to 99</label>
+    </customValue>
+    <customValue>
+        <fullName>100 to 149</fullName>
+        <default>false</default>
+        <label>100 to 149</label>
+    </customValue>
+    <customValue>
+        <fullName>150 to 199</fullName>
+        <default>false</default>
+        <label>150 to 199</label>
+    </customValue>
+    <customValue>
+        <fullName>200 to 499</fullName>
+        <default>false</default>
+        <label>200 to 499</label>
+    </customValue>
+    <customValue>
+        <fullName>500 to 999</fullName>
+        <default>false</default>
+        <label>500 to 999</label>
+    </customValue>
+    <customValue>
+        <fullName>1000 to 4999</fullName>
+        <default>false</default>
+        <label>1000 to 4999</label>
+    </customValue>
+    <customValue>
+        <fullName>More than 5000</fullName>
+        <default>false</default>
+        <label>More than 5000</label>
+    </customValue>
+    <customValue>
+        <fullName>de 5000 à 9999 salariés</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>de 5000 à 9999 salariés</label>
+    </customValue>
+    <description>List of company sizes coming from Dynamics in France</description>
+    <masterLabel>Global Company Size</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

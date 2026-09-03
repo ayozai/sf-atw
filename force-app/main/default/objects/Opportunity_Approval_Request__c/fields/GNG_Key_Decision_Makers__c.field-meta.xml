@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_Key_Decision_Makers__c</fullName>
+    <label>Décisionnaires connus</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oui, contact récent</fullName>
+                <default>false</default>
+                <label>Oui, contact récent</label>
+            </value>
+            <value>
+                <fullName>Oui, contacté ces dernières années</fullName>
+                <default>false</default>
+                <label>Oui, contacté ces dernières années</label>
+            </value>
+            <value>
+                <fullName>Oui mais aucun contact préalable</fullName>
+                <default>false</default>
+                <label>Oui mais aucun contact préalable</label>
+            </value>
+            <value>
+                <fullName>Non</fullName>
+                <default>false</default>
+                <label>Non</label>
+            </value>
+            <value>
+                <fullName>Oui, contact éloigné</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oui, contact éloigné</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

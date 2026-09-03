@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Personal_Protective_Equipment__c</fullName>
+    <label>Personal Protective Equipment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Coverall</fullName>
+                <default>false</default>
+                <label>Coverall</label>
+            </value>
+            <value>
+                <fullName>Ear Defenders</fullName>
+                <default>false</default>
+                <label>Ear Defenders</label>
+            </value>
+            <value>
+                <fullName>Gloves</fullName>
+                <default>false</default>
+                <label>Gloves</label>
+            </value>
+            <value>
+                <fullName>Harness</fullName>
+                <default>false</default>
+                <label>Harness</label>
+            </value>
+            <value>
+                <fullName>High Visibility Vests</fullName>
+                <default>false</default>
+                <label>High Visibility Vests</label>
+            </value>
+            <value>
+                <fullName>Jacket</fullName>
+                <default>false</default>
+                <label>Jacket</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Parka / Fleece</fullName>
+                <default>false</default>
+                <label>Parka / Fleece</label>
+            </value>
+            <value>
+                <fullName>Protective Glasses</fullName>
+                <default>false</default>
+                <label>Protective Glasses</label>
+            </value>
+            <value>
+                <fullName>Safety Boots</fullName>
+                <default>false</default>
+                <label>Safety Boots</label>
+            </value>
+            <value>
+                <fullName>Safety Shoes</fullName>
+                <default>false</default>
+                <label>Safety Shoes</label>
+            </value>
+            <value>
+                <fullName>Smock/Apron</fullName>
+                <default>false</default>
+                <label>Smock/Apron</label>
+            </value>
+            <value>
+                <fullName>Tee Shirt</fullName>
+                <default>false</default>
+                <label>Tee Shirt</label>
+            </value>
+            <value>
+                <fullName>Trousers</fullName>
+                <default>false</default>
+                <label>Trousers</label>
+            </value>
+            <value>
+                <fullName>Work Shoes (Non-Safety)</fullName>
+                <default>false</default>
+                <label>Work Shoes (Non-Safety)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

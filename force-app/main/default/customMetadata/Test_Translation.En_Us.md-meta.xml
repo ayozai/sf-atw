@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>En_Us</label>
+    <protected>false</protected>
+    <values>
+        <field>Account_Name__c</field>
+        <value xsi:type="xsd:string">Account Name</value>
+    </values>
+    <values>
+        <field>Active_Pipeline__c</field>
+        <value xsi:type="xsd:string">Active Pipeline</value>
+    </values>
+    <values>
+        <field>Annual_GM__c</field>
+        <value xsi:type="xsd:string">Annual GM</value>
+    </values>
+    <values>
+        <field>Annual_Revenue__c</field>
+        <value xsi:type="xsd:string">Annual Revenue</value>
+    </values>
+    <values>
+        <field>Annualised_GM__c</field>
+        <value xsi:type="xsd:string">Annualised GM</value>
+    </values>
+    <values>
+        <field>Annualised_Revenue__c</field>
+        <value xsi:type="xsd:string">Annualised Revenue</value>
+    </values>
+    <values>
+        <field>Average_Deal_Size__c</field>
+        <value xsi:type="xsd:string">Average Deal Size</value>
+    </values>
+    <values>
+        <field>Average_GM_Split__c</field>
+        <value xsi:type="xsd:string">Average GM Split %</value>
+    </values>
+    <values>
+        <field>Average_GM__c</field>
+        <value xsi:type="xsd:string">Average GM %</value>
+    </values>
+    <values>
+        <field>Contract_Number__c</field>
+        <value xsi:type="xsd:string">Contract Number</value>
+    </values>
+    <values>
+        <field>Contracts_At_Risk__c</field>
+        <value xsi:type="xsd:string">Contracts At Risk</value>
+    </values>
+    <values>
+        <field>Contracts_Started_This_Period_Start_Da__c</field>
+        <value xsi:type="xsd:string">Contracts Started This Period - Start Date</value>
+    </values>
+    <values>
+        <field>Contracts_Started_Vs_FY_Target_Start_D__c</field>
+        <value xsi:type="xsd:string">Contracts Started Vs FY Target - Start Date</value>
+    </values>
+    <values>
+        <field>Country__c</field>
+        <value xsi:type="xsd:string">Country</value>
+    </values>
+    <values>
+        <field>Effective_Annual_Gross_Margin__c</field>
+        <value xsi:type="xsd:string">Effective Annual Gross Margin</value>
+    </values>
+    <values>
+        <field>Effective_Annual_Revenue__c</field>
+        <value xsi:type="xsd:string">Effective Annual Revenue</value>
+    </values>
+    <values>
+        <field>Effective_Gross_Margin_Percent__c</field>
+        <value xsi:type="xsd:string">Effective Gross Margin %</value>
+    </values>
+    <values>
+        <field>End_Date__c</field>
+        <value xsi:type="xsd:string">End Date</value>
+    </values>
+    <values>
+        <field>GM_Percent__c</field>
+        <value xsi:type="xsd:string">GM %</value>
+    </values>
+    <values>
+        <field>In_Year_GM__c</field>
+        <value xsi:type="xsd:string">In Year GM</value>
+    </values>
+    <values>
+        <field>In_Year_Revenue__c</field>
+        <value xsi:type="xsd:string">In Year Revenue</value>
+    </values>
+    <values>
+        <field>Monthly_GM__c</field>
+        <value xsi:type="xsd:string">Monthly GM</value>
+    </values>
+    <values>
+        <field>Monthly_Revenue__c</field>
+        <value xsi:type="xsd:string">Monthly Revenue</value>
+    </values>
+    <values>
+        <field>Name__c</field>
+        <value xsi:type="xsd:string">Name</value>
+    </values>
+    <values>
+        <field>Next_30_Days__c</field>
+        <value xsi:type="xsd:string">Next 30 Days</value>
+    </values>
+    <values>
+        <field>Next_365_Days__c</field>
+        <value xsi:type="xsd:string">Next 365 Days</value>
+    </values>
+    <values>
+        <field>Next_60_Days__c</field>
+        <value xsi:type="xsd:string">Next 60 Days</value>
+    </values>
+    <values>
+        <field>Next_90_Days__c</field>
+        <value xsi:type="xsd:string">Next 90 Days</value>
+    </values>
+    <values>
+        <field>Period_Wins_Vs_Monthly_Target__c</field>
+        <value xsi:type="xsd:string">Period Wins Vs Monthly Target</value>
+    </values>
+    <values>
+        <field>Pipeline_Analysis__c</field>
+        <value xsi:type="xsd:string">Pipeline Analysis</value>
+    </values>
+    <values>
+        <field>Proposal_Submitted_5m__c</field>
+        <value xsi:type="xsd:string">Proposal Submitted - Annual Revenue &gt; 5M</value>
+    </values>
+    <values>
+        <field>Proposal_Submitted_GM_10__c</field>
+        <value xsi:type="xsd:string">Proposal Submitted - GM &lt; 10%</value>
+    </values>
+    <values>
+        <field>Proposals_Submitted__c</field>
+        <value xsi:type="xsd:string">Proposals Submitted</value>
+    </values>
+    <values>
+        <field>Rev_New_Business__c</field>
+        <value xsi:type="xsd:string">% Rev New Business</value>
+    </values>
+    <values>
+        <field>Sales_Win_Ratio_Count__c</field>
+        <value xsi:type="xsd:string">Sales Win Ratio (Count)</value>
+    </values>
+    <values>
+        <field>Sales_Win_Ratio_Revenue__c</field>
+        <value xsi:type="xsd:string">Sales Win Ratio (Revenue)</value>
+    </values>
+    <values>
+        <field>Start_Date__c</field>
+        <value xsi:type="xsd:string">Start Date</value>
+    </values>
+    <values>
+        <field>Target__c</field>
+        <value xsi:type="xsd:string">Target</value>
+    </values>
+    <values>
+        <field>Top_10_Wins_Annual_Revenue__c</field>
+        <value xsi:type="xsd:string">Top 10 Wins - Annual Revenue</value>
+    </values>
+    <values>
+        <field>Total_Annual_GM__c</field>
+        <value xsi:type="xsd:string">Total Annual GM</value>
+    </values>
+    <values>
+        <field>Total_Deals_Won__c</field>
+        <value xsi:type="xsd:string">Total Deals Won</value>
+    </values>
+    <values>
+        <field>Wins_Vs_FY_Target_Award_Date__c</field>
+        <value xsi:type="xsd:string">Wins Vs FY Target - Award Date</value>
+    </values>
+    <values>
+        <field>Wins_Vs_Targets__c</field>
+        <value xsi:type="xsd:string">Wins Vs Targets</value>
+    </values>
+</CustomMetadata>

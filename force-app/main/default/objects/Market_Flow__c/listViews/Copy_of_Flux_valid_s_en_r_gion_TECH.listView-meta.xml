@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Flux_valid_s_en_r_gion_TECH</fullName>
+    <columns>NAME</columns>
+    <columns>Operations_Site__c</columns>
+    <columns>Operations_Site_Name__c</columns>
+    <columns>Market_Flow_Name__c</columns>
+    <columns>Revenue_Win__c</columns>
+    <columns>Revenue_Loss__c</columns>
+    <columns>Revenue_Upsell__c</columns>
+    <columns>Revenue_Downsell__c</columns>
+    <columns>Monthly_Revenue__c</columns>
+    <columns>Gross_Margin_2__c</columns>
+    <columns>Gross_Margin_Calculated_2__c</columns>
+    <columns>Effective_Date__c</columns>
+    <columns>Initial_Monthly_Revenue__c</columns>
+    <columns>Flow_Cancelled__c</columns>
+    <columns>Agency_Wide_Area_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Approved_locally</value>
+    </filters>
+    <filters>
+        <field>Agency_Division__c</field>
+        <operation>equals</operation>
+        <value>TECHNI</value>
+    </filters>
+    <label>Flux validés en région TECH</label>
+</ListView>

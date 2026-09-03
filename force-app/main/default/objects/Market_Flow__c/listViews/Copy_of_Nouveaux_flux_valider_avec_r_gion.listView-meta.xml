@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Nouveaux_flux_valider_avec_r_gion</fullName>
+    <columns>NAME</columns>
+    <columns>Operations_Site__c</columns>
+    <columns>Operations_Site_Name__c</columns>
+    <columns>Market_Flow_Name__c</columns>
+    <columns>Revenue_Win__c</columns>
+    <columns>Revenue_Loss__c</columns>
+    <columns>Revenue_Upsell__c</columns>
+    <columns>Revenue_Downsell__c</columns>
+    <columns>Revenue_Upward_Renewal__c</columns>
+    <columns>Revenue_Downward_Renewal__c</columns>
+    <columns>Effective_Date__c</columns>
+    <columns>Agency__c</columns>
+    <columns>Created_Week_Number_2__c</columns>
+    <columns>Agency_Division__c</columns>
+    <columns>Agency_Wide_Area_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <label>Nouveaux flux à valider</label>
+    <sharedTo>
+        <roleAndSubordinates>France</roleAndSubordinates>
+    </sharedTo>
+</ListView>

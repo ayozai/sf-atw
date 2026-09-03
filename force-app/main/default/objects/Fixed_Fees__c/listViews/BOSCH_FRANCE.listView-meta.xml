@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOSCH_FRANCE</fullName>
+    <columns>NAME</columns>
+    <columns>Site__c</columns>
+    <columns>Account__c</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>Baseline__c</columns>
+    <columns>Fixed_Fees__c</columns>
+    <columns>Saving__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>contains</operation>
+        <value>BOSCH-FR</value>
+    </filters>
+    <filters>
+        <field>Invoice_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2025</value>
+    </filters>
+    <filters>
+        <field>Invoice_Date__c</field>
+        <operation>lessThan</operation>
+        <value>1/1/2026</value>
+    </filters>
+    <label>BOSCH FRANCE 2025</label>
+</ListView>

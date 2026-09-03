@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VGP_Next_Verification_Date__c</fullName>
+    <formula>IF(
+    OR(
+        ISBLANK(VGP_Last_Verification_Date__c),
+        ISBLANK(TEXT(VGP_Verification_Frequency__c))
+    ),
+    NULL,
+    ADDMONTHS(
+        VGP_Last_Verification_Date__c,
+        VALUE(
+            TEXT(VGP_Verification_Frequency__c)
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>VGP Next Verification Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

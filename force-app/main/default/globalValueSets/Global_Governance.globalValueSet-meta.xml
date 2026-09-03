@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Key Account</fullName>
+        <default>false</default>
+        <label>Key Account</label>
+    </customValue>
+    <customValue>
+        <fullName>Local Account</fullName>
+        <default>false</default>
+        <label>Local Account</label>
+    </customValue>
+    <masterLabel>Global Governance</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

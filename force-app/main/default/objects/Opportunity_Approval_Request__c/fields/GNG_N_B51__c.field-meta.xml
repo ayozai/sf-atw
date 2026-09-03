@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_N_B51__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(GNG_Response_Deadline__c, &apos;&gt; 6 mois&apos;), 4,
+  IF(ISPICKVAL(GNG_Response_Deadline__c, &apos;Entre 3 à 6 mois&apos;), 3,
+    IF(ISPICKVAL(GNG_Response_Deadline__c, &apos;Entre 1 à 3 mois&apos;), 2, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score B5.1 — Délai de réponse</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

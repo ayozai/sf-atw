@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SECU_TECH</fullName>
+    <columns>NAME</columns>
+    <columns>Agency_ERP_ID__c</columns>
+    <columns>Agency_Name__c</columns>
+    <columns>Division__c</columns>
+    <columns>Company_ERP_ID__c</columns>
+    <columns>Company_Name__c</columns>
+    <columns>Wide_Area_ID__c</columns>
+    <columns>Wide_Area_Name__c</columns>
+    <columns>DR_ERP_ID__c</columns>
+    <columns>DR_Name__c</columns>
+    <columns>DO_ERP_ID__c</columns>
+    <columns>DO_Name__c</columns>
+    <columns>DRD_ERP_ID__c</columns>
+    <columns>DRD_Name__c</columns>
+    <columns>Agency_Director__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Division__c</field>
+        <operation>startsWith</operation>
+        <value>S</value>
+    </filters>
+    <label>SECURITE</label>
+    <sharedTo>
+        <roleAndSubordinates>France_Security_Director</roleAndSubordinates>
+    </sharedTo>
+</ListView>

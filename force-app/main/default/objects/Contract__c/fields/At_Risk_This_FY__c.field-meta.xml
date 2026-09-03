@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>At_Risk_This_FY__c</fullName>
+    <description>Is the contract active and due to expire in the current financial year? FY assumed to be the same as calendar year</description>
+    <formula>AND(OR(ISPICKVAL(Status__c, &apos;Active&apos;), ISPICKVAL(Status__c, &apos;In Negotiation&apos;)), YEAR(Contract_End_Date__c) == YEAR(TODAY()))</formula>
+    <inlineHelpText>Is the contract active and due to expire in the current financial year?</inlineHelpText>
+    <label>At Risk This FY</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

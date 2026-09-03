@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>All permission sets required for delegated admins for France &amp; Benelux</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FrBNL Delegated Admin</label>
+    <permissionSets>Contract_and_Contracted_Services_Super_User</permissionSets>
+    <permissionSets>Contracted_Services_Create</permissionSets>
+    <permissionSets>Customer_Service_User</permissionSets>
+    <permissionSets>Customer_Service_User_Admin</permissionSets>
+    <permissionSets>Delete_All</permissionSets>
+    <permissionSets>FR_UserFeatures</permissionSets>
+    <permissionSets>Manage_Roles</permissionSets>
+    <permissionSets>Manage_Sharing_Rules</permissionSets>
+    <permissionSets>Mass_Reassign_Teams</permissionSets>
+    <permissionSets>Mass_Transfer</permissionSets>
+    <permissionSets>QHSE_Report_CRED</permissionSets>
+    <permissionSets>Quick_Survey</permissionSets>
+    <permissionSets>Quotation_management</permissionSets>
+    <permissionSets>Report_and_Dashboard_Management</permissionSets>
+    <permissionSets>Run_Flows</permissionSets>
+    <permissionSets>Training_CRED</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

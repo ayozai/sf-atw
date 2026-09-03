@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Read_Only</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT(ISCHANGED(Process_Technical_Field__c)),
+  NOT(ISPICKVAL(Status__c, &apos;Rejected&apos;)),
+  NOT(ISPICKVAL(Status__c, &apos;New&apos;)),
+
+  /* Bloquer sauf si le champ modifié est uniquement Status__c et qu&apos;on passe à &quot;Sent&quot; */
+  NOT(
+    AND(
+      ISPICKVAL(Status__c, &apos;Sent&apos;),
+      ISCHANGED(Status__c)
+    )
+  ),
+
+  /* Bloquer sauf si le champ modifié est uniquement Status__c et qu&apos;on passe à &quot;Approved&quot; avec un approbateur */
+  NOT(
+    AND(
+      ISPICKVAL(Status__c, &apos;Approved&apos;),
+      ISCHANGED(Status__c),
+      OR(
+        $User.Id = Approver__c,
+        $User.Id = Approver_2__c
+      )
+    )
+  ),
+
+  /* Bloquer sauf si l&apos;utilisateur est un approbateur et le statut est &quot;Sent&quot; */
+  NOT(
+    AND(
+      ISPICKVAL(Status__c, &apos;Sent&apos;),
+      OR(
+        $User.Id = Approver__c,
+        $User.Id = Approver_2__c
+      )
+    )
+  ),
+
+  /* Bloquer toute modification si le statut est &quot;Approved&quot; */
+  ISPICKVAL(Status__c, &apos;Approved&apos;)
+)</errorConditionFormula>
+    <errorMessage>Your are not allowed to edit this record.</errorMessage>
+</ValidationRule>

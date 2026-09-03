@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agriculture</fullName>
+        <default>false</default>
+        <label>Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate</fullName>
+        <default>false</default>
+        <label>Corporate</label>
+    </customValue>
+    <customValue>
+        <fullName>Distribution &amp; Logistics</fullName>
+        <default>false</default>
+        <label>Distribution &amp; Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Healthcare</fullName>
+        <default>false</default>
+        <label>Healthcare</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Media</fullName>
+        <default>false</default>
+        <label>Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining &amp; Quarrying</fullName>
+        <default>false</default>
+        <label>Mining &amp; Quarrying</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Sector</fullName>
+        <default>false</default>
+        <label>Public Sector</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Sports, Leisure &amp; Tourism</fullName>
+        <default>false</default>
+        <label>Sports, Leisure &amp; Tourism</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport</fullName>
+        <default>false</default>
+        <label>Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Utilities</fullName>
+        <default>false</default>
+        <label>Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Residential</fullName>
+        <default>false</default>
+        <label>Residential</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate</fullName>
+        <default>false</default>
+        <label>Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceutical</fullName>
+        <default>false</default>
+        <label>Pharmaceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Centre</fullName>
+        <default>false</default>
+        <label>Data Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate - Offices</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Real Estate - Offices</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate : Asset Management</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Real Estate : Asset Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Public - Hospitals</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Public - Hospitals</label>
+    </customValue>
+    <customValue>
+        <fullName>Public - Government</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Public - Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial - FMCG</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial - FMCG</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-profit</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Non-profit</label>
+    </customValue>
+    <customValue>
+        <fullName>Mass retailing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mass retailing</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxe</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Luxe</label>
+    </customValue>
+    <customValue>
+        <fullName>Nursing Home</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nursing Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial - Automotive</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial - Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial : Mechanics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial : Mechanics</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial : Chemical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial : Chemical</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotels</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hotels</label>
+    </customValue>
+    <customValue>
+        <fullName>High Tech</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Industry</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Food Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Exhibition / Event</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Exhibition / Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Education: Schools / Universities</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Education: Schools / Universities</label>
+    </customValue>
+    <customValue>
+        <fullName>Culture / Museum</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Culture / Museum</label>
+    </customValue>
+    <customValue>
+        <fullName>Clinic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Clinic</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertising/Marketing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advertising/Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Banking and Insurance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Banking and Insurance</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial - Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial - Pharmaceutical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial - Pharmaceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>Sport &amp; Leisure</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sport &amp; Leisure</label>
+    </customValue>
+    <customValue>
+        <fullName>Services</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate - Shopping Mall</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Real Estate - Shopping Mall</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate - Retail</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Real Estate - Retail</label>
+    </customValue>
+    <description>List of Sectors agreed on August 2018.
+Updated 28/12/2022 for Asia</description>
+    <masterLabel>Global_Atalian Sector</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

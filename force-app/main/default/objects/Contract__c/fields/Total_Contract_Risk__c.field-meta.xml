@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Contract_Risk__c</fullName>
+    <description>This is the total of each risk weighting</description>
+    <externalId>false</externalId>
+    <formula>BLANKVALUE(VALUE(TEXT( Contract_End_Risk_Level__c )), 0) +
+BLANKVALUE(VALUE(TEXT( Operational_Risk_Level__c )), 0) +
+BLANKVALUE(VALUE(TEXT( Financial_Risk_Level__c )), 0) +
+BLANKVALUE(VALUE(TEXT( Relationship_Risk_Level__c )), 0) +
+BLANKVALUE(VALUE(TEXT( Delivery_Against_Tender_Risk_Level__c )), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Contract Risk</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

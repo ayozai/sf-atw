@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Indexation_Campaign__c</entityName>
+    <fieldName>Indexation_Status__c</fieldName>
+    <masterLabel>Indexation Status</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Approval_Date__c</fieldNames>
+        <fieldNames>Indexation_Rate_Billed__c</fieldNames>
+        <info>&lt;p&gt;Only Controlling Users could select this stage.&lt;/p&gt;</info>
+        <picklistValueName>Approved by Controlling</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Indexation_Percentage_Communicated__c</fieldNames>
+        <fieldNames>Communication_Date__c</fieldNames>
+        <fieldNames>Means_of_communication__c</fieldNames>
+        <fieldNames>Increase_Requested__c</fieldNames>
+        <info>&lt;p&gt;Communicated to Customer&lt;/p&gt;</info>
+        <picklistValueName>Communicated to Customer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Indexation_Percentage_Targeted__c</fieldNames>
+        <fieldNames>Contract_Amount__c</fieldNames>
+        <fieldNames>Indexation_Amount_Targeted__c</fieldNames>
+        <fieldNames>Revaluation_Effective_Date_Targeted__c</fieldNames>
+        <info>&lt;p&gt;In Preparation&lt;/p&gt;</info>
+        <picklistValueName>In Preparation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Indexation_Percentage_Accepted__c</fieldNames>
+        <fieldNames>Indexation_Effective_Date__c</fieldNames>
+        <fieldNames>Arranged_Service__c</fieldNames>
+        <fieldNames>Mutual_Termination_Status__c</fieldNames>
+        <fieldNames>Mutual_Termination_Date__c</fieldNames>
+        <info>&lt;p&gt;Please select one or more compensation and its relevant fields&lt;/p&gt;</info>
+        <picklistValueName>Negotiation Done</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

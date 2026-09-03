@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Local_customer__c</fullName>
+    <formula>IF (    
+
+    (CONTAINS(Support_Lead_Division__c, &quot;Grands Comptes&quot;)) || 
+
+    (CONTAINS(Support_Lead_Division__c, &quot;FR Cleaning ME&quot;)) ||
+
+    (CONTAINS(Support_Lead__r.Title, &quot;Expert Métier Régional&quot;)) ||
+
+    (CONTAINS(Support_Lead__r.Title, &quot;Responsable Grands Comptes&quot;)), 
+
+    false, 
+
+    true
+
+    )
+
+&amp;&amp;
+
+IF (
+
+    (ISPICKVAL(Type__c , &apos;Single-Site Contract&apos;) || ISPICKVAL(Type__c , &apos;Multi-Site Contract&apos;)) 
+
+    &amp;&amp; Initial_Monthly_Revenue__c &lt; 5000 
+
+    &amp;&amp; Initial_Monthly_Revenue__c &gt; 0 
+
+    &amp;&amp;  Account__r.BillingCountry = &apos;France&apos; , 
+
+    true, 
+
+    false
+
+    )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Local customer</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Manager__c</fullName>
+    <label>Legal Manager</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Ben Perkins</fullName>
+                <default>false</default>
+                <label>Ben Perkins</label>
+            </value>
+            <value>
+                <fullName>Laura Ryan</fullName>
+                <default>false</default>
+                <label>Laura Ryan</label>
+            </value>
+            <value>
+                <fullName>Leah Finnegan</fullName>
+                <default>false</default>
+                <label>Leah Finnegan</label>
+            </value>
+            <value>
+                <fullName>Sarah Lowry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sarah Lowry</label>
+            </value>
+            <value>
+                <fullName>Steven Crossman</fullName>
+                <default>false</default>
+                <label>Steven Crossman</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

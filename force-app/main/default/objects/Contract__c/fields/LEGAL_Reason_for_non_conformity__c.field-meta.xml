@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LEGAL_Reason_for_non_conformity__c</fullName>
+    <label>LEGAL Reason for non-conformity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wrong attachment</fullName>
+                <default>false</default>
+                <label>Wrong attachment</label>
+            </value>
+            <value>
+                <fullName>Unsigned contract</fullName>
+                <default>false</default>
+                <label>Unsigned contract</label>
+            </value>
+            <value>
+                <fullName>Deadline passed</fullName>
+                <default>false</default>
+                <label>Deadline passed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

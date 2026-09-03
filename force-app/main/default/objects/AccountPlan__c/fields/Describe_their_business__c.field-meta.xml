@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Describe_their_business__c</fullName>
+    <description>Use this field to describe the nature of the account&apos;s business.</description>
+    <inlineHelpText>Use this field to describe the nature of the account&apos;s business.</inlineHelpText>
+    <label>Describe their business</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

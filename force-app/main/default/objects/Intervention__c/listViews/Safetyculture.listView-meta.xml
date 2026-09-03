@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Safetyculture</fullName>
+    <columns>Type__c</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Site__c</columns>
+    <columns>Primary_Service__c</columns>
+    <columns>Status_Customer_Label__c</columns>
+    <columns>Type_Customer_Label__c</columns>
+    <columns>Planned_End_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Subject__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>TechnicalId__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TechnicalId__c</field>
+        <operation>contains</operation>
+        <value>safetyCulture</value>
+    </filters>
+    <filters>
+        <field>Type_Customer_Label__c</field>
+        <operation>equals</operation>
+        <value>[BRT] Bon de Réception de Travaux</value>
+    </filters>
+    <label>Bon de réception de travaux</label>
+</ListView>

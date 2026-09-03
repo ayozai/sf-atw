@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Account_Name__c</columns>
+    <columns>NAME</columns>
+    <columns>Sites__c</columns>
+    <columns>Active_Accounts__c</columns>
+    <columns>WhiteSpace_Country__c</columns>
+    <columns>WhiteSpace_Type__c</columns>
+    <columns>Global_Ultimate_DUNS__c</columns>
+    <columns>Global_Ultimate_Account__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Name__c</field>
+        <operation>contains</operation>
+        <value>IWG</value>
+    </filters>
+    <label>All</label>
+</ListView>

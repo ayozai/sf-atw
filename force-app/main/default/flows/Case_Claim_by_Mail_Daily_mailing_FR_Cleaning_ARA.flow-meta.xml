@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Better_Email</name>
+        <label>Send Better Email</label>
+        <locationX>440</locationX>
+        <locationY>1500</locationY>
+        <actionName>SendBetterEmail</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>contentDocumentAttachments</name>
+            <value>
+                <elementReference>ContentDocumentLinkCollection</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>HTMLbody</name>
+            <value>
+                <elementReference>HTMLBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>orgWideEmailAddressId</name>
+            <value>
+                <elementReference>Get_OW_Email.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderDisplayName</name>
+        </inputParameters>
+        <inputParameters>
+            <name>SendTOthisStringCollectionOfEmailAddresses</name>
+            <value>
+                <elementReference>EmailAddresses</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <stringValue>Courriers Clients - Propreté RHONE-ALPES</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>SendBetterEmail</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_case_to_body</name>
+        <label>Add case to body</label>
+        <locationX>616</locationX>
+        <locationY>1092</locationY>
+        <assignmentItems>
+            <assignToReference>HTMLBody</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CaseDetailsSF</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Cases</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_CDL_to_collection</name>
+        <label>Add CDL to collection</label>
+        <locationX>704</locationX>
+        <locationY>900</locationY>
+        <assignmentItems>
+            <assignToReference>ContentDocumentLinkCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ContentDocumentLinkCollectionSF</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_case_to_body</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Email_Addresses</name>
+        <label>Email Addresses</label>
+        <locationX>440</locationX>
+        <locationY>1392</locationY>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>martial.beghin@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Celine.CANCALON@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>pauline.le-marechal@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>ahlam.elmansouri@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>francois-xavier.manginot@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>bastien.mallet@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>salesforce.angels@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>gautier.herman@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>serviceclientscourriers.fr.ags@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>sylvain.ponsot@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Better_Email</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>ContentDocumentLinkCollectionSF_is_null</name>
+        <label>ContentDocumentLinkCollectionSF is null</label>
+        <locationX>616</locationX>
+        <locationY>792</locationY>
+        <defaultConnector>
+            <targetReference>Add_CDL_to_collection</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>null2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ContentDocumentLinkCollectionSF</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_case_to_body</targetReference>
+            </connector>
+            <label>null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>No_case</name>
+        <label>No case</label>
+        <locationX>176</locationX>
+        <locationY>468</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Cases</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No_case2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Cases</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>No case</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Yesterday13pmDateTime</name>
+        <dataType>DateTime</dataType>
+        <expression>{!$Flow.CurrentDateTime} - 1</expression>
+    </formulas>
+    <interviewLabel>Case Claim by Mail - Daily mailing - FR Cleaning ARA {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Claim by Mail - Daily mailing - FR Cleaning ARA</label>
+    <loops>
+        <name>Loop_Cases</name>
+        <label>Loop Cases</label>
+        <locationX>440</locationX>
+        <locationY>576</locationY>
+        <collectionReference>Get_Cases</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Get_case_information_for_internal_mailing</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_OW_Email</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Cases</name>
+        <label>Get Cases</label>
+        <locationX>176</locationX>
+        <locationY>360</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>No_case</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Record_Type_ID.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>CreatedDate</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>Yesterday13pmDateTime</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Operating_Site_Agency_Division__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PTFNP</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Operating_Site_Agency_Wide_Area_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>RHONE-ALPES</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_OW_Email</name>
+        <label>Get OW Email</label>
+        <locationX>440</locationX>
+        <locationY>1284</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Email_Addresses</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DisplayName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Service Clients Courriers</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OrgWideEmailAddress</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Record_Type_ID</name>
+        <label>Get Record Type ID</label>
+        <locationX>176</locationX>
+        <locationY>252</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Cases</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Claim_by_Mail</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Record_Type_ID</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2023-04-09</startDate>
+            <startTime>13:04:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Get_case_information_for_internal_mailing</name>
+        <label>Get case information for internal mailing</label>
+        <locationX>616</locationX>
+        <locationY>684</locationY>
+        <connector>
+            <targetReference>ContentDocumentLinkCollectionSF_is_null</targetReference>
+        </connector>
+        <flowName>Subflow_Case_information_for_internal_mailing</flowName>
+        <inputAssignments>
+            <name>InputCase</name>
+            <value>
+                <elementReference>Loop_Cases</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>CaseDetailsSF</assignToReference>
+            <name>CaseDetails</name>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>ContentDocumentLinkCollectionSF</assignToReference>
+            <name>ContentDocumentLinkCollection</name>
+        </outputAssignments>
+    </subflows>
+    <textTemplates>
+        <name>HTMLEmailTest</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:o=&quot;urn:schemas-microsoft-com:office:office&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta content=&quot;width=device-width, initial-scale=1&quot; name=&quot;viewport&quot;&gt;
+    &lt;meta name=&quot;x-apple-disable-message-reformatting&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;!--[if (mso 16)]&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+    a {text-decoration: none;}
+    &lt;/style&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if gte mso 9]&gt;&lt;style&gt;sup { font-size: 100% !important; }&lt;/style&gt;&lt;![endif]--&gt;
+    &lt;!--[if gte mso 9]&gt;
+&lt;xml&gt;
+    &lt;o:OfficeDocumentSettings&gt;
+    &lt;o:AllowPNG&gt;&lt;/o:AllowPNG&gt;
+    &lt;o:PixelsPerInch&gt;96&lt;/o:PixelsPerInch&gt;
+    &lt;/o:OfficeDocumentSettings&gt;
+&lt;/xml&gt;
+&lt;![endif]--&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;es-wrapper-color&quot;&gt;
+        &lt;!--[if gte mso 9]&gt;
+			&lt;v:background xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot; fill=&quot;t&quot;&gt;
+				&lt;v:fill type=&quot;tile&quot; src=&quot;https://stripo.email/content/guids/CABINET_63fbbc11db6741389cc3292b09a63e6d/images/7711511856111535.png&quot; color=&quot;#f6f6f6&quot; origin=&quot;0.5, 0&quot; position=&quot;0.5, 0&quot;&gt;&lt;/v:fill&gt;
+			&lt;/v:background&gt;
+		&lt;![endif]--&gt;
+        &lt;table class=&quot;es-wrapper&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; background=&quot;https://stripo.email/content/guids/CABINET_63fbbc11db6741389cc3292b09a63e6d/images/7711511856111535.png&quot; style=&quot;background-position: center top;&quot;&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;esd-email-paddings&quot; valign=&quot;top&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;es-content esd-header-popover&quot; align=&quot;center&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td class=&quot;es-adaptive esd-stripe&quot; esd-custom-block-id=&quot;4041&quot; align=&quot;center&quot;&gt;
+                                        &lt;table class=&quot;es-content-body&quot; width=&quot;600&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p10 esd-checked&quot; style=&quot;background-image:url(https://tlr.stripocdn.email/content/guids/CABINET_63fbbc11db6741389cc3292b09a63e6d/images/7711511856111535.png);background-position: left top; background-repeat: repeat;&quot; align=&quot;left&quot; background=&quot;https://tlr.stripocdn.email/content/guids/CABINET_63fbbc11db6741389cc3292b09a63e6d/images/7711511856111535.png&quot;&gt;
+                                                        &lt;!--[if mso]&gt;&lt;table width=&quot;580&quot;&gt;&lt;tr&gt;&lt;td width=&quot;280&quot; valign=&quot;top&quot;&gt;&lt;![endif]--&gt;
+                                                        &lt;table class=&quot;es-left&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;left&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;280&quot; align=&quot;left&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;es-infoblock esd-block-text&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;p&gt;Put your preheader text here&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                        &lt;!--[if mso]&gt;&lt;/td&gt;&lt;td width=&quot;20&quot;&gt;&lt;/td&gt;&lt;td width=&quot;280&quot; valign=&quot;top&quot;&gt;&lt;![endif]--&gt;
+                                                        &lt;table class=&quot;es-right&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;right&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;280&quot; align=&quot;left&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td align=&quot;right&quot; class=&quot;es-infoblock esd-block-text&quot;&gt;
+                                                                                        &lt;p&gt;&lt;a href=&quot;https://viewstripo.email/&quot; target=&quot;_blank&quot; class=&quot;view&quot;&gt;View online&lt;/a&gt;&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                        &lt;!--[if mso]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;es-header&quot; align=&quot;center&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td class=&quot;es-adaptive esd-stripe&quot; esd-custom-block-id=&quot;4042&quot; align=&quot;center&quot;&gt;
+                                        &lt;table class=&quot;es-header-body&quot; width=&quot;600&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p15&quot; esd-general-paddings-checked=&quot;true&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;570&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-image es-m-p0l&quot; align=&quot;center&quot; style=&quot;font-size:0&quot;&gt;&lt;a href=&quot;https://viewstripo.email&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://tlr.stripocdn.email/content/guids/CABINET_63fbbc11db6741389cc3292b09a63e6d/images/80611511787962144.png&quot; alt=&quot;LawServices logo&quot; title=&quot;LawServices logo&quot; width=&quot;183&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;600&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-menu&quot; esd-img-prev-h=&quot;16&quot; esd-img-prev-w=&quot;16&quot;&gt;
+                                                                                        &lt;table class=&quot;es-menu&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                                            &lt;tbody&gt;
+                                                                                                &lt;tr class=&quot;links&quot;&gt;
+                                                                                                    &lt;td class=&quot;es-p10t es-p10b es-p5r es-p5l&quot; style=&quot;padding-bottom: 12px; padding-top: 12px; &quot; width=&quot;25.00%&quot; bgcolor=&quot;#333333&quot; align=&quot;center&quot;&gt;&lt;a target=&quot;_blank&quot; style=&quot;color: #ffffff;&quot; href=&quot;https://viewstripo.email/&quot;&gt;Practice Area&lt;/a&gt;&lt;/td&gt;
+                                                                                                    &lt;td class=&quot;es-p10t es-p10b es-p5r es-p5l&quot; style=&quot;padding-bottom: 12px; padding-top: 12px; &quot; width=&quot;25.00%&quot; bgcolor=&quot;#333333&quot; align=&quot;center&quot;&gt;&lt;a target=&quot;_blank&quot; style=&quot;color: #ffffff;&quot; href=&quot;https://viewstripo.email/&quot;&gt;Our Attorneys&lt;/a&gt;&lt;/td&gt;
+                                                                                                    &lt;td class=&quot;es-p10t es-p10b es-p5r es-p5l&quot; style=&quot;padding-bottom: 12px; padding-top: 12px; &quot; width=&quot;25.00%&quot; bgcolor=&quot;#333333&quot; align=&quot;center&quot;&gt;&lt;a target=&quot;_blank&quot; style=&quot;color: #ffffff;&quot; href=&quot;https://viewstripo.email/&quot;&gt;Case Results&lt;/a&gt;&lt;/td&gt;
+                                                                                                    &lt;td class=&quot;es-p10t es-p10b es-p5r es-p5l&quot; style=&quot;padding-bottom: 12px; padding-top: 12px; &quot; width=&quot;25.00%&quot; bgcolor=&quot;#24578e&quot; align=&quot;center&quot;&gt;&lt;a target=&quot;_blank&quot; style=&quot;color: #ffffff;&quot; href=&quot;https://viewstripo.email/&quot;&gt;Free consult&lt;/a&gt;&lt;/td&gt;
+                                                                                                &lt;/tr&gt;
+                                                                                            &lt;/tbody&gt;
+                                                                                        &lt;/table&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        &lt;table class=&quot;es-content&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td class=&quot;esd-stripe&quot; esd-custom-block-id=&quot;4044&quot; align=&quot;center&quot;&gt;
+                                        &lt;table class=&quot;es-content-body&quot; style=&quot;background-color: #ffffff;&quot; width=&quot;600&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#ffffff&quot; align=&quot;center&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure&quot; style=&quot;background-color: #f3f3f3;&quot; bgcolor=&quot;#f3f3f3&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;600&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p30t es-p15b es-p15r es-p15l&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;h1 style=&quot;font-size: 38px;&quot;&gt;Thank you for 5 years together&lt;/h1&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-image es-p15b&quot; align=&quot;center&quot; style=&quot;font-size:0&quot;&gt;&lt;a target=&quot;_blank&quot;&gt;&lt;img class=&quot;adapt-img&quot; src=&quot;https://tlr.stripocdn.email/content/guids/CABINET_63fbbc11db6741389cc3292b09a63e6d/images/63541516368770627.png&quot; alt=&quot;Handshake&quot; title=&quot;Handshake&quot; width=&quot;600&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p20t es-p10b es-p30r es-p30l&quot; esd-general-paddings-checked=&quot;true&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;540&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p15t&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;h3 style=&quot;line-height: 120%;&quot;&gt;Dear Mariah Smith,&lt;/h3&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-m-txt-c es-p10t es-p10b&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%;&quot;&gt;My name is Jeff Patterson, the CEO of the LawServices company. I want to congratulate you on the 5 years of productive collaboration! The LawServices company and I appreciate you and your trust. We are happy to have been helpful all this time.&lt;br&gt;&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p10b es-p30r es-p30l&quot; esd-general-paddings-checked=&quot;true&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;540&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-m-txt-c&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;h3 style=&quot;line-height: 150%;&quot;&gt;During this period, together we’ve been through:&lt;/h3&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p20t es-p20b es-p30r es-p30l&quot; esd-general-paddings-checked=&quot;true&quot; style=&quot;background-color: #ffffff;&quot; esd-custom-block-id=&quot;4045&quot; bgcolor=&quot;#ffffff&quot; align=&quot;left&quot;&gt;
+                                                        &lt;!--[if mso]&gt;&lt;table width=&quot;540&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;186&quot;&gt;&lt;![endif]--&gt;
+                                                        &lt;table class=&quot;es-left&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;left&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;es-m-p0r es-m-p20b esd-container-frame&quot; width=&quot;166&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table style=&quot;background-color: #f3f3f3;&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#f3f3f3&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p10t es-p5b&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;h1 style=&quot;line-height: 150%; color: #24578e; font-size: 38px; font-family: lora, georgia, times new roman, serif;&quot;&gt;65&lt;/h1&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p40b es-p5r es-p5l&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 21px;&quot;&gt;Negotiations&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                    &lt;td class=&quot;es-hidden&quot; width=&quot;20&quot;&gt;&lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                        &lt;!--[if mso]&gt;&lt;/td&gt;&lt;td width=&quot;166&quot;&gt;&lt;![endif]--&gt;
+                                                        &lt;table class=&quot;es-left&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;left&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;es-m-p0r es-m-p20b esd-container-frame&quot; width=&quot;166&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table style=&quot;background-color: #f3f3f3;&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#f3f3f3&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p10t&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;h1 style=&quot;line-height: 150%; color: #24578e; font-size: 38px; font-family: lora, georgia, times new roman, serif;&quot;&gt;70&lt;/h1&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p25b es-p5r es-p5l&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 21px;&quot;&gt;Agreements on copyrights&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                        &lt;!--[if mso]&gt;&lt;/td&gt;&lt;td width=&quot;20&quot;&gt;&lt;/td&gt;&lt;td width=&quot;168&quot;&gt;&lt;![endif]--&gt;
+                                                        &lt;table class=&quot;es-right&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;right&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;es-m-p0r es-m-p20b esd-container-frame&quot; width=&quot;168&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table style=&quot;background-color: #f3f3f3;&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#f3f3f3&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p10t&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;h1 style=&quot;line-height: 150%; color: #24578e; font-size: 38px; font-family: lora, georgia, times new roman, serif;&quot;&gt;11&lt;/h1&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p25b es-p10r es-p10l&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 21px;&quot;&gt;International meetings&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                        &lt;!--[if mso]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p20b es-p30r es-p30l&quot; esd-general-paddings-checked=&quot;true&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;540&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-m-txt-c&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%;&quot;&gt;We are proud to announce that all our lawyers successfully pass their bar exams every two years and learn from the best law teachers in the USA.&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p15t es-m-txt-c&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%;&quot;&gt;Dear Mariah,&lt;/p&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%;&quot;&gt;If you have any questions or concerns, please feel free to contact me or your personal esquire at any time.&lt;br&gt;&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p15t es-m-txt-c&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: #24578e;&quot;&gt;Cell phone number:&lt;/span&gt; +1234567890&lt;/p&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: #24578e;&quot;&gt;Mark Bedingfield’s phone number:&lt;/span&gt; +1324567890&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p10t es-p20b es-p30r es-p30l&quot; esd-general-paddings-checked=&quot;true&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;540&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-m-txt-c&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;h3 style=&quot;line-height: 150%; color: #333333;&quot;&gt;We are glad to inform that from now on you will have a 10% discount on all the services we provide.&lt;br&gt;&lt;/h3&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p20t es-p30b es-p30r es-p30l&quot; align=&quot;left&quot;&gt;
+                                                        &lt;!--[if mso]&gt;&lt;table width=&quot;540&quot; cellpadding=&quot;0&quot;
+                            cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; valign=&quot;top&quot;&gt;&lt;![endif]--&gt;
+                                                        &lt;table class=&quot;es-left&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;left&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;es-m-p0r es-m-p20b esd-container-frame&quot; width=&quot;100&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-m-txt-c&quot; align=&quot;left&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%; color: #666666;&quot;&gt;Best Regards,&lt;/p&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%; color: #666666;&quot;&gt;Jeff Patterson&lt;/p&gt;
+                                                                                        &lt;p style=&quot;line-height: 150%; color: #666666;&quot;&gt;CEO&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                        &lt;!--[if mso]&gt;&lt;/td&gt;&lt;td width=&quot;20&quot;&gt;&lt;/td&gt;&lt;td width=&quot;420&quot; valign=&quot;top&quot;&gt;&lt;![endif]--&gt;
+                                                        &lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;right&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;420&quot; align=&quot;left&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-image es-m-txt-c&quot; align=&quot;left&quot; style=&quot;font-size:0&quot;&gt;&lt;a target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://tlr.stripocdn.email/content/guids/CABINET_63fbbc11db6741389cc3292b09a63e6d/images/97771516364078078.jpg&quot; alt=&quot;Photo&quot; title=&quot;Photo&quot; width=&quot;70&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                        &lt;!--[if mso]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;es-footer&quot; align=&quot;center&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td class=&quot;esd-stripe&quot; esd-custom-block-id=&quot;4061&quot; align=&quot;center&quot;&gt;
+                                        &lt;table class=&quot;es-footer-body&quot; width=&quot;600&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p20t es-p20b es-p20r es-p20l&quot; esd-general-paddings-checked=&quot;true&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;560&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-social es-p10b&quot; align=&quot;center&quot; style=&quot;font-size:0&quot;&gt;
+                                                                                        &lt;table class=&quot;es-table-not-adapt es-social&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                                            &lt;tbody&gt;
+                                                                                                &lt;tr&gt;
+                                                                                                    &lt;td class=&quot;es-p10r&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;&lt;a target=&quot;_blank&quot; href&gt;&lt;img title=&quot;Facebook&quot; src=&quot;https://tlr.stripocdn.email/content/assets/img/social-icons/logo-gray/facebook-logo-gray.png&quot; alt=&quot;Fb&quot; width=&quot;32&quot; height=&quot;32&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                                                                                                    &lt;td class=&quot;es-p10r&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;&lt;a target=&quot;_blank&quot; href&gt;&lt;img title=&quot;Twitter&quot; src=&quot;https://tlr.stripocdn.email/content/assets/img/social-icons/logo-gray/twitter-logo-gray.png&quot; alt=&quot;Tw&quot; width=&quot;32&quot; height=&quot;32&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                                                                                                    &lt;td class=&quot;es-p10r&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;&lt;a target=&quot;_blank&quot; href&gt;&lt;img title=&quot;Instagram&quot; src=&quot;https://tlr.stripocdn.email/content/assets/img/social-icons/logo-gray/instagram-logo-gray.png&quot; alt=&quot;Inst&quot; width=&quot;32&quot; height=&quot;32&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                                                                                                    &lt;td class=&quot;es-p10r&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;&lt;a target=&quot;_blank&quot; href&gt;&lt;img title=&quot;Youtube&quot; src=&quot;https://tlr.stripocdn.email/content/assets/img/social-icons/logo-gray/youtube-logo-gray.png&quot; alt=&quot;Yt&quot; width=&quot;32&quot; height=&quot;32&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                                                                                                &lt;/tr&gt;
+                                                                                            &lt;/tbody&gt;
+                                                                                        &lt;/table&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p5t es-p5b&quot; align=&quot;center&quot; esd-links-underline=&quot;none&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 21px;&quot;&gt;&lt;a target=&quot;_blank&quot; style=&quot;line-height: 21px; text-decoration: none;&quot; href=&quot;tel:123456789&quot;&gt;123456789&lt;/a&gt;&lt;/p&gt;
+                                                                                        &lt;p style=&quot;line-height: 21px;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;mailto:your@mail.com&quot; style=&quot;text-decoration: none;&quot;&gt;your@mail.com&lt;/a&gt;&lt;/p&gt;
+                                                                                        &lt;p style=&quot;line-height: 21px;&quot;&gt;LawServices, Inc. 62 Long St. Salt Lake City, UT 12345&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td align=&quot;center&quot; class=&quot;esd-block-text es-p5t es-p5b&quot;&gt;
+                                                                                        &lt;p style=&quot;line-height: 21px; font-size: 12px;&quot;&gt;You are receiving this email because you have visited our site or asked us about the regular newsletter. Make sure our messages get to your Inbox (and not your bulk or junk folders). Please add &lt;a target=&quot;_blank&quot; style=&quot;font-size: 12px; line-height: 21px;&quot; href=&quot;mailto:your@mail.com&quot;&gt;your@mail.com&lt;/a&gt; to your contacts!&lt;/p&gt;
+                                                                                        &lt;p style=&quot;line-height: 21px; font-size: 12px;&quot;&gt;&lt;a target=&quot;_blank&quot; class=&quot;unsubscribe&quot; href&gt;Unsubscribe&lt;/a&gt; | &lt;a target=&quot;_blank&quot; href=&quot;https://viewstripo.email&quot;&gt;Update Preferences&lt;/a&gt; | &lt;a target=&quot;_blank&quot; href=&quot;https://viewstripo.email&quot;&gt;Customer Support&lt;/a&gt;&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;p&gt;&lt;span style=&quot;font-size: 12px; line-height: 150%;&quot;&gt;LawServices © All Rights Reserved&lt;/span&gt;&lt;br&gt;&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-text es-p10t&quot; align=&quot;center&quot;&gt;
+                                                                                        &lt;p style=&quot;font-size: 16px; line-height: 150%;&quot;&gt;Vector graphics designed by &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.freepik.com/&quot;&gt;Freepik&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+                                                                                    &lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                        &lt;table class=&quot;esd-footer-popover es-content&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td class=&quot;esd-stripe&quot; align=&quot;center&quot;&gt;
+                                        &lt;table class=&quot;es-content-body&quot; style=&quot;background-color: transparent;&quot; width=&quot;600&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;esd-structure es-p30t es-p30b es-p20r es-p20l&quot; align=&quot;left&quot;&gt;
+                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                            &lt;tbody&gt;
+                                                                &lt;tr&gt;
+                                                                    &lt;td class=&quot;esd-container-frame&quot; width=&quot;560&quot; valign=&quot;top&quot; align=&quot;center&quot;&gt;
+                                                                        &lt;table width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                                                                            &lt;tbody&gt;
+                                                                                &lt;tr&gt;
+                                                                                    &lt;td class=&quot;esd-block-image es-infoblock made_with&quot; align=&quot;center&quot; style=&quot;font-size:0&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://viewstripo.email/?utm_source=templates&amp;utm_medium=email&amp;utm_campaign=legal&amp;utm_content=trigger_newsletter2&quot;&gt;&lt;img src=&quot;https://tlr.stripocdn.email/content/guids/CABINET_9df86e5b6c53dd0319931e2447ed854b/images/64951510234941531.png&quot; alt width=&quot;125&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+                                                                                &lt;/tr&gt;
+                                                                            &lt;/tbody&gt;
+                                                                        &lt;/table&gt;
+                                                                    &lt;/td&gt;
+                                                                &lt;/tr&gt;
+                                                            &lt;/tbody&gt;
+                                                        &lt;/table&gt;
+                                                    &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>MessageHeader</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Bonjour,&lt;br&gt;Veuillez svp trouver ci-dessous et ci-joints les courriers clients reçus sur les 24 dernières heures.&lt;br&gt;Bien à vous,&lt;br&gt;Le service client courriers&lt;br&gt;&lt;br&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>AgencyDivision</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CaseDetailsSF</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ContentDocumentLinkCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ContentDocumentLink</objectType>
+    </variables>
+    <variables>
+        <name>ContentDocumentLinkCollectionSF</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ContentDocumentLink</objectType>
+    </variables>
+    <variables>
+        <name>EmailAddresses</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>HTMLBody</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>MessageHeader</elementReference>
+        </value>
+    </variables>
+</Flow>

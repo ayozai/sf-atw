@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Senior_Bid_Manager__c</fullName>
+    <description>Used to hold the senior (team lead) bid manager.</description>
+    <label>Senior Bid Manager</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Fiona Paton</fullName>
+                <default>false</default>
+                <label>Fiona Paton</label>
+            </value>
+            <value>
+                <fullName>Helen Salmon</fullName>
+                <default>false</default>
+                <label>Helen Salmon</label>
+            </value>
+            <value>
+                <fullName>Ian Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ian Price</label>
+            </value>
+            <value>
+                <fullName>James Mabbett</fullName>
+                <default>false</default>
+                <label>James Mabbett</label>
+            </value>
+            <value>
+                <fullName>Kat Coogan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kat Coogan</label>
+            </value>
+            <value>
+                <fullName>Michael Bone</fullName>
+                <default>false</default>
+                <label>Michael Bone</label>
+            </value>
+            <value>
+                <fullName>Tracey Miller</fullName>
+                <default>false</default>
+                <label>Tracey Miller</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

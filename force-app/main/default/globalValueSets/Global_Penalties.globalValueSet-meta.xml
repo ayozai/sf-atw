@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Yes, unlimited</fullName>
+        <default>false</default>
+        <label>Yes, unlimited</label>
+    </customValue>
+    <customValue>
+        <fullName>Yes, limited</fullName>
+        <default>false</default>
+        <label>Yes, limited</label>
+    </customValue>
+    <customValue>
+        <fullName>No</fullName>
+        <default>false</default>
+        <label>No</label>
+    </customValue>
+    <customValue>
+        <fullName>Not known</fullName>
+        <default>false</default>
+        <label>Not known</label>
+    </customValue>
+    <masterLabel>Global Penalties</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

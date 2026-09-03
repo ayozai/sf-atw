@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MASE</fullName>
+        <default>false</default>
+        <label>MASE</label>
+    </customValue>
+    <customValue>
+        <fullName>QUALIPROPRE</fullName>
+        <default>false</default>
+        <label>QUALIPROPRE</label>
+    </customValue>
+    <customValue>
+        <fullName>ISO 14001</fullName>
+        <default>false</default>
+        <label>ISO 14001</label>
+    </customValue>
+    <customValue>
+        <fullName>ISO 9001</fullName>
+        <default>false</default>
+        <label>ISO 9001</label>
+    </customValue>
+    <customValue>
+        <fullName>ISO 22000</fullName>
+        <default>false</default>
+        <label>ISO 22000</label>
+    </customValue>
+    <customValue>
+        <fullName>OHSAS 18001 / ISO 45001</fullName>
+        <default>false</default>
+        <label>OHSAS 18001 / ISO 45001</label>
+    </customValue>
+    <masterLabel>Global Certifications</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

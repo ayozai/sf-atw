@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The account record is the supplier on the associated opportunity</description>
+    <label>Supplier</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Suppliers</relationshipLabel>
+    <relationshipName>Suppliers</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

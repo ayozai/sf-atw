@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GNG_N_C12__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Billing_frequency__c, &apos;Monthly&apos;), 4,
+  IF(ISPICKVAL(Billing_frequency__c, &apos;Quarterly&apos;), 2, 0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Score C1.2 — Fréquence facturation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

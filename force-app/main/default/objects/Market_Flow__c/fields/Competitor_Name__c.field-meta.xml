@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Name__c</fullName>
+    <label>Competitor Name</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ABER PROPRETE</fullName>
+                <default>false</default>
+                <label>ABER PROPRETE</label>
+            </value>
+            <value>
+                <fullName>ABSOLUE SERVICES PROPRETE - NORMANDIE</fullName>
+                <default>false</default>
+                <label>ABSOLUE SERVICES PROPRETE - NORMANDIE</label>
+            </value>
+            <value>
+                <fullName>ADN PROPRETE - AURA</fullName>
+                <default>false</default>
+                <label>ADN PROPRETE - AURA</label>
+            </value>
+            <value>
+                <fullName>AGENOR</fullName>
+                <default>false</default>
+                <label>AGENOR</label>
+            </value>
+            <value>
+                <fullName>AG NET - TROYES</fullName>
+                <default>false</default>
+                <label>AG NET - TROYES</label>
+            </value>
+            <value>
+                <fullName>AH!CEPRO NETTOYAGE - IDF</fullName>
+                <default>false</default>
+                <label>AH!CEPRO NETTOYAGE - IDF</label>
+            </value>
+            <value>
+                <fullName>ALLIANCE PROPRETE SERVICES</fullName>
+                <default>false</default>
+                <label>ALLIANCE PROPRETE SERVICES</label>
+            </value>
+            <value>
+                <fullName>ALTALYS</fullName>
+                <default>false</default>
+                <label>ALTALYS</label>
+            </value>
+            <value>
+                <fullName>AMG</fullName>
+                <default>false</default>
+                <label>AMG</label>
+            </value>
+            <value>
+                <fullName>AMS PROPRETE - CENTRE VAL DE LOIRE</fullName>
+                <default>false</default>
+                <label>AMS PROPRETE - CENTRE VAL DE LOIRE</label>
+            </value>
+            <value>
+                <fullName>ANETRA - PUY DE DOME</fullName>
+                <default>false</default>
+                <label>ANETRA - PUY DE DOME</label>
+            </value>
+            <value>
+                <fullName>APEF PROPRETE</fullName>
+                <default>false</default>
+                <label>APEF PROPRETE</label>
+            </value>
+            <value>
+                <fullName>APOLYPRO - AURA</fullName>
+                <default>false</default>
+                <label>APOLYPRO - AURA</label>
+            </value>
+            <value>
+                <fullName>APR - PYRENEES-ATLANTIQUES</fullName>
+                <default>false</default>
+                <label>APR - PYRENEES-ATLANTIQUES</label>
+            </value>
+            <value>
+                <fullName>APS ALLIANCE PREVENTION SECURITE</fullName>
+                <default>false</default>
+                <label>APS ALLIANCE PREVENTION SECURITE</label>
+            </value>
+            <value>
+                <fullName>APS HYGIENE ET PROPRETE AUVERGNE</fullName>
+                <default>false</default>
+                <label>APS HYGIENE ET PROPRETE AUVERGNE</label>
+            </value>
+            <value>
+                <fullName>APTITUDES 63</fullName>
+                <default>false</default>
+                <label>APTITUDES 63</label>
+            </value>
+            <value>
+                <fullName>ARAS ALLIANCE</fullName>
+                <default>false</default>
+                <label>ARAS ALLIANCE</label>
+            </value>
+            <value>
+                <fullName>ARCADE</fullName>
+                <default>false</default>
+                <label>ARCADE</label>
+            </value>
+            <value>
+                <fullName>ARC EN CIEL</fullName>
+                <default>false</default>
+                <label>ARC EN CIEL</label>
+            </value>
+            <value>
+                <fullName>ARMONIA CLEANLY</fullName>
+                <default>false</default>
+                <label>ARMONIA CLEANLY</label>
+            </value>
+            <value>
+                <fullName>ARTEMIS</fullName>
+                <default>false</default>
+                <label>ARTEMIS</label>
+            </value>
+            <value>
+                <fullName>ARTISAN DU NETTOYAGE - DORDOGNE</fullName>
+                <default>false</default>
+                <label>ARTISAN DU NETTOYAGE - DORDOGNE</label>
+            </value>
+            <value>
+                <fullName>AS DU NETTOYAGE - ORLEANS</fullName>
+                <default>false</default>
+                <label>AS DU NETTOYAGE - ORLEANS</label>
+            </value>
+            <value>
+                <fullName>ASN</fullName>
+                <default>false</default>
+                <label>ASN</label>
+            </value>
+            <value>
+                <fullName>ASR NETTOYAGE</fullName>
+                <default>false</default>
+                <label>ASR NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>ATHAROS</fullName>
+                <default>false</default>
+                <label>ATHAROS</label>
+            </value>
+            <value>
+                <fullName>ATLANTIC SERVICE</fullName>
+                <default>false</default>
+                <label>ATLANTIC SERVICE</label>
+            </value>
+            <value>
+                <fullName>ATLAS SECURITE</fullName>
+                <default>false</default>
+                <label>ATLAS SECURITE</label>
+            </value>
+            <value>
+                <fullName>ATMOS PROPRETE</fullName>
+                <default>false</default>
+                <label>ATMOS PROPRETE</label>
+            </value>
+            <value>
+                <fullName>ATN-ACTION TECHNIQUE NETTOYAGE</fullName>
+                <default>false</default>
+                <label>ATN-ACTION TECHNIQUE NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>ATOUT CLEAN PROPRETE - HAUTS DE FRANCE</fullName>
+                <default>false</default>
+                <label>ATOUT CLEAN PROPRETE - HAUTS DE FRANCE</label>
+            </value>
+            <value>
+                <fullName>AURA PROPRETE - IDF</fullName>
+                <default>false</default>
+                <label>AURA PROPRETE - IDF</label>
+            </value>
+            <value>
+                <fullName>AUXAPA - PUY DE DOME</fullName>
+                <default>false</default>
+                <label>AUXAPA - PUY DE DOME</label>
+            </value>
+            <value>
+                <fullName>AVENIR PROPRETE MULTISERVICES - PACA</fullName>
+                <default>false</default>
+                <label>AVENIR PROPRETE MULTISERVICES - PACA</label>
+            </value>
+            <value>
+                <fullName>AXION</fullName>
+                <default>false</default>
+                <label>AXION</label>
+            </value>
+            <value>
+                <fullName>AXXOME PROPRETE - CENTRE VAL DE LOIRE</fullName>
+                <default>false</default>
+                <label>AXXOME PROPRETE - CENTRE VAL DE LOIRE</label>
+            </value>
+            <value>
+                <fullName>AZURIAL</fullName>
+                <default>false</default>
+                <label>AZURIAL</label>
+            </value>
+            <value>
+                <fullName>B2</fullName>
+                <default>false</default>
+                <label>B2</label>
+            </value>
+            <value>
+                <fullName>BILAL PROPRETE - SAINT DENIS</fullName>
+                <default>false</default>
+                <label>BILAL PROPRETE - SAINT DENIS</label>
+            </value>
+            <value>
+                <fullName>BOUYGUES ENERGIE</fullName>
+                <default>false</default>
+                <label>BOUYGUES ENERGIE</label>
+            </value>
+            <value>
+                <fullName>BREIZH NETTOTAGE</fullName>
+                <default>false</default>
+                <label>BREIZH NETTOTAGE</label>
+            </value>
+            <value>
+                <fullName>BRET-NET (ABER PROPRETE)</fullName>
+                <default>false</default>
+                <label>BRET-NET (ABER PROPRETE)</label>
+            </value>
+            <value>
+                <fullName>BUCHAILLOT NETTOYAGE - JURA</fullName>
+                <default>false</default>
+                <label>BUCHAILLOT NETTOYAGE - JURA</label>
+            </value>
+            <value>
+                <fullName>CANDOR - NORMANDIE</fullName>
+                <default>false</default>
+                <label>CANDOR - NORMANDIE</label>
+            </value>
+            <value>
+                <fullName>CEJIP</fullName>
+                <default>false</default>
+                <label>CEJIP</label>
+            </value>
+            <value>
+                <fullName>CHALLANCIN</fullName>
+                <default>false</default>
+                <label>CHALLANCIN</label>
+            </value>
+            <value>
+                <fullName>CHALLENGE SERVICES</fullName>
+                <default>false</default>
+                <label>CHALLENGE SERVICES</label>
+            </value>
+            <value>
+                <fullName>CHRYSO FRANCE</fullName>
+                <default>false</default>
+                <label>CHRYSO FRANCE</label>
+            </value>
+            <value>
+                <fullName>CITADELLE NETTOYAGE - LE MANS</fullName>
+                <default>false</default>
+                <label>CITADELLE NETTOYAGE - LE MANS</label>
+            </value>
+            <value>
+                <fullName>CLEAN&apos;OFFICE25 - FRANCHE COMTE</fullName>
+                <default>false</default>
+                <label>CLEAN&apos;OFFICE25 - FRANCHE COMTE</label>
+            </value>
+            <value>
+                <fullName>CLEAN18 - BOURGOGNE FRANCHE COMTE</fullName>
+                <default>false</default>
+                <label>CLEAN18 - BOURGOGNE FRANCHE COMTE</label>
+            </value>
+            <value>
+                <fullName>CLEAN COMPAGNIE</fullName>
+                <default>false</default>
+                <label>CLEAN COMPAGNIE</label>
+            </value>
+            <value>
+                <fullName>CLEAN FRANCE</fullName>
+                <default>false</default>
+                <label>CLEAN FRANCE</label>
+            </value>
+            <value>
+                <fullName>CLEANING ET SERVICE</fullName>
+                <default>false</default>
+                <label>CLEANING ET SERVICE</label>
+            </value>
+            <value>
+                <fullName>CLEAN OFFICE - HAUTS DE FRANCE</fullName>
+                <default>false</default>
+                <label>CLEAN OFFICE - HAUTS DE FRANCE</label>
+            </value>
+            <value>
+                <fullName>CLINAS SERVICE</fullName>
+                <default>false</default>
+                <label>CLINAS SERVICE</label>
+            </value>
+            <value>
+                <fullName>CLINITEX</fullName>
+                <default>false</default>
+                <label>CLINITEX</label>
+            </value>
+            <value>
+                <fullName>CORSE PROPRE SERVICE</fullName>
+                <default>false</default>
+                <label>CORSE PROPRE SERVICE</label>
+            </value>
+            <value>
+                <fullName>DALKIA</fullName>
+                <default>false</default>
+                <label>DALKIA</label>
+            </value>
+            <value>
+                <fullName>DECA FRANCE</fullName>
+                <default>false</default>
+                <label>DECA FRANCE</label>
+            </value>
+            <value>
+                <fullName>DELOSTAL &amp; THIBAULT - IDF</fullName>
+                <default>false</default>
+                <label>DELOSTAL &amp; THIBAULT - IDF</label>
+            </value>
+            <value>
+                <fullName>DERICHEBOURG</fullName>
+                <default>false</default>
+                <label>DERICHEBOURG</label>
+            </value>
+            <value>
+                <fullName>DISTRI SERVICES</fullName>
+                <default>false</default>
+                <label>DISTRI SERVICES</label>
+            </value>
+            <value>
+                <fullName>DYNAMICS - SAONE ET LOIRE</fullName>
+                <default>false</default>
+                <label>DYNAMICS - SAONE ET LOIRE</label>
+            </value>
+            <value>
+                <fullName>E.NET - GARD</fullName>
+                <default>false</default>
+                <label>E.NET - GARD</label>
+            </value>
+            <value>
+                <fullName>ECC - EUROPEAN CLEANING COMPANY</fullName>
+                <default>false</default>
+                <label>ECC - EUROPEAN CLEANING COMPANY</label>
+            </value>
+            <value>
+                <fullName>ECONET SUD-OUEST</fullName>
+                <default>false</default>
+                <label>ECONET SUD-OUEST</label>
+            </value>
+            <value>
+                <fullName>EDS LABRENNE</fullName>
+                <default>false</default>
+                <label>EDS LABRENNE</label>
+            </value>
+            <value>
+                <fullName>EFICIUM</fullName>
+                <default>false</default>
+                <label>EFICIUM</label>
+            </value>
+            <value>
+                <fullName>EIFFAGE</fullName>
+                <default>false</default>
+                <label>EIFFAGE</label>
+            </value>
+            <value>
+                <fullName>ELI NETTOYAGE - GRAND EST</fullName>
+                <default>false</default>
+                <label>ELI NETTOYAGE - GRAND EST</label>
+            </value>
+            <value>
+                <fullName>ELIOR SERVICES</fullName>
+                <default>false</default>
+                <label>ELIOR SERVICES</label>
+            </value>
+            <value>
+                <fullName>EMALEC</fullName>
+                <default>false</default>
+                <label>EMALEC</label>
+            </value>
+            <value>
+                <fullName>EMN - NORMANDIE</fullName>
+                <default>false</default>
+                <label>EMN - NORMANDIE</label>
+            </value>
+            <value>
+                <fullName>ENEDIA</fullName>
+                <default>false</default>
+                <label>ENEDIA</label>
+            </value>
+            <value>
+                <fullName>ENGIE</fullName>
+                <default>false</default>
+                <label>ENGIE</label>
+            </value>
+            <value>
+                <fullName>ENI NETTOYAGE</fullName>
+                <default>false</default>
+                <label>ENI NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>ENO PROPRETE - OCCITANIE</fullName>
+                <default>false</default>
+                <label>ENO PROPRETE - OCCITANIE</label>
+            </value>
+            <value>
+                <fullName>ENTRETIEN DIJONNAIS</fullName>
+                <default>false</default>
+                <label>ENTRETIEN DIJONNAIS</label>
+            </value>
+            <value>
+                <fullName>EPSO SERVICES - OCCITANIE</fullName>
+                <default>false</default>
+                <label>EPSO SERVICES - OCCITANIE</label>
+            </value>
+            <value>
+                <fullName>EQUANS</fullName>
+                <default>false</default>
+                <label>EQUANS</label>
+            </value>
+            <value>
+                <fullName>ERACLEAN - ALSACE</fullName>
+                <default>false</default>
+                <label>ERACLEAN - ALSACE</label>
+            </value>
+            <value>
+                <fullName>ESAT</fullName>
+                <default>false</default>
+                <label>ESAT</label>
+            </value>
+            <value>
+                <fullName>ESPACE DE PROPRETE - REGIONS MEDITERRANEENNES</fullName>
+                <default>false</default>
+                <label>ESPACE DE PROPRETE - REGIONS MEDITERRANEENNES</label>
+            </value>
+            <value>
+                <fullName>ESP EUROPE SERVICE PROPRETE</fullName>
+                <default>false</default>
+                <label>ESP EUROPE SERVICE PROPRETE</label>
+            </value>
+            <value>
+                <fullName>ESSI PROPRETE</fullName>
+                <default>false</default>
+                <label>ESSI PROPRETE</label>
+            </value>
+            <value>
+                <fullName>ETANEUF</fullName>
+                <default>false</default>
+                <label>ETANEUF</label>
+            </value>
+            <value>
+                <fullName>EUROCLEAN</fullName>
+                <default>false</default>
+                <label>EUROCLEAN</label>
+            </value>
+            <value>
+                <fullName>EURO NETTOYAGE</fullName>
+                <default>false</default>
+                <label>EURO NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>EUROPEAN CLEANING</fullName>
+                <default>false</default>
+                <label>EUROPEAN CLEANING</label>
+            </value>
+            <value>
+                <fullName>EUROP NET / EUROPA SERVICES</fullName>
+                <default>false</default>
+                <label>EUROP NET / EUROPA SERVICES</label>
+            </value>
+            <value>
+                <fullName>FRANCE GARDIENNAGE (GROUPE CYBELIA)</fullName>
+                <default>false</default>
+                <label>FRANCE GARDIENNAGE (GROUPE CYBELIA)</label>
+            </value>
+            <value>
+                <fullName>G&apos;NET - HERAULT</fullName>
+                <default>false</default>
+                <label>G&apos;NET - HERAULT</label>
+            </value>
+            <value>
+                <fullName>GIMN&apos;S</fullName>
+                <default>false</default>
+                <label>GIMN&apos;S</label>
+            </value>
+            <value>
+                <fullName>GP NETTOYAGE - GENIE PROPRETE - IDF</fullName>
+                <default>false</default>
+                <label>GP NETTOYAGE - GENIE PROPRETE - IDF</label>
+            </value>
+            <value>
+                <fullName>GPNI</fullName>
+                <default>false</default>
+                <label>GPNI</label>
+            </value>
+            <value>
+                <fullName>GROUPE BERNARD</fullName>
+                <default>false</default>
+                <label>GROUPE BERNARD</label>
+            </value>
+            <value>
+                <fullName>GROUPE ESSI</fullName>
+                <default>false</default>
+                <label>GROUPE ESSI</label>
+            </value>
+            <value>
+                <fullName>GROUPE SGP</fullName>
+                <default>false</default>
+                <label>GROUPE SGP</label>
+            </value>
+            <value>
+                <fullName>GROUPE VERT - BRETAGNE</fullName>
+                <default>false</default>
+                <label>GROUPE VERT - BRETAGNE</label>
+            </value>
+            <value>
+                <fullName>GSF</fullName>
+                <default>false</default>
+                <label>GSF</label>
+            </value>
+            <value>
+                <fullName>GUILBERT PROPRETE</fullName>
+                <default>false</default>
+                <label>GUILBERT PROPRETE</label>
+            </value>
+            <value>
+                <fullName>HEMERA</fullName>
+                <default>false</default>
+                <label>HEMERA</label>
+            </value>
+            <value>
+                <fullName>HEXANET</fullName>
+                <default>false</default>
+                <label>HEXANET</label>
+            </value>
+            <value>
+                <fullName>IDEX</fullName>
+                <default>false</default>
+                <label>IDEX</label>
+            </value>
+            <value>
+                <fullName>IDS PROPRETE - INDUSTRIEL DES SERVICES</fullName>
+                <default>false</default>
+                <label>IDS PROPRETE - INDUSTRIEL DES SERVICES</label>
+            </value>
+            <value>
+                <fullName>ILAM MULTISERVICES</fullName>
+                <default>false</default>
+                <label>ILAM MULTISERVICES</label>
+            </value>
+            <value>
+                <fullName>IMMO CLEAN - AURA PACA</fullName>
+                <default>false</default>
+                <label>IMMO CLEAN - AURA PACA</label>
+            </value>
+            <value>
+                <fullName>IMMONETT - STRASBOURG</fullName>
+                <default>false</default>
+                <label>IMMONETT - STRASBOURG</label>
+            </value>
+            <value>
+                <fullName>INH-INDUSTRIE NETTOYAGE HOTELIER</fullName>
+                <default>false</default>
+                <label>INH-INDUSTRIE NETTOYAGE HOTELIER</label>
+            </value>
+            <value>
+                <fullName>INTER.NETT - AURA</fullName>
+                <default>false</default>
+                <label>INTER.NETT - AURA</label>
+            </value>
+            <value>
+                <fullName>ISOR</fullName>
+                <default>false</default>
+                <label>ISOR</label>
+            </value>
+            <value>
+                <fullName>ISS FACILITY SERVICES</fullName>
+                <default>false</default>
+                <label>ISS FACILITY SERVICES</label>
+            </value>
+            <value>
+                <fullName>K1000 - AIN</fullName>
+                <default>false</default>
+                <label>K1000 - AIN</label>
+            </value>
+            <value>
+                <fullName>KARDHAM</fullName>
+                <default>false</default>
+                <label>KARDHAM</label>
+            </value>
+            <value>
+                <fullName>KMS PROPRETE - BRETAGNE</fullName>
+                <default>false</default>
+                <label>KMS PROPRETE - BRETAGNE</label>
+            </value>
+            <value>
+                <fullName>KS SECURITE &amp; PROTECTIM</fullName>
+                <default>false</default>
+                <label>KS SECURITE &amp; PROTECTIM</label>
+            </value>
+            <value>
+                <fullName>L&apos;ECLAT 2000 - GROUPE TOUNETT</fullName>
+                <default>false</default>
+                <label>L&apos;ECLAT 2000 - GROUPE TOUNETT</label>
+            </value>
+            <value>
+                <fullName>L&apos;ECLAT D&apos;ALSACE</fullName>
+                <default>false</default>
+                <label>L&apos;ECLAT D&apos;ALSACE</label>
+            </value>
+            <value>
+                <fullName>L&apos;ECLAT DU MORVAN</fullName>
+                <default>false</default>
+                <label>L&apos;ECLAT DU MORVAN</label>
+            </value>
+            <value>
+                <fullName>LA NORMANDE DE NETTOYAGE</fullName>
+                <default>false</default>
+                <label>LA NORMANDE DE NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>LA PROFESSIONNELLE DU NETTOYAGE - LPN - AIN</fullName>
+                <default>false</default>
+                <label>LA PROFESSIONNELLE DU NETTOYAGE - LPN - AIN</label>
+            </value>
+            <value>
+                <fullName>LA PYRENNEENNE DE NETTOYAGE</fullName>
+                <default>false</default>
+                <label>LA PYRENNEENNE DE NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>LA RATIONNELLE - IDF</fullName>
+                <default>false</default>
+                <label>LA RATIONNELLE - IDF</label>
+            </value>
+            <value>
+                <fullName>LA RELUISANTE</fullName>
+                <default>false</default>
+                <label>LA RELUISANTE</label>
+            </value>
+            <value>
+                <fullName>LA RICHI NET</fullName>
+                <default>false</default>
+                <label>LA RICHI NET</label>
+            </value>
+            <value>
+                <fullName>LA ROLSE NETTOYAGE - IDF</fullName>
+                <default>false</default>
+                <label>LA ROLSE NETTOYAGE - IDF</label>
+            </value>
+            <value>
+                <fullName>LASER</fullName>
+                <default>false</default>
+                <label>LASER</label>
+            </value>
+            <value>
+                <fullName>LC GARCIA - SEINE ET MARNE</fullName>
+                <default>false</default>
+                <label>LC GARCIA - SEINE ET MARNE</label>
+            </value>
+            <value>
+                <fullName>LHMS-LEONETTI HYGIENE MAINTENANCE</fullName>
+                <default>false</default>
+                <label>LHMS-LEONETTI HYGIENE MAINTENANCE</label>
+            </value>
+            <value>
+                <fullName>LITTORAL NETTOYAGE</fullName>
+                <default>false</default>
+                <label>LITTORAL NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>LP NETTOYAGE</fullName>
+                <default>false</default>
+                <label>LP NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>LSR PROPRETE</fullName>
+                <default>false</default>
+                <label>LSR PROPRETE</label>
+            </value>
+            <value>
+                <fullName>LUSTRAL</fullName>
+                <default>false</default>
+                <label>LUSTRAL</label>
+            </value>
+            <value>
+                <fullName>LYNX</fullName>
+                <default>false</default>
+                <label>LYNX</label>
+            </value>
+            <value>
+                <fullName>LYSECURITE</fullName>
+                <default>false</default>
+                <label>LYSECURITE</label>
+            </value>
+            <value>
+                <fullName>MAINTENANCE INDUSTRIE - IDF</fullName>
+                <default>false</default>
+                <label>MAINTENANCE INDUSTRIE - IDF</label>
+            </value>
+            <value>
+                <fullName>MILECLAIR - NORMANDIE</fullName>
+                <default>false</default>
+                <label>MILECLAIR - NORMANDIE</label>
+            </value>
+            <value>
+                <fullName>MIL PROPRETE - GRAND EST</fullName>
+                <default>false</default>
+                <label>MIL PROPRETE - GRAND EST</label>
+            </value>
+            <value>
+                <fullName>MISSENARD GENIE CLIMATIQUE</fullName>
+                <default>false</default>
+                <label>MISSENARD GENIE CLIMATIQUE</label>
+            </value>
+            <value>
+                <fullName>MJCM PROPRETE</fullName>
+                <default>false</default>
+                <label>MJCM PROPRETE</label>
+            </value>
+            <value>
+                <fullName>MONDIAL PROTECTION - GROUPE WEESURE</fullName>
+                <default>false</default>
+                <label>MONDIAL PROTECTION - GROUPE WEESURE</label>
+            </value>
+            <value>
+                <fullName>MS SUD EST</fullName>
+                <default>false</default>
+                <label>MS SUD EST</label>
+            </value>
+            <value>
+                <fullName>MTP SERVICES - MONTPELLIER</fullName>
+                <default>false</default>
+                <label>MTP SERVICES - MONTPELLIER</label>
+            </value>
+            <value>
+                <fullName>MULTISERVICES 06</fullName>
+                <default>false</default>
+                <label>MULTISERVICES 06</label>
+            </value>
+            <value>
+                <fullName>MX PROPRETE - OCCITANIE</fullName>
+                <default>false</default>
+                <label>MX PROPRETE - OCCITANIE</label>
+            </value>
+            <value>
+                <fullName>NEED PROPRETE</fullName>
+                <default>false</default>
+                <label>NEED PROPRETE</label>
+            </value>
+            <value>
+                <fullName>NEOSIT - IDF</fullName>
+                <default>false</default>
+                <label>NEOSIT - IDF</label>
+            </value>
+            <value>
+                <fullName>NETMAN</fullName>
+                <default>false</default>
+                <label>NETMAN</label>
+            </value>
+            <value>
+                <fullName>NET PLUS</fullName>
+                <default>false</default>
+                <label>NET PLUS</label>
+            </value>
+            <value>
+                <fullName>NETTOYAGE DU HAUT BUGEY - AIN JURA</fullName>
+                <default>false</default>
+                <label>NETTOYAGE DU HAUT BUGEY - AIN JURA</label>
+            </value>
+            <value>
+                <fullName>NETTOYAGE ET MAINTENANCE - AURA</fullName>
+                <default>false</default>
+                <label>NETTOYAGE ET MAINTENANCE - AURA</label>
+            </value>
+            <value>
+                <fullName>NETTRA SERVICES - AIN</fullName>
+                <default>false</default>
+                <label>NETTRA SERVICES - AIN</label>
+            </value>
+            <value>
+                <fullName>NICOLLIN</fullName>
+                <default>false</default>
+                <label>NICOLLIN</label>
+            </value>
+            <value>
+                <fullName>NIL - VENDEE</fullName>
+                <default>false</default>
+                <label>NIL - VENDEE</label>
+            </value>
+            <value>
+                <fullName>NO COMPETITOR</fullName>
+                <default>false</default>
+                <label>NO COMPETITOR</label>
+            </value>
+            <value>
+                <fullName>NOUVELLE VICTORIA</fullName>
+                <default>false</default>
+                <label>NOUVELLE VICTORIA</label>
+            </value>
+            <value>
+                <fullName>NSI GROUPE</fullName>
+                <default>false</default>
+                <label>NSI GROUPE</label>
+            </value>
+            <value>
+                <fullName>NS PRO</fullName>
+                <default>false</default>
+                <label>NS PRO</label>
+            </value>
+            <value>
+                <fullName>OMS SYNERGIE GROUP</fullName>
+                <default>false</default>
+                <label>OMS SYNERGIE GROUP</label>
+            </value>
+            <value>
+                <fullName>ONET</fullName>
+                <default>false</default>
+                <label>ONET</label>
+            </value>
+            <value>
+                <fullName>ORTEC</fullName>
+                <default>false</default>
+                <label>ORTEC</label>
+            </value>
+            <value>
+                <fullName>OSN PROPRETE</fullName>
+                <default>false</default>
+                <label>OSN PROPRETE</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>OUEST NETTOYAGE - SARTHE</fullName>
+                <default>false</default>
+                <label>OUEST NETTOYAGE - SARTHE</label>
+            </value>
+            <value>
+                <fullName>PELTIER NETTOYAGE - NORMANDIE</fullName>
+                <default>false</default>
+                <label>PELTIER NETTOYAGE - NORMANDIE</label>
+            </value>
+            <value>
+                <fullName>PITHIVIERS NETTOYAGE</fullName>
+                <default>false</default>
+                <label>PITHIVIERS NETTOYAGE</label>
+            </value>
+            <value>
+                <fullName>PLD PROPRETE ET SERVICES</fullName>
+                <default>false</default>
+                <label>PLD PROPRETE ET SERVICES</label>
+            </value>
+            <value>
+                <fullName>PODIUM NET IDF</fullName>
+                <default>false</default>
+                <label>PODIUM NET IDF</label>
+            </value>
+            <value>
+                <fullName>POHER PROPRETE - BRETAGNE</fullName>
+                <default>false</default>
+                <label>POHER PROPRETE - BRETAGNE</label>
+            </value>
+            <value>
+                <fullName>PRESTANCE</fullName>
+                <default>false</default>
+                <label>PRESTANCE</label>
+            </value>
+            <value>
+                <fullName>PRO E CLAIR</fullName>
+                <default>false</default>
+                <label>PRO E CLAIR</label>
+            </value>
+            <value>
+                <fullName>PRO IMPEC</fullName>
+                <default>false</default>
+                <label>PRO IMPEC</label>
+            </value>
+            <value>
+                <fullName>PROPRETE 2000</fullName>
+                <default>false</default>
+                <label>PROPRETE 2000</label>
+            </value>
+            <value>
+                <fullName>PROPRETE ENVIRONNEMENT SERVICE</fullName>
+                <default>false</default>
+                <label>PROPRETE ENVIRONNEMENT SERVICE</label>
+            </value>
+            <value>
+                <fullName>PROTEC</fullName>
+                <default>false</default>
+                <label>PROTEC</label>
+            </value>
+            <value>
+                <fullName>PROTECTIM</fullName>
+                <default>false</default>
+                <label>PROTECTIM</label>
+            </value>
+            <value>
+                <fullName>PUISSANCE 5 - NOVASOL</fullName>
+                <default>false</default>
+                <label>PUISSANCE 5 - NOVASOL</label>
+            </value>
+            <value>
+                <fullName>PUISSANCE 7</fullName>
+                <default>false</default>
+                <label>PUISSANCE 7</label>
+            </value>
+            <value>
+                <fullName>QGDN</fullName>
+                <default>false</default>
+                <label>QGDN</label>
+            </value>
+            <value>
+                <fullName>REKEEP</fullName>
+                <default>false</default>
+                <label>REKEEP</label>
+            </value>
+            <value>
+                <fullName>RENOV ACTION PROPRETE</fullName>
+                <default>false</default>
+                <label>RENOV ACTION PROPRETE</label>
+            </value>
+            <value>
+                <fullName>REPRISE SANS ANNEXE 7</fullName>
+                <default>false</default>
+                <label>REPRISE SANS ANNEXE 7</label>
+            </value>
+            <value>
+                <fullName>RPS SECURITE</fullName>
+                <default>false</default>
+                <label>RPS SECURITE</label>
+            </value>
+            <value>
+                <fullName>S3P</fullName>
+                <default>false</default>
+                <label>S3P</label>
+            </value>
+            <value>
+                <fullName>SAMSIC</fullName>
+                <default>false</default>
+                <label>SAMSIC</label>
+            </value>
+            <value>
+                <fullName>SE3M</fullName>
+                <default>false</default>
+                <label>SE3M</label>
+            </value>
+            <value>
+                <fullName>SECURITAS</fullName>
+                <default>false</default>
+                <label>SECURITAS</label>
+            </value>
+            <value>
+                <fullName>SEGID - HEROUVILLE SAINT-CLAIR</fullName>
+                <default>false</default>
+                <label>SEGID - HEROUVILLE SAINT-CLAIR</label>
+            </value>
+            <value>
+                <fullName>SEGI PROPRETE</fullName>
+                <default>false</default>
+                <label>SEGI PROPRETE</label>
+            </value>
+            <value>
+                <fullName>SEG NETTOYAGE - SAINT ETIENNE</fullName>
+                <default>false</default>
+                <label>SEG NETTOYAGE - SAINT ETIENNE</label>
+            </value>
+            <value>
+                <fullName>SEGUIGNE &amp; RUIZ</fullName>
+                <default>false</default>
+                <label>SEGUIGNE &amp; RUIZ</label>
+            </value>
+            <value>
+                <fullName>SENI</fullName>
+                <default>false</default>
+                <label>SENI</label>
+            </value>
+            <value>
+                <fullName>SERIS SECURITE</fullName>
+                <default>false</default>
+                <label>SERIS SECURITE</label>
+            </value>
+            <value>
+                <fullName>SERNET</fullName>
+                <default>false</default>
+                <label>SERNET</label>
+            </value>
+            <value>
+                <fullName>SERVIA</fullName>
+                <default>false</default>
+                <label>SERVIA</label>
+            </value>
+            <value>
+                <fullName>SERVICES COMPRIS- PUY DE DOME</fullName>
+                <default>false</default>
+                <label>SERVICES COMPRIS- PUY DE DOME</label>
+            </value>
+            <value>
+                <fullName>SEVEL - BRETAGNE</fullName>
+                <default>false</default>
+                <label>SEVEL - BRETAGNE</label>
+            </value>
+            <value>
+                <fullName>SIFU GROUPE</fullName>
+                <default>false</default>
+                <label>SIFU GROUPE</label>
+            </value>
+            <value>
+                <fullName>SMI2A</fullName>
+                <default>false</default>
+                <label>SMI2A</label>
+            </value>
+            <value>
+                <fullName>SNGA - GIRARD - LYON</fullName>
+                <default>false</default>
+                <label>SNGA - GIRARD - LYON</label>
+            </value>
+            <value>
+                <fullName>SOAP - SUD OUEST AGENCE PROPRETE</fullName>
+                <default>false</default>
+                <label>SOAP - SUD OUEST AGENCE PROPRETE</label>
+            </value>
+            <value>
+                <fullName>SODEXO</fullName>
+                <default>false</default>
+                <label>SODEXO</label>
+            </value>
+            <value>
+                <fullName>SOGE-PROP - GROUPE TOUNETT</fullName>
+                <default>false</default>
+                <label>SOGE-PROP - GROUPE TOUNETT</label>
+            </value>
+            <value>
+                <fullName>SOLYNE SERVICES - AURA</fullName>
+                <default>false</default>
+                <label>SOLYNE SERVICES - AURA</label>
+            </value>
+            <value>
+                <fullName>SOMOVIT - AUVERGNE</fullName>
+                <default>false</default>
+                <label>SOMOVIT - AUVERGNE</label>
+            </value>
+            <value>
+                <fullName>SOTRANET</fullName>
+                <default>false</default>
+                <label>SOTRANET</label>
+            </value>
+            <value>
+                <fullName>SOVENET - VENDEE</fullName>
+                <default>false</default>
+                <label>SOVENET - VENDEE</label>
+            </value>
+            <value>
+                <fullName>SPIE</fullName>
+                <default>false</default>
+                <label>SPIE</label>
+            </value>
+            <value>
+                <fullName>STEAM MULTISERVICES - ANNECY</fullName>
+                <default>false</default>
+                <label>STEAM MULTISERVICES - ANNECY</label>
+            </value>
+            <value>
+                <fullName>STEAMO</fullName>
+                <default>false</default>
+                <label>STEAMO</label>
+            </value>
+            <value>
+                <fullName>STEM</fullName>
+                <default>false</default>
+                <label>STEM</label>
+            </value>
+            <value>
+                <fullName>STENI - OCCITANIE</fullName>
+                <default>false</default>
+                <label>STENI - OCCITANIE</label>
+            </value>
+            <value>
+                <fullName>SUD SERVICE</fullName>
+                <default>false</default>
+                <label>SUD SERVICE</label>
+            </value>
+            <value>
+                <fullName>T2MC-ARC EN CIEL</fullName>
+                <default>false</default>
+                <label>T2MC-ARC EN CIEL</label>
+            </value>
+            <value>
+                <fullName>TBC EN TOUTE SECURITE</fullName>
+                <default>false</default>
+                <label>TBC EN TOUTE SECURITE</label>
+            </value>
+            <value>
+                <fullName>TEAMEX</fullName>
+                <default>false</default>
+                <label>TEAMEX</label>
+            </value>
+            <value>
+                <fullName>TEAM NET - AIN</fullName>
+                <default>false</default>
+                <label>TEAM NET - AIN</label>
+            </value>
+            <value>
+                <fullName>TIME NETTOYAGE - AURA</fullName>
+                <default>false</default>
+                <label>TIME NETTOYAGE - AURA</label>
+            </value>
+            <value>
+                <fullName>TORRAN SECURITE</fullName>
+                <default>false</default>
+                <label>TORRAN SECURITE</label>
+            </value>
+            <value>
+                <fullName>TOUNETT IDF - GROUPE TOUNETT</fullName>
+                <default>false</default>
+                <label>TOUNETT IDF - GROUPE TOUNETT</label>
+            </value>
+            <value>
+                <fullName>TRIOMPHE SECURITE</fullName>
+                <default>false</default>
+                <label>TRIOMPHE SECURITE</label>
+            </value>
+            <value>
+                <fullName>VAY SECURITE</fullName>
+                <default>false</default>
+                <label>VAY SECURITE</label>
+            </value>
+            <value>
+                <fullName>VEOLIA</fullName>
+                <default>false</default>
+                <label>VEOLIA</label>
+            </value>
+            <value>
+                <fullName>VINCI</fullName>
+                <default>false</default>
+                <label>VINCI</label>
+            </value>
+            <value>
+                <fullName>VISION GLOBALE PROPRETE ET MULTISERVICES</fullName>
+                <default>false</default>
+                <label>VISION GLOBALE PROPRETE ET MULTISERVICES</label>
+            </value>
+            <value>
+                <fullName>WEESURE</fullName>
+                <default>false</default>
+                <label>WEESURE</label>
+            </value>
+            <value>
+                <fullName>WILAU PROPRETE</fullName>
+                <default>false</default>
+                <label>WILAU PROPRETE</label>
+            </value>
+            <value>
+                <fullName>WORKNETT</fullName>
+                <default>false</default>
+                <label>WORKNETT</label>
+            </value>
+            <value>
+                <fullName>XL PROPRETE - OCCITANIE</fullName>
+                <default>false</default>
+                <label>XL PROPRETE - OCCITANIE</label>
+            </value>
+            <value>
+                <fullName>YANET</fullName>
+                <default>false</default>
+                <label>YANET</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

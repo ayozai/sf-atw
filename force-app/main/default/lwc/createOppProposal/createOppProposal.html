@@ -1,0 +1,44 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-quick-action-panel header={label.proposalStudioTitle}>
+        <template if:true={loading}>
+            <div class="slds-text-align_center">{loadingMessage}</div>
+            <div class="demo-only demo--inverse" style="height:6rem;position:relative">
+                <div role="status" class="slds-spinner slds-spinner_medium">
+                    <span class="slds-assistive-text">{label.loadingLabel}</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+        </template>
+        <template if:false={loading}>
+            <template if:false={folderId}>
+                {label.pleaseSelectGroupOppLabel}
+                <c-custom-combobox options={groupPicklistOptions} onchange={handleChange}></c-custom-combobox>
+            </template>
+        </template>
+        <template if:false={processComplete}>
+            <template if:true={folderId}>
+                {label.folderAlreadyExistsLabel} <span style="font-weight:bold;">{oppName}</span><br/>
+                {label.folderIdLabel} <span style="font-weight:bold;">{folderId}</span>.
+            </template>
+        </template>
+
+        <div slot="footer">
+            <lightning-button variant="neutral"
+                              label={label.cancel}
+                              onclick={handleModalCancel}>
+            </lightning-button>
+            <lightning-button variant="brand" 
+                              label={label.create} 
+                              class="slds-m-left_x-small"
+                              disabled={isCreateDisabled}
+                              onclick={handleCreate}>
+            </lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+
+    <div class="hidden">
+        {recordId}
+    </div>
+</template>

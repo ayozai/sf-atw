@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Contract__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Customer Contract</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>Contract__c.Type__c</field>
+            <operation>notEqual</operation>
+            <value>Framework Agreement, Master Service Agreement</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contract__c</referenceTo>
+    <relationshipLabel>Accounting System Sites</relationshipLabel>
+    <relationshipName>Accounting_System_Sites</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

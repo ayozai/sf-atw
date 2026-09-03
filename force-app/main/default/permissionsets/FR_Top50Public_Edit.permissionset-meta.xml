@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission set to allow sales directors to check the box of Top50Public</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.TOP_50_Public__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FR_Top50Public_Edit</label>
+</PermissionSet>

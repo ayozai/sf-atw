@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gross_Margin</fullName>
+    <active>true</active>
+    <description>Limit to 3 digits</description>
+    <errorConditionFormula>$Profile.Name&lt;&gt;&apos;Automated Process&apos; &amp;&amp;
+$Profile.Name&lt;&gt;&apos;System Administrator&apos; &amp;&amp;
+$Profile.Name&lt;&gt;&apos;Global Delegated Admin&apos; &amp;&amp;
+!ISPICKVAL($User.Controlling_Approver__c,&apos;Country Approver&apos;) &amp;&amp;
+(Gross_Margin_2__c &lt; -0.99 || Gross_Margin_2__c &gt; 0.99)</errorConditionFormula>
+    <errorDisplayField>Gross_Margin_2__c</errorDisplayField>
+    <errorMessage>Please enter a value between -99% and +99%</errorMessage>
+</ValidationRule>

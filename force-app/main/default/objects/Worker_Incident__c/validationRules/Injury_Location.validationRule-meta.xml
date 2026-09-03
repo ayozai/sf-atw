@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Injury_Location</fullName>
+    <active>false</active>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &apos;System Administrator&apos; &amp;&amp; 
+$Profile.Name &lt;&gt; &apos;Integration User&apos; &amp;&amp; 
+!ISPICKVAL(Type__c, &apos;Workplace Near-miss&apos;) &amp;&amp; ISPICKVAL(Injury_Location__c, &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>Injury_Location__c</errorDisplayField>
+    <errorMessage>Please select the injury location.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,714 @@
+<apex:page id="OlbicoGlobalFamilyTree" showHeader="false" sidebar="false" tabStyle="Account" standardController="Account" extensions="OlbicoGlobalFamilyTreeController">
+    <apex:form >
+        <apex:actionFunction immediate="{!$Setup.OnBoardSettings__c.GlobalFamTreeImmediate__c}" 
+            action="{!fetchTree}" name="fetchTree" reRender="jTree" oncomplete="loadTree();" />
+    </apex:form>
+    <apex:outputPanel id="jTree">
+        <input id="jTreeField" type="hidden" value="{!familyTreeJSON}" />
+        <input id="currentDuns" type="hidden" value="{!currentDuns}" />
+        <input id="currentId" type="hidden" value="{!currentId}" />
+        <input id="totalMembers" type="hidden" value="{!totalMembers}" />
+        <input id="supportsBranchFiltering" type="hidden" value="{!supportsBranchFiltering}" />
+    </apex:outputPanel>
+    <apex:outputPanel layout="block" id="detail">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            var theme = typeof sforce != ('undefined') && sforce && (!!sforce.one);
+
+            ////////////////////////////////////////
+            ///////// Current tree
+            ////////////////////////////////////////
+            var currentId = null;
+            var currentAccountDuns = null;
+            var currentCompanyTree = null;
+            var totalMembers = 0;
+            var supportsBranchFiltering = false;
+            var treeElementCache; // Used to save html string of tree before filtering. This way, the tree can be recovered easily.
+
+            $(document).ready(function() {
+                bindEvents();
+                
+                if (theme) $("body").addClass("lightning");
+                if ({!$Setup.OnBoardSettings__c.GlobalFamTreeImmediate__c}) {
+                    showLoader();
+                    fetchTree();
+                } else {
+                    $(document).on('click', '#containerLoadingProgress .btn', showLoader);
+                }
+
+                $('#containerConcernTree').hide();
+
+                ////////////////////////////////////////
+                ///////// Events
+                ////////////////////////////////////////
+                function bindEvents() {
+                    $(document).on('click', 'a[data-action=open]', openCompany);
+                    $(document).on('click', 'a[data-action=search]', searchForCompany);
+                    $(document).on('click', 'a[data-toggle]', treeToggle);
+                    $(document).on('change', 'select#filter-out-branches', showBranchesToggle);
+                    $(document).on('change', 'select#filter-countries', countryFilterChanged);
+                    $(document).on('click', '#jumptocompany', jumpToRequestedCompany);
+                }
+            });
+
+            function showLoader() {
+                $('#containerLoadingProgress span').show();
+                $('#containerLoadingProgress input[type=button]').hide();
+                if (theme) {
+                    $('#containerLoadingProgress').prepend('<img src="/dashboards/img/landmark_spinner_1589EE.gif" style="float: left; margin: 8px;">');
+                } else {
+                    $('#containerLoadingProgress').prepend('<img src="/img/loading.gif" style="float: left; margin: 8px;">');
+                } $('#containerLoadingProgress').attr('style', 'display: flex !important');
+                $('#containerLoadingProgress').append('<span style="padding: 10px 0px;">Loading global family tree...</span>')
+            }
+
+            function hideLoader() {
+                $('#containerLoadingProgress').attr('style', 'display: none !important');
+            }
+
+            function loadTree() {
+                console.log('Loading tree data...');
+
+                jsondata = $('#jTreeField').val();
+
+                if (jsondata == null || jsondata == '' || jsondata == '{}') {
+                    $('#containerLoadingProgress').remove();
+                    console.log('No tree data available');
+                    $('#containerConcernTree').after('<div id="containerNoConcernTree"><span>No global family tree available</span></div>');
+
+                    return;
+                } else {
+                    hideLoader();
+                }
+
+                currentAccountDuns = $('#currentDuns').val();
+                currentId = $('#currentId').val();
+                totalMembers = parseInt($('#totalMembers').val());
+                supportsBranchFiltering = $('#supportsBranchFiltering').val() === 'true';
+                console.log('Processing tree for account ' + currentId + ' with duns ' + currentAccountDuns + ' and ' + totalMembers + ' family members')
+
+                processFamilyTreeData(jsondata);
+                createIndent();
+
+                // Initialize country dropdown cache variable
+                treeElementCache = $('ul.concernTree').html();
+            }
+
+            function treeToggle(e) {
+                e.preventDefault();
+                concernTreeToggle($(this).data('toggle'));
+                return false;
+            }
+
+            function showBranchesToggle(e) {
+
+                if ($(this).val() == 1) {
+                    $('li[data-isbranch=true]').removeClass('branchfiltered');
+
+                } else if($(this).val() == 0) {
+                    $('li[data-isbranch=true]').addClass('branchfiltered');
+                }
+            }
+
+            function jumpToRequestedCompany() {
+
+                openCurrentItem();
+
+                // We do all the action in a small timeout-function, to make sure changes to the DOM are rendered and 'active'
+                setTimeout(function () {
+                    $('.requestedCompany > a').focus();
+
+                    var requestedElement;
+                    var requestedTop;
+
+                    requestedElement = $('.requestedCompany')[0];
+                    
+                    requestedTop = $(requestedElement).offset();
+                    $([document.documentElement, document.body]).scrollTop = $(requestedElement).top;
+                }, 10);
+            }
+
+
+            function openCurrentItem() {
+
+                    if (totalMembers > 1000) {
+                        concernTreeToggle(null, false, false);
+
+                        // expand to current item
+                        $.each($('li.requestedCompany').parents("ul[data-parent-number]"),
+                            function(index, item) {
+                                concernTreeToggle($(item).attr('data-parent-number'), true, false);
+                            });
+                    } else {
+                        concernTreeToggle(null, true, false);
+                    }
+
+            }
+
+            function countryFilterChanged(e) {
+                var countryVal = $('#filter-countries').val();
+                if (countryVal === '-1') {
+                    $('ul.concernTree').removeClass('flat');
+                    $('ul.concernTree').html(treeElementCache); // Replace flat with old tree content
+
+                    // Open up everything when we have less than 1000 items, or if we have more, open up only to the 'requestedCompany' item
+                    // This is a bit of copy-n-paste from the original code a bit down
+
+                    jumpToRequestedCompany();
+
+                } else {
+                    // console.log(treeElementCache.html());
+                    $('ul.concernTree').addClass('flat');
+
+                    // Find elements containing filter value, replace contents of tree with simple flat list of anchor tags
+                    $('ul.concernTree').html($('a[data-countryname="' + countryVal + '"]', treeElementCache)); // Shorthand find
+
+                    jumpToRequestedCompany();
+                }
+            }
+
+            function openCompany(e) {
+
+                e.preventDefault();
+
+                var crmId = $(this).data('crmid');
+
+                var url = '{!URLFOR($Action.Account.View, "0010P00001pWwWW")}';
+                var lightningUrl = window.location.protocol + "//" + window.location.host + "/one/one.app#/sObject/{replace}/view"
+
+                lightningUrl = lightningUrl.replace("{replace}", crmId)
+
+                url = url.replace("0010P00001pWwWW", crmId);
+
+                if("{!$User.UIThemeDisplayed }" == "Theme4d") {
+                    window.open(lightningUrl, '_blank');
+                    return false;
+                } else {
+                    window.open(url, '_blank');
+                    return false;
+                }
+            }
+
+            var searchPageUrl                    = '{!$Setup.OnBoardSettings__c.SearchPageUrl__c}';
+            var searchPageUrlLightning           = '{!$Setup.OnBoardSettings__c.SearchPageUrlLightning__c}';
+            var searchMappingDunsField           = '{!$Setup.OnBoardSettings__c.SearchMappingDunsField__c}';
+            var searchMappingNameField           = '{!$Setup.OnBoardSettings__c.SearchMappingNameField__c}';
+            var searchMappingCountryNameField    = '{!$Setup.OnBoardSettings__c.SearchMappingCountryNameField__c}';
+            var searchMappingCountryIsoCodeField = '{!$Setup.OnBoardSettings__c.SearchMappingCountryIsoCodeField__c}';
+
+            function searchForCompany(e) {
+
+                e.preventDefault();
+
+                if (searchPageUrl === '')
+                    return false;
+
+                var openUrl;
+
+                if("{! $User.UIThemeDisplayed }" == "Theme4d") {
+                    openUrl = searchPageUrlLightning;
+                } else {
+                    openUrl = searchPageUrl;
+                }
+
+                if (searchMappingDunsField !== '') {
+                    openUrl = queryStringAppender(openUrl, searchMappingDunsField,  $(this).data('duns'));
+                }
+                if (searchMappingNameField !== '') {
+                    openUrl = queryStringAppender(openUrl, searchMappingNameField,  $(this).data('name'));
+                }
+                if (searchMappingCountryNameField !== '') {
+                    openUrl = queryStringAppender(openUrl, searchMappingCountryNameField,  $(this).data('countryname'));
+                }
+                if (searchMappingCountryIsoCodeField !== '') {
+                    openUrl = queryStringAppender(openUrl, searchMappingCountryIsoCodeField,  $(this).data('countryiso'));
+                }
+
+                window.open(openUrl, target='_blank');
+                return false;
+            }
+
+            function queryStringAppender(url, key, value) {
+
+                if (value == undefined || value == "")
+                    return url;
+
+                var separator = "&";
+                if (url.indexOf('?') < 0) {
+                    separator = '?';
+                }
+
+                url += separator + key + "=" + value;
+                return url;
+            }
+
+            function concernTreeToggle(number, expand, animate) {
+
+                var toggleDiv = " div.toggle";
+                var toggleUl = " ul";
+
+                if (number != null) {
+                    toggleDiv = ' div.toggle[data-number="' + number + '"]';
+                    toggleUl = ' ul[data-parent-number="' + number + '"]';
+                }
+
+                var toggleButton = $('ul.concernTree' + toggleDiv);
+                var children = $('ul.concernTree' + toggleUl);
+
+                if (expand == null)
+                    expand = !toggleButton.hasClass('expanded');
+                if (animate == null)
+                    animate = true;
+
+                if (expand) {
+                    if (animate) {
+                        children.slideDown();
+                    } else {
+                        children.show();
+                    }
+                    toggleButton.addClass('expanded');
+                    toggleButton.removeClass('collapsed');
+                } else {
+                    if (animate) {
+                        children.slideUp();
+                    } else {
+                        children.hide();
+                    }
+                    toggleButton.addClass('collapsed');
+                    toggleButton.removeClass('expanded');
+                }
+            }
+
+            ////////////////////////////////////////
+            ///////// Generate HTML
+            ////////////////////////////////////////
+
+            function processFamilyTreeData(familyTreeData) {
+
+                currentCompanyTree = JSON.parse(familyTreeData);
+
+                // display fetched content
+                var html = generateConcernHtml(currentCompanyTree);
+                $("#containerConcernTree").html(html);
+
+                if (totalMembers > 1000) {
+                    // expand to current item
+                    $.each($('li.requestedCompany').parents("ul[data-parent-number]"),
+                        function(index, item) {
+                            concernTreeToggle($(item).attr('data-parent-number'), true, false);
+                        });
+                } else {
+                    concernTreeToggle(null, true, false);
+                }
+
+                $("body").css("marginTop", "-24px !important")
+
+                // $('#containerLoadingProgress').attr('style','display:none !important');
+                $('#containerConcernTree').show();
+                console.log('Done building tree');
+            }
+
+            function generateConcernHtml(concern) {
+
+                if (concern == null)
+                    return '';
+
+                var html = '';
+
+                html += '<div id="filters">';
+
+
+                html += '<div id="jumpToCompany"><input id="jumptocompany" type="button" class="btn" value="Show account"/></div>';
+
+
+                if (supportsBranchFiltering) {
+                    html += '<div id ="branchCheckbox"><select name="filter-out-branches" id="filter-out-branches"><option value="1">Including branches</option><option value="0">Excluding branches</option></select></div>';
+                }
+
+                var countries;
+                countries = [];
+
+                // push the country of the root object
+                countries.push(concern.CountryName);
+
+                // now walk the entire tree, adding countries only if they're not in the array yet
+                function getCountries(childrenArray) {
+                    if (childrenArray == null) return;
+
+                    childrenArray.forEach(function (el) {
+                        if (el.Children != null) {
+                            getCountries(el.Children);
+                        }
+
+                        if (countries.indexOf(el.CountryName) == -1) {
+                            countries.push(el.CountryName);
+                        }
+                    });
+                }
+                getCountries(concern.Children);
+
+                // Only add the filter-country selectbox if we actually have countries to filter on
+                if (countries.length > 1) {
+                    countries.sort();
+
+                    html += '<div id="countryFilterbox">';
+                    html += '<select name="filter-countries" id="filter-countries">';
+                    html += '<option value="-1">Show all countries</option>';
+                    countries.forEach(function (el) {
+                        // We create a real 'option' element and add the html. This way we enode the strings properly for use in html attributes and html text
+                        var optionElement;
+                        optionElement = $('<option>').text(el).attr('value', el);
+
+                        html += optionElement[0].outerHTML;
+                    });
+                    html += '</select></div>';
+                }
+                html += '</div>';
+
+                html += '<ul class="concernTree">';
+                html += generateCompanyHtml(concern);
+                html += '</ul>';
+
+                return html;
+            }
+
+            function generateCompanyHtml(company) {
+
+                if (company == null)
+                    return "";
+
+                var itemLabel = generateItemLabel(company);
+                var itemCss = generateItemCss(company);
+                var itemAction = generateItemAction(company);
+
+                var toggleButton = '<div class="toggless"></div>';
+                var childHtml = '';
+
+                if (company.Children !== null && company.Children.length > 0) {
+
+                    toggleButton = '<a href="#" data-toggle="' + company.Duns + '"><div class="toggle collapsed" data-number="' + company.Duns + '"></div></a>';
+                    childHtml += '<ul data-parent-number="' + company.Duns + '" class="children">';
+
+                    $.each(company.Children, function (childIndex, child) {
+                        childHtml += generateCompanyHtml(child);
+                    });
+
+                    childHtml += '</ul>';
+                }
+
+                var crmId = "";
+                if (company.CrmId != null)
+                    crmId = company.CrmId;
+
+                var isBranch = "false";
+                if (company.IsBranch) {
+                    isBranch = company.IsBranch.toString().toLowerCase();
+                }
+
+                var html = "";
+                html += '<li class="' + itemCss.trim() + '" data-isbranch="'+ isBranch  +'">';
+                html += toggleButton.trim();
+                html += '<a href="#" data-action="' + itemAction
+                    + '" data-crmid="' + crmId
+                    + '" data-duns="' + company.Duns
+                    + '" data-name="' + company.Name
+                    + '" data-countryiso="' + company.CountryIsoCode
+                    + '" data-countryname="' + company.CountryName
+                    + '">' + itemLabel.trim() + '</a>';
+
+                if (company.CrmId != null & company.CrmId !== '') {
+                    html += '<div class="crm-icon"></div> ';
+
+                    if (company.AmountOfMatchingCrmItems != null && company.AmountOfMatchingCrmItems > 1) {
+                        html += '<span class="crm-count">(' + company.AmountOfMatchingCrmItems + ')</span>';
+                    }
+                }
+
+                html += childHtml.trim();
+                html += '</li>';
+
+                return html;
+            }
+
+            function generateItemLabel(company) {
+
+                var itemLabel = '';
+                if (company.Duns != null && company.Duns !== '') {
+                    itemLabel += company.Duns + ' ';
+                }
+
+                if (company.Name != null && company.Name !== '') {
+                    itemLabel += company.Name + ' ';
+                }
+
+                if (company.Location != null && company.Location !== '') {
+                    itemLabel += '(' + company.Location + ') ';
+                }
+
+                return itemLabel;
+            }
+
+            function generateItemCss(company) {
+
+                var itemCss = "";
+                if (company.CrmId == null) {
+                    return itemCss;
+                }
+
+                if (currentId != null && company.CrmId.toLowerCase().indexOf(currentId.toLowerCase()) == 0) {
+                    itemCss = "requestedCompany ";
+                    return itemCss;
+                }
+
+                itemCss = "presentInList ";
+                return itemCss;
+            }
+
+            function generateItemAction(company) {
+
+                if (company.CrmId !== null && company.CrmId !== "") //&& !company.IsRequestedCompany)
+                    return "open";
+
+                if (company.IsRequestedCompany)
+                    return "none";
+
+                return "search";
+            }
+
+            function createIndent() {
+                $("ul li > div.toggless").parent().addClass('indented');
+                $("body").css('marginTop','-14px');
+            }
+        </script>
+        <style>
+            @font-face {
+                font-family: SalesforceSans;
+                src: url('{!URLFOR($Resource.salesforcesans, 'salesforcesans/SalesforceSans-Regular.ttf')}');
+            }
+            .lightning {
+               padding-left: 0 !important;
+            }
+            .lightning ul.concernTree li a {
+                font-family: SalesforceSans,Arial,sans-serif;
+                font-size: 14px;
+            }
+            .lightning #containerConcernTree > ul > li {
+                padding-left: 0;
+                margin-left: 0;
+            }
+            ul.concernTree,
+            ul.concernTree ul {
+                 list-style: none;
+                 padding-left: 0px;
+            }
+            ul.concernTree .toggle {
+                 min-width: 11px;
+                 max-width: 11px;
+                 min-height: 11px;
+                 max-height: 11px;
+                 margin-right: 3px;
+                 display: inline-block;
+            }
+            ul.concernTree .toggle.collapsed {
+                background-image: url('/img/alohaSkin/setup/setup_plus_lev1.gif');
+            }
+            ul.concernTree .toggle.expanded {
+                background-image: url('/img/alohaSkin/setup/setup_minus_lev1.gif');
+            }
+            ul.concernTree li img.crm-icon,
+            ul.concernTree li a img.crm-icon {
+                height: 11px;
+                margin-left: 4px;
+            }
+            span.crm-count {
+                margin-left: 20px;
+            }
+            ul.concernTree ul.children {
+                display: none;
+            }
+
+            ul.concernTree li a {
+                text-decoration: none;
+                line-height: 21px;
+            }
+
+            ul.concernTree li.presentInList,
+            ul.concernTree li.presentInList > a {
+                color: green;
+                text-decoration: none;
+            }
+            ul.concernTree li.requestedCompany > div,
+            ul.concernTree li.requestedCompany > a,
+            ul.concernTree li.requestedCompany > span.crm-count {
+                font-weight: bold;
+                color: #236fbd;
+            }
+            ul.concernTree li.outOfBusiness,
+            ul.concernTree li.outOfBusiness a {
+                color: red;
+            }
+            div.crm-icon {
+                background: transparent url("{!$Resource.salesforce1}") no-repeat bottom;
+                height: 14px;
+                overflow: hidden;
+                width: 16px;
+                display: inline-block;
+                position: absolute;
+                margin-left: 4px;
+                margin-top: 4px;
+            }
+            div.crm-icon.filtered {
+                display: none;
+            }
+            div#filters {
+                width: 160px;
+            }
+            ul.concernTree {
+                margin-right: 160px;
+            }
+            div#branchCheckbox {
+                position: fixed;
+                top: 2.5em;
+                right: 1.5em;
+            }
+            div#branchCheckbox select,
+            div#countryFilterbox select {
+                border: 1px solid #ececec;
+                font-size: 12px;
+                width: 180px;
+                height: 24px;
+            }
+            div#countryFilterbox {
+                position: fixed;
+                right: 1.5em;
+                top: 5.0em;
+                white-space: nowrap;
+            }
+
+            .lightning {
+                font-family: SalesforceSans,Arial,sans-serif !important;
+            }
+
+            .lightning div#branchCheckbox select,
+            .lightning div#countryFilterbox select {
+                font-family: SalesforceSans,Arial,sans-serif;
+                font-size: 14px;
+                width: 200px;
+            }
+            div#branchCheckbox select:active,  div#branchCheckbox select:hover, div#branchCheckbox select:focus,
+            div#countryFilterbox select:active,  div#countryFilterbox select:hover, div#countryFilterbox select:focus {
+                outline: none
+            }
+            .concernTree:not(.flat) .indented {
+                margin-left: calc(1.5em + 14px);
+            }
+            .concernTree.flat .indented {
+                margin-left: 0;
+            }
+            .concernTree.flat li {
+                margin-left: 0;
+            }
+            .concernTree.flat .toggle {
+                display: none;
+            }
+
+            .concernTree.flat {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .concernTree.flat a {
+                font-size: 14px;
+                text-decoration: none;
+                line-height: 21px;
+            }
+
+            .filtered,
+            .branchfiltered {
+                display: none;
+            }
+
+            div#jumpToCompany {
+
+                position: fixed;
+                top: 0;
+                right: 1.5em;
+            }
+
+            .lightning div#jumpToCompany input[type='button'] {
+
+                background: #fff;
+                border: 1px solid rgb(221, 219, 218);
+                border-radius: 0;
+                border-width: 1px;
+                color: rgba(27, 82, 151, 1.0);
+                cursor: pointer;
+                font-size: .8125rem;
+                padding: 0 1rem;
+                height: 30px;
+                margin-right:0px;
+                font-weight: 100;
+                border-radius: .25rem .25rem .25rem .25rem;
+                font-family: SalesforceSans,Arial,sans-serif;
+            }
+
+            .lightning div#branchCheckbox {
+                top: 3.0em;
+            }
+
+            .lightning div#countryFilterbox {
+                top: 5.4em;
+            }
+
+            .lightning #containerLoadingProgress {
+                width: 100% !important;
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                min-height: 180px;
+                justify-content: center;
+                padding: 0 !important;
+            }
+
+            .lightning #containerLoadingProgress img {
+                max-width: 70px;
+            }
+
+            .lightning #containerLoadingProgress span {
+                font-size: 0.9rem;
+            }
+
+            .lightning #containerLoadingProgress input[type="button"] {
+                font-family: 'SalesforceSans', Arial, sans-serif;
+                font-size: 0.8125rem;
+                font-weight: 400;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                text-align: center;
+                vertical-align: middle;
+                border: 1px solid rgb(221, 219, 218);
+                transition: border .15s linear;
+                background: none;
+                background-color: rgba(27, 82, 151, 1.0);
+                border-color: rgba(27, 82, 151, 1.0);
+                color: rgb(255, 255, 255);
+                line-height: 1.875rem;
+            }
+
+            #containerLoadingProgress button:hover {
+                cursor: pointer;
+            }
+        </style>
+        <div id="concernTree">
+        </div>
+
+        <div style="padding: 2px; background-color: #fff; width: 200px;" id="containerLoadingProgress">
+            <apex:form >
+                <apex:commandButton action="{!fetchTree}" value="Load Family Tree" reRender="jTree" oncomplete="loadTree();" />
+            </apex:form>
+        </div>
+
+        <div id="containerConcernTree">
+        </div>
+    </apex:outputPanel>
+</apex:page>

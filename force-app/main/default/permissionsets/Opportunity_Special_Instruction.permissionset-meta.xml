@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows UK users to see the activity history from the lead. This is legacy functionality required for historic data.</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Special_Instructions__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Opportunity Special Instruction</label>
+</PermissionSet>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Relationship_Level__c</fullName>
+    <description>Categorizes the relationship level the owner has with the contact.</description>
+    <inlineHelpText>Select the value that best describes the main owner&apos;s relationship with the contact.</inlineHelpText>
+    <label>Current Relationship Level</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Relationship</fullName>
+                <default>false</default>
+                <label>No Relationship</label>
+            </value>
+            <value>
+                <fullName>Structured - attends regular business meetings</fullName>
+                <default>false</default>
+                <label>Structured - attends regular business meetings</label>
+            </value>
+            <value>
+                <fullName>Social - attends networking and social events outside of structured meetings</fullName>
+                <default>false</default>
+                <label>Social - attends networking and social events outside of structured meetings</label>
+            </value>
+            <value>
+                <fullName>Easy to access - responsive to calls and/or emails</fullName>
+                <default>false</default>
+                <label>Easy to access - responsive to calls and/or emails</label>
+            </value>
+            <value>
+                <fullName>Difficult to access - not responsive to calls and/or emails</fullName>
+                <default>false</default>
+                <label>Difficult to access - not responsive to calls and/or emails</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

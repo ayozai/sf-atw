@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_AuditPlanning_Inopine</fullName>
+    <active>true</active>
+    <description>Empêche la saisie d’Audit Planning pour les audits inopinés</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Audit_Origin__c, &quot;Audit Inopiné&quot;),
+  NOT(ISBLANK(Audit_Planning__c))
+)</errorConditionFormula>
+    <errorDisplayField>Audit_Planning__c</errorDisplayField>
+    <errorMessage>Audit Planning n’est pas applicable pour un audit inopiné.
+Merci de vider ce champ pour continuer.</errorMessage>
+</ValidationRule>

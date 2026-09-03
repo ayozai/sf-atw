@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Is_Global_Opportunities_Collection_Empty</name>
+        <label>Is Global Opportunities Collection Empty</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Empty</defaultConnectorLabel>
+        <rules>
+            <name>NOT_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetGlobalOpportunityRecords</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Delete_Related_Global_Opportunity_Records</targetReference>
+            </connector>
+            <label>NOT Empty</label>
+        </rules>
+    </decisions>
+    <description>The flow will run when an Opportunity is deleted. The purpose is to remove the related Global Opportunity Records to prevent orphaned Global Opportunity Records</description>
+    <interviewLabel>FLOW: Delete Related Global Opp when Deleting Opp with Record ID --&gt;{!$Record.Id}&lt;-- Deleted at: {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Delete Related Global Opp when Deleting Opp</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <description>Find and Delete the Global Opportunity Records Related to the Opportunity Record that triggered this flow.</description>
+        <name>Delete_Related_Global_Opportunity_Records</name>
+        <label>Delete Global Opportunity Records</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <inputReference>GetGlobalOpportunityRecords</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <description>Get the Global Opportunity Records to Delete using the RecordId of the Opportunity record that started this flow</description>
+        <name>GetGlobalOpportunityRecords</name>
+        <label>GetGlobalOpportunityRecords</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Global_Opportunities_Collection_Empty</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity_View__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetGlobalOpportunityRecords</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>A collection of the Global Opportunity Records to Delete</description>
+        <name>Global_Opportunities</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity_View__c</objectType>
+    </variables>
+</Flow>

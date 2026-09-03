@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides &apos;Create&apos; &amp; &apos;Edit&apos; access to &apos;Contracts&apos; object with &apos;Contracts&apos; Tab.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Contracts - Edit - With Tab</label>
+    <permissionSets>Contract_and_Contracted_Services_Super_User</permissionSets>
+    <permissionSets>Contracted_Services_Create</permissionSets>
+    <permissionSets>Contracts_Tab</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

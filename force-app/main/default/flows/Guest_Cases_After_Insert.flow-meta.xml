@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>314</locationX>
+        <locationY>1163</locationY>
+        <actionName>SendBetterEmail</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>HTMLbody</name>
+        </inputParameters>
+        <inputParameters>
+            <name>orgWideEmailAddressId</name>
+            <value>
+                <elementReference>Get_OW_Email.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>plainTextBody</name>
+            <value>
+                <elementReference>MailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>replyEmailAddress</name>
+            <value>
+                <elementReference>Get_Case_Creator_Details.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>SendCCthisStringCollectionOfEmailAddresses</name>
+            <value>
+                <elementReference>AccountTeamEmailAddresses</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>SendTOthisOneEmailAddress</name>
+            <value>
+                <elementReference>CreatorEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subject</name>
+            <value>
+                <elementReference>MailSubject</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SendBetterEmail</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_Email_to_Recipient_Collection2</name>
+        <label>Add Email to Recipient Collection</label>
+        <locationX>314</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>AccountTeamEmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>floriane.valet@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountTeamEmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>gautier.herman@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Case_creation</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign</name>
+        <label>Assign</label>
+        <locationX>50</locationX>
+        <locationY>971</locationY>
+        <assignmentItems>
+            <assignToReference>MailSubject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailSubjectNewRequest</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MailBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailBodyCustomerNewRequest</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Assign</name>
+        <label>Assign</label>
+        <locationX>314</locationX>
+        <locationY>971</locationY>
+        <assignmentItems>
+            <assignToReference>MailSubject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailSubjectUpdate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>MailBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>EmailBodyCustomerUpdate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Creator_Email_Address</name>
+        <label>Set Creator Email Address</label>
+        <locationX>314</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>CreatorEmailAddress</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Email__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Email_to_Recipient_Collection2</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Case_creation</name>
+        <label>Case creation/Update</label>
+        <locationX>314</locationX>
+        <locationY>863</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Case_creation3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign</targetReference>
+            </connector>
+            <label>Case creation</label>
+        </rules>
+        <rules>
+            <name>Case_update3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Assign</targetReference>
+            </connector>
+            <label>Case status update to closed</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Guest Cases {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Guest Cases After Insert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account_Team</name>
+        <label>Get Account Team</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Case_Creator_Details</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3 OR 4 OR 5)</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer Service Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Operational Lead</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QSHE Manager</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Partner</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AccountTeamMember</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Case_Creator_Details</name>
+        <label>Get Case Creator Details</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Creator_Email_Address</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.CreatedById</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_OW_Email</name>
+        <label>Get OW Email</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Account_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DisplayName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>One Atalian</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OrgWideEmailAddress</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_OW_Email</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Guest Request</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBodyCustomerNewRequest</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Bonjour {!$Record.Name__c}
+
+Votre demande pour le site {!$Record.Site_Name__c} a été créée sous le numéro {!$Record.CaseNumber}. Nous reviendrons vers vous dans les plus brefs délais.
+
+Nom et prénom : {!$Record.Name__c}
+Société : {!$Record.Company__c}
+Email : {!$Record.Email__c}
+Téléphone : {!$Record.Phone__c}
+
+Nom du site : {!$Record.Site_Name__c}
+Code chantier : {!$Record.ERP_Site_Number__c}
+Service principal : {!$Record.Primary_Service__c}
+
+Objet : {!$Record.Subject}
+Description : {!$Record.Description}
+
+L&apos;équipe Service Client Atalian
+
+
+
+Lien interne Atalian : https://atalianworld.lightning.force.com/lightning/r/Case/{!$Record.Id}/view</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyCustomerUpdate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Bonjour {!$Record.Name__c}
+
+Le statut de la demande {!$Record.CaseNumber} pour le site {!$Record.Site__r.Name} a été mis à jour.
+
+Nouveau statut : {!$Record.Status} 
+
+-----------------------
+Nom et prénom : {!$Record.Name__c}
+Société : {!$Record.Company__c}
+Email : {!$Record.Email__c}
+Téléphone : {!$Record.Phone__c}
+
+Nom du site : {!$Record.Site_Name__c}
+Code chantier : {!$Record.ERP_Site_Number__c}
+Service principal : {!$Record.Primary_Service__c}
+
+Objet : {!$Record.Subject}
+Description : {!$Record.Description}
+----------------------
+
+L&apos;équipe Service Client Atalian
+
+
+
+Lien interne Atalian : https://atalianworld.lightning.force.com/lightning/r/Case/{!$Record.Id}/view</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyNewEN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello {!$Record.Contact.FirstName}
+
+The request for the site {!$Record.Site__r.Name} has been created with the number {!$Record.CaseNumber}.
+
+Category : {!$Record.Type_Customer_Label__c}
+Subcategory : {!$Record.Service_Category_Customer_Label__c}
+Details : {!$Record.Description}
+
+The Atalian Customer Service Team
+
+Customer link : https://oneatalian.force.com/oneatalian/s/case/{!$Record.Id}
+Atalian internal link : https://atalianworld.lightning.force.com/lightning/r/Case/{!$Record.Id}/view</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailBodyUpdateEN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello {!$Record.Contact.FirstName} 
+
+The status of the request {!$Record.CaseNumber} for the site {!$Record.Site__r.Name} has been updated. 
+
+New status : {!$Record.Status} 
+Category : {!$Record.Type_Customer_Label__c} 
+Subcategory : {!$Record.Service_Category_Customer_Label__c} 
+Details : {!$Record.Description} 
+Solution : {!$Record.Case_Solution__c}
+
+The Atalian Customer Service Team
+
+Customer link : https://oneatalian.force.com/oneatalian/s/case/{!$Record.Id}
+Atalian internal link : https://atalianworld.lightning.force.com/lightning/r/Case/{!$Record.Id}/view</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectNewEN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>New request {!$Record.CaseNumber} {!$Record.Site__r.Name}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectNewRequest</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>ONE ATALIAN - Nouvelle demande - {!$Record.CaseNumber} - {!$Record.Site_Name__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectUpdate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>ONE ATALIAN - Mise à jour de la demande {!$Record.CaseNumber} - {!$Record.Site_Name__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailSubjectUpdateEN</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Request update - {!$Record.CaseNumber} - {!$Record.Site__r.Name}</text>
+    </textTemplates>
+    <variables>
+        <name>AccountTeamEmailAddresses</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CreatorEmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>MailBody</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>MailSubject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>UserIsRecipient</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

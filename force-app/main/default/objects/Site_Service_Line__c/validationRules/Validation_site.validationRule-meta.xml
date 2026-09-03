@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_site</fullName>
+    <active>true</active>
+    <description>Service line site equal site fixed fee</description>
+    <errorConditionFormula>Site__c  !=  Fixed_Fees__r.Site__c</errorConditionFormula>
+    <errorDisplayField>Site__c</errorDisplayField>
+    <errorMessage>check your site value</errorMessage>
+</ValidationRule>

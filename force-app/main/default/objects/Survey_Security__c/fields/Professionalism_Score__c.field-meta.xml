@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Professionalism_Score__c</fullName>
+    <formula>( (  Day_to_day_Punctuality__c 
++ CASE( Branded_Uniforms_and__c  , &quot;Yes&quot;, 5, &quot;No&quot;, 0, 0)
++ ( Customer_Service_Level__c  ) )
+/ ( 7 + 5 + 7)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Professionalism Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

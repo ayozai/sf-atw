@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIte_FILTRE</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Country2__c</columns>
+    <columns>Description__c</columns>
+    <columns>Street__c</columns>
+    <columns>Customer_Site_ID__c</columns>
+    <columns>Operating_Site__c</columns>
+    <columns>Company_Reg_No__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>startsWith</operation>
+        <value>Bosch-TR</value>
+    </filters>
+    <filters>
+        <field>Operating_Site__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>BOSCH</label>
+    <sharedTo>
+        <group>FM_BOSCH_TRANSITION</group>
+    </sharedTo>
+</ListView>

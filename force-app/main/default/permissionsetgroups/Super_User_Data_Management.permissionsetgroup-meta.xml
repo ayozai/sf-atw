@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Edit &amp; Delete Permissions on;
+Lead, Opportunities, Targets</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Super User Data Management</label>
+    <permissionSets>Delete_Lead</permissionSets>
+    <permissionSets>Delete_Opportunities</permissionSets>
+    <permissionSets>Mass_Transfer</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contrats_DGC</fullName>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Contract_Name__c</columns>
+    <columns>Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Contract_Start_Date__c</columns>
+    <columns>Contract_End_Date__c</columns>
+    <columns>Effective_Monthly_Revenue__c</columns>
+    <columns>Effective_Gross_Margin_Percent__c</columns>
+    <columns>Account__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Support_Lead_Division__c</field>
+        <operation>equals</operation>
+        <value>FR Cleaning ME GD&amp;Retail,FR Cleaning Grands Comptes Team</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Draft,Active,In Negotiation</value>
+    </filters>
+    <label>Contrats DGC</label>
+</ListView>

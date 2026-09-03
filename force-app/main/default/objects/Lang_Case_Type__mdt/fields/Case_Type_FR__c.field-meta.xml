@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Type_FR__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Case Type FR</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Demande d&apos;intervention</fullName>
+                <default>true</default>
+                <label>Demande d&apos;intervention</label>
+            </value>
+            <value>
+                <fullName>Question</fullName>
+                <default>false</default>
+                <label>Question</label>
+            </value>
+            <value>
+                <fullName>Réclamation</fullName>
+                <default>false</default>
+                <label>Réclamation</label>
+            </value>
+            <value>
+                <fullName>Résiliation</fullName>
+                <default>false</default>
+                <label>Résiliation</label>
+            </value>
+            <value>
+                <fullName>Réclamation avec pénalité</fullName>
+                <default>false</default>
+                <label>Réclamation avec pénalité</label>
+            </value>
+            <value>
+                <fullName>Réclamation avec avoir</fullName>
+                <default>false</default>
+                <label>Réclamation avec avoir</label>
+            </value>
+            <value>
+                <fullName>Modification de contrat</fullName>
+                <default>false</default>
+                <label>Modification de contrat</label>
+            </value>
+            <value>
+                <fullName>Support interne</fullName>
+                <default>false</default>
+                <label>Support interne</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>FR_Mauritius_Survey_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Mauritius Survey Team</label>
+        <sharedTo>
+            <group>FR_Mauritius_Survey_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Controlling_Group_Name__c</field>
+            <operation>equals</operation>
+            <value>X-NONE</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Aero_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Aero Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Airbus_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Airbus_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_NA_Canejan</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Atlantique NA Canejan</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_NA_Canejan_Assistant</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_NA_Canejan_Assistant</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Nouvelle_Aquitaine_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Nouvelle Aquitaine Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Nouvelle_Aquitaine_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Nouvelle_Aquitaine_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Ouest_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Ouest Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Centre_Ouest_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Centre_Ouest_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Saintes_Poitiers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Saintes Poitiers</label>
+        <sharedTo>
+            <group>FR_Cleaning_Atlantique_Saintes_Poitiers</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>FR_Cleaning_Atlantique_Saintes_Poitiers</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Atlantique_Sud_Ouest_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Atlantique Sud Ouest Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Occitanie_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Occitanie_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Grands_Comptes_Director</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning Grands Comptes Director</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>FR_Cleaning_Grands_Comptes_Director</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_IAA_Director</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning ME IAA Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_IAA_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_Indus_Assistant</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR Cleaning ME Indus Assistant</label>
+        <sharedTo>
+            <role>FR_Cleaning_ME_Indus_Assistant</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Logistique_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_ME_Indus_Director</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>FR - Cleaning ME Indus Director</label>
+        <sharedTo>
+            <group>FR_Cleaning_ME_Indus_Director</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_Cleaning</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Nord_Lesquin_Lille_Nord_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Accès pour Julien Birolini aux chantiers de l&apos;agence [M75902] LILLE-DEPECKER Vincent</description>
+        <label>FR Cleaning Nord Lesquin Lille Nord Team</label>
+        <sharedTo>
+            <role>FR_Cleaning_IDF_ADP_Mobility_CDG</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Nord_Lesquin_Lille_Nord_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Nord_Market_Flow</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Nord Market Flow</label>
+        <sharedTo>
+            <group>FR_Cleaning_Nord_Market_Flow</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>FR_Cleaning_Nord_Normandie_Sales_Team</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Normandie_Cong_s_mat</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Accès pour Zacharia Echahid pendant le congés mat de Blandine Fernandes</description>
+        <label>FR Cleaning Normandie Congés mat</label>
+        <sharedTo>
+            <group>FR_Cleaning_Normandie_Cong_s_mat</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Normandie_Cong_s_mat</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_PACA_Rhone_Alpes</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning PACA + Rhone Alpes</label>
+        <sharedTo>
+            <role>FR_Cleaning_PACA_Rhone_Alpes</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_PACA_Rhone_Alpes</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Sud_Est_LA_SEYNE_SUR_MER</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Sud Est - LA SEYNE SUR MER</label>
+        <sharedTo>
+            <group>FR_Cleaning_Sud_Est_LA_SEYNE_SUR_MER</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>FR_Cleaning_Sud_Est_LA_SEYNE_SUR_MER</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Cleaning_Sud_Ouest_Director</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Cleaning Sud Ouest Director</label>
+        <sharedTo>
+            <role>FR_Cleaning_Sud_Ouest_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Cleaning_Sud_Ouest_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Multitech_Operations_Cadiou</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Multitech Operations Cadiou</label>
+        <sharedTo>
+            <role>FR_Multitech_Operations_Cadiou</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Multitech_Operations_Cadiou</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Multitech_Operations_Est_BFC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Multitech Operations Est BFC</label>
+        <sharedTo>
+            <role>FR_Multitech_Operations_Est_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Multitech_Operations_Est_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Multitech_Operations_IDF_Nord</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Multitech Operations IDF Nord</label>
+        <sharedTo>
+            <role>FR_Multitech_Operations_IDF_Nord_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Multitech_Operations_IDF_Nord_Team</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>FR_Multitech_Operations_IDF_Sud</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FR Multitech Operations IDF Sud</label>
+        <sharedTo>
+            <role>FR_Multitech_Operations_IDF_Sud</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>FR_Multitech_Operations_IDF_Sud</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_BeNeLux_2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France BeNeLux 2</label>
+        <sharedTo>
+            <role>France_BeNeLux</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_BeNeLux</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_FM</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>France FM</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>France_FM_Director_s_Assistant</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_FM_Director_s_Assistant</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>France_Security</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France Security</label>
+        <sharedTo>
+            <role>France_Security_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>France_Security_Director</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SharingRule_FR_ReadWrite_On_AccSysSite</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>When the Accounting System Site is owned by France Cleaning user or below, the group FR_ReadWrite_On_AccSysSite will have ReadWrite access on the ACS in order to be able to update the revaluation data</description>
+        <label>SharingRule_FR_ReadWrite_On_AccSysSite</label>
+        <sharedTo>
+            <group>FR_ReadWrite_On_AccSysSite</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>France_Cleaning</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

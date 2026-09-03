@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>th4167a3cbthaleslogoaweusa2019thale</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>th4167a3cb-thales-logo-awe-usa-2019-thales.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

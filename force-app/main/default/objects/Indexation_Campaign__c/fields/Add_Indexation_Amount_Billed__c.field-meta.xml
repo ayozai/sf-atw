@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Indexation_Amount_Billed__c</fullName>
+    <formula>IF(
+Adjusted_Additionnal_Annual_Amount__c &lt;&gt; 0,
+Adjusted_Additionnal_Annual_Amount__c * Additional_Indexation_Rate_Billed__c,
+Contract_Amount__c * Additional_Indexation_Rate_Billed__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Add. Indexation Amount (Billed)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

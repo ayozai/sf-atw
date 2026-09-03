@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Contract__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used to build a contract hierarchy</description>
+    <label>Parent Contract</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Value does not match filter criteria : Framework or Master Service Agreement required.</errorMessage>
+        <filterItems>
+            <field>Contract__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Framework Agreement, Master Service Agreement</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contract__c</referenceTo>
+    <relationshipLabel>Contracts (Parent Contract)</relationshipLabel>
+    <relationshipName>Contracts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>fr</language>
+    <masterLabel>AGE_DEMANDE_REUNION_HEBDOpng</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>AGE DEMANDE REUNION HEBDO.png</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

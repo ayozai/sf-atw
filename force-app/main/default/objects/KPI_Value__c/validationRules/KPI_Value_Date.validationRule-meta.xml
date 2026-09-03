@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPI_Value_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISPICKVAL(KPI__r.Frequency_of_review__c, &quot;Monthly&quot;) ||
+ISPICKVAL(KPI__r.Frequency_of_review__c, &quot;Quarterly&quot;) ||
+ISPICKVAL(KPI__r.Frequency_of_review__c, &quot;Biannual&quot;) ||
+ISPICKVAL(KPI__r.Frequency_of_review__c, &quot;Yearly&quot;))
+&amp;&amp;
+DAY( Date__c ) &lt;&gt; 1</errorConditionFormula>
+    <errorDisplayField>Date__c</errorDisplayField>
+    <errorMessage>Please select the first day of a month as a date for monthly, quarterly, biannual, yearly KPI.</errorMessage>
+</ValidationRule>
