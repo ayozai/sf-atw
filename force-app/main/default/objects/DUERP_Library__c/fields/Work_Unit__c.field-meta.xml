@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Unit__c</fullName>
+    <label>Work Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tertiaire</fullName>
+                <default>false</default>
+                <label>Tertiaire</label>
+            </value>
+            <value>
+                <fullName>Immeuble (tertiaire)</fullName>
+                <default>false</default>
+                <label>Immeuble (tertiaire)</label>
+            </value>
+            <value>
+                <fullName>Hôtellerie (service associé)</fullName>
+                <default>false</default>
+                <label>Hôtellerie (service associé)</label>
+            </value>
+            <value>
+                <fullName>Restauration (service associé)</fullName>
+                <default>false</default>
+                <label>Restauration (service associé)</label>
+            </value>
+            <value>
+                <fullName>Agroalimentaire</fullName>
+                <default>false</default>
+                <label>Agroalimentaire</label>
+            </value>
+            <value>
+                <fullName>Industrie pharmaceutique</fullName>
+                <default>false</default>
+                <label>Industrie pharmaceutique</label>
+            </value>
+            <value>
+                <fullName>Logistique (Service associé)</fullName>
+                <default>false</default>
+                <label>Logistique (Service associé)</label>
+            </value>
+            <value>
+                <fullName>Industrie nucléaire</fullName>
+                <default>false</default>
+                <label>Industrie nucléaire</label>
+            </value>
+            <value>
+                <fullName>Industrie autre (exemple aéroportuaire)</fullName>
+                <default>false</default>
+                <label>Industrie autre (exemple aéroportuaire)</label>
+            </value>
+            <value>
+                <fullName>Tri et gestion des déchets</fullName>
+                <default>false</default>
+                <label>Tri et gestion des déchets</label>
+            </value>
+            <value>
+                <fullName>Ultra-propreté</fullName>
+                <default>false</default>
+                <label>Ultra-propreté</label>
+            </value>
+            <value>
+                <fullName>Multi-technique</fullName>
+                <default>false</default>
+                <label>Multi-technique</label>
+            </value>
+            <value>
+                <fullName>Nettoyage de TAR</fullName>
+                <default>false</default>
+                <label>Nettoyage de TAR</label>
+            </value>
+            <value>
+                <fullName>Santé</fullName>
+                <default>false</default>
+                <label>Santé</label>
+            </value>
+            <value>
+                <fullName>Administration - encadrement</fullName>
+                <default>false</default>
+                <label>Administration - encadrement</label>
+            </value>
+            <value>
+                <fullName>Espaces verts (service associé)</fullName>
+                <default>false</default>
+                <label>Espaces verts (service associé)</label>
+            </value>
+            <value>
+                <fullName>Autre prestation</fullName>
+                <default>false</default>
+                <label>Autre prestation</label>
+            </value>
+            <value>
+                <fullName>Espace public (tertiaire)</fullName>
+                <default>false</default>
+                <label>Espace public (tertiaire)</label>
+            </value>
+            <value>
+                <fullName>Jeune travailleurs</fullName>
+                <default>false</default>
+                <label>Jeune travailleurs</label>
+            </value>
+            <value>
+                <fullName>Femme enceinte</fullName>
+                <default>false</default>
+                <label>Femme enceinte</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+            <value>
+                <fullName>Formation</fullName>
+                <default>false</default>
+                <label>Formation</label>
+            </value>
+            <value>
+                <fullName>EPC</fullName>
+                <default>false</default>
+                <label>EPC</label>
+            </value>
+            <value>
+                <fullName>EPI</fullName>
+                <default>false</default>
+                <label>EPI</label>
+            </value>
+            <value>
+                <fullName>Situation d&apos;urgence</fullName>
+                <default>false</default>
+                <label>Situation d&apos;urgence</label>
+            </value>
+            <value>
+                <fullName>Crise sanitaire</fullName>
+                <default>false</default>
+                <label>Crise sanitaire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>allowChanges</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>htmlValue</name>
+                    <value>&lt;table width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; align=&quot;left&quot; style=&quot;text-align:left; font-family:Arial,Helvetica,sans-serif; margin:0;&quot;&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;font-size:14px; line-height:1.5; color:#333333;&quot;&gt;Bonjour,&lt;br /&gt;&lt;br /&gt; Nous sommes informés par {{{Case.Site__c}}} que&amp;nbsp;&lt;br /&gt;&lt;br /&gt; &lt;em style=&quot;font-size:13px;&quot;&gt;Détails de la demande client :&lt;/em&gt;
+    &lt;ul style=&quot;font-size:13px; margin-top:5px;&quot;&gt;
+     &lt;li&gt;&lt;em&gt;Client et site : {{{Case.Account_Parent_Account__c}}} - {{{Case.Site__c}}}&lt;/em&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;em&gt;Type de demande et motif : {{{Case.Type}}} - {{{Case.Reason}}}&lt;/em&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;em&gt;Agence : {{{Case.Agency_Name__c}}}&lt;/em&gt;&lt;/li&gt;
+    &lt;/ul&gt; Nous vous remercions par avance pour votre retour.&lt;br /&gt; Bien cordialement,&lt;br /&gt; &amp;nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;padding-top:10px;&quot;&gt;
+    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+     &lt;tbody&gt;
+      &lt;tr&gt;
+       &lt;td style=&quot;vertical-align:top; padding-right:15px;&quot;&gt;&lt;img src=&quot;{[devName:Image2]}&quot; alt=&quot;ATALIAN&quot; width=&quot;140&quot; style=&quot;display:block;&quot; /&gt;&lt;/td&gt;
+       &lt;td style=&quot;vertical-align:top; border-left:2px solid #d35400; padding-left:15px; font-size:13px; font-family:Arial,Helvetica,sans-serif;&quot;&gt;&lt;span style=&quot;color:#d35400;&quot;&gt;&lt;strong&gt;{{{Sender.Name}}}&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;&lt;br /&gt; &lt;span style=&quot;color:#666666;&quot;&gt; &lt;strong&gt;SERVICE CLIENTS&lt;/strong&gt;&lt;br /&gt; ATALIAN SUPPORT / COMMERCE&lt;br /&gt;&lt;br /&gt; 111-113 Quai Jules Guesde, 94400 VITRY SUR SEINE&lt;br /&gt; T. {{{Sender.Phone}}}&lt;br /&gt; {{{Sender.Email}}} &lt;/span&gt;&lt;br /&gt; &lt;span style=&quot;color:#d35400;&quot;&gt;atalian.fr&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+     &lt;/tbody&gt;
+    &lt;/table&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;</value>
+                </componentInstanceProperties>
+                <componentName>contentbuilder:html</componentName>
+                <identifier>contentbuilder_html</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-a4292155-1e06-4973-9f08-fe06966bf876</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columnBody</name>
+                    <value>Facet-a4292155-1e06-4973-9f08-fe06966bf876</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>columnCount</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>columnIndex</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>columnSpacer</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>padding</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>verticalAlign</name>
+                    <value>top</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>contentbuilder:column</componentName>
+                <identifier>contentbuilder_column13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-c6d97b0c-942c-471a-8b2b-d14c6f9b6144</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>backgroundColor</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundImageUrl</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-c6d97b0c-942c-471a-8b2b-d14c6f9b6144</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>verticalAlignment</name>
+                    <value>top</value>
+                </componentInstanceProperties>
+                <componentName>contentbuilder:row</componentName>
+                <identifier>contentbuilder_row13</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>test_signature_2</masterLabel>
+    <template>
+        <name>contentpage:defaultEmailTemplatePageTemplate</name>
+        <properties>
+            <name>backgroundColor</name>
+            <value>#FFFFFF</value>
+        </properties>
+        <properties>
+            <name>backgroundImageUrl</name>
+        </properties>
+        <properties>
+            <name>bodyColor</name>
+            <value>#FFFFFF</value>
+        </properties>
+        <properties>
+            <name>paddingBottom</name>
+            <value>0</value>
+        </properties>
+        <properties>
+            <name>paddingLeft</name>
+            <value>0</value>
+        </properties>
+        <properties>
+            <name>paddingRight</name>
+            <value>0</value>
+        </properties>
+        <properties>
+            <name>paddingTop</name>
+            <value>0</value>
+        </properties>
+        <properties>
+            <name>preheader</name>
+        </properties>
+    </template>
+    <type>EmailTemplatePage</type>
+</FlexiPage>

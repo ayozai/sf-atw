@@ -17,9 +17,9 @@
                 <label>New</label>
             </value>
             <value>
-                <fullName>Under investigation</fullName>
+                <fullName>En cours d&apos;instruction</fullName>
                 <default>false</default>
-                <label>Under investigation</label>
+                <label>En cours d&apos;instruction</label>
             </value>
             <value>
                 <fullName>Action plan</fullName>
@@ -27,9 +27,39 @@
                 <label>Action plan</label>
             </value>
             <value>
+                <fullName>Reconnu</fullName>
+                <default>false</default>
+                <label>Reconnu</label>
+            </value>
+            <value>
+                <fullName>Reconnu avec inscription au compte spécial</fullName>
+                <default>false</default>
+                <label>Reconnu avec inscription au compte spécial</label>
+            </value>
+            <value>
+                <fullName>Pas d&apos;instruction</fullName>
+                <default>false</default>
+                <label>Pas d&apos;instruction</label>
+            </value>
+            <value>
+                <fullName>Sans suite</fullName>
+                <default>false</default>
+                <label>Sans suite</label>
+            </value>
+            <value>
+                <fullName>Non Reconnu</fullName>
+                <default>false</default>
+                <label>Non Reconnu</label>
+            </value>
+            <value>
                 <fullName>Closed</fullName>
                 <default>false</default>
                 <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Under investigation</fullName>
+                <default>false</default>
+                <label>Under investigation</label>
             </value>
         </valueSetDefinition>
     </valueSet>

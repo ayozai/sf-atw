@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requiere_Other_Reason_Details</fullName>
+    <active>true</active>
+    <description>Exige que le champ « Autre motif » soit renseigné lorsque le motif du REX est défini sur « Autre »</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(REX_Reason__c, &quot;Other&quot;),
+    ISBLANK(Other_Reason_Details__c)
+)</errorConditionFormula>
+    <errorMessage>Veuillez préciser lorsque le motif du REX est « Autre »</errorMessage>
+</ValidationRule>

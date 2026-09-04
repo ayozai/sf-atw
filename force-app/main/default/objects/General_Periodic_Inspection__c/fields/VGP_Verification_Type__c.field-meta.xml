@@ -107,6 +107,81 @@
                 <default>false</default>
                 <label>PIRL</label>
             </value>
+            <value>
+                <fullName>Ascenseurs, monte charges</fullName>
+                <default>false</default>
+                <label>Ascenseurs, monte charges</label>
+            </value>
+            <value>
+                <fullName>Bruit</fullName>
+                <default>false</default>
+                <label>Bruit</label>
+            </value>
+            <value>
+                <fullName>Cuves</fullName>
+                <default>false</default>
+                <label>Cuves</label>
+            </value>
+            <value>
+                <fullName>Eclairage</fullName>
+                <default>false</default>
+                <label>Eclairage</label>
+            </value>
+            <value>
+                <fullName>Radon</fullName>
+                <default>false</default>
+                <label>Radon</label>
+            </value>
+            <value>
+                <fullName>Risque chimique (Mesure exposition)</fullName>
+                <default>false</default>
+                <label>Risque chimique (Mesure exposition)</label>
+            </value>
+            <value>
+                <fullName>échelle à crinoline</fullName>
+                <default>false</default>
+                <label>échelle à crinoline</label>
+            </value>
+            <value>
+                <fullName>Equipement sous Pression</fullName>
+                <default>false</default>
+                <label>Equipement sous Pression</label>
+            </value>
+            <value>
+                <fullName>Appareils et accessoires de levage</fullName>
+                <default>false</default>
+                <label>Appareils et accessoires de levage</label>
+            </value>
+            <value>
+                <fullName>EPI 3ème catégorie</fullName>
+                <default>false</default>
+                <label>EPI 3ème catégorie</label>
+            </value>
+            <value>
+                <fullName>Engins</fullName>
+                <default>false</default>
+                <label>Engins</label>
+            </value>
+            <value>
+                <fullName>Machine</fullName>
+                <default>false</default>
+                <label>Machine</label>
+            </value>
+            <value>
+                <fullName>Rayonnements ionisants</fullName>
+                <default>false</default>
+                <label>Rayonnements ionisants</label>
+            </value>
+            <value>
+                <fullName>Détecteur Gaz</fullName>
+                <default>false</default>
+                <label>Détecteur Gaz</label>
+            </value>
+            <value>
+                <fullName>Echelles -PIR</fullName>
+                <default>false</default>
+                <label>Echelles -PIR</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Installation</controllingFieldValue>
@@ -131,6 +206,34 @@
         <valueSettings>
             <controllingFieldValue>Installation</controllingFieldValue>
             <valueName>Amiante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Ascenseurs, monte charges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Bruit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Cuves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Eclairage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Radon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>Risque chimique (Mesure exposition)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Installation</controllingFieldValue>
+            <valueName>échelle à crinoline</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Matériel</controllingFieldValue>
@@ -171,6 +274,38 @@
         <valueSettings>
             <controllingFieldValue>Matériel</controllingFieldValue>
             <valueName>Casque avec jugulaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Equipement sous Pression</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Appareils et accessoires de levage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>EPI 3ème catégorie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Engins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Machine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Rayonnements ionisants</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Détecteur Gaz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Matériel</controllingFieldValue>
+            <valueName>Echelles -PIR</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

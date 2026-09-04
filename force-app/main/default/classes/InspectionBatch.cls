@@ -1,90 +1,66 @@
 /**
- * @description Batch de génération récurrente des inspections
- * Exécuté périodiquement pour créer les inspections manquantes
+ * @description Batch de génération annuelle des inspections
+ * Version 4.2 — génère toutes les inspections jusqu'au 31/12 de l'année en cours
+ *
+ * Comportement :
+ *   - asOfDate par défaut = 31/12 de l'année courante
+ *   - Crée toutes les inspections manquantes sur les mois fixes du cycle
+ *   - Anti-doublon : clé AAAA-MM (existantes filtrées avant insertion)
  */
 public class InspectionBatch implements Database.Batchable<sObject> {
-    
+
     private Date asOfDate;
-    
-    /**
-     * @description Constructeur avec date personnalisée
-     */
-    public InspectionBatch(Date asOfDate) {
-        this.asOfDate = asOfDate != null ? asOfDate : Date.today();
-    }
-    
-    /**
-     * @description Constructeur par défaut (date du jour)
-     */
+
     public InspectionBatch() {
-        this(Date.today());
+        // Génération annuelle en masse : couvre toute l'année courante
+        this.asOfDate = InspectionService.endOfCurrentYear();
     }
-    
-    /**
-     * @description Start : récupère tous les sites éligibles
-     */
+
+    public InspectionBatch(Date asOfDate) {
+        this.asOfDate = asOfDate != null ? asOfDate : InspectionService.endOfCurrentYear();
+    }
+
     public Database.QueryLocator start(Database.BatchableContext bc) {
         return Database.getQueryLocator([
-            SELECT Id, 
-                   CreatedDate, 
-                   Operating_Site__c, 
-                   Inspection_Frequency__c
+            SELECT Id, CreatedDate, Operating_Site__c,
+                   Inspection_Frequency__c, Inspection_Enabled__c
             FROM Site__c
             WHERE Operating_Site__c = true
               AND Inspection_Frequency__c != null
               AND Inspection_Frequency__c != 'Not applicable'
+              AND Inspection_Enabled__c = 'Active'
         ]);
     }
-    
-    /**
-     * @description Execute : génère les inspections pour chaque site
-     */
+
     public void execute(Database.BatchableContext bc, List<Site__c> sites) {
-        
-        // Récupérer les IDs des sites
         Set<Id> siteIds = new Set<Id>();
-        for (Site__c site : sites) {
-            siteIds.add(site.Id);
-        }
-        
-        // Récupérer toutes les inspections existantes
-        Map<Id, List<Inspection_Performance__c>> inspectionsBySite = new Map<Id, List<Inspection_Performance__c>>();
-        
-        for (Inspection_Performance__c inspection : [
-            SELECT Site__c, Date__c 
-            FROM Inspection_Performance__c 
-            WHERE Site__c IN :siteIds
-            ORDER BY Date__c ASC
+        for (Site__c site : sites) siteIds.add(site.Id);
+
+        Map<Id, List<Inspection_Performance__c>> inspectionsBySite =
+            new Map<Id, List<Inspection_Performance__c>>();
+
+        for (Inspection_Performance__c ip : [
+            SELECT Site__c, Date__c FROM Inspection_Performance__c
+            WHERE Site__c IN :siteIds ORDER BY Date__c ASC
         ]) {
-            if (!inspectionsBySite.containsKey(inspection.Site__c)) {
-                inspectionsBySite.put(inspection.Site__c, new List<Inspection_Performance__c>());
-            }
-            inspectionsBySite.get(inspection.Site__c).add(inspection);
+            if (!inspectionsBySite.containsKey(ip.Site__c))
+                inspectionsBySite.put(ip.Site__c, new List<Inspection_Performance__c>());
+            inspectionsBySite.get(ip.Site__c).add(ip);
         }
-        
-        // Générer les inspections manquantes
-        List<Inspection_Performance__c> inspectionsToInsert = new List<Inspection_Performance__c>();
-        
+
+        List<Inspection_Performance__c> toInsert = new List<Inspection_Performance__c>();
         for (Site__c site : sites) {
-            List<Inspection_Performance__c> existingInspections = inspectionsBySite.get(site.Id);
-            
-            List<Inspection_Performance__c> newInspections = 
-                InspectionService.generateRecurringInspections(site, asOfDate, existingInspections);
-            
-            inspectionsToInsert.addAll(newInspections);
+            toInsert.addAll(
+                InspectionService.generateRecurringInspections(
+                    site, asOfDate, inspectionsBySite.get(site.Id)
+                )
+            );
         }
-        
-        // Insertion des nouvelles inspections
-        if (!inspectionsToInsert.isEmpty()) {
-            insert inspectionsToInsert;
-        }
+
+        if (!toInsert.isEmpty()) insert toInsert;
     }
-    
-    /**
-     * @description Finish : actions post-batch si nécessaire
-     */
+
     public void finish(Database.BatchableContext bc) {
-        // Log ou notification si besoin
-        System.debug('InspectionBatch terminé avec succès');
+        System.debug('InspectionBatch terminé — asOfDate : ' + asOfDate);
     }
 }

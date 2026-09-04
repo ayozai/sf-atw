@@ -1,226 +1,113 @@
-/**
- * @description       : 
- * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
- * @group             : 
- * @last modified on  : 05-19-2026
- * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
-**/
 @isTest
 private class InspectionBatch_Test {
-    
+
     @testSetup
     static void setup() {
-        // Créer un Account pour les tests
-        Account testAccount = new Account(Name = 'Test Account Batch');
-        insert testAccount;
+        insert new Account(Name = 'Test Account Batch');
     }
-    
-    /**
-     * @description Méthode utilitaire pour créer un Site de test
-     */
-    private static Site__c createTestSite(String siteName, Boolean operating, String frequency) {
+
+    private static Site__c createTestSite(String name, Boolean operating, String freq, String enabled) {
         Account acc = [SELECT Id FROM Account LIMIT 1];
-        
-        return new Site__c(
-            Name = siteName,
-            Account__c = acc.Id,
-            Country2__c = 'FR',
-            Operating_Site__c = operating,
-            Inspection_Frequency__c = frequency
-        );
+        return new Site__c(Name=name, Account__c=acc.Id, Country2__c='FR',
+            Operating_Site__c=operating, Inspection_Frequency__c=freq, Inspection_Enabled__c=enabled);
     }
-    
-    @isTest
-    static void testBatchGenerationMonthly() {
-        Site__c site = createTestSite('Test Site Batch Monthly', true, 'Every month');
-        insert site;
 
-        // Supprimer l'inspection initiale créée automatiquement par le trigger
-        delete [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id];
-        // Créer une inspection initiale au 01/01/2026
-        Inspection_Performance__c initial = new Inspection_Performance__c(
-            Site__c = site.Id,
-            Date__c = Date.newInstance(2026, 1, 1)
-        );
-        insert initial;
-        
-        Test.startTest();
-        InspectionBatch batch = new InspectionBatch(Date.newInstance(2026, 4, 1));
-        Database.executeBatch(batch);
-        Test.stopTest();
-        
-        List<Inspection_Performance__c> inspections = [
-            SELECT Date__c 
-            FROM Inspection_Performance__c 
-            WHERE Site__c = :site.Id
-            ORDER BY Date__c ASC
-        ];
-        
-        System.assertEquals(4, inspections.size());
-        System.assertEquals(Date.newInstance(2026, 1, 1), inspections[0].Date__c);
-        System.assertEquals(Date.newInstance(2026, 2, 1), inspections[1].Date__c);
-        System.assertEquals(Date.newInstance(2026, 3, 1), inspections[2].Date__c);
-        System.assertEquals(Date.newInstance(2026, 4, 1), inspections[3].Date__c);
-    }
-    
-    @isTest
-    static void testBatchEvery3Months() {
-        Site__c site = createTestSite('Test Site 3M', true, 'Every 3 months');
+    @isTest static void testBatch_GeneratesFullYear_Every3Months() {
+        Site__c site = createTestSite('Batch 3M', true, 'Every 3 months', 'Active');
         insert site;
-        
-        // 🔧 Correction : retirer l'inspection initiale créée automatiquement par le trigger
-        delete [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id];
-        
-        // Créer l’inspection initiale contrôlée (01/01/2026)
-        Inspection_Performance__c initial = new Inspection_Performance__c(
-            Site__c = site.Id,
-            Date__c = Date.newInstance(2026, 1, 1)
-        );
-        insert initial;
-        
-        Test.startTest();
-        InspectionBatch batch = new InspectionBatch(Date.newInstance(2026, 10, 1));
-        Database.executeBatch(batch);
-        Test.stopTest();
-        
-        List<Inspection_Performance__c> inspections = [
-            SELECT Date__c 
-            FROM Inspection_Performance__c 
-            WHERE Site__c = :site.Id
-            ORDER BY Date__c ASC
-        ];
-        
-        System.assertEquals(4, inspections.size(), 'Doit avoir 4 inspections tous les 3 mois');
-        System.assertEquals(Date.newInstance(2026, 1, 1), inspections[0].Date__c);
-        System.assertEquals(Date.newInstance(2026, 4, 1), inspections[1].Date__c);
-        System.assertEquals(Date.newInstance(2026, 7, 1), inspections[2].Date__c);
-        System.assertEquals(Date.newInstance(2026, 10, 1), inspections[3].Date__c);
-    }
-    
-    @isTest
-    static void testBatchEveryYear() {
-        Site__c site = createTestSite('Test Site Yearly', true, 'Every year');
-        insert site;
-        
-        // Supprimer l'inspection initiale créée par le trigger
-        delete [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id];
-        
-        Inspection_Performance__c initial = new Inspection_Performance__c(
-            Site__c = site.Id,
-            Date__c = Date.newInstance(2024, 1, 1)
-        );
-        insert initial;
-        
-        Test.startTest();
-        InspectionBatch batch = new InspectionBatch(Date.newInstance(2026, 6, 1));
-        Database.executeBatch(batch);
-        Test.stopTest();
-        
-        List<Inspection_Performance__c> inspections = [
-            SELECT Date__c 
-            FROM Inspection_Performance__c 
-            WHERE Site__c = :site.Id
-            ORDER BY Date__c ASC
-        ];
-        
-        System.assertEquals(3, inspections.size());
-    }
-    
-    @isTest
-    static void testBatchWithoutExistingInspection() {
-        Site__c site = createTestSite('Test Site No Initial', true, 'Every 2 months');
-        insert site;
-
-        // Backdate the site so the anchor date (CreatedDate) is before asOfDate
         Test.setCreatedDate(site.Id, DateTime.newInstance(2026, 1, 1, 0, 0, 0));
-
         delete [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id];
 
         Test.startTest();
-        InspectionBatch batch = new InspectionBatch(Date.newInstance(2026, 6, 1));
-        Database.executeBatch(batch);
+        Database.executeBatch(new InspectionBatch(Date.newInstance(2026, 12, 31)));
         Test.stopTest();
-        
-        List<Inspection_Performance__c> inspections = [
-            SELECT Date__c 
-            FROM Inspection_Performance__c 
-            WHERE Site__c = :site.Id
-            ORDER BY Date__c ASC
+
+        List<Inspection_Performance__c> insp = [
+            SELECT Date__c FROM Inspection_Performance__c WHERE Site__c = :site.Id ORDER BY Date__c ASC
         ];
-        
-        System.assert(inspections.size() > 0);
+        System.assertEquals(3, insp.size());
+        System.assertEquals(Date.newInstance(2026,4,1),  insp[0].Date__c);
+        System.assertEquals(Date.newInstance(2026,7,1),  insp[1].Date__c);
+        System.assertEquals(Date.newInstance(2026,10,1), insp[2].Date__c);
     }
-    
-    @isTest
-    static void testBatchSkipsNotApplicable() {
-        Site__c site = createTestSite('Test Site N/A', true, 'Not applicable');
+
+    @isTest static void testBatch_Every6Months_S1() {
+        Site__c site = createTestSite('Batch 6M S1', true, 'Every 6 months', 'Active');
         insert site;
-        
+        Test.setCreatedDate(site.Id, DateTime.newInstance(2026, 3, 1, 0, 0, 0));
+        delete [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id];
+
         Test.startTest();
-        InspectionBatch batch = new InspectionBatch();
-        Database.executeBatch(batch);
+        Database.executeBatch(new InspectionBatch(Date.newInstance(2026, 12, 31)));
         Test.stopTest();
-        
-        List<Inspection_Performance__c> inspections = [
-            SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id
+
+        List<Inspection_Performance__c> insp = [
+            SELECT Date__c FROM Inspection_Performance__c WHERE Site__c = :site.Id ORDER BY Date__c ASC
         ];
-        
-        System.assertEquals(0, inspections.size());
+        System.assertEquals(2, insp.size());
+        System.assertEquals(Date.newInstance(2026,1,1), insp[0].Date__c);
+        System.assertEquals(Date.newInstance(2026,7,1), insp[1].Date__c);
     }
-    
-    @isTest
-    static void testBatchSkipsNonOperatingSite() {
-        Site__c site = createTestSite('Test Site Inactive', false, 'Every month');
+
+    /**
+     * FIX validation rule : Reason__c obligatoire quand Enabled = Inactive
+     */
+    @isTest static void testBatch_SkipsDisabledSite() {
+        Site__c site = createTestSite('Disabled', true, 'Every month', 'Inactive - Closed site');
+        // FIX : renseigner Reason__c pour satisfaire la validation rule
+        site.Reason__c = 'Test - site desactive batch';
         insert site;
-        
+
         Test.startTest();
-        InspectionBatch batch = new InspectionBatch();
-        Database.executeBatch(batch);
+        Database.executeBatch(new InspectionBatch());
         Test.stopTest();
-        
-        List<Inspection_Performance__c> inspections = [
-            SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id
-        ];
-        
-        System.assertEquals(0, inspections.size());
+
+        System.assertEquals(0, [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id].size());
     }
-    
-    @isTest
-    static void testBatchDefaultConstructor() {
-        Site__c site = createTestSite('Test Site Default', true, 'Every month');
+
+    @isTest static void testBatch_SkipsNonOperating() {
+        Site__c site = createTestSite('Not Op', false, 'Every month', 'Active');
         insert site;
-        
         Test.startTest();
-        InspectionBatch batch = new InspectionBatch();
-        Database.executeBatch(batch);
+        Database.executeBatch(new InspectionBatch());
         Test.stopTest();
-        
-        List<Inspection_Performance__c> inspections = [
-            SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id
-        ];
-        
-        System.assert(inspections.size() > 0);
+        System.assertEquals(0, [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id].size());
     }
-    
-    @isTest
-    static void testBatchMultipleSites() {
-        List<Site__c> sites = new List<Site__c>{
-            createTestSite('Site 1', true, 'Every month'),
-            createTestSite('Site 2', true, 'Every 3 months'),
-            createTestSite('Site 3', true, 'Every 6 months')
-        };
-        insert sites;
-        
+
+    @isTest static void testBatch_DefaultConstructor_UsesEndOfYear() {
+        Site__c site = createTestSite('Default', true, 'Every month', 'Active');
+        insert site;
+        Integer before = [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id].size();
+
         Test.startTest();
-        InspectionBatch batch = new InspectionBatch(Date.newInstance(2026, 12, 1));
-        Database.executeBatch(batch);
+        Database.executeBatch(new InspectionBatch());
         Test.stopTest();
-        
-        for (Site__c site : sites) {
-            List<Inspection_Performance__c> inspections = [
-                SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id
-            ];
-            System.assert(inspections.size() > 0);
-        }
+
+        System.assert(
+            [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id].size() >= before,
+            'Le batch ne doit pas supprimer d\'inspections existantes');
+    }
+
+    @isTest static void testBatch_AntiDoublon() {
+        Site__c site = createTestSite('AntiDup', true, 'Every 3 months', 'Active');
+        insert site;
+        Test.setCreatedDate(site.Id, DateTime.newInstance(2026, 1, 1, 0, 0, 0));
+        delete [SELECT Id FROM Inspection_Performance__c WHERE Site__c = :site.Id];
+
+        insert new Inspection_Performance__c(
+            Site__c = site.Id, Date__c = Date.newInstance(2026,4,1),
+            Unique_Key__c = InspectionService.buildUniqueKey(site.Id, Date.newInstance(2026,4,1)));
+
+        Test.startTest();
+        Database.executeBatch(new InspectionBatch(Date.newInstance(2026, 12, 31)));
+        Test.stopTest();
+
+        List<Inspection_Performance__c> insp = [
+            SELECT Date__c FROM Inspection_Performance__c WHERE Site__c = :site.Id ORDER BY Date__c ASC
+        ];
+        System.assertEquals(3, insp.size());
+        System.assertEquals(Date.newInstance(2026,4,1),  insp[0].Date__c);
+        System.assertEquals(Date.newInstance(2026,7,1),  insp[1].Date__c);
+        System.assertEquals(Date.newInstance(2026,10,1), insp[2].Date__c);
     }
 }

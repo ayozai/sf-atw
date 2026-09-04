@@ -470,8 +470,32 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>En cours d%27instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>New</fullName>
             <default>true</default>
+        </values>
+        <values>
+            <fullName>Non Reconnu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pas d%27instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reconnu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reconnu avec inscription au compte spécial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sans suite</fullName>
+            <default>false</default>
         </values>
         <values>
             <fullName>Under investigation</fullName>

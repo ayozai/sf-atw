@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk__c</fullName>
+    <label>Risk</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1.⁠ ⁠Risques de chutes de plain-pied &amp; chutes de hauteur</fullName>
+                <default>false</default>
+                <label>1.⁠ ⁠Risques de chutes de plain-pied &amp; chutes de hauteur</label>
+            </value>
+            <value>
+                <fullName>2.⁠ ⁠Risques de manutention manuelle</fullName>
+                <default>false</default>
+                <label>2.⁠ ⁠Risques de manutention manuelle</label>
+            </value>
+            <value>
+                <fullName>3.⁠ ⁠Risques de manutention mécanisée</fullName>
+                <default>false</default>
+                <label>3.⁠ ⁠Risques de manutention mécanisée</label>
+            </value>
+            <value>
+                <fullName>4.⁠ ⁠Risques de circulations &amp; déplacements</fullName>
+                <default>false</default>
+                <label>4.⁠ ⁠Risques de circulations &amp; déplacements</label>
+            </value>
+            <value>
+                <fullName>5.⁠ ⁠Risques d&apos;effondrements &amp; chutes d&apos;objets</fullName>
+                <default>false</default>
+                <label>5.⁠ ⁠Risques d&apos;effondrements &amp; chutes d&apos;objets</label>
+            </value>
+            <value>
+                <fullName>6.⁠ ⁠Risques de toxicité</fullName>
+                <default>false</default>
+                <label>6.⁠ ⁠Risques de toxicité</label>
+            </value>
+            <value>
+                <fullName>7.⁠ ⁠Risques d&apos;incendies &amp; explosions</fullName>
+                <default>false</default>
+                <label>7.⁠ ⁠Risques d&apos;incendies &amp; explosions</label>
+            </value>
+            <value>
+                <fullName>8.⁠ ⁠Risques biologiques</fullName>
+                <default>false</default>
+                <label>8.⁠ ⁠Risques biologiques</label>
+            </value>
+            <value>
+                <fullName>9.⁠ ⁠Risques d&apos;électricité</fullName>
+                <default>false</default>
+                <label>9.⁠ ⁠Risques d&apos;électricité</label>
+            </value>
+            <value>
+                <fullName>10.⁠ ⁠Risques de manque d&apos;hygiène</fullName>
+                <default>false</default>
+                <label>10.⁠ ⁠Risques de manque d&apos;hygiène</label>
+            </value>
+            <value>
+                <fullName>11.⁠ ⁠Risques de bruits</fullName>
+                <default>false</default>
+                <label>11.⁠ ⁠Risques de bruits</label>
+            </value>
+            <value>
+                <fullName>12.⁠ ⁠Risques de vibrations</fullName>
+                <default>false</default>
+                <label>12.⁠ ⁠Risques de vibrations</label>
+            </value>
+            <value>
+                <fullName>13.⁠ ⁠Risques d&apos;ambiances thermiques</fullName>
+                <default>false</default>
+                <label>13.⁠ ⁠Risques d&apos;ambiances thermiques</label>
+            </value>
+            <value>
+                <fullName>14.⁠ ⁠Risques d&apos;ambiances lumineuses</fullName>
+                <default>false</default>
+                <label>14.⁠ ⁠Risques d&apos;ambiances lumineuses</label>
+            </value>
+            <value>
+                <fullName>15.⁠ ⁠Risques de rayonnements ionisants</fullName>
+                <default>false</default>
+                <label>15.⁠ ⁠Risques de rayonnements ionisants</label>
+            </value>
+            <value>
+                <fullName>16.⁠ ⁠Risques de machines &amp; outils</fullName>
+                <default>false</default>
+                <label>16.⁠ ⁠Risques de machines &amp; outils</label>
+            </value>
+            <value>
+                <fullName>17.⁠ ⁠Risques d&apos;interventions en entreprises extérieures</fullName>
+                <default>false</default>
+                <label>17.⁠ ⁠Risques d&apos;interventions en entreprises extérieures</label>
+            </value>
+            <value>
+                <fullName>18.⁠ ⁠Risques d&apos;organisation du travail &amp; Stress</fullName>
+                <default>false</default>
+                <label>18.⁠ ⁠Risques d&apos;organisation du travail &amp; Stress</label>
+            </value>
+            <value>
+                <fullName>19.⁠ ⁠Risques d&apos;agression</fullName>
+                <default>false</default>
+                <label>19.⁠ ⁠Risques d&apos;agression</label>
+            </value>
+            <value>
+                <fullName>20.⁠ ⁠Autres risques (noyade, asphyxie - espace confinés...)</fullName>
+                <default>false</default>
+                <label>20.⁠ ⁠Autres risques (noyade, asphyxie - espace confinés...)</label>
+            </value>
+            <value>
+                <fullName>21.⁠ ⁠Risques de TMS</fullName>
+                <default>false</default>
+                <label>21.⁠ ⁠Risques de TMS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

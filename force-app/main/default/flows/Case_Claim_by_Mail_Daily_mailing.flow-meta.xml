@@ -329,6 +329,20 @@
                 <stringValue>patricia.garcia@atalianworld.com</stringValue>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>damien.penin@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmailAddresses</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>norbert.moussart@atalianworld.com</stringValue>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>Send_Better_Email</targetReference>
         </connector>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_Qualification_Name__c</fullName>
+    <label>Certification / Qualification Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ISO 9001</fullName>
+                <default>false</default>
+                <label>ISO 9001</label>
+            </value>
+            <value>
+                <fullName>ISO 45001</fullName>
+                <default>false</default>
+                <label>ISO 45001</label>
+            </value>
+            <value>
+                <fullName>ISO 9001/45001</fullName>
+                <default>false</default>
+                <label>ISO 9001/45001</label>
+            </value>
+            <value>
+                <fullName>ISO 14001</fullName>
+                <default>false</default>
+                <label>ISO 14001</label>
+            </value>
+            <value>
+                <fullName>EN 9100 (aéro)</fullName>
+                <default>false</default>
+                <label>EN 9100 (aéro)</label>
+            </value>
+            <value>
+                <fullName>CEFRI</fullName>
+                <default>false</default>
+                <label>CEFRI</label>
+            </value>
+            <value>
+                <fullName>MASE</fullName>
+                <default>false</default>
+                <label>MASE</label>
+            </value>
+            <value>
+                <fullName>ECOVADIS</fullName>
+                <default>false</default>
+                <label>ECOVADIS</label>
+            </value>
+            <value>
+                <fullName>QUALIBAT</fullName>
+                <default>false</default>
+                <label>QUALIBAT</label>
+            </value>
+            <value>
+                <fullName>QUALIFEC</fullName>
+                <default>false</default>
+                <label>QUALIFEC</label>
+            </value>
+            <value>
+                <fullName>IRVE</fullName>
+                <default>false</default>
+                <label>IRVE</label>
+            </value>
+            <value>
+                <fullName>RGE</fullName>
+                <default>false</default>
+                <label>RGE</label>
+            </value>
+            <value>
+                <fullName>HQE</fullName>
+                <default>false</default>
+                <label>HQE</label>
+            </value>
+            <value>
+                <fullName>BREEAM</fullName>
+                <default>false</default>
+                <label>BREEAM</label>
+            </value>
+            <value>
+                <fullName>LHE - CHE</fullName>
+                <default>false</default>
+                <label>LHE - CHE</label>
+            </value>
+            <value>
+                <fullName>IFS / BRC</fullName>
+                <default>false</default>
+                <label>IFS / BRC</label>
+            </value>
+            <value>
+                <fullName>ISO 22000</fullName>
+                <default>false</default>
+                <label>ISO 22000</label>
+            </value>
+            <value>
+                <fullName>ISO 26000</fullName>
+                <default>false</default>
+                <label>ISO 26000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

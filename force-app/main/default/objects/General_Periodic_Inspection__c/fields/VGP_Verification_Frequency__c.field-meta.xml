@@ -36,6 +36,26 @@
                 <default>false</default>
                 <label>48</label>
             </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>36</fullName>
+                <default>false</default>
+                <label>36</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>60</label>
+            </value>
+            <value>
+                <fullName>120</fullName>
+                <default>false</default>
+                <label>120</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

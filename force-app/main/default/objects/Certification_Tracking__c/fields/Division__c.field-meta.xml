@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division__c</fullName>
+    <label>Division</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3D</fullName>
+                <default>false</default>
+                <label>3D</label>
+            </value>
+            <value>
+                <fullName>Contrat national TECH</fullName>
+                <default>false</default>
+                <label>Contrat national TECH</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Espace verts</fullName>
+                <default>false</default>
+                <label>Espace verts</label>
+            </value>
+            <value>
+                <fullName>Facilities Management</fullName>
+                <default>false</default>
+                <label>Facilities Management</label>
+            </value>
+            <value>
+                <fullName>Maintenance &amp; Energy</fullName>
+                <default>false</default>
+                <label>Maintenance &amp; Energy</label>
+            </value>
+            <value>
+                <fullName>Propreté</fullName>
+                <default>false</default>
+                <label>Propreté</label>
+            </value>
+            <value>
+                <fullName>Sécurité</fullName>
+                <default>false</default>
+                <label>Sécurité</label>
+            </value>
+            <value>
+                <fullName>Siège</fullName>
+                <default>false</default>
+                <label>Siège</label>
+            </value>
+            <value>
+                <fullName>SITES</fullName>
+                <default>false</default>
+                <label>SITES</label>
+            </value>
+            <value>
+                <fullName>Sûreté</fullName>
+                <default>false</default>
+                <label>Sûreté</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
