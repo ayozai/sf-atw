@@ -5,7 +5,7 @@
     <fieldName>Status</fieldName>
     <masterLabel>Global Lead Path</masterLabel>
     <pathAssistantSteps>
-        <fieldNames>Primary_Service__c</fieldNames>
+        <fieldNames>Global_Primary_Service__c</fieldNames>
         <fieldNames>Phone</fieldNames>
         <fieldNames>Email</fieldNames>
         <fieldNames>Estimated_Monthly_Turnover__c</fieldNames>
