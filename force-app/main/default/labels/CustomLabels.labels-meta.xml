@@ -621,4 +621,148 @@ Our team will now process your request.</value>
         <shortDescription>Search existing Flow resources</shortDescription>
         <value>Search existing Flow resources</value>
     </labels>
+    <labels>
+        <fullName>requalif_title</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification wizard title</shortDescription>
+        <value>Requalification d'opportunité</value>
+    </labels>
+    <labels>
+        <fullName>requalif_step1</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification step 1 title</shortDescription>
+        <value>Étape 1 — Type de requalification</value>
+    </labels>
+    <labels>
+        <fullName>requalif_step2</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification step 2 title</shortDescription>
+        <value>Étape 2 — Configuration</value>
+    </labels>
+    <labels>
+        <fullName>requalif_step3</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification step 3 title</shortDescription>
+        <value>Étape 3 — Récapitulatif</value>
+    </labels>
+    <labels>
+        <fullName>requalif_cancel</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification cancel button</shortDescription>
+        <value>Annuler</value>
+    </labels>
+    <labels>
+        <fullName>requalif_next</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification next button</shortDescription>
+        <value>Suivant</value>
+    </labels>
+    <labels>
+        <fullName>requalif_back</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification back button</shortDescription>
+        <value>Retour</value>
+    </labels>
+    <labels>
+        <fullName>requalif_confirm</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification confirm button</shortDescription>
+        <value>Confirmer</value>
+    </labels>
+    <labels>
+        <fullName>requalif_success</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification success toast</shortDescription>
+        <value>Requalification effectuée avec succès.</value>
+    </labels>
+    <labels>
+        <fullName>requalif_error_generic</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification generic error</shortDescription>
+        <value>Une erreur est survenue lors de la requalification.</value>
+    </labels>
+    <labels>
+        <fullName>requalif_add_opp</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification add opportunity button</shortDescription>
+        <value>+ Ajouter une opportunité</value>
+    </labels>
+    <labels>
+        <fullName>requalif_nb_opps</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification number of opps input</shortDescription>
+        <value>Nombre d'opportunités à créer</value>
+    </labels>
+    <labels>
+        <fullName>requalif_opps_to_create</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification recap opps to create</shortDescription>
+        <value>Opportunités qui seront créées</value>
+    </labels>
+    <labels>
+        <fullName>requalif_opps_to_close</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification recap opps to close</shortDescription>
+        <value>Opportunités qui seront fermées en Perdu</value>
+    </labels>
+    <labels>
+        <fullName>requalif_renewals_to_close</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification renewals to close label</shortDescription>
+        <value>Opportunités de renouvellement à fermer en Perdu</value>
+    </labels>
+    <labels>
+        <fullName>requalif_dev_opps</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification dev opportunities label</shortDescription>
+        <value>Opportunités de développement à créer (nouveau périmètre)</value>
+    </labels>
+    <labels>
+        <fullName>requalif_application_contract</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification application contract label</shortDescription>
+        <value>Contrat d'application</value>
+    </labels>
+    <labels>
+        <fullName>requalif_loading</fullName>
+        <categories>Requalification</categories>
+        <language>fr</language>
+        <protected>false</protected>
+        <shortDescription>Requalification loading message</shortDescription>
+        <value>Traitement en cours…</value>
+    </labels>
 </CustomLabels>

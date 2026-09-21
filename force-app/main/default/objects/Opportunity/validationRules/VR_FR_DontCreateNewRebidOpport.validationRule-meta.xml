@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_FR_DontCreateNewRebidOpport</fullName>
+    <active>true</active>
+    <description>This VR aims to block creation of new Rebid opport if a non closed one exists on the same contract</description>
+    <errorConditionFormula>ISNEW()
+&amp;&amp; Owner_Country__c = &apos;France&apos;
+&amp;&amp; Contract_Custom__r.Number_of_Open_Renewal_Opps__c &gt; 0
+&amp;&amp; RecordType.DeveloperName = &apos;Global_Renewal&apos;
+&amp;&amp; IsClosed = false
+&amp;&amp; Requalification_Process__c = false</errorConditionFormula>
+    <errorDisplayField>Contract_Custom__c</errorDisplayField>
+    <errorMessage>A non closed Renewal opportunity already exists on this customer contract.</errorMessage>
+</ValidationRule>

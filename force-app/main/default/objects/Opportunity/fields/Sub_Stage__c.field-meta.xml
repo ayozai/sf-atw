@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Stage__c</fullName>
+    <description>The Stage sub progress, relates to original stage.</description>
+    <inlineHelpText>The Stage sub progress, relates to original stage.</inlineHelpText>
+    <label>Sub Stage</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2.1 Future Opportunity</fullName>
+                <default>false</default>
+                <label>2.1 Future Opportunity</label>
+            </value>
+            <value>
+                <fullName>2.2 Needs Analysis</fullName>
+                <default>true</default>
+                <label>2.2 Needs Analysis</label>
+            </value>
+            <value>
+                <fullName>2.3 SQ/RFI in Progress</fullName>
+                <default>false</default>
+                <label>2.3 SQ/RFI in Progress</label>
+            </value>
+            <value>
+                <fullName>2.4 SQ/RFI Submitted</fullName>
+                <default>false</default>
+                <label>2.4 SQ/RFI Submitted</label>
+            </value>
+            <value>
+                <fullName>3.1 Develop Solution</fullName>
+                <default>false</default>
+                <label>3.1 Develop Solution</label>
+            </value>
+            <value>
+                <fullName>3.2 Solution Submitted</fullName>
+                <default>false</default>
+                <label>3.2 Solution Submitted</label>
+            </value>
+            <value>
+                <fullName>3.3 Presentation</fullName>
+                <default>false</default>
+                <label>3.3 Presentation</label>
+            </value>
+            <value>
+                <fullName>4.1 Negotiation in Progress</fullName>
+                <default>false</default>
+                <label>4.1 Negotiation in Progress</label>
+            </value>
+            <value>
+                <fullName>4.2 BAFO</fullName>
+                <default>false</default>
+                <label>4.2 BAFO</label>
+            </value>
+            <value>
+                <fullName>5.1 Written Confirmation</fullName>
+                <default>false</default>
+                <label>5.1 Written Confirmation</label>
+            </value>
+            <value>
+                <fullName>5.2 T&amp;Cs Signed</fullName>
+                <default>false</default>
+                <label>5.2 T&amp;Cs Signed</label>
+            </value>
+            <value>
+                <fullName>6.1 Closed Lost</fullName>
+                <default>false</default>
+                <label>6.1 Closed Lost</label>
+            </value>
+            <value>
+                <fullName>7_1_Atalian_Withdrew</fullName>
+                <default>false</default>
+                <label>7.1 Atalian Withdrew</label>
+            </value>
+            <value>
+                <fullName>7_2_Customer_withdrew</fullName>
+                <default>false</default>
+                <label>7.2  Customer Withdrew</label>
+            </value>
+            <value>
+                <fullName>Global Renewal</fullName>
+                <default>false</default>
+                <label>Global Renewal</label>
+            </value>
+            <value>
+                <fullName>Allotissement Opp</fullName>
+                <default>false</default>
+                <label>Allotissement Opp</label>
+            </value>
+            <value>
+                <fullName>Allotissement CC</fullName>
+                <default>false</default>
+                <label>Allotissement CC</label>
+            </value>
+            <value>
+                <fullName>Réallocation périmètre</fullName>
+                <default>false</default>
+                <label>Réallocation périmètre</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>2. Prospect</controllingFieldValue>
+            <valueName>2.1 Future Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2. Prospect</controllingFieldValue>
+            <valueName>2.2 Needs Analysis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2. Prospect</controllingFieldValue>
+            <valueName>2.3 SQ/RFI in Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2. Prospect</controllingFieldValue>
+            <valueName>2.4 SQ/RFI Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3. Solution</controllingFieldValue>
+            <valueName>3.1 Develop Solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3. Solution</controllingFieldValue>
+            <valueName>3.2 Solution Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3. Solution</controllingFieldValue>
+            <valueName>3.3 Presentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4. Negotiate</controllingFieldValue>
+            <valueName>4.1 Negotiation in Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4. Negotiate</controllingFieldValue>
+            <valueName>4.2 BAFO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>5. Closed Won</controllingFieldValue>
+            <valueName>5.1 Written Confirmation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>5. Closed Won</controllingFieldValue>
+            <valueName>5.2 T&amp;Cs Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>5. Closed Won</controllingFieldValue>
+            <controllingFieldValue>6. Closed Lost</controllingFieldValue>
+            <valueName>Global Renewal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Closed Lost</controllingFieldValue>
+            <valueName>6.1 Closed Lost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7. Closed Withdrawn</controllingFieldValue>
+            <valueName>7_1_Atalian_Withdrew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7. Closed Withdrawn</controllingFieldValue>
+            <valueName>7_2_Customer_withdrew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Requalification</controllingFieldValue>
+            <valueName>Allotissement Opp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Requalification</controllingFieldValue>
+            <valueName>Allotissement CC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Requalification</controllingFieldValue>
+            <valueName>Réallocation périmètre</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

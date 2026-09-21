@@ -42,6 +42,11 @@
                 <isActive>false</isActive>
                 <label>Started</label>
             </value>
+            <value>
+                <fullName>Réalloti</fullName>
+                <default>false</default>
+                <label>Réalloti</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
