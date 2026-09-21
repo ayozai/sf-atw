@@ -166,4 +166,27 @@ private class RequalificationBatch_Test {
                 'New opp must be linked to the same framework contract.');
         }
     }
+
+    @isTest
+    static void test_batch_executeException_noNewOppsCreated() {
+        Account     acc      = createAccount();
+        Contract__c contract = createContract(acc.Id);
+        Opportunity origin   = createRenewalOpp(acc, contract);
+
+        // numberOfNewOpps = null causes NullPointerException at "i < null" in the
+        // for-loop, covering the execute() catch block and the error branch in finish()
+        Test.startTest();
+        Database.executeBatch(
+            new RequalificationBatch(origin.Id, null, UserInfo.getUserId()),
+            1
+        );
+        Test.stopTest();
+
+        // The insert was never reached, so only the origin opportunity exists
+        List<Opportunity> allOpps = [
+            SELECT Id FROM Opportunity WHERE AccountId = :acc.Id
+        ];
+        System.assertEquals(1, allOpps.size(),
+            'No new opportunities should be created when execute() throws an exception.');
+    }
 }

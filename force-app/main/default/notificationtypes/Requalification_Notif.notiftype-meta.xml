@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomNotificationType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customNotifTypeName>Requalification_Notif</customNotifTypeName>
+    <description>Sent when the Requalification batch finishes processing</description>
+    <masterLabel>Requalification Notification</masterLabel>
+    <desktop>true</desktop>
+    <mobile>false</mobile>
+</CustomNotificationType>

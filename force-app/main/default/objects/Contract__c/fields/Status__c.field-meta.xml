@@ -47,6 +47,11 @@
                 <default>false</default>
                 <label>Réalloti</label>
             </value>
+            <value>
+                <fullName>Reallocated</fullName>
+                <default>false</default>
+                <label>Reallocated</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

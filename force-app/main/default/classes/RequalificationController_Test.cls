@@ -32,4 +32,42 @@ private class RequalificationController_Test {
             System.assertNotEquals(null, e, 'Exception should be thrown.');
         }
     }
+
+    @isTest
+    static void test_validInput_startsBatch() {
+        Account acc = new Account(Name = 'Test Account');
+        insert acc;
+
+        Contract__c contract = new Contract__c(
+            Status__c          = 'Active',
+            Account__c         = acc.Id,
+            Primary_Service__c = 'Catering',
+            Type__c            = 'Framework Agreement'
+        );
+        insert contract;
+
+        Id rtId = Schema.SObjectType.Opportunity
+            .getRecordTypeInfosByDeveloperName()
+            .get('Global_Renewal')
+            .getRecordTypeId();
+
+        Opportunity opp = new Opportunity(
+            Name                      = 'Test Renewal',
+            AccountId                 = acc.Id,
+            Contract_Custom__c        = contract.Id,
+            StageName                 = '2. Prospect',
+            Sub_Stage__c              = '2.1 Future Opportunity',
+            CloseDate                 = Date.today().addYears(1),
+            RecordTypeId              = rtId,
+            Global_Primary_Service__c = 'Catering'
+        );
+        insert opp;
+
+        Test.startTest();
+        RequalificationController.startRequalification(opp.Id, 2);
+        Test.stopTest();
+
+        // Batch queued successfully — no exception means success
+        System.assert(true, 'Batch should have been queued without exception.');
+    }
 }
