@@ -1,232 +1,48 @@
 <template>
-    <lightning-quick-action-panel header={label.title}>
+    <lightning-quick-action-panel header="Requalification">
 
-        <!-- ===== CHARGEMENT INITIAL ===== -->
-        <template if:true={isLoading}>
+        <template if:false={isSubmitting}>
+            <div class="slds-p-around_medium">
+                <p class="slds-m-bottom_medium">
+                    This action will set the current opportunity to <strong>Requalification</strong>
+                    and create new <strong>Global Renewal</strong> opportunities
+                    linked to the same framework contract.
+                </p>
+                <lightning-input
+                    type="number"
+                    label="Number of renewal opportunities to create"
+                    min="1"
+                    step="1"
+                    value={numberOfOpps}
+                    onchange={handleNumberChange}
+                    required>
+                </lightning-input>
+                <template if:true={errorMessage}>
+                    <p class="slds-text-color_error slds-m-top_x-small">{errorMessage}</p>
+                </template>
+            </div>
+        </template>
+
+        <template if:true={isSubmitting}>
             <div class="slds-align_absolute-center slds-p-around_large">
-                <lightning-spinner alternative-text={label.loading} size="medium"></lightning-spinner>
+                <lightning-spinner alternative-text="Processing..." size="medium"></lightning-spinner>
+                <p class="slds-m-top_small">Processing in background — you will receive a notification when done.</p>
             </div>
         </template>
 
-        <!-- ===== ERREUR DE CHARGEMENT ===== -->
-        <template if:true={hasContextError}>
-            <div class="slds-notify slds-notify_alert slds-alert_error slds-m-around_small" role="alert">
-                <span>{contextError}</span>
-            </div>
-        </template>
-
-        <!-- ===== FORMULAIRE ===== -->
-        <template if:true={isReady}>
-
-            <!-- ÉCRAN 1 — Choix de la branche -->
-            <template if:true={isStepChoice}>
-                <div class="slds-p-around_small">
-                    <h2 class="slds-text-heading_small slds-m-bottom_medium">{label.step1}</h2>
-                    <lightning-radio-group
-                        name="subStage"
-                        label="Type de requalification"
-                        options={branchOptions}
-                        value={subStage}
-                        type="radio"
-                        onchange={handleBranchChange}>
-                    </lightning-radio-group>
-                </div>
-            </template>
-
-            <!-- ÉCRAN 2 — Formulaire dynamique -->
-            <template if:true={isStepForm}>
-                <div class="slds-p-around_small">
-                    <h2 class="slds-text-heading_small slds-m-bottom_medium">{label.step2}</h2>
-
-                    <!-- Allotissement Opp / CC : liste d'opps à créer -->
-                    <template if:false={isReallocation}>
-                        <lightning-input
-                            type="number"
-                            label={label.nbOpps}
-                            min="1"
-                            max="20"
-                            value={newOpportunityCount}
-                            onchange={handleOpportunityCountChange}
-                            class="slds-m-bottom_small">
-                        </lightning-input>
-
-                        <template for:each={newOpportunities} for:item="opp">
-                            <div key={opp.key} class="slds-box slds-box_x-small slds-m-top_small requalif-opp-card">
-                                <p class="slds-text-body_small slds-m-bottom_x-small requalif-opp-index">
-                                    Opportunité {opp.index}
-                                </p>
-                                <lightning-input
-                                    label="Nom"
-                                    required
-                                    data-key={opp.key}
-                                    data-field="name"
-                                    value={opp.name}
-                                    onchange={handleNewOppFieldChange}>
-                                </lightning-input>
-                                <lightning-input
-                                    type="date"
-                                    label="Date de clôture prévue"
-                                    required
-                                    data-key={opp.key}
-                                    data-field="closeDate"
-                                    value={opp.closeDate}
-                                    onchange={handleNewOppFieldChange}>
-                                </lightning-input>
-                                <template if:true={isAllotissementCC}>
-                                    <lightning-combobox
-                                        label={label.applicationContract}
-                                        data-key={opp.key}
-                                        data-field="contractId"
-                                        options={applicationContracts}
-                                        value={opp.contractId}
-                                        placeholder="— Sélectionner un contrat —"
-                                        onchange={handleNewOppFieldChange}>
-                                    </lightning-combobox>
-                                </template>
-                            </div>
-                        </template>
-                    </template>
-
-                    <!-- Réallocation périmètre -->
-                    <template if:true={isReallocation}>
-                        <!-- Checklist opps à fermer -->
-                        <h3 class="slds-text-heading_x-small slds-m-top_medium slds-m-bottom_x-small">
-                            {label.renewalsToClose}
-                        </h3>
-                        <template if:true={hasOpenRenewalOpps}>
-                            <template for:each={openRenewalOpps} for:item="opp">
-                                <lightning-input
-                                    key={opp.value}
-                                    type="checkbox"
-                                    label={opp.label}
-                                    data-id={opp.value}
-                                    checked={opp.checked}
-                                    onchange={handleRenewalOppCheck}>
-                                </lightning-input>
-                            </template>
-                        </template>
-                        <template if:false={hasOpenRenewalOpps}>
-                            <p class="slds-text-body_small slds-text-color_weak">
-                                Aucune autre opportunité de renouvellement ouverte sur ce contrat.
-                            </p>
-                        </template>
-
-                        <!-- Tableau opps de développement à créer -->
-                        <h3 class="slds-text-heading_x-small slds-m-top_medium slds-m-bottom_x-small">
-                            {label.devOpps}
-                        </h3>
-                        <template for:each={devOpportunities} for:item="opp">
-                            <div key={opp.key} class="slds-box slds-box_x-small slds-m-top_small requalif-opp-card">
-                                <lightning-input
-                                    label="Nom"
-                                    required
-                                    data-key={opp.key}
-                                    data-field="name"
-                                    value={opp.name}
-                                    onchange={handleDevOppFieldChange}>
-                                </lightning-input>
-                                <lightning-input
-                                    type="date"
-                                    label="Date de clôture prévue"
-                                    required
-                                    data-key={opp.key}
-                                    data-field="closeDate"
-                                    value={opp.closeDate}
-                                    onchange={handleDevOppFieldChange}>
-                                </lightning-input>
-                            </div>
-                        </template>
-                        <lightning-button
-                            label={label.addOpp}
-                            icon-name="utility:add"
-                            onclick={handleAddDevOpportunity}
-                            class="slds-m-top_small">
-                        </lightning-button>
-                    </template>
-                </div>
-            </template>
-
-            <!-- ÉCRAN 3 — Récapitulatif -->
-            <template if:true={isStepRecap}>
-                <div class="slds-p-around_small">
-                    <h2 class="slds-text-heading_small slds-m-bottom_medium">{label.step3}</h2>
-
-                    <div class="slds-box slds-box_x-small slds-m-bottom_small requalif-recap-section">
-                        <p class="slds-text-body_small">
-                            <strong>Type :</strong> {subStage}
-                        </p>
-                        <p class="slds-text-body_small">
-                            <strong>Opportunité d'origine :</strong> {originOppName}
-                            → sera fermée en <em>Requalification</em>
-                        </p>
-                    </div>
-
-                    <h3 class="slds-text-heading_x-small slds-m-top_medium">{label.oppsToCreate}</h3>
-                    <ul class="slds-list_dotted slds-m-top_x-small">
-                        <template for:each={recapNewOpportunities} for:item="opp">
-                            <li key={opp.key}>{opp.name} — {opp.closeDate}</li>
-                        </template>
-                    </ul>
-
-                    <template if:true={isReallocation}>
-                        <h3 class="slds-text-heading_x-small slds-m-top_medium">{label.oppsToClose}</h3>
-                        <template if:true={hasCheckedOpps}>
-                            <ul class="slds-list_dotted slds-m-top_x-small">
-                                <template for:each={recapItemsToClose} for:item="opp">
-                                    <li key={opp.value}>{opp.label}</li>
-                                </template>
-                            </ul>
-                        </template>
-                        <template if:false={hasCheckedOpps}>
-                            <p class="slds-text-body_small slds-text-color_weak">Aucune.</p>
-                        </template>
-                    </template>
-
-                    <template if:true={isSubmitting}>
-                        <div class="slds-align_absolute-center slds-m-top_medium">
-                            <lightning-spinner alternative-text={label.loading} size="small"></lightning-spinner>
-                            <span class="slds-m-left_small">{label.loading}</span>
-                        </div>
-                    </template>
-                </div>
-            </template>
-
-        </template>
-
-        <!-- ===== FOOTER ===== -->
         <div slot="footer">
-            <template if:true={showCancelButton}>
-                <lightning-button
-                    label={label.cancel}
-                    onclick={handleCancel}
-                    disabled={isSubmitting}
-                    class="slds-m-right_x-small">
-                </lightning-button>
-            </template>
-            <template if:true={showBackButton}>
-                <lightning-button
-                    label={label.back}
-                    onclick={handleBack}
-                    disabled={isSubmitting}
-                    class="slds-m-right_x-small">
-                </lightning-button>
-            </template>
-            <template if:true={showNextButton}>
-                <lightning-button
-                    variant="brand"
-                    label={label.next}
-                    onclick={handleNext}
-                    disabled={isNextDisabled}>
-                </lightning-button>
-            </template>
-            <template if:true={showConfirmButton}>
-                <lightning-button
-                    variant="brand"
-                    label={label.confirm}
-                    onclick={handleConfirm}
-                    disabled={isSubmitting}>
-                </lightning-button>
-            </template>
+            <lightning-button
+                label="Cancel"
+                onclick={handleCancel}
+                disabled={isSubmitting}
+                class="slds-m-right_x-small">
+            </lightning-button>
+            <lightning-button
+                variant="brand"
+                label="Confirm"
+                onclick={handleConfirm}
+                disabled={isSubmitting}>
+            </lightning-button>
         </div>
 
     </lightning-quick-action-panel>

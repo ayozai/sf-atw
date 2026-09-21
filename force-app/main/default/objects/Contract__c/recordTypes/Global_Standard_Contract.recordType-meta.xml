@@ -1858,6 +1858,10 @@
             <fullName>Pending Termination</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>Reallocated</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Sub_Services__c</picklist>
