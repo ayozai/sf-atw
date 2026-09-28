@@ -1,47 +1,94 @@
 <template>
     <lightning-quick-action-panel header="Requalification">
 
-        <template if:false={isSubmitting}>
-            <div class="slds-p-around_medium">
-                <p class="slds-m-bottom_medium">
-                    This action will set the current opportunity to <strong>Requalification</strong>
-                    and create new <strong>Global Renewal</strong> opportunities
-                    linked to the same framework contract.
-                </p>
-                <lightning-input
-                    type="number"
-                    label="Number of renewal opportunities to create"
-                    min="1"
-                    step="1"
-                    value={numberOfOpps}
-                    onchange={handleNumberChange}
-                    required>
-                </lightning-input>
-                <template if:true={errorMessage}>
-                    <p class="slds-text-color_error slds-m-top_x-small">{errorMessage}</p>
-                </template>
-            </div>
-        </template>
-
-        <template if:true={isSubmitting}>
+        <!-- Chargement initial -->
+        <template if:true={isLoading}>
             <div class="slds-align_absolute-center slds-p-around_large">
-                <lightning-spinner alternative-text="Processing..." size="medium"></lightning-spinner>
-                <p class="slds-m-top_small">Processing in background — you will receive a notification when done.</p>
+                <lightning-spinner alternative-text="Chargement..." size="medium"></lightning-spinner>
             </div>
         </template>
 
+        <!-- Contenu principal -->
+        <template if:false={isLoading}>
+
+            <!-- Formulaire -->
+            <template if:false={isSubmitting}>
+                <div class="slds-p-around_medium">
+
+                    <!-- Carte résumé de l'opportunité -->
+                    <template if:true={context}>
+                        <div class="slds-box slds-box_x-small slds-m-bottom_medium requalif-opp-card">
+                            <p class="slds-text-heading_small slds-m-bottom_xx-small">{context.oppName}</p>
+                            <p class="slds-text-color_weak slds-text-body_small">{context.accountName}</p>
+                            <p class="slds-m-top_x-small">
+                                <lightning-badge label={context.contractRef}></lightning-badge>
+                                &nbsp;
+                                <lightning-badge label={context.service}></lightning-badge>
+                            </p>
+                            <p class="slds-m-top_x-small slds-text-body_small requalif-opp-index">
+                                {scenarioLabel}
+                            </p>
+                        </div>
+
+                        <!-- Avertissement (uniquement si l'opp est ouverte) -->
+                        <template if:false={context.isClosed}>
+                            <div class="slds-box slds-theme_warning slds-m-bottom_medium">
+                                <p class="slds-text-body_small slds-m-bottom_xx-small">
+                                    ⚠️ Cette action est <strong>irréversible</strong>.
+                                </p>
+                                <ul class="slds-list_dotted slds-text-body_small">
+                                    <li>L'opportunité actuelle sera fermée (Requalification / 6.1 Closed Lost)</li>
+                                    <li>{contractConsequence}</li>
+                                    <li>N nouvelles opportunités Global Renewal seront créées et liées au contrat</li>
+                                </ul>
+                            </div>
+                        </template>
+                    </template>
+
+                    <!-- Saisie du nombre (masqué si opp fermée) -->
+                    <template if:false={isOppClosed}>
+                        <lightning-input
+                            type="number"
+                            label="Nombre de nouvelles opportunités à créer"
+                            min="1"
+                            step="1"
+                            value={numberOfOpps}
+                            onchange={handleNumberChange}
+                            required>
+                        </lightning-input>
+                    </template>
+
+                    <!-- Message d'erreur -->
+                    <template if:true={errorMessage}>
+                        <p class="slds-text-color_error slds-m-top_x-small">{errorMessage}</p>
+                    </template>
+
+                </div>
+            </template>
+
+            <!-- Traitement en cours -->
+            <template if:true={isSubmitting}>
+                <div class="slds-align_absolute-center slds-p-around_large">
+                    <lightning-spinner alternative-text="Traitement..." size="medium"></lightning-spinner>
+                    <p class="slds-m-top_small">Traitement en arrière-plan — vous recevrez une notification à la fin.</p>
+                </div>
+            </template>
+
+        </template>
+
+        <!-- Footer -->
         <div slot="footer">
             <lightning-button
-                label="Cancel"
+                label="Annuler"
                 onclick={handleCancel}
                 disabled={isSubmitting}
                 class="slds-m-right_x-small">
             </lightning-button>
             <lightning-button
                 variant="brand"
-                label="Confirm"
+                label="Confirmer"
                 onclick={handleConfirm}
-                disabled={isSubmitting}>
+                disabled={isConfirmDisabled}>
             </lightning-button>
         </div>
 
