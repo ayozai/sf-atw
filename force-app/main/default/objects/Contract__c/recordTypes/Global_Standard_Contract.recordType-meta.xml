@@ -1862,6 +1862,10 @@
             <fullName>Reallocated</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>Réalloti</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Sub_Services__c</picklist>

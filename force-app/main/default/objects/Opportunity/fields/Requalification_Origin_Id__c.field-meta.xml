@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requalification_Origin_Id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Links a requalified renewal opportunity back to the original opportunity that was requalified. Used to group sibling opportunities and drive post-requalification automation (won → app contract, all lost → close framework contract).</description>
+    <label>Requalification Origin Opportunity</label>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Requalified Opportunities</relationshipLabel>
+    <relationshipName>Requalified_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>
