@@ -846,6 +846,12 @@ TEXT({!$Record.User_Creator_Country__c}) &lt;&gt;&apos;FR&apos;,
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Contract_Custom__c</field>
+            <value>
+                <elementReference>$Record.Contract_Custom__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Contract_Type__c</field>
             <value>
                 <elementReference>$Record.Contract_Type__c</elementReference>
@@ -853,6 +859,12 @@ TEXT({!$Record.User_Creator_Country__c}) &lt;&gt;&apos;FR&apos;,
         </inputAssignments>
         <inputAssignments>
             <field>Create_future_opportunity__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Is_Requalification_Opp__c</field>
+            <value>
+                <elementReference>$Record.Is_Requalification_Opp__c</elementReference>
+            </value>
         </inputAssignments>
         <inputAssignments>
             <field>Cross_border_Opportunity__c</field>

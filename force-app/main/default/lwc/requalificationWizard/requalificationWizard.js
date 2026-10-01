@@ -39,14 +39,14 @@ export default class RequalificationWizard extends LightningElement {
     get scenarioLabel() {
         if (!this.context) return '';
         return this.context.scenario === 1
-            ? 'Scénario 1 — Nouveau contrat cadre sera créé'
+            ? 'Scénario 1 — Contrat cadre sans contrats d\'application'
             : `Scénario 2 — ${this.context.appContractCount} contrat(s) d'application existant(s)`;
     }
 
     get contractConsequence() {
         if (!this.context) return '';
         return this.context.scenario === 1
-            ? 'Le contrat cadre actuel passera en Réalloti, un nouveau sera créé'
+            ? 'Le contrat cadre actuel passera en Réalloti, les nouvelles opportunités y seront liées'
             : 'Les contrats d\'application passeront en Réalloti';
     }
 

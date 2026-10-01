@@ -858,10 +858,10 @@
             </value>
         </filters>
         <filters>
-            <field>Requalification_Origin_Id__c</field>
-            <operator>IsNull</operator>
+            <field>Is_Requalification_Opp__c</field>
+            <operator>EqualTo</operator>
             <value>
-                <booleanValue>true</booleanValue>
+                <booleanValue>false</booleanValue>
             </value>
         </filters>
         <object>Opportunity</object>

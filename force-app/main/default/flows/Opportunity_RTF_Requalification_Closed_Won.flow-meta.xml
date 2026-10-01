@@ -2,7 +2,34 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>67.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
-    <description>When a requalified Global_Renewal opportunity is won (5. Closed Won), creates a new application contract (Contract__c) linked to the framework contract and updates the opportunity to point to that new app contract.</description>
+    <description>When a requalified Global_Renewal opportunity is won (5. Closed Won), branches on Scenario:
+- Scenario 1 (contract linked is Réalloti): creates a Single-Site Contract and updates the opp to point to it.
+- Scenario 2 (contract linked is Active framework): creates a Contract linked to a Framework Agreement and updates the opp.</description>
+    <decisions>
+        <name>Check_Scenario</name>
+        <label>S1 or S2?</label>
+        <locationX>264</locationX>
+        <locationY>158</locationY>
+        <defaultConnector>
+            <targetReference>Create_App_Contract</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Scenario 2 — Active Framework</defaultConnectorLabel>
+        <rules>
+            <name>Scenario_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Contract_Custom__r.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Réalloti</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Single_Site_Contract</targetReference>
+            </connector>
+            <label>Scenario 1 — Réalloti Contract</label>
+        </rules>
+    </decisions>
     <interviewLabel>Opportunity RTF Requalification Closed Won {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opportunity RTF Requalification Closed Won</label>
     <processMetadataValues>
@@ -19,12 +46,59 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordCreates>
-        <name>Create_App_Contract</name>
-        <label>Create Application Contract</label>
-        <locationX>264</locationX>
+        <name>Create_Single_Site_Contract</name>
+        <label>Create Single-Site Contract (S1)</label>
+        <locationX>132</locationX>
         <locationY>278</locationY>
         <connector>
-            <targetReference>Update_Opp_Contract_Link</targetReference>
+            <targetReference>Update_Opp_Contract_Link_S1</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Originating_Opportunity__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Primary_Service__c</field>
+            <value>
+                <elementReference>$Record.Global_Primary_Service__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Active</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <stringValue>Single-Site Contract</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Contract__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_App_Contract</name>
+        <label>Create Application Contract (S2)</label>
+        <locationX>396</locationX>
+        <locationY>278</locationY>
+        <connector>
+            <targetReference>Update_Opp_Contract_Link_S2</targetReference>
         </connector>
         <inputAssignments>
             <field>Account__c</field>
@@ -72,9 +146,30 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordUpdates>
-        <name>Update_Opp_Contract_Link</name>
-        <label>Link Opportunity to New App Contract</label>
-        <locationX>264</locationX>
+        <name>Update_Opp_Contract_Link_S1</name>
+        <label>Link Opportunity to Single-Site Contract</label>
+        <locationX>132</locationX>
+        <locationY>398</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Contract_Custom__c</field>
+            <value>
+                <elementReference>Create_Single_Site_Contract</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Opp_Contract_Link_S2</name>
+        <label>Link Opportunity to App Contract</label>
+        <locationX>396</locationX>
         <locationY>398</locationY>
         <filterLogic>and</filterLogic>
         <filters>
@@ -96,7 +191,7 @@
         <locationX>176</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Create_App_Contract</targetReference>
+            <targetReference>Check_Scenario</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -114,10 +209,10 @@
             </value>
         </filters>
         <filters>
-            <field>Requalification_Origin_Id__c</field>
-            <operator>IsNull</operator>
+            <field>Is_Requalification_Opp__c</field>
+            <operator>EqualTo</operator>
             <value>
-                <booleanValue>false</booleanValue>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>Opportunity</object>

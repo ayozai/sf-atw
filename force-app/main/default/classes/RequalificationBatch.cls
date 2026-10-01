@@ -96,7 +96,8 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
                     CloseDate                     = closeDate,
                     RecordTypeId                  = renewalRtId,
                     Global_Primary_Service__c     = origin.Global_Primary_Service__c,
-                    Create_future_opportunity__c  = CREATE_FUTURE_OPP_YES
+                    Create_future_opportunity__c  = CREATE_FUTURE_OPP_YES,
+                    Is_Requalification_Opp__c     = true
                 ));
             }
             insert newOpps;
@@ -108,30 +109,14 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
 
     /**
      * Scenario 1: Framework contract has no application contracts.
-     * Marks the old framework contract as Réalloti and creates a new framework contract
-     * to which all new renewal opportunities will be linked.
-     * Returns the Id of the newly created framework contract.
+     * Marks the old framework contract as Réalloti. New renewal opportunities are linked
+     * to this same Réalloti contract. When an opp is won, the Requalification_Closed_Won
+     * flow creates a Single-Site Contract and relinks the opp.
+     * Returns the Id of the (now Réalloti) framework contract.
      */
     private static Id handleScenario1(Opportunity origin, Id contractId) {
-        // Mark old framework contract as Réalloti
         update new Contract__c(Id = contractId, Status__c = CONTRACT_STATUS_REALLOTI);
-
-        // Clone key fields onto a new framework contract
-        Contract__c src = origin.Contract_Custom__r;
-        Contract__c newContract = new Contract__c(
-            Account__c                  = origin.AccountId,
-            Primary_Service__c          = src.Primary_Service__c,
-            Type__c                     = CONTRACT_TYPE_FRAMEWORK,
-            Contract_Market_Segment__c  = src.Contract_Market_Segment__c,
-            Region_FR__c                = src.Region_FR__c,
-            Department_FR_Contract__c   = src.Department_FR_Contract__c,
-            OwnerId                     = src.OwnerId,
-            Tier_2_Account__c           = src.Tier_2_Account__c,
-            Public_Private_Market__c    = src.Public_Private_Market__c,
-            Status__c                   = CONTRACT_STATUS_ACTIVE
-        );
-        insert newContract;
-        return newContract.Id;
+        return contractId;
     }
 
     /**

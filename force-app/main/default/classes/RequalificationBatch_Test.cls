@@ -57,10 +57,11 @@ private class RequalificationBatch_Test {
     /**
      * Scenario 1 — No application contracts.
      * Expects: origin opp closed (Requalification), old framework contract → Réalloti,
-     * new framework contract created, N new opps linked to new contract with REQUALIFICATION naming.
+     * no new contract created, N new opps linked to the SAME (now Réalloti) contract,
+     * Is_Requalification_Opp__c = true on all new opps.
      */
     @isTest
-    static void test_scenario1_closesOldContractAndCreatesNew() {
+    static void test_scenario1_closesOldContractAndLinksToRealloti() {
         Account     acc      = createAccount();
         Contract__c contract = createFrameworkContract(acc.Id);
         Opportunity origin   = createRenewalOpp(acc, contract);
@@ -79,40 +80,34 @@ private class RequalificationBatch_Test {
         System.assertEquals('6.1 Closed Lost', updatedOrigin.Sub_Stage__c,
             'Origin Sub_Stage__c should be 6.1 Closed Lost.');
 
-        // Old framework contract → Réalloti
+        // Old framework contract → Réalloti (no new contract created)
         Contract__c oldContract = [SELECT Status__c FROM Contract__c WHERE Id = :contract.Id];
         System.assertEquals('Réalloti', oldContract.Status__c,
             'Old framework contract should be marked Réalloti.');
 
-        // One NEW framework contract created for this account
-        List<Contract__c> newContracts = [
-            SELECT Id, Status__c, Type__c FROM Contract__c
-            WHERE  Account__c = :acc.Id AND Id != :contract.Id
-        ];
-        System.assertEquals(1, newContracts.size(), 'One new framework contract should be created.');
-        System.assertEquals('Active', newContracts[0].Status__c,
-            'New framework contract should be Active.');
+        List<Contract__c> allContracts = [SELECT Id FROM Contract__c WHERE Account__c = :acc.Id];
+        System.assertEquals(1, allContracts.size(), 'No new contract should be created in Scenario 1.');
 
-        // 3 new opps linked to the NEW contract with proper naming and origin reference
+        // 3 new opps linked to the RÉALLOTI contract with Is_Requalification_Opp__c = true
         List<Opportunity> newOpps = [
             SELECT Id, StageName, Sub_Stage__c, Contract_Custom__c,
-                   Name, RecordType.DeveloperName
+                   RecordType.DeveloperName, Is_Requalification_Opp__c
             FROM   Opportunity
             WHERE  AccountId = :acc.Id
               AND  StageName = '2. Prospect'
         ];
         System.assertEquals(3, newOpps.size(), '3 new renewal opportunities should be created.');
-        Id newContractId = newContracts[0].Id;
-        for (Integer i = 0; i < newOpps.size(); i++) {
-            Opportunity o = newOpps[i];
+        for (Opportunity o : newOpps) {
             System.assertEquals('2. Prospect', o.StageName,
                 'New opp StageName should be 2. Prospect.');
             System.assertEquals('2.1 Future Opportunity', o.Sub_Stage__c,
                 'New opp Sub_Stage__c should be 2.1 Future Opportunity.');
             System.assertEquals('Global_Renewal', o.RecordType.DeveloperName,
                 'New opp RecordType should be Global_Renewal.');
-            System.assertEquals(newContractId, o.Contract_Custom__c,
-                'New opp should be linked to the NEW framework contract.');
+            System.assertEquals(contract.Id, o.Contract_Custom__c,
+                'New opp should be linked to the original (now Réalloti) framework contract.');
+            System.assertEquals(true, o.Is_Requalification_Opp__c,
+                'New opp Is_Requalification_Opp__c should be true.');
         }
     }
 
