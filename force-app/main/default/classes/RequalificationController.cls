@@ -1,7 +1,7 @@
 public with sharing class RequalificationController {
 
     @AuraEnabled
-    public static void startRequalification(Id opportunityId, Integer numberOfNewOpps) {
+    public static void startRequalification(Id opportunityId, Integer numberOfNewOpps, List<String> references) {
         if (opportunityId == null) {
             throw new AuraHandledException('Opportunity ID is required.');
         }
@@ -10,7 +10,7 @@ public with sharing class RequalificationController {
         }
         Id userId = UserInfo.getUserId();
         Database.executeBatch(
-            new RequalificationBatch(opportunityId, numberOfNewOpps, userId),
+            new RequalificationBatch(opportunityId, numberOfNewOpps, userId, references),
             1
         );
     }

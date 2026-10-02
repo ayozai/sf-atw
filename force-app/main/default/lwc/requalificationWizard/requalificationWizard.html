@@ -56,6 +56,45 @@
                             onchange={handleNumberChange}
                             required>
                         </lightning-input>
+
+                        <!-- N < 10 : champs de saisie des références -->
+                        <template if:true={showReferenceInputs}>
+                            <div class="slds-m-top_medium">
+                                <p class="slds-text-title_caps slds-m-bottom_x-small">Références des opportunités</p>
+                                <template for:each={referenceRows} for:item="row">
+                                    <lightning-input
+                                        key={row.key}
+                                        data-index={row.key}
+                                        type="text"
+                                        label={row.label}
+                                        value={row.value}
+                                        onchange={handleReferenceChange}
+                                        class="slds-m-bottom_x-small">
+                                    </lightning-input>
+                                </template>
+                            </div>
+                        </template>
+
+                        <!-- N >= 10 : import fichier -->
+                        <template if:true={showImportButton}>
+                            <div class="slds-m-top_medium">
+                                <p class="slds-text-title_caps slds-m-bottom_x-small">Références des opportunités</p>
+                                <p class="slds-text-body_small slds-m-bottom_x-small">
+                                    Importer un fichier .txt, .csv ou .xlsx — une référence par ligne.
+                                </p>
+                                <lightning-input
+                                    type="file"
+                                    label="Fichier de références"
+                                    accept=".txt,.csv,.xlsx"
+                                    onchange={handleFileImport}>
+                                </lightning-input>
+                                <template if:true={importedCount}>
+                                    <p class="slds-text-body_small slds-text-color_success slds-m-top_x-small">
+                                        ✓ {importedCount} référence(s) importée(s)
+                                    </p>
+                                </template>
+                            </div>
+                        </template>
                     </template>
 
                     <!-- Message d'erreur -->

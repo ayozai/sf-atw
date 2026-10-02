@@ -68,7 +68,7 @@ private class RequalificationBatch_Test {
 
         Test.startTest();
         Database.executeBatch(
-            new RequalificationBatch(origin.Id, 3, UserInfo.getUserId()),
+            new RequalificationBatch(origin.Id, 3, UserInfo.getUserId(), null),
             1
         );
         Test.stopTest();
@@ -129,7 +129,7 @@ private class RequalificationBatch_Test {
 
         Test.startTest();
         Database.executeBatch(
-            new RequalificationBatch(origin.Id, 2, UserInfo.getUserId()),
+            new RequalificationBatch(origin.Id, 2, UserInfo.getUserId(), null),
             1
         );
         Test.stopTest();
@@ -183,8 +183,8 @@ private class RequalificationBatch_Test {
             WHERE  Id = :origin.Id
         ];
 
-        String name1 = RequalificationBatch.buildOppName(originWithRels, 1);
-        String name2 = RequalificationBatch.buildOppName(originWithRels, 2);
+        String name1 = RequalificationBatch.buildOppName(originWithRels, 1, null);
+        String name2 = RequalificationBatch.buildOppName(originWithRels, 2, 'SITE-A');
 
         System.assert(name1.endsWith('REQUALIFICATION 1'),
             'Name should end with REQUALIFICATION 1. Got: ' + name1);
@@ -194,6 +194,8 @@ private class RequalificationBatch_Test {
             'Name should contain the primary service. Got: ' + name1);
         System.assert(name1.contains('REF-TEST-001'),
             'Name should contain the contract reference. Got: ' + name1);
+        System.assert(name2.contains('SITE-A'),
+            'Name should contain the site reference. Got: ' + name2);
         System.assert(name1.length() <= 120, 'Name should not exceed 120 characters.');
     }
 
@@ -209,7 +211,7 @@ private class RequalificationBatch_Test {
 
         Test.startTest();
         Database.executeBatch(
-            new RequalificationBatch(origin.Id, null, UserInfo.getUserId()),
+            new RequalificationBatch(origin.Id, null, UserInfo.getUserId(), null),
             1
         );
         Test.stopTest();

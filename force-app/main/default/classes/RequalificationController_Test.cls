@@ -4,7 +4,7 @@ private class RequalificationController_Test {
     @isTest
     static void test_nullOpportunityId_throwsException() {
         try {
-            RequalificationController.startRequalification(null, 2);
+            RequalificationController.startRequalification(null, 2, null);
             System.assert(false, 'Expected AuraHandledException.');
         } catch (AuraHandledException e) {
             System.assertNotEquals(null, e, 'Exception should be thrown.');
@@ -15,7 +15,7 @@ private class RequalificationController_Test {
     static void test_zeroNumberOfOpps_throwsException() {
         Id fakeId = '006000000000001AAA';
         try {
-            RequalificationController.startRequalification(fakeId, 0);
+            RequalificationController.startRequalification(fakeId, 0, null);
             System.assert(false, 'Expected AuraHandledException.');
         } catch (AuraHandledException e) {
             System.assertNotEquals(null, e, 'Exception should be thrown.');
@@ -26,7 +26,7 @@ private class RequalificationController_Test {
     static void test_nullNumberOfOpps_throwsException() {
         Id fakeId = '006000000000001AAA';
         try {
-            RequalificationController.startRequalification(fakeId, null);
+            RequalificationController.startRequalification(fakeId, null, null);
             System.assert(false, 'Expected AuraHandledException.');
         } catch (AuraHandledException e) {
             System.assertNotEquals(null, e, 'Exception should be thrown.');
@@ -64,7 +64,7 @@ private class RequalificationController_Test {
         insert opp;
 
         Test.startTest();
-        RequalificationController.startRequalification(opp.Id, 2);
+        RequalificationController.startRequalification(opp.Id, 2, null);
         Test.stopTest();
 
         // Batch queued successfully — no exception means success

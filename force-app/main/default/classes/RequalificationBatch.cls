@@ -11,15 +11,17 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
     private static final String NOTIF_TYPE_DEV_NAME         = 'Requalification_Notif';
     private static final String CREATE_FUTURE_OPP_YES       = 'Yes';
 
-    @TestVisible private Id      originOppId;
-    @TestVisible private Integer numberOfNewOpps;
-    @TestVisible private Id      requestingUserId;
-    @TestVisible private String  errorMessage;
+    @TestVisible private Id           originOppId;
+    @TestVisible private Integer      numberOfNewOpps;
+    @TestVisible private Id           requestingUserId;
+    @TestVisible private String       errorMessage;
+    @TestVisible private List<String> references;
 
-    global RequalificationBatch(Id originOppId, Integer numberOfNewOpps, Id requestingUserId) {
+    global RequalificationBatch(Id originOppId, Integer numberOfNewOpps, Id requestingUserId, List<String> references) {
         this.originOppId      = originOppId;
         this.numberOfNewOpps  = numberOfNewOpps;
         this.requestingUserId = requestingUserId;
+        this.references       = references;
     }
 
     global Database.QueryLocator start(Database.BatchableContext bc) {
@@ -86,8 +88,10 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
 
             List<Opportunity> newOpps = new List<Opportunity>();
             for (Integer i = 1; i <= numberOfNewOpps; i++) {
+                String siteRef = (references != null && i <= references.size())
+                    ? references.get(i - 1) : null;
                 newOpps.add(new Opportunity(
-                    Name                          = buildOppName(origin, i),
+                    Name                          = buildOppName(origin, i, siteRef),
                     AccountId                     = origin.AccountId,
                     OwnerId                       = origin.OwnerId,
                     Contract_Custom__c            = newContractId,
@@ -97,7 +101,8 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
                     RecordTypeId                  = renewalRtId,
                     Global_Primary_Service__c     = origin.Global_Primary_Service__c,
                     Create_future_opportunity__c  = CREATE_FUTURE_OPP_YES,
-                    Is_Requalification_Opp__c     = true
+                    Is_Requalification_Opp__c     = true,
+                    Site_Names__c                 = siteRef
                 ));
             }
             insert newOpps;
@@ -156,7 +161,7 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
      * Truncated to 120 characters.
      */
     @TestVisible
-    private static String buildOppName(Opportunity origin, Integer index) {
+    private static String buildOppName(Opportunity origin, Integer index, String siteRef) {
         List<String> parts = new List<String>();
 
         String accountName = origin.Contract_Custom__r?.Account__r?.Name;
@@ -166,6 +171,7 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
         if (String.isNotBlank(accountName)) parts.add(accountName);
         if (String.isNotBlank(service))     parts.add(service);
         if (String.isNotBlank(reference))   parts.add(reference);
+        if (String.isNotBlank(siteRef))     parts.add(siteRef);
         parts.add('REQUALIFICATION ' + index);
 
         String name = String.join(parts, ' - ');
