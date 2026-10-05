@@ -10,6 +10,7 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
     private static final String CONTRACT_TYPE_FRAMEWORK     = 'Framework Agreement';
     private static final String NOTIF_TYPE_DEV_NAME         = 'Requalification_Notif';
     private static final String CREATE_FUTURE_OPP_YES       = 'Yes';
+    private static final String CONTACT_ROLE_CUSTOMER       = 'Customer/Prospect Contact';
 
     @TestVisible private Id           originOppId;
     @TestVisible private Integer      numberOfNewOpps;
@@ -26,7 +27,7 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
 
     global Database.QueryLocator start(Database.BatchableContext bc) {
         return Database.getQueryLocator([
-            SELECT Id, Name, AccountId, OwnerId,
+            SELECT Id, Name, AccountId, OwnerId, Pricebook2Id,
                    Contract_Custom__c,
                    Contract_Custom__r.Reference__c,
                    Contract_Custom__r.Primary_Service__c,
@@ -48,6 +49,19 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
         try {
             Opportunity origin     = scope[0];
             Id          contractId = origin.Contract_Custom__c;
+
+            // 0. Fetch line items and Customer/Prospect Contact roles from origin
+            List<OpportunityLineItem> lineItems = [
+                SELECT PricebookEntryId, Quantity, UnitPrice
+                FROM   OpportunityLineItem
+                WHERE  OpportunityId = :origin.Id
+            ];
+            List<OpportunityContactRole> contactRoles = [
+                SELECT ContactId, Role, IsPrimary
+                FROM   OpportunityContactRole
+                WHERE  OpportunityId = :origin.Id
+                  AND  Role = :CONTACT_ROLE_CUSTOMER
+            ];
 
             // 1. Close the origin opportunity in the "Requalification" stage.
             //    The VR_FR_DontCreateNewRebidOpport check (Number_of_Open_Renewal_Opps__c > 0)
@@ -94,6 +108,7 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
                     Name                          = buildOppName(origin, i, siteRef),
                     AccountId                     = origin.AccountId,
                     OwnerId                       = origin.OwnerId,
+                    Pricebook2Id                  = origin.Pricebook2Id,
                     Contract_Custom__c            = newContractId,
                     StageName                     = STAGE_PROSPECT,
                     Sub_Stage__c                  = SUB_STAGE_FUTURE_OPP,
@@ -102,10 +117,42 @@ global class RequalificationBatch implements Database.Batchable<SObject>, Databa
                     Global_Primary_Service__c     = origin.Global_Primary_Service__c,
                     Create_future_opportunity__c  = CREATE_FUTURE_OPP_YES,
                     Is_Requalification_Opp__c     = true,
+                    Requalification_Process__c    = true,
                     Site_Names__c                 = siteRef
                 ));
             }
             insert newOpps;
+
+            // 4. Copy line items and contact roles to each new renewal opp
+            if (!lineItems.isEmpty()) {
+                List<OpportunityLineItem> newLineItems = new List<OpportunityLineItem>();
+                for (Opportunity newOpp : newOpps) {
+                    for (OpportunityLineItem li : lineItems) {
+                        newLineItems.add(new OpportunityLineItem(
+                            OpportunityId    = newOpp.Id,
+                            PricebookEntryId = li.PricebookEntryId,
+                            Quantity         = li.Quantity,
+                            UnitPrice        = li.UnitPrice
+                        ));
+                    }
+                }
+                insert newLineItems;
+            }
+
+            if (!contactRoles.isEmpty()) {
+                List<OpportunityContactRole> newRoles = new List<OpportunityContactRole>();
+                for (Opportunity newOpp : newOpps) {
+                    for (OpportunityContactRole cr : contactRoles) {
+                        newRoles.add(new OpportunityContactRole(
+                            OpportunityId = newOpp.Id,
+                            ContactId     = cr.ContactId,
+                            Role          = cr.Role,
+                            IsPrimary     = cr.IsPrimary
+                        ));
+                    }
+                }
+                insert newRoles;
+            }
 
         } catch (Exception e) {
             errorMessage = e.getMessage();

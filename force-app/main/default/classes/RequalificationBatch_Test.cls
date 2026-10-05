@@ -200,6 +200,85 @@ private class RequalificationBatch_Test {
     }
 
     /**
+     * Verifies that OpportunityLineItems and Customer/Prospect Contact roles
+     * from the origin opp are copied to each new renewal opp.
+     */
+    @isTest
+    static void test_lineItemsAndContactRolesAreCopiedToNewOpps() {
+        Account     acc      = createAccount();
+        Contract__c contract = createFrameworkContract(acc.Id);
+        Opportunity origin   = createRenewalOpp(acc, contract);
+
+        // Set up pricebook and product on origin opp
+        Id pricebookId = Test.getStandardPricebookId();
+        origin.Pricebook2Id = pricebookId;
+        update origin;
+
+        Product2 product = new Product2(Name = 'Test Product', IsActive = true);
+        insert product;
+
+        PricebookEntry pbe = new PricebookEntry(
+            Pricebook2Id = pricebookId,
+            Product2Id   = product.Id,
+            UnitPrice    = 100,
+            IsActive     = true
+        );
+        insert pbe;
+
+        OpportunityLineItem oli = new OpportunityLineItem(
+            OpportunityId    = origin.Id,
+            PricebookEntryId = pbe.Id,
+            Quantity         = 2,
+            UnitPrice        = 100
+        );
+        insert oli;
+
+        Contact c = new Contact(LastName = 'Test Contact', AccountId = acc.Id);
+        insert c;
+
+        OpportunityContactRole cr = new OpportunityContactRole(
+            OpportunityId = origin.Id,
+            ContactId     = c.Id,
+            Role          = 'Customer/Prospect Contact',
+            IsPrimary     = true
+        );
+        insert cr;
+
+        Test.startTest();
+        Database.executeBatch(
+            new RequalificationBatch(origin.Id, 2, UserInfo.getUserId(), null),
+            1
+        );
+        Test.stopTest();
+
+        // 2 new opps created
+        List<Opportunity> newOpps = [
+            SELECT Id FROM Opportunity
+            WHERE  AccountId = :acc.Id AND StageName = '2. Prospect'
+        ];
+        System.assertEquals(2, newOpps.size(), '2 new opps should be created.');
+
+        Set<Id> newOppIds = new Set<Id>();
+        for (Opportunity o : newOpps) newOppIds.add(o.Id);
+
+        // 1 line item per new opp = 2 total
+        List<OpportunityLineItem> newItems = [
+            SELECT Id FROM OpportunityLineItem WHERE OpportunityId IN :newOppIds
+        ];
+        System.assertEquals(2, newItems.size(),
+            'Each new opp should have 1 line item copied (2 total).');
+
+        // 1 Customer/Prospect Contact role per new opp = 2 total
+        List<OpportunityContactRole> newRoles = [
+            SELECT Id FROM OpportunityContactRole
+            WHERE  OpportunityId IN :newOppIds
+              AND  Role = 'Customer/Prospect Contact'
+        ];
+        System.assertEquals(2, newRoles.size(),
+            'Each new opp should have 1 contact role copied (2 total).');
+    }
+
+    /**
      * Error path: null numberOfNewOpps → NullPointerException in the for-loop →
      * catch block sets errorMessage → no new opps created → error notification sent.
      */
