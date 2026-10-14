@@ -1,4 +1,4 @@
-import { LightningElement, api, track } from 'lwc';
+import { LightningElement, api, wire, track } from 'lwc';
 import { CloseActionScreenEvent } from 'lightning/actions';
 import { ShowToastEvent }         from 'lightning/platformShowToastEvent';
 import { loadScript }             from 'lightning/platformResourceLoader';
@@ -32,19 +32,23 @@ export default class RequalificationWizard extends LightningElement {
     newGroupOppName        = '';
     groupTargetAccountId   = null;
 
+    @wire(getRequalificationContext, { opportunityId: '$recordId' })
+    wiredContext({ error, data }) {
+        if (data) {
+            this.context = data;
+            if (data.isClosed) {
+                this.errorMessage = 'Cette opportunité est déjà fermée. La requalification n\'est disponible que pour les opportunités ouvertes.';
+            }
+        } else if (error) {
+            this.errorMessage = error?.body?.message || 'Erreur lors du chargement des données.';
+        }
+        if (data !== undefined || error) {
+            this.isLoading = false;
+        }
+    }
+
     connectedCallback() {
         loadScript(this, SHEETJS_URL).catch(() => {});
-        getRequalificationContext({ opportunityId: this.recordId })
-            .then(result => {
-                this.context = result;
-                if (result.isClosed) {
-                    this.errorMessage = 'Cette opportunité est déjà fermée. La requalification n\'est disponible que pour les opportunités ouvertes.';
-                }
-            })
-            .catch(err => {
-                this.errorMessage = err?.body?.message || 'Erreur lors du chargement des données.';
-            })
-            .finally(() => { this.isLoading = false; });
     }
 
     // ── Step visibility ──────────────────────────────────────────────────────
@@ -166,7 +170,11 @@ export default class RequalificationWizard extends LightningElement {
     }
 
     handleChoiceGrouping() {
-        if (!this.context || this.isOppClosed) return;
+        if (!this.context) {
+            this.errorMessage = 'Impossible de charger les données de l\'opportunité. Veuillez fermer et rouvrir cette action.';
+            return;
+        }
+        if (this.isOppClosed) return;
         this.currentStep = 'grouping';
         this.errorMessage = '';
 
