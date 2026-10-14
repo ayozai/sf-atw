@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grouped_Into__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Traceability link: on each origin opp that was grouped, points to the new grouped opportunity created by the Regroupement process.</description>
+    <label>Regroupé dans</label>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Opportunités d'origine</relationshipLabel>
+    <relationshipName>Grouped_Origin_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

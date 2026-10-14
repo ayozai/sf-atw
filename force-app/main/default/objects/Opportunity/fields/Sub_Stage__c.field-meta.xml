@@ -103,6 +103,11 @@
                 <default>false</default>
                 <label>Réallocation périmètre</label>
             </value>
+            <value>
+                <fullName>Regroupement</fullName>
+                <default>false</default>
+                <label>Regroupement</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>2. Prospect</controllingFieldValue>
@@ -176,6 +181,10 @@
         <valueSettings>
             <controllingFieldValue>Requalification</controllingFieldValue>
             <valueName>Réallocation périmètre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Requalification</controllingFieldValue>
+            <valueName>Regroupement</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

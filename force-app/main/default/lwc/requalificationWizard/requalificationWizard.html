@@ -11,11 +11,13 @@
         <!-- Contenu principal -->
         <template if:false={isLoading}>
 
-            <!-- Formulaire -->
-            <template if:false={isSubmitting}>
+            <!-- ═══════════════════════════════════════════════════════════
+                 STEP: CHOICE
+            ════════════════════════════════════════════════════════════ -->
+            <template if:true={showChoiceStep}>
                 <div class="slds-p-around_medium">
 
-                    <!-- Carte résumé de l'opportunité -->
+                    <!-- Résumé de l'opportunité déclenchante -->
                     <template if:true={context}>
                         <div class="slds-box slds-box_x-small slds-m-bottom_medium requalif-opp-card">
                             <p class="slds-text-heading_small slds-m-bottom_xx-small">{context.oppName}</p>
@@ -25,110 +27,329 @@
                                 &nbsp;
                                 <lightning-badge label={context.service}></lightning-badge>
                             </p>
-                            <p class="slds-m-top_x-small slds-text-body_small requalif-opp-index">
-                                {scenarioLabel}
-                            </p>
+                        </div>
+                    </template>
+
+                    <!-- Tuiles de choix -->
+                    <div class="slds-grid slds-gutters slds-wrap">
+
+                        <!-- Tile: Requalification / Allotissement -->
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                            <div class="slds-box requalif-choice-tile" onclick={handleChoiceRequalification}>
+                                <p class="slds-text-heading_small slds-m-bottom_xx-small">Requalification / Allotissement</p>
+                                <p class="slds-text-body_small slds-text-color_weak">
+                                    Allotir cette opportunité en plusieurs nouvelles opportunités.
+                                </p>
+                                <div class="slds-m-top_small">
+                                    <lightning-button
+                                        label="Sélectionner"
+                                        variant="neutral"
+                                        onclick={handleChoiceRequalification}>
+                                    </lightning-button>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Avertissement (uniquement si l'opp est ouverte) -->
-                        <template if:false={context.isClosed}>
-                            <div class="slds-box slds-theme_warning slds-m-bottom_medium">
-                                <p class="slds-text-body_small slds-m-bottom_xx-small">
-                                    ⚠️ Cette action est <strong>irréversible</strong>.
+                        <!-- Tile: Regroupement -->
+                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2">
+                            <div class="slds-box requalif-choice-tile" onclick={handleChoiceGrouping}>
+                                <p class="slds-text-heading_small slds-m-bottom_xx-small">Regroupement</p>
+                                <p class="slds-text-body_small slds-text-color_weak">
+                                    Fusionner plusieurs renouvellements en une seule opportunité regroupée.
                                 </p>
-                                <ul class="slds-list_dotted slds-text-body_small">
-                                    <li>L'opportunité actuelle sera fermée (Requalification / 6.1 Closed Lost)</li>
-                                    <li>{contractConsequence}</li>
-                                    <li>N nouvelles opportunités Global Renewal seront créées et liées au contrat</li>
-                                </ul>
+                                <div class="slds-m-top_small">
+                                    <lightning-button
+                                        label="Sélectionner"
+                                        variant="neutral"
+                                        disabled={isOppClosed}
+                                        onclick={handleChoiceGrouping}>
+                                    </lightning-button>
+                                </div>
                             </div>
-                        </template>
-                    </template>
+                        </div>
 
-                    <!-- Saisie du nombre (masqué si opp fermée) -->
-                    <template if:false={isOppClosed}>
-                        <lightning-input
-                            type="number"
-                            label="Nombre de nouvelles opportunités à créer"
-                            min="1"
-                            step="1"
-                            value={numberOfOpps}
-                            onchange={handleNumberChange}
-                            required>
-                        </lightning-input>
+                    </div>
 
-                        <!-- N < 10 : champs de saisie des références -->
-                        <template if:true={showReferenceInputs}>
-                            <div class="slds-m-top_medium">
-                                <p class="slds-text-title_caps slds-m-bottom_x-small">Références des opportunités</p>
-                                <template for:each={referenceRows} for:item="row">
-                                    <lightning-input
-                                        key={row.key}
-                                        data-index={row.key}
-                                        type="text"
-                                        label={row.label}
-                                        value={row.value}
-                                        onchange={handleReferenceChange}
-                                        class="slds-m-bottom_x-small">
-                                    </lightning-input>
-                                </template>
-                            </div>
-                        </template>
-
-                        <!-- N >= 10 : import fichier -->
-                        <template if:true={showImportButton}>
-                            <div class="slds-m-top_medium">
-                                <p class="slds-text-title_caps slds-m-bottom_x-small">Références des opportunités</p>
-                                <p class="slds-text-body_small slds-m-bottom_x-small">
-                                    Importer un fichier .txt, .csv ou .xlsx — une référence par ligne.
-                                </p>
-                                <lightning-input
-                                    type="file"
-                                    label="Fichier de références"
-                                    accept=".txt,.csv,.xlsx"
-                                    onchange={handleFileImport}>
-                                </lightning-input>
-                                <template if:true={importedCount}>
-                                    <p class="slds-text-body_small slds-text-color_success slds-m-top_x-small">
-                                        ✓ {importedCount} référence(s) importée(s)
-                                    </p>
-                                </template>
-                            </div>
-                        </template>
-                    </template>
-
-                    <!-- Message d'erreur -->
+                    <!-- Erreur / opp fermée -->
                     <template if:true={errorMessage}>
-                        <p class="slds-text-color_error slds-m-top_x-small">{errorMessage}</p>
+                        <p class="slds-text-color_error slds-m-top_medium">{errorMessage}</p>
                     </template>
 
                 </div>
             </template>
 
-            <!-- Traitement en cours -->
-            <template if:true={isSubmitting}>
-                <div class="slds-align_absolute-center slds-p-around_large">
-                    <lightning-spinner alternative-text="Traitement..." size="medium"></lightning-spinner>
-                    <p class="slds-m-top_small">Traitement en arrière-plan — vous recevrez une notification à la fin.</p>
-                </div>
+            <!-- ═══════════════════════════════════════════════════════════
+                 STEP: REQUALIFICATION
+            ════════════════════════════════════════════════════════════ -->
+            <template if:true={showRequalificationStep}>
+                <template if:false={isSubmitting}>
+                    <div class="slds-p-around_medium">
+
+                        <!-- Carte résumé de l'opportunité -->
+                        <template if:true={context}>
+                            <div class="slds-box slds-box_x-small slds-m-bottom_medium requalif-opp-card">
+                                <p class="slds-text-heading_small slds-m-bottom_xx-small">{context.oppName}</p>
+                                <p class="slds-text-color_weak slds-text-body_small">{context.accountName}</p>
+                                <p class="slds-m-top_x-small">
+                                    <lightning-badge label={context.contractRef}></lightning-badge>
+                                    &nbsp;
+                                    <lightning-badge label={context.service}></lightning-badge>
+                                </p>
+                                <p class="slds-m-top_x-small slds-text-body_small requalif-opp-index">
+                                    {scenarioLabel}
+                                </p>
+                            </div>
+
+                            <!-- Avertissement (uniquement si l'opp est ouverte) -->
+                            <template if:false={context.isClosed}>
+                                <div class="slds-box slds-theme_warning slds-m-bottom_medium">
+                                    <p class="slds-text-body_small slds-m-bottom_xx-small">
+                                        ⚠️ Cette action est <strong>irréversible</strong>.
+                                    </p>
+                                    <ul class="slds-list_dotted slds-text-body_small">
+                                        <li>L'opportunité actuelle sera fermée (Requalification / 6.1 Closed Lost)</li>
+                                        <li>{contractConsequence}</li>
+                                        <li>N nouvelles opportunités Global Renewal seront créées et liées au contrat</li>
+                                    </ul>
+                                </div>
+                            </template>
+                        </template>
+
+                        <!-- Saisie du nombre (masqué si opp fermée) -->
+                        <template if:false={isOppClosed}>
+                            <lightning-input
+                                type="number"
+                                label="Nombre de nouvelles opportunités à créer"
+                                min="1"
+                                step="1"
+                                value={numberOfOpps}
+                                onchange={handleNumberChange}
+                                required>
+                            </lightning-input>
+
+                            <!-- N < 10 : champs de saisie des références -->
+                            <template if:true={showReferenceInputs}>
+                                <div class="slds-m-top_medium">
+                                    <p class="slds-text-title_caps slds-m-bottom_x-small">Références des opportunités</p>
+                                    <template for:each={referenceRows} for:item="row">
+                                        <lightning-input
+                                            key={row.key}
+                                            data-index={row.key}
+                                            type="text"
+                                            label={row.label}
+                                            value={row.value}
+                                            onchange={handleReferenceChange}
+                                            class="slds-m-bottom_x-small">
+                                        </lightning-input>
+                                    </template>
+                                </div>
+                            </template>
+
+                            <!-- N >= 10 : import fichier -->
+                            <template if:true={showImportButton}>
+                                <div class="slds-m-top_medium">
+                                    <p class="slds-text-title_caps slds-m-bottom_x-small">Références des opportunités</p>
+                                    <p class="slds-text-body_small slds-m-bottom_x-small">
+                                        Importer un fichier .txt, .csv ou .xlsx — une référence par ligne.
+                                    </p>
+                                    <lightning-input
+                                        type="file"
+                                        label="Fichier de références"
+                                        accept=".txt,.csv,.xlsx"
+                                        onchange={handleFileImport}>
+                                    </lightning-input>
+                                    <template if:true={importedCount}>
+                                        <p class="slds-text-body_small slds-text-color_success slds-m-top_x-small">
+                                            ✓ {importedCount} référence(s) importée(s)
+                                        </p>
+                                    </template>
+                                </div>
+                            </template>
+                        </template>
+
+                        <!-- Message d'erreur -->
+                        <template if:true={errorMessage}>
+                            <p class="slds-text-color_error slds-m-top_x-small">{errorMessage}</p>
+                        </template>
+
+                    </div>
+                </template>
+
+                <!-- Traitement en cours -->
+                <template if:true={isSubmitting}>
+                    <div class="slds-align_absolute-center slds-p-around_large">
+                        <lightning-spinner alternative-text="Traitement..." size="medium"></lightning-spinner>
+                        <p class="slds-m-top_small">Traitement en arrière-plan — vous recevrez une notification à la fin.</p>
+                    </div>
+                </template>
+            </template>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 STEP: GROUPING
+            ════════════════════════════════════════════════════════════ -->
+            <template if:true={showGroupingStep}>
+                <template if:false={isSubmitting}>
+                    <div class="slds-p-around_medium">
+
+                        <!-- Liste des opps sélectionnées -->
+                        <p class="slds-text-title_caps slds-m-bottom_x-small">
+                            Opportunités à regrouper ({selectedOpps.length})
+                        </p>
+                        <template for:each={selectedOppsWithRemovable} for:item="opp">
+                            <div key={opp.id} class="slds-box slds-box_x-small slds-m-bottom_x-small requalif-opp-card">
+                                <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+                                    <div>
+                                        <p class="slds-text-body_regular">{opp.name}</p>
+                                        <p class="slds-text-body_small slds-text-color_weak">{opp.accountName}</p>
+                                        <template if:true={opp.contractRef}>
+                                            <lightning-badge label={opp.contractRef}></lightning-badge>
+                                        </template>
+                                    </div>
+                                    <template if:true={opp.canRemove}>
+                                        <lightning-button-icon
+                                            icon-name="utility:close"
+                                            variant="bare"
+                                            data-id={opp.id}
+                                            onclick={handleRemoveOpp}
+                                            alternative-text="Retirer">
+                                        </lightning-button-icon>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+
+                        <!-- Recherche d'opportunités supplémentaires -->
+                        <div class="slds-m-top_medium">
+                            <p class="slds-text-title_caps slds-m-bottom_x-small">Ajouter des opportunités</p>
+                            <div class="slds-grid slds-gutters slds-grid_vertical-align-end">
+                                <div class="slds-col slds-grow">
+                                    <lightning-input
+                                        type="search"
+                                        label="Rechercher par nom d'opportunité ou de compte"
+                                        value={searchTerm}
+                                        onchange={handleSearchTermChange}
+                                        onkeyup={handleSearch}>
+                                    </lightning-input>
+                                </div>
+                                <div class="slds-col slds-shrink">
+                                    <lightning-button
+                                        label="Rechercher"
+                                        variant="neutral"
+                                        onclick={handleSearch}
+                                        disabled={isSearching}>
+                                    </lightning-button>
+                                </div>
+                            </div>
+
+                            <!-- Résultats de recherche -->
+                            <template if:true={isSearching}>
+                                <lightning-spinner size="small" alternative-text="Recherche..."></lightning-spinner>
+                            </template>
+                            <template for:each={searchResults} for:item="result">
+                                <div key={result.id} class="slds-box slds-box_x-small slds-m-top_x-small">
+                                    <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+                                        <div>
+                                            <p class="slds-text-body_regular">{result.name}</p>
+                                            <p class="slds-text-body_small slds-text-color_weak">{result.accountName}</p>
+                                        </div>
+                                        <lightning-button
+                                            label="Ajouter"
+                                            variant="neutral"
+                                            data-id={result.id}
+                                            onclick={handleAddOpp}>
+                                        </lightning-button>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:true={noSearchResultsMessage}>
+                                <p class="slds-text-body_small slds-text-color_weak slds-m-top_x-small">
+                                    {noSearchResultsMessage}
+                                </p>
+                            </template>
+                        </div>
+
+                        <!-- Libellé nouvelle opportunité -->
+                        <div class="slds-m-top_medium">
+                            <lightning-input
+                                type="text"
+                                label="Libellé de la nouvelle opportunité regroupée"
+                                value={newGroupOppName}
+                                onchange={handleNewGroupOppNameChange}
+                                required>
+                            </lightning-input>
+                        </div>
+
+                        <!-- Sélection du compte cible -->
+                        <template if:true={groupAccountOptions.length}>
+                            <div class="slds-m-top_medium">
+                                <lightning-combobox
+                                    label="Compte de la nouvelle opportunité"
+                                    value={groupTargetAccountId}
+                                    options={groupAccountOptions}
+                                    onchange={handleGroupTargetAccountChange}
+                                    required>
+                                </lightning-combobox>
+                            </div>
+                        </template>
+
+                        <!-- Récapitulatif -->
+                        <div class="slds-box slds-box_x-small slds-m-top_medium slds-theme_shade">
+                            <p class="slds-text-body_small">
+                                <strong>{selectedOpps.length}</strong> opportunité(s) seront fermées (Requalification / Regroupement).<br/>
+                                Montant total : <strong>{groupTotalAmountFormatted}</strong>
+                            </p>
+                        </div>
+
+                        <!-- Avertissement -->
+                        <div class="slds-box slds-theme_warning slds-m-top_medium">
+                            <p class="slds-text-body_small">
+                                ⚠️ Cette action est <strong>irréversible</strong>. Les contrats liés passeront en <strong>Réalloti</strong>.
+                            </p>
+                        </div>
+
+                        <!-- Message d'erreur -->
+                        <template if:true={errorMessage}>
+                            <p class="slds-text-color_error slds-m-top_x-small">{errorMessage}</p>
+                        </template>
+
+                    </div>
+                </template>
+
+                <!-- Traitement en cours -->
+                <template if:true={isSubmitting}>
+                    <div class="slds-align_absolute-center slds-p-around_large">
+                        <lightning-spinner alternative-text="Traitement..." size="medium"></lightning-spinner>
+                        <p class="slds-m-top_small">Traitement en arrière-plan — vous recevrez une notification à la fin.</p>
+                    </div>
+                </template>
             </template>
 
         </template>
 
         <!-- Footer -->
         <div slot="footer">
+            <template if:true={showBackButton}>
+                <lightning-button
+                    label="Retour"
+                    onclick={handleBack}
+                    disabled={isSubmitting}
+                    class="slds-m-right_x-small">
+                </lightning-button>
+            </template>
             <lightning-button
                 label="Annuler"
                 onclick={handleCancel}
                 disabled={isSubmitting}
                 class="slds-m-right_x-small">
             </lightning-button>
-            <lightning-button
-                variant="brand"
-                label="Confirmer"
-                onclick={handleConfirm}
-                disabled={isConfirmDisabled}>
-            </lightning-button>
+            <template if:true={showConfirmButton}>
+                <lightning-button
+                    variant="brand"
+                    label="Confirmer"
+                    onclick={handleConfirm}
+                    disabled={isConfirmDisabled}>
+                </lightning-button>
+            </template>
         </div>
 
     </lightning-quick-action-panel>
